@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 const FormCheckboxWrapper = React.forwardRef(function FormCheckboxWrapper(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
-  return React.createElement("label", {
-    className: className + " w-checkbox",
+  return React.createElement('label', {
+    className: className + ' w-checkbox',
     ...props,
     ref,
   });

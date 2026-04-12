@@ -1,7 +1,7 @@
-"use client";
-import * as React from "react";
-import { cj, KEY_CODES } from "../utils";
-import { SliderContext } from "./shared/sliderContext";
+'use client';
+import * as React from 'react';
+import { cj, KEY_CODES } from '../utils';
+import { SliderContext } from './shared/sliderContext';
 const SliderDot = React.forwardRef(function SliderDot(
   { index, focusedDot, handleFocus, setFocusedDot },
   ref
@@ -21,14 +21,14 @@ const SliderDot = React.forwardRef(function SliderDot(
     }
   }, [focusedDot, index]);
   const isSlideActive = selectedSlide === index;
-  const label = navNumbers ? index + 1 : "";
+  const label = navNumbers ? index + 1 : '';
   return React.createElement(
-    "div",
+    'div',
     {
-      className: `w-slider-dot ${isSlideActive ? "w-active" : ""}`,
-      "aria-label": `Show slide ${index + 1} of ${slideAmount}`,
-      "aria-pressed": isSlideActive,
-      role: "button",
+      className: `w-slider-dot ${isSlideActive ? 'w-active' : ''}`,
+      'aria-label': `Show slide ${index + 1} of ${slideAmount}`,
+      'aria-pressed': isSlideActive,
+      role: 'button',
       tabIndex: isSlideActive ? 0 : -1,
       style: {
         marginRight: `${navSpacing}px`,
@@ -46,7 +46,7 @@ const SliderDot = React.forwardRef(function SliderDot(
   );
 });
 const SliderNav = React.forwardRef(function SliderNav(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
   const {
@@ -100,7 +100,7 @@ const SliderNav = React.forwardRef(function SliderNav(
     })
   );
   return React.createElement(
-    "div",
+    'div',
     {
       ...props,
       onFocus: (e) => {
@@ -111,9 +111,9 @@ const SliderNav = React.forwardRef(function SliderNav(
       onMouseLeave: (e) => e.stopPropagation(),
       className: cj(
         className,
-        `w-slider-nav ${navInvert ? "w-slider-nav-invert" : ""} ${
-          navShadow ? "w-shadow" : ""
-        } ${navRound ? "w-round" : ""} ${navNumbers ? "w-num" : ""}`
+        `w-slider-nav ${navInvert ? 'w-slider-nav-invert' : ''} ${
+          navShadow ? 'w-shadow' : ''
+        } ${navRound ? 'w-round' : ''} ${navNumbers ? 'w-num' : ''}`
       ),
       ref: ref,
     },

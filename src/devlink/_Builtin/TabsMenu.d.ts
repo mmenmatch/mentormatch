@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 type TabsMenuProps = {
   tag?: React.ElementType;
   className?: string;

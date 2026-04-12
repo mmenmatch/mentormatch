@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 const FormSuccessMessage = React.forwardRef(function FormSuccessMessage(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
-  return React.createElement("div", {
-    className: className + " w-form-done",
+  return React.createElement('div', {
+    className: className + ' w-form-done',
     ...props,
     ref,
   });

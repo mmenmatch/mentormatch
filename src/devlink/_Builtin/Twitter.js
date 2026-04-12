@@ -1,21 +1,21 @@
-"use client";
-import * as React from "react";
-import { isUrl, loadScript } from "../utils";
+'use client';
+import * as React from 'react';
+import { isUrl, loadScript } from '../utils';
 const modeDict = {
-  follow: "createFollowButton",
-  tweet: "createShareButton",
+  follow: 'createFollowButton',
+  tweet: 'createShareButton',
 };
 const sizeDict = {
-  m: "medium",
-  l: "large",
+  m: 'medium',
+  l: 'large',
 };
 const Twitter = React.forwardRef(function Twitter(
   {
-    className = "",
-    url = "https://webflow.com",
-    mode = "tweet",
-    size = "m",
-    text = "Check out this site",
+    className = '',
+    url = 'https://webflow.com',
+    mode = 'tweet',
+    size = 'm',
+    text = 'Check out this site',
     ...props
   },
   ref
@@ -23,15 +23,15 @@ const Twitter = React.forwardRef(function Twitter(
   const innerRef = React.useRef(null);
   React.useImperativeHandle(ref, () => innerRef.current);
   if (!isUrl(url)) {
-    if (mode === "tweet") {
-      url = "https://webflow.com/";
-    } else if (mode === "follow") {
-      url = "webflow";
+    if (mode === 'tweet') {
+      url = 'https://webflow.com/';
+    } else if (mode === 'follow') {
+      url = 'webflow';
     }
   }
   React.useEffect(() => {
     let isComponentMounted = true;
-    loadScript("https://platform.twitter.com/widgets.js").then(() => {
+    loadScript('https://platform.twitter.com/widgets.js').then(() => {
       if (isComponentMounted) {
         if (window.twttr) {
           const twitterButtonOption = window.twttr.widgets[modeDict[mode]];
@@ -48,9 +48,9 @@ const Twitter = React.forwardRef(function Twitter(
       isComponentMounted = false;
     };
   }, []);
-  return React.createElement("div", {
+  return React.createElement('div', {
     ...props,
-    className: className + " w-widget w-widget-twitter",
+    className: className + ' w-widget w-widget-twitter',
     ref: innerRef,
   });
 });

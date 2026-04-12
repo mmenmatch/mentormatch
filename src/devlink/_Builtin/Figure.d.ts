@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 declare const Figure: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"figure"> & {
+  import('./shared/types').ElementProps<'figure'> & {
     children?: React.ReactNode | undefined;
   } & {
     figure?: {

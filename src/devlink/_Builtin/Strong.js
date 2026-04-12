@@ -1,7 +1,7 @@
-"use client";
-import * as React from "react";
+'use client';
+import * as React from 'react';
 const Strong = React.forwardRef(function Strong(props, ref) {
-  return React.createElement("strong", {
+  return React.createElement('strong', {
     ...props,
     ref,
   });

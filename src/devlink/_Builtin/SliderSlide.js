@@ -1,10 +1,10 @@
-"use client";
-import * as React from "react";
-import { IXContext, triggerIXEvent } from "../interactions";
-import { EASING_FUNCTIONS, cj } from "../utils";
-import { SliderContext } from "./shared/sliderContext";
+'use client';
+import * as React from 'react';
+import { IXContext, triggerIXEvent } from '../interactions';
+import { EASING_FUNCTIONS, cj } from '../utils';
+import { SliderContext } from './shared/sliderContext';
 const SliderSlide = React.forwardRef(function SliderSlide(
-  { tag = "div", className = "", style = {}, index = 0, ...props },
+  { tag = 'div', className = '', style = {}, index = 0, ...props },
   ref
 ) {
   const {
@@ -25,10 +25,10 @@ const SliderSlide = React.forwardRef(function SliderSlide(
       transform: `translateX(-${current * 100}%)`,
       transition: `transform ${duration}ms ${EASING_FUNCTIONS[easing]} 0s`,
     };
-    if (animation === "slide") {
+    if (animation === 'slide') {
       return base;
     }
-    if (animation === "cross") {
+    if (animation === 'cross') {
       return {
         ...base,
         opacity: isSlideActive ? 1 : 0,
@@ -37,7 +37,7 @@ const SliderSlide = React.forwardRef(function SliderSlide(
         } 0s, transform 1ms linear ${isSlideActive ? 0 : duration}ms`,
       };
     }
-    if (animation === "outin") {
+    if (animation === 'outin') {
       return {
         ...base,
         opacity: isSlideActive ? 1 : 0,
@@ -46,7 +46,7 @@ const SliderSlide = React.forwardRef(function SliderSlide(
         }ms, transform 1ms linear ${isSlidePrevious ? duration / 2 : 0}ms`,
       };
     }
-    if (animation === "fade") {
+    if (animation === 'fade') {
       return {
         ...base,
         opacity: isSlideActive ? 1 : 0,
@@ -55,7 +55,7 @@ const SliderSlide = React.forwardRef(function SliderSlide(
         } 0s, transform 1ms linear ${isSlideActive ? 0 : duration}ms`,
       };
     }
-    if (animation === "over") {
+    if (animation === 'over') {
       return {
         ...base,
         transition: `transform ${duration}ms ${EASING_FUNCTIONS[easing]} ${
@@ -70,7 +70,7 @@ const SliderSlide = React.forwardRef(function SliderSlide(
     (node) => {
       triggerIXEvent(node, isSlideActive);
       if (ref) {
-        if (typeof ref === "function") {
+        if (typeof ref === 'function') {
           ref(node);
         } else {
           ref.current = node;
@@ -81,12 +81,12 @@ const SliderSlide = React.forwardRef(function SliderSlide(
   );
   return React.createElement(tag, {
     ...props,
-    className: cj(className, "w-slide"),
+    className: cj(className, 'w-slide'),
     style: { ...style, ...animationStyle },
-    "aria-label": `${index + 1} of ${slideAmount}`,
-    role: "group",
+    'aria-label': `${index + 1} of ${slideAmount}`,
+    role: 'group',
     ref: innerRef,
-    "aria-hidden": !isSlideActive ? "true" : "false",
+    'aria-hidden': !isSlideActive ? 'true' : 'false',
   });
 });
 export default SliderSlide;

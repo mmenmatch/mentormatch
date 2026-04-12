@@ -1,5 +1,5 @@
-import * as React from "react";
-import { LinkProps } from "./Link";
+import * as React from 'react';
+import { LinkProps } from './Link';
 type DropdownLinkProps = React.PropsWithChildren<{
   tag?: keyof HTMLElementTagNameMap;
   className?: string;
@@ -12,11 +12,11 @@ declare const DropdownLink: React.ForwardRefExoticComponent<
     className?: string;
   } & {
     children?: React.ReactNode | undefined;
-  } & import("./shared/types").ElementProps<"a"> & {
+  } & import('./shared/types').ElementProps<'a'> & {
       options?: {
         href: string;
-        target?: "_self" | "_blank";
-        preload?: "none" | "prefetch" | "prerender";
+        target?: '_self' | '_blank';
+        preload?: 'none' | 'prefetch' | 'prerender';
       };
       className?: string;
       button?: boolean;

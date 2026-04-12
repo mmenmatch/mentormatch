@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 export type RenderLink = React.FC<{
   href: string;
-  target?: "_self" | "_blank";
-  preload?: "none" | "prefetch" | "prerender";
+  target?: '_self' | '_blank';
+  preload?: 'none' | 'prefetch' | 'prerender';
   className?: string;
   children?: React.ReactNode;
   ref?: React.Ref<HTMLAnchorElement>;

@@ -1,5 +1,5 @@
-import * as React from "react";
-import { NavbarConfig } from "./shared/navbarContext";
+import * as React from 'react';
+import { NavbarConfig } from './shared/navbarContext';
 type NavbarProps = {
   tag: React.ElementType;
   config: NavbarConfig;

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 type FormInputProps = Omit<
   React.InputHTMLAttributes<HTMLInputElement>,
-  "form"
+  'form'
 > & {
   inputType?: string;
   customClassName?: string;
@@ -14,7 +14,7 @@ type FormInputProps = Omit<
 };
 export type { FormInputProps };
 declare const FormTextInput: React.ForwardRefExoticComponent<
-  Omit<React.InputHTMLAttributes<HTMLInputElement>, "form"> & {
+  Omit<React.InputHTMLAttributes<HTMLInputElement>, 'form'> & {
     inputType?: string;
     customClassName?: string;
     form?:

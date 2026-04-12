@@ -1,9 +1,9 @@
-"use client";
-import * as React from "react";
-import { cj, debounce, KEY_CODES } from "../utils";
-import { SliderContext } from "./shared/sliderContext";
+'use client';
+import * as React from 'react';
+import { cj, debounce, KEY_CODES } from '../utils';
+import { SliderContext } from './shared/sliderContext';
 const SliderArrow = React.forwardRef(function SliderArrow(
-  { className = "", dir = "left", children, ...props },
+  { className = '', dir = 'left', children, ...props },
   ref
 ) {
   const {
@@ -14,20 +14,20 @@ const SliderArrow = React.forwardRef(function SliderArrow(
     slide: { current },
   } = React.useContext(SliderContext);
   const handleSlideChange = debounce(() => {
-    if (dir === "left") {
+    if (dir === 'left') {
       goToPreviousSlide();
     } else {
       goToNextSlide();
     }
   });
   const isHidden = React.useMemo(() => {
-    if (dir === "left" && hideArrows && current === 0) return true;
-    if (dir === "right" && hideArrows && current === slideAmount - 1)
+    if (dir === 'left' && hideArrows && current === 0) return true;
+    if (dir === 'right' && hideArrows && current === slideAmount - 1)
       return true;
     return false;
   }, [dir, hideArrows, current, slideAmount]);
   return React.createElement(
-    "div",
+    'div',
     {
       ...props,
       onClick: handleSlideChange,
@@ -38,11 +38,11 @@ const SliderArrow = React.forwardRef(function SliderArrow(
           handleSlideChange();
         }
       },
-      role: "button",
+      role: 'button',
       tabIndex: 0,
       className: cj(className, `w-slider-arrow-${dir}`),
-      "aria-label": `${dir === "left" ? "previous" : "next"} slide`,
-      style: { display: isHidden ? "none" : "block" },
+      'aria-label': `${dir === 'left' ? 'previous' : 'next'} slide`,
+      style: { display: isHidden ? 'none' : 'block' },
       ref: ref,
     },
     children

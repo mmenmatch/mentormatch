@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 const FormFileUploadLabel = React.forwardRef(function FormFileUploadLabel(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
-  return React.createElement("label", {
-    className: className + " w-file-upload-label",
+  return React.createElement('label', {
+    className: className + ' w-file-upload-label',
     ...props,
     ref,
   });

@@ -1,7 +1,7 @@
-"use client";
-import * as React from "react";
+'use client';
+import * as React from 'react';
 const Figure = React.forwardRef(function Figure(
-  { className = "", figure, ...props },
+  { className = '', figure, ...props },
   ref
 ) {
   const { type, align } = figure ?? {};
@@ -11,7 +11,7 @@ const Figure = React.forwardRef(function Figure(
   if (type) {
     className += `w-richtext-align-${type} `;
   }
-  return React.createElement("figure", {
+  return React.createElement('figure', {
     className: className,
     ...props,
     ref: ref,

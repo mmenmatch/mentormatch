@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 declare global {
   interface Window {
     google: {
@@ -11,7 +11,7 @@ type MapWidgetProps = {
   apiKey?: string;
   zoom?: number;
   latlng?: string;
-  mapStyle?: "roadmap" | "satellite" | "hybrid" | "terrain";
+  mapStyle?: 'roadmap' | 'satellite' | 'hybrid' | 'terrain';
   tooltip?: string;
   title?: string;
   enableScroll?: boolean;

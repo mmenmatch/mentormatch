@@ -1,1 +1,1 @@
-export const isSet = (value) => value != null && value !== "";
+export const isSet = (value) => value != null && value !== '';

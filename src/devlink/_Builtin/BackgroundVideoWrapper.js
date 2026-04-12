@@ -1,15 +1,15 @@
-"use client";
-import React from "react";
-import { cj, debounce } from "../utils";
-import { BgVideoContext } from "./shared/bgVideoContext";
+'use client';
+import React from 'react';
+import { cj, debounce } from '../utils';
+import { BgVideoContext } from './shared/bgVideoContext';
 const BackgroundVideoWrapper = React.forwardRef(function BackgroundVideoWrapper(
   {
-    tag = "div",
-    className = "",
+    tag = 'div',
+    className = '',
     autoPlay = true,
     loop = true,
     sources = [],
-    posterImage = "",
+    posterImage = '',
     children,
   },
   ref
@@ -34,12 +34,12 @@ const BackgroundVideoWrapper = React.forwardRef(function BackgroundVideoWrapper(
       {
         className: cj(
           className,
-          "w-background-video",
-          "w-background-video-atom"
+          'w-background-video',
+          'w-background-video-atom'
         ),
       },
       React.createElement(
-        "video",
+        'video',
         {
           ref: video,
           autoPlay: autoPlay,
@@ -51,7 +51,7 @@ const BackgroundVideoWrapper = React.forwardRef(function BackgroundVideoWrapper(
           playsInline: true,
         },
         sources.map((url) =>
-          React.createElement("source", { src: url, key: url })
+          React.createElement('source', { src: url, key: url })
         )
       )
     ),

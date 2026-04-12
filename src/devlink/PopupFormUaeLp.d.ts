@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 declare function PopupFormUaeLp(props: {
   as?: React.ElementType;

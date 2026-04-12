@@ -1,2 +1,2 @@
 export const toText = (value) =>
-  typeof value === "string" ? value : undefined;
+  typeof value === 'string' ? value : undefined;

@@ -1,14 +1,14 @@
-"use client";
-import * as React from "react";
-import { cj } from "../utils";
-import Link from "./Link";
+'use client';
+import * as React from 'react';
+import { cj } from '../utils';
+import Link from './Link';
 const NavbarBrand = React.forwardRef(function NavbarBrand(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
   return React.createElement(Link, {
     ...props,
-    className: cj(className, "w-nav-brand"),
+    className: cj(className, 'w-nav-brand'),
     ref: ref,
   });
 });

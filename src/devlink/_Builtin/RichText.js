@@ -1,11 +1,11 @@
-"use client";
-import * as React from "react";
+'use client';
+import * as React from 'react';
 const RichText = React.forwardRef(function RichText(
-  { tag = "div", className = "", ...props },
+  { tag = 'div', className = '', ...props },
   ref
 ) {
   return React.createElement(tag, {
-    className: className + " w-richtext",
+    className: className + ' w-richtext',
     ...props,
     ref,
   });

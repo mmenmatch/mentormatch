@@ -1,9 +1,9 @@
-"use client";
-import * as React from "react";
-import { cj } from "../utils";
-import { NavbarContext } from "./shared/navbarContext";
+'use client';
+import * as React from 'react';
+import { cj } from '../utils';
+import { NavbarContext } from './shared/navbarContext';
 const NavbarMenu = React.forwardRef(function NavbarMenu(
-  { tag = "nav", className = "", ...props },
+  { tag = 'nav', className = '', ...props },
   ref
 ) {
   const { getBodyHeight, animOver, isOpen, menu } =
@@ -11,8 +11,8 @@ const NavbarMenu = React.forwardRef(function NavbarMenu(
   React.useImperativeHandle(ref, () => menu.current);
   return React.createElement(tag, {
     ...props,
-    className: cj(className, "w-nav-menu"),
-    ...(isOpen ? { "data-nav-menu-open": "" } : {}),
+    className: cj(className, 'w-nav-menu'),
+    ...(isOpen ? { 'data-nav-menu-open': '' } : {}),
     style: animOver ? { height: getBodyHeight() } : {},
     ref: menu,
   });

@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 declare const DOM: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"div"> & {
+  import('./shared/types').ElementProps<'div'> & {
     tag: string;
   } & {
     children?: React.ReactNode | undefined;

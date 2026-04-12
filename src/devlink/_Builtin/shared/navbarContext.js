@@ -1,5 +1,5 @@
-"use client";
-import * as React from "react";
+'use client';
+import * as React from 'react';
 const BREAKPOINTS = {
   medium: 991,
   small: 767,
@@ -9,12 +9,12 @@ export { BREAKPOINTS };
 export const NavbarContext = React.createContext({
   animDirect: 1,
   animOver: false,
-  animation: "animation",
-  collapse: "medium",
+  animation: 'animation',
+  collapse: 'medium',
   docHeight: false,
   duration: 400,
-  easing2: "ease",
-  easing: "ease",
+  easing2: 'ease',
+  easing: 'ease',
   getBodyHeight: () => undefined,
   getOverlayHeight: () => {
     return undefined;

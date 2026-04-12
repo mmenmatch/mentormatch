@@ -1,18 +1,18 @@
-"use client";
-import React from "react";
-import { FileUploadContext } from "./shared/fileUploadContext";
+'use client';
+import React from 'react';
+import { FileUploadContext } from './shared/fileUploadContext';
 const FormFileUploadSuccess = React.forwardRef(function FormFileUploadSuccess(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
   const { files, error } = React.useContext(FileUploadContext);
-  return React.createElement("div", {
-    className: className + " w-file-upload-success",
+  return React.createElement('div', {
+    className: className + ' w-file-upload-success',
     ...props,
     ref,
     style: {
       ...props.style,
-      display: Boolean(files) && !error ? "block" : "none",
+      display: Boolean(files) && !error ? 'block' : 'none',
     },
   });
 });

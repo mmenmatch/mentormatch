@@ -1,7 +1,7 @@
-"use client";
-import * as React from "react";
-import { cj, debounce } from "../utils";
-import { SliderContext } from "./shared/sliderContext";
+'use client';
+import * as React from 'react';
+import { cj, debounce } from '../utils';
+import { SliderContext } from './shared/sliderContext';
 function useSwipe({ onSwipeLeft, onSwipeRight, config }) {
   const SWIPE_DELTA = 150;
   const [touchStart, setTouchStart] = React.useState(0);
@@ -32,7 +32,7 @@ function useSwipe({ onSwipeLeft, onSwipeRight, config }) {
   };
 }
 const SliderWrapper = React.forwardRef(function SlideWrapper(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
   const [slideAmount, setSlideAmount] = React.useState(0);
@@ -79,12 +79,12 @@ const SliderWrapper = React.forwardRef(function SlideWrapper(
       },
     },
     React.createElement(
-      "div",
+      'div',
       {
         ...swipeHandlers,
-        className: cj(className, "w-slider"),
-        role: "region",
-        "aria-label": "carousel",
+        className: cj(className, 'w-slider'),
+        role: 'region',
+        'aria-label': 'carousel',
         ref: ref,
       },
       props.children

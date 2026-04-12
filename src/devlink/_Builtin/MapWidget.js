@@ -1,8 +1,8 @@
-"use client";
-import React, { useEffect, useRef } from "react";
-import { cj, loadScript } from "../utils";
+'use client';
+import React, { useEffect, useRef } from 'react';
+import { cj, loadScript } from '../utils';
 function buildTitle(title, tooltip) {
-  let markerTitle = "Map pin";
+  let markerTitle = 'Map pin';
   if (title && tooltip) {
     markerTitle = `Map pin on ${title} showing location of ${tooltip}`;
   } else if (title && !tooltip) {
@@ -13,7 +13,7 @@ function buildTitle(title, tooltip) {
   return markerTitle;
 }
 function parseLatLng(latlng) {
-  const coords = latlng.split(",");
+  const coords = latlng.split(',');
   const lat = coords[0] ? parseFloat(coords[0]) : undefined;
   const lng = coords[1] ? parseFloat(coords[1]) : undefined;
   if (lat !== undefined && lng !== undefined && !isNaN(lat) && !isNaN(lng)) {
@@ -21,18 +21,18 @@ function parseLatLng(latlng) {
   }
   return undefined;
 }
-const DEFAULT_LATLNG = "51.511214,-0.119824";
+const DEFAULT_LATLNG = '51.511214,-0.119824';
 const MapWidget = React.forwardRef(function MapWidget(
   {
-    apiKey = "",
-    mapStyle = "roadmap",
+    apiKey = '',
+    mapStyle = 'roadmap',
     zoom = 12,
     latlng = DEFAULT_LATLNG,
-    tooltip = "",
-    title = "",
+    tooltip = '',
+    title = '',
     enableScroll = true,
     enableTouch = true,
-    className = "",
+    className = '',
     ...props
   },
   ref
@@ -69,7 +69,7 @@ const MapWidget = React.forwardRef(function MapWidget(
           position: center,
         }).open({ anchor: marker, map });
       }
-      window.google.maps.event.addListener(marker, "click", function () {
+      window.google.maps.event.addListener(marker, 'click', function () {
         window.open(`https://maps.google.com/?z=${zoom}&daddr=${latlng}`);
       });
     };
@@ -90,10 +90,10 @@ const MapWidget = React.forwardRef(function MapWidget(
     enableTouch,
     mapRef,
   ]);
-  return React.createElement("div", {
+  return React.createElement('div', {
     ...props,
-    className: cj(className, "w-widget w-widget-map"),
-    role: "region",
+    className: cj(className, 'w-widget w-widget-map'),
+    role: 'region',
     ref: mapRef,
   });
 });

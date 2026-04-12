@@ -1,6 +1,6 @@
-import * as React from "react";
-type TwitterSize = "m" | "l";
-type TwitterMode = "follow" | "tweet";
+import * as React from 'react';
+type TwitterSize = 'm' | 'l';
+type TwitterMode = 'follow' | 'tweet';
 type TwitterProps = React.PropsWithChildren<{
   className?: string;
   mode?: TwitterMode;

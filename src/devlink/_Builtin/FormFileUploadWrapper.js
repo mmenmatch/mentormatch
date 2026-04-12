@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 import {
   FileUploadContext,
   MAX_FILE_SIZE_DEFAULT,
-} from "./shared/fileUploadContext";
+} from './shared/fileUploadContext';
 export const _FormFileUploadWrapper = React.forwardRef(
-  function _FormFileUploadWrapper({ className = "", ...props }, ref) {
-    return React.createElement("div", {
-      className: className + " w-file-upload",
+  function _FormFileUploadWrapper({ className = '', ...props }, ref) {
+    return React.createElement('div', {
+      className: className + ' w-file-upload',
       ...props,
       ref,
     });

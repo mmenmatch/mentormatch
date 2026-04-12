@@ -1,5 +1,5 @@
-import React from "react";
-import { Embed } from "../types";
+import React from 'react';
+import { Embed } from '../types';
 type VideoProps = {
   className?: string;
   options?: Embed.Video | null;

@@ -1,5 +1,5 @@
-import * as React from "react";
-import { SliderConfig } from "./shared/sliderContext";
+import * as React from 'react';
+import { SliderConfig } from './shared/sliderContext';
 type SliderWrapperProps = SliderConfig & {
   className?: string;
   children?: React.ReactNode;

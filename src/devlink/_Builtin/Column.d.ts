@@ -1,14 +1,14 @@
-import * as React from "react";
-import { Props } from "./shared/types";
+import * as React from 'react';
+import { Props } from './shared/types';
 type ColumnProps = Props<
-  "div",
+  'div',
   {
     tag: React.ElementType;
     columnClasses?: string;
   }
 >;
 declare const Column: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"div"> & {
+  import('./shared/types').ElementProps<'div'> & {
     tag: React.ElementType;
     columnClasses?: string;
   } & {

@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 declare const Blockquote: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"blockquote"> & {
+  import('./shared/types').ElementProps<'blockquote'> & {
     children?: React.ReactNode | undefined;
   } & React.RefAttributes<HTMLQuoteElement>
 >;

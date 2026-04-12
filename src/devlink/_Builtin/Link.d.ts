@@ -1,12 +1,12 @@
-import * as React from "react";
-import { LinkProps } from "./shared/types";
+import * as React from 'react';
+import { LinkProps } from './shared/types';
 export type { LinkProps };
 declare const Link: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"a"> & {
+  import('./shared/types').ElementProps<'a'> & {
     options?: {
       href: string;
-      target?: "_self" | "_blank";
-      preload?: "none" | "prefetch" | "prerender";
+      target?: '_self' | '_blank';
+      preload?: 'none' | 'prefetch' | 'prerender';
     };
     className?: string;
     button?: boolean;

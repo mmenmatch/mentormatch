@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 declare const Section: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"section"> & {
+  import('./shared/types').ElementProps<'section'> & {
     tag?: React.ElementType;
     grid?: unknown;
   } & {

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 type SliderSlideProps = React.PropsWithChildren<{
   style?: React.CSSProperties;
   tag?: string;

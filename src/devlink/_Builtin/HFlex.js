@@ -1,11 +1,11 @@
-"use client";
-import * as React from "react";
+'use client';
+import * as React from 'react';
 const HFlex = React.forwardRef(function HFlex(
-  { tag = "div", className = "", grid: _grid, ...props },
+  { tag = 'div', className = '', grid: _grid, ...props },
   ref
 ) {
   return React.createElement(tag, {
-    className: className + " w-layout-hflex",
+    className: className + ' w-layout-hflex',
     ...props,
     ref,
   });

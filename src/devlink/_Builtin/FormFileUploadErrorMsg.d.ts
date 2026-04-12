@@ -1,5 +1,5 @@
-import React from "react";
-import { FileUploadErrors } from "./shared/fileUploadContext";
+import React from 'react';
+import { FileUploadErrors } from './shared/fileUploadContext';
 declare const FormFileUploadErrorMsg: React.ForwardRefExoticComponent<
   HTMLDivElement & {
     errors: FileUploadErrors;

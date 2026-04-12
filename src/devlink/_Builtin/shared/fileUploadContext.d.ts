@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 export declare const MAX_FILE_SIZE_DEFAULT = 10485760;
 export type FileUploadErrors = {
   SIZE_ERROR: string;

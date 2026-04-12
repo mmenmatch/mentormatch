@@ -1,19 +1,19 @@
-"use client";
-import React from "react";
-import { onKeyDownInputHandlers } from "./shared/formUtils";
+'use client';
+import React from 'react';
+import { onKeyDownInputHandlers } from './shared/formUtils';
 const HIDE_DEFAULT_INPUT_STYLES = {
   opacity: 0,
-  position: "absolute",
+  position: 'absolute',
   zIndex: -1,
 };
-const CHECKED_CLASS = "w--redirected-checked";
-const FOCUSED_CLASS = "w--redirected-focus";
-const FOCUSED_VISIBLE_CLASS = "w--redirected-focus-visible";
+const CHECKED_CLASS = 'w--redirected-checked';
+const FOCUSED_CLASS = 'w--redirected-focus';
+const FOCUSED_VISIBLE_CLASS = 'w--redirected-focus-visible';
 const FormBooleanInput = React.forwardRef(function FormBooleanInput(
   {
-    className = "",
+    className = '',
     checked = false,
-    type = "checkbox",
+    type = 'checkbox',
     inputType,
     customClassName,
     form: _form,
@@ -51,18 +51,18 @@ const FormBooleanInput = React.forwardRef(function FormBooleanInput(
     },
     onKeyDown: onKeyDownInputHandlers,
   };
-  if (inputType === "custom") {
-    const pseudoModeClasses = `${isChecked ? ` ${CHECKED_CLASS}` : ""}${
-      isFocused ? ` ${FOCUSED_CLASS}` : ""
-    }${isFocusedVisible ? ` ${FOCUSED_CLASS} ${FOCUSED_VISIBLE_CLASS}` : ""} ${
-      customClassName ?? ""
+  if (inputType === 'custom') {
+    const pseudoModeClasses = `${isChecked ? ` ${CHECKED_CLASS}` : ''}${
+      isFocused ? ` ${FOCUSED_CLASS}` : ''
+    }${isFocusedVisible ? ` ${FOCUSED_CLASS} ${FOCUSED_VISIBLE_CLASS}` : ''} ${
+      customClassName ?? ''
     }`;
     const currentClassName = `${className}${pseudoModeClasses}`;
     return React.createElement(
       React.Fragment,
       null,
-      React.createElement("div", { className: currentClassName }),
-      React.createElement("input", {
+      React.createElement('div', { className: currentClassName }),
+      React.createElement('input', {
         ref: ref,
         ...props,
         ...inputProps,
@@ -70,7 +70,7 @@ const FormBooleanInput = React.forwardRef(function FormBooleanInput(
       })
     );
   }
-  return React.createElement("input", {
+  return React.createElement('input', {
     ref: ref,
     className: className,
     ...props,

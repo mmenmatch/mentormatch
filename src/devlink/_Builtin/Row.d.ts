@@ -1,7 +1,7 @@
-import * as React from "react";
-import { ColumnProps } from "./Column";
+import * as React from 'react';
+import { ColumnProps } from './Column';
 declare const Row: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"div"> & {
+  import('./shared/types').ElementProps<'div'> & {
     children: React.ReactElement<ColumnProps>[];
     tag: React.ElementType;
     columns: {

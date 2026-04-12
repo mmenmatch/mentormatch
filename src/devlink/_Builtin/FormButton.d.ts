@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 declare const FormButton: React.ForwardRefExoticComponent<
-  Omit<React.InputHTMLAttributes<HTMLInputElement>, "form"> & {
+  Omit<React.InputHTMLAttributes<HTMLInputElement>, 'form'> & {
     inputType?: string;
     customClassName?: string;
     form?:

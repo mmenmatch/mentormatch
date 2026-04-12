@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import { InteractionsProvider } from "./interactions";
-import { createIX2Engine } from "./devlink";
+'use client';
+import React from 'react';
+import { InteractionsProvider } from './interactions';
+import { createIX2Engine } from './devlink';
 export const DevLinkContext = React.createContext({});
 export const DevLinkProvider = ({ children, ...context }) =>
   React.createElement(

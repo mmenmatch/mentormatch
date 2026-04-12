@@ -1,10 +1,10 @@
-"use client";
-import * as React from "react";
-import { cj } from "../utils";
-import { NavbarContext } from "./shared/navbarContext";
-import { DropdownContext } from "./shared/dropdownContext";
+'use client';
+import * as React from 'react';
+import { cj } from '../utils';
+import { NavbarContext } from './shared/navbarContext';
+import { DropdownContext } from './shared/dropdownContext';
 const DropdownList = React.forwardRef(function DropdownList(
-  { tag = "nav", className = "", ...props },
+  { tag = 'nav', className = '', ...props },
   ref
 ) {
   const { isOpen } = React.useContext(DropdownContext);
@@ -13,9 +13,9 @@ const DropdownList = React.forwardRef(function DropdownList(
     ...props,
     className: cj(
       className,
-      "w-dropdown-list",
-      isOpen && "w--open",
-      isNavbarOpen && "w--nav-dropdown-list-open"
+      'w-dropdown-list',
+      isOpen && 'w--open',
+      isNavbarOpen && 'w--nav-dropdown-list-open'
     ),
     ref,
   });

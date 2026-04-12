@@ -1,8 +1,8 @@
-"use client";
-import * as React from "react";
-import { useResizeObserver } from "../utils";
-import Container from "./Container";
-import { NavbarContext } from "./shared/navbarContext";
+'use client';
+import * as React from 'react';
+import { useResizeObserver } from '../utils';
+import Container from './Container';
+import { NavbarContext } from './shared/navbarContext';
 const NavbarContainer = React.forwardRef(function NavbarContainer(
   { children, ...props },
   ref
@@ -14,18 +14,18 @@ const NavbarContainer = React.forwardRef(function NavbarContainer(
     (entry) => {
       const { maxWidth: containerMaxWidth } = getComputedStyle(entry.target);
       document
-        .querySelectorAll(".w-nav-menu>.w-dropdown,.w-nav-menu>.w-nav-link")
+        .querySelectorAll('.w-nav-menu>.w-dropdown,.w-nav-menu>.w-nav-link')
         .forEach((node) => {
           if (!(node instanceof HTMLElement)) return;
           if (!isOpen) {
-            node.style.maxWidth = "";
+            node.style.maxWidth = '';
             return;
           }
           const { maxWidth } = getComputedStyle(node);
           node.style.maxWidth =
-            !maxWidth || maxWidth === "none" || maxWidth === containerMaxWidth
+            !maxWidth || maxWidth === 'none' || maxWidth === containerMaxWidth
               ? containerMaxWidth
-              : "";
+              : '';
         });
     },
     [isOpen]

@@ -1,8 +1,8 @@
-import * as React from "react";
-import { EASING_FUNCTIONS } from "../utils";
-import { Props } from "./shared/types";
+import * as React from 'react';
+import { EASING_FUNCTIONS } from '../utils';
+import { Props } from './shared/types';
 type TabsWrapperProps = Props<
-  "div",
+  'div',
   {
     current: string;
     easing: keyof typeof EASING_FUNCTIONS;
@@ -12,7 +12,7 @@ type TabsWrapperProps = Props<
 >;
 export type { TabsWrapperProps };
 declare const TabsWrapper: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"div"> & {
+  import('./shared/types').ElementProps<'div'> & {
     current: string;
     easing: keyof typeof EASING_FUNCTIONS;
     fadeIn: number;

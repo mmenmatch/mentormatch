@@ -1,14 +1,14 @@
-"use client";
-import * as React from "react";
+'use client';
+import * as React from 'react';
 export const DEFAULT_SLIDER_CONFIG = {
   navSpacing: 3,
   navShadow: false,
   autoplay: false,
   delay: 4000,
   iconArrows: true,
-  animation: "slide",
+  animation: 'slide',
   navNumbers: true,
-  easing: "ease",
+  easing: 'ease',
   navRound: true,
   hideArrows: false,
   disableSwipe: false,

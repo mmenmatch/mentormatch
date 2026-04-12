@@ -1,15 +1,15 @@
-import React from "react";
-import FormForm from "./FormForm";
-import FormSuccessMessage from "./FormSuccessMessage";
-import FormErrorMessage from "./FormErrorMessage";
+import React from 'react';
+import FormForm from './FormForm';
+import FormSuccessMessage from './FormSuccessMessage';
+import FormErrorMessage from './FormErrorMessage';
 declare global {
   interface Window {
     grecaptcha: any;
   }
 }
-type FormState = "normal" | "success" | "error";
+type FormState = 'normal' | 'success' | 'error';
 declare const FormWrapper: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"div"> & {
+  import('./shared/types').ElementProps<'div'> & {
     children?: React.ReactNode | undefined;
   } & {
     state?: FormState;

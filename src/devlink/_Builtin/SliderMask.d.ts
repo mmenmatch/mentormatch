@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 type SliderMaskProps = React.PropsWithChildren<{
   className?: string;
 }>;

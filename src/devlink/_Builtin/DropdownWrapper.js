@@ -1,17 +1,17 @@
-"use client";
-import * as React from "react";
-import { useIXEvent } from "../interactions";
-import { cj, useClickOut, KEY_CODES } from "../utils";
-import { NavbarContext } from "./shared/navbarContext";
-import { DropdownContext } from "./shared/dropdownContext";
+'use client';
+import * as React from 'react';
+import { useIXEvent } from '../interactions';
+import { cj, useClickOut, KEY_CODES } from '../utils';
+import { NavbarContext } from './shared/navbarContext';
+import { DropdownContext } from './shared/dropdownContext';
 function getLinksList(root) {
-  return root.querySelectorAll(".w-dropdown-list .w-dropdown-link");
+  return root.querySelectorAll('.w-dropdown-list .w-dropdown-link');
 }
 const INITIAL_DROPDOWN_STATE = {
   isOpen: false,
   openingCount: 0,
 };
-function Dropdown({ tag = "div", className = "", ...props }) {
+function Dropdown({ tag = 'div', className = '', ...props }) {
   const { root, setFocusedLink, hover, toggleOpen } =
     React.useContext(DropdownContext);
   const { isOpen: isNavbarOpen } = React.useContext(NavbarContext);
@@ -74,8 +74,8 @@ function Dropdown({ tag = "div", className = "", ...props }) {
     },
     className: cj(
       className,
-      "w-dropdown",
-      isNavbarOpen && "w--nav-dropdown-open"
+      'w-dropdown',
+      isNavbarOpen && 'w--nav-dropdown-open'
     ),
   });
 }

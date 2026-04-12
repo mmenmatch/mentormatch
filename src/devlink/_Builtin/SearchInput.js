@@ -1,14 +1,14 @@
-"use client";
-import React from "react";
-import { onKeyDownInputHandlers } from "./shared/formUtils";
+'use client';
+import React from 'react';
+import { onKeyDownInputHandlers } from './shared/formUtils';
 const SearchInput = React.forwardRef(function SearchInput(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
-  return React.createElement("input", {
+  return React.createElement('input', {
     ...props,
-    type: "text",
-    className: className + " w-input",
+    type: 'text',
+    className: className + ' w-input',
     onKeyDown: onKeyDownInputHandlers,
     ref,
   });

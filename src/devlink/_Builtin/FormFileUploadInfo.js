@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 const FormFileUploadInfo = React.forwardRef(function FormFileUploadInfo(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
-  return React.createElement("div", {
-    className: className + " w-file-upload-info",
+  return React.createElement('div', {
+    className: className + ' w-file-upload-info',
     ...props,
     ref,
   });

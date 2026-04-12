@@ -1,22 +1,22 @@
-"use client";
-import * as React from "react";
-import { cj, KEY_CODES } from "../utils";
-import { NavbarContext } from "./shared/navbarContext";
-import { DropdownContext } from "./shared/dropdownContext";
+'use client';
+import * as React from 'react';
+import { cj, KEY_CODES } from '../utils';
+import { NavbarContext } from './shared/navbarContext';
+import { DropdownContext } from './shared/dropdownContext';
 const DropdownToggle = React.forwardRef(function DropdownToggle(
-  { tag = "div", className = "", ...props },
+  { tag = 'div', className = '', ...props },
   ref
 ) {
   const { isOpen, toggleOpen, hover } = React.useContext(DropdownContext);
   const { isOpen: isNavbarOpen } = React.useContext(NavbarContext);
   return React.createElement(tag, {
     ...props,
-    "aria-haspopup": "menu",
-    "aria-expanded": isOpen,
+    'aria-haspopup': 'menu',
+    'aria-expanded': isOpen,
     className: cj(
       className,
-      "w-dropdown-toggle",
-      isNavbarOpen && "w--nav-dropdown-toggle-open"
+      'w-dropdown-toggle',
+      isNavbarOpen && 'w--nav-dropdown-toggle-open'
     ),
     onClick: () => {
       if (!hover) toggleOpen();
@@ -28,7 +28,7 @@ const DropdownToggle = React.forwardRef(function DropdownToggle(
         return e.preventDefault();
       }
     },
-    role: "button",
+    role: 'button',
     tabIndex: 0,
     ref,
   });

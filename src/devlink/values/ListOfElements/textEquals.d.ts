@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 export declare const textEquals: (config: {
   text: string;
   caseSensitive: boolean;

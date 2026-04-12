@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 const FormInlineLabel = React.forwardRef(function FormInlineLabel(
-  { className = "", ...props },
+  { className = '', ...props },
   ref
 ) {
-  return React.createElement("span", {
-    className: className + " w-form-label",
+  return React.createElement('span', {
+    className: className + ' w-form-label',
     ...props,
     ref,
   });

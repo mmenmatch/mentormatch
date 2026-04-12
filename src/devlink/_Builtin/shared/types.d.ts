@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 export type ElementProps<T extends keyof HTMLElementTagNameMap> =
   React.HTMLAttributes<HTMLElementTagNameMap[T]>;
 export type Props<
   T extends keyof HTMLElementTagNameMap,
-  U = unknown
+  U = unknown,
 > = ElementProps<T> & React.PropsWithChildren<U>;
 export type TagProps = Props<
   keyof HTMLElementTagNameMap,
@@ -13,12 +13,12 @@ export type TagProps = Props<
   }
 >;
 export type LinkProps = Props<
-  "a",
+  'a',
   {
     options?: {
       href: string;
-      target?: "_self" | "_blank";
-      preload?: "none" | "prefetch" | "prerender";
+      target?: '_self' | '_blank';
+      preload?: 'none' | 'prefetch' | 'prerender';
     };
     className?: string;
     button?: boolean;

@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import FormForm from "./FormForm";
-import FormSuccessMessage from "./FormSuccessMessage";
-import FormErrorMessage from "./FormErrorMessage";
+'use client';
+import React from 'react';
+import FormForm from './FormForm';
+import FormSuccessMessage from './FormSuccessMessage';
+import FormErrorMessage from './FormErrorMessage';
 const FormWrapper = React.forwardRef(function FormWrapper(
   {
-    className = "",
-    state: initialState = "normal",
+    className = '',
+    state: initialState = 'normal',
     onSubmit,
     children,
     ...props
@@ -15,19 +15,19 @@ const FormWrapper = React.forwardRef(function FormWrapper(
 ) {
   const [state, setState] = React.useState(initialState);
   const formName =
-    (children.find((c) => c.type === FormForm)?.props)["data-name"] ?? "Form";
+    (children.find((c) => c.type === FormForm)?.props)['data-name'] ?? 'Form';
   return React.createElement(
-    "div",
+    'div',
     {
-      className: className + " w-form",
+      className: className + ' w-form',
       ...props,
       ref,
     },
     React.Children.map(children, (child) => {
       if (child.type === FormForm) {
         const style = {};
-        if (state === "success") {
-          style.display = "none";
+        if (state === 'success') {
+          style.display = 'none';
         }
         return React.cloneElement(child, {
           ...child.props,
@@ -44,44 +44,44 @@ const FormWrapper = React.forwardRef(function FormWrapper(
               if (onSubmit) {
                 onSubmit(e);
               }
-              setState("success");
+              setState('success');
             } catch (err) {
-              setState("error");
+              setState('error');
               throw err;
             }
           },
-          "aria-label": formName,
+          'aria-label': formName,
         });
       }
       if (child.type === FormSuccessMessage) {
         const style = {};
-        if (state === "success") {
-          style.display = "block";
+        if (state === 'success') {
+          style.display = 'block';
         }
-        if (state === "error") {
-          style.display = "none";
+        if (state === 'error') {
+          style.display = 'none';
         }
         return React.cloneElement(child, {
           ...child.props,
           style,
           tabIndex: -1,
-          role: "region",
-          "aria-label": `${formName} success`,
+          role: 'region',
+          'aria-label': `${formName} success`,
         });
       }
       if (child.type === FormErrorMessage) {
         const style = {};
-        if (state === "success") {
-          style.display = "none";
+        if (state === 'success') {
+          style.display = 'none';
         }
-        if (state === "error") {
-          style.display = "block";
+        if (state === 'error') {
+          style.display = 'block';
         }
         return React.cloneElement(child, {
           ...child.props,
           tabIndex: -1,
-          role: "region",
-          "aria-label": `${formName} failure`,
+          role: 'region',
+          'aria-label': `${formName} failure`,
           style,
         });
       }

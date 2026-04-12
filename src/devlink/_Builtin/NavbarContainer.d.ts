@@ -1,5 +1,5 @@
-import * as React from "react";
-import { TagProps } from "./shared/types";
+import * as React from 'react';
+import { TagProps } from './shared/types';
 type NavbarContainerProps = TagProps & {
   toggleOpen?: () => void;
   isOpen?: boolean;
@@ -7,7 +7,7 @@ type NavbarContainerProps = TagProps & {
 };
 export type { NavbarContainerProps };
 declare const NavbarContainer: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<keyof HTMLElementTagNameMap> & {
+  import('./shared/types').ElementProps<keyof HTMLElementTagNameMap> & {
     tag?: React.ElementType;
     grid?: unknown;
   } & {

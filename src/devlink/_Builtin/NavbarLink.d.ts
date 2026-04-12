@@ -1,13 +1,13 @@
-import * as React from "react";
-import { LinkProps } from "./Link";
+import * as React from 'react';
+import { LinkProps } from './Link';
 type NavbarLinkProps = LinkProps;
 export type { NavbarLinkProps };
 declare const NavbarLink: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"a"> & {
+  import('./shared/types').ElementProps<'a'> & {
     options?: {
       href: string;
-      target?: "_self" | "_blank";
-      preload?: "none" | "prefetch" | "prerender";
+      target?: '_self' | '_blank';
+      preload?: 'none' | 'prefetch' | 'prerender';
     };
     className?: string;
     button?: boolean;

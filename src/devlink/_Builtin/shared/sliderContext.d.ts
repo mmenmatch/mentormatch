@@ -1,12 +1,12 @@
-import * as React from "react";
-import { EASING_FUNCTIONS } from "../../utils";
+import * as React from 'react';
+import { EASING_FUNCTIONS } from '../../utils';
 export type SliderConfig = {
   navSpacing: number;
   navShadow: boolean;
   autoplay: boolean;
   delay: number;
   iconArrows: boolean;
-  animation: "slide" | "cross" | "outin" | "fade" | "over";
+  animation: 'slide' | 'cross' | 'outin' | 'fade' | 'over';
   navNumbers: boolean;
   easing: keyof typeof EASING_FUNCTIONS;
   navRound: boolean;

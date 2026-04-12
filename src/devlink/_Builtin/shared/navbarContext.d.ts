@@ -1,5 +1,5 @@
-import * as React from "react";
-import { EASING_FUNCTIONS } from "../../utils";
+import * as React from 'react';
+import { EASING_FUNCTIONS } from '../../utils';
 declare const BREAKPOINTS: {
   medium: number;
   small: number;

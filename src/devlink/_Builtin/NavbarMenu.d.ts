@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 type NavbarMenuProps = React.PropsWithChildren<
   React.HTMLAttributes<HTMLElement> & {
     tag?: React.ElementType;

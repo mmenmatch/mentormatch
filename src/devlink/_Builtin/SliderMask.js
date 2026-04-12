@@ -1,7 +1,7 @@
-"use client";
-import * as React from "react";
-import { cj } from "../utils";
-import { SliderContext } from "./shared/sliderContext";
+'use client';
+import * as React from 'react';
+import { cj } from '../utils';
+import { SliderContext } from './shared/sliderContext';
 function useAutoplay() {
   const {
     autoplay,
@@ -31,7 +31,7 @@ function useAutoplay() {
   return { resumeAutoplay, pauseAutoplay };
 }
 const SliderMask = React.forwardRef(function SliderMask(
-  { className = "", children, ...props },
+  { className = '', children, ...props },
   ref
 ) {
   const { setSlideAmount } = React.useContext(SliderContext);
@@ -58,10 +58,10 @@ const SliderMask = React.forwardRef(function SliderMask(
     setSlides(_slides);
   }, [children]);
   return React.createElement(
-    "div",
+    'div',
     {
       ...props,
-      className: cj(className, "w-slider-mask"),
+      className: cj(className, 'w-slider-mask'),
       onMouseEnter: () => {
         pauseAutoplay();
         setHovered(true);
@@ -80,10 +80,10 @@ const SliderMask = React.forwardRef(function SliderMask(
         index,
       });
     }),
-    React.createElement("div", {
-      "aria-live": isHovered ? "polite" : "off",
-      "aria-atomic": "true",
-      className: "w-slider-aria-label",
+    React.createElement('div', {
+      'aria-live': isHovered ? 'polite' : 'off',
+      'aria-atomic': 'true',
+      className: 'w-slider-aria-label',
     })
   );
 });

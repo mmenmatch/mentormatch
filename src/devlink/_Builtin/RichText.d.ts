@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 declare const RichText: React.ForwardRefExoticComponent<
-  import("./shared/types").ElementProps<"div"> & {
+  import('./shared/types').ElementProps<'div'> & {
     tag?: React.ElementType;
   } & {
     children?: React.ReactNode | undefined;

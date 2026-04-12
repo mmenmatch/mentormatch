@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 declare function FaQsMainUpdated(props: {
   as?: React.ElementType;

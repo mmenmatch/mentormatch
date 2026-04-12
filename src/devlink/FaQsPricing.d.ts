@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 declare function FaQsPricing(props: {
   as?: React.ElementType;

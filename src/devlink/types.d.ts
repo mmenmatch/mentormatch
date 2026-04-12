@@ -1,13 +1,13 @@
-import * as React from "react";
+import * as React from 'react';
 export type CSSModules = {
   [sel: string]: string;
 };
 export declare namespace Basic {
   type PreloadedLink = {
-    preload?: "prerender" | "prefetch" | "none";
+    preload?: 'prerender' | 'prefetch' | 'none';
   };
   type TargetedLink = {
-    target?: "_self" | "_blank";
+    target?: '_self' | '_blank';
   };
   type PreloadedAndTargetedLink = PreloadedLink & TargetedLink;
   export type Link = {

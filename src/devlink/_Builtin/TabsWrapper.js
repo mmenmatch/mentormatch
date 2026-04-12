@@ -1,10 +1,10 @@
-"use client";
-import * as React from "react";
-import { cj, debounce, EASING_FUNCTIONS, useLayoutEffect } from "../utils";
-import { tabsContext } from "./shared/tabsContext";
+'use client';
+import * as React from 'react';
+import { cj, debounce, EASING_FUNCTIONS, useLayoutEffect } from '../utils';
+import { tabsContext } from './shared/tabsContext';
 const TabsWrapper = React.forwardRef(function TabsWrapper(
   {
-    className = "",
+    className = '',
     fadeIn,
     fadeOut,
     easing,
@@ -13,7 +13,7 @@ const TabsWrapper = React.forwardRef(function TabsWrapper(
   },
   ref
 ) {
-  const [current, setCurrent] = React.useState("");
+  const [current, setCurrent] = React.useState('');
   const changeTab = React.useCallback(
     (next) => {
       function updateTab() {
@@ -31,10 +31,10 @@ const TabsWrapper = React.forwardRef(function TabsWrapper(
       const nextTab = document.querySelector(
         `.w-tab-pane[data-w-tab="${next}"]`
       );
-      const easingFn = EASING_FUNCTIONS[easing] ?? "ease";
+      const easingFn = EASING_FUNCTIONS[easing] ?? 'ease';
       const animation = currentTab?.animate([{ opacity: 1 }, { opacity: 0 }], {
         duration: fadeOut,
-        fill: "forwards",
+        fill: 'forwards',
         easing: easingFn,
       });
       if (animation) {
@@ -42,7 +42,7 @@ const TabsWrapper = React.forwardRef(function TabsWrapper(
           updateTab();
           nextTab?.animate([{ opacity: 0 }, { opacity: 1 }], {
             duration: fadeIn,
-            fill: "forwards",
+            fill: 'forwards',
             easing: easingFn,
           });
         };
@@ -66,31 +66,31 @@ const TabsWrapper = React.forwardRef(function TabsWrapper(
     const currentTab = document.querySelector(
       `.w-tab-pane[data-w-tab="${current}"]`
     );
-    const allTabs = document.querySelectorAll(".w-tab-pane");
+    const allTabs = document.querySelectorAll('.w-tab-pane');
     const firstTab = allTabs[0];
     const lastTab = allTabs[allTabs.length - 1];
     const nextTab = (() => {
       switch (event.key) {
-        case "ArrowUp":
-        case "ArrowLeft":
+        case 'ArrowUp':
+        case 'ArrowLeft':
           return currentTab.previousElementSibling ?? lastTab;
-        case "ArrowDown":
-        case "ArrowRight":
+        case 'ArrowDown':
+        case 'ArrowRight':
           return currentTab.nextElementSibling ?? firstTab;
-        case "Home":
+        case 'Home':
           return firstTab;
-        case "End":
+        case 'End':
           return lastTab;
       }
     })();
-    if (nextTab) changeTab(nextTab.getAttribute("data-w-tab"));
+    if (nextTab) changeTab(nextTab.getAttribute('data-w-tab'));
   });
   return React.createElement(
     tabsContext.Provider,
     { value: { current, onTabClick, onLinkKeyDown } },
-    React.createElement("div", {
+    React.createElement('div', {
       ...props,
-      className: cj(className, "w-tabs"),
+      className: cj(className, 'w-tabs'),
       ref: ref,
     })
   );
