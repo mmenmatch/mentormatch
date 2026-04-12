@@ -30,6 +30,7 @@ const HeroSection = () => {
               <Image
                 src={HeroStudentAvatar}
                 alt="hero"
+                loading="lazy"
                 // width={ 100 }
               />
             </div>
@@ -52,6 +53,7 @@ const HeroSection = () => {
             src={HeroImage}
             alt="hero"
             className="xl:max-w-full xl:max-h-full max-w-75 max-h-70 object-contain"
+            loading="lazy"
           />
         </div>
       </div>

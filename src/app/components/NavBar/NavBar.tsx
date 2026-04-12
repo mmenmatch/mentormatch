@@ -12,9 +12,10 @@ const NavBar = () => {
           <img
             src="https://cdn.prod.website-files.com/660d0c07422cfeca80d26d7d/6626114f2c2dbd34ed07beb4_Text%20logo_website%20blue2.webp"
             alt="mentor match logo"
+            loading="lazy"
           />
         </div>
-        {!isMobile && (
+        {/* {!isMobile && (
           <div className="flex items-center gap-8 justify-between xl:text-[1rem] sm:text-[0.5rem] px-8 w-full">
             <div className="menu-items flex items-center">
               <ul className="list-none  gap-8  items-center mb-0 text-[#838d95] font-bold py-4  flex">
@@ -34,10 +35,10 @@ const NavBar = () => {
               </button>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
-  );
+  )
 };
 
 export default NavBar;

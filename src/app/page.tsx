@@ -2,6 +2,7 @@ import { myFont } from '../../public/fonts/local';
 import NavBar from './components/NavBar/NavBar';
 import HeroSection from './components/HeroSection/HeroSection';
 import GoogleReview from './components/GoogleReview/GoogleReview';
+import { Form } from './components/Form/Form'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <GoogleReview />
+      {/* <Form /> */}
     </div>
-  );
+  )
 }

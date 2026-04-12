@@ -44,5 +44,5 @@ export default function RootLayout({
         </DevLinkProvider>
       </body>
     </html>
-  );
+  )
 }

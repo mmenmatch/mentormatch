@@ -5,7 +5,7 @@ const GoogleReview = () => {
   return (
     <Container>
       <div className="google-reviews flex flex-col justify-center items-center gap-8">
-        <h2 className="text-black text-5xl font-extrabold">
+        <h2 className="text-black xl:text-5xl font-extrabold  text-2xl leading-[120%] xl:text-left text-center">
           Here's What Parents Are Saying
         </h2>
         <script src="https://elfsightcdn.com/platform.js" async></script>
@@ -15,7 +15,7 @@ const GoogleReview = () => {
         ></div>
       </div>
     </Container>
-  );
+  )
 };
 
 export default GoogleReview;
