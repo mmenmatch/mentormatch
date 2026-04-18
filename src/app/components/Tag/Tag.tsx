@@ -17,9 +17,9 @@ const Tag = ({ title, icon }: TagProps) => {
           className="w-full xl:h-4 h-3 object-contain"
         />
       </div>
-      <p className="2xl:text-[1rem] text-[0.75rem] font-bold">{title}</p>
+      <p className="2xl:text-[1rem] text-[0.75rem] font-bold mb-0">{title}</p>
     </div>
-  );
+  )
 };
 
 export default Tag;

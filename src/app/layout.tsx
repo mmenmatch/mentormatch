@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Inter, Poppins } from 'next/font/google';
-import './globals.css';
+// import './globals.css';
+import '../app/globals.css'
 import { DevLinkProvider } from '@/devlink/DevLinkProvider';
-
+// import 'react-phone-number-input/style.css'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',

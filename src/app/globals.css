@@ -1,7 +1,6 @@
 /* If you want tailwind 'base' styles to override 'webflow' styles, re-order the layers */
 @layer properties, theme, base, webflow, components, utilities;
 
-/* Webflow global styles are imported in the 'webflow' layer */
 @import '../devlink/global.css' layer(webflow);
 @import 'tailwindcss';
 
@@ -30,6 +29,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+/* p {
+  margin-bottom: 0; */
+/* } */
+.iti {
+  width:100% !important;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px black;
+  /* shadow-[3px_3px_0px_black] */
+/* margin-bottom: 10px; */
+}
+.iti__tel-input{
+height: 40px;
+}
+.iti__tel-input:focus{
+border: none;
+outline: none;}
+
+label{
   margin-bottom: 0;
+}
+
+.primary-paper-texture{
+   background-color: #006CFF; 
+  /* background-image: url('/assets/Images/primary-paper-1.webp'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-image: url('../../public/assets/Images/primary-paper-1.webp');
+  /* min-height: 400px; */
 }
