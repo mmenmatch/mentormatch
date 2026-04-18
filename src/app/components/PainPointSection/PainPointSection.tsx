@@ -23,11 +23,13 @@ export const PainPointSection = () => {
             <Image
               src={StudentImageB}
               alt="test"
+              loading="lazy"
               className={`w-full h-full xl:min-w-50 min-w-5  object-cover xl:absolute  ${isSolutionActive ? 'absolute opacity-0' : ''}`}
             />
             <Image
               src={StudentImageA}
               alt="test"
+              loading="lazy"
               className={`w-full h-full min-w-50 object-cover xl:absolute   ${!isSolutionActive ? ' absolute opacity-0' : ''}`}
             />
           </div>
