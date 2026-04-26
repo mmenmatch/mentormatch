@@ -30,10 +30,10 @@ export default function GettingStarted() {
   return (
     <div className="mx-auto max-w-360 w-full flex items-center py-8 px-4">
       <div className="w-full flex flex-col justify-center items-center gap-8">
-        <h2 className="text-center text-[2.5rem] font-extrabold mb-8">
+        <h2 className="text-center xl:text-[2.5rem] text-[1.85rem] font-extrabold mb-8">
           Our 3-Step Formula for A+ Success!
         </h2>
-        <div className="w-full flex ">
+        <div className="w-full flex xl:flex-row flex-col gap-8 ">
           {gettingStarted?.map((ele: any) => (
             <div className="w-full flex flex-col justify-around items-center">
               <div className="min-w-[33%] max-w-100  flex flex-col justify-center items-center text-center">
