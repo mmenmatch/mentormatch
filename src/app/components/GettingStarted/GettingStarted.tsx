@@ -38,7 +38,7 @@ export default function GettingStarted() {
             <div className="w-full flex flex-col justify-around items-center">
               <div className="min-w-[33%] max-w-100  flex flex-col justify-center items-center text-center">
                 <div className="w-full max-w-70 flex justify-center items-center rounded-2xl overflow-hidden">
-                  <Image src={ele.img} alt="Mentor Match" />
+                  <Image src={ele.img} alt="Mentor Match" loading="lazy" />
                 </div>
                 <h3>{ele.heading}</h3>
                 <p className="max-w-100 text-[1.25rem] leading-[120%]">

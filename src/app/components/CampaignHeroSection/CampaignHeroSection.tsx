@@ -8,7 +8,12 @@ export default function CampaignHeroSection() {
     <div className=" w-full flex items-center py-8 bg-[#f8f6f6]">
       <div className="w-full flex justify-between items-center gap-4">
         <div className="w-[25%]  min-h-75 xl:block hidden">
-          <Image src={TutorImage} className="" alt="Mentor Match" />
+          <Image
+            src={TutorImage}
+            className=""
+            alt="Mentor Match"
+            loading="lazy"
+          />
         </div>
         <div className="xl:w-[50%] w-full flex flex-col justify-center items-center gap-4 mx-4 ">
           <div className="flex gap-4">
@@ -17,10 +22,16 @@ export default function CampaignHeroSection() {
                 src={TutorImage}
                 className="object-cover"
                 alt="Mentor Match"
+                loading="lazy"
               />
             </div>
             <div className="w-[50%] xl:hidden block">
-              <Image src={KidImage} className="h-full" alt="Mentor Match" />
+              <Image
+                src={KidImage}
+                className="h-full"
+                alt="Mentor Match"
+                loading="lazy"
+              />
             </div>
           </div>
           <h1 className="text-center xl:text-[2.8rem] text-[1.85rem] leading-[100%] font-extrabold ">
@@ -61,7 +72,7 @@ export default function CampaignHeroSection() {
           </form>
         </div>
         <div className="w-[25%] min-h-75  xl:block hidden">
-          <Image src={KidImage} alt="Mentor Match" />
+          <Image src={KidImage} alt="Mentor Match" loading="lazy" />
         </div>{' '}
       </div>
     </div>

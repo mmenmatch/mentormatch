@@ -11,7 +11,6 @@ export default function Home() {
       <HeroSection />
       <PainPointSection />
       <GoogleReview />
-
       <Form />
     </div>
   )
