@@ -10,7 +10,19 @@ export default function CampaignHeroSection() {
         <div className="w-[25%]  min-h-75 xl:block hidden">
           <Image src={TutorImage} className="" alt="Mentor Match" />
         </div>
-        <div className="xl:w-[50%] w-full flex flex-col justify-center items-center gap-4 ">
+        <div className="xl:w-[50%] w-full flex flex-col justify-center items-center gap-4 mx-4 ">
+          <div className="flex gap-4">
+            <div className="w-[50%]  xl:hidden block ">
+              <Image
+                src={TutorImage}
+                className="object-cover"
+                alt="Mentor Match"
+              />
+            </div>
+            <div className="w-[50%] xl:hidden block">
+              <Image src={KidImage} className="h-full" alt="Mentor Match" />
+            </div>
+          </div>
           <h1 className="text-center xl:text-[2.8rem] text-[1.85rem] leading-[100%] font-extrabold ">
             Personalized 1-on-1 Tutoring Catered to Your Child
           </h1>
@@ -19,7 +31,7 @@ export default function CampaignHeroSection() {
             100
           </p>
           <form className="xl:min-w-150 flex flex-col gap-4 mx-auto">
-            <div className="flex gap-4 justify-center">
+            <div className="w-full flex gap-4 justify-center">
               <input
                 type="text"
                 className="w-full min-h-10 border bg-white border-[#c0c0c0] p-2 rounded"
