@@ -40,10 +40,10 @@ export const Form = () => {
     <div className="py-8 px-4">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto  my-8 max-w-100 border  px-8 py-8 shadow-[1px_1px_0mpx_black] rounded-2xl"
+        className="mx-auto  border  px-8 py-8 shadow-[1px_1px_0mpx_black] rounded-2xl"
       >
         <div className="flex justify-center items-center">
-          <h2 className="text-3xl">Book A Free Trial</h2>
+          {/* <h2 className="text-3xl">Book A Free Trial</h2> */}
         </div>
         <Input
           name="firstname"
@@ -142,7 +142,7 @@ export const Form = () => {
 
         <button
           type="submit"
-          className="w-full mt-8 shadow-[3px_3px_0px_black] border-1 border-black xl:px-8 xl:py-3 px-6 py-2 text-white rounded text-[1rem] font-extrabold bg-[#2b51ff]"
+          className="w-full mt-8  border-1 border-black xl:px-8 xl:py-3 px-6 py-2 text-white rounded text-[1rem] font-extrabold bg-[#2b51ff]"
         >
           Book A Free Trial
         </button>

@@ -37,7 +37,7 @@ body {
   height: 40px;
   border: 1px solid black;
   border-radius: 4px;
-  box-shadow: 3px 3px 0px black;
+  /* box-shadow: 3px 3px 0px black; */
   /* shadow-[3px_3px_0px_black] */
 /* margin-bottom: 10px; */
 }

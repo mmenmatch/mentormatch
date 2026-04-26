@@ -38,7 +38,7 @@ export const Input = ({
 }: InputProps) => {
   const error = errors?.[name]
   return (
-    <div className="custom-mm-input flex flex-col relative mb-4 min-h-12 p-1  rounded">
+    <div className="custom-mm-input flex flex-col relative mb-2 min-h-12 p-1  rounded">
       <label
         className={`w-full px-1 -top-2.5 left-3 bg-white text-[0.75rem] font-normal
            ${errors[name] ? 'text-red-600' : ''}
@@ -51,7 +51,7 @@ export const Input = ({
         )}
       </label>
       <input
-        className={`peer w-full shadow-[3px_3px_0px_black] h-10  border-1 focus:outline-0 rounded min-h-6  px-4  `}
+        className={`peer w-full  h-10  border-1 focus:outline-0 rounded min-h-6  px-4  `}
         name={name}
         maxLength={max}
         minLength={min}
