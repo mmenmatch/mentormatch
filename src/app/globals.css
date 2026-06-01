@@ -3,7 +3,10 @@
 
 @import '../devlink/global.css' layer(webflow);
 @import 'tailwindcss';
+/* globals.css */
+@import 'react-phone-number-input/style.css';
 
+/* rest of your styles... */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -54,10 +57,38 @@ label{
 
 .primary-paper-texture{
    background-color: #006CFF; 
-  /* background-image: url('/assets/Images/primary-paper-1.webp'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
   background-image: url('../../public/assets/Images/primary-paper-1.webp');
-  /* min-height: 400px; */
+}
+
+
+/* Phone input overrides */
+.phone-input-wrapper .PhoneInput {
+  display: flex;
+  gap: 8px;
+}
+.phone-input-wrapper .PhoneInputInput {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+.phone-input-wrapper .PhoneInputInput:focus {
+  box-shadow: 0 0 0 2px #bfdbfe;
+  border-color: #93c5fd;
+}
+.phone-error .PhoneInputInput {
+  border-color: #f87171;
+}
+.phone-input-wrapper .PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
 }
