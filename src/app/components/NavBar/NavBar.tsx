@@ -24,7 +24,7 @@ const NavBar = () => {
                   behavior: 'smooth',
                 })
               }}
-              className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.85rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
+              className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
             >
               Book A Free Trial
