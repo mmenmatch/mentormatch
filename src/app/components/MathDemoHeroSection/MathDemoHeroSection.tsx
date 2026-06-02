@@ -19,7 +19,7 @@ export default function MathDemoHeroSection() {
           <Image
             src={MathImage}
             alt="hero"
-            loading="lazy"
+            fetchPriority="high"
             className="md:w-80 w-50 mb-4"
           />
           <div className="flex flex-col items-center md:gap-3 ">
