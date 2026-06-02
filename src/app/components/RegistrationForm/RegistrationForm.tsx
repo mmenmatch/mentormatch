@@ -1,14 +1,19 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
+import type { Country } from 'react-phone-number-input'
 
 const schema = z.object({
-  parentName: z.string().min(3, 'Minimum 3 characters required'),
+  // parentName: z.string().min(3, 'Minimum 3 characters required'),
   childName: z.string().min(3, 'Minimum 3 characters required'),
+  email: z
+    .string()
+    .min(1, 'Email Address is required')
+    .email({ message: 'Please Enter a Valid Email Address' }),
   grade: z.string().min(1, 'Please select a grade'),
   phone: z
     .string()
@@ -31,23 +36,38 @@ const GRADES = [
 ]
 
 export default function RegistrationForm() {
+  const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
+
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error'
   >('idle')
+
+  useEffect(() => {
+    fetch('https://ipapi.co/json/')
+      .then((res) => res.json())
+      .then((data: any) => {
+        if (data?.country_code) {
+          setDetectedCountry(data?.country_code as Country)
+        }
+      })
+      .catch(() => {
+        // silently fall back to 'IN'
+      })
+  }, [])
 
   const {
     register,
     handleSubmit,
     control,
     watch,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
     mode: 'onChange', // validates while typing
   })
 
   // Watch values to stop error once min length is met
-  const parentName = watch('parentName', '')
+  const email = watch('email', '')
   const childName = watch('childName', '')
 
   const onSubmit = async (data: FormData) => {
@@ -67,7 +87,7 @@ export default function RegistrationForm() {
   }
 
   return (
-    <div className="w-full  mx-auto p-6  font-light">
+    <div className="w-full  mx-auto p-6  font-light" id="cta">
       <h2 className="md:text-[2rem] text-[6vw]  font-medium md:text-left  text-center  mb-4 text-gray-800">
         Book a <span className="text-[#2B23FF] font-bold">Free Trial</span> for
         your child!
@@ -79,22 +99,22 @@ export default function RegistrationForm() {
         {/* Parent Name */}
         <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem] font-medium text-gray-700 ">
-            Parent Name <span className="text-red-500">*</span>
+            Parent's Email Address<span className="text-red-500">*</span>
           </label>
           <input
-            {...register('parentName')}
-            placeholder="Enter parent's name"
+            {...register('email')}
+            placeholder="Enter parent's email address"
             className={`w-full px-4 py-3 border rounded-lg outline-none transition
               ${
-                errors.parentName
+                errors.email
                   ? 'border-red-400 focus:ring-2 focus:ring-red-200'
                   : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
               }`}
           />
           {/* Only show error while under 3 chars; disappears once valid */}
-          {errors.parentName && parentName.length < 3 && (
+          {errors.email && (
             <p className="text-red-500 text-xs mt-0 mb-0">
-              {errors.parentName.message}
+              {errors.email.message}
             </p>
           )}
         </div>
@@ -150,47 +170,48 @@ export default function RegistrationForm() {
         </div>
 
         {/* Phone Number with Country Code */}
-        <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem] font-medium text-gray-700 mb-1">
-            Phone Number <span className="text-red-500">*</span>
-          </label>
-          <Controller
-            name="phone"
-            control={control}
-            render={({ field: { onChange, value } }) => (
-              <PhoneInput
-                international
-                defaultCountry="IN" // change default to your target country
-                value={value}
-                onChange={onChange}
-                className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
-              />
+        {detectedCountry && (
+          <div className="flex flex-col gap-2 mb-4">
+            <label className="block text-[1rem] font-medium text-gray-700 mb-1">
+              Phone Number <span className="text-red-500">*</span>
+            </label>
+            <Controller
+              name="phone"
+              control={control}
+              render={({ field: { onChange, value } }) => (
+                // <PhoneInput
+                //   international
+                //   defaultCountry="AE" // change default to your target country
+                //   value={value}
+                //   onChange={onChange}
+                //   className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
+                // />
+                <PhoneInput
+                  international
+                  defaultCountry={detectedCountry} // 👈 dynamic instead of hardcoded "IN"
+                  value={value}
+                  onChange={onChange}
+                  className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
+                />
+              )}
+            />
+            {errors.phone && (
+              <p className="text-red-500 text-xs mt-0  mb-0">
+                {errors.phone.message}
+              </p>
             )}
-          />
-          {errors.phone && (
-            <p className="text-red-500 text-xs mt-0  mb-0">
-              {errors.phone.message}
-            </p>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Submit */}
         <button
           type="submit"
-          disabled={status === 'loading'}
+          disabled={!isValid || status === 'loading'}
           className="w-full py-4 bg-[#2B23FF] text-white font-semibold rounded-lg
-            hover:bg-[#2B23FF] disabled:opacity-50 transition text-[1rem]"
+            hover:bg-[#2B23FF] disabled:bg-gray-300 transition text-[1rem]"
         >
           {status === 'loading' ? 'Submitting...' : 'Book A Free Trial'}
         </button>
-        {/* <button
-          type="submit"
-          disabled={status === 'loading'}
-          className="w-full py-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold 
-            hover:bg-[#2B23FF] disabled:opacity-50 transition text-[1rem]"
-        >
-          {status === 'loading' ? 'Submitting...' : 'Book A Free Trial'}
-        </button> */}
 
         {status === 'success' && (
           <p className="text-green-600 text-center text-sm font-medium">
