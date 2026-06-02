@@ -72,12 +72,25 @@ export default function RegistrationForm() {
 
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
-    console.log('data', data)
+    const params = new URLSearchParams(window.location.search)
+
+    const payload = {
+      ...data,
+      pageUrl: window.location.href,
+      referrer: document.referrer,
+      utm_source: params.get('utm_source'),
+      utm_medium: params.get('utm_medium'),
+      utm_campaign: params.get('utm_campaign'),
+      utm_content: params.get('utm_content'),
+      utm_term: params.get('utm_term'),
+    }
+    // console.log('data', payload)
+
     try {
-      const res = await fetch('/api/submit-form', {
+      const res = await fetch('/app/api/submit-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
       setStatus('success')

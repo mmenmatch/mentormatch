@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import '../app/globals.css'
 import { DevLinkProvider } from '@/devlink/DevLinkProvider';
 import 'react-phone-number-input/style.css'
+import Script from 'next/script'
 
 
 const poppins = Poppins({
@@ -31,6 +32,22 @@ export default function RootLayout({
           {/* Add here any Footer you want to be present on all pages */}
         </DevLinkProvider>
       </body>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=G-QRV66J4E1V`}
+        strategy="afterInteractive"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-QRV66J4E1V', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
     </html>
   )
 }
