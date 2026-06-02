@@ -14,7 +14,7 @@ export default function page() {
     <div className="w-full">
       <NavBar />
       <div className="w-full">
-        <div className="max-w-360 mx-auto md:px-16 px-0 mb-8">
+        <div className="max-w-360 mx-auto lg:px-16 md:px-16 px-0 mb-8">
           <MathDemoHeroSection />
           <MathDemoBottomCard />
         </div>
