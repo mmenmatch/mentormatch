@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import type { Country } from 'react-phone-number-input'
-
+import { useRouter } from 'next/navigation'
 const schema = z.object({
   // parentName: z.string().min(3, 'Minimum 3 characters required'),
   childName: z.string().min(3, 'Minimum 3 characters required'),
@@ -41,6 +41,7 @@ export default function RegistrationForm() {
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error'
   >('idle')
+  const router = useRouter()
 
   useEffect(() => {
     fetch('https://ipapi.co/json/')
@@ -93,6 +94,8 @@ export default function RegistrationForm() {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
+      router.push('https://www.mentormatch.com/success-page')
+
       setStatus('success')
     } catch {
       setStatus('error')
@@ -228,7 +231,7 @@ export default function RegistrationForm() {
 
         {status === 'success' && (
           <p className="text-green-600 text-center text-sm font-medium">
-            ✅ Registration successful!
+            ✅ Your Free Trial Has Been Booked Successfully!
           </p>
         )}
         {status === 'error' && (
