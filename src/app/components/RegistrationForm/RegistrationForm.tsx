@@ -18,6 +18,8 @@ const schema = z.object({
     .email({ message: 'Please Enter a Valid Email Address' }),
   grade: z.string().min(1, 'Please select a grade'),
   subject: z.string().min(1, 'Please select a subject'),
+  pricingAccepted: z.string().min(1, 'Please select an option'),
+
   // curriculum: z.string().min(1, 'Please select a curriculum'),
   phone: z
     .string()
@@ -25,9 +27,9 @@ const schema = z.object({
     .refine((val) => isValidPhoneNumber(val), {
       message: 'Invalid phone number for selected country',
     }),
-  pricingAccepted: z.enum(['yes', 'no'], {
-    message: 'Please select an option',
-  }),
+  // pricingAccepted: z.enum(['yes', 'no'], {
+  //   message: 'Please select an option',
+  // }),
 })
 
 type FormData = z.infer<typeof schema>
@@ -52,13 +54,14 @@ const CURRICULUM = [
   'Other',
 ]
 
+const PRICE = ['Yes, I want to apply', 'No, it is outside my budget']
+
 export default function RegistrationForm() {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
   const pricingLabel =
     detectedCountry === 'AE'
       ? 'Our fee is AED 499/month'
       : 'Our fee is ₹7,999/month'
-  console.log('detectedCountry', detectedCountry)
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error'
   >('idle')
@@ -96,7 +99,7 @@ export default function RegistrationForm() {
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
     const params = new URLSearchParams(window.location.search)
-console.log('data', data)
+    console.log('data', data)
     const payload = {
       ...data,
       pageUrl: window.location.href,
@@ -125,7 +128,7 @@ console.log('data', data)
 
   return (
     <div className="w-full  mx-auto md:p-0 p-4  font-light" id="cta">
-      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 text-gray-800">
+      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 md:text-gray-800">
         Book a <span className="text-[#2B23FF] font-bold">Free Trial</span> for
         your child!
       </h2>
@@ -289,36 +292,34 @@ console.log('data', data)
           )}
         </div>
 
-        {/*Curriculum*/}
-        {/* <div className="flex flex-col gap-2 mb-4">
+        {/*Pricing...*/}
+        <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
-            Curriculum <span className="text-red-500">*</span>
+            {pricingLabel} <span className="text-red-500">*</span>
           </label>
           <select
-            {...register('curriculum')}
+            {...register('pricingAccepted')}
             className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
               ${
-                errors?.curriculum
+                errors?.pricingAccepted
                   ? 'border-red-400 focus:ring-2 focus:ring-red-200'
                   : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
               }`}
           >
-            <option value="">Select a curriculum</option>
-            {CURRICULUM?.map((g) => (
+            <option value="">Select a option</option>
+            {PRICE?.map((g) => (
               <option key={g} value={g}>
                 {g}
               </option>
             ))}
           </select>
-          {errors?.curriculum && (
+          {errors?.pricingAccepted && (
             <p className="text-red-500 text-xs mt-0  mb-0">
-              {errors?.curriculum.message}
+              {errors?.pricingAccepted.message}
             </p>
           )}
-        </div> */}
-
-        {/*Pricing...*/}
-        <div className="flex flex-col gap-2 mb-4">
+        </div>
+        {/* <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem] font-medium text-gray-700">
             {pricingLabel} <span className="text-red-500">*</span>
           </label>
@@ -342,7 +343,8 @@ console.log('data', data)
           {errors.pricingAccepted && (
             <p className="text-red-500 text-xs">Please select an option</p>
           )}
-        </div>
+        </div> */}
+
         {/* Submit */}
         <button
           type="submit"
