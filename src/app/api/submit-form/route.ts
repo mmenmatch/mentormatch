@@ -7,6 +7,10 @@ type FormData = {
   pageUrl?: string
   referrer?: string
 
+  parentName?: string
+  subject?: string
+  curriculum?: string
+
   utm_source?: string
   utm_medium?: string
   utm_campaign?: string
@@ -15,10 +19,11 @@ type FormData = {
 }
 
 export async function POST(req: NextRequest) {
-  console.log('POST', req)
-
   const body: FormData = await req.json()
   const {
+    parentName,
+    subject,
+    curriculum,
     email,
     childName,
     grade,
@@ -33,6 +38,9 @@ export async function POST(req: NextRequest) {
   } = body
   const results = await Promise.allSettled([
     submitToHubSpot({
+      parentName,
+      subject,
+      curriculum,
       email,
       childName,
       grade,
@@ -47,6 +55,9 @@ export async function POST(req: NextRequest) {
     }),
     // submitToGoogleSheets({ email, childName, grade, phone }),
     sendSlackNotification({
+      parentName,
+      subject,
+      curriculum,
       email,
       childName,
       grade,
@@ -81,9 +92,12 @@ async function submitToHubSpot(data: any) {
       body: JSON.stringify({
         fields: [
           { name: 'email', value: data.email },
-          { name: 'student_name', value: data.childName }, // custom property
+          // { name: 'student_name', value: data.childName }, // custom property
           { name: 'class', value: data.grade },
           { name: 'phone', value: data.phone },
+          { name: 'firstname', value: data?.parentName },
+          { name: 'subject', value: data?.subject },
+          { name: 'curriculum', value: data?.curriculum },
           {
             name: 'source_url',
             value: data?.pageUrl || '',
@@ -129,6 +143,9 @@ async function sendSlackNotification(data: any) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
+      parentName: data?.parentName,
+      subject: data?.subject,
+      curriculum: data?.curriculum,
       email: data?.email,
       studentName: data?.childName,
       class: data?.grade,

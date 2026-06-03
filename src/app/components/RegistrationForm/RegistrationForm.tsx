@@ -7,14 +7,18 @@ import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import type { Country } from 'react-phone-number-input'
 import { useRouter } from 'next/navigation'
+
+
 const schema = z.object({
-  // parentName: z.string().min(3, 'Minimum 3 characters required'),
-  childName: z.string().min(3, 'Minimum 3 characters required'),
+  parentName: z.string().min(3, 'Minimum 3 characters required'),
+  // childName: z.string().min(3, 'Minimum 3 characters required'),
   email: z
     .string()
     .min(1, 'Email Address is required')
     .email({ message: 'Please Enter a Valid Email Address' }),
   grade: z.string().min(1, 'Please select a grade'),
+  subject: z.string().min(1, 'Please select a subject'),
+  curriculum: z.string().min(1, 'Please select a curriculum'),
   phone: z
     .string()
     .min(1, 'Phone number is required')
@@ -33,6 +37,16 @@ const GRADES = [
   'Grade 10',
   'Grade 11',
   'Grade 12',
+]
+const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
+
+const CURRICULUM = [
+  'IB',
+  'British/Cambridge/IGCSE',
+  'American',
+  'CBSE',
+  'ICSE',
+  'Other',
 ]
 
 export default function RegistrationForm() {
@@ -69,7 +83,8 @@ export default function RegistrationForm() {
 
   // Watch values to stop error once min length is met
   const email = watch('email', '')
-  const childName = watch('childName', '')
+  // const childName = watch('childName', '')
+  const parentName = watch('parentName', '')
 
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
@@ -103,16 +118,37 @@ export default function RegistrationForm() {
   }
 
   return (
-    <div className="w-full  mx-auto p-6  font-light" id="cta">
-      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] m-0 font-medium md:text-left  text-center  mb-4 text-gray-800">
+    <div className="w-full  mx-auto md:p-0 p-4  font-light" id="cta">
+      <h2 className="md:text-[2.25rem] text-[6vw]  leading-[110%]  font-medium md:text-left  text-center mt-4 mb-8 text-gray-800">
         Book a <span className="text-[#2B23FF] font-bold">Free Trial</span> for
         your child!
       </h2>
-      <p className="md:text-[2.25rem] mb-8 text-[6vw] leading-[110%]  w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
+      {/* <p className="md:text-[2.25rem] mb-8 text-[6vw] leading-[110%]  w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
         For Grade 6 to 12th
-      </p>
+      </p> */}
       <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
         {/* Parent Name */}
+        <div className="flex flex-col gap-2 mb-4">
+          <label className="block text-[1rem] font-medium text-gray-700 ">
+            Parent's Name<span className="text-red-500">*</span>
+          </label>
+          <input
+            {...register('parentName')}
+            placeholder="Enter parent's name"
+            className={`w-full px-4 py-3 border rounded-lg outline-none transition
+              ${
+                errors?.parentName
+                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
+                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
+              }`}
+          />
+          {/* Only show error while under 3 chars; disappears once valid */}
+          {errors.parentName && (
+            <p className="text-red-500 text-xs mt-0 mb-0">
+              {errors?.parentName?.message}
+            </p>
+          )}
+        </div>
         <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem] font-medium text-gray-700 ">
             Parent's Email Address<span className="text-red-500">*</span>
@@ -136,7 +172,7 @@ export default function RegistrationForm() {
         </div>
 
         {/* Child Name */}
-        <div className="flex flex-col gap-2 mb-4">
+        {/* <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
             Child's Name <span className="text-red-500">*</span>
           </label>
@@ -155,7 +191,41 @@ export default function RegistrationForm() {
               {errors.childName.message}
             </p>
           )}
-        </div>
+        </div> */}
+
+        {/* Phone Number with Country Code */}
+        {detectedCountry && (
+          <div className="flex flex-col gap-2 mb-4">
+            <label className="block text-[1rem] font-medium text-gray-700 mb-1">
+              Parent's Phone Number <span className="text-red-500">*</span>
+            </label>
+            <Controller
+              name="phone"
+              control={control}
+              render={({ field: { onChange, value } }) => (
+                // <PhoneInput
+                //   international
+                //   defaultCountry="AE" // change default to your target country
+                //   value={value}
+                //   onChange={onChange}
+                //   className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
+                // />
+                <PhoneInput
+                  international
+                  defaultCountry={detectedCountry} // 👈 dynamic instead of hardcoded "IN"
+                  value={value}
+                  onChange={onChange}
+                  className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
+                />
+              )}
+            />
+            {errors.phone && (
+              <p className="text-red-500 text-xs mt-0  mb-0">
+                {errors.phone.message}
+              </p>
+            )}
+          </div>
+        )}
 
         {/* Grade Dropdown */}
         <div className="flex flex-col gap-2 mb-4">
@@ -185,39 +255,61 @@ export default function RegistrationForm() {
           )}
         </div>
 
-        {/* Phone Number with Country Code */}
-        {detectedCountry && (
-          <div className="flex flex-col gap-2 mb-4">
-            <label className="block text-[1rem] font-medium text-gray-700 mb-1">
-              Phone Number <span className="text-red-500">*</span>
-            </label>
-            <Controller
-              name="phone"
-              control={control}
-              render={({ field: { onChange, value } }) => (
-                // <PhoneInput
-                //   international
-                //   defaultCountry="AE" // change default to your target country
-                //   value={value}
-                //   onChange={onChange}
-                //   className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
-                // />
-                <PhoneInput
-                  international
-                  defaultCountry={detectedCountry} // 👈 dynamic instead of hardcoded "IN"
-                  value={value}
-                  onChange={onChange}
-                  className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
-                />
-              )}
-            />
-            {errors.phone && (
-              <p className="text-red-500 text-xs mt-0  mb-0">
-                {errors.phone.message}
-              </p>
-            )}
-          </div>
-        )}
+        {/*Subject*/}
+        <div className="flex flex-col gap-2 mb-4">
+          <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
+            Subject <span className="text-red-500">*</span>
+          </label>
+          <select
+            {...register('subject')}
+            className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
+              ${
+                errors?.subject
+                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
+                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
+              }`}
+          >
+            <option value="">Select a subject</option>
+            {SUBJECT?.map((g) => (
+              <option key={g} value={g}>
+                {g}
+              </option>
+            ))}
+          </select>
+          {errors?.subject && (
+            <p className="text-red-500 text-xs mt-0  mb-0">
+              {errors?.subject.message}
+            </p>
+          )}
+        </div>
+
+        {/*Curriculum*/}
+        <div className="flex flex-col gap-2 mb-4">
+          <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
+            Curriculum <span className="text-red-500">*</span>
+          </label>
+          <select
+            {...register('curriculum')}
+            className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
+              ${
+                errors?.curriculum
+                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
+                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
+              }`}
+          >
+            <option value="">Select a curriculum</option>
+            {CURRICULUM?.map((g) => (
+              <option key={g} value={g}>
+                {g}
+              </option>
+            ))}
+          </select>
+          {errors?.curriculum && (
+            <p className="text-red-500 text-xs mt-0  mb-0">
+              {errors?.curriculum.message}
+            </p>
+          )}
+        </div>
 
         {/* Submit */}
         <button
