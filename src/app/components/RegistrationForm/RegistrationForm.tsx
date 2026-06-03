@@ -104,11 +104,11 @@ export default function RegistrationForm() {
 
   return (
     <div className="w-full  mx-auto p-6  font-light" id="cta">
-      <h2 className="md:text-[2rem] text-[6vw]  font-medium md:text-left  text-center  mb-4 text-gray-800">
+      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] m-0 font-medium md:text-left  text-center  mb-4 text-gray-800">
         Book a <span className="text-[#2B23FF] font-bold">Free Trial</span> for
         your child!
       </h2>
-      <p className="md:text-[2rem] mb-8 text-[6vw] w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
+      <p className="md:text-[2.25rem] mb-8 text-[6vw] leading-[110%]  w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
         For Grade 6 to 12th
       </p>
       <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">

@@ -1,19 +1,23 @@
 'use client';
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { useRouter } from 'next/navigation'
+
 
 const NavBar = () => {
   const isMobile = useMediaQuery({ maxWidth: 640 });
+  const router = useRouter()
 
   return (
     <div className="w-full xl:px-16 px-4 py-4 flex items-center  border-b border-b-[#e1e1e1] min-h-20">
       <div className="w-full mx-auto flex items-center xl:px-8">
         <div className="max-w-360 w-full mx-auto flex flex-row items-center justify-between">
-          <div className="md:max-w-50 max-w-40 ">
+          <div className="md:max-w-50 max-w-40 cursor-pointer">
             <img
               src="https://cdn.prod.website-files.com/660d0c07422cfeca80d26d7d/6626114f2c2dbd34ed07beb4_Text%20logo_website%20blue2.webp"
               alt="mentor match logo"
               loading="lazy"
+              onClick={() => router.push('https://www.mentormatch.com/')}
             />
           </div>
           <div className="">

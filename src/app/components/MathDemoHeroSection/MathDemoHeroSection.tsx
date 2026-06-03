@@ -1,60 +1,65 @@
 import React from 'react'
-import MathImage from '../../../../public/assets/Images/math.webp'
+import MathImage from '../../../../public/assets/Images/math-hero-card.webp'
 import Image from 'next/image'
-import { Form } from '../Form/Form'
+import Step1 from '../../../../public/assets/Images/navigation.webp'
+import Step2 from '../../../../public/assets/Images/heart.webp'
+import Step3 from '../../../../public/assets/Images/progress.webp'
+
+
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
 export default function MathDemoHeroSection() {
   return (
     <div className="w-full h-full md:py-8 ">
       <div className="w-full flex items-stretch md:flex-row flex-col">
-        <div className="md:w-[50%] flex flex-col items-center md:gap-6 gap-2 px-4  bg-[#2B23FF] md:rounded-l-xl py-12">
-          <div className="flex flex-col items-center md:gap-3 ">
-            <p className="md:text-[2rem] text-[6vw] text-white font-normal text-center ">
-              We Make your Kid A{' '}
-            </p>
-            <p className="md:text-[2rem] text-[6vw]  text-[#FFF116] font-bold  ">
-              Problem solver
-            </p>
+        <div className="md:w-[50%] flex flex-col justify-between items-start md:gap-6 gap-2  bg-[#006CFF] md:rounded-l-[42px] overflow-hidden relative">
+          <div className="w-full px-8 pt-8 flex flex-col md:items-center">
+            <div className="md:max-w-120 ">
+              <p className="mx-auto md:text-[2.5rem] w-[80%]  leading-[130%] text-[6vw] text-white font-bold text-center ">
+                1-on-1 Tutoring to Make Your Child{' '}
+                <span className="text-[#FFF216] ">Excel in School</span>
+              </p>
+              {/* <p className="md:text-[2.5rem] text-[6vw]  text-[#FFF216] font-bold  text-center ">
+                Excel in School
+              </p> */}
+            </div>
           </div>
           <Image
             src={MathImage}
             alt="hero"
             fetchPriority="high"
-            className="md:w-80 w-50 mb-4"
+            className="md:w-full "
           />
-          <div className="flex flex-col items-center md:gap-3 ">
-            <p className="md:text-[2rem] text-[6vw]  text-[#FFF116] font-bold m-0">
-              Math Program
-            </p>
-            <h2 className="md:text-[2rem] text-[6vw]  text-[white] font-medium text-center m-0">
-              For Grade 6 - 12
+          <div className="md:w-[90%] w-full md:p-4 p-2  absolute md:rounded-[42px] rounded-t-[42px] md:bottom-2.5 bottom-0 left-1/2 -translate-x-1/2 bg-[#163B82]">
+            <h2 className="m-0 text-white md:text-[1.5rem] text-[4vw] text-center">
+              3-Step Formula for A+ Success:
             </h2>
-          </div>
-          <div className="w-full flex justify-around text-[1rem] mt-4">
-            <div>
-              <div className="flex flex-col items-center px-4 justify-end text-white h-20 ">
-                <span>Build</span>
-                <span>Confidence</span>{' '}
-              </div>
-            </div>
-            <div className="h-20 border-r border-white border-dashed"></div>
-            <div>
-              <div className="flex flex-col items-center px-4 justify-end text-white h-20">
-                <span>Shape</span>
-                <span>Personality</span>{' '}
-              </div>
-            </div>
-            <div className="h-20 border-r border-white border-dashed"></div>
 
-            <div>
-              <div className="flex flex-col items-center px-4 justify-end text-white h-20">
-                <span>Strong</span>
-                <span>Maths</span>
+            <div className="w-full flex justify-around items-end text-[1rem] md:mt-6 mt-0">
+              <div>
+                <div className="flex flex-col items-center md:text-[1rem] text-[2.8vw] text-center leading-[110%] md:gap-4 gap-2 px-4 justify-end text-white md:h-20 h-15 font-semibold">
+                  <Image src={Step1} alt="step-1" className="md:w-12.5 w-5" />
+                  Find the Gap
+                </div>
+              </div>
+              <div className="md:h-20 h-15 border-r border-white "></div>
+              <div>
+                <div className="flex flex-col items-center md:text-[1rem] text-[2.8vw] text-center  leading-[110%] md:gap-4 gap-2 px-4 justify-end text-white md:h-20 h-15 font-semibold">
+                  <Image src={Step2} alt="step-2" className="md:w-12.5 w-5" />
+                  Personalize the Plan
+                </div>
+              </div>
+              <div className="md:h-20 h-15 border-r border-white "></div>
+
+              <div>
+                <div className="flex flex-col items-center md:text-[1rem] text-[2.8vw] text-center  leading-[110%] md:gap-4 gap-2 px-4 justify-end text-white md:h-20 h-15 font-semibold">
+                  <Image src={Step3} alt="step-3" className="md:w-12.5 w-5" />
+                  Prove the progress
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="md:w-[50%]  md:rounded-r-xl md:shadow-2xl border border-gray-200 flex ">
+        <div className="md:w-[50%]  md:rounded-r-[42px] md:shadow-2xl border border-[#BBD3F4] flex items-center">
           <div className="w-full md:px-8">
             <RegistrationForm />
           </div>
