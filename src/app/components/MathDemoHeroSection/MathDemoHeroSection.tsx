@@ -61,7 +61,7 @@ export default function MathDemoHeroSection() {
             </div>
           </div>
         </div>
-        <div className="md:w-[50%] md:pt-8 pt-0 md:rounded-r-[42px] md:shadow-2xl border border-[#BBD3F4] flex items-start">
+        <div className="md:w-[50%] md:pt-8 pt-0 md:rounded-r-[42px] md:shadow-2xl md:border md:border-[#BBD3F4] flex items-start">
           <div className="w-full md:px-8">
             <RegistrationForm />
           </div>

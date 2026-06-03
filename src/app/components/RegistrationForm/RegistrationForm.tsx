@@ -18,13 +18,16 @@ const schema = z.object({
     .email({ message: 'Please Enter a Valid Email Address' }),
   grade: z.string().min(1, 'Please select a grade'),
   subject: z.string().min(1, 'Please select a subject'),
-  curriculum: z.string().min(1, 'Please select a curriculum'),
+  // curriculum: z.string().min(1, 'Please select a curriculum'),
   phone: z
     .string()
     .min(1, 'Phone number is required')
     .refine((val) => isValidPhoneNumber(val), {
       message: 'Invalid phone number for selected country',
     }),
+  pricingAccepted: z.enum(['yes', 'no'], {
+    message: 'Please select an option',
+  }),
 })
 
 type FormData = z.infer<typeof schema>
@@ -51,7 +54,11 @@ const CURRICULUM = [
 
 export default function RegistrationForm() {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
-
+  const pricingLabel =
+    detectedCountry === 'AE'
+      ? 'Our fee is AED 499/month'
+      : 'Our fee is ₹7,999/month'
+  console.log('detectedCountry', detectedCountry)
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error'
   >('idle')
@@ -89,7 +96,7 @@ export default function RegistrationForm() {
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
     const params = new URLSearchParams(window.location.search)
-
+console.log('data', data)
     const payload = {
       ...data,
       pageUrl: window.location.href,
@@ -100,7 +107,6 @@ export default function RegistrationForm() {
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
     }
-    // console.log('data', payload)
 
     try {
       const res = await fetch('/app/api/submit-form', {
@@ -119,7 +125,7 @@ export default function RegistrationForm() {
 
   return (
     <div className="w-full  mx-auto md:p-0 p-4  font-light" id="cta">
-      <h2 className="md:text-[2.25rem] text-[6vw]  leading-[110%]  font-medium md:text-left  text-center mt-4 mb-8 text-gray-800">
+      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 text-gray-800">
         Book a <span className="text-[#2B23FF] font-bold">Free Trial</span> for
         your child!
       </h2>
@@ -284,7 +290,7 @@ export default function RegistrationForm() {
         </div>
 
         {/*Curriculum*/}
-        <div className="flex flex-col gap-2 mb-4">
+        {/* <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
             Curriculum <span className="text-red-500">*</span>
           </label>
@@ -309,8 +315,34 @@ export default function RegistrationForm() {
               {errors?.curriculum.message}
             </p>
           )}
-        </div>
+        </div> */}
 
+        {/*Pricing...*/}
+        <div className="flex flex-col gap-2 mb-4">
+          <label className="block text-[1rem] font-medium text-gray-700">
+            {pricingLabel} <span className="text-red-500">*</span>
+          </label>
+
+          <div className="flex  md:flex-row flex-col md:gap-16 gap-2 mt-2">
+            <label className="flex items-center gap-2 cursor-pointer font-medium">
+              <input
+                type="radio"
+                value="yes"
+                {...register('pricingAccepted')}
+              />
+              Yes, I want to apply
+            </label>
+
+            <label className="flex items-center gap-2 cursor-pointer font-medium">
+              <input type="radio" value="no" {...register('pricingAccepted')} />
+              No, it is outside my budget
+            </label>
+          </div>
+
+          {errors.pricingAccepted && (
+            <p className="text-red-500 text-xs">Please select an option</p>
+          )}
+        </div>
         {/* Submit */}
         <button
           type="submit"

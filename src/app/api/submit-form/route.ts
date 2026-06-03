@@ -6,7 +6,7 @@ type FormData = {
   grade: string
   pageUrl?: string
   referrer?: string
-
+  pricingAccepted?: string
   parentName?: string
   subject?: string
   curriculum?: string
@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
     phone,
     pageUrl,
     referrer,
+    pricingAccepted,
     utm_source,
     utm_medium,
     utm_campaign,
@@ -45,6 +46,7 @@ export async function POST(req: NextRequest) {
       childName,
       grade,
       phone,
+      pricingAccepted,
       pageUrl,
       referrer,
       utm_source,
@@ -62,6 +64,7 @@ export async function POST(req: NextRequest) {
       childName,
       grade,
       phone,
+      pricingAccepted,
       pageUrl,
       referrer,
       utm_source,
@@ -92,12 +95,13 @@ async function submitToHubSpot(data: any) {
       body: JSON.stringify({
         fields: [
           { name: 'email', value: data.email },
+          { name: 'price_qualification', value: data.pricingAccepted },
           // { name: 'student_name', value: data.childName }, // custom property
           { name: 'class', value: data.grade },
           { name: 'phone', value: data.phone },
           { name: 'firstname', value: data?.parentName },
           { name: 'subject', value: data?.subject },
-          { name: 'curriculum', value: data?.curriculum },
+          // { name: 'curriculum', value: data?.curriculum },
           {
             name: 'source_url',
             value: data?.pageUrl || '',
@@ -145,7 +149,7 @@ async function sendSlackNotification(data: any) {
     body: JSON.stringify({
       parentName: data?.parentName,
       subject: data?.subject,
-      curriculum: data?.curriculum,
+      // curriculum: data?.curriculum,
       email: data?.email,
       studentName: data?.childName,
       class: data?.grade,
@@ -157,6 +161,7 @@ async function sendSlackNotification(data: any) {
       utm_campaign: data?.utm_campaign,
       utm_content: data?.utm_content,
       utm_term: data?.utm_term,
+      price_qualification: data?.pricingAccepted,
     }),
   })
 }

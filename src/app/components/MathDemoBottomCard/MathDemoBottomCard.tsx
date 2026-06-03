@@ -8,7 +8,7 @@ import Image from 'next/image'
 export default function MathDemoBottomCard() {
   return (
     <div className="md:px-0 md:pb-8 pb-0">
-      <div className="w-full md:h-full justify-between md:min-h-auto min-h-[300px] md:py-4  pt-8 xl:px-4  bg-[linear-gradient(180deg,_#006CFF_-7.54%,_#004199_129.79%)] md:rounded-[42px] rounded-none relative  md:mt-0 mt-8 mb-8 flex md:flex-row flex-col items-start md:items-center overflow-hidden">
+      <div className="w-full md:h-full justify-between md:min-h-auto min-h-75 md:py-4  pt-8 xl:px-4  bg-[linear-gradient(180deg,_#006CFF_-7.54%,_#004199_129.79%)] md:rounded-[42px] rounded-none relative  md:mt-0 mt-8 mb-8 flex md:flex-row flex-col items-start md:items-center overflow-hidden">
         <div className="flex flex-col md:w-[60%] w-full gap-4 md:gap-4 md:p-4 p-4">
           <p className="md:text-[2rem] leading-[120%] text-[6vw] flex flex-col md:flex-row items-center gap-2 font-bold text-[white]">
             We match kids with{' '}
