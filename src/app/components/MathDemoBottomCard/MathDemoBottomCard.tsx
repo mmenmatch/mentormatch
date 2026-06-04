@@ -1,5 +1,5 @@
 import React from 'react'
-import Tutors from '../../../../public/assets/Images/tutors.webp'
+import Tutors from '../../../../public/assets/Images/Math-tutors.webp'
 import B1 from '../../../../public/assets/Images/win.webp'
 import B2 from '../../../../public/assets/Images/script.webp'
 import B3 from '../../../../public/assets/Images/thumb.webp'
