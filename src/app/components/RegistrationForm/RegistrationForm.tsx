@@ -139,7 +139,7 @@ export default function RegistrationForm() {
         {/* Parent Name */}
         <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem] font-medium text-gray-700 ">
-            Parent's Name<span className="text-red-500">*</span>
+            Parent's Name <span className="text-red-500">*</span>
           </label>
           <input
             {...register('parentName')}
@@ -160,7 +160,7 @@ export default function RegistrationForm() {
         </div>
         <div className="flex flex-col gap-2 mb-4">
           <label className="block text-[1rem] font-medium text-gray-700 ">
-            Parent's Email Address<span className="text-red-500">*</span>
+            Parent's Email Address <span className="text-red-500">*</span>
           </label>
           <input
             {...register('email')}
