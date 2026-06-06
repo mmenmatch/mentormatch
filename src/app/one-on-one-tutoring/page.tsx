@@ -2,7 +2,9 @@ import React from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import OneOnOneOnlineTutoring from '../components/OneOnOneOnlineTutoring/OneOnOneOnlineTutoring'
 import { Metadata } from 'next'
-
+import { MarqueeComponent } from '../components/Marquee/Marquee'
+import RegistrationForm from '../components/RegistrationForm/RegistrationForm'
+import { StudentsGrowthCard } from '../components/StudentsGrowthCard/StudentsGrowthCard'
 export const metadata: Metadata = {
   title: '1 on 1 online tutoring | Mentor Match',
   description:
@@ -26,8 +28,13 @@ export default function page() {
     <div className="w-full">
       <NavBar />
       <div className="w-full">
-        <div className="max-w-360 mx-auto lg:px-16 md:px-16 px-0 mb-8">
+        <div className="  ">
           <OneOnOneOnlineTutoring />
+          <MarqueeComponent />
+          <div className="md:hidden">
+            <RegistrationForm />
+          </div>
+          <StudentsGrowthCard />
         </div>
       </div>
     </div>
