@@ -17,8 +17,7 @@ export default function OneOnOneOnlineTutoring() {
               </span>
             </h1>
             <p className="md:text-[1.8rem] text-[4vw] leading-[130%]  font-medium ">
-              Ace Your IB, IGCSE, ICSE & CBSE Exams with Personalized 1-on-1
-              Tutoring
+              Ace Your IB, IGCSE, ICSE & CBSE Exams with Personalized 1-on-1 Tutoring
             </p>
             <div className="flex  gap-2 md:mb-6">
               <div className="bg-white w-full md:w-auto p-2 rounded-lg md:text-[1.5rem] text-[3vw] leading-[100%] text-[#2A51FF] font-bold flex items-baseline gap-1">
@@ -32,23 +31,13 @@ export default function OneOnOneOnlineTutoring() {
                 5279+ <span className="text-black font-medium">Students</span>
               </div>
               <div className="bg-white w-full md:w-auto p-2 rounded-lg md:text-[1.5rem] text-[3vw] leading-[100%] text-[#2A51FF] font-bold flex items-center md:items-baseline gap-1">
-                C{' '}
-                <Image
-                  src={RArrow}
-                  alt="arrow"
-                  className="md:w-5 md:h-4.5 w-3.75 h-2.5"
-                />{' '}
-                A <span className="text-black font-medium">In 3 Months</span>
+                C <Image src={RArrow} alt="arrow" className="md:w-5 md:h-4.5 w-3.75 h-2.5" /> A{' '}
+                <span className="text-black font-medium">In 3 Months</span>
               </div>{' '}
             </div>
             <div className="w-70 md:block hidden">
               <button
                 type="submit"
-                // onClick={() => {
-                //   document.getElementById('cta')?.scrollIntoView({
-                //     behavior: 'smooth',
-                //   })
-                // }}
                 className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
               >
@@ -57,11 +46,7 @@ export default function OneOnOneOnlineTutoring() {
             </div>
           </div>
           <div className="md:w-[50%] w-full relative flex justify-end items-end">
-            <Image
-              src={HeroImage}
-              alt="hero-section"
-              className="object-contain"
-            />
+            <Image src={HeroImage} alt="hero-section" className="object-contain" />
           </div>
         </div>
       </div>

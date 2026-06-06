@@ -27,7 +27,7 @@ export const ParentsChoose = () => {
   ]
 
   return (
-    <div className="py-8">
+    <div className="py-16">
       <div className="max-w-360 md:px-16 px-4 mx-auto">
         {' '}
         <div className="flex flex-col  items-center justify-center mb-8 gap-2">
@@ -42,7 +42,7 @@ export const ParentsChoose = () => {
         </div>
         <div className="md:w-full w-full flex flex-col justify-center gap-4 items-center">
           {PARENTS_DATA?.map((data) => (
-            <div className="flex items-start gap-4 md:w-220 ">
+            <div className="flex md:items-center items-start  gap-4 md:w-220 ">
               <span className="md:max-w-[60px] max-w-[30px]">
                 <Image src={data?.name} alt="step" className="w-full h-full object-contain" />
               </span>

@@ -22,6 +22,7 @@
     "react-international-phone": "^4.8.0",
     "react-phone-number-input": "^3.4.17",
     "react-responsive": "^10.0.1",
+    "swiper": "^12.2.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {

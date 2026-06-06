@@ -137,3 +137,8 @@ label{
     transform: translateY(12px);
   }
 }
+
+.swiper swiper-initialized swiper-horizontal swiper-backface-hidden{
+  padding-top:2rem ;
+  padding-bottom: 2rem;
+}

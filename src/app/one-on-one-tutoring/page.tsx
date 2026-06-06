@@ -6,7 +6,7 @@ import { MarqueeComponent } from '../components/Marquee/Marquee'
 import RegistrationForm from '../components/RegistrationForm/RegistrationForm'
 import { StudentsGrowthCard } from '../components/StudentsGrowthCard/StudentsGrowthCard'
 import { ParentsChoose } from '../components/ParentsChoose/ParentsChoose'
-
+import { Footer } from '../components/Footer/Footer'
 export const metadata: Metadata = {
   title: '1 on 1 online tutoring | Mentor Match',
   description:
@@ -38,6 +38,7 @@ export default function page() {
           </div>
           <StudentsGrowthCard />
           <ParentsChoose />
+          <Footer />
         </div>
       </div>
     </div>
