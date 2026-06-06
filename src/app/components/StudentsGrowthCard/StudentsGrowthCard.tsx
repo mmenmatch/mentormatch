@@ -41,7 +41,7 @@ export const StudentsGrowthCard = () => {
 
   return (
     <div className="bg-[#FFFDF8]">
-      <div className="max-w-360 md:mx-16 mx-4 py-16">
+      <div className="max-w-360  md:px-16 mx-auto px-4 py-16">
         <div className="flex flex-col  items-center justify-center mb-16">
           <span className="flex justify-center items-center text-center md:gap-4 gap-2">
             <DancingDoodles img={DoodleLeft} delay={-1} direction={'up'} />
@@ -60,23 +60,27 @@ export const StudentsGrowthCard = () => {
           {STUDENTD_DATA?.map((data) => (
             <div className=" md:w-[33%] flex flex-col justify-start items-start rounded-2xl  min-h-50 shadow-[2px_2px_17.1px_0px_rgba(0,0,0,0.10)] p-4">
               <div className="w-full mb-6 flex gap-4 items-center justify-start">
-                <div className="max-w-20 rounded-full overflow-hidden">
+                <div className="md:max-w-20 max-w-18 rounded-full overflow-hidden">
                   <Image src={data?.img} alt={'rishi'} className="w-full h-full" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="text-[1.6rem] leading-[100%] m-0 font-bold">{data?.name}</p>
-                  <p className="text-[1.1rem] m-0 font-medium">{data?.subject}</p>
+                  <p className="md:text-[1.6rem] text-[1.25rem] leading-[100%] m-0 font-bold">
+                    {data?.name}
+                  </p>
+                  <p className="md:text-[1.1rem] text-[0.95rem]  m-0 font-medium">
+                    {data?.subject}
+                  </p>
                 </div>
               </div>
               <div className="flex gap-4 items-start justify-stretch text-[#3A4A6A]">
-                <div className="flex flex-col justify-center items-center font-medium">
+                <div className="flex flex-col justify-start items-start font-medium">
                   <p className="text-[2.2rem]   leading-[100%] m-0">{data?.before}</p>
                   <p>Before</p>
                 </div>
                 <div className="w-[15px] h-[25px] mt-2 ">
                   <Image src={Arrow} alt="arrow" className="w-full h-full" />
                 </div>
-                <div className="flex flex-col justify-center items-center font-medium">
+                <div className="flex flex-col justify-start items-start font-medium">
                   <p className="text-[2.2rem] leading-[100%] m-0 font-bold text-[#00BF63]">
                     {data?.after}
                     <span className="font-medium text-[#3A4A6A] text-[1.25rem] leading-[100%]">
