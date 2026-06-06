@@ -4,7 +4,7 @@ import '../app/globals.css'
 import { DevLinkProvider } from '@/devlink/DevLinkProvider'
 import 'react-phone-number-input/style.css'
 import Script from 'next/script'
-
+import ClarityProvider from './components/Clarity/Clarity'
 const poppins = Poppins({
   variable: '--font-poppins',
   weight: ['300', '400', '500', '600', '700', '800', '900'], // ✅ all weights
@@ -25,23 +25,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${poppins.className} `}>
+        <ClarityProvider />
         <DevLinkProvider>
           {/* Add here any Navbar or Header you want to be present on all pages */}
           {children}
           {/* Add here any Footer you want to be present on all pages */}
-        </DevLinkProvider>
-      </body>
-      <Script id="clarity" strategy="afterInteractive">
-        {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "v8gsdlcfcp");
+          <Script id="clarity" strategy="afterInteractive">
+            {`
+            (function (c, l, a, r, i, t, y) {
+    c[a] =
+      c[a] ||
+      function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+    t = l.createElement(r);
+    t.async = 1;
+    t.src = 'https://www.clarity.ms/tag/' + i;
+    y = l.getElementsByTagName(r)[0];
+    y.parentNode.insertBefore(t, y);
+  })(window, document, 'clarity', 'script', 'v8gsdlcfcp');
           `}
-      </Script>
-      <Script id="meta-pixel" strategy="afterInteractive">
-        {`
+          </Script>
+          <Script id="meta-pixel" strategy="afterInteractive">
+            {`
            !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -53,23 +59,23 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1308698014213503');
 fbq('track', 'PageView');
           `}
-      </Script>
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          style={{ display: 'none' }}
-          src="https://www.facebook.com/tr?id=1308698014213503&ev=PageView&noscript=1"
-        />
-      </noscript>
+          </Script>
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: 'none' }}
+              src="https://www.facebook.com/tr?id=1308698014213503&ev=PageView&noscript=1"
+            />
+          </noscript>
 
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-QRV66J4E1V`}
-        strategy="afterInteractive"
-      />
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-QRV66J4E1V`}
+            strategy="afterInteractive"
+          />
 
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -78,7 +84,9 @@ fbq('track', 'PageView');
             page_path: window.location.pathname,
           });
         `}
-      </Script>
+          </Script>
+        </DevLinkProvider>
+      </body>
     </html>
   )
 }
