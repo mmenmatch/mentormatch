@@ -7,6 +7,9 @@ import RegistrationForm from '../components/RegistrationForm/RegistrationForm'
 import { StudentsGrowthCard } from '../components/StudentsGrowthCard/StudentsGrowthCard'
 import { ParentsChoose } from '../components/ParentsChoose/ParentsChoose'
 import { Footer } from '../components/Footer/Footer'
+import { GpsFrameWork } from '../components/GpsFrameWork/GpsFrameWork'
+import { Faqs } from '../components/Faqs/Faqs'
+
 export const metadata: Metadata = {
   title: '1 on 1 online tutoring | Mentor Match',
   description:
@@ -36,8 +39,10 @@ export default function page() {
           <div className="md:hidden">
             <RegistrationForm />
           </div>
+          <GpsFrameWork />
           <StudentsGrowthCard />
           <ParentsChoose />
+          <Faqs />
           <Footer />
         </div>
       </div>

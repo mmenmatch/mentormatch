@@ -138,7 +138,9 @@ label{
   }
 }
 
-.swiper swiper-initialized swiper-horizontal swiper-backface-hidden{
+.swiper.swiper-initialized {
   padding-top:2rem ;
   padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

@@ -27,7 +27,7 @@ export const ParentsChoose = () => {
   ]
 
   return (
-    <div className="py-16">
+    <div className="py-12">
       <div className="max-w-360 md:px-16 px-4 mx-auto">
         {' '}
         <div className="flex flex-col  items-center justify-center mb-8 gap-2">
