@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import GapImage from '../../../../public/assets/Images/GAP.webp'
-import PersonalizeImage from '../../../../public/assets/Images/Personalize.webp'
+import PersonalizeImage from '../../../../public/assets/Images/Personalize2.webp'
 import ScoreImage from '../../../../public/assets/Images/Score.webp'
 
 export const GpsFrameWork = () => {
@@ -36,14 +36,21 @@ export const GpsFrameWork = () => {
         <h2 className="md:text-[2.5rem] text-[6vw] font-bold text-center md:mb-12  mb-8 ">
           The GPS Framework™
         </h2>
-        <div className="flex md:flex-row flex-col gap-8 justify-stretch items-stretch">
+        <div className="flex md:flex-row flex-col gap-8 justify-center items-center">
           {GAP_DATA?.map((ele) => (
-            <div className="md:max-w-[30%]">
-              <div className="w-full md:min-h-[150px] ">
-                <Image src={ele.img} alt={ele.title} />
+            <div className="md:max-w-[30%] rounded-[12px] overflow-hidden">
+              <div className="w-full  ">
+                <Image
+                  src={ele.img}
+                  alt={ele.title}
+                  className="w-full h-full min-h-[200px] object-cover"
+                />
               </div>
-              <div className="bg-white px-4 py-8 flex flex-col gap-4 rounded-b-4xl min-h-[150px] ">
-                <p style={{ color: ele.color }} className={`font-bold text-[2rem] m-0 `}>
+              <div className="bg-white px-4 py-4 flex flex-col min-h-[150px] gap-4 rounded-[12px]  ">
+                <p
+                  style={{ color: ele.color }}
+                  className={`font-bold text-[2rem] leading-[100%] m-0 `}
+                >
                   {ele.title}
                 </p>
                 <p className="text-[1rem] m-0">{ele.description}</p>

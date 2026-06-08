@@ -9,6 +9,7 @@ import { ParentsChoose } from '../components/ParentsChoose/ParentsChoose'
 import { Footer } from '../components/Footer/Footer'
 import { GpsFrameWork } from '../components/GpsFrameWork/GpsFrameWork'
 import { Faqs } from '../components/Faqs/Faqs'
+import { LeadForm } from '../components/LeadForm/LeadForm'
 
 export const metadata: Metadata = {
   title: '1 on 1 online tutoring | Mentor Match',
@@ -36,8 +37,13 @@ export default function page() {
         <div className="  ">
           <OneOnOneOnlineTutoring />
           <MarqueeComponent />
-          <div className="md:hidden">
-            <RegistrationForm />
+          <div>
+            <div className="md:block hidden ">
+              <LeadForm />
+            </div>
+            <div className="md:hidden block  py-8">
+              <RegistrationForm />
+            </div>
           </div>
           <GpsFrameWork />
           <StudentsGrowthCard />
