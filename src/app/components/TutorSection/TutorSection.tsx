@@ -83,15 +83,15 @@ export const TutorSection = () => {
         <div className="w-full  mt-8 flex md:flex-row flex-col justify-center items-center gap-8">
           {TUTOR_DATA?.map((data) => (
             <div className="md:w-[45%] w-full rounded-4xl px-4 py-6 bg-white flex md:flex-row flex-col gap-4">
-              <div className="md:w-50 flex flex-col gap-2">
+              <div className="md:w-70 flex flex-col gap-2">
                 <div className="relative">
-                  <div className="tutor-card">
+                  <div className="md:tutor-card">
                     <Image src={data?.tutorImg} alt="tutor" className="object-contain" />{' '}
                   </div>
                   <Image
                     src={data?.tutorGender == 'M' ? ManMenmonics : WomManMenmonics}
                     alt="tutor"
-                    className="object-contain w-[40px] absolute bottom-0 right-5"
+                    className="object-contain md:w-[40px] w-[70px] absolute md:bottom-0 bottom-2 md:right-1 right-6"
                   />
                 </div>
                 <p className="m-0 text-center p-2 rounded-4xl font-semibold bg-[#00BF63] text-white text-[1rem] w-full">
