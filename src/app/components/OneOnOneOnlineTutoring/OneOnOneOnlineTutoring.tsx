@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import HeroImage from '../../../../public/assets/Images/hero-section.webp'
@@ -38,6 +39,11 @@ export default function OneOnOneOnlineTutoring() {
             <div className="w-70 md:block hidden">
               <button
                 type="submit"
+                onClick={() => {
+                  document.getElementById('cta')?.scrollIntoView({
+                    behavior: 'smooth',
+                  })
+                }}
                 className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
               >

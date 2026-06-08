@@ -5,15 +5,15 @@ import RegistrationForm from '../RegistrationForm/RegistrationForm'
 
 export const LeadForm = () => {
   return (
-    <div className="bg-white py-16">
-      <div className="max-w-360 mx-auto px-16">
-        <div className="mx-auto  flex rounded-[42px] border-1 border-[#BBD3F4] overflow-hidden">
-          <div className="w-[40%] ">
+    <div className="bg-white py-12">
+      <div className="max-w-360 mx-auto md:px-16">
+        <div className="mx-auto  flex rounded-[42px] md:border-1 md:border-[#BBD3F4] overflow-hidden">
+          <div className="md:w-[40%] md:block hidden">
             <div className="w-full h-full flex items-end justify-center bg-gradient-to-b from-[#006CFF] to-[#006CFF] ">
               <Image src={LeadFormImage} alt="Lead form image" className="  " />
             </div>
           </div>
-          <div className="w-[60%] px-8 pb-8">
+          <div className="md:w-[60%] w-full md:px-8  md:pb-8">
             <RegistrationForm />
           </div>
         </div>

@@ -154,7 +154,7 @@ export const StudentsGrowthCard = () => {
     //   </div>
     // </div>
     <section className="bg-[#FFFDF8] overflow-hidden">
-      <div className="max-w-360 mx-auto px-4 py-12 md:py-12">
+      <div className="max-w-360 mx-auto px-4 md:px-16 py-12 md:py-12">
         {/* Heading */}
         <div className="flex flex-col items-center justify-center mb-2 md:mb-4">
           <div className="flex items-center justify-center gap-2 md:gap-4">
@@ -175,78 +175,86 @@ export const StudentsGrowthCard = () => {
         </div>
 
         {/* Swiper */}
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          spaceBetween={16}
-          slidesPerView={1.1}
-          breakpoints={{
-            640: {
-              slidesPerView: 1.5,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-          className="py-4 md:py-8"
-        >
-          {STUDENT_DATA.map((data, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col rounded-2xl min-h-[220px] shadow-[2px_2px_17.1px_0px_rgba(0,0,0,0.10)] p-4 bg-white">
-                {/* Student Info */}
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shrink-0">
-                    <Image src={data.img} alt={data.name} className="w-full h-full object-cover" />
+        <div className="studentgrowth">
+          <Swiper
+            modules={[Navigation]}
+            navigation
+            spaceBetween={16}
+            slidesPerView={1.1}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+            className=" py-4 md:py-8"
+          >
+            {STUDENT_DATA.map((data, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col rounded-2xl min-h-[220px] shadow-[2px_2px_17.1px_0px_rgba(0,0,0,0.10)] p-4 bg-white">
+                  {/* Student Info */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={data.img}
+                        alt={data.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div>
+                      <p className="text-xl md:text-[1.6rem] leading-none font-bold mb-2">
+                        {data.name}
+                      </p>
+
+                      <p className="text-sm md:text-[1.1rem] font-medium text-gray-600">
+                        {data.subject}
+                      </p>
+                    </div>
                   </div>
 
-                  <div>
-                    <p className="text-xl md:text-[1.6rem] leading-none font-bold mb-2">
-                      {data.name}
-                    </p>
+                  {/* Scores */}
+                  <div className="flex gap-4 items-start text-[#3A4A6A]">
+                    <div>
+                      <p className="text-[2rem] md:text-[2.2rem] leading-none">{data.before}</p>
+                      <p className="text-sm mt-1">Before</p>
+                    </div>
 
-                    <p className="text-sm md:text-[1.1rem] font-medium text-gray-600">
-                      {data.subject}
-                    </p>
+                    <div className="w-4 h-6 mt-2">
+                      <Image src={Arrow} alt="arrow" className="w-full h-full object-contain" />
+                    </div>
+
+                    <div>
+                      <p className="text-[2rem] md:text-[2.2rem] leading-none font-bold text-[#00BF63]">
+                        {data.after}
+
+                        <span className="ml-1 font-medium text-[#3A4A6A] text-base md:text-[1.25rem]">
+                          {data.type === 'mark' ? '/100' : data.type === 'grade' ? ' Grade' : ''}
+                        </span>
+                      </p>
+
+                      <p className="text-sm mt-1">After</p>
+                    </div>
                   </div>
-                </div>
 
-                {/* Scores */}
-                <div className="flex gap-4 items-start text-[#3A4A6A]">
-                  <div>
-                    <p className="text-[2rem] md:text-[2.2rem] leading-none">{data.before}</p>
-                    <p className="text-sm mt-1">Before</p>
-                  </div>
-
-                  <div className="w-4 h-6 mt-2">
-                    <Image src={Arrow} alt="arrow" className="w-full h-full object-contain" />
-                  </div>
-
-                  <div>
-                    <p className="text-[2rem] md:text-[2.2rem] leading-none font-bold text-[#00BF63]">
-                      {data.after}
-
-                      <span className="ml-1 font-medium text-[#3A4A6A] text-base md:text-[1.25rem]">
-                        {data.type === 'mark' ? '/100' : data.type === 'grade' ? ' Grade' : ''}
+                  {/* Tag */}
+                  <div className="mt-4">
+                    <span className="inline-flex bg-[#2A51FF] rounded-full px-3 py-2">
+                      <span className="text-white text-sm md:text-base font-medium">
+                        {data.tag}
                       </span>
-                    </p>
-
-                    <p className="text-sm mt-1">After</p>
+                    </span>
                   </div>
                 </div>
-
-                {/* Tag */}
-                <div className="mt-4">
-                  <span className="inline-flex bg-[#2A51FF] rounded-full px-3 py-2">
-                    <span className="text-white text-sm md:text-base font-medium">{data.tag}</span>
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   )

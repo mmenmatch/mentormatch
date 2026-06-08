@@ -39,12 +39,12 @@ export default function page() {
           <OneOnOneOnlineTutoring />
           <MarqueeComponent />
           <div>
-            <div className="md:block hidden ">
-              <LeadForm />
-            </div>
-            <div className="md:hidden block  py-8">
+            {/* <div className="md:block hidden "> */}
+            <LeadForm />
+            {/* </div> */}
+            {/* <div className="md:hidden block  py-8 " id="cta">
               <RegistrationForm />
-            </div>
+            </div> */}
           </div>
           <GpsFrameWork />
           <StudentsGrowthCard />

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import FooterTutor from '../../../../public/assets/Images/footer-tutor.webp'
@@ -5,7 +6,7 @@ import FooterStudent from '../../../../public/assets/Images/footer-student.webp'
 
 export const Footer = () => {
   return (
-    <div className="py-8 px-4 bg-[#1E293E]">
+    <div className="py-12 px-4 bg-[#1E293E]">
       <div className={`max-w-360 mx-auto`}>
         <div className="md:mb-16 mb-8">
           <h2 className="md:w-[50%] mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
@@ -19,7 +20,7 @@ export const Footer = () => {
           <Image
             src={FooterTutor}
             alt="FooterTutor"
-            className="absolute left-0 bottom-0 w-[280px]"
+            className="hidden md:block absolute left-0 bottom-0 w-[280px]"
           />
           <div className="md:text-[1.2rem] text-[4vw]">
             <p className="text-white m-0  text-center leading-[120%] w-[290px] mx-auto">
@@ -29,6 +30,11 @@ export const Footer = () => {
           <div className="max-w-[50%]">
             <button
               type="submit"
+              onClick={() => {
+                document.getElementById('cta')?.scrollIntoView({
+                  behavior: 'smooth',
+                })
+              }}
               className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
             >
@@ -38,7 +44,7 @@ export const Footer = () => {
           <Image
             src={FooterStudent}
             alt="FooterStudent"
-            className="absolute right-0 bottom-0 w-[250px]"
+            className="hidden md:block absolute right-0 bottom-0 w-[250px]"
           />
         </div>
         <div className="mt-8">
