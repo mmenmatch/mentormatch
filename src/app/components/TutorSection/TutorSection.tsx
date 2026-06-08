@@ -82,7 +82,7 @@ export const TutorSection = () => {
         </h2>
         <div className="w-full  mt-8 flex md:flex-row flex-col justify-center items-center gap-8">
           {TUTOR_DATA?.map((data) => (
-            <div className="md:w-[45%] w-full rounded-4xl px-4 py-6 bg-white flex gap-4">
+            <div className="md:w-[45%] w-full rounded-4xl px-4 py-6 bg-white flex md:flex-row flex-col gap-4">
               <div className="md:w-50 flex flex-col gap-2">
                 <div className="relative">
                   <div className="tutor-card">
