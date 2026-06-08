@@ -23,10 +23,10 @@ export const Faqs = () => {
       question: 'Can I choose my tutor?',
       answer: 'Yes, we help match you with a tutor based on your requirements.',
     },
-    {
-      question: 'Do you provide study materials?',
-      answer: 'Yes, tutors provide worksheets, notes, and practice materials.',
-    },
+    // {
+    //   question: 'Do you provide study materials?',
+    //   answer: 'Yes, tutors provide worksheets, notes, and practice materials.',
+    // },
   ]
 
   return (
