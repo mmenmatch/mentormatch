@@ -16,7 +16,7 @@ export const MarqueeComponent = () => {
             {schools.map((school, index) => (
               <div
                 key={index}
-                className="w-[20px] md:w-[100px] text-[4vw] text-center text-[#3F4B7F]  flex justify-center items-center mx-12 md:text-[1.5rem] leading-[120%] text-[#3F4B7F] font-bold"
+                className="w-[20px] md:w-[100px] text-[4vw] text-center text-[#3F4B7F]  flex justify-center items-center mx-12 md:text-[1.2rem] leading-[120%] text-[#3F4B7F] font-bold"
               >
                 {school}
               </div>

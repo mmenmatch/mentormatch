@@ -144,3 +144,14 @@ label{
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.tutor-card{
+    width: 180px;
+  height: 200px;
+  /* background: #e5e5e5; */
+/* clip-path: path(" M58  H242 Q300 0 300 48V177Q300 234 234 234Q185 234 185 274Q185 300 156 300H58Q0 300 0 252V48Q0 0 58 0 Z "
+  ); */
+    clip-path: path("M35 0H145 Q180 0 180 32V118Q180 156 140 156Q111 156 111 183Q111 200 94 200 H35Q0 200 0 168V32Q0 0 35 0 Z");
+}
+p{
+  margin-bottom: 0;
+}
