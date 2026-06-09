@@ -20,7 +20,7 @@ export const Footer = () => {
           <Image
             src={FooterTutor}
             alt="FooterTutor"
-            className=" md:block absolute left-0 bottom-0 md:w-[250px] w-[180px]"
+            className=" md:block absolute left-0 bottom-0 md:w-[250px] w-[160px]"
           />
           <div className="md:text-[1.2rem] text-[4vw]">
             {/* <p className="text-white m-0  text-center leading-[120%] w-[290px] mx-auto">
