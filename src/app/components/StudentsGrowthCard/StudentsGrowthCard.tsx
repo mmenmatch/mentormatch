@@ -157,7 +157,7 @@ export const StudentsGrowthCard = () => {
     //   </div>
     // </div>
     <section className="bg-[#FFFDF8] overflow-hidden">
-      <div className="max-w-360 mx-auto px-4 md:px-16 py-12 md:py-12">
+      <div className="max-w-360 mx-auto px-4 md:px-16 py-12 md:py-16">
         {/* Heading */}
         <div className="flex flex-col items-center justify-center mb-2 md:mb-4">
           <div className="flex items-center justify-center gap-2 md:gap-4">

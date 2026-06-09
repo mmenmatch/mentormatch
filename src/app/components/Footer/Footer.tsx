@@ -6,10 +6,10 @@ import FooterStudent from '../../../../public/assets/Images/footer-student.webp'
 
 export const Footer = () => {
   return (
-    <div className="py-12 px-4 bg-[#1E293E]">
+    <div className="py-12 md:py-16 px-4 bg-[#1E293E]">
       <div className={`max-w-360 mx-auto`}>
         <div className="md:mb-16 mb-8">
-          <h2 className="md:w-[50%] mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
+          <h2 className="md:w-[50%] m-0 mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
             See Exactly Where The Grade is Being Lost In{' '}
             <span className=" bg-[#FFF116] text-black md:text-[2.5rem] text-[5vw] px-2 m-0 leading-[100%] m-0 rounded-[4px]">
               The First Session

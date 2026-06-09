@@ -11,7 +11,7 @@ export default function OneOnOneOnlineTutoring() {
     <div>
       <div className="mx-auto flex bg-[linear-gradient(180deg,_#0285FA_-20.54%,_#006CFF_50.79%)]">
         <div className="max-w-360 w-full flex md:flex-row flex-col gap-4 mx-auto md:px-16 px-4 md:mt-16 mt-8 ">
-          <div className="md:w-[45%] w-full text-white flex flex-col  md:gap-4 gap-2">
+          <div className="md:w-[45%] w-full text-white flex flex-col  md:gap-4 gap-4">
             <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
               <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
                 {' '}
@@ -27,7 +27,7 @@ export default function OneOnOneOnlineTutoring() {
                 />
               </span>
             </h1>
-            <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
+            <p className="md:text-[1.3rem] text-[3vw] leading-[130%]  font-medium ">
               Personalised lessons tailored to IB, IGCSE, A Level & CBSE. Expert tutors, proven
               results, and first class is free.{' '}
             </p>

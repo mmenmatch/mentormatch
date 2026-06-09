@@ -32,12 +32,12 @@ export const ParentsChoose = () => {
   ]
 
   return (
-    <div className="py-12">
+    <div className="py-12 md:py-16">
       <div className="max-w-360 md:px-16 px-4 mx-auto">
         {' '}
         <div className="flex flex-col  items-center justify-center mb-8 gap-2">
           <span className="flex justify-center items-center text-center md:gap-4 gap-8">
-            <h2 className="md:text-[2.5rem] text-[6vw] md:w-auto w-70 leading-[120%] font-bold flex items-center justify-center">
+            <h2 className="md:text-[2.5rem] m-0 text-[6vw] md:w-auto w-70 leading-[120%] font-bold flex items-center justify-center">
               Why Parents Choose Us
             </h2>
           </span>

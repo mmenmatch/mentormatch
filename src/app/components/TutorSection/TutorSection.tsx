@@ -84,7 +84,7 @@ const TUTOR_DATA = [
 
 export const TutorSection = () => {
   return (
-    <div className="bg-[#006CFF] py-12 overflow-hidden">
+    <div className="bg-[#006CFF] md:py-16 py-8  overflow-hidden">
       {' '}
       <div className="max-w-360 mx-auto md:px-4 px-4 flex flex-col justify-center items-center relative">
         <Image

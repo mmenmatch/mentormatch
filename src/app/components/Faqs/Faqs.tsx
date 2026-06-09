@@ -61,9 +61,9 @@ export const Faqs = () => {
   ]
 
   return (
-    <div className="bg-[#EEF6FF] py-12">
+    <div className="bg-[#EEF6FF] py-12 md:py-16">
       <div className="max-w-360 mx-auto md:px-16 px-4 ">
-        <h2 className="md:text-[2.5rem]  text-[6vw] text-center font-bold  mb-8 md:mb-12">
+        <h2 className="md:text-[2.5rem]  text-[6vw] m-0 text-center font-bold  mb-8 md:mb-12">
           Questions Parents Ask Before They Book
         </h2>
         <div className="flex flex-col gap-4 max-w-[70rem] mx-auto">

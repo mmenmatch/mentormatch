@@ -5,7 +5,7 @@ import RegistrationForm from '../RegistrationForm/RegistrationForm'
 
 export const LeadForm = () => {
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white md:py-16 py-8">
       <div className="max-w-360 mx-auto md:px-16">
         <div className="mx-auto  flex rounded-[42px] md:border-1 md:border-[#BBD3F4] overflow-hidden">
           <div className="md:w-[40%] md:block hidden">

@@ -33,7 +33,7 @@ export const GpsFrameWork = () => {
   return (
     <div className="bg-[#EEF6FF]">
       <div className="max-w-360 py-12 md:px-16 px-4 mx-auto">
-        <h2 className="md:text-[2.5rem] text-[6vw] font-bold text-center md:mb-12  mb-8 ">
+        <h2 className="md:text-[2.5rem] text-[6vw] font-bold text-center md:mb-12  mt-0 mb-8 ">
           The GPS Framework™
         </h2>
         <div className="flex md:flex-row flex-col gap-8 justify-center items-center">

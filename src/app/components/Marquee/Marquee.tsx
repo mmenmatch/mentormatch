@@ -51,7 +51,7 @@ export const MarqueeComponent = () => {
   return (
     <div className="bg-[#EEF6FF]">
       <div className="max-w-360 mx-auto md:px-8 px-4 md:py-8 py-4  flex  items-center md:gap-8 gap-4">
-        <div className="tracking-widest md:text-[1rem]  text-[0.85rem] text-[#3F4B7F] font-medium md:whitespace-nowrap">
+        <div className="tracking-widest md:text-[1rem]  text-[0.65rem] text-[#3F4B7F] font-medium whitespace-nowrap">
           {/* whitespace-nowrap */}
           TRUSTED BY PARENTS FROM
         </div>
