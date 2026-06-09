@@ -129,8 +129,11 @@ export default function RegistrationForm() {
   return (
     <div className="w-full  mx-auto md:p-0 p-4  font-light" id="cta">
       <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 md:text-gray-800">
-        Book a <span className="text-[#2B23FF] font-bold">Free Trial</span> for
-        your child!
+        Book a{' '}
+        <span className="bg-[#FFF116] leading-[100%] text-black px-1 rounded font-bold leading-[140%]">
+          Free Trial
+        </span>{' '}
+        for your child!
       </h2>
       {/* <p className="md:text-[2.25rem] mb-8 text-[6vw] leading-[110%]  w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
         For Grade 6 to 12th
@@ -153,9 +156,7 @@ export default function RegistrationForm() {
           />
           {/* Only show error while under 3 chars; disappears once valid */}
           {errors.parentName && (
-            <p className="text-red-500 text-xs mt-0 mb-0">
-              {errors?.parentName?.message}
-            </p>
+            <p className="text-red-500 text-xs mt-0 mb-0">{errors?.parentName?.message}</p>
           )}
         </div>
         <div className="flex flex-col gap-2 mb-4">
@@ -173,11 +174,7 @@ export default function RegistrationForm() {
               }`}
           />
           {/* Only show error while under 3 chars; disappears once valid */}
-          {errors.email && (
-            <p className="text-red-500 text-xs mt-0 mb-0">
-              {errors.email.message}
-            </p>
-          )}
+          {errors.email && <p className="text-red-500 text-xs mt-0 mb-0">{errors.email.message}</p>}
         </div>
 
         {/* Child Name */}
@@ -229,9 +226,7 @@ export default function RegistrationForm() {
               )}
             />
             {errors.phone && (
-              <p className="text-red-500 text-xs mt-0  mb-0">
-                {errors.phone.message}
-              </p>
+              <p className="text-red-500 text-xs mt-0  mb-0">{errors.phone.message}</p>
             )}
           </div>
         )}
@@ -258,9 +253,7 @@ export default function RegistrationForm() {
             ))}
           </select>
           {errors.grade && (
-            <p className="text-red-500 text-xs mt-0  mb-0">
-              {errors.grade.message}
-            </p>
+            <p className="text-red-500 text-xs mt-0  mb-0">{errors.grade.message}</p>
           )}
         </div>
 
@@ -286,9 +279,7 @@ export default function RegistrationForm() {
             ))}
           </select>
           {errors?.subject && (
-            <p className="text-red-500 text-xs mt-0  mb-0">
-              {errors?.subject.message}
-            </p>
+            <p className="text-red-500 text-xs mt-0  mb-0">{errors?.subject.message}</p>
           )}
         </div>
 
@@ -314,9 +305,7 @@ export default function RegistrationForm() {
             ))}
           </select>
           {errors?.pricingAccepted && (
-            <p className="text-red-500 text-xs mt-0  mb-0">
-              {errors?.pricingAccepted.message}
-            </p>
+            <p className="text-red-500 text-xs mt-0  mb-0">{errors?.pricingAccepted.message}</p>
           )}
         </div>
         {/* <div className="flex flex-col gap-2 mb-4">

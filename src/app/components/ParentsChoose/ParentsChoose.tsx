@@ -1,10 +1,10 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Parents1 from '../../../../public/assets/Images/pc-1.webp'
 import Parents2 from '../../../../public/assets/Images/pc-2.webp'
 import Parents3 from '../../../../public/assets/Images/pc-3.webp'
 import Parents4 from '../../../../public/assets/Images/pc-4.webp'
-
 
 export const ParentsChoose = () => {
   const PARENTS_DATA = [
@@ -16,7 +16,7 @@ export const ParentsChoose = () => {
     {
       name: Parents2,
       title: 'Curriculim Vetted Tutors',
-      description: `Tutors are trained in the specific curricula your child is learing.We accept fewer than 2% of the tutors who apply.`,
+      description: `Tutors are trained in the specific curricula your child is learing.`,
     },
     {
       name: Parents3,
@@ -26,8 +26,7 @@ export const ParentsChoose = () => {
     {
       name: Parents4,
       title: 'Flexible scheduiling',
-      description:
-        'Tutoring scheduled around school, sports and family routines. Reschedule with 24-hour notice - emergencies handled within 2 hours.',
+      description: 'Reschedule with 24-hour notice emergencies handled within 2 hours.',
     },
   ]
 
@@ -37,7 +36,7 @@ export const ParentsChoose = () => {
         {' '}
         <div className="flex flex-col  items-center justify-center mb-8 gap-2">
           <span className="flex justify-center items-center text-center md:gap-4 gap-8">
-            <h2 className="md:text-[2.5rem] m-0 text-[6vw] md:w-auto w-70 leading-[120%] font-bold flex items-center justify-center">
+            <h2 className="md:text-[2.5rem] m-0 text-[6vw] md:w-auto leading-[120%] font-bold flex items-center justify-center">
               Why Parents Choose Us
             </h2>
           </span>
@@ -65,6 +64,21 @@ export const ParentsChoose = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="w-[200px] mt-8 mx-auto">
+          {' '}
+          <button
+            type="submit"
+            onClick={() => {
+              document.getElementById('cta')?.scrollIntoView({
+                behavior: 'smooth',
+              })
+            }}
+            className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
+            "
+          >
+            Book A Free Trial
+          </button>
         </div>
       </div>
     </div>

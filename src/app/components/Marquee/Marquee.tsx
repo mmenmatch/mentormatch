@@ -12,23 +12,16 @@ export const MarqueeComponent = () => {
     'Gems Wellington',
     'Repton',
     'Safa Community School',
-    '+40 UAE Schools',
+    '450+ UAE Schools',
   ]
   const indianSchools = [
-    'Candor International School',
-    'GICLM International School',
-    'Adamas International School',
-    'Stonehill International school',
+    'Candor School',
+    'GICLM School',
+    'Adamas School',
+    'Stonehill school',
     'Inventure Academy',
-    'Dhirubhai Ambani International School',
-    '+40 Indian Schools',
-    'Candor International School',
-    'GICLM International School',
-    'Adamas International School',
-    'Stonehill International school',
-    'Inventure Academy',
-    'Dhirubhai Ambani International School',
-    '+40 Indian Schools',
+    'Dhirubhai Ambani School',
+    '450+ Indian Schools',
   ]
 
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
@@ -61,7 +54,7 @@ export const MarqueeComponent = () => {
             {Schools?.map((school, index) => (
               <div
                 key={index}
-                className=" md:w-auto text-[4vw] text-center text-[#3F4B7F]  flex justify-center items-center mx-12 md:text-[1rem] leading-[120%] text-[#3F4B7F] font-semibold"
+                className=" md:w-auto text-[3vw] text-center text-[#3F4B7F]  flex justify-center items-center mx-12 md:text-[1rem] leading-[120%] text-[#3F4B7F] font-semibold"
               >
                 {school}
               </div>

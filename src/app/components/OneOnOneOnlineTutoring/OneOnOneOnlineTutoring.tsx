@@ -27,7 +27,7 @@ export default function OneOnOneOnlineTutoring() {
                 />
               </span>
             </h1>
-            <p className="md:text-[1.3rem] text-[3vw] leading-[130%]  font-medium ">
+            <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
               Personalised lessons tailored to IB, IGCSE, A Level & CBSE. Expert tutors, proven
               results, and first class is free.{' '}
             </p>

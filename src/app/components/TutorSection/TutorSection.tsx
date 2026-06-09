@@ -15,6 +15,8 @@ import Ratings from '../../../../public/assets/Images/rating.webp'
 import ManMenmonics from '../../../../public/assets/Images/man-mnemonics.webp'
 import WomManMenmonics from '../../../../public/assets/Images/women-mnemonics.webp.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
+import LoveLetter from '../../../../public/assets/Images/loveletter.webp'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules'
 import GoogleImage from '../../../../public/assets/Images/google-logo.webp'
@@ -118,15 +120,33 @@ export const TutorSection = () => {
           md:top-10  top-20
         "
         />
-        <h2 className="text-[6vw] md:text-[2.5rem] text-white max-w-165 leading-[130%] text-center">
-          {/* What{' '} */}
-          <span className="relative inline-block">
-            {/* Parents & Students{' '} */}
-            Love letters
-            <Image src={TutorLine} alt="tutorline" className="absolute left-0 w-full bottom-0" />
-          </span>
-          {/* Say About Our Mentor Match Tutors */}
-        </h2>
+        <div className="flex items-end gap-2">
+          <h2 className="text-[8vw] md:text-[2.5rem] text-white max-w-165 leading-[130%] text-center">
+            {/* What{' '} */}
+            <span className="relative inline-block">
+              {/* Parents & Students{' '} */}
+              Love letters
+              <Image src={TutorLine} alt="tutorline" className="absolute left-0 w-full bottom-0" />
+            </span>
+            {/* Say About Our Mentor Match Tutors */}
+          </h2>
+          <Image
+            src={LoveLetter}
+            alt="loveletter"
+            // width={40}
+            className="pb-2 md:w-[50px] w-[40px]"
+          />
+        </div>
+        <div className="block md:hidden flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-2 mt-6">
+          <p className="flex gap-2">
+            <Image src={GoogleImage} alt={'Google Review'} width={20} height={5} />
+            <span className="font-bold">4.9</span>
+            <Image src={GoogleStar} alt={'Google Review'} width={20} />
+            Google Rating
+          </p>
+
+          <p>Trusted and Loved by 5,000+ Parents</p>
+        </div>
         <div className="w-full mt-8 flex md:flex-row flex-col justify-center items-center gap-8 ">
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -196,7 +216,7 @@ export const TutorSection = () => {
             ))}
           </Swiper>
         </div>
-        <div className="flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-2 mt-6">
+        <div className="hidden md:block flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-2 mt-6">
           <p className="flex gap-2">
             <Image src={GoogleImage} alt={'Google Review'} width={20} height={5} />
             <span className="font-bold">4.9</span>
@@ -204,7 +224,7 @@ export const TutorSection = () => {
             Google Rating
           </p>
 
-          <p>Trusted and Loved by 2,000+ Parents</p>
+          <p>Trusted and Loved by 5,000+ Parents</p>
         </div>
       </div>
     </div>
