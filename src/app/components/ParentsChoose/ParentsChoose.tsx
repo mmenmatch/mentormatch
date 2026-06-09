@@ -9,20 +9,23 @@ export const ParentsChoose = () => {
     {
       name: Parents1,
       title: 'Same Tutor, Start to Finish',
-      description:
-        'The tutor from your free demo is the tutor who continues. No switching, no restarting the relationship.',
+      description: 'The tutor from vour free demo is the tutor who continues.',
     },
     {
       name: Parents2,
-      title: 'Curriculum Trained Tutors',
-      description: `Not just subject experts. Tutors trained in the specific curricula your child is sitting: IGCSE, A- Level, IB or American.
-         We accept fewer than 2% of tutors who apply.`,
+      title: 'Curriculim Vetted Tutors',
+      description: `Tutors are trained in the specific curricula your child is learing.We accept fewer than 2% of the tutors who apply.`,
     },
     {
       name: Parents3,
-      title: 'Unused Sessions Fully Refunded',
+      title: 'Unused Sessions Refunded',
+      description: 'Any sessions you havent taken is refuned within 48hrs.',
+    },
+    {
+      name: Parents1,
+      title: 'Flexible scheduiling',
       description:
-        'Any sessions you haven’t taken are refunded. clearly stated on our website. Test before you fully commit.',
+        'Tutoring scheduled around school, sports and family routines. Reschedule with 24-hour notice - emergencies handled within 2 hours.',
     },
   ]
 

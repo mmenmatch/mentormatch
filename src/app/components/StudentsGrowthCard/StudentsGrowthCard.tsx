@@ -167,11 +167,11 @@ export const StudentsGrowthCard = () => {
             <DancingDoodles img={DoodleRight} w={80} delay={-6} direction="down" />
           </div>
 
-          <p className="mt-3 text-center text-[0.95rem] md:text-[1.25rem]">
+          {/* <p className="mt-3 text-center text-[0.95rem] md:text-[1.25rem]">
             Across <span className="font-bold">Curricula</span>. Across{' '}
             <span className="font-bold">Subjects</span>. All in{' '}
             <span className="font-bold">UAE</span>.
-          </p>
+          </p> */}
         </div>
 
         {/* Swiper */}

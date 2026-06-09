@@ -22,69 +22,58 @@ import 'swiper/css/pagination'
 const TUTOR_DATA = [
   {
     id: 1,
-    tutorName: 'Rohit Satidasani',
+    tutorName: 'Shwetha Agarwal',
     tutorImg: Tutor,
     name: 'nidhi suresh',
     reviewCount: 4,
     tutorGender: 'M',
     reviewTagColor: '#78909C',
     review:
-      'Mentor Match has been a great support for my son’s maths learning journey. His tutor, Rohit Satidasani has been extremely sincere, patient and dedicated throughout. He always takes the time to answer our questions and has made tremendous effort towards my child’s progress and confidence',
+      'Gives my child real 1:1 attention on difficult Maths concepts. Very happy with the classes. Special thanks to Ms Shwetha Agarwal.',
   },
   {
     id: 2,
-    tutorName: 'Khushbu',
+    tutorName: 'Rohit Satidasani',
     tutorImg: Khusbhu,
     name: 'Zahra Shaikh',
     reviewCount: 4,
     tutorGender: 'F',
     reviewTagColor: '#0097A7',
     review:
-      'Teacher: Anupama RoychoudhuryCourse: Physics AS LevelTeaches Concepts extremely well and allows students to be comfortable whilst asking questions and overall during the session.',
+      "Great support for my son's maths journey. Rohit Satidasani is sincere, patient, and has made tremendous effort towards my child's progress and confidence.",
   },
   {
     id: 3,
-    tutorName: 'Rohit Satidasani',
+    tutorName: 'Khushbu',
     tutorImg: Tutor,
     name: 'nidhi suresh',
     reviewCount: 4,
     tutorGender: 'M',
     reviewTagColor: '#78909C',
     review:
-      'Mentor Match has been a great support for my son’s maths learning journey. His tutor, Rohit Satidasani has been extremely sincere, patient and dedicated throughout. He always takes the time to answer our questions and has made tremendous effort towards my child’s progress and confidence',
+      'Mentor Match has tremendously helped me build confidence in Maths. Ms Khushbu makes every topic so easy to understand.',
   },
   {
     id: 4,
-    tutorName: 'Khushbu',
+    tutorName: 'Anupama',
     tutorImg: Khusbhu,
     name: 'Zahra Shaikh',
     reviewCount: 4,
     tutorGender: 'F',
     reviewTagColor: '#0097A7',
     review:
-      'Teacher: Anupama RoychoudhuryCourse: Physics AS LevelTeaches Concepts extremely well and allows students to be comfortable whilst asking questions and overall during the session.',
+      'Teaches concepts extremely well and makes students feel comfortable asking questions. Anupama Roychoudhury is exceptional.',
   },
   {
     id: 5,
-    tutorName: 'Rohit Satidasani',
+    tutorName: 'Vivek',
     tutorImg: Tutor,
     name: 'nidhi suresh',
     reviewCount: 4,
     tutorGender: 'M',
     reviewTagColor: '#78909C',
     review:
-      'Mentor Match has been a great support for my son’s maths learning journey. His tutor, Rohit Satidasani has been extremely sincere, patient and dedicated throughout. He always takes the time to answer our questions and has made tremendous effort towards my child’s progress and confidence',
-  },
-  {
-    id: 6,
-    tutorName: 'Khushbu',
-    tutorImg: Khusbhu,
-    name: 'Zahra Shaikh',
-    reviewCount: 4,
-    tutorGender: 'F',
-    reviewTagColor: '#0097A7',
-    review:
-      'Teacher: Anupama RoychoudhuryCourse: Physics AS LevelTeaches Concepts extremely well and allows students to be comfortable whilst asking questions and overall during the session.',
+      "Vivek's expertise in Maths is outstanding. My son Gabriel has shown great improvement! Highly recommend Mentor Match.",
   },
 ]
 
@@ -92,7 +81,7 @@ export const TutorSection = () => {
   return (
     <div className="bg-[#006CFF] py-12 overflow-hidden">
       {' '}
-      <div className="max-w-360 mx-auto md:px-16 px-4 flex flex-col justify-center items-center relative">
+      <div className="max-w-360 mx-auto md:px-4 px-4 flex flex-col justify-center items-center relative">
         <Image
           src={Flight}
           alt="flight"
@@ -125,27 +114,23 @@ export const TutorSection = () => {
         "
         />
         <h2 className="text-[6vw] md:text-[2.5rem] text-white max-w-165 leading-[130%] text-center">
-          What{' '}
+          {/* What{' '} */}
           <span className="relative inline-block">
-            Parents & Students{' '}
+            {/* Parents & Students{' '} */}
+            Love letters
             <Image src={TutorLine} alt="tutorline" className="absolute left-0 w-full bottom-0" />
           </span>
-          Say About Our Mentor Match Tutors
+          {/* Say About Our Mentor Match Tutors */}
         </h2>
         <div className="w-full mt-8 flex md:flex-row flex-col justify-center items-center gap-8 ">
           <Swiper
-            modules={[
-              Navigation,
-              // Autoplay
-            ]}
+            modules={[Navigation, Autoplay]}
             navigation
-            pagination={{ clickable: true }}
-            autoplay={
-              {
-                // delay: 3000, // 3 seconds per slide
-                // disableOnInteraction: false, // keeps autoplaying after user swipes
-              }
-            }
+            // pagination={{ clickable: true }}
+            autoplay={{
+              delay: 3000, // 3 seconds per slide
+              // disableOnInteraction: false, // keeps autoplaying after user swipes
+            }}
             spaceBetween={24}
             breakpoints={{
               // Mobile: 1 card
@@ -158,7 +143,7 @@ export const TutorSection = () => {
               },
               // Desktop: 3 cards
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
             }}
             className="overflow-hidden"

@@ -17,7 +17,7 @@ export const GpsFrameWork = () => {
       id: 2,
       title: 'Personalise',
       description:
-        'We match your child with a master mentor for highly personalised 1-on-1 sessions - 2 times a week.',
+        'Your child gets a master mentor for personalised 1-on-1 sessions, twice a week.',
       img: PersonalizeImage,
       color: '#006CFF',
     },
@@ -25,7 +25,7 @@ export const GpsFrameWork = () => {
       id: 3,
       title: 'Score',
       description:
-        'Every month end, we test your child under real exam conditions. So you see exactly where their score stands.',
+        'Every month, we test your child under real exam conditions so you know exactly where they stand.',
       img: ScoreImage,
       color: '#10C36C',
     },
@@ -46,7 +46,7 @@ export const GpsFrameWork = () => {
                   className="w-full h-full min-h-[200px] object-cover"
                 />
               </div>
-              <div className="bg-white px-4 py-4 flex flex-col min-h-[150px] gap-4 rounded-[12px]  ">
+              <div className="bg-white px-4 py-4 flex flex-col min-h-[150px] gap-4 rounded-b-[12px]  ">
                 <p
                   style={{ color: ele.color }}
                   className={`font-bold text-[2rem] leading-[100%] m-0 `}

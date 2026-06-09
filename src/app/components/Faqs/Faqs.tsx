@@ -1,32 +1,63 @@
 'use client'
 
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import type { Country } from 'react-phone-number-input'
 
 export const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(null)
+  const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
 
   const handleToggle = (index: any) => {
     setOpenIndex(openIndex === index ? null : index)
   }
+  useEffect(() => {
+    fetch('https://ipapi.co/json/')
+      .then((res) => res.json())
+      .then((data: any) => {
+        if (data?.country_code) {
+          setDetectedCountry(data?.country_code as Country)
+        }
+      })
+      .catch(() => {
+        // silently fall back to 'IN'
+      })
+  }, [])
+
+ let priceFaq =
+   detectedCountry === 'IN'
+     ? 'Plans start at ₹7,999 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
+     : 'Plans start at AED 499 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
   const faqData = [
     {
-      question: 'Is the Demo Class really Free?',
+      question: 'Which subjects and curricula do you cover?',
       answer:
-        'Yes, the demo class is completely free. It helps students and parents understand the teaching style before enrolling.',
+        "Maths, Science, and English for IB, IGCSE, A Level, and American curricula, Grades 6 to 12. We follow your child's exact school syllabus and chapter sequence.",
     },
     {
-      question: 'How are classes conducted?',
-      answer: 'Classes are conducted online through live one-on-one sessions.',
+      question: 'How does a 1:1 online session work?',
+      answer:
+        '55 minutes, one student, one tutor, no group classes. Live whiteboard, fully interactive, and every session is recorded for your child to review.',
     },
     {
-      question: 'Can I choose my tutor?',
-      answer: 'Yes, we help match you with a tutor based on your requirements.',
+      question: 'How do you match my child with the right tutor?',
+      answer:
+        'We run a short diagnostic first, then match your child to a curriculum specialist. Fewer than 1 in 10 applicants become Mentor Match tutors. Not happy? We rematch at no cost.',
     },
-    // {
-    //   question: 'Do you provide study materials?',
-    //   answer: 'Yes, tutors provide worksheets, notes, and practice materials.',
-    // },
+    {
+      question: 'How will I know if my child is actually improving?',
+      answer:
+        'Every month your child sits a test under real exam conditions. Every 8 sessions you receive a simple progress report showing exactly what improved and what still needs work.',
+    },
+    {
+      question: 'How flexible are the session timings?',
+      answer:
+        "Fully flexible around your child's school schedule and timezone. Most students attend 2 to 3 sessions a week. Reschedule anytime with 24 hours notice.",
+    },
+    {
+      question: 'What does it cost, and what if it does not work out?',
+      answer: priceFaq,
+    },
   ]
 
   return (
@@ -55,7 +86,7 @@ export const Faqs = () => {
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
+                  className={`overflow-hidden max-w-[90%] transition-all duration-300 ${
                     isOpen ? 'max-h-40 mt-4' : 'max-h-0'
                   }`}
                 >

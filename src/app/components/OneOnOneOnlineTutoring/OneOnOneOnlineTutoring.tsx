@@ -12,13 +12,14 @@ export default function OneOnOneOnlineTutoring() {
         <div className="max-w-360 w-full flex md:flex-row flex-col gap-4 mx-auto md:px-16 px-4 md:mt-16 mt-8 ">
           <div className="md:w-[50%] w-full text-white flex flex-col  md:gap-4 gap-2">
             <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
-              1-on-1 Tutoring to Make Your Child{' '}
-              <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
-                Excel in School
-              </span>
+              1:1 Online Tutoring That Actually Improves Grades
+              {/* <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
+                Actually Improves Grades
+              </span> */}
             </h1>
-            <p className="md:text-[1.8rem] text-[4vw] leading-[130%]  font-medium ">
-              Ace Your IB, IGCSE, ICSE & CBSE Exams with Personalized 1-on-1 Tutoring
+            <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
+              Personalised lessons tailored to IB, IGCSE, A Level & CBSE. Expert tutors, proven
+              results, and first class is free.{' '}
             </p>
             <div className="flex  gap-2 md:mb-6">
               <div className="bg-white w-full md:w-auto p-2 rounded-lg md:text-[1.5rem] text-[3vw] leading-[100%] text-[#2A51FF] font-bold flex items-baseline gap-1">

@@ -9,12 +9,12 @@ export const Footer = () => {
     <div className="py-12 px-4 bg-[#1E293E]">
       <div className={`max-w-360 mx-auto`}>
         <div className="md:mb-16 mb-8">
-          <h2 className="md:w-[50%] mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
+          {/* <h2 className="md:w-[50%] mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
             See Exactly Where The Grade is Being Lost In{' '}
             <span className=" bg-[#FFF116] text-black md:text-[2.5rem] text-[5vw] px-2 m-0 leading-[100%] m-0 rounded-[4px]">
               The First Session
             </span>
-          </h2>
+          </h2> */}
         </div>
         <div className="md:w-[60%] relative py-16 mx-auto bg-[linear-gradient(180deg,_#006CFF_0%,_#014AAF_100%)] py-8 rounded-4xl flex flex-col justify-center items-center gap-4 overflow-hidden">
           <Image
@@ -49,7 +49,7 @@ export const Footer = () => {
         </div>
         <div className="mt-8">
           <p className="m-0 md:text-[1rem] text-[3.5vw] text-center text-white ">
-            © 2025 Mentor Match. All rights reserved.
+            © 2026 Mentor Match. All rights reserved.
           </p>
         </div>
       </div>
