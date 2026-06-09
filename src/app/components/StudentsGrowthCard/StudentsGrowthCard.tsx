@@ -7,8 +7,11 @@ import DoodleLeft from '../../../../public/assets/Images/dodleleft.webp'
 import Rishi from '../../../../public/assets/Images/Rishi.png'
 import Sloka from '../../../../public/assets/Images/Sloka.png'
 import Adithya from '../../../../public/assets/Images/Addithya.png'
+import Alia from '../../../../public/assets/Images/alia.webp'
+import Ananya from '../../../../public/assets/Images/ananya.webp'
+import Kabir from '../../../../public/assets/Images/kabir.webp'
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import Arrow from '../../../../public/assets/Images/arrow.png'
@@ -45,31 +48,31 @@ export const StudentsGrowthCard = () => {
       tag: '+25 in One Term',
     },
     {
-      name: 'Rishi',
-      img: Rishi,
-      subject: 'ICSE • Maths • Grade 10',
-      before: '29',
-      after: '80',
-      type: 'mark',
-      tag: '+51 Points',
-    },
-    {
-      name: 'Sloka',
-      img: Sloka,
-      subject: 'IGCSE • Biology • Grade 9',
-      before: 'E',
-      after: 'B',
+      name: 'Alia',
+      img: Alia,
+      subject: 'IBDP •Maths AAHL • Grade 12',
+      before: 'D',
+      after: 'A',
       type: 'grade',
-      tag: 'Grade 1 → Grade 8',
+      tag: '+4 IB Grades',
     },
     {
-      name: 'Aditya',
-      img: Adithya,
-      subject: 'British • Maths • Grade 10',
-      before: '40%',
-      after: '60%',
+      name: 'Kabir',
+      img: Kabir,
+      subject: 'ICSE• Physics • Class 10',
+      before: '38%',
+      after: '74%',
       type: 'percentage',
-      tag: '+25 in One Term',
+      tag: '+36% one term',
+    },
+    {
+      name: 'Aanya',
+      img: Ananya,
+      subject: 'CBSE • Maths • Class 8',
+      before: '45%',
+      after: '78%',
+      type: 'percentage',
+      tag: '+33% in one term',
     },
   ]
 
@@ -177,10 +180,14 @@ export const StudentsGrowthCard = () => {
         {/* Swiper */}
         <div className="studentgrowth">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             navigation
             spaceBetween={16}
             slidesPerView={1.1}
+            autoplay={{
+              delay: 3000, // 3 seconds per slide
+              // disableOnInteraction: false, // keeps autoplaying after user swipes
+            }}
             breakpoints={{
               0: {
                 slidesPerView: 1,

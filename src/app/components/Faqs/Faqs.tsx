@@ -66,7 +66,7 @@ export const Faqs = () => {
         <h2 className="md:text-[2.5rem]  text-[6vw] text-center font-bold  mb-8 md:mb-12">
           Questions Parents Ask Before They Book
         </h2>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-w-[70rem] mx-auto">
           {faqData.map((faq, index) => {
             const isOpen = openIndex === index
 

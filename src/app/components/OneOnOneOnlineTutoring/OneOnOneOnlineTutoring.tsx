@@ -4,6 +4,7 @@ import Image from 'next/image'
 import HeroImage from '../../../../public/assets/Images/hero-section.webp'
 import StudentImage from '../../../../public/assets/Images/student.webp'
 import RArrow from '../../../../public/assets/Images/r-arrow.webp'
+import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 
 export default function OneOnOneOnlineTutoring() {
   return (
@@ -12,10 +13,19 @@ export default function OneOnOneOnlineTutoring() {
         <div className="max-w-360 w-full flex md:flex-row flex-col gap-4 mx-auto md:px-16 px-4 md:mt-16 mt-8 ">
           <div className="md:w-[50%] w-full text-white flex flex-col  md:gap-4 gap-2">
             <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
-              1:1 Online Tutoring That Actually Improves Grades
-              {/* <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
-                Actually Improves Grades
-              </span> */}
+              <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
+                {' '}
+                1:1 Online Tutoring
+              </span>{' '}
+              That Actually
+              <span className="relative ml-1 inline-block">
+                Improves Grades
+                <Image
+                  src={TutorLine}
+                  alt="tutorline"
+                  className="absolute left-0 w-full bottom-0"
+                />
+              </span>
             </h1>
             <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
               Personalised lessons tailored to IB, IGCSE, A Level & CBSE. Expert tutors, proven
@@ -28,6 +38,7 @@ export default function OneOnOneOnlineTutoring() {
                   src={StudentImage}
                   alt="student"
                   className="md:w-5.75 ml-2 w-3.75"
+                  fetchPriority="high"
                   // height={20}
                 />
                 5279+ <span className="text-black font-medium">Students</span>

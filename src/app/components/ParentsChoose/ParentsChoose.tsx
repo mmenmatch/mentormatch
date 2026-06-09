@@ -39,15 +39,19 @@ export const ParentsChoose = () => {
               Why Parents Choose Us
             </h2>
           </span>
-          <p className="md:text-[1.25rem] text-[4vw]">
+          {/* <p className="md:text-[1.25rem] text-[4vw]">
             Built Around Your Child & Your Family’s Time
-          </p>
+          </p> */}
         </div>
         <div className="md:w-full w-full flex flex-col justify-center gap-4 items-center">
           {PARENTS_DATA?.map((data) => (
             <div className="flex md:items-center items-start  gap-4 md:w-220 ">
               <span className="md:max-w-[60px] max-w-[30px]">
-                <Image src={data?.name} alt="step" className="w-full h-full object-contain" />
+                <Image
+                  src={data?.name}
+                  alt="step"
+                  className="md:min-w-auto min-w-[30px] w-full h-full object-contain"
+                />
               </span>
               <div className="w-auto flex flex-col justify-center gap-2">
                 <p className="m-0 text-black md:text-[1.25rem] text-[4vw] font-bold">
