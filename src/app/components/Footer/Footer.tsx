@@ -9,23 +9,23 @@ export const Footer = () => {
     <div className="py-12 px-4 bg-[#1E293E]">
       <div className={`max-w-360 mx-auto`}>
         <div className="md:mb-16 mb-8">
-          {/* <h2 className="md:w-[50%] mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
+          <h2 className="md:w-[50%] mx-auto text-center md:text-[2.5rem] leading-[130%] text-[5vw] font-bold m-0  text-white">
             See Exactly Where The Grade is Being Lost In{' '}
             <span className=" bg-[#FFF116] text-black md:text-[2.5rem] text-[5vw] px-2 m-0 leading-[100%] m-0 rounded-[4px]">
               The First Session
             </span>
-          </h2> */}
+          </h2>
         </div>
-        <div className="md:w-[60%] relative py-16 mx-auto bg-[linear-gradient(180deg,_#006CFF_0%,_#014AAF_100%)] py-8 rounded-4xl flex flex-col justify-center items-center gap-4 overflow-hidden">
+        <div className="md:w-[60%] w-full relative py-20 mx-auto bg-[linear-gradient(180deg,_#006CFF_0%,_#014AAF_100%)] py-8 rounded-4xl flex flex-col justify-center items-center gap-4 overflow-hidden">
           <Image
             src={FooterTutor}
             alt="FooterTutor"
-            className="hidden md:block absolute left-0 bottom-0 w-[280px]"
+            className=" md:block absolute left-0 bottom-0 md:w-[250px] w-[180px]"
           />
           <div className="md:text-[1.2rem] text-[4vw]">
-            <p className="text-white m-0  text-center leading-[120%] w-[290px] mx-auto">
+            {/* <p className="text-white m-0  text-center leading-[120%] w-[290px] mx-auto">
               Book a Free Demo Class with a Curriculum Trained Tutor. You Sit in. You Decide.
-            </p>
+            </p> */}
           </div>
           <div className="max-w-[50%]">
             <button
@@ -44,7 +44,7 @@ export const Footer = () => {
           <Image
             src={FooterStudent}
             alt="FooterStudent"
-            className="hidden md:block absolute right-0 bottom-0 w-[250px]"
+            className=" md:block absolute right-0 bottom-0 md:w-[250px] w-[150px]"
           />
         </div>
         <div className="mt-8">
