@@ -6,7 +6,11 @@ import Heart from '../../../../public/assets/Images/heart copy.webp'
 import Star from '../../../../public/assets/Images/star.webp'
 import Leaf from '../../../../public/assets/Images/leaf.webp'
 import Tutor from '../../../../public/assets/Images/rohit.webp'
-import Khusbhu from '../../../../public/assets/Images/khusbhu.webp'
+import Anupama from '../../../../public/assets/Images/khusbhu.webp'
+import Kusbhu from '../../../../public/assets/Images/kusbhu.webp'
+import Vivek from '../../../../public/assets/Images/vivek-1.webp'
+import Swetha from '../../../../public/assets/Images/swetha.webp'
+
 import Ratings from '../../../../public/assets/Images/rating.webp'
 import ManMenmonics from '../../../../public/assets/Images/man-mnemonics.webp'
 import WomManMenmonics from '../../../../public/assets/Images/women-mnemonics.webp.webp'
@@ -24,40 +28,40 @@ const TUTOR_DATA = [
   {
     id: 1,
     tutorName: 'Shwetha Agarwal',
-    tutorImg: Tutor,
-    name: 'nidhi suresh',
-    reviewCount: 4,
-    tutorGender: 'M',
-    reviewTagColor: '#78909C',
+    tutorImg: Swetha,
+    name: 'Fatima Sharbeen',
+    reviewCount: 6,
+    tutorGender: 'F',
+    reviewTagColor: '#704DB9',
     review:
       'Gives my child real 1:1 attention on difficult Maths concepts. Very happy with the classes. Special thanks to Ms Shwetha Agarwal.',
   },
   {
     id: 2,
     tutorName: 'Rohit Satidasani',
-    tutorImg: Khusbhu,
-    name: 'Zahra Shaikh',
-    reviewCount: 4,
-    tutorGender: 'F',
-    reviewTagColor: '#0097A7',
-    review:
-      "Great support for my son's maths journey. Rohit Satidasani is sincere, patient, and has made tremendous effort towards my child's progress and confidence.",
-  },
-  {
-    id: 3,
-    tutorName: 'Khushbu',
     tutorImg: Tutor,
     name: 'nidhi suresh',
     reviewCount: 4,
     tutorGender: 'M',
     reviewTagColor: '#78909C',
     review:
+      "Great support for my son's maths journey. Rohit Satidasani is sincere, patient, and has made tremendous effort towards my child's progress and confidence.",
+  },
+  {
+    id: 3,
+    tutorName: 'Khushbu',
+    tutorImg: Kusbhu,
+    name: 'Pyre',
+    reviewCount: 4,
+    tutorGender: 'F',
+    reviewTagColor: '#EF6C00',
+    review:
       'Mentor Match has tremendously helped me build confidence in Maths. Ms Khushbu makes every topic so easy to understand.',
   },
   {
     id: 4,
     tutorName: 'Anupama',
-    tutorImg: Khusbhu,
+    tutorImg: Anupama,
     name: 'Zahra Shaikh',
     reviewCount: 4,
     tutorGender: 'F',
@@ -68,11 +72,11 @@ const TUTOR_DATA = [
   {
     id: 5,
     tutorName: 'Vivek',
-    tutorImg: Tutor,
+    tutorImg: Vivek,
     name: 'nidhi suresh',
     reviewCount: 4,
     tutorGender: 'M',
-    reviewTagColor: '#78909C',
+    reviewTagColor: '#EF6C00',
     review:
       "Vivek's expertise in Maths is outstanding. My son Gabriel has shown great improvement! Highly recommend Mentor Match.",
   },
@@ -184,7 +188,7 @@ export const TutorSection = () => {
                       <div className="w-[120px] pl-2">
                         <Image src={Ratings} alt="rating" />
                       </div>
-                      <p className="text-[0.85rem] font-medium">{data?.review}</p>
+                      <p className="text-[1rem] font-medium">{data?.review}</p>
                     </div>
                   </div>
                 </div>

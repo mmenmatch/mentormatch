@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import Parents1 from '../../../../public/assets/Images/parent-1.png'
-import Parents2 from '../../../../public/assets/Images/parent-2.png'
-import Parents3 from '../../../../public/assets/Images/parent-3.png'
+import Parents1 from '../../../../public/assets/Images/pc-1.webp'
+import Parents2 from '../../../../public/assets/Images/pc-2.webp'
+import Parents3 from '../../../../public/assets/Images/pc-3.webp'
+import Parents4 from '../../../../public/assets/Images/pc-4.webp'
+
 
 export const ParentsChoose = () => {
   const PARENTS_DATA = [
@@ -22,7 +24,7 @@ export const ParentsChoose = () => {
       description: 'Any sessions you havent taken is refuned within 48hrs.',
     },
     {
-      name: Parents1,
+      name: Parents4,
       title: 'Flexible scheduiling',
       description:
         'Tutoring scheduled around school, sports and family routines. Reschedule with 24-hour notice - emergencies handled within 2 hours.',

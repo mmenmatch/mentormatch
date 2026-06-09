@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import LeadFormImage from '../../../../public/assets/Images/lead-form.webp'
+import LeadFormImage from '../../../../public/assets/Images/teacher-form.webp'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
 
 export const LeadForm = () => {

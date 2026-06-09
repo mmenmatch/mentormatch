@@ -196,3 +196,6 @@ label{
 
 
 }
+.rfm-marquee-container{
+  overflow: visible !important;
+}

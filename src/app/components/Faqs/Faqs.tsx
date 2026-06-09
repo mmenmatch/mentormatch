@@ -76,7 +76,7 @@ export const Faqs = () => {
                   className="w-full flex justify-between items-center cursor-pointer"
                   onClick={() => handleToggle(index)}
                 >
-                  <p className="m-0 md:text-[1.2rem] text-[4vw] text-[#364153] font-medium text-left">
+                  <p className="m-0 md:text-[1.2rem] w-[90%] text-[4vw] text-[#364153] font-medium text-left">
                     {faq.question}
                   </p>
 

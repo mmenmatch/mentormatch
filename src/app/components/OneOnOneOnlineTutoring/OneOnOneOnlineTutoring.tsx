@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import HeroImage from '../../../../public/assets/Images/hero-section.webp'
+import HeroImage from '../../../../public/assets/Images/LP-HERO.webp'
 import StudentImage from '../../../../public/assets/Images/student.webp'
 import RArrow from '../../../../public/assets/Images/r-arrow.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
@@ -11,7 +11,7 @@ export default function OneOnOneOnlineTutoring() {
     <div>
       <div className="mx-auto flex bg-[linear-gradient(180deg,_#0285FA_-20.54%,_#006CFF_50.79%)]">
         <div className="max-w-360 w-full flex md:flex-row flex-col gap-4 mx-auto md:px-16 px-4 md:mt-16 mt-8 ">
-          <div className="md:w-[50%] w-full text-white flex flex-col  md:gap-4 gap-2">
+          <div className="md:w-[45%] w-full text-white flex flex-col  md:gap-4 gap-2">
             <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
               <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
                 {' '}
@@ -38,7 +38,6 @@ export default function OneOnOneOnlineTutoring() {
                   src={StudentImage}
                   alt="student"
                   className="md:w-5.75 ml-2 w-3.75"
-                  fetchPriority="high"
                   // height={20}
                 />
                 5279+ <span className="text-black font-medium">Students</span>
@@ -63,8 +62,13 @@ export default function OneOnOneOnlineTutoring() {
               </button>
             </div>
           </div>
-          <div className="md:w-[50%] w-full relative flex justify-end items-end">
-            <Image src={HeroImage} alt="hero-section" className="object-contain" />
+          <div className="md:w-[60%] w-full relative flex justify-end items-end">
+            <Image
+              src={HeroImage}
+              alt="hero-section"
+              className="w-full h-full"
+              fetchPriority="high"
+            />
           </div>
         </div>
       </div>
