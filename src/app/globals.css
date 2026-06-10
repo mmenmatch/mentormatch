@@ -203,3 +203,7 @@ label{
 .rfm-marquee-container{
   overflow: visible !important;
 }
+.success-bg{
+  background-size: cover;
+  background-image: url('https://cdn.prod.website-files.com/645c85e0705da20f26b63b8e/645e107eea17c080732d4bec_pattern.webp');
+}
