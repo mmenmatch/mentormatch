@@ -11,6 +11,7 @@ import { GpsFrameWork } from '../components/GpsFrameWork/GpsFrameWork'
 import { Faqs } from '../components/Faqs/Faqs'
 import { LeadForm } from '../components/LeadForm/LeadForm'
 import { TutorSection } from '../components/TutorSection/TutorSection'
+import { FooterBanner } from '../components/FooterBanner/FooterBanner'
 
 export const metadata: Metadata = {
   title: '1 on 1 online tutoring | Mentor Match',
@@ -52,6 +53,7 @@ export default function page() {
           <TutorSection />
           <Faqs />
           <Footer />
+          <FooterBanner />
         </div>
       </div>
     </div>
