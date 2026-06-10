@@ -216,7 +216,7 @@ export const TutorSection = () => {
             ))}
           </Swiper>
         </div>
-        <div className="hidden md:block flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-2 mt-6">
+        <div className="hidden md:flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-4 mt-6">
           <p className="flex gap-2">
             <Image src={GoogleImage} alt={'Google Review'} width={20} height={5} />
             <span className="font-bold">4.9</span>

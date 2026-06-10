@@ -12,11 +12,11 @@ export const Faqs = () => {
     setOpenIndex(openIndex === index ? null : index)
   }
   useEffect(() => {
-    fetch('https://ipapi.co/json/')
+    fetch('https://ipinfo.io/json')
       .then((res) => res.json())
       .then((data: any) => {
-        if (data?.country_code) {
-          setDetectedCountry(data?.country_code as Country)
+        if (data?.country) {
+          setDetectedCountry(data?.country as Country)
         }
       })
       .catch(() => {
@@ -24,10 +24,10 @@ export const Faqs = () => {
       })
   }, [])
 
- let priceFaq =
-   detectedCountry === 'IN'
-     ? 'Plans start at ₹7,999 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
-     : 'Plans start at AED 499 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
+  let priceFaq =
+    detectedCountry === 'IN'
+      ? 'Plans start at ₹7,999 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
+      : 'Plans start at AED 499 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
   const faqData = [
     {
       question: 'Which subjects and curricula do you cover?',

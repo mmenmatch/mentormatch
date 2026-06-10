@@ -27,11 +27,11 @@ export const MarqueeComponent = () => {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
 
   useEffect(() => {
-    fetch('https://ipapi.co/json/')
+    fetch('https://ipinfo.io/json')
       .then((res) => res.json())
       .then((data: any) => {
-        if (data?.country_code) {
-          setDetectedCountry(data?.country_code as Country)
+        if (data?.country) {
+          setDetectedCountry(data?.country as Country)
         }
       })
       .catch(() => {
