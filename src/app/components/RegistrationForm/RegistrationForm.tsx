@@ -110,6 +110,7 @@ export default function RegistrationForm() {
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
     }
+  localStorage.setItem('formData', JSON.stringify(payload))
 
     try {
       const res = await fetch('/app/api/submit-form', {

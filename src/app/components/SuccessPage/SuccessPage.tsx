@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
 import { useRouter } from 'next/navigation'
 import { Modal } from '../Modal/Modal'
@@ -10,6 +10,43 @@ export const SuccessPage = () => {
   const closeFn = () => {
     setShowModal(false)
   }
+  useEffect(() => {
+    try {
+      const storedData = localStorage.getItem('formData')
+      const formData = storedData ? JSON.parse(storedData) : null
+      // console.log('storedData', storedData)
+      console.log('formData', formData)
+
+      // Fire Google Ads conversion
+      window.gtag?.('event', 'conversion', {
+        send_to: 'AW-11284198205/Lm3eCMyY5eIbEL3m3IQq',
+      })
+
+      // Push user data to dataLayer
+      window.dataLayer?.push({
+        event: 'ec_form_submit',
+        user_data: {
+          email:
+            formData?.email ||
+            formData?.['email'] ||
+            formData?.['email-address'] ||
+            formData?.['Email-Address'] ||
+            '',
+          phone_number:
+            formData?.phone ||
+            formData?.['phone'] ||
+            formData?.['phone-number'] ||
+            formData?.['Contact-UAE'] ||
+            '',
+        },
+      })
+      localStorage.removeItem('formData')
+      console.log('✅ dataLayer after push:', window.dataLayer) // ← check dataLayer
+    } catch (err) {
+      console.error('Tracking error:', err)
+    }
+  }, [])
+
   return (
     <div className="w-full h-full">
       <div className="success-bg bg-[#2B51FF] w-full h-[100vh]">

@@ -78,6 +78,7 @@ export default function ModalForm({ CloseButton }: any) {
       utm_term: params.get('utm_term') || '',
     }
     console.log('payload', payload)
+  localStorage.setItem('formData', JSON.stringify(payload))
 
     try {
       const res = await fetch('/app/api/submit-form', {

@@ -1,12 +1,11 @@
 import { Metadata } from 'next'
 import { SuccessPage } from '../components/SuccessPage/SuccessPage'
 export const metadata: Metadata = {
-  title: '1 on 1 online tutoring | Mentor Match',
-  description: 'Learn more about Mentor Match and how we help students connect with expert tutors.',
+  title: 'Success',
+  description: 'Form submitted successfully.',
   openGraph: {
-    title: '1 on 1 online tutoring | Mentor Match',
-    description:
-      'Learn more about Mentor Match and how we help students connect with expert tutors.',
+    title: 'Success | Mentor Match',
+    description: 'Form submitted successfully.',
     images: [
       {
         url: 'https://cdn.prod.website-files.com/645c85e0705da20f26b63b8e/6a21389fc30b68ec4cafbe77_OG.webp', // absolute URL

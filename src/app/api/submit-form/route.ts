@@ -85,8 +85,6 @@ export async function POST(req: NextRequest) {
 
 // ── HubSpot ──────────────────────────────────────────────
 async function submitToHubSpot(data: any) {
-  console.log('submitToHubSpot', data)
-
   await fetch(
     `https://api.hsforms.com/submissions/v3/integration/submit/244333388/767d3250-c3d6-4873-84d2-ea278f019ab6`,
     {
@@ -131,15 +129,6 @@ async function submitToHubSpot(data: any) {
     },
   )
 }
-
-// ── Google Sheets (via Apps Script Web App) ──────────────
-// async function submitToGoogleSheets(data: Record<string, string>) {
-//   await fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL!, {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(data),
-//   })
-// }
 
 // ── Slack ─────────────────────────────────────────────────
 async function sendSlackNotification(data: any) {
