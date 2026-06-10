@@ -118,7 +118,7 @@ export default function RegistrationForm() {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
-      router.push('https://www.mentormatch.com/success-page')
+      router.push('/success-page')
 
       setStatus('success')
     } catch {

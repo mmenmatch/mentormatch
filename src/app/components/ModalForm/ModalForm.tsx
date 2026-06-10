@@ -27,7 +27,7 @@ type FormData = z.infer<typeof schema>
 
 const GRADES = ['Grade 6', 'Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12']
 
-export default function ModalForm() {
+export default function ModalForm({ CloseButton }: any) {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
 
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -51,6 +51,7 @@ export default function ModalForm() {
     handleSubmit,
     control,
     watch,
+    reset,
     formState: { errors, isValid },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -85,7 +86,9 @@ export default function ModalForm() {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
-      router.push('https://www.mentormatch.com/app/success-page')
+      reset()
+      CloseButton()
+      router.push('/success-page')
       setStatus('success')
     } catch {
       setStatus('error')

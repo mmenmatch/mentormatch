@@ -12,7 +12,7 @@ export const Modal = ({ closeFn }: any) => {
         <div className="absolute right-2 top-2 cursor-pointer" onClick={closeFn}>
           <Image src={CloseButton} alt="close" width={30} />
         </div>
-        <ModalForm />
+        <ModalForm CloseButton={closeFn} />
       </div>
     </div>
   )

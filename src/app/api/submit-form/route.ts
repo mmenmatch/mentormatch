@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 type FormData = {
-  email: string
-  childName: string
-  phone: string
-  grade: string
+  email?: string
+  childName?: string
+  phone?: string
+  grade?: string
   pageUrl?: string
   referrer?: string
   pricingAccepted?: string
@@ -41,9 +41,9 @@ export async function POST(req: NextRequest) {
     submitToHubSpot({
       parentName,
       subject,
-      curriculum,
+      // curriculum,
       email,
-      childName,
+      // childName,
       grade,
       phone,
       pricingAccepted,
@@ -59,9 +59,9 @@ export async function POST(req: NextRequest) {
     sendSlackNotification({
       parentName,
       subject,
-      curriculum,
+      // curriculum,
       email,
-      childName,
+      // childName,
       grade,
       phone,
       pricingAccepted,
@@ -94,13 +94,13 @@ async function submitToHubSpot(data: any) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         fields: [
-          { name: 'email', value: data.email },
-          { name: 'price_qualification', value: data.pricingAccepted },
+          { name: 'email', value: data?.email || ' ' },
+          { name: 'price_qualification', value: data?.pricingAccepted || ' ' },
           // { name: 'student_name', value: data.childName }, // custom property
-          { name: 'class', value: data.grade },
-          { name: 'phone', value: data.phone },
-          { name: 'firstname', value: data?.parentName },
-          { name: 'subject', value: data?.subject },
+          { name: 'class', value: data?.grade || ' ' },
+          { name: 'phone', value: data?.phone || '' },
+          { name: 'firstname', value: data?.parentName || ' ' },
+          { name: 'subject', value: data?.subject || '' },
           // { name: 'curriculum', value: data?.curriculum },
           {
             name: 'source_url',
