@@ -3,14 +3,14 @@ import React, { useState, useEffect, useRef } from 'react'
 import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
 import { useRouter } from 'next/navigation'
 import { Modal } from '../Modal/Modal'
-import { useSearchParams } from 'next/navigation'
+// import { useSearchParams } from 'next/navigation'
 
 
-export const SuccessPage = ({}) => {
+export const SuccessPage = ({ searchParams }: any) => {
   const router = useRouter()
   const [showModal, setShowModal] = useState(false)
-  const searchParams = useSearchParams()
-  const t = searchParams.get('t')
+  // const searchParams = useSearchParams()
+  // const t = searchParams.get('t')
   // const hasTracked = useRef(false)
 
   const closeFn = () => {
@@ -77,7 +77,7 @@ export const SuccessPage = ({}) => {
     } catch (err) {
       console.error('Tracking error:', err)
     }
-  }, [t])
+  }, [searchParams])
 
   return (
     <div className="w-full h-full">

@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import { SuccessPage } from '../components/SuccessPage/SuccessPage'
+import { Suspense } from 'react'
+
 export const metadata: Metadata = {
   title: 'Success',
   description: 'Form submitted successfully.',
@@ -17,10 +19,10 @@ export const metadata: Metadata = {
   },
 }
 
-export default function page() {
+export default function page({ searchParams }: { searchParams: { t?: string } }) {
   return (
-    <div>
-      <SuccessPage />
-    </div>
+    <Suspense fallback={null}>
+      <SuccessPage key={searchParams.t ?? 'default'} />
+    </Suspense>
   )
 }
