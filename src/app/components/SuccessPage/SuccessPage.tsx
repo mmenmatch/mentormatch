@@ -3,26 +3,20 @@ import React, { useState, useEffect, useRef } from 'react'
 import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
 import { useRouter } from 'next/navigation'
 import { Modal } from '../Modal/Modal'
-// import { useSearchParams } from 'next/navigation'
 
 
-export const SuccessPage = ({ searchParams }: any) => {
+export const SuccessPage = () => {
   const router = useRouter()
   const [showModal, setShowModal] = useState(false)
-  // const searchParams = useSearchParams()
-  // const t = searchParams.get('t')
-  // const hasTracked = useRef(false)
+  const hasTracked = useRef(false)
 
   const closeFn = () => {
     setShowModal(false)
   }
   useEffect(() => {
-    // if (hasTracked.current) return
-    // hasTracked.current = true
-    if (sessionStorage.getItem('leadTracked') === 'true') {
-      sessionStorage.removeItem('leadTracked') // clear so next submission can fire
-      return
-    }
+    if (hasTracked.current) return
+    hasTracked.current = true
+
     try {
       const storedData = localStorage.getItem('formData')
       const formData = storedData ? JSON.parse(storedData) : null
@@ -71,13 +65,13 @@ export const SuccessPage = ({ searchParams }: any) => {
         console.error('fbq not found')
       }
 
-      sessionStorage.setItem('leadTracked', 'true')
+      // sessionStorage.setItem('leadTracked', 'true')
       localStorage.removeItem('formData')
       console.log('✅ dataLayer after push:', window.dataLayer) // ← check dataLayer
     } catch (err) {
       console.error('Tracking error:', err)
     }
-  }, [searchParams])
+  }, [])
 
   return (
     <div className="w-full h-full">
