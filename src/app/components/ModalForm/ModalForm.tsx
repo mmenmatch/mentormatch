@@ -78,7 +78,14 @@ export default function ModalForm({ CloseButton }: any) {
       utm_term: params.get('utm_term') || '',
     }
     console.log('payload', payload)
-  localStorage.setItem('formData', JSON.stringify(payload))
+    localStorage.setItem('formData', JSON.stringify(payload))
+     if (typeof window.fbq !== 'undefined') {
+       //  console.log('Meta Pixel loaded')
+       window.fbq('track', 'Submit Application')
+       //  console.log('Submit Application event sent')
+     } else {
+       console.error('fbq not found')
+     }
 
     try {
       const res = await fetch('/app/api/submit-form', {
@@ -87,9 +94,10 @@ export default function ModalForm({ CloseButton }: any) {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
+
       reset()
       CloseButton()
-      router.push('/success-page')
+      router.push(`/success-page?t=${Date.now()}`)
       setStatus('success')
     } catch {
       setStatus('error')

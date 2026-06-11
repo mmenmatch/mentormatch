@@ -1,16 +1,28 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
 import { useRouter } from 'next/navigation'
 import { Modal } from '../Modal/Modal'
+import { useSearchParams } from 'next/navigation'
 
-export const SuccessPage = () => {
+
+export const SuccessPage = ({}) => {
   const router = useRouter()
   const [showModal, setShowModal] = useState(false)
+  const searchParams = useSearchParams()
+  const t = searchParams.get('t')
+  // const hasTracked = useRef(false)
+
   const closeFn = () => {
     setShowModal(false)
   }
   useEffect(() => {
+    // if (hasTracked.current) return
+    // hasTracked.current = true
+    if (sessionStorage.getItem('leadTracked') === 'true') {
+      sessionStorage.removeItem('leadTracked') // clear so next submission can fire
+      return
+    }
     try {
       const storedData = localStorage.getItem('formData')
       const formData = storedData ? JSON.parse(storedData) : null
@@ -40,12 +52,32 @@ export const SuccessPage = () => {
             '',
         },
       })
+
+      //META PIXEL
+      if (typeof window.fbq !== 'undefined') {
+        console.log('Meta Pixel loaded')
+        if (formData) {
+          window.fbq('track', 'Lead', {
+            em: formData.email || '',
+            ph: formData.phone || '',
+            fn: formData.parentName || '',
+          })
+          console.log('Lead event sent')
+        } else {
+          window.fbq('track', 'Lead')
+          console.log('Lead event sent without data')
+        }
+      } else {
+        console.error('fbq not found')
+      }
+
+      sessionStorage.setItem('leadTracked', 'true')
       localStorage.removeItem('formData')
       console.log('✅ dataLayer after push:', window.dataLayer) // ← check dataLayer
     } catch (err) {
       console.error('Tracking error:', err)
     }
-  }, [])
+  }, [t])
 
   return (
     <div className="w-full h-full">

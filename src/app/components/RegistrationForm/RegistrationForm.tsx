@@ -111,7 +111,13 @@ export default function RegistrationForm() {
       utm_term: params.get('utm_term'),
     }
   localStorage.setItem('formData', JSON.stringify(payload))
-
+if (typeof window.fbq !== 'undefined') {
+  // console.log('Meta Pixel loaded')
+  window.fbq('track', 'Submit Application')
+  // console.log('Submit Application event sent')
+} else {
+  console.error('fbq not found')
+}
     try {
       const res = await fetch('/app/api/submit-form', {
         method: 'POST',
@@ -119,8 +125,9 @@ export default function RegistrationForm() {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
-      router.push('/success-page')
+      //META PIXEL
 
+      router.push('/success-page')
       setStatus('success')
     } catch {
       setStatus('error')
@@ -177,28 +184,6 @@ export default function RegistrationForm() {
           {/* Only show error while under 3 chars; disappears once valid */}
           {errors.email && <p className="text-red-500 text-xs mt-0 mb-0">{errors.email.message}</p>}
         </div>
-
-        {/* Child Name */}
-        {/* <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
-            Child's Name <span className="text-red-500">*</span>
-          </label>
-          <input
-            {...register('childName')}
-            placeholder="Enter child's name"
-            className={`w-full px-4 py-3 border rounded-lg outline-none transition
-              ${
-                errors.childName
-                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
-                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
-              }`}
-          />
-          {errors.childName && childName.length < 3 && (
-            <p className="text-red-500 text-xs mt-0  mb-0">
-              {errors.childName.message}
-            </p>
-          )}
-        </div> */}
 
         {/* Phone Number with Country Code */}
         {detectedCountry && (
@@ -309,31 +294,6 @@ export default function RegistrationForm() {
             <p className="text-red-500 text-xs mt-0  mb-0">{errors?.pricingAccepted.message}</p>
           )}
         </div>
-        {/* <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem] font-medium text-gray-700">
-            {pricingLabel} <span className="text-red-500">*</span>
-          </label>
-
-          <div className="flex  md:flex-row flex-col md:gap-16 gap-2 mt-2">
-            <label className="flex items-center gap-2 cursor-pointer font-medium">
-              <input
-                type="radio"
-                value="yes"
-                {...register('pricingAccepted')}
-              />
-              Yes, I want to apply
-            </label>
-
-            <label className="flex items-center gap-2 cursor-pointer font-medium">
-              <input type="radio" value="no" {...register('pricingAccepted')} />
-              No, it is outside my budget
-            </label>
-          </div>
-
-          {errors.pricingAccepted && (
-            <p className="text-red-500 text-xs">Please select an option</p>
-          )}
-        </div> */}
 
         {/* Submit */}
         <button
