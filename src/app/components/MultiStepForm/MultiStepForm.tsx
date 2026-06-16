@@ -174,7 +174,7 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
                   <div className=" flex justify-center  ">
                     <div
                       className={`px-8 py-4 border border-gray rounded font-semibold ${
-                        watch('grade') == ele
+                        Number(watch('grade')) == ele
                           ? 'bg-blue-700 text-white border-blue-700'
                           : 'border-blue-400'
                       }`}
