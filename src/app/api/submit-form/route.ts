@@ -10,6 +10,8 @@ type FormData = {
   parentName?: string
   subject?: string
   curriculum?: string
+  date?: string
+  time?: string
 
   utm_source?: string
   utm_medium?: string
@@ -23,9 +25,9 @@ export async function POST(req: NextRequest) {
   const {
     parentName,
     subject,
-    curriculum,
+    curriculum = '',
     email,
-    childName,
+    childName = '',
     grade,
     phone,
     pageUrl,
@@ -36,14 +38,17 @@ export async function POST(req: NextRequest) {
     utm_campaign,
     utm_content,
     utm_term,
+    date = '',
+    time = '',
   } = body
+
   const results = await Promise.allSettled([
     submitToHubSpot({
       parentName,
       subject,
-      // curriculum,
+      curriculum,
       email,
-      // childName,
+      childName,
       grade,
       phone,
       pricingAccepted,
@@ -54,6 +59,8 @@ export async function POST(req: NextRequest) {
       utm_campaign,
       utm_content,
       utm_term,
+      date,
+      time,
     }),
     // submitToGoogleSheets({ email, childName, grade, phone }),
     sendSlackNotification({
@@ -72,6 +79,8 @@ export async function POST(req: NextRequest) {
       utm_campaign,
       utm_content,
       utm_term,
+      date,
+      time,
     }),
   ])
 
@@ -85,7 +94,10 @@ export async function POST(req: NextRequest) {
 
 // ── HubSpot ──────────────────────────────────────────────
 async function submitToHubSpot(data: any) {
-  await fetch(
+  // console.log(' time', data?.time)
+  // console.log(' Date', data?.date)
+
+  const response = await fetch(
     `https://api.hsforms.com/submissions/v3/integration/submit/244333388/767d3250-c3d6-4873-84d2-ea278f019ab6`,
     {
       method: 'POST',
@@ -93,13 +105,21 @@ async function submitToHubSpot(data: any) {
       body: JSON.stringify({
         fields: [
           { name: 'email', value: data?.email || ' ' },
-          { name: 'price_qualification', value: data?.pricingAccepted || ' ' },
-          // { name: 'student_name', value: data.childName }, // custom property
+          { name: 'price_qualification', value: data?.pricingAccepted || '' },
+          { name: 'student_name', value: data?.childName || '' }, // custom property
           { name: 'class', value: data?.grade || ' ' },
           { name: 'phone', value: data?.phone || '' },
           { name: 'firstname', value: data?.parentName || ' ' },
           { name: 'subject', value: data?.subject || '' },
-          // { name: 'curriculum', value: data?.curriculum },
+          { name: 'curriculum', value: data?.curriculum || '' },
+          {
+            name: 'preferred_demo_date',
+            value: data?.date || '',
+          },
+          {
+            name: 'preferred_demo_time',
+            value: data?.time || '',
+          },
           {
             name: 'source_url',
             value: data?.pageUrl || '',
@@ -128,6 +148,10 @@ async function submitToHubSpot(data: any) {
       }),
     },
   )
+  const result = await response.text()
+  console.log('result', result)
+  console.log(' time', data?.time)
+  console.log(' Date', data?.date)
 }
 
 // ── Slack ─────────────────────────────────────────────────
@@ -138,7 +162,7 @@ async function sendSlackNotification(data: any) {
     body: JSON.stringify({
       parentName: data?.parentName,
       subject: data?.subject,
-      // curriculum: data?.curriculum,
+      curriculum: data?.curriculum,
       email: data?.email,
       studentName: data?.childName,
       class: data?.grade,
@@ -151,6 +175,8 @@ async function sendSlackNotification(data: any) {
       utm_content: data?.utm_content,
       utm_term: data?.utm_term,
       price_qualification: data?.pricingAccepted,
+      preferred_demo_date: data?.date,
+      preferred_demo_time: data?.time,
     }),
   })
 }
