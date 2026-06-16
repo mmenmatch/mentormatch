@@ -11,7 +11,6 @@ import { useRouter } from 'next/navigation'
 
 const schema = z.object({
   parentName: z.string().min(3, 'Minimum 3 characters required'),
-  // childName: z.string().min(3, 'Minimum 3 characters required'),
   email: z
     .string()
     .min(1, 'Email Address is required')
@@ -19,17 +18,12 @@ const schema = z.object({
   grade: z.string().min(1, 'Please select a grade'),
   subject: z.string().min(1, 'Please select a subject'),
   pricingAccepted: z.string().min(1, 'Please select an option'),
-
-  // curriculum: z.string().min(1, 'Please select a curriculum'),
   phone: z
     .string()
     .min(1, 'Phone number is required')
     .refine((val) => isValidPhoneNumber(val), {
       message: 'Invalid phone number for selected country',
     }),
-  // pricingAccepted: z.enum(['yes', 'no'], {
-  //   message: 'Please select an option',
-  // }),
 })
 
 type FormData = z.infer<typeof schema>
