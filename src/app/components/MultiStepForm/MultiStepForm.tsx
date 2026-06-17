@@ -356,6 +356,7 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
                             defaultCountry={detectedCountry} // 👈 dynamic instead of hardcoded "IN"
                             value={value}
                             onChange={onChange}
+                            autoComplete="new-password"
                             className={`phone-input-wrapper ${errors?.phone ? 'phone-error' : ''}`}
                           />
                         )}
@@ -536,14 +537,6 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
             )}
           </div>
         </form>
-      </div>
-      <div className=" md:flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-4 mt-6">
-        <p className="flex gap-2 md:text-black text-white">
-          <Image src={GoogleImage} alt={'Google Review'} width={20} height={5} />
-          <span className="font-bold ">4.9</span>
-          <Image src={GoogleStar} alt={'Google Review'} width={20} />
-          Google Rating
-        </p>
       </div>
     </div>
   )
