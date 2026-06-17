@@ -27,11 +27,11 @@ export const metadata: Metadata = {
 }
 export default function page() {
   return (
-    <div className="w-full">
+    <div className="w-full  h-[100vh] ">
       <NavBar />
       <div className="flex w-full">
-        <div className="md:flex hidden w-[50%] bg-[#016CFF]  flex-col justify-between relative">
-          <h1 className="text-[2.5rem] text-white text-center leading-[140%] w-[80%] mx-auto">
+        <div className="md:flex hidden w-[40%] bg-[#163B82]  flex-col justify-between relative pt-8">
+          <h1 className="text-[2rem] text-white text-center leading-[140%] w-[80%] mx-auto">
             1-on-1 Tutoring to Make Your Child{' '}
             <span className="bg-[#FFF116] text-black px-2 rounded">Excel in School</span>
           </h1>
@@ -66,7 +66,7 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="md:w-[50%] w-full ">
+        <div className="md:w-[60%] w-full ">
           <MultiStepForm />
         </div>
       </div>

@@ -9,6 +9,9 @@ import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useRouter } from 'next/navigation'
+import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
+import GoogleImage from '../../../../public/assets/Images/google-logo.webp'
+import GoogleStar from '../../../../public/assets/Images/g-star.webp'
 
 export const MultiStepForm = ({ TotalCount = 6 }: any) => {
   const [activeStep, setActiveStep] = useState(0)
@@ -26,10 +29,10 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
     setActiveStep((prev) => prev + 1)
   }
   const Grade = ['6', '7', '8', '9', '10', '11', '12']
-  const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM']
+  const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
   const dateOptions = Array.from({ length: 4 }, (_, index) => {
     const date = new Date()
-    date.setDate(date.getDate() + index)
+    date.setDate(date.getDate() + index + 1)
 
     return {
       value: date.toISOString().split('T')[0],
@@ -206,12 +209,15 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
   }
 
   return (
-    <div className="w-full p-8 h-[100vh]  flex flex-col justify-start items-center gap-8 md:bg-white bg-[#016CFF]">
-      <h2 className="md:text-[2.5rem] md:text-black text-white text-[6vw] w-[80%] text-center font-bold leading-[150%] m-0">
-        Book a <span className="bg-[#FFF116] px-2 rounded text-black ">Free Trial</span> for your
-        child!
+    <div className="w-full h-[100vh]  flex flex-col justify-start items-center md:bg-[#FFF6ED] bg-[#016CFF] pt-12 gap-4">
+      <h2 className="md:text-[2rem] md:text-black text-white text-[6vw] w-[80%] text-center font-bold leading-[150%] m-0 ">
+        Book a{' '}
+        <span className="md:bg-[#006CFF] md:text-white bg-[#FFF116] px-2 rounded text-black ">
+          Free Trial
+        </span>{' '}
+        for your child!
       </h2>
-      <div className="flex flex-col border border-blue-300 md:p-8 p-6 rounded-2xl  gap-4 md:max-w-[400px]  bg-white">
+      <div className="flex flex-col border border-blue-300 md:p-12 p-6 rounded-2xl  gap-4 md:max-w-[400px]  max-w-[360px] bg-white">
         {activeStep !== 5 && (
           <div className="flex items-center  justify-center mb-0">
             {Array.from({ length: TotalCount }).map((ele, index) => (
@@ -273,14 +279,18 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
                   ))}
                 </div>
                 <div className="text-[#017BFC] mt-4 p-4 bg-blue-50 rounded flex flex-col  justify-center items-center">
-                  <p className="font-bold">Trusted by 5000+ parents: </p>
-                  <p>Math classes customized per grade!</p>
+                  <p className="font-medium">
+                    Trusted by <span className="font-bold">5500+</span> parents{' '}
+                  </p>
+                  <p className="font-medium">
+                    from <span className="font-bold">450+</span> international schools
+                  </p>
                 </div>
               </div>
             )}
             {activeStep === 1 && (
               <div className="w-90% flex flex-col justify-center items-center gap-2">
-                <h2 className="text-center m-0">Tell Us AboutYourself</h2>
+                <h2 className="text-center m-0">Tell Us About Yourself</h2>
                 <p className="text-center">
                   We'd love to know who's joining the Mentor Match family{' '}
                 </p>
@@ -330,7 +340,7 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
                 <h2 className="text-center m-0 text-[1.25rem]  leading-[130%]">
                   Where Should We Send the Link to Join Live Demo Class?
                 </h2>
-                <p className="text-center">We'll share tes's Demo class details here</p>
+                <p className="text-center">We'll share your Demo class details here</p>
                 <div className="w-full mt-2">
                   {detectedCountry && (
                     <div className="flex flex-col gap-2 mb-4">
@@ -516,13 +526,24 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
               </div>
             )}
             {activeStep === 5 && (
-              <div className="flex flex-col justify-center items-center gap-2 p-8">
-                <h2>Thank You </h2>
-                <p>Our Team will reach out to you soon.</p>
+              <div className="flex flex-col justify-center items-center gap-2 ">
+                <SuccessAnimation w={'w-[200px]'} h={'h-[200px]'} />
+                <h2 className="text-center m-0 text-[2rem]">Thank You </h2>
+                <p className="text-center text-[1rem] leading-[130%]">
+                  Our counsellor will reach out to you via Whatsapp in the next 12 hrs.
+                </p>
               </div>
             )}
           </div>
         </form>
+      </div>
+      <div className=" md:flex md:flex-row flex-col text-white text-[1rem] items-center justify-center md:gap-8 gap-4 mt-6">
+        <p className="flex gap-2 md:text-black text-white">
+          <Image src={GoogleImage} alt={'Google Review'} width={20} height={5} />
+          <span className="font-bold ">4.9</span>
+          <Image src={GoogleStar} alt={'Google Review'} width={20} />
+          Google Rating
+        </p>
       </div>
     </div>
   )
