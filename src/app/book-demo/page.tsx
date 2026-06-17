@@ -27,9 +27,9 @@ export const metadata: Metadata = {
 }
 export default function page() {
   return (
-    <div className="w-full  h-[100vh] ">
+    <div className="w-full  min-h-screen ">
       <NavBar />
-      <div className="flex w-full">
+      <div className="flex w-full min-h-[calc(100vh-80px)]">
         <div className="md:flex hidden w-[40%] bg-[#163B82]  flex-col justify-between relative pt-8">
           <h1 className="text-[2rem] text-white text-center leading-[140%] w-[80%] mx-auto">
             1-on-1 Tutoring to Make Your Child{' '}

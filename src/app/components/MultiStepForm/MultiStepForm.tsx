@@ -209,7 +209,7 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
   }
 
   return (
-    <div className="w-full h-[100vh]  flex flex-col justify-start items-center md:bg-[#FFF6ED] bg-[#016CFF] pt-12 gap-4">
+    <div className="w-full min-h-[calc(100vh-80px)] flex flex-col justify-start items-center md:bg-[#FFF6ED] bg-[#016CFF] py-12 gap-4">
       <h2 className="md:text-[2rem] md:text-black text-white text-[6vw] w-[80%] text-center font-bold leading-[150%] m-0 ">
         Book a{' '}
         <span className="md:bg-[#006CFF] md:text-white bg-[#FFF116] px-2 rounded text-black ">
@@ -217,7 +217,7 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
         </span>{' '}
         for your child!
       </h2>
-      <div className="flex flex-col border border-blue-300 md:p-12 p-6 rounded-2xl  gap-4 md:max-w-[400px]  max-w-[360px] bg-white">
+      <div className="flex flex-col border border-blue-300 md:p-12 p-6 rounded-2xl  gap-4 md:max-w-[400px]  max-w-[90%] bg-white">
         {activeStep !== 5 && (
           <div className="flex items-center  justify-center mb-0">
             {Array.from({ length: TotalCount }).map((ele, index) => (
