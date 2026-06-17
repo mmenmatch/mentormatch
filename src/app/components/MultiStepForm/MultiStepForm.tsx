@@ -209,8 +209,8 @@ export const MultiStepForm = ({ TotalCount = 6 }: any) => {
   }
 
   return (
-    <div className="w-full min-h-[calc(100vh-80px)] flex flex-col justify-center items-center md:bg-[#FFF6ED] bg-[#016CFF] md:py-12 gap-4">
-      <h2 className="md:text-[2rem] md:text-black text-white text-[6vw] w-[80%] text-center font-bold leading-[150%] m-0 ">
+    <div className="w-full min-h-[calc(100vh-80px)] flex flex-col justify-center items-center md:bg-[#FFF6ED] bg-[#016CFF] py-12 gap-8">
+      <h2 className="md:text-[2rem] md:text-black text-white text-[7vw] w-[80%] text-center font-bold leading-[150%] m-0 ">
         Book a{' '}
         <span className="md:bg-[#006CFF] md:text-white bg-[#FFF116] px-2 rounded text-black ">
           Free Trial
