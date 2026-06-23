@@ -201,6 +201,7 @@ if (typeof window.fbq !== 'undefined') {
                   defaultCountry={detectedCountry} // 👈 dynamic instead of hardcoded "IN"
                   value={value}
                   onChange={onChange}
+                  autoComplete="new-password"
                   className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
                 />
               )}
