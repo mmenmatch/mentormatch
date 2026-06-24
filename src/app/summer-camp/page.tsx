@@ -68,7 +68,7 @@ export default function page() {
           </div>
         </div>
         <div className="md:w-[60%] w-full ">
-          <MultiStepForm type="summer" />
+          <MultiStepForm type="summer" utm_campaign="Reactivation_24thJune_Stepsform_Summer-LP" />
         </div>
       </div>
     </div>

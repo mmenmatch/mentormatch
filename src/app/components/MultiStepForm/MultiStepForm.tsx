@@ -13,7 +13,7 @@ import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
 import GoogleImage from '../../../../public/assets/Images/google-logo.webp'
 import GoogleStar from '../../../../public/assets/Images/g-star.webp'
 
-export const MultiStepForm = ({ TotalCount = 6, type }: any) => {
+export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   const [activeStep, setActiveStep] = useState(0)
   const [selectGrade, setSelectGrade] = useState('')
   const [selectTime, setSelectTime] = useState('')
@@ -147,7 +147,7 @@ export const MultiStepForm = ({ TotalCount = 6, type }: any) => {
       referrer: document.referrer,
       utm_source: params.get('utm_source'),
       utm_medium: params.get('utm_medium'),
-      utm_campaign: params.get('utm_campaign'),
+      utm_campaign: utm_campaign ? utm_campaign : params.get('utm_campaign'),
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
     }
