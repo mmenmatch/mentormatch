@@ -31,9 +31,10 @@ export default function page() {
       <NavBar />
       <div className="flex w-full min-h-[calc(100vh-80px)]">
         <div className="md:flex hidden w-[40%] bg-[#163B82]  flex-col justify-between relative pt-8">
-          <h1 className="text-[2rem] text-white text-center leading-[140%] w-[80%] mx-auto">
-            1-on-1 Tutoring to Make Your Child{' '}
-            <span className="bg-[#FFF116] text-black px-2 rounded">Excel in School</span>
+          <h1 className="text-[1.5rem] text-white text-center leading-[140%] w-[85%] mx-auto">
+            Book a Free Demo Class -
+            <span className="bg-[#FFF116] text-black px-1 rounded mx-1">Enjoy 25%</span>
+            <div className="text-white  px-2 rounded ">This Summer</div>
           </h1>
           <Image src={BookDemoImage} alt="book-demo" />
           <div className="md:w-[90%] w-full md:p-4 p-2  absolute md:rounded-[42px] rounded-t-[42px] md:bottom-2.5 bottom-0 left-1/2 -translate-x-1/2 bg-[#163B82]">
@@ -67,7 +68,7 @@ export default function page() {
           </div>
         </div>
         <div className="md:w-[60%] w-full ">
-          <MultiStepForm />
+          <MultiStepForm type="offer" />
         </div>
       </div>
     </div>
