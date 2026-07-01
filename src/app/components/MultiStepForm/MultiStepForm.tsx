@@ -104,7 +104,7 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   }, [])
 
   const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
-  const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'American', 'CBSE', 'ICSE', 'Other']
+  const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'CBSE', 'ICSE', 'Other']
   const {
     register,
     control,
