@@ -46,7 +46,7 @@ function FreeTrialForm() {
 
     city: z.string().min(1, 'Please select a city'),
 
-    price: z.string().min(1, 'Please select a price'),
+    pricingAccepted: z.string().min(1, 'Please select an option'),
 
     date: z.string().min(1, 'Please select a date'),
 
@@ -130,7 +130,7 @@ function FreeTrialForm() {
 
   const isStep4Valid = subject && curriculum
   const city = watch('city')
-  const price = watch('price')
+  const price = watch('pricingAccepted')
   const isStep5Valid = city && price
 
   const selectedDate = watch('date')
@@ -152,6 +152,7 @@ function FreeTrialForm() {
       utm_term: params.get('utm_term'),
     }
     localStorage.setItem('formData', JSON.stringify(payload))
+console.log('payload', payload)
     if (typeof window.fbq !== 'undefined') {
       // console.log('Meta Pixel loaded')
       window.fbq('track', 'Submit Application')
@@ -208,7 +209,7 @@ function FreeTrialForm() {
     }
   }
   return (
-    <div className="w-full bg-white p-8 rounded-2xl">
+    <div className="w-full bg-white p-8 rounded-2xl shadow-lg">
       {stepperCount !== 7 && (
         <div className="flex flex-col gap-6">
           {/* stepper */}
@@ -497,7 +498,7 @@ function FreeTrialForm() {
                     </label>{' '}
                     <div className="flex flex-wrap gap-4">
                       <select
-                        {...register('price')}
+                        {...register('pricingAccepted')}
                         className={`w-full px-4 py-3 border border-[#A3A3C7] rounded-lg outline-none bg-white transition`}
                       >
                         <option value="">Select a Option</option>
@@ -507,8 +508,10 @@ function FreeTrialForm() {
                           </option>
                         ))}
                       </select>
-                      {errors?.price && (
-                        <p className="text-red-500 text-xs mt-0  mb-0">{errors?.price?.message}</p>
+                      {errors?.pricingAccepted && (
+                        <p className="text-red-500 text-xs mt-0  mb-0">
+                          {errors?.pricingAccepted?.message}
+                        </p>
                       )}
                     </div>
                   </div>

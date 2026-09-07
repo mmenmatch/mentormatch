@@ -18,6 +18,7 @@ type FormData = {
   utm_campaign?: string
   utm_content?: string
   utm_term?: string
+  city?: string
 }
 
 export async function POST(req: NextRequest) {
@@ -40,6 +41,7 @@ export async function POST(req: NextRequest) {
     utm_term,
     date = '',
     time = '',
+    city = '',
   } = body
 
   const results = await Promise.allSettled([
@@ -61,27 +63,28 @@ export async function POST(req: NextRequest) {
       utm_term,
       date,
       time,
+      city,
     }),
     // submitToGoogleSheets({ email, childName, grade, phone }),
-    sendSlackNotification({
-      parentName,
-      subject,
-      // curriculum,
-      email,
-      // childName,
-      grade,
-      phone,
-      pricingAccepted,
-      pageUrl,
-      referrer,
-      utm_source,
-      utm_medium,
-      utm_campaign,
-      utm_content,
-      utm_term,
-      date,
-      time,
-    }),
+    // sendSlackNotification({
+    //   parentName,
+    //   subject,
+    //   // curriculum,
+    //   email,
+    //   // childName,
+    //   grade,
+    //   phone,
+    //   pricingAccepted,
+    //   pageUrl,
+    //   referrer,
+    //   utm_source,
+    //   utm_medium,
+    //   utm_campaign,
+    //   utm_content,
+    //   utm_term,
+    //   date,
+    //   time,
+    // }),
   ])
 
   const failed = results.filter((r) => r.status === 'rejected')
@@ -112,6 +115,7 @@ async function submitToHubSpot(data: any) {
           { name: 'firstname', value: data?.parentName || ' ' },
           { name: 'subject', value: data?.subject || '' },
           { name: 'curriculum', value: data?.curriculum || '' },
+          { name: 'city', value: data?.city || '' },
           {
             name: 'preferred_demo_date',
             value: data?.date || '',
@@ -155,28 +159,29 @@ async function submitToHubSpot(data: any) {
 }
 
 // ── Slack ─────────────────────────────────────────────────
-async function sendSlackNotification(data: any) {
-  await fetch('https://hooks.zapier.com/hooks/catch/13620112/4biyudy/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      parentName: data?.parentName,
-      subject: data?.subject,
-      curriculum: data?.curriculum,
-      email: data?.email,
-      studentName: data?.childName,
-      class: data?.grade,
-      phone: data?.phone,
-      source_url: data?.pageUrl,
-      referrer: data?.referrer,
-      utm_source: data?.utm_source,
-      utm_medium: data?.utm_medium,
-      utm_campaign: data?.utm_campaign,
-      utm_content: data?.utm_content,
-      utm_term: data?.utm_term,
-      price_qualification: data?.pricingAccepted,
-      preferred_demo_date: data?.date,
-      preferred_demo_time: data?.time,
-    }),
-  })
-}
+// async function sendSlackNotification(data: any) {
+//   await fetch('https://hooks.zapier.com/hooks/catch/13620112/4biyudy/', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify({
+//       parentName: data?.parentName,
+//       subject: data?.subject,
+//       curriculum: data?.curriculum,
+//       email: data?.email,
+//       studentName: data?.childName,
+//       class: data?.grade,
+//       phone: data?.phone,
+//       source_url: data?.pageUrl,
+//       referrer: data?.referrer,
+//       utm_source: data?.utm_source,
+//       utm_medium: data?.utm_medium,
+//       utm_campaign: data?.utm_campaign,
+//       utm_content: data?.utm_content,
+//       utm_term: data?.utm_term,
+//       price_qualification: data?.pricingAccepted,
+//       preferred_demo_date: data?.date,
+//       preferred_demo_time: data?.time,
+//       city: data?.city,
+//     }),
+//   })
+// }
