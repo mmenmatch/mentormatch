@@ -1,11 +1,12 @@
-'use client';
-import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+'use client'
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 import { useRouter } from 'next/navigation'
+import Whatsapp from '../../../../public/assets/Images/whatsapp.webp'
+import Image from 'next/image'
 
-
-const NavBar = () => {
-  const isMobile = useMediaQuery({ maxWidth: 640 });
+const NavBar = ({ whatsapp = false }) => {
+  const isMobile = useMediaQuery({ maxWidth: 640 })
   const router = useRouter()
 
   return (
@@ -20,24 +21,34 @@ const NavBar = () => {
               onClick={() => router.push('https://www.mentormatch.com/')}
             />
           </div>
-          <div className="">
-            <button
-              type="submit"
-              onClick={() => {
-                document.getElementById('cta')?.scrollIntoView({
-                  behavior: 'smooth',
-                })
-              }}
-              className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
+          {whatsapp ? (
+            <div className="flex gap-2 items-center">
+              <div className="w-[30px]">
+                <Image src={Whatsapp} alt="whatsapp" />
+              </div>
+              <p className="text-[#4D506C] font-semibold text-[1rem]">Call Now:</p>
+              <p className="text-black font-semibold text-[1rem]">+91 91235 90637</p>
+            </div>
+          ) : (
+            <div className="">
+              <button
+                type="submit"
+                onClick={() => {
+                  document.getElementById('cta')?.scrollIntoView({
+                    behavior: 'smooth',
+                  })
+                }}
+                className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
-            >
-              Book A Free Trial
-            </button>
-          </div>
+              >
+                Book A Free Trial
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
   )
-};
+}
 
-export default NavBar;
+export default NavBar

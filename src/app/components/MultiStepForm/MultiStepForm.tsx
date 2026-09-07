@@ -10,8 +10,7 @@ import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useRouter } from 'next/navigation'
 import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
-import GoogleImage from '../../../../public/assets/Images/google-logo.webp'
-import GoogleStar from '../../../../public/assets/Images/g-star.webp'
+
 
 export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   const [activeStep, setActiveStep] = useState(0)
