@@ -4,9 +4,8 @@ import Image from 'next/image'
 import Step1 from '../../../../public/assets/Images/lens.webp'
 import Step2 from '../../../../public/assets/Images/profile.webp'
 import Step3 from '../../../../public/assets/Images/recog.webp'
-
-
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
+
 export default function MathDemoHeroSection() {
   return (
     <div className="w-full h-full md:py-8 ">

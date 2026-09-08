@@ -211,11 +211,13 @@ console.log('payload', payload)
   return (
     <div className="w-full bg-white p-8 rounded-2xl shadow-lg">
       {stepperCount !== 7 && (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col md:gap-6 gap-4">
           {/* stepper */}
-          <div className="flex flex-col gap-4">
-            <p className="text-[#5B6280] font-semibold text-[1rem]">Step {stepperCount} of 6</p>
-            <div className="w-full h-3 rounded-2xl bg-[#E4EAFE] overflow-hidden">
+          <div className="flex flex-col md:gap-4 gap-2">
+            <p className="text-[#5B6280] font-semibold md:text-[1rem] text-[3.5vw]">
+              Step {stepperCount} of 6
+            </p>
+            <div className="w-full md:h3 h-2 rounded-2xl bg-[#E4EAFE] overflow-hidden">
               <div
                 style={{ width: `${stepperPercentage * stepperCount}%` }}
                 className={`h-full bg-[linear-gradient(90deg,#00BF63_0%,#32E08C_100%)] rounded-2xl`}
