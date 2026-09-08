@@ -236,7 +236,7 @@ console.log('payload', payload)
                   <label className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
                     Select your child's grade
                   </label>
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap md:justify-start justify-center gap-4">
                     {Grade?.map((ele) => (
                       <div
                         onClick={() => selectGradeFn(ele)}
