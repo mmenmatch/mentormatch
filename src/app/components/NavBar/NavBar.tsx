@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Whatsapp from '../../../../public/assets/Images/whatsapp.webp'
 import Image from 'next/image'
 
-const NavBar = ({ whatsapp = false }) => {
+const NavBar = ({ whatsapp = false, width = '' }) => {
   const isMobile = useMediaQuery({ maxWidth: 640 })
   const router = useRouter()
 
@@ -13,7 +13,12 @@ const NavBar = ({ whatsapp = false }) => {
     <div className="w-full xl:px-16 px-4 py-4 flex items-center  border-b border-b-[#e1e1e1] min-h-20">
       <div className="w-full mx-auto flex items-center xl:px-8">
         <div className="max-w-360 w-full mx-auto flex flex-row items-center justify-between">
-          <div className="md:max-w-50 max-w-40 cursor-pointer">
+          <div
+            className={`md:max-w-50 max-w-40 cursor-pointer`}
+            style={{
+              maxWidth: width ? `${width}px` : '160px',
+            }}
+          >
             <img
               src="https://cdn.prod.website-files.com/660d0c07422cfeca80d26d7d/6626114f2c2dbd34ed07beb4_Text%20logo_website%20blue2.webp"
               alt="mentor match logo"
