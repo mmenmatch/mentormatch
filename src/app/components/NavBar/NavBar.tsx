@@ -23,11 +23,11 @@ const NavBar = ({ whatsapp = false }) => {
           </div>
           {whatsapp ? (
             <div className="flex gap-2 items-center">
-              <div className="w-[30px]">
+              {/* <div className="w-[30px]">
                 <Image src={Whatsapp} alt="whatsapp" />
               </div>
               <p className="text-[#4D506C] font-semibold text-[1rem]">Call Now:</p>
-              <p className="text-black font-semibold text-[1rem]">+91 91235 90637</p>
+              <p className="text-black font-semibold text-[1rem]">+91 91235 90637</p> */}
             </div>
           ) : (
             <div className="">

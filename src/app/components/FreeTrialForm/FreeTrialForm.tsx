@@ -231,14 +231,14 @@ console.log('payload', payload)
             >
               {stepperCount == 1 && (
                 <div className="flex flex-col gap-4">
-                  <label className="text-[#12142B] text-[1.25rem] font-medium">
-                    Select your child's grade{' '}
+                  <label className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
+                    Select your child's grade
                   </label>
                   <div className="flex flex-wrap gap-4">
                     {Grade?.map((ele) => (
                       <div
                         onClick={() => selectGradeFn(ele)}
-                        className={`rounded-xl ${selectGrade == ele ? 'bg-[linear-gradient(90deg,#2B23FF_100%)] text-white' : ''} px-16 py-4 text-[1rem] border border-[#B9C6F7] text-[#12142B] font-semibold`}
+                        className={`rounded-xl ${selectGrade == ele ? 'bg-[linear-gradient(90deg,#2B23FF_100%)] text-white' : ''} md:px-16 md:py-4 px-8 py-4 text-[1rem] border border-[#B9C6F7] text-[#12142B] font-semibold`}
                       >
                         {ele}
                       </div>
@@ -264,15 +264,15 @@ console.log('payload', payload)
               {stepperCount == 2 && (
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col mb-2 gap-2">
-                    <p className="text-[#12142B] text-[1.25rem] font-medium">
+                    <p className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
                       Tell Us About Yourself
                     </p>
-                    <p className="text-[#6A7188] text-[0.9rem]">
+                    <p className="text-[#6A7188] md:text-[0.9rem] text-[3.6vw]">
                       We’d love to know who’s joining the Mentor Match family
                     </p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       Parent’s Name<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap gap-1 ">
@@ -287,7 +287,7 @@ console.log('payload', payload)
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-2 mb-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       Student’s Name<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap gap-1">
@@ -322,15 +322,15 @@ console.log('payload', payload)
               {stepperCount == 3 && (
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col mb-2 gap-2">
-                    <p className="text-[#12142B] text-[1.25rem] font-medium">
+                    <p className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
                       Share Your Contact for Us to Book Your 1-on-1 Demo Class
                     </p>
-                    <p className="text-[#6A7188] text-[0.9rem]">
+                    <p className="text-[#6A7188] md:text-[0.9rem] text-[3.6vw]">
                       We’ll Share Your Demo Class Details here{' '}
                     </p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       Parent's Phone Number<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap gap-2 w-full">
@@ -354,7 +354,7 @@ console.log('payload', payload)
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-2 mb-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       Email Address<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap gap-4">
@@ -389,16 +389,16 @@ console.log('payload', payload)
               {stepperCount == 4 && (
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col mb-2 gap-2">
-                    <p className="text-[#12142B] text-[1.25rem] font-medium">
+                    <p className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
                       Specify Your Child’s Learning Needs{' '}
                     </p>
-                    <p className="text-[#6A7188] text-[0.9rem]">
+                    <p className="text-[#6A7188] md:text-[0.9rem] text-[3.6vw]">
                       Help us Personalise the demo class by selecting the subject and
                       curriculum{' '}
                     </p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       Subject<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap gap-4">
@@ -419,7 +419,7 @@ console.log('payload', payload)
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-2 mb-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       {' '}
                       Curriculum<span className="text-red-500">*</span>
                     </label>{' '}
@@ -463,15 +463,15 @@ console.log('payload', payload)
               {stepperCount == 5 && (
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col mb-2 gap-2">
-                    <p className="text-[#12142B] text-[1.25rem] font-medium">
-                      Share Your Contact for Us to Book Your 1-on-1 Demo Class
+                    <p className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
+                      Just a Couple More Details Before We Book Your Slot{' '}
                     </p>
-                    <p className="text-[#6A7188] text-[0.9rem]">
-                      We’ll Share Your Demo Class Details here{' '}
+                    <p className="text-[#6A7188] md:text-[0.9rem] text-[3.6vw]">
+                      Confirm your city and fee preference{' '}
                     </p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       City<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap gap-4">
@@ -492,7 +492,7 @@ console.log('payload', payload)
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-2 mb-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       {' '}
                       Our fee is ₹7,999/month<span className="text-red-500">*</span>
                     </label>{' '}
@@ -536,7 +536,7 @@ console.log('payload', payload)
               {stepperCount == 6 && (
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col mb-2 gap-2">
-                    <p className="text-[#12142B] text-[1.25rem] font-medium">
+                    <p className="text-[#12142B] md:text-[1.25rem] text-[4vw] font-medium">
                       Choose a Convenient Time for Your Demo Class{' '}
                     </p>
                     <p className="text-[#6A7188] text-[0.9rem]">
@@ -544,7 +544,7 @@ console.log('payload', payload)
                     </p>
                   </div>
                   <div className="w-full flex flex-col gap-2">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       Select Date<span className="text-red-500">*</span>{' '}
                     </label>
                     <div className="flex flex-wrap justify-start items-center gap-2">
@@ -566,7 +566,7 @@ console.log('payload', payload)
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-2 mb-2.5">
-                    <label className="text-[#12142B] text-[1rem] tracking-[1px] font-medium mb-4">
+                    <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       {' '}
                       Select Time<span className="text-red-500">*</span>
                     </label>{' '}
