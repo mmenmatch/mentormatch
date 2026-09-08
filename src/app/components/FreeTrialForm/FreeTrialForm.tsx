@@ -607,7 +607,7 @@ console.log('payload', payload)
                       onClick={() => console.log('SUBMIT BUTTON CLICKED')}
                       className={`${isStep6Valid ? 'bg-[#2B23FF] text-white cursor-pointer' : 'cursor-not-allowed bg-[#E7E9F2] border-[#D4D7E6]'} p-4 w-full   rounded-4xl font-semibold text-[#5F6592]`}
                     >
-                      Continue
+                      Submit
                     </button>
                   </div>
                 </div>
