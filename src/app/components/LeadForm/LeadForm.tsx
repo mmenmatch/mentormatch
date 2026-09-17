@@ -3,7 +3,7 @@ import Image from 'next/image'
 import LeadFormImage from '../../../../public/assets/Images/teacher-form.webp'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
 
-export const LeadForm = () => {
+export const LeadForm = ({ v2 = false }) => {
   return (
     <div className="bg-white md:py-16 py-8">
       <div className="max-w-360 mx-auto md:px-16">
@@ -13,8 +13,11 @@ export const LeadForm = () => {
               <Image src={LeadFormImage} alt="Lead form image" className="  " />
             </div>
           </div>
-          <div className="md:w-[60%] w-full md:px-8  md:pb-8">
-            <RegistrationForm />
+          <div
+            className="md:w-[60%] w-full md:px-8  md:pb-8"
+            style={v2 ? { display: 'flex', flexDirection: 'column', justifyContent: 'center' } : {}}
+          >
+            <RegistrationForm v2={v2} />
           </div>
         </div>
       </div>

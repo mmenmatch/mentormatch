@@ -9,24 +9,7 @@ import type { Country } from 'react-phone-number-input'
 import { useRouter } from 'next/navigation'
 
 
-const schema = z.object({
-  parentName: z.string().min(3, 'Minimum 3 characters required'),
-  email: z
-    .string()
-    .min(1, 'Email Address is required')
-    .email({ message: 'Please Enter a Valid Email Address' }),
-  grade: z.string().min(1, 'Please select a grade'),
-  subject: z.string().min(1, 'Please select a subject'),
-  pricingAccepted: z.string().min(1, 'Please select an option'),
-  phone: z
-    .string()
-    .min(1, 'Phone number is required')
-    .refine((val) => isValidPhoneNumber(val), {
-      message: 'Invalid phone number for selected country',
-    }),
-})
 
-type FormData = z.infer<typeof schema>
 
 const GRADES = [
   'Grade 4',
@@ -52,16 +35,31 @@ const CURRICULUM = [
 
 const PRICE = ['Yes, I want to apply', 'No, it is outside my budget']
 
-export default function RegistrationForm() {
+export default function RegistrationForm({ v2 = false }) {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
   const pricingLabel =
-    detectedCountry === 'AE'
-      ? 'Our fee is AED 499/month'
-      : 'Our fee is ₹7,999/month'
-  const [status, setStatus] = useState<
-    'idle' | 'loading' | 'success' | 'error'
-  >('idle')
+    detectedCountry === 'AE' ? 'Our fee is AED 499/month' : 'Our fee is ₹7,999/month'
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const router = useRouter()
+
+  const schema = z.object({
+    parentName: z.string().min(3, 'Minimum 3 characters required'),
+    email: z
+      .string()
+      .min(1, 'Email Address is required')
+      .email({ message: 'Please Enter a Valid Email Address' }),
+    grade: z.string().min(1, 'Please select a grade'),
+    subject: z.string().min(1, 'Please select a subject'),
+    pricingAccepted: v2 ? z.string().optional() : z.string().min(1, 'Please select an option'),
+    phone: z
+      .string()
+      .min(1, 'Phone number is required')
+      .refine((val) => isValidPhoneNumber(val), {
+        message: 'Invalid phone number for selected country',
+      }),
+  })
+
+  type FormData = z.infer<typeof schema>
 
   useEffect(() => {
     fetch('https://ipinfo.io/json')
@@ -106,14 +104,14 @@ export default function RegistrationForm() {
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
     }
-  localStorage.setItem('formData', JSON.stringify(payload))
-if (typeof window.fbq !== 'undefined') {
-  // console.log('Meta Pixel loaded')
-  window.fbq('track', 'Submit Application')
-  // console.log('Submit Application event sent')
-} else {
-  console.error('fbq not found')
-}
+    localStorage.setItem('formData', JSON.stringify(payload))
+    if (typeof window.fbq !== 'undefined') {
+      // console.log('Meta Pixel loaded')
+      window.fbq('track', 'Submit Application')
+      // console.log('Submit Application event sent')
+    } else {
+      console.error('fbq not found')
+    }
     try {
       const res = await fetch('/app/api/submit-form', {
         method: 'POST',
@@ -267,30 +265,32 @@ if (typeof window.fbq !== 'undefined') {
         </div>
 
         {/*Pricing...*/}
-        <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
-            {pricingLabel} <span className="text-red-500">*</span>
-          </label>
-          <select
-            {...register('pricingAccepted')}
-            className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
+        {!v2 && (
+          <div className="flex flex-col gap-2 mb-4">
+            <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
+              {pricingLabel} <span className="text-red-500">*</span>
+            </label>
+            <select
+              {...register('pricingAccepted')}
+              className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
               ${
                 errors?.pricingAccepted
                   ? 'border-red-400 focus:ring-2 focus:ring-red-200'
                   : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
               }`}
-          >
-            <option value="">Select an option</option>
-            {PRICE?.map((g) => (
-              <option key={g} value={g}>
-                {g}
-              </option>
-            ))}
-          </select>
-          {errors?.pricingAccepted && (
-            <p className="text-red-500 text-xs mt-0  mb-0">{errors?.pricingAccepted.message}</p>
-          )}
-        </div>
+            >
+              <option value="">Select an option</option>
+              {PRICE?.map((g) => (
+                <option key={g} value={g}>
+                  {g}
+                </option>
+              ))}
+            </select>
+            {errors?.pricingAccepted && (
+              <p className="text-red-500 text-xs mt-0  mb-0">{errors?.pricingAccepted.message}</p>
+            )}
+          </div>
+        )}
 
         {/* Submit */}
         <button
