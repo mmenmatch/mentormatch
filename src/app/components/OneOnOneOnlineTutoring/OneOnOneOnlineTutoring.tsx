@@ -15,7 +15,7 @@ export default function OneOnOneOnlineTutoring() {
             <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
               <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
                 {' '}
-                1:1 Online Tutoring
+                1:1 Online Tuition
               </span>{' '}
               That Actually
               <span className="relative ml-1 inline-block">
@@ -31,22 +31,7 @@ export default function OneOnOneOnlineTutoring() {
               Personalised lessons tailored to IB, IGCSE, A Level & CBSE. Expert tutors, proven
               results, and first class is free.{' '}
             </p>
-            {/* <div className="flex  gap-2 md:mb-6">
-              <div className="bg-white w-full md:w-auto p-2 rounded-lg md:text-[1.5rem] text-[3vw] leading-[100%] text-[#2A51FF] font-bold flex items-baseline gap-1">
-                {' '}
-                <Image
-                  src={StudentImage}
-                  alt="student"
-                  className="md:w-5.75 ml-2 w-3.75"
-                  // height={20}
-                />
-                5279+ <span className="text-black font-medium">Students</span>
-              </div>
-              <div className="bg-white w-full md:w-auto p-2 rounded-lg md:text-[1.5rem] text-[3vw] leading-[100%] text-[#2A51FF] font-bold flex items-center md:items-baseline gap-1">
-                C <Image src={RArrow} alt="arrow" className="md:w-5 md:h-4.5 w-3.75 h-2.5" /> A{' '}
-                <span className="text-black font-medium">In 3 Months</span>
-              </div>{' '}
-            </div> */}
+
             <div className="w-70 md:block md:mt-8 hidden">
               <button
                 type="submit"
@@ -65,7 +50,7 @@ export default function OneOnOneOnlineTutoring() {
           <div className="md:w-[60%] w-full relative flex justify-end items-end">
             <Image
               src={HeroImage}
-              alt="hero-section"
+              alt="Online maths tutor session with Mentor Match"
               className="w-full h-full"
               fetchPriority="high"
             />

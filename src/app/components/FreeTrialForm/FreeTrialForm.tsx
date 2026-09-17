@@ -239,6 +239,7 @@ console.log('payload', payload)
                   <div className="flex flex-wrap md:justify-start justify-center gap-4">
                     {Grade?.map((ele) => (
                       <div
+                        key={ele}
                         onClick={() => selectGradeFn(ele)}
                         className={`rounded-xl ${selectGrade == ele ? 'bg-[linear-gradient(90deg,#2B23FF_100%)] text-white' : ''} md:px-16 md:py-4 px-8 py-4 text-[1rem] border border-[#B9C6F7] text-[#12142B] font-semibold`}
                       >

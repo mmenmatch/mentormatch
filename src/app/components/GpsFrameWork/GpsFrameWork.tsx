@@ -12,6 +12,7 @@ export const GpsFrameWork = () => {
       description: "Our AI Diagnostic finds your child's exact gaps.",
       img: GapImage,
       color: '#023BF3',
+      altText: 'Mentor Match Gap, Personalise, Score — physics tuition and online tuition',
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ export const GpsFrameWork = () => {
         'Your child gets a master mentor for personalised 1-on-1 sessions, twice a week.',
       img: PersonalizeImage,
       color: '#006CFF',
+      altText: 'Mentor Match Gap, Personalise, Score — physics tuition and online tuition',
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ export const GpsFrameWork = () => {
         'Every month, we test your child under real exam conditions so you know exactly where they stand.',
       img: ScoreImage,
       color: '#10C36C',
+      altText: 'Mentor Match Gap, Personalise, Score — physics tuition and online tuition',
     },
   ]
   return (
@@ -41,19 +44,19 @@ export const GpsFrameWork = () => {
             <div className="md:max-w-[30%] rounded-[12px] overflow-hidden">
               <div className="w-full  ">
                 <Image
-                  src={ele.img}
-                  alt={ele.title}
+                  src={ele?.img}
+                  alt={ele?.altText}
                   className="w-full h-full min-h-[200px] object-cover"
                 />
               </div>
               <div className="bg-white px-4 py-4 flex flex-col min-h-[150px] gap-4 rounded-b-[12px]  ">
                 <p
-                  style={{ color: ele.color }}
+                  style={{ color: ele?.color }}
                   className={`font-bold text-[2rem] leading-[100%] m-0 `}
                 >
-                  {ele.title}
+                  {ele?.title}
                 </p>
-                <p className="text-[1rem] m-0">{ele.description}</p>
+                <p className="text-[1rem] m-0">{ele?.description}</p>
               </div>
             </div>
           ))}

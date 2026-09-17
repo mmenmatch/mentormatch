@@ -37,6 +37,7 @@ const TUTOR_DATA = [
     reviewTagColor: '#704DB9',
     review:
       'Gives my child real 1:1 attention on difficult Maths concepts. Very happy with the classes. Special thanks to Ms Shwetha Agarwal.',
+    altText: 'Shwetha Agarwal - one of our maths tutors and science tutors',
   },
   {
     id: 2,
@@ -48,6 +49,7 @@ const TUTOR_DATA = [
     reviewTagColor: '#78909C',
     review:
       "Great support for my son's maths journey. Rohit Satidasani is sincere, patient, and has made tremendous effort towards my child's progress and confidence.",
+    altText: 'Rohit Satidasani - one of our maths tutors and science tutors',
   },
   {
     id: 3,
@@ -57,6 +59,8 @@ const TUTOR_DATA = [
     reviewCount: 4,
     tutorGender: 'F',
     reviewTagColor: '#EF6C00',
+    altText: 'Khushbu - one of our maths tutors and science tutors',
+
     review:
       'Mentor Match has tremendously helped me build confidence in Maths. Ms Khushbu makes every topic so easy to understand.',
   },
@@ -68,6 +72,8 @@ const TUTOR_DATA = [
     reviewCount: 4,
     tutorGender: 'F',
     reviewTagColor: '#0097A7',
+    altText: 'Anupama - one of our maths tutors and science tutors',
+
     review:
       'Teaches concepts extremely well and makes students feel comfortable asking questions. Anupama Roychoudhury is exceptional.',
   },
@@ -79,6 +85,7 @@ const TUTOR_DATA = [
     reviewCount: 4,
     tutorGender: 'M',
     reviewTagColor: '#EF6C00',
+    altText: 'Vivek - one of our maths tutors and science tutors',
     review:
       "Vivek's expertise in Maths is outstanding. My son Gabriel has shown great improvement! Highly recommend Mentor Match.",
   },
@@ -179,7 +186,11 @@ export const TutorSection = () => {
                   <div className="md:w-70 flex flex-col gap-2">
                     <div className="relative">
                       <div className="md:tutor-card">
-                        <Image src={data?.tutorImg} alt="tutor" className="object-contain" />{' '}
+                        <Image
+                          src={data?.tutorImg}
+                          alt={data?.altText}
+                          className="object-contain"
+                        />{' '}
                       </div>
                       <Image
                         src={data?.tutorGender == 'M' ? ManMenmonics : WomManMenmonics}

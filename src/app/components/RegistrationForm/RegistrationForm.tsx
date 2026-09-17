@@ -278,7 +278,7 @@ if (typeof window.fbq !== 'undefined') {
                   : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
               }`}
           >
-            <option value="">Select a option</option>
+            <option value="">Select an option</option>
             {PRICE?.map((g) => (
               <option key={g} value={g}>
                 {g}

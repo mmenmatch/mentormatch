@@ -28,6 +28,7 @@ export const StudentsGrowthCard = () => {
       after: '80',
       type: 'mark',
       tag: '+51 Points',
+      altText: "Rishi's grade improvement — maths tuition results at Mentor Match",
     },
     {
       name: 'Sloka',
@@ -37,6 +38,7 @@ export const StudentsGrowthCard = () => {
       after: 'B',
       type: 'grade',
       tag: 'Grade 1 → Grade 8',
+      altText: "Sloka's grade improvement — online math tuition results",
     },
     {
       name: 'Aditya',
@@ -46,24 +48,27 @@ export const StudentsGrowthCard = () => {
       after: '60%',
       type: 'percentage',
       tag: '+25 in One Term',
+      altText: "Aditya's grade improvement in a math class online",
     },
     {
       name: 'Alia',
       img: Alia,
-      subject: 'IBDP •Maths AAHL • Grade 12',
+      subject: 'IBDP • Maths AA HL • Grade 12',
       before: 'D',
       after: 'A',
       type: 'grade',
       tag: '+4 IB Grades',
+      altText: "Alia's grade improvement in a math class online",
     },
     {
       name: 'Kabir',
       img: Kabir,
-      subject: 'ICSE• Physics • Class 10',
+      subject: 'ICSE • Physics • Grade 10',
       before: '38%',
       after: '74%',
       type: 'percentage',
       tag: '+36% one term',
+      altText: "Kabir's grade improvement in a math class online",
     },
     {
       name: 'Aanya',
@@ -73,6 +78,7 @@ export const StudentsGrowthCard = () => {
       after: '78%',
       type: 'percentage',
       tag: '+33% in one term',
+      altText: "Aanya's grade improvement in a math class online",
     },
   ]
 
@@ -209,7 +215,7 @@ export const StudentsGrowthCard = () => {
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shrink-0">
                       <Image
                         src={data.img}
-                        alt={data.name}
+                        alt={data.altText}
                         className="w-full h-full object-cover"
                       />
                     </div>

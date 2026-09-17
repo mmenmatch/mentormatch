@@ -11,22 +11,22 @@ export const ParentsChoose = () => {
     {
       name: Parents1,
       title: 'Same Tutor, Start to Finish',
-      description: 'The tutor from vour free demo is the tutor who continues.',
+      description: 'The tutor from your free demo is the tutor who continues.',
     },
     {
       name: Parents2,
-      title: 'Curriculim Vetted Tutors',
-      description: `Tutors are trained in the specific curricula your child is learing.`,
+      title: 'Curriculum Vetted Tutors',
+      description: `Tutors are trained in the specific curricula your child is learning.`,
     },
     {
       name: Parents3,
       title: 'Unused Sessions Refunded',
-      description: 'Any sessions you havent taken is refuned within 48hrs.',
+      description: `Any sessions you haven't taken are refunded within 48 hours.`,
     },
     {
       name: Parents4,
-      title: 'Flexible scheduiling',
-      description: 'Reschedule with 24-hour notice emergencies handled within 2 hours.',
+      title: 'Flexible Scheduling',
+      description: 'Reschedule with 24-hour notice. Emergencies are handled within 2 hours.',
     },
   ]
 
@@ -37,7 +37,7 @@ export const ParentsChoose = () => {
         <div className="flex flex-col  items-center justify-center mb-8 gap-2">
           <span className="flex justify-center items-center text-center md:gap-4 gap-8">
             <h2 className="md:text-[2.5rem] m-0 text-[6vw] md:w-auto leading-[120%] font-bold flex items-center justify-center">
-              Why Parents Choose Us
+              Why choose us for 1:1 Online Tuition
             </h2>
           </span>
           {/* <p className="md:text-[1.25rem] text-[4vw]">

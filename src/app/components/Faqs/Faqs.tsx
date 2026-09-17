@@ -26,37 +26,47 @@ export const Faqs = () => {
 
   let priceFaq =
     detectedCountry === 'IN'
-      ? 'Plans start at ₹7,999 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
-      : 'Plans start at AED 499 per month. Your first session is free. If you are still unhappy after three tutors, we refund all remaining unused sessions in full.'
+      ? "Plans start at ₹7,999/month for online tuition, and your first session is completely free. If you're still unhappy after three tutors, we refund all remaining sessions in full."
+      : "Plans start at AED 499/month for online tuition, and your first session is completely free. If you're still unhappy after three tutors, we refund all remaining sessions in full."
   const faqData = [
     {
       question: 'Which subjects and curricula do you cover?',
       answer:
-        "Maths, Science, and English for IB, IGCSE, A Level, and American curricula, Grades 6 to 12. We follow your child's exact school syllabus and chapter sequence.",
+        'We offer 1:1 online tuition in math, physics, and science for CBSE, ICSE, IB, IGCSE, and British curriculum students in Grades 4 to 12 ',
     },
     {
-      question: 'How does a 1:1 online session work?',
+      question: 'How does our 1:1 online tuition work?',
       answer:
-        '55 minutes, one student, one tutor, no group classes. Live whiteboard, fully interactive, and every session is recorded for your child to review.',
+        "Every online tuition session runs 55 minutes with one student and one dedicated tutor and a live interactive whiteboard. Whether it's a math class online or a science session, it's recorded so your child can review it anytime.  ",
     },
     {
       question: 'How do you match my child with the right tutor?',
       answer:
-        'We run a short diagnostic first, then match your child to a curriculum specialist. Fewer than 1 in 10 applicants become Mentor Match tutors. Not happy? We rematch at no cost.',
+        'We run a short diagnostic first, then match your child to one of our Top maths tutors or science tutors — fewer than 1 in 10 applicants make the cut. Not happy? We rematch at no cost.',
     },
     {
       question: 'How will I know if my child is actually improving?',
       answer:
-        'Every month your child sits a test under real exam conditions. Every 8 sessions you receive a simple progress report showing exactly what improved and what still needs work.',
+        "Each month, your child sits a test under real exam conditions to track progress in math, physics,Science-tuitions . Every 8 sessions, you receive a progress report showing exactly what's improved.",
     },
     {
       question: 'How flexible are the session timings?',
       answer:
-        "Fully flexible around your child's school schedule and timezone. Most students attend 2 to 3 sessions a week. Reschedule anytime with 24 hours notice.",
+        "Online tuition timings are fully flexible around your child's school schedule and time zone, with most students attending 2 to 3 sessions a week. Reschedule anytime with 24 hours' notice.",
     },
     {
       question: 'What does it cost, and what if it does not work out?',
       answer: priceFaq,
+    },
+    {
+      question: 'Is online math tuition more effective than in-person or group classes?',
+      answer:
+        "For most students, yes. Online math tuition gives your child a tutor's full attention for the entire session — something group classes can't offer. Every math class online is recorded for revision. ",
+    },
+    {
+      question: 'Do you offer physics and science tuition alongside math?',
+      answer:
+        'Yes. Alongside math tuition, we offer physics tuition from dedicated science tutors, matched the same way as our math tutors — by curriculum and grade. ',
     },
   ]
 
@@ -76,7 +86,7 @@ export const Faqs = () => {
                   className="w-full flex justify-between items-center cursor-pointer"
                   onClick={() => handleToggle(index)}
                 >
-                  <p className="m-0 md:text-[1.2rem] w-[90%] text-[4vw] text-[#364153] font-medium text-left">
+                  <p className="m-0 md:text-[1rem] w-[90%] text-[4vw] text-[#364153] leading-[150%] font-medium text-left">
                     {faq.question}
                   </p>
 
@@ -90,7 +100,9 @@ export const Faqs = () => {
                     isOpen ? 'max-h-40 mt-4' : 'max-h-0'
                   }`}
                 >
-                  <p className="text-[#6B7280] m-0 md:text-[1rem] text-[3.5vw]">{faq.answer}</p>
+                  <p className="text-[#6B7280] m-0 md:text-[0.9rem] text-[3.5vw] leading-[150%]">
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
             )
