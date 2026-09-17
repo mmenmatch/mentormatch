@@ -29,6 +29,8 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>
 
 const GRADES = [
+  'Grade 4',
+  'Grade 5',
   'Grade 6',
   'Grade 7',
   'Grade 8',
