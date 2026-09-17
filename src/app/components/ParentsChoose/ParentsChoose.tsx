@@ -36,7 +36,7 @@ export const ParentsChoose = () => {
         {' '}
         <div className="flex flex-col  items-center justify-center mb-8 gap-2">
           <span className="flex justify-center items-center text-center md:gap-4 gap-8">
-            <h2 className="md:text-[2.5rem] m-0 text-[6vw] md:w-auto leading-[120%] font-bold flex items-center justify-center">
+            <h2 className="md:text-[2.5rem] m-0 text-[7vw] md:w-auto leading-[140%] font-bold flex items-center justify-center">
               Why choose us for 1:1 Online Tuition
             </h2>
           </span>
