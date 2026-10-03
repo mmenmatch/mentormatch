@@ -3,6 +3,10 @@ import { OnlineTutoringHeroSection } from '../components/OnlineTutoringHeroSecti
 import { GpsSection } from '../components/GpsSection/GpsSection'
 import { TrulyPersonalise } from '../components/TrulyPersonalise/TrulyPersonalise'
 import { Faqs } from '../components/Faqs/Faqs'
+import { ParentsApp } from '../components/ParentsApp/ParentsApp'
+import GoogleReview from '../components/GoogleReview/GoogleReview'
+
+
 export default function page() {
   return (
     <div className="w-full">
@@ -12,6 +16,8 @@ export default function page() {
           <OnlineTutoringHeroSection />
           <GpsSection />
           <TrulyPersonalise />
+          <GoogleReview />
+          <ParentsApp />
           <Faqs />
         </div>
       </div>

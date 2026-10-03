@@ -13,22 +13,22 @@ export const TrulyPersonalise = () => {
           </p>
           <div className="w-full bg-white lg:p-6 p-3 rounded-2xl flex justify-between md:items-center ">
             <div className="flex flex-col gap-2 w-[30%] justify-center">
-              <p className="text-[#023BF3] lg:text-[2rem] text-[5vw] font-bold">4200+</p>
-              <p className="text-[#163B82] lg:text-[1rem] text-[3vw] leading-[120%]">
+              <p className="text-[#023BF3] lg:text-[2rem] text-[6vw] font-bold">4200+</p>
+              <p className="text-[#163B82] lg:text-[1rem] text-[3.5vw] leading-[120%]">
                 students improved a full grade
               </p>
             </div>{' '}
             <div className="bg-[#023BF3] w-[1px] md:h-full h-auto"></div>
             <div className="flex flex-col gap-2 w-[30%] justify-center">
-              <p className="text-[#023BF3] lg:text-[2rem] text-[5vw] font-bold">98%+</p>
-              <p className="text-[#163B82] lg:text-[1rem] text-[3vw] leading-[120%]">
+              <p className="text-[#023BF3] lg:text-[2rem] text-[6vw] font-bold">98%+</p>
+              <p className="text-[#163B82] lg:text-[1rem] text-[3.5vw] leading-[120%]">
                 students love their tutor
               </p>
             </div>{' '}
             <div className="bg-[#023BF3] w-[1px] md:h-full h-auto"></div>
             <div className="flex flex-col gap-2 w-[30%] justify-center">
-              <p className="text-[#023BF3] lg:text-[2rem] text-[5vw] font-bold">200K+</p>
-              <p className="text-[#163B82] lg:text-[1rem] text-[3vw] leading-[100%]">
+              <p className="text-[#023BF3] lg:text-[2rem] text-[6vw] font-bold">200K+</p>
+              <p className="text-[#163B82] lg:text-[1rem] text-[3.5vw] leading-[100%]">
                 1:1 sessions delivered
               </p>
             </div>
