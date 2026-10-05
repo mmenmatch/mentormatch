@@ -8,7 +8,7 @@ export const OnlineTutoringHeroSection = () => {
   return (
     <div className="w-full flex lg:flex-row flex-col md:bg-[linear-gradient(180deg,_#2A51FF_0%,_#0285FA_100%)] ">
       <div className="max-w-360 w-full mx-auto  flex md:flex-row flex-col justify-between  items-center">
-        <div className="lg:w-[50%] w-full md:py-16 py-8 md:px-8 px-4 flex justify-center bg-[linear-gradient(180deg,_#2A51FF_0%,_#0285FA_100%)]  ">
+        <div className="lg:w-[50%] w-full md:py-16 py-8 md:px-8 px-4 flex justify-center md:bg-none bg-[linear-gradient(180deg,_#2A51FF_0%,_#0285FA_100%)]  ">
           <div className=" w-full flex flex-col justify-start gap-4 items-baseline">
             <div className="border border-white bg-white/20 w-auto p-2 rounded-4xl">
               <Image src={GoogleRating} alt="OnlineTutoring" className="w-[140px]" />
