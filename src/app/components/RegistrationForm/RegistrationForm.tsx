@@ -35,6 +35,7 @@ const CURRICULUM = [
 
 const PRICE = ['Yes, I want to apply', 'No, it is outside my budget']
 
+
 export default function RegistrationForm({ v2 = false }) {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
   const pricingLabel =
@@ -57,6 +58,7 @@ export default function RegistrationForm({ v2 = false }) {
       .refine((val) => isValidPhoneNumber(val), {
         message: 'Invalid phone number for selected country',
       }),
+    city: z.string().min(1, 'Please select a city'),
   })
 
   type FormData = z.infer<typeof schema>
@@ -73,7 +75,10 @@ export default function RegistrationForm({ v2 = false }) {
         // silently fall back to 'IN'
       })
   }, [])
-
+const CITY =
+  detectedCountry === 'AE'
+    ? ['Dubai', 'Abu Dhabi', 'Emirate of Sharjah', 'Other']
+    : ['Bangalore', 'Mumbai', 'Delhi', 'Hyderabad', 'Pune', 'Ahmedabad', 'Other']
   const {
     register,
     handleSubmit,
@@ -291,7 +296,27 @@ export default function RegistrationForm({ v2 = false }) {
             )}
           </div>
         )}
-
+        <div className="w-full flex flex-col gap-2">
+          <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
+            City<span className="text-red-500">*</span>{' '}
+          </label>
+          <div className="flex flex-wrap gap-4">
+            <select
+              {...register('city')}
+              className={`w-full px-4 py-3 border border-[#A3A3C7] rounded-lg outline-none bg-white transition`}
+            >
+              <option value="">Select a city</option>
+              {CITY?.map((g) => (
+                <option key={g} value={g}>
+                  {g}
+                </option>
+              ))}
+            </select>
+            {errors?.city && (
+              <p className="text-red-500 text-xs mt-0  mb-0">{errors?.city?.message}</p>
+            )}
+          </div>
+        </div>
         {/* Submit */}
         <button
           type="submit"
