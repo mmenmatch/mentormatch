@@ -5,6 +5,7 @@ import { TrulyPersonalise } from '../components/TrulyPersonalise/TrulyPersonalis
 import { Faqs } from '../components/Faqs/Faqs'
 import { ParentsApp } from '../components/ParentsApp/ParentsApp'
 import GoogleReview from '../components/GoogleReview/GoogleReview'
+import { TrainedTutor } from '../components/TrainedTutor/TrainedTutor'
 
 
 export default function page() {
@@ -15,6 +16,7 @@ export default function page() {
         <div className=" ">
           <OnlineTutoringHeroSection />
           <GpsSection />
+          <TrainedTutor />
           <TrulyPersonalise />
           <GoogleReview />
           <ParentsApp />
