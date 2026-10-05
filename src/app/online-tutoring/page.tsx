@@ -6,7 +6,7 @@ import { Faqs } from '../components/Faqs/Faqs'
 import { ParentsApp } from '../components/ParentsApp/ParentsApp'
 import GoogleReview from '../components/GoogleReview/GoogleReview'
 import { TrainedTutor } from '../components/TrainedTutor/TrainedTutor'
-
+import { MMFooter } from '../components/MMFooter/MMFooter'
 
 export default function page() {
   return (
@@ -21,6 +21,7 @@ export default function page() {
           <GoogleReview />
           <ParentsApp />
           <Faqs />
+          <MMFooter />
         </div>
       </div>
     </div>
