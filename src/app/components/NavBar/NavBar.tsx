@@ -15,9 +15,11 @@ const NavBar = ({ whatsapp = false, width = '' }) => {
         <div className="max-w-360 w-full mx-auto flex flex-row items-center justify-between">
           <div
             className={`md:max-w-50 max-w-40 cursor-pointer`}
-            style={{
-              maxWidth: width ? `${width}px` : '160px',
-            }}
+            style={
+              {
+                // maxWidth: width ? `${width}px` : '160px',
+              }
+            }
           >
             <img
               src="https://cdn.prod.website-files.com/660d0c07422cfeca80d26d7d/6626114f2c2dbd34ed07beb4_Text%20logo_website%20blue2.webp"
@@ -43,7 +45,7 @@ const NavBar = ({ whatsapp = false, width = '' }) => {
                     behavior: 'smooth',
                   })
                 }}
-                className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
+                className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.8rem] md:py-3 md:px-4 py-2 px-2 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
               >
                 Book A Free Trial
