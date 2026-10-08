@@ -77,6 +77,10 @@ label{
   display: flex;
   gap: 8px;
 }
+.cuemath-phone-input-wrapper .PhoneInput {
+  display: flex;
+  gap: 8px;
+}
 .phone-input-wrapper .PhoneInputInput {
   flex: 1;
   padding: 12px 16px;
@@ -84,6 +88,14 @@ label{
   border-radius: 8px;
   outline: none;
   font-size: 14px;
+}
+.cuemath-phone-input-wrapper .PhoneInputInput {
+  flex: 1;
+  padding: 12px 16px;
+border-bottom: 1px solid black;
+  /* border-radius: 8px; */
+  outline: none;
+  font-size: 1.1rem;
 }
 .phone-input-wrapper .PhoneInputInput:focus {
   box-shadow: 0 0 0 2px #bfdbfe;
@@ -99,6 +111,14 @@ label{
   padding: 8px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
+}
+.cuemath-phone-input-wrapper  .PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid black;
+  /* border-radius: 8px/s; */
 }
 .phone-input-wrapper-ft .PhoneInput {
   display: flex;

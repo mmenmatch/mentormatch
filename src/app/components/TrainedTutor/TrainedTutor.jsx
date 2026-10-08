@@ -51,10 +51,25 @@ export const TrainedTutor = () => {
     },
   ]
   const iconData = [
-    { id: 1, img: Date, title: 'Flexible Scheduling to fit your family’s needs.' },
-    { id: 2, img: Book, title: 'Tutor’s specialized in IB, IGCSE, AP, A-Levels, CBSE & ICSE.' },
+    {
+      id: 1,
+      img: Date,
+      title: 'Flexible Scheduling to fit ',
+      subtitle: ' your family’s needs.',
+    },
+    {
+      id: 2,
+      img: Book,
+      title: 'Tutor’s specialized in IB, IGCSE,',
+      subtitle: 'AP, A-Levels, CBSE & ICSE',
+    },
     ,
-    { id: 3, img: BlueTick, title: 'Minimum 5+ Years of teaching experience.' },
+    {
+      id: 3,
+      img: BlueTick,
+      title: 'Minimum 5+ Years of ',
+      subtitle: 'teaching experience.',
+    },
   ]
   return (
     <div className="w-full lg:py-16 ">
@@ -97,11 +112,14 @@ export const TrainedTutor = () => {
         <div className="w-full flex md:flex-row flex-col justify-center gap-4 ">
           {iconData?.map((ele) => (
             <div
-              className="flex gap-4 bg-white justify-start items-center p-3 rounded-2xl"
+              className="w-full md:max-w-[28%] flex gap-4 bg-white justify-start items-center p-2 rounded-2xl"
               key={ele.id}
             >
-              <Image src={ele.img} alt={ele.id} width={30} />
-              <p className="text-[0.9rem]">{ele.title}</p>
+              <Image src={ele.img} alt={ele.id} width={50} />
+              <div className="flex flex-col ">
+                <p className="text-[1rem] leading-[150%] ">{ele.title}</p>
+                <p className="text-[1rem]  leading-[150%]  ">{ele.subtitle}</p>
+              </div>
             </div>
           ))}
         </div>

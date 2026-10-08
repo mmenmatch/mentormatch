@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, useEffect } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -24,7 +25,7 @@ const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'American', 'CBSE', 'ICSE',
 
 const PRICE = ['Yes, I want to apply', 'No, it is outside my budget']
 
-export default function RegistrationForm({ v2 = false }) {
+export default function CueMathForm({ v2 = false }) {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
   const pricingLabel =
     detectedCountry === 'AE' ? 'Our fee is AED 499/month' : 'Our fee is ₹7,999/month'
@@ -39,14 +40,13 @@ export default function RegistrationForm({ v2 = false }) {
       .email({ message: 'Please Enter a Valid Email Address' }),
     grade: z.string().min(1, 'Please select a grade'),
     subject: z.string().min(1, 'Please select a subject'),
-    pricingAccepted: v2 ? z.string().optional() : z.string().min(1, 'Please select an option'),
     phone: z
       .string()
       .min(1, 'Phone number is required')
       .refine((val) => isValidPhoneNumber(val), {
         message: 'Invalid phone number for selected country',
       }),
-    city: z.string().min(1, 'Please select a city'),
+    curriculum: z.string().min(1, 'Please select a curriculums'),
   })
 
   type FormData = z.infer<typeof schema>
@@ -122,32 +122,18 @@ export default function RegistrationForm({ v2 = false }) {
   }
 
   return (
-    <div className="w-full  mx-auto md:p-0 p-4  font-light" id="cta">
-      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 md:text-gray-800">
-        Book a{' '}
-        <span className="bg-[#FFF116] leading-[100%] text-black px-1 rounded font-bold leading-[140%]">
-          Free Trial
-        </span>{' '}
-        for your child!
+    <div className="w-full mx-auto md:p-0 p-4  font-light" id="cta">
+      <h2 className="font-[900] md:text-[2.5rem] text-[6vw]  leading-[110%] text-center mt-4  md:text-[#0F1F3D] md:py-8">
+        Book a FREE Online Trial Class
       </h2>
-      {/* <p className="md:text-[2.25rem] mb-8 text-[6vw] leading-[110%]  w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
-        For Grade 6 to 12th
-      </p> */}
+
       <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
         {/* Parent Name */}
         <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem] font-medium text-gray-700 ">
-            Parent's Name <span className="text-red-500">*</span>
-          </label>
           <input
             {...register('parentName')}
-            placeholder="Enter parent's name"
-            className={`w-full px-4 py-3 border rounded-lg outline-none transition
-              ${
-                errors?.parentName
-                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
-                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
-              }`}
+            placeholder="Parent's Name"
+            className={`w-full px-1 py-4  border-b border-black text-[#364153] outline-none transition text-[1.1rem]`}
           />
           {/* Only show error while under 3 chars; disappears once valid */}
           {errors.parentName && (
@@ -155,47 +141,28 @@ export default function RegistrationForm({ v2 = false }) {
           )}
         </div>
         <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem] font-medium text-gray-700 ">
-            Parent's Email Address <span className="text-red-500">*</span>
-          </label>
           <input
             {...register('email')}
-            placeholder="Enter parent's email address"
-            className={`w-full px-4 py-3 border rounded-lg outline-none transition
-              ${
-                errors.email
-                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
-                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
-              }`}
+            placeholder="Email Address"
+            className={`w-full px-1 py-4  border-b border-black text-[#364153] outline-none transition text-[1.1rem]`}
           />
           {/* Only show error while under 3 chars; disappears once valid */}
           {errors.email && <p className="text-red-500 text-xs mt-0 mb-0">{errors.email.message}</p>}
         </div>
-
         {/* Phone Number with Country Code */}
         {detectedCountry && (
           <div className="flex flex-col gap-2 mb-4">
-            <label className="block text-[1rem] font-medium text-gray-700 mb-1">
-              Parent's Phone Number <span className="text-red-500">*</span>
-            </label>
             <Controller
               name="phone"
               control={control}
               render={({ field: { onChange, value } }) => (
-                // <PhoneInput
-                //   international
-                //   defaultCountry="AE" // change default to your target country
-                //   value={value}
-                //   onChange={onChange}
-                //   className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
-                // />
                 <PhoneInput
                   international
-                  defaultCountry={detectedCountry} // 👈 dynamic instead of hardcoded "IN"
+                  defaultCountry={detectedCountry}
                   value={value}
                   onChange={onChange}
                   autoComplete="new-password"
-                  className={`phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
+                  className={`cuemath-phone-input-wrapper ${errors.phone ? 'phone-error' : ''}`}
                 />
               )}
             />
@@ -204,22 +171,34 @@ export default function RegistrationForm({ v2 = false }) {
             )}
           </div>
         )}
-
+        {/*Curriculum*/}
+        <div className="flex flex-col gap-2 mb-4">
+          <select
+            {...register('curriculum')}
+            className={`w-full px-1 py-4  border-b border-black text-[#364153] outline-none transition text-[1.1rem]`}
+          >
+            <option className="text-[#364153]" value="">
+              Select a Curriculum
+            </option>
+            {CURRICULUM?.map((g) => (
+              <option key={g} value={g}>
+                {g}
+              </option>
+            ))}
+          </select>
+          {errors?.subject && (
+            <p className="text-red-500 text-xs mt-0  mb-0">{errors?.subject.message}</p>
+          )}
+        </div>
         {/* Grade Dropdown */}
         <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
-            Grade <span className="text-red-500">*</span>
-          </label>
           <select
             {...register('grade')}
-            className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
-              ${
-                errors.grade
-                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
-                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
-              }`}
+            className={`w-full px-1 py-4  border-b border-black text-[#364153] outline-none transition text-[1.1rem]`}
           >
-            <option value="">Select a grade</option>
+            <option className="text-[#364153]" value="">
+              Select a grade
+            </option>
             {GRADES.map((g) => (
               <option key={g} value={g}>
                 {g}
@@ -230,22 +209,15 @@ export default function RegistrationForm({ v2 = false }) {
             <p className="text-red-500 text-xs mt-0  mb-0">{errors.grade.message}</p>
           )}
         </div>
-
         {/*Subject*/}
         <div className="flex flex-col gap-2 mb-4">
-          <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
-            Subject <span className="text-red-500">*</span>
-          </label>
           <select
             {...register('subject')}
-            className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
-              ${
-                errors?.subject
-                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
-                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
-              }`}
+            className={`w-full px-1 py-4  border-b border-black text-[#364153] outline-none transition text-[1.1rem]`}
           >
-            <option value="">Select a subject</option>
+            <option className="text-[#364153]" value="">
+              Select a subject
+            </option>
             {SUBJECT?.map((g) => (
               <option key={g} value={g}>
                 {g}
@@ -257,64 +229,20 @@ export default function RegistrationForm({ v2 = false }) {
           )}
         </div>
 
-        {/*Pricing...*/}
-        {!v2 && (
-          <div className="flex flex-col gap-2 mb-4">
-            <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
-              {pricingLabel} <span className="text-red-500">*</span>
-            </label>
-            <select
-              {...register('pricingAccepted')}
-              className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
-              ${
-                errors?.pricingAccepted
-                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
-                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
-              }`}
-            >
-              <option value="">Select an option</option>
-              {PRICE?.map((g) => (
-                <option key={g} value={g}>
-                  {g}
-                </option>
-              ))}
-            </select>
-            {errors?.pricingAccepted && (
-              <p className="text-red-500 text-xs mt-0  mb-0">{errors?.pricingAccepted.message}</p>
-            )}
-          </div>
-        )}
-        <div className="w-full flex flex-col gap-2">
-          <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
-            City<span className="text-red-500">*</span>{' '}
-          </label>
-          <div className="flex flex-wrap gap-4">
-            <select
-              {...register('city')}
-              className={`w-full px-4 py-3 border border-[#A3A3C7] rounded-lg outline-none bg-white transition`}
-            >
-              <option value="">Select a city</option>
-              {CITY?.map((g) => (
-                <option key={g} value={g}>
-                  {g}
-                </option>
-              ))}
-            </select>
-            {errors?.city && (
-              <p className="text-red-500 text-xs mt-0  mb-0">{errors?.city?.message}</p>
-            )}
-          </div>
-        </div>
         {/* Submit */}
         <button
           type="submit"
           disabled={!isValid || status === 'loading'}
-          className="w-full py-4 bg-[#2B23FF] text-white font-semibold rounded-lg
-            hover:bg-[#2B23FF] disabled:bg-gray-300 transition text-[1rem]"
+          style={{
+            color: isValid ? 'black' : 'grey',
+            border: isValid ? '2px solid black' : '2px solid #d3d3d3',
+            boxShadow: isValid ? '0px_4px_0px_black' : '',
+          }}
+          className="w-full md:py-3 py-3 bg-[#FFF116]  font-semibold rounded-4xl
+             disabled:bg-gray-300 transition text-[1rem] mt-4 "
         >
           {status === 'loading' ? 'Submitting...' : 'Book A Free Trial'}
         </button>
-
         {status === 'success' && (
           <p className="text-green-600 text-center text-sm font-medium">
             ✅ Your Free Trial Has Been Booked Successfully!
