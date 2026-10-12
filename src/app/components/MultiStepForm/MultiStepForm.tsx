@@ -139,7 +139,9 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
     const params = new URLSearchParams(window.location.search)
-    console.log('data', data)
+    const eventId = crypto.randomUUID()
+
+    // console.log('data', data)
     const payload = {
       ...data,
       pageUrl: window.location.href,
@@ -149,6 +151,7 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
       utm_campaign: utm_campaign ? utm_campaign : params.get('utm_campaign'),
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
+      meta_event_id: eventId || '',
     }
     localStorage.setItem('formData', JSON.stringify(payload))
     if (typeof window.fbq !== 'undefined') {
@@ -185,14 +188,19 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
       if (typeof window.fbq !== 'undefined') {
         console.log('Meta Pixel loaded')
         if (data) {
-          window.fbq('track', 'Lead', {
-            em: data.email || '',
-            ph: data.phone || '',
-            fn: data.parentName || '',
-          })
+          window.fbq(
+            'track',
+            'Lead',
+            {
+              em: data.email || '',
+              ph: data.phone || '',
+              fn: data.parentName || '',
+            },
+            { eventID: eventId },
+          )
           console.log('Lead event sent')
         } else {
-          window.fbq('track', 'Lead')
+          window.fbq('track', 'Lead', {}, { eventID: eventId })
           console.log('Lead event sent without data')
         }
       } else {

@@ -21,6 +21,8 @@ export const SuccessPage = () => {
       const storedData = localStorage.getItem('formData')
       const formData = storedData ? JSON.parse(storedData) : null
       // console.log('storedData', storedData)
+          const eventId = crypto.randomUUID()
+
       console.log('formData', formData)
 
       // Fire Google Ads conversion
@@ -51,15 +53,18 @@ export const SuccessPage = () => {
       if (typeof window.fbq !== 'undefined') {
         console.log('Meta Pixel loaded')
         if (formData) {
-          window.fbq('track', 'Lead', {
-            em: formData.email || '',
-            ph: formData.phone || '',
-            fn: formData.parentName || '',
-          })
-          console.log('Lead event sent')
+          window.fbq(
+            'track',
+            'Lead',
+            {
+              em: formData.email || '',
+              ph: formData.phone || '',
+              fn: formData.parentName || '',
+            },
+            { eventID: eventId },
+          )
         } else {
-          window.fbq('track', 'Lead')
-          console.log('Lead event sent without data')
+          window.fbq('track', 'Lead', {}, { eventID: eventId })
         }
       } else {
         console.error('fbq not found')

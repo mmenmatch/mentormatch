@@ -19,6 +19,7 @@ type FormData = {
   utm_content?: string
   utm_term?: string
   city?: string
+  meta_event_id?: any
 }
 
 export async function POST(req: NextRequest) {
@@ -42,6 +43,7 @@ export async function POST(req: NextRequest) {
     date = '',
     time = '',
     city = '',
+    meta_event_id = '',
   } = body
 
   const results = await Promise.allSettled([
@@ -64,6 +66,7 @@ export async function POST(req: NextRequest) {
       date,
       time,
       city,
+      meta_event_id,
     }),
     // submitToGoogleSheets({ email, childName, grade, phone }),
     // sendSlackNotification({
@@ -98,7 +101,7 @@ export async function POST(req: NextRequest) {
 // ── HubSpot ──────────────────────────────────────────────
 async function submitToHubSpot(data: any) {
   // console.log(' time', data?.time)
-  // console.log(' Date', data?.date)
+  console.log(' eventid', data)
 
   const response = await fetch(
     `https://api.hsforms.com/submissions/v3/integration/submit/244333388/767d3250-c3d6-4873-84d2-ea278f019ab6`,
@@ -148,14 +151,19 @@ async function submitToHubSpot(data: any) {
             name: 'utm_term',
             value: data?.utm_term || '',
           },
+          {
+            name: 'meta_event_id',
+            value: data?.meta_event_id || '',
+          },
         ],
       }),
     },
   )
   const result = await response.text()
-  console.log('result', result)
-  console.log(' time', data?.time)
-  console.log(' Date', data?.date)
+  // console.log('result', result)
+  // console.log(' time', data?.time)
+  // console.log(' Date', data?.date)
+  //   console.log(' Date', data?.meta_event_id)
 }
 
 // ── Slack ─────────────────────────────────────────────────

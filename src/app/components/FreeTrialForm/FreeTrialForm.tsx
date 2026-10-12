@@ -137,10 +137,13 @@ function FreeTrialForm() {
   const selectedTime = watch('time')
   const isStep6Valid = !!selectedDate && !!selectedTime
 
+
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
+    const eventId = crypto.randomUUID()
+    // console.log('eventId', eventId)
     const params = new URLSearchParams(window.location.search)
-    console.log('data', data)
+    // console.log('data', data)
     const payload = {
       ...data,
       pageUrl: window.location.href,
@@ -150,9 +153,10 @@ function FreeTrialForm() {
       utm_campaign: params.get('utm_campaign'),
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
+      meta_event_id: eventId || '',
     }
     localStorage.setItem('formData', JSON.stringify(payload))
-console.log('payload', payload)
+    console.log('payload', payload)
     if (typeof window.fbq !== 'undefined') {
       // console.log('Meta Pixel loaded')
       window.fbq('track', 'Submit Application')
@@ -187,14 +191,19 @@ console.log('payload', payload)
       if (typeof window.fbq !== 'undefined') {
         console.log('Meta Pixel loaded')
         if (data) {
-          window.fbq('track', 'Lead', {
-            em: data.email || '',
-            ph: data.phone || '',
-            fn: data.parentName || '',
-          })
+          window.fbq(
+            'track',
+            'Lead',
+            {
+              em: data.email || '',
+              ph: data.phone || '',
+              fn: data.parentName || '',
+            },
+            { eventID: eventId },
+          )
           console.log('Lead event sent')
         } else {
-          window.fbq('track', 'Lead')
+          window.fbq('track', 'Lead', {}, { eventID: eventId })
           console.log('Lead event sent without data')
         }
       } else {
