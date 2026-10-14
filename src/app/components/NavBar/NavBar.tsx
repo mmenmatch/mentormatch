@@ -10,7 +10,7 @@ const NavBar = ({ whatsapp = false, width = '' }) => {
   const router = useRouter()
 
   return (
-    <div className="w-full xl:px-16 px-4 py-4 flex items-center  border-b border-b-[#e1e1e1] min-h-20">
+    <div className="w-full xl:px-16 px-4 py-4 flex items-center  border-b border-b-[#e1e1e1] min-h-20 bg-white">
       <div className="w-full mx-auto flex items-center xl:px-8">
         <div className="max-w-360 w-full mx-auto flex flex-row items-center justify-between">
           <div
