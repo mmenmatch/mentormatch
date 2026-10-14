@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 export const ResourceBanner = () => {
@@ -26,6 +27,11 @@ export const ResourceBanner = () => {
           </p>
           <div className="flex gap-4">
             <button
+              onClick={() => {
+                document.getElementById('topics')?.scrollIntoView({
+                  behavior: 'smooth',
+                })
+              }}
               type="submit"
               className=" w-[200px] border-2 border-white md:py-3 py-3   font-semibold rounded-4xl
              disabled:bg-gray-300 transition text-[1rem] mt-4 text-white "
@@ -33,6 +39,11 @@ export const ResourceBanner = () => {
               Explore Topics
             </button>
             <button
+              onClick={() => {
+                document.getElementById('resource-form')?.scrollIntoView({
+                  behavior: 'smooth',
+                })
+              }}
               type="submit"
               className=" w-[200px] border-2 border-black md:py-3 py-3 bg-[#FFF116]  font-semibold rounded-4xl
              disabled:bg-gray-300 transition text-[1rem] mt-4 "

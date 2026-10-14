@@ -16,16 +16,14 @@ export function ResourceNavigation() {
 
   return (
     <aside className="w-full shrink-0 border-b border-slate-200 bg-white  lg:sticky lg:top-16  lg:w-85 lg:overflow-y-auto lg:border-b-0 lg:border-r">
-      <Link
-        href={'#'}
-        // href="/resources/ib-dp-maths/aa-sl"
+      {/* <Link
+        href="/resources/ib-dp-maths/aa-sl"
         className="block rounded-lg px-5 py-3 font-semibold text-slate-900"
       >
-        {/* <span className="mt-2 block text-[#163B82] ">AASL Mathematics</span> */}
         <span className="mt-2 block text-black text-[1.2rem] leading-9">
           Important Questions & Answers
         </span>
-      </Link>
+      </Link> */}
 
       {/* <div className="my-4 border-t border-slate-100" /> */}
 
@@ -33,21 +31,26 @@ export function ResourceNavigation() {
         {topics.map((topic, ind) => (
           <div key={topic.slug} className={`border-b border-gray-300 `}>
             <Link
-              href={`/resources/ib-dp-maths/aa-sl/${topic.slug}`}
-              className={`text-[1.2rem] block text-sm font-semibold px-5 py-6  ${topic.slug?.toLowerCase() == activeTopic ? 'bg-[#006CFF]  text-white  py-4' : 'text-slate-800'} hover:bg-[#006CFF] hover:text-white  `}
+              href={'#'}
+              // href={`/resources/ib-dp-maths/aa-sl/${topic.slug}`}
+              className={`text-[1.2rem] block text-sm font-semibold px-5 pt-4  ${topic.slug?.toLowerCase() == activeTopic ? 'bg-[#006CFF]  text-white  py-4' : 'text-slate-800'}    `}
             >
               {ind + 1}. {topic.title}
             </Link>
 
             <ul
-              style={{ paddingLeft: '1.5rem' }}
-              className={`mt-2 space-y-2   ${topic.slug?.toLowerCase() == activeTopic ? 'visible' : 'hidden'} overflow-hidden`}
+              style={{ paddingLeft: '1rem' }}
+              className={`mt-2 space-y-2  
+                 `}
             >
               {topic.subtopics.map((subtopic, subInd) => (
-                <li key={subtopic.slug}>
+                <li
+                  key={subtopic.slug}
+                  className={`transition hover:bg-blue-100 hover:py-2 hover:pl-2 hover:border-l-4 hover:font-bold text-[1rem] hover:border-[#006CFF] hover:rounded-l hover:text-[#006CFF]  ${subtopic.slug?.toLowerCase() == activeSubtopic ? 'bg-blue-100 py-2 pl-2 border-l-4 border-[#006CFF] rounded-l text-[#006CFF] font-semibold' : 'text-slate-500'}`}
+                >
                   <Link
                     href={`/resources/ib-dp-maths/aa-sl/${topic.slug}/${subtopic.slug}`}
-                    className={`block text-sm leading-8 ${activeSubtopic == subtopic.slug.toLowerCase() ? '  text-[#006CFF] font-extrabold text-[1.3rem]' : 'text-slate-500 '} transition hover:text-[#006CFF] hover:font-bold text-[1rem]`}
+                    className={`block leading-8 transition hover:text-[#006CFF] `}
                   >
                     {ind + 1 + '.'}
                     {subInd + 1} {subtopic.title}
@@ -61,3 +64,6 @@ export function ResourceNavigation() {
     </aside>
   )
 }
+
+
+                // ul style ${topic.slug?.toLowerCase() == activeTopic ? 'visible' : 'hidden'} overflow-hidden

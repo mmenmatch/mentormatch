@@ -6,6 +6,9 @@ import { ResourceBanner } from '@/app/components/ResourceBanner/ResourceBanner'
 import { MMFooter } from '@/app/components/MMFooter/MMFooter'
 import type { ReactNode } from 'react'
 import { ResourceNavigation } from '@/app/components/ResourceNavigation/ResourceNavigation'
+import ResourceForm from '../../../components/ResourceForm/ResourceForm'
+
+
 export const metadata: Metadata = {
   title: {
     default: 'IB Maths AA SL Resources | Mentor Match',
@@ -26,7 +29,7 @@ type Props = {
 export default async function AASLLayout({ children, params }: Props) {
   const { topic, subtopic } = await params
   return (
-    <div className="flex flex-col h-full bg-slate-50">
+    <div className="flex flex-col h-full bg-blue-50">
       <NavBar />
       <div>
         {/* <ResourceBanner /> */}
@@ -39,6 +42,7 @@ export default async function AASLLayout({ children, params }: Props) {
             {children}
           </main>
         </div>
+        <ResourceForm />
         <MMFooter />
       </div>
     </div>

@@ -53,7 +53,7 @@ export default async function SubtopicPage({ params }: Props) {
 
   return (
     <>
-      <div className="mx-auto py-6 bg-white min-h-screen">
+      <div className="mx-auto py-6 bg-blue-50 min-h-screen">
         <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-500">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
@@ -79,7 +79,7 @@ export default async function SubtopicPage({ params }: Props) {
           </ol>
         </nav>
         <ResourceBanner />
-        <div className="px-8 py-4">
+        <div className="px-8 py-4" id={'topics'}>
           <h1 className="text-[1.5rem] mb-0 font-bold text-black flex flex-col">
             Important Questions & Answers
           </h1>
@@ -104,7 +104,7 @@ export default async function SubtopicPage({ params }: Props) {
                 {ele?.[topicSlug]?.[subtopicSlug]?.map((subele: any, ind: any) => (
                   <div
                     key={subele?.id}
-                    className="p-4 border border-gray-200 w-full rounded-2xl flex flex-col gap-4"
+                    className="p-4 border bg-white border-gray-200 w-full rounded-2xl flex flex-col gap-4"
                   >
                     <span className="flex items-baseline">
                       {' '}
@@ -147,56 +147,6 @@ export default async function SubtopicPage({ params }: Props) {
               </div>
             </div>
           ))}
-          {/* <article>
-            <header className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-9">
-              <p className="text-sm font-semibold uppercase tracking-wider text-blue-700">
-                {topic.title}
-              </p>
-
-              <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                {subtopic.title}
-              </h1>
-
-              <p className="mt-4 max-w-3xl leading-7 text-slate-600">
-                {subtopic.description} Use this page to review the topic and practise relevant IB
-                Maths AA SL questions.
-              </p>
-            </header>
-
-            <section className="mt-8 rounded-xl border border-slate-200 bg-white p-6 sm:p-8">
-              <h2 className="text-xl font-bold text-slate-900">Study {subtopic.title}</h2>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                This section will contain the study notes, practice questions, answers and
-                explanations for {subtopic.title}.
-              </p>
-
-              <div className="mt-6 rounded-lg border border-dashed border-slate-300 bg-slate-50 p-5">
-                <h3 className="font-semibold text-slate-900">Practice questions</h3>
-
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Your AASL question bank will appear here when we connect this page to your Google
-                  Sheet.
-                </p>
-              </div>
-            </section>
-
-            <div className="mt-8 flex flex-wrap items-center justify-between gap-4">
-              <Link
-                href={`/resources/ib-dp-maths/aa-sl/${topic.slug}`}
-                className="text-sm font-semibold text-blue-700 hover:text-blue-900"
-              >
-                ← All {topic.title} subtopics
-              </Link>
-
-              <Link
-                href="/resources/ib-dp-maths/aa-sl"
-                className="text-sm font-semibold text-slate-600 hover:text-slate-900"
-              >
-                All AASL topics
-              </Link>
-            </div>
-          </article> */}
         </div>
       </div>
     </>
