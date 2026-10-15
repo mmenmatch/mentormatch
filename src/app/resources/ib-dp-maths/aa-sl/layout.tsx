@@ -30,12 +30,12 @@ type Props = {
 export default async function AASLLayout({ children, params }: Props) {
   const { topic, subtopic } = await params
   return (
-    <div className="flex h-screen flex-col  bg-blue-50">
+    <div className="flex lg:h-screen flex-col  bg-blue-50">
       <NavBar whatsapp />
 
       <div className="mx-auto flex w-full  flex-1 min-h-full items-stretch">
         {/* Left navigation - full available height */}
-        <aside className="h-full min-h-full shrink-0 overflow-y-auto">
+        <aside className="h-full min-h-full shrink-0 overflow-y-auto hidden lg:block">
           <ResourceNavigation />
         </aside>
 
@@ -47,5 +47,4 @@ export default async function AASLLayout({ children, params }: Props) {
     </div>
   )
 }
-// px-5 py-8 sm:px-8 lg:px-10 lg:py-10. main style
-//
+

@@ -3,20 +3,22 @@ import React from 'react'
 
 export const ResourceBanner = ({ title, description }: any) => {
   return (
-    <div className="bg-[linear-gradient(90deg,#006CFF_62%,#049FF3_100%)] px-8 py-8  ">
-      <div className=" flex items-center justify-between gap-4rem max-w-[80rem] mx-auto">
-        <div className="w-[50%] flex flex-col gap-4">
+    <div className="bg-[linear-gradient(90deg,#006CFF_62%,#049FF3_100%)] lg:px-8 px-4 py-8  ">
+      <div className=" flex lg:flex-row  flex-col items-center justify-between gap-4rem max-w-[80rem] mx-auto">
+        <div className="lg:w-[50%] flex flex-col gap-4">
           <div className="flex flex-col">
             <h1
-              className="text-white font-extrabold text-[1.8rem] leading-10 m-0"
+              className="text-white font-extrabold lg:text-[1.8rem] text-[6vw]  leading-8 lg:leading-10 m-0"
               style={{ fontWeight: 900 }}
             >
               {title && title}
             </h1>
           </div>
-          <p className="text-white text-[1.2rem] leading-[140%] ">{description && description}</p>
+          <p className="text-white lg:text-[1.2rem] text-[4vw] leading-[140%] ">
+            {description && description}
+          </p>
         </div>
-        <div className="hero-visual w-[40%]" aria-hidden="true">
+        <div className="hero-visual lg:w-[40%] w-[100%]" aria-hidden="true">
           <svg
             viewBox="0 0 540 460"
             xmlns="http://www.w3.org/2000/svg"

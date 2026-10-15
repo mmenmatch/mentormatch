@@ -228,17 +228,16 @@ export default async function SubtopicPage({ params }: Props) {
   const title = metaData?.[topicSlug]?.[subtopicSlug]?.title
   const description = metaData?.[topicSlug]?.[subtopicSlug]?.description
 
-
   if (!result) notFound()
 
   const { topic, subtopic } = result
-  // console.log('topics', topic)
-
+  let pageData: any = AASLQuestionAndAnswer?.find((item: any, index: any) => item?.[topicSlug])
+  console.log('pageData', pageData)
   return (
     <>
-      <div className="mx-auto py-6 bg-blue-50 ">
-        <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-500">
-          <ol className="flex flex-wrap items-center gap-2">
+      <div className="mx-auto lg:py-6 py-3 bg-white ">
+        <nav aria-label="Breadcrumb" className="lg:mb-6 text-md text-slate-500">
+          <ol className="flex flex-wrap items-center lg:pl-4 pl-4 gap-2">
             <li>
               <Link href="/resources/ib-dp-maths/aa-sl" className="hover:text-blue-700">
                 AASL Resources
@@ -258,63 +257,63 @@ export default async function SubtopicPage({ params }: Props) {
 
             <li aria-hidden="true">/</li>
 
-            <li className="font-medium text-slate-900">{subtopic.title}</li>
+            <li className="font-bold text-slate-900">{subtopic.title}</li>
           </ol>
         </nav>
         <ResourceBanner title={title} description={description} />
-        <div className="px-8 py-4" id={'topics'}>
-          <h1 className="text-[1.5rem] mb-0 font-bold text-black flex flex-col">
+        <div className="lg:px-8 px-4 py-6" id={'topics'}>
+          <h1 className="lg:text-[1.5rem] text-[5vw] m-0 mb-0 font-bold text-black flex flex-col">
             Important Questions & Answers
           </h1>
-          <p className="text-[1.1rem] leading-8 mb-4 text-gray-500 font-medium">
-            Attempt each question first. Then compare your method with the worked solution,<br></br>{' '}
-            step by step.
+          <p className="lg:text-[1.1rem] text-[4vw] lg:leading-8 leading-6 mb-4 text-gray-500 font-medium">
+            Attempt each question first. Then compare your method with the worked solution, step by
+            step.
           </p>
-          {AASLQuestionAndAnswer?.map((ele: any, index: any) => (
-            <div className=" w-full flex flex-col gap-4" key={index + 1}>
-              {ele?.[topicSlug]?.[subtopicSlug] && (
-                <span className="flex  gap-8 border-b-3 border-[#006CFF] items-center pb-2 mt-4">
-                  {' '}
-                  <p className="font-bold text-[1.5rem]">{ele?.[topicSlug]?.title}</p>
-                  <p className="font-bold text-[0.9rem] bg-[#006CFF]/10 text-[#006CFF] py-0.5 px-4 rounded-4xl  ">
-                    {' '}
-                    {ele?.[topicSlug]?.[subtopicSlug]?.length} Questions
-                  </p>
-                </span>
-              )}
+          <div className=" w-full flex flex-col gap-4 py-4">
+            <span className="flex  gap-8 border-b-3 border-[#006CFF] items-center pb-2 mt-4">
+              {' '}
+              <p className="font-bold lg:text-[1.5rem] text-[4.5vw]">
+                {pageData?.[topicSlug]?.title}
+              </p>
+              <p className="font-bold lg:text-[0.9rem] text-[3vw] bg-[#006CFF]/10 text-[#006CFF] py-0.5 px-4 rounded-4xl  ">
+                {' '}
+                {pageData?.[topicSlug]?.[subtopicSlug]?.length} Questions
+              </p>
+            </span>
 
-              <div className="flex flex-col gap-4">
-                {ele?.[topicSlug]?.[subtopicSlug]?.map((subele: any, ind: any) => (
-                  <div
-                    key={subele?.id}
-                    className="p-4 border bg-white border-gray-200 w-full rounded-2xl flex flex-col gap-4"
-                  >
-                    <span className="flex items-baseline">
+            <div className="flex flex-col gap-4">
+              {pageData?.[topicSlug]?.[subtopicSlug]?.map((subele: any, ind: any) => (
+                <div
+                  key={subele?.id}
+                  className="p-4 border bg-white border-gray-200 w-full rounded-2xl flex flex-col gap-4"
+                >
+                  <span className="flex items-baseline">
+                    {' '}
+                    <p className=" text-nowrap font-semibold text-[1rem] bg-[#006CFF] text-white py-0.5 px-2 rounded-4xl ">
+                      Q {ind + 1}
+                    </p>
+                    <p className="font-semibold text-[1rem] text-black py-0.5 px-2 rounded-4xl">
                       {' '}
-                      <p className=" text-nowrap font-semibold text-[1rem] bg-[#006CFF] text-white py-0.5 px-2 rounded-4xl ">
-                        Q {ind + 1}
+                      {subele?.question}
+                    </p>
+                    <p
+                      className={`hidden lg:block font-semibold text-[0.8rem] px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
+                    >
+                      {' '}
+                      {subele?.type}
+                    </p>
+                  </span>
+                  <div className="flex flex-col">
+                    <span className="flex lg:flex-row flex-col py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
+                      <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
+                        Worked solution :
                       </p>
-                      <p className="font-semibold text-[1rem] text-black py-0.5 px-2 rounded-4xl">
+                      <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl">
                         {' '}
-                        {subele?.question}
-                      </p>
-                      <p
-                        className={`font-semibold text-[0.8rem] px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
-                      >
-                        {' '}
-                        {subele?.type}
+                        {subele?.explaination}
                       </p>
                     </span>
-                    <div className="flex flex-col">
-                      <span className="flex py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
-                        <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
-                          Worked solution :
-                        </p>
-                        <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl">
-                          {' '}
-                          {subele?.explaination}
-                        </p>
-                      </span>
+                    <div className="flex justify-between">
                       <span className="flex gap-2  ">
                         <p className="font-semibold text-[1rem] text-[#03BF62] py-0.5  rounded-4xl">
                           Answer :
@@ -324,12 +323,95 @@ export default async function SubtopicPage({ params }: Props) {
                           {subele?.answer}
                         </p>
                       </span>
+                      <p
+                        className={`block lg:hidden font-semibold text-[0.8rem] px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
+                      >
+                        {' '}
+                        {subele?.type}
+                      </p>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          {/* {AASLQuestionAndAnswer?.filter((item: any, index: any) => item?.[topicSlug])?.map(
+            (ele: any, index: any) => {
+              console.log(ele?.[topicSlug]?.title, topicSlug, 'subtopicSlug')
+              if (ele?.[topicSlug]?.title == topicSlug) {
+                return (
+                  <>
+                    <div className=" w-full flex flex-col gap-4 py-4" key={index + 1}>
+                      <span className="flex  gap-8 border-b-3 border-[#006CFF] items-center pb-2 mt-4">
+                        {' '}
+                        <p className="font-bold lg:text-[1.5rem] text-[4.5vw]">
+                          {ele?.[topicSlug]?.title}
+                        </p>
+                        <p className="font-bold lg:text-[0.9rem] text-[3vw] bg-[#006CFF]/10 text-[#006CFF] py-0.5 px-4 rounded-4xl  ">
+                          {' '}
+                          {ele?.[topicSlug]?.[subtopicSlug]?.length} Questions
+                        </p>
+                      </span>
+
+                      <div className="flex flex-col gap-4">
+                        {ele?.[topicSlug]?.[subtopicSlug]?.map((subele: any, ind: any) => (
+                          <div
+                            key={subele?.id}
+                            className="p-4 border bg-white border-gray-200 w-full rounded-2xl flex flex-col gap-4"
+                          >
+                            <span className="flex items-baseline">
+                              {' '}
+                              <p className=" text-nowrap font-semibold text-[1rem] bg-[#006CFF] text-white py-0.5 px-2 rounded-4xl ">
+                                Q {ind + 1}
+                              </p>
+                              <p className="font-semibold text-[1rem] text-black py-0.5 px-2 rounded-4xl">
+                                {' '}
+                                {subele?.question}
+                              </p>
+                              <p
+                                className={`hidden lg:block font-semibold text-[0.8rem] px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
+                              >
+                                {' '}
+                                {subele?.type}
+                              </p>
+                            </span>
+                            <div className="flex flex-col">
+                              <span className="flex lg:flex-row flex-col py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
+                                <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
+                                  Worked solution :
+                                </p>
+                                <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl">
+                                  {' '}
+                                  {subele?.explaination}
+                                </p>
+                              </span>
+                              <div className="flex justify-between">
+                                <span className="flex gap-2  ">
+                                  <p className="font-semibold text-[1rem] text-[#03BF62] py-0.5  rounded-4xl">
+                                    Answer :
+                                  </p>
+                                  <p className="font-bold text-[1rem] text-[#03BF62] py-0.5 rounded-4xl">
+                                    {' '}
+                                    {subele?.answer}
+                                  </p>
+                                </span>
+                                <p
+                                  className={`block lg:hidden font-semibold text-[0.8rem] px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
+                                >
+                                  {' '}
+                                  {subele?.type}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )
+              }
+            },
+          )} */}
         </div>
       </div>
       <BookDemoBanner />
