@@ -7,6 +7,7 @@ import { MMFooter } from '@/app/components/MMFooter/MMFooter'
 import type { ReactNode } from 'react'
 import { ResourceNavigation } from '@/app/components/ResourceNavigation/ResourceNavigation'
 import ResourceForm from '../../../components/ResourceForm/ResourceForm'
+import BookDemoBanner from '../../../components/BookDemoBanner/BookDemoBanner'
 
 
 export const metadata: Metadata = {
@@ -29,22 +30,20 @@ type Props = {
 export default async function AASLLayout({ children, params }: Props) {
   const { topic, subtopic } = await params
   return (
-    <div className="flex flex-col h-full bg-blue-50">
+    <div className="flex h-screen flex-col  bg-blue-50">
       <NavBar />
-      <div>
-        {/* <ResourceBanner /> */}
-        <div className="mx-auto flex max-w-[1600px] flex-col lg:flex-row">
+
+      <div className="mx-auto flex w-full max-w-[1600px] flex-1 min-h-full items-stretch">
+        {/* Left navigation - full available height */}
+        <aside className="h-full min-h-full shrink-0 overflow-y-auto">
           <ResourceNavigation />
-          <main
-            className="min-w-0 flex-1 
-          "
-          >
-            {children}
-          </main>
-        </div>
-        <ResourceForm />
-        <MMFooter />
+        </aside>
+
+        {/* Main content - same height, scrollable */}
+        <main className="h-full min-h-0 min-w-0 flex-1 overflow-y-auto">{children}</main>
       </div>
+
+      <MMFooter />
     </div>
   )
 }

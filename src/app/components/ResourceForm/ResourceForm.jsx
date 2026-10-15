@@ -53,8 +53,8 @@ export default function MathDemoHeroSection() {
             </div>
           </div>
         </div>
-        <div className="md:w-[50%] md:pt-8 pt-0  md:shadow-2xl md:border md:border-[#BBD3F4] flex items-start bg-white">
-          <div className="w-full md:px-8 bg-white" id="resource-form">
+        <div className="md:w-[50%] md:pt-8 pt-0  md:shadow-2xl md:border md:border-[#BBD3F4] flex items-center bg-white">
+          <div className="w-full md:px-8 bg-white py-4" id="resource-form">
             <RegistrationForm />
           </div>
         </div>

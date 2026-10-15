@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function AASLPage() {
   return (
-    <div className="mx-auto my-16 max-w-5xl min-h-screen">
+    <div className="mx-auto my-16 max-w-5xl ">
       <section className="overflow-hidden rounded-2xl bg-gradient-to-br from-blue-950 via-blue-900 to-blue-700 px-6 py-10 text-white sm:px-10 sm:py-14">
         <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-blue-100">
           IB DIPLOMA PROGRAMME

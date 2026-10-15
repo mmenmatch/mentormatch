@@ -1,56 +1,20 @@
 'use client'
 import React from 'react'
 
-export const ResourceBanner = () => {
+export const ResourceBanner = ({ title, description }: any) => {
   return (
     <div className="bg-[linear-gradient(90deg,#006CFF_62%,#049FF3_100%)] px-8 py-8  ">
-      <div className=" flex items-center  justify-between  gap-4rem max-w-[80rem] mx-auto">
+      <div className=" flex items-center justify-between gap-4rem max-w-[80rem] mx-auto">
         <div className="w-[50%] flex flex-col gap-4">
           <div className="flex flex-col">
             <h1
-              className="text-white font-extrabold text-[2.2rem] leading-5"
+              className="text-white font-extrabold text-[1.8rem] leading-10 m-0"
               style={{ fontWeight: 900 }}
             >
-              IB Maths AA <span className="bg-[#FFF018] px-2 rounded text-black">Important </span>
+              {title && title}
             </h1>
-            <h1
-              className="text-white font-extrabold text-[2.2rem] leading-5 "
-              style={{ fontWeight: 900 }}
-            >
-              <span className="bg-[#FFF018] px-2 rounded text-black"> Questions</span> & Answers
-            </h1>{' '}
           </div>
-
-          <p className="text-white text-[1.1rem] leading-[140%]">
-            IB Maths AA rewards exam technique most students are never taught. Practise the
-            questions that matter, with worked solutions that show every step.
-          </p>
-          <div className="flex gap-4">
-            <button
-              onClick={() => {
-                document.getElementById('topics')?.scrollIntoView({
-                  behavior: 'smooth',
-                })
-              }}
-              type="submit"
-              className=" w-[200px] border-2 border-white md:py-3 py-3   font-semibold rounded-4xl
-             disabled:bg-gray-300 transition text-[1rem] mt-4 text-white "
-            >
-              Explore Topics
-            </button>
-            <button
-              onClick={() => {
-                document.getElementById('resource-form')?.scrollIntoView({
-                  behavior: 'smooth',
-                })
-              }}
-              type="submit"
-              className=" w-[200px] border-2 border-black md:py-3 py-3 bg-[#FFF116]  font-semibold rounded-4xl
-             disabled:bg-gray-300 transition text-[1rem] mt-4 "
-            >
-              Book a Free Trial
-            </button>
-          </div>
+          <p className="text-white text-[1.2rem] leading-[140%] ">{description && description}</p>
         </div>
         <div className="hero-visual w-[40%]" aria-hidden="true">
           <svg

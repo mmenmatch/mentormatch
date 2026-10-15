@@ -15,7 +15,7 @@ export function ResourceNavigation() {
   console.log('activeSubtopic', activeSubtopic)
 
   return (
-    <aside className="w-full shrink-0 border-b border-slate-200 bg-white  lg:sticky lg:top-16  lg:w-85 lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <aside className="w-full min-h-full shrink-0 border-b border-slate-200 bg-white  lg:sticky lg:top-16  lg:w-85 lg:overflow-y-auto lg:border-b-0 lg:border-r">
       {/* <Link
         href="/resources/ib-dp-maths/aa-sl"
         className="block rounded-lg px-5 py-3 font-semibold text-slate-900"
