@@ -31,9 +31,9 @@ export default async function AASLLayout({ children, params }: Props) {
   const { topic, subtopic } = await params
   return (
     <div className="flex h-screen flex-col  bg-blue-50">
-      <NavBar />
+      <NavBar whatsapp />
 
-      <div className="mx-auto flex w-full max-w-[1600px] flex-1 min-h-full items-stretch">
+      <div className="mx-auto flex w-full  flex-1 min-h-full items-stretch">
         {/* Left navigation - full available height */}
         <aside className="h-full min-h-full shrink-0 overflow-y-auto">
           <ResourceNavigation />

@@ -46,11 +46,11 @@ export function ResourceNavigation() {
               {topic.subtopics.map((subtopic, subInd) => (
                 <li
                   key={subtopic.slug}
-                  className={`transition hover:bg-blue-100 hover:py-2 hover:pl-2 hover:border-l-4 hover:font-bold text-[1rem] hover:border-[#006CFF] hover:rounded-l hover:text-[#006CFF]  ${subtopic.slug?.toLowerCase() == activeSubtopic ? 'bg-blue-100 py-2 pl-2 border-l-4 border-[#006CFF] rounded-l text-[#006CFF] font-semibold' : 'text-slate-500'}`}
+                  className={`transition text-wrap hover:bg-blue-100 hover:py-2 hover:pl-2 hover:border-l-4 hover:font-bold text-[1rem] hover:border-[#006CFF] hover:rounded-l hover:text-[#006CFF]  ${subtopic.slug?.toLowerCase() == activeSubtopic ? 'bg-blue-100 py-2 pl-2 border-l-4 border-[#006CFF] rounded-l text-[#006CFF] font-semibold' : 'text-slate-500'}`}
                 >
                   <Link
                     href={`/resources/ib-dp-maths/aa-sl/${topic.slug}/${subtopic.slug}`}
-                    className={`block leading-8 transition hover:text-[#006CFF] `}
+                    className={`block leading-8 transition hover:text-[#006CFF] text-wrap `}
                   >
                     {ind + 1 + '.'}
                     {subInd + 1} {subtopic.title}

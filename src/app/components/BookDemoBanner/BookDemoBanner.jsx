@@ -4,6 +4,10 @@ import TutorGang from '../../../../public/assets/Images/tutor-gang.webp'
 import Image from 'next/image'
 
 export default function BookDemoBanner() {
+   const handleRedirect = () => {
+     // Directly changes the browser URL to the external link
+     window.location.href = 'https://www.mentormatch.com/#form-cta'
+   }
   return (
     <div className=" px-8 bg-[linear-gradient(90deg,#006CFF_62%,#049FF3_100%)] text-white">
       <div className="max-w-[90rem] flex mx-auto">
@@ -31,11 +35,7 @@ export default function BookDemoBanner() {
                 Explore Topics
               </button>
               <button
-                onClick={() => {
-                  document.getElementById('resource-form')?.scrollIntoView({
-                    behavior: 'smooth',
-                  })
-                }}
+                onClick={handleRedirect}
                 type="submit"
                 className=" w-[200px] text-black border-2 border-black md:py-3 py-3 bg-[#FFF116]  font-semibold rounded-4xl
              disabled:bg-gray-300 transition text-[1rem] mt-4 "
