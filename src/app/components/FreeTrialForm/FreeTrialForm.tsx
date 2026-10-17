@@ -106,18 +106,23 @@ function FreeTrialForm() {
     })
   }
 
-  const dateOptions = Array.from({ length: 4 }, (_, index) => {
-    const date = new Date()
-    date.setDate(date.getDate() + index + 1)
+const dateOptions = []
+const date = new Date()
 
-    return {
-      value: date.toISOString().split('T')[0],
-      month: date.toLocaleString('en-US', {
-        month: 'short',
-      }),
-      day: date.getDate(),
-    }
+while (dateOptions.length < 4) {
+  date.setDate(date.getDate() + 1)
+
+  // Skip Sunday (0 = Sunday)
+  if (date.getDay() === 0) continue
+
+  dateOptions.push({
+    value: date.toLocaleDateString('en-CA'), // YYYY-MM-DD
+    month: date.toLocaleString('en-US', {
+      month: 'short',
+    }),
+    day: date.getDate(),
   })
+}
   const parentName = watch('parentName')
   const childName = watch('childName')
   const isStep2Valid = parentName?.trim()?.length >= 3 && childName?.trim()?.length >= 3

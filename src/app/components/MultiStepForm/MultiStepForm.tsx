@@ -29,18 +29,23 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   }
   const Grade = ['6', '7', '8', '9', '10', '11', '12']
   const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
-  const dateOptions = Array.from({ length: 4 }, (_, index) => {
-    const date = new Date()
-    date.setDate(date.getDate() + index + 1)
+ const dateOptions = []
+ const date = new Date()
 
-    return {
-      value: date.toISOString().split('T')[0],
-      month: date.toLocaleString('en-US', {
-        month: 'short',
-      }),
-      day: date.getDate(),
-    }
-  })
+ while (dateOptions.length < 4) {
+   date.setDate(date.getDate() + 1)
+
+   // Skip Sunday (0 = Sunday)
+   if (date.getDay() === 0) continue
+
+   dateOptions.push({
+     value: date.toLocaleDateString('en-CA'), // YYYY-MM-DD
+     month: date.toLocaleString('en-US', {
+       month: 'short',
+     }),
+     day: date.getDate(),
+   })
+ }
 
   const schema = z.object({
     grade: z.string().min(1, 'Please select a grade'),
