@@ -23,7 +23,7 @@ export function generateStaticParams() {
  const metaData: any = {
    number: {
      'standard-form': {
-       metaTitle: 'IB Maths AA SL Standard Form Questions & Answers',
+       metaTitle: 'IB Maths Standard Form Questions & Answers',
        metaDescription:
          'Practise standard form questions for IB Maths AA SL. Review how to write, convert and calculate with numbers in standard form using step-by-step worked solutions.',
        title: 'IB Maths AA SL Standard Form Questions & Answers',
@@ -31,7 +31,7 @@ export function generateStaticParams() {
          'Build confidence with standard form questions for IB Maths AA SL. Practise writing and converting numbers in standard form, then check each method with a worked solution.',
      },
      'writing-in-standard-form': {
-       metaTitle: 'IB Maths AA SL Writing in Standard Form Questions',
+       metaTitle: 'IB Maths Writing in Standard Form Questions',
        metaDescription:
          'Practise writing numbers in standard form for IB Maths AA SL. Review how to convert numbers into standard form and check your method with worked explanations.',
        title: 'IB Maths AA SL Writing in Standard Form Questions & Answers',
@@ -39,7 +39,7 @@ export function generateStaticParams() {
          'Practise writing numbers in standard form for IB Maths AA SL. Work through number-conversion questions and review the steps used to express numbers in standard form.',
      },
      'multiplying-in-standard-form': {
-       metaTitle: 'IB Maths AA SL Multiplying in Standard Form Questions',
+       metaTitle: 'IB Maths Multiplying in Standard Form Questions',
        metaDescription:
          'Practise multiplying numbers in standard form for IB Maths AA SL. Follow the method for multiplying coefficients and powers of 10, then review the worked solutions.',
        title: 'IB Maths AA SL Multiplying in Standard Form Questions & Answers',
@@ -47,7 +47,7 @@ export function generateStaticParams() {
          'Practise multiplying numbers in standard form for IB Maths AA SL. Focus on multiplying the numerical parts and combining powers of 10, then check each step against the available explanation.',
      },
      'squaring-in-standard-form': {
-       metaTitle: 'IB Maths AA SL Squaring in Standard Form Questions',
+       metaTitle: 'IB Maths Squaring in Standard Form Questions',
        metaDescription:
          'Practise squaring numbers in standard form for IB Maths AA SL. Review how squaring affects the coefficient and power of 10, with worked explanations for each method.',
        title: 'IB Maths AA SL Squaring in Standard Form Questions & Answers',
@@ -55,7 +55,7 @@ export function generateStaticParams() {
          'Practise squaring numbers in standard form for IB Maths AA SL. Work through how the coefficient and power of 10 change when a number is squared, then review the method.',
      },
      'dividing-in-standard-form': {
-       metaTitle: 'IB Maths AA SL Dividing in Standard Form Questions | Mentor Match',
+       metaTitle: 'IB Maths Dividing in Standard Form Questions',
        metaDescription:
          'Practise dividing numbers in standard form for IB Maths AA SL. Learn how to divide the coefficients and subtract powers of 10, with step-by-step worked solutions.',
        title: 'IB Maths AA SL Dividing in Standard Form Questions & Answers',
@@ -65,7 +65,7 @@ export function generateStaticParams() {
    },
    'sequences-and-series': {
      'arithmetic-sequences-nth-term': {
-       metaTitle: 'Arithmetic Sequence Formula & Questions | IB Maths AA SL',
+       metaTitle: 'Arithmetic Sequence Formula & Questions',
        metaDescription:
          'Learn what an arithmetic sequence is, understand the nth term, and practise arithmetic sequence questions with worked explanations for IB Maths AA SL.',
        title: 'Arithmetic Sequences – nth Term',
@@ -73,7 +73,7 @@ export function generateStaticParams() {
          'Understand how arithmetic sequences work and how to find the nth term. Review the common difference, follow worked examples, and practise applying the rule to arithmetic sequence questions',
      },
      'finding-common-difference': {
-       metaTitle: 'Common Difference Formula & Examples | IB Maths AA SL',
+       metaTitle: 'Common Difference Formula & Examples',
        metaDescription:
          'Learn how to find the common difference in an arithmetic sequence. Review the common difference formula and practise examples for IB Maths AA SL.',
        title: 'Finding the Common Difference',
@@ -81,7 +81,7 @@ export function generateStaticParams() {
          'Learn how to identify the common difference between consecutive terms in an arithmetic sequence. Use the common difference formula, follow worked examples, and apply the method to practice questions.',
      },
      'finding-first-term-and-common-difference': {
-       metaTitle: 'Find First Term & Common Difference | Arithmetic Sequences',
+       metaTitle: 'Find First Term & Common Difference',
        metaDescription:
          'Practise finding the first term and common difference of an arithmetic sequence when terms are given. Follow the method with IB Maths AA SL examples.',
        title: 'Finding the First Term and Common Difference',
@@ -89,7 +89,7 @@ export function generateStaticParams() {
          'Learn how to find the first term and common difference when information about an arithmetic sequence is given. Work through the steps carefully and practise applying them to sequence questions.',
      },
      'formula-for-nth-term': {
-       metaTitle: 'Arithmetic Sequence Formula: Find the nth Term | IB Maths AA SL',
+       metaTitle: 'Arithmetic Sequence Formula: Find the nth Term',
        metaDescription:
          'Learn the arithmetic sequence formula and how to find the nth term. Review examples and practise nth-term questions for IB Maths AA SL.',
        title: 'Formula for the nth Term',
@@ -99,7 +99,7 @@ export function generateStaticParams() {
    },
    'financial-mathematics': {
      'compound-interest-annual': {
-       metaTitle: 'Compound Interest Formula & Questions | IB Maths AA SL',
+       metaTitle: 'Compound Interest Formula & Questions ',
        metaDescription:
          'Learn the compound interest formula and how to calculate compound interest annually. Review worked examples and practise compound interest questions for IB Maths AA SL.',
        title: 'Annual Compound Interest: Formula and Questions',
@@ -107,7 +107,7 @@ export function generateStaticParams() {
          'Understand how annual compound interest works and how the compound interest formula is applied. Review the key variables, follow worked examples, and practise calculating how an amount grows over time.',
      },
      'time-to-reach-a-target-value': {
-       metaTitle: 'Rule of 72 & Compound Interest Time Formula | IB Maths AA SL',
+       metaTitle: 'Rule of 72 & Compound Interest Time Formula',
        metaDescription:
          'Learn how to estimate the time needed for money to grow using the Rule of 72 and compound interest time formula. Practise with worked examples for IB Maths AA SL.',
        title: 'Time to Reach a Target Value',
@@ -115,7 +115,7 @@ export function generateStaticParams() {
          'Explore how to estimate the time it takes for an investment to reach a target value. Learn when the Rule of 72 is useful and how compound interest time calculations can be worked through step by step.',
      },
      'finding-the-interest-rate': {
-       metaTitle: 'How to Calculate Interest Rate & Formula | IB Maths AA SL',
+       metaTitle: 'How to Calculate Interest Rate & Formula ',
        metaDescription:
          'Learn how to calculate an interest rate using the interest rate formula and compound interest relationships. Review examples and practise finding the rate for IB Maths AA SL.',
        title: 'Finding the Interest Rate',
@@ -123,7 +123,7 @@ export function generateStaticParams() {
          'Learn how to find an unknown interest rate from the values given in a compound interest problem. Review the relevant formula, follow the calculation steps, and practise applying the method to questions.',
      },
      depreciation: {
-       metaTitle: 'Depreciation Formula & Rate | IB Maths AA SL Questions',
+       metaTitle: 'Depreciation Formula & Rate ',
        metaDescription:
          'Learn what depreciation means and how to calculate depreciation using the depreciation formula and rate. Review examples and practise IB Maths AA SL questions.',
        title: 'Depreciation: Formula and Questions',
@@ -175,7 +175,7 @@ export function generateStaticParams() {
          'Learn how to evaluate logarithms using the relevant logarithm rules and formulas. Explore common bases, including base 2, base 10 and base e, then practise applying the methods to questions.',
      },
      'solving-logarithmic-equations': {
-       metaTitle: 'How to Solve Logarithmic Equations | IB Maths AA SL | ',
+       metaTitle: 'How to Solve Logarithmic Equations  ',
        metaDescription:
          'Learn how to solve logarithmic equations step by step. Review log rules, explore worked examples and practise solving log equations for IB Maths AA SL.',
        title: 'Solving Logarithmic Equations',
@@ -183,7 +183,7 @@ export function generateStaticParams() {
          'Learn how to solve logarithmic equations by applying logarithm rules and working through each step carefully. Practise rearranging equations, checking valid solutions and using the available explanations to review your method.',
      },
      'natural-logarithm-rearranging': {
-       metaTitle: 'Natural Log Rules & Rearranging ln Expressions | IB Maths AA SL',
+       metaTitle: 'Natural Log Rules & Rearranging ln Expressions ',
        metaDescription:
          'Explore natural log rules and learn how to rearrange expressions involving ln, ln x, ln 1 and ln 0. Review examples and practise IB Maths AA SL questions.',
        title: 'Natural Logarithm – Rearranging',
@@ -191,7 +191,7 @@ export function generateStaticParams() {
          'Build confidence working with natural logarithms. Review how ln relates to e, practise rearranging expressions involving ln x, and use examples to understand the rules that apply.',
      },
      'simplifying-logarithmic-expressions': {
-       metaTitle: 'Log Rules & Simplifying Logarithmic Expressions | Mentor Match',
+       metaTitle: 'Log Rules & Simplifying Logarithmic Expressions ',
        metaDescription:
          'Learn log rules and properties of logarithms to simplify expressions. Practise expanding and condensing logarithms using the product, quotient and power rules.',
        title: 'Simplifying Logarithmic Expressions',
