@@ -21,7 +21,7 @@ export const Menu = ({
   return (
     <>
       {showNavBar && (
-        <div className="min-h-[100vh] absolute z-100">
+        <div className="min-h-[100vh] ">
           <ResourceNavigation data={topics} type="aa-sl" />{' '}
         </div>
       )}
