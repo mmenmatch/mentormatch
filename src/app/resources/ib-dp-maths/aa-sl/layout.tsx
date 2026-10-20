@@ -9,7 +9,6 @@ import { ResourceNavigation } from '@/app/components/ResourceNavigation/Resource
 import ResourceForm from '../../../components/ResourceForm/ResourceForm'
 import BookDemoBanner from '../../../components/BookDemoBanner/BookDemoBanner'
 
-
 export const metadata: Metadata = {
   title: {
     default: 'IB Maths AA SL Resources | Mentor Match',
@@ -29,6 +28,7 @@ type Props = {
 
 export default async function AASLLayout({ children, params }: Props) {
   const { topic, subtopic } = await params
+
   return (
     <div className="flex lg:h-screen flex-col  bg-blue-50">
       <NavBar whatsapp />
@@ -36,15 +36,13 @@ export default async function AASLLayout({ children, params }: Props) {
       <div className="mx-auto flex w-full  flex-1 min-h-full items-stretch">
         {/* Left navigation - full available height */}
         <aside className="h-full min-h-full shrink-0 overflow-y-auto hidden lg:block">
-          <ResourceNavigation />
+          <ResourceNavigation data={topics} type={'aa-sl'} />
         </aside>
-
         {/* Main content - same height, scrollable */}
-        <main className="h-full min-h-0 min-w-0 flex-1 overflow-y-auto">{children}</main>
+        <main className="h-full min-h-0 min-w-0 flex-1 overflow-y-auto ">{children}</main>
       </div>
 
       <MMFooter />
     </div>
   )
 }
-

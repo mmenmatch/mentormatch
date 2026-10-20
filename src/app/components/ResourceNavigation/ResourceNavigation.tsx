@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { topics } from '../../../data/aa-sl'
 import { useParams } from 'next/navigation'
 
-export function ResourceNavigation() {
+export function ResourceNavigation({ data, type }: any) {
   const params = useParams<{
     topic?: string
     subtopic?: string
@@ -11,8 +11,6 @@ export function ResourceNavigation() {
 
   const activeTopic = params?.topic
   const activeSubtopic = params?.subtopic
-  console.log('activeTopic', activeTopic)
-  console.log('activeSubtopic', activeSubtopic)
 
   return (
     <aside className="w-full min-h-full shrink-0 border-b border-slate-200 bg-white  lg:sticky lg:top-16  lg:w-85 lg:overflow-y-auto lg:border-b-0 lg:border-r">
@@ -28,7 +26,7 @@ export function ResourceNavigation() {
       {/* <div className="my-4 border-t border-slate-100" /> */}
 
       <nav aria-label="Mathematics topics">
-        {topics.map((topic, ind) => (
+        {data?.map((topic: any, ind: number) => (
           <div key={topic.slug} className={`border-b border-gray-300 `}>
             <Link
               href={'#'}
@@ -43,13 +41,13 @@ export function ResourceNavigation() {
               className={`mt-2 space-y-2  
                  `}
             >
-              {topic.subtopics.map((subtopic, subInd) => (
+              {topic.subtopics.map((subtopic: any, subInd: number) => (
                 <li
                   key={subtopic.slug}
                   className={`transition text-wrap hover:bg-blue-100 hover:py-2 hover:pl-2 hover:border-l-4 hover:font-bold text-[1rem] hover:border-[#006CFF] hover:rounded-l hover:text-[#006CFF]  ${subtopic.slug?.toLowerCase() == activeSubtopic ? 'bg-blue-100 py-2 pl-2 border-l-4 border-[#006CFF] rounded-l text-[#006CFF] font-semibold' : 'text-slate-500'}`}
                 >
                   <Link
-                    href={`/resources/ib-dp-maths/aa-sl/${topic.slug}/${subtopic.slug}`}
+                    href={`/resources/ib-dp-maths/${type}/${topic.slug}/${subtopic.slug}`}
                     className={`block leading-8 transition hover:text-[#006CFF] text-wrap `}
                   >
                     {ind + 1 + '.'}
@@ -66,4 +64,3 @@ export function ResourceNavigation() {
 }
 
 
-                // ul style ${topic.slug?.toLowerCase() == activeTopic ? 'visible' : 'hidden'} overflow-hidden
