@@ -1,7 +1,9 @@
 'use client'
-import React from 'react'
+import React, { useId } from 'react'
 
 export const ResourceBanner = ({ title, description }: any) => {
+    const shadowId = `hv-sh-${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`
+  
   return (
     <div className="bg-[linear-gradient(90deg,#006CFF_62%,#049FF3_100%)] lg:px-8 px-4 py-8  ">
       <div className=" flex lg:flex-row  flex-col items-center justify-between gap-4rem max-w-[80rem] mx-auto">
@@ -26,7 +28,7 @@ export const ResourceBanner = ({ title, description }: any) => {
             focusable="false"
           >
             <defs>
-              <filter id="hv-sh" x="-20%" y="-20%" width="140%" height="150%">
+              <filter id={shadowId} x="-20%" y="-20%" width="140%" height="150%">
                 <feDropShadow
                   dx="0"
                   dy="10"

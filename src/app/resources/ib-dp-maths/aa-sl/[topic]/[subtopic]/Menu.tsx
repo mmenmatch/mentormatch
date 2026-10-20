@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import List from '../../../../../../../public/assets/Images/list.webp'
+import List from '../../../../../../../public/assets/Images/burger-bar.png'
 import { useState } from 'react'
 import { ResourceNavigation } from '@/app/components/ResourceNavigation/ResourceNavigation'
 import { findSubtopic, topics } from '../../../../../../data/aa-sl'
-import { ResourceBanner } from '@/app/components/ResourceBanner/ResourceBanner'
+import { ResourceBanner2 } from '@/app/components/ResourceBanner2/ResourceBanner'
 import Link from 'next/link'
 
 export const Menu = ({
@@ -21,12 +21,12 @@ export const Menu = ({
   return (
     <>
       {showNavBar && (
-        <div className="min-h-[100vh] ">
+        <div className="min-h-[100vh] lg:hidden ">
           <ResourceNavigation data={topics} type="aa-sl" />{' '}
         </div>
       )}
       {!showNavBar && (
-        <>
+        <div className=" lg:hidden">
           <nav aria-label="Breadcrumb" className="lg:mb-6 text-md text-slate-500">
             <ol className="flex flex-wrap items-center lg:pl-3 pl-3 pt-4 gap-2">
               <li>
@@ -51,7 +51,7 @@ export const Menu = ({
               <li className="font-bold text-slate-900">{subtopic.title}</li>
             </ol>
           </nav>
-          <ResourceBanner title={title} description={description} />
+          <ResourceBanner2 title={title} description={description} />
           <div className="lg:px-8 px-4 py-6" id={'topics'}>
             <h1 className="lg:text-[1.5rem] text-[5vw] m-0 mb-0 font-bold text-black flex flex-col">
               Important Questions & Answers
@@ -129,14 +129,14 @@ export const Menu = ({
           </div>
           {/* //menu  */}
           <div
-            className="lg:hidden fixed z-100 bg-blend-lighten right-2 bottom-8 p-4 px-4 text-center flex justify-center items-center bg-yellow-300 text-black max-w-[50px] rounded-4xl"
+            className="lg:hidden fixed z-100 bg-blend-lighten right-2 bottom-8 p-4 px-4 text-center flex justify-center items-center bg-[#006CFF] text-black max-w-[50px] rounded-4xl"
             onClick={() => {
               setShowNavBar(true)
             }}
           >
             <Image src={List} alt="menu" />
           </div>
-        </>
+        </div>
       )}
     </>
   )
