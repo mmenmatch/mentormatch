@@ -246,8 +246,8 @@ export default async function SubtopicPage({ params }: Props) {
           subtopic={subtopic}
         />
         <div className="lg:block hidden">
-          <nav aria-label="Breadcrumb" className="lg:mb-6 text-md text-slate-500">
-            <ol className="flex flex-wrap items-center lg:pl-4 pl-4 gap-2">
+          <nav aria-label="Breadcrumb" className="lg:mb-6 text-md text-slate-500 mt-4">
+            <ol className="flex flex-wrap items-center  pl-4  gap-2">
               <li>
                 <Link href="/resources/ib-dp-maths/aa-sl" className="hover:text-blue-700">
                   AASL Resources
