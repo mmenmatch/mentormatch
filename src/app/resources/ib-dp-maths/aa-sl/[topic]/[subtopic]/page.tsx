@@ -235,7 +235,7 @@ export default async function SubtopicPage({ params }: Props) {
 
   return (
     <>
-      <div className="mx-auto lg:py-6 py-3 p-0 bg-white ">
+      <div className="mx-auto lg:py-6  bg-white ">
         <Menu
           title={title}
           description={description}
