@@ -31,7 +31,7 @@ export const Menu = ({
             <ol className="flex flex-wrap items-center lg:pl-3 pl-3 pt-4 gap-2">
               <li>
                 <Link href="/resources/ib-dp-maths/aa-hl" className="hover:text-blue-700">
-                  AASL Resources
+                  AAHL Resources
                 </Link>
               </li>
 
@@ -83,7 +83,7 @@ export const Menu = ({
                       <p className=" text-nowrap font-semibold text-[1rem] bg-[#006CFF] text-white py-0.5 px-2 rounded-4xl ">
                         Q {ind + 1}
                       </p>
-                      <p className="font-semibold text-[1rem] text-black py-0.5 px-2 rounded-4xl">
+                      <p className="font-semibold  text-[3vw] lg:text-[1rem] text-black py-0.5 px-2 rounded-4xl leading-5">
                         {' '}
                         {subele?.question}
                       </p>
@@ -96,26 +96,26 @@ export const Menu = ({
                     </span>
                     <div className="flex flex-col">
                       <span className="flex flex-col py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
-                        <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
+                        <p className="min-w-[140px] font-semibold  text-[3vw] lg:text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
                           Worked solution:
                         </p>
-                        <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl">
+                        <p className="font-semibold text-[3vw] lg:text-[1rem] text-black py-0.5 rounded-4xl leading-5">
                           {' '}
                           {subele?.explaination}
                         </p>
                       </span>
-                      <div className="flex justify-between">
+                      <div className="flex justify-between flex-col items-baseline">
                         <span className="flex gap-2  ">
-                          <p className="font-semibold text-[1rem] text-[#03BF62] py-0.5  rounded-4xl">
-                            Answer :
+                          <p className="font-semibold text-[3vw] lg:text-[1rem] text-[#03BF62] py-0.5  rounded-4xl">
+                            Answer:
                           </p>
-                          <p className="font-bold text-[1rem] text-[#03BF62] py-0.5 rounded-4xl">
+                          <p className="font-bold  text-[3vw] lg:text-[1rem] text-[#03BF62] py-0.5 rounded-4xl leading-5">
                             {' '}
                             {subele?.answer}
                           </p>
                         </span>
                         <p
-                          className={`block lg:hidden font-semibold text-[0.8rem] px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
+                          className={`block lg:hidden font-semibold text-[2.8vw] mt-3 px-4 ${subele?.type == 'Easy' ? 'bg-green-100 text-[#03BF62]' : subele?.type == 'Medium' ? 'bg-orange-100 text-[#FFB400]' : subele?.type == 'Hard' ? ' bg-red-100 text-red-600' : ''}   py-0.5 px-2 rounded-4xl`}
                         >
                           {' '}
                           {subele?.type}
