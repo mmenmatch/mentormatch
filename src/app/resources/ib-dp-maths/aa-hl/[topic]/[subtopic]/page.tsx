@@ -7,6 +7,10 @@ import { AASLQuestionAndAnswer } from '../../../../../../data/aa-hl'
 import BookDemoBanner from '@/app/components/BookDemoBanner/BookDemoBanner'
 import { Menu } from './Menu'
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+
 type Props = {
   params: Promise<{
     topic: string

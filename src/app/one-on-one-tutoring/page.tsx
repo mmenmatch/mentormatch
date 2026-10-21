@@ -13,6 +13,10 @@ import { LeadForm } from '../components/LeadForm/LeadForm'
 import { TutorSection } from '../components/TutorSection/TutorSection'
 import { FooterBanner } from '../components/FooterBanner/FooterBanner'
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+
 export const metadata: Metadata = {
   title: '1 on 1 Online Tuition | Mentor Match',
   description: 'Mentor Match: 1:1 Online Math and Science tuition for IB & IGCSE   ',

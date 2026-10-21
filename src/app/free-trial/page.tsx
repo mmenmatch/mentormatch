@@ -8,6 +8,10 @@ import HeroImage from '../../../public/assets/Images/Home-Hero.webp'
 
 import { Metadata } from 'next'
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+
 export const metadata: Metadata = {
   title: '1:1 Tutoring That Helps You Excel at School | MentorMatch',
   description: `Start early before it's too late. Foundation weak? Concepts unclear? Same tutor fixes it all. CBSE, IB, IGCSE, AP. Book a free trial.`,

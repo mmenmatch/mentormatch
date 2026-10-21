@@ -8,6 +8,10 @@ import GoogleReview from '../components/GoogleReview/GoogleReview'
 import { TrainedTutor } from '../components/TrainedTutor/TrainedTutor'
 import { MMFooter } from '../components/MMFooter/MMFooter'
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+
 export default function page() {
   return (
     <div className="w-full">
