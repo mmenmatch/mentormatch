@@ -97,7 +97,7 @@ export const Menu = ({
                     <div className="flex flex-col">
                       <span className="flex lg:flex-row flex-col py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
                         <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
-                          Worked solution :
+                          Worked solution:
                         </p>
                         <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl">
                           {' '}
