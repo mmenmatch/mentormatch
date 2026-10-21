@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `IB Maths AA SL ${topic.title} Resources`,
-    description: `${topic.description} Explore IB Mathematics AA SL topic resources and study guides.`,
+    title: `IB Maths AA HL ${topic.title} Resources`,
+    description: `${topic.description} Explore IB Mathematics AA HL topic resources and study guides.`,
     alternates: {
       canonical: `/resources/ib-dp-maths/aa-hl/${topic.slug}`,
     },
@@ -49,7 +49,7 @@ export default async function TopicPage({ params }: Props) {
         <ol className="flex flex-wrap items-center gap-2">
           <li>
             <Link href="/resources/ib-dp-maths/aa-hl" className="hover:text-blue-700 ">
-              AASL Resources
+              AAHL Resources
             </Link>
           </li>
           <li aria-hidden="true">/</li>
@@ -58,7 +58,7 @@ export default async function TopicPage({ params }: Props) {
       </nav>
       <section className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-9">
         <p className="text-sm font-semibold uppercase tracking-wider text-blue-700">
-          IB Mathematics: AA SL
+          IB Mathematics: AA HL
         </p>
 
         <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

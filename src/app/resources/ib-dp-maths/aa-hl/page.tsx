@@ -7,9 +7,9 @@ import { topics } from '../../../../data/aa-hl'
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
 
 export const metadata: Metadata = {
-  title: 'IB Maths AA SL Resources, Topics and Practice Questions',
+  title: 'IB Maths AA HL Resources, Topics and Practice Questions',
   description:
-    'Explore IB Mathematics AA SL study resources, topic guides, practice questions and worked explanations for the IB Diploma Programme.',
+    'Explore IB Mathematics AA HL study resources, topic guides, practice questions and worked explanations for the IB Diploma Programme.',
   alternates: {
     canonical: '/resources/ib-dp-maths/aa-sl',
   },
@@ -29,7 +29,7 @@ export default function AASLPage() {
 
         <p className="mt-5 max-w-2xl text-sm leading-7 text-blue-100 sm:text-base">
           Explore topic-based study resources and practise mathematics questions with answers and
-          explanations to strengthen your understanding of the IB Maths AA SL syllabus.
+          explanations to strengthen your understanding of the IB Maths AA HL syllabus.
         </p>
 
         <a
@@ -48,7 +48,7 @@ export default function AASLPage() {
           <div>
             <p className="text-sm font-semibold text-blue-700">STUDY BY TOPIC</p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900">
-              Explore IB Maths AA SL topics
+              Explore IB Maths AA HL topics
             </h2>
           </div>
 
