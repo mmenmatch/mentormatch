@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `IB Maths AA SL ${topic.title} Resources`,
     description: `${topic.description} Explore IB Mathematics AA SL topic resources and study guides.`,
     alternates: {
-      canonical: `/resources/ib-dp-maths/aa-sl/${topic.slug}`,
+      canonical: `/resources/ib-dp-maths/aa-hl/${topic.slug}`,
     },
   }
 }
@@ -37,14 +37,14 @@ export default async function TopicPage({ params }: Props) {
 
   if (!topic) notFound()
 
-  const basePath = `/resources/ib-dp-maths/aa-sl/${topic.slug}`
+  const basePath = `/resources/ib-dp-maths/aa-hl/${topic.slug}`
 
   return (
     <div className="mx-auto max-w-5xl py-8">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-500">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link href="/resources/ib-dp-maths/aa-sl" className="hover:text-blue-700 ">
+            <Link href="/resources/ib-dp-maths/aa-hl" className="hover:text-blue-700 ">
               AASL Resources
             </Link>
           </li>

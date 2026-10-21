@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { topics } from '../../../../data/aa-sl'
+import { topics } from '../../../../data/aa-hl'
 
 export const metadata: Metadata = {
   title: 'IB Maths AA SL Resources, Topics and Practice Questions',

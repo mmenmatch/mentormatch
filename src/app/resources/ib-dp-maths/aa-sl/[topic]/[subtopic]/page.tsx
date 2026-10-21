@@ -302,7 +302,7 @@ export default async function SubtopicPage({ params }: Props) {
                       <p className=" text-nowrap font-semibold text-[1rem] bg-[#006CFF] text-white py-0.5 px-2 rounded-4xl ">
                         Q {ind + 1}
                       </p>
-                      <p className="font-semibold text-[1rem] text-black py-0.5 px-2 rounded-4xl">
+                      <p className="font-semibold text-[1rem] text-black py-0.5 px-2 rounded-4xl ">
                         {' '}
                         {subele?.question}
                       </p>
@@ -318,7 +318,7 @@ export default async function SubtopicPage({ params }: Props) {
                         <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
                           Worked solution :
                         </p>
-                        <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl">
+                        <p className="font-semibold text-[1rem] text-black py-0.5 rounded-4xl leading-8">
                           {' '}
                           {subele?.explaination}
                         </p>

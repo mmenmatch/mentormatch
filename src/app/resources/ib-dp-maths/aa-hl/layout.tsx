@@ -11,11 +11,11 @@ import BookDemoBanner from '../../../components/BookDemoBanner/BookDemoBanner'
 
 export const metadata: Metadata = {
   title: {
-    default: 'IB Maths AA SL Resources | Mentor Match',
+    default: 'IB Maths AA HL Resources | Mentor Match',
     template: '%s | Mentor Match',
   },
   description:
-    'Explore IB Mathematics Analysis and Approaches SL study resources and practice questions.',
+    'Explore IB Mathematics Analysis and Approaches HL study resources and practice questions.',
 }
 
 type Props = {
@@ -26,8 +26,9 @@ type Props = {
   }>
 }
 
-export default async function AAHLLayout({ children, params }: Props) {
+export default async function AASLLayout({ children, params }: Props) {
   const { topic, subtopic } = await params
+
   return (
     <div className="flex lg:h-screen flex-col  bg-blue-50">
       <NavBar whatsapp />
@@ -37,13 +38,10 @@ export default async function AAHLLayout({ children, params }: Props) {
         <aside className="h-full min-h-full shrink-0 overflow-y-auto hidden lg:block">
           <ResourceNavigation data={topics} type={'aa-hl'} />
         </aside>
-
         {/* Main content - same height, scrollable */}
-        <main className="h-full min-h-0 min-w-0 flex-1 overflow-y-auto">{children}</main>
+        <main className="h-full min-h-0 min-w-0 flex-1 overflow-y-auto ">{children}</main>
       </div>
-      <div className="fixed right-2 bottom-8 p-4 px-4 text-center flex justify-center items-center bg-yellow-300 text-black max-w-[50px] rounded-4xl">
-        Menu
-      </div>
+
       <MMFooter />
     </div>
   )
