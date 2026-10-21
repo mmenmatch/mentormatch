@@ -318,7 +318,7 @@ export default async function SubtopicPage({ params }: Props) {
                       </p>
                     </span>
                     <div className="flex flex-col">
-                      <span className="flex lg:flex-row flex-col py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
+                      <span className="flex flex-col py-4 border-t-2 border-dashed border-gray-300 gap-2 ">
                         <p className="min-w-[140px] font-semibold text-[1rem] text-[#006CFF] py-0.5  rounded-4xl">
                           Worked solution :
                         </p>
