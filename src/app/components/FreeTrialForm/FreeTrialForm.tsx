@@ -21,8 +21,14 @@ function FreeTrialForm() {
   const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
   const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'CBSE', 'ICSE', 'Other']
   const CITY = ['Bangalore', 'Mumbai', 'Delhi', 'Hyderabad', 'Pune', 'Ahmedabad', 'Other']
-  const PRICES_OPTIONS = ['Yes, I want to apply', 'No, it is outside my budget']
+  const PRICES_OPTIONS = ['Yes, find my child’s tutor', 'No, this is above my budget']
   const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
+    const pricingLabel =
+      detectedCountry === 'AE'
+        ? 'Our fee is 70-100 AED/hour'
+        : detectedCountry === 'IN'
+          ? 'Our fee is ₹1200-₹1500/hour'
+          : 'Our fee is $20-$25/hour'
 
   const schema = z.object({
     grade: z.string().min(1, 'Please select a grade'),
@@ -511,7 +517,8 @@ while (dateOptions.length < 4) {
                   <div className="w-full flex flex-col gap-2 mb-2">
                     <label className="text-[#12142B] md:text-[1rem] text-[3.5vw] tracking-[1px] font-medium mb-4">
                       {' '}
-                      Our fee is ₹7,999/month<span className="text-red-500">*</span>
+                      {pricingLabel}
+                      <span className="text-red-500">*</span>
                     </label>{' '}
                     <div className="flex flex-wrap gap-4">
                       <select

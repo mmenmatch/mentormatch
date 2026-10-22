@@ -22,12 +22,16 @@ const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
 
 const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'American', 'CBSE', 'ICSE', 'Other']
 
-const PRICE = ['Yes, I want to apply', 'No, it is outside my budget']
+const PRICE = ['Yes, find my child’s tutor', 'No, this is above my budget']
 
 export default function RegistrationForm({ v2 = false }) {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
   const pricingLabel =
-    detectedCountry === 'AE' ? 'Our fee is AED 499/month' : 'Our fee is ₹7,999/month'
+    detectedCountry === 'AE'
+      ? 'Our fee is 70-100 AED/hour'
+      : detectedCountry === 'IN'
+        ? 'Our fee is ₹1200-₹1500/hour'
+        : 'Our fee is $20-$25/hour'
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const router = useRouter()
 

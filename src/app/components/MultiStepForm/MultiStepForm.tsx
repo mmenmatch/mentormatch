@@ -23,29 +23,35 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   const isActive = (index: any) => (index == activeStep ? 'bg-blue-700' : '')
   const isActiveBorder = (index: any) => (index == activeStep ? 'border-blue-700' : '')
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
-
+  const pricingLabel =
+    detectedCountry === 'AE'
+      ? 'Our fee is 70-100 AED/hour'
+      : detectedCountry === 'IN'
+        ? 'Our fee is ₹1200-₹1500/hour'
+        : 'Our fee is $20-$25/hour'
   const nextButton = () => {
     setActiveStep((prev) => prev + 1)
   }
   const Grade = ['6', '7', '8', '9', '10', '11', '12']
   const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
- const dateOptions = []
- const date = new Date()
+  const dateOptions = []
+  const date = new Date()
 
- while (dateOptions.length < 4) {
-   date.setDate(date.getDate() + 1)
+  while (dateOptions.length < 4) {
+    date.setDate(date.getDate() + 1)
 
-   // Skip Sunday (0 = Sunday)
-   if (date.getDay() === 0) continue
+    // Skip Sunday (0 = Sunday)
+    if (date.getDay() === 0) continue
 
-   dateOptions.push({
-     value: date.toLocaleDateString('en-CA'), // YYYY-MM-DD
-     month: date.toLocaleString('en-US', {
-       month: 'short',
-     }),
-     day: date.getDate(),
-   })
- }
+    dateOptions.push({
+      value: date.toLocaleDateString('en-CA'), // YYYY-MM-DD
+      month: date.toLocaleString('en-US', {
+        month: 'short',
+      }),
+      day: date.getDate(),
+    })
+  }
+  const PRICE = ['Yes, find my child’s tutor', 'No, this is above my budget']
 
   const schema = z.object({
     grade: z.string().min(1, 'Please select a grade'),
@@ -70,6 +76,7 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
     date: z.string().min(1, 'Please select a date'),
 
     time: z.string().min(1, 'Please select a time'),
+    pricingAccepted: z.string().min(1, 'Please select an option'),
   })
 
   const handleGradeSelect = (data: any) => {
@@ -134,12 +141,14 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
 
   const subject = watch('subject')
   const curriculum = watch('curriculum')
+    const pricingAccepted = watch('pricingAccepted')
+
 
   const isStep4Valid = subject && curriculum
   const selectedDate = watch('date')
   const selectedTime = watch('time')
 
-  const isStep5Valid = !!selectedDate && !!selectedTime
+  const isStep5Valid = !!selectedDate && !!selectedTime && !!pricingAccepted
 
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
@@ -521,6 +530,32 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
                         ))}
                       </div>
                     </div>
+                  </div>
+                  <div className="flex flex-col gap-2 mb-4">
+                    <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
+                      {pricingLabel} <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      {...register('pricingAccepted')}
+                      className={`w-full px-4 py-3 border rounded-lg outline-none bg-white transition
+              ${
+                errors?.pricingAccepted
+                  ? 'border-red-400 focus:ring-2 focus:ring-red-200'
+                  : 'border-gray-300 focus:ring-2 focus:ring-blue-200'
+              }`}
+                    >
+                      <option value="">Select an option</option>
+                      {PRICE?.map((g) => (
+                        <option key={g} value={g}>
+                          {g}
+                        </option>
+                      ))}
+                    </select>
+                    {errors?.pricingAccepted && (
+                      <p className="text-red-500 text-xs mt-0  mb-0">
+                        {errors?.pricingAccepted.message}
+                      </p>
+                    )}
                   </div>
                   <div className="w-full mt-8">
                     <button

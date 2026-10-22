@@ -23,12 +23,16 @@ const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
 
 const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'American', 'CBSE', 'ICSE', 'Other']
 
-const PRICE = ['Yes, I want to apply', 'No, it is outside my budget']
+const PRICE = ['Yes, find my child’s tutor', 'No, this is above my budget']
 
 export default function CueMathForm({ v2 = false }) {
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
   const pricingLabel =
-    detectedCountry === 'AE' ? 'Our fee is AED 499/month' : 'Our fee is ₹7,999/month'
+    detectedCountry === 'AE'
+      ? 'Our fee is 70-100 AED/hour'
+      : detectedCountry === 'IN'
+        ? 'Our fee is ₹1200-₹1500/hour'
+        : 'Our fee is $20-$25/hour'
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const router = useRouter()
 
@@ -47,6 +51,7 @@ export default function CueMathForm({ v2 = false }) {
         message: 'Invalid phone number for selected country',
       }),
     curriculum: z.string().min(1, 'Please select a curriculums'),
+    pricingAccepted: v2 ? z.string().optional() : z.string().min(1, 'Please select an option'),
   })
 
   type FormData = z.infer<typeof schema>
@@ -228,6 +233,28 @@ export default function CueMathForm({ v2 = false }) {
             <p className="text-red-500 text-xs mt-0  mb-0">{errors?.subject.message}</p>
           )}
         </div>
+
+        {!v2 && (
+          <div className="flex flex-col gap-2 mb-4">
+            {/* <label className="block text-[1rem]  font-medium text-gray-700 mb-1">
+              {pricingLabel} <span className="text-red-500">*</span>
+            </label> */}
+            <select
+              {...register('pricingAccepted')}
+              className={`w-full px-1 py-4  border-b border-black text-[#364153] outline-none transition text-[1.1rem]`}
+            >
+              <option value="">{pricingLabel}</option>
+              {PRICE?.map((g) => (
+                <option key={g} value={g}>
+                  {g}
+                </option>
+              ))}
+            </select>
+            {errors?.pricingAccepted && (
+              <p className="text-red-500 text-xs mt-0  mb-0">{errors?.pricingAccepted.message}</p>
+            )}
+          </div>
+        )}
 
         {/* Submit */}
         <button
