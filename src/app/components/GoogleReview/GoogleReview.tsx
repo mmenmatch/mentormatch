@@ -7,8 +7,8 @@ import Script from 'next/script'
 const GoogleReview = () => {
   return (
     <div className="mx-4 my-8 google-reviews flex flex-col justify-center items-center gap-8">
-      <h2 className="text-black xl:text-5xl font-extrabold  text-2xl leading-[120%] xl:text-left text-center">
-        See What Parents Say{' '}
+      <h2 className="text-black text-[2.5rem] leading-[120%] xl:text-left text-center">
+        See Why Parents Choose Us
       </h2>
       {/* <script src="https://elfsightcdn.com/platform.js" async></script> */}
       <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" async />

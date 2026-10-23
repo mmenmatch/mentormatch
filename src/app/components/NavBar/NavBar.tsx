@@ -45,7 +45,7 @@ const NavBar = ({ whatsapp = false, width = '' }) => {
                     behavior: 'smooth',
                   })
                 }}
-                className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.8rem] md:py-3 md:px-4 py-2 px-2 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
+                className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.8rem] md:py-3 md:px-4 py-2 px-2 bg-[#FFF116] text-black border-2 border-black rounded-xl font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
               >
                 Book A Free Trial

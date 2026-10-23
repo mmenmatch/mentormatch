@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee'
 import { useState, useEffect } from 'react'
 import type { Country } from 'react-phone-number-input'
 
-export const MarqueeComponent = () => {
+export const MarqueeComponent = ({ border = false }) => {
   const uaeSchools = [
     'Nord Anglia',
     'Jumeirah College',
@@ -54,7 +54,7 @@ export const MarqueeComponent = () => {
             {Schools?.map((school, index) => (
               <div
                 key={index}
-                className=" md:w-auto text-[3vw] text-center text-[#3F4B7F]  flex justify-center items-center mx-12 md:text-[1rem] leading-[120%] text-[#3F4B7F] font-semibold"
+                className={`md:w-auto text-[3vw] text-center text-[#3F4B7F]  flex justify-center items-center mx-12 md:text-[1rem] leading-[120%] text-[#3F4B7F] font-semibold `}
               >
                 {school}
               </div>
