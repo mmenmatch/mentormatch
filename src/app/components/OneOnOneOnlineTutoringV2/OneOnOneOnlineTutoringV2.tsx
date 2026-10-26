@@ -1,11 +1,9 @@
 'use client'
 import Image from 'next/image'
-import HeroImage from '../../../../public/assets/Images/upd-hero-img.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 import StepperForm from '../StepperForm/StepperForm'
-import HeroStudentAvatar from '../../../../public/assets/Images/students-avatar.webp'
 import GoogleTag from '../../../../public/assets/Images/google-tag.png'
-import OnlineTutoring from '../../../../public/assets/Images/OnlineTutoring.webp'
+import OnlineTutoring from '../../../../public/assets/Images/one-one-v3.webp'
 
 export default function OneOnOneOnlineTutoringV2() {
   return (

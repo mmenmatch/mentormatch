@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import Marquee from 'react-fast-marquee'
 import { useState, useEffect } from 'react'
 import type { Country } from 'react-phone-number-input'

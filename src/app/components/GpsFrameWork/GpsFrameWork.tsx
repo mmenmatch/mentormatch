@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import GapImage from '../../../../public/assets/Images/GAP.webp'
 import PersonalizeImage from '../../../../public/assets/Images/new-personalize.webp'

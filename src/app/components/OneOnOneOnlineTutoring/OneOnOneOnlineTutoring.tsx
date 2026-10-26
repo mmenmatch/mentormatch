@@ -2,8 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 import HeroImage from '../../../../public/assets/Images/upd-hero-img.webp'
-import StudentImage from '../../../../public/assets/Images/student.webp'
-import RArrow from '../../../../public/assets/Images/r-arrow.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 
 export default function OneOnOneOnlineTutoring() {
