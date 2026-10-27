@@ -1,6 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { useState, useEffect } from 'react'
 import type { Swiper as SwiperType } from 'swiper'
 import 'swiper/css'
 import type { Country } from 'react-phone-number-input'
@@ -12,26 +11,22 @@ import { SuccessAnimation } from '../SuccessAnimation/SuccessAnimation'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const Grade = ['6', '7', '8', '9', '10', '11', '12']
-const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
 const SUBJECT = ['Maths', ' Science', 'English']
 const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'CBSE/ICSE', 'Other']
 const PRICE = ['Yes, find my child’s tutor', 'No, this is above my budget']
 
 const schema = z.object({
   grade: z.string().min(1, 'Please select a grade'),
-  // parentName: z.string().min(3, 'Minimum 3 characters required'),
   childName: z.string().min(3, 'Minimum 3 characters required'),
   phone: z
     .string()
     .min(1, 'Phone number is required')
     .refine((val) => isValidPhoneNumber(val), { message: 'Invalid phone number' }),
-  // email: z.string().email('Please enter a valid email'),
   subject: z.string().min(1, 'Please select a subject'),
   curriculum: z.string().min(1, 'Please select a curriculum'),
-  // date: z.string().min(1, 'Please select a date'),
-  // time: z.string().min(1, 'Please select a time'),
   pricingAccepted: z.string().min(1, 'Please select an option'),
 })
+
 type FormData = z.infer<typeof schema>
 
 const getDateOptions = () => {
@@ -132,14 +127,10 @@ const StepperForm = ({ utm_campaign }: any) => {
     // nextButton()
   }
 
-  // const parentName = watch('parentName')
   const childName = watch('childName')
   const phone = watch('phone')
-  // const email = watch('email')
   const subject = watch('subject')
   const curriculum = watch('curriculum')
-  // const selectedDate = watch('date')
-  // const selectedTime = watch('time')
   const pricingAccepted = watch('pricingAccepted')
   const grade = watch('grade')
 
