@@ -191,6 +191,9 @@ export const JoinUsForm = () => {
   const laptopAvailable = watch('laptopAvailable')
   const language = watch('language')
   const languageText = watch('languageText') as String
+  const mention = watch('mention')
+
+  const isParent = parentOrChild == 'Parent - For my child' 
 
   console.log('day', day)
   const handleSelect = (ele: any, name: any) => {
@@ -230,9 +233,15 @@ export const JoinUsForm = () => {
 
   return (
     <div className="bg-white min-w-120 max-w-120 flex flex-col rounded-xl ">
-      <p className="text-center text-[#5B6488] text-[0.8rem] font-medium border-b border-[#E3E8F5] py-3 ">
-        Help us match the right tutor
-      </p>
+      {isParent ? (
+        <p className="text-center text-[#5B6488] text-[0.8rem] font-medium border-b border-[#E3E8F5] py-3 ">
+          Help us match your child to the right tutor.{' '}
+        </p>
+      ) : (
+        <p className="text-center text-[#5B6488] text-[0.8rem] font-medium border-b border-[#E3E8F5] py-3 ">
+          Help us match the right tutor
+        </p>
+      )}
       <div className="px-6 py-6 flex flex-col gap-4">
         <AnimatePresence mode="wait" custom={dir} initial={false}>
           <motion.div
@@ -274,7 +283,7 @@ export const JoinUsForm = () => {
             {stepperCount === 1 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Which grade are you in?{' '}
+                  {isParent ? 'Which grade is your child in?' : 'Which grade are you in?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {GRADE?.map((ele: any) => (
@@ -298,7 +307,9 @@ export const JoinUsForm = () => {
             {!writeText?.curriculum && stepperCount === 2 ? (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Which curriculum are you studying?{' '}
+                  {isParent
+                    ? 'Which curriculum is your child studying?'
+                    : 'Which curriculum are you studying?'}{' '}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {CURRICULUM?.map((ele: any) => (
@@ -323,7 +334,9 @@ export const JoinUsForm = () => {
                 {writeText?.curriculum && stepperCount === 2 && (
                   <div className="flex flex-col gap-2">
                     <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                      You’ve selected others. What curriculum are you in{' '}
+                      {isParent
+                        ? 'You’ve selected others. What curriculum is your child in?'
+                        : 'You’ve selected others. What curriculum are you in'}
                     </p>
                     <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                       <input
@@ -356,7 +369,9 @@ export const JoinUsForm = () => {
             {!writeText?.subject && stepperCount === 3 ? (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Which subject are you looking for tutoring?{' '}
+                  {isParent
+                    ? 'Which subject are you looking for tutoring in for your child?'
+                    : 'Which subject are you looking for tutoring?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {SUBJECTS?.map((ele: any) => (
@@ -381,7 +396,7 @@ export const JoinUsForm = () => {
                 {writeText?.subject && stepperCount === 3 && (
                   <div className="flex flex-col gap-2">
                     <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                      Which subject are you looking for tutoring?{' '}
+                      Which subject are you looking for tutoring?
                     </p>
                     <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                       <input
@@ -414,7 +429,9 @@ export const JoinUsForm = () => {
             {stepperCount === 4 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  How satisfied are you with your present academic grades?{' '}
+                  {isParent
+                    ? 'How satisfied are you with your child’s present academic grades?'
+                    : 'How satisfied are you with your present academic grades?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {PRESENT_ACADEMIC_PERFORMANCE?.map((ele: any) => (
@@ -440,7 +457,9 @@ export const JoinUsForm = () => {
             {stepperCount === 5 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  What’s the main reason you’re opting for our 1-on-1 online classes?{' '}
+                  {isParent
+                    ? 'What’s the main reason you’re opting for 1-on-1 online classes for your child?'
+                    : 'What’s the main reason you’re opting for our 1-on-1 online classes?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {MAIN_REASON?.map((ele: any) => (
@@ -464,7 +483,9 @@ export const JoinUsForm = () => {
             {stepperCount === 6 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  What are the following resources that are useful for you?{' '}
+                  {isParent
+                    ? 'Which of the following resources would be useful for your child?'
+                    : 'What are the following resources that are useful for you?'}{' '}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {USEFULL_RESOURCE?.map((ele: any) => (
@@ -537,7 +558,9 @@ export const JoinUsForm = () => {
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                   <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                    Which school do you study in?{' '}
+                    {isParent
+                      ? 'Which school does your child study in?'
+                      : 'Which school do you study in?'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                     <input
@@ -568,7 +591,7 @@ export const JoinUsForm = () => {
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                   <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                    What’s your name?{' '}
+                    {isParent ? 'What’s your child’s name?' : 'What’s your name?'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                     <input
@@ -583,7 +606,7 @@ export const JoinUsForm = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                    What’s your parent’s name?{' '}
+                    {isParent ? 'What’s your name?' : 'What’s your parent’s name?'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                     <input
@@ -615,7 +638,9 @@ export const JoinUsForm = () => {
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                   <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                    What’s your parent’s email address?{' '}
+                    {isParent
+                      ? 'What’s your email address?'
+                      : 'What’s your parent’s email address?'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                     <input
@@ -630,7 +655,7 @@ export const JoinUsForm = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                    What’s your parent’s phone number?{' '}
+                    {isParent ? 'What’s your phone number?' : 'What’s your parent’s phone number?'}
                   </p>
                   <div className="w-full flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2 w-full">
                     {detectedCountry && (
@@ -674,7 +699,9 @@ export const JoinUsForm = () => {
             {stepperCount === 11 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  How quickly are you looking to start1-on-1 classes?
+                  {isParent
+                    ? 'How quickly are you looking to start 1-on-1 classes for your child?'
+                    : 'How quickly are you looking to start 1-on-1 classes?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {START_FROM?.map((ele: any) => (
@@ -750,33 +777,9 @@ export const JoinUsForm = () => {
             {stepperCount === 13 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Do you have a preferred gender for your tutor?{' '}
-                </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
-                  {START_FROM?.map((ele: any) => (
-                    <button
-                      type="button"
-                      key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
-                        watch('preferedTeacher') === ele
-                          ? 'bg-blue-700   text-white '
-                          : 'text-[#0E1B4D]'
-                      }`}
-                      onClick={() => handleSelect(ele, 'preferedTeacher')}
-                    >
-                      {ele}
-                    </button>
-                  ))}
-                </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
-                  Back
-                </button>
-              </div>
-            )}
-            {stepperCount === 14 && (
-              <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  How quickly are you looking to start1-on-1 classes?
+                  {isParent
+                    ? 'Do you have a preferred gender for your child’s tutor?'
+                    : 'Do you have a preferred gender for your tutor?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {PREFERED_TEACHER?.map((ele: any) => (
@@ -799,11 +802,39 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-
-            {stepperCount === 15 && (
+            {/* {stepperCount === 14 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Can you and your parent both attend the first Demo Class?{' '}
+                  Do you have a preferred gender for your tutor?{' '}
+                </p>
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                  {PREFERED_TEACHER?.map((ele: any) => (
+                    <button
+                      type="button"
+                      key={ele}
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                        watch('preferedTeacher') === ele
+                          ? 'bg-blue-700   text-white '
+                          : 'text-[#0E1B4D]'
+                      }`}
+                      onClick={() => handleSelect(ele, 'preferedTeacher')}
+                    >
+                      {ele}
+                    </button>
+                  ))}
+                </div>
+                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                  Back
+                </button>
+              </div>
+            )} */}
+
+            {stepperCount === 14 && (
+              <div className="flex flex-col gap-4">
+                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                  {isParent
+                    ? 'Can you and your child both attend the first Demo Class?'
+                    : 'Can you and your parent both attend the first Demo Class?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {PARENTS_AVAILABLE?.map((ele: any) => (
@@ -826,10 +857,12 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-            {stepperCount === 16 && (
+            {stepperCount === 15 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Do you have laptop/tablet and a high speed internet to attend classes?{' '}
+                  {isParent
+                    ? 'Does your child have a laptop/tablet and a high-speed internet connection to attend classes?'
+                    : 'Do you have laptop/tablet and a high speed internet to attend classes?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {LAPTOP?.map((ele: any) => (
@@ -852,10 +885,12 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-            {!writeText?.language && stepperCount === 17 ? (
+            {!writeText?.language && stepperCount === 16 ? (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Are you comfortable with English as your medium of instruction?{' '}
+                  {isParent
+                    ? 'Is your child comfortable with English as the medium of instruction?'
+                    : 'Are you comfortable with English as your medium of instruction?'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {LAPTOP?.map((ele: any) => (
@@ -877,10 +912,12 @@ export const JoinUsForm = () => {
               </div>
             ) : (
               <>
-                {writeText?.language && stepperCount === 17 && (
+                {writeText?.language && stepperCount === 16 && (
                   <div className="flex flex-col gap-2">
                     <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                      You’ve selected No. Please enter your preferred medium of instruction.{' '}
+                      {isParent
+                        ? 'You’ve selected No. Please enter your child’s preferred medium of instruction.'
+                        : 'You’ve selected No. Please enter your preferred medium of instruction.'}
                     </p>
                     <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                       <input
@@ -909,10 +946,12 @@ export const JoinUsForm = () => {
                 )}
               </>
             )}
-            {stepperCount === 18 && (
+            {stepperCount === 17 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
-                  Are you comfortable paying USD 25/session{' '}
+                  {isParent
+                    ? 'Are you comfortable paying USD 75/session'
+                    : 'Are you comfortable paying USD 25/session'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                   {PRICING?.map((ele: any) => (
@@ -933,12 +972,13 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-            {stepperCount === 19 && (
+            {stepperCount === 18 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                   <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
-                    Would you like to add any additional comments to personalise the classes more
-                    for you? If yes, pls mention...{' '}
+                    {isParent
+                      ? 'Would you like to add any additional comments to personalise the classes more for your child? If yes, please mention…'
+                      : 'Would you like to add any additional comments to personalise the classes more for you? If yes, pls mention...'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                     <input
@@ -957,8 +997,8 @@ export const JoinUsForm = () => {
                     Back
                   </button>
                   <button
-                    className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${school?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
-                    onClick={school?.length >= 3 ? () => goNext() : () => {}}
+                    className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${mention?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
+                    onClick={mention?.length >= 3 ? () => goNext() : () => {}}
                   >
                     Next
                   </button>
@@ -966,7 +1006,7 @@ export const JoinUsForm = () => {
               </div>
             )}
 
-            {stepperCount === 20 && (
+            {stepperCount === 19 && (
               <div className="flex flex-col gap-4">
                 <div className="w-full flex flex-col justify-between items-center">
                   <Image src={ThankYou} alt="success" width={80} />
