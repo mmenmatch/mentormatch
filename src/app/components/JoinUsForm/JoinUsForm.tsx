@@ -195,7 +195,6 @@ export const JoinUsForm = () => {
 
   const isParent = parentOrChild == 'Parent - For my child' 
 
-  console.log('day', day)
   const handleSelect = (ele: any, name: any) => {
     if ((name == 'curriculum' || name == 'subject') && ele == 'Others') {
       setValue(name, ele, { shouldValidate: true })
@@ -206,6 +205,9 @@ export const JoinUsForm = () => {
       setValue(name, ele, { shouldValidate: true })
       setWriteText((prev) => ({ ...prev, [name]: true }))
       return
+    }
+    if (name == 'parentOrChild' && ele == 'I’m applying as a tutor') {
+      window.location.href = 'https://www.mentormatch.com/become-a-teacher'
     }
     setValue(name, ele, { shouldValidate: true })
     nextStep()
@@ -232,7 +234,7 @@ export const JoinUsForm = () => {
   }
 
   return (
-    <div className="bg-white min-w-120 max-w-120 flex flex-col rounded-xl ">
+    <div className="bg-white lg:min-w-120 w-full max-w-120 flex flex-col rounded-xl" >
       {isParent ? (
         <p className="text-center text-[#5B6488] text-[0.8rem] font-medium border-b border-[#E3E8F5] py-3 ">
           Help us match your child to the right tutor.{' '}
@@ -242,7 +244,7 @@ export const JoinUsForm = () => {
           Help us match the right tutor
         </p>
       )}
-      <div className="px-6 py-6 flex flex-col gap-4">
+      <div className="lg:px-6 px-4 lg:py-6 py-4 flex flex-col gap-4">
         <AnimatePresence mode="wait" custom={dir} initial={false}>
           <motion.div
             key={stepperCount}
@@ -255,16 +257,15 @@ export const JoinUsForm = () => {
           >
             {stepperCount === 0 && (
               <div className="flex flex-col gap-4">
-                {' '}
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] leading-[160%] text-[#0E1B4D] lg:leading-8  font-medium ">
                   Are you looking for tutoring for your child or for yourself?{' '}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {parentOrChildOptions?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('parentOrChild') === ele
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
@@ -275,22 +276,25 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px] mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
             )}
             {stepperCount === 1 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium ">
                   {isParent ? 'Which grade is your child in?' : 'Which grade are you in?'}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {GRADE?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('grade') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'grade')}
@@ -299,24 +303,27 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px] mt-4 lg:mt-0  text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
             )}
             {!writeText?.curriculum && stepperCount === 2 ? (
-              <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+              <div className="flex flex-col gap-2 lg:gap-4">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Which curriculum is your child studying?'
                     : 'Which curriculum are you studying?'}{' '}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {CURRICULUM?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3   rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw]  w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('curriculum') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'curriculum')}
@@ -325,7 +332,10 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px]  mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
@@ -333,7 +343,7 @@ export const JoinUsForm = () => {
               <>
                 {writeText?.curriculum && stepperCount === 2 && (
                   <div className="flex flex-col gap-2">
-                    <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                    <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                       {isParent
                         ? 'You’ve selected others. What curriculum is your child in?'
                         : 'You’ve selected others. What curriculum are you in'}
@@ -368,17 +378,17 @@ export const JoinUsForm = () => {
             )}
             {!writeText?.subject && stepperCount === 3 ? (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D] leading-[140%] lg:leading-8 font-medium">
                   {isParent
                     ? 'Which subject are you looking for tutoring in for your child?'
                     : 'Which subject are you looking for tutoring?'}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {SUBJECTS?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('subject') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'subject')}
@@ -387,7 +397,10 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px]  mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
@@ -395,7 +408,7 @@ export const JoinUsForm = () => {
               <>
                 {writeText?.subject && stepperCount === 3 && (
                   <div className="flex flex-col gap-2">
-                    <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                    <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D] leading-7  font-medium">
                       Which subject are you looking for tutoring?
                     </p>
                     <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
@@ -428,17 +441,17 @@ export const JoinUsForm = () => {
 
             {stepperCount === 4 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'How satisfied are you with your child’s present academic grades?'
                     : 'How satisfied are you with your present academic grades?'}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {PRESENT_ACADEMIC_PERFORMANCE?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('persentAcademicPerformace') === ele
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
@@ -449,24 +462,27 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px] mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
             )}
             {stepperCount === 5 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'What’s the main reason you’re opting for 1-on-1 online classes for your child?'
                     : 'What’s the main reason you’re opting for our 1-on-1 online classes?'}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {MAIN_REASON?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('mainReason') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'mainReason')}
@@ -475,14 +491,17 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px] mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
             )}
             {stepperCount === 6 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Which of the following resources would be useful for your child?'
                     : 'What are the following resources that are useful for you?'}{' '}
@@ -492,7 +511,7 @@ export const JoinUsForm = () => {
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('usefullResource') === ele
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
@@ -503,7 +522,10 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px]  mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
@@ -512,7 +534,7 @@ export const JoinUsForm = () => {
             {stepperCount === 7 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     Which country are you from?{' '}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
@@ -527,7 +549,7 @@ export const JoinUsForm = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     Which city do you reside in?{' '}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
@@ -557,7 +579,7 @@ export const JoinUsForm = () => {
             {stepperCount === 8 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.25vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     {isParent
                       ? 'Which school does your child study in?'
                       : 'Which school do you study in?'}
@@ -590,7 +612,7 @@ export const JoinUsForm = () => {
             {stepperCount === 9 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     {isParent ? 'What’s your child’s name?' : 'What’s your name?'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
@@ -605,7 +627,7 @@ export const JoinUsForm = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     {isParent ? 'What’s your name?' : 'What’s your parent’s name?'}
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
@@ -637,7 +659,7 @@ export const JoinUsForm = () => {
             {stepperCount === 10 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     {isParent
                       ? 'What’s your email address?'
                       : 'What’s your parent’s email address?'}
@@ -654,7 +676,7 @@ export const JoinUsForm = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     {isParent ? 'What’s your phone number?' : 'What’s your parent’s phone number?'}
                   </p>
                   <div className="w-full flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2 w-full">
@@ -698,7 +720,7 @@ export const JoinUsForm = () => {
             )}
             {stepperCount === 11 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'How quickly are you looking to start 1-on-1 classes for your child?'
                     : 'How quickly are you looking to start 1-on-1 classes?'}
@@ -708,7 +730,7 @@ export const JoinUsForm = () => {
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw]  w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('startFrom') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'startFrom')}
@@ -726,7 +748,7 @@ export const JoinUsForm = () => {
             {stepperCount === 12 && (
               <div className="flex flex-col gap-4">
                 <div>
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     Choose a Convenient Date & Time for Your FREE Demo Class{' '}
                   </p>
 
@@ -735,7 +757,7 @@ export const JoinUsForm = () => {
                     <div className="flex flex-wrap gap-2">
                       {dateOptions?.map((ele: any) => (
                         <div
-                          className={`px-4 py-3   text-[0.8rem] flex flex-col justify-center items-center gap-2 rounded-4xl  hover:bg-blue-600 hover:text-white  ${
+                          className={`px-4 py-3     flex flex-col justify-center items-center gap-2 rounded-4xl  hover:bg-blue-600 hover:text-white  ${
                             watch('day') === ele?.day + ' ' + ele?.month
                               ? 'bg-blue-700 text-white border-blue-700'
                               : 'bg-[#EEF6FF]'
@@ -744,7 +766,7 @@ export const JoinUsForm = () => {
                             handleDateTime(ele?.day + ' ' + ele?.month, 'day')
                           }}
                         >
-                          <p className="text-[0.8rem] font-medium">
+                          <p className="text-[3.2vw] lg:text-[0.8rem] font-medium">
                             {ele?.day} {ele?.month}
                           </p>
                         </div>
@@ -753,11 +775,11 @@ export const JoinUsForm = () => {
                     <label className="text-[0.8rem] text-[#5B6488] font-medium mt-4">
                       Select Time (Gulf Standard Time)
                     </label>
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap  gap-4">
                       {TIME?.map((ele: any) => (
                         <div
                           key={ele}
-                          className={`max-w-[80px] lg:px-4 px-3 text-nowrap py-3 rounded-4xl font-medium   text-[0.8rem]  w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                          className={`max-w-[80px] text-center text-[3.2vw] lg:text-[0.8rem] lg:px-4 px-3 text-nowrap py-3 rounded-4xl font-medium  w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                             watch('time') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                           }`}
                           onClick={() => handleDateTime(ele, 'time')}
@@ -776,7 +798,7 @@ export const JoinUsForm = () => {
             )}
             {stepperCount === 13 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Do you have a preferred gender for your child’s tutor?'
                     : 'Do you have a preferred gender for your tutor?'}
@@ -786,7 +808,7 @@ export const JoinUsForm = () => {
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('preferedTeacher') === ele
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
@@ -797,7 +819,10 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px] mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
@@ -831,7 +856,7 @@ export const JoinUsForm = () => {
 
             {stepperCount === 14 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Can you and your child both attend the first Demo Class?'
                     : 'Can you and your parent both attend the first Demo Class?'}
@@ -841,7 +866,7 @@ export const JoinUsForm = () => {
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('parentsAvailable') === ele
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
@@ -852,14 +877,17 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px] mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
             )}
             {stepperCount === 15 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Does your child have a laptop/tablet and a high-speed internet connection to attend classes?'
                     : 'Do you have laptop/tablet and a high speed internet to attend classes?'}
@@ -869,7 +897,7 @@ export const JoinUsForm = () => {
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('laptopAvailable') === ele
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
@@ -880,14 +908,17 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px]  mt-4 lg:mt-0 text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
             )}
             {!writeText?.language && stepperCount === 16 ? (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Is your child comfortable with English as the medium of instruction?'
                     : 'Are you comfortable with English as your medium of instruction?'}
@@ -897,7 +928,7 @@ export const JoinUsForm = () => {
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white  ${
                         watch('language') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'language')}
@@ -906,7 +937,10 @@ export const JoinUsForm = () => {
                     </button>
                   ))}
                 </div>
-                <button className="w-[40px] text-[0.8rem] text-[#1F4FD8]" onClick={goBack}>
+                <button
+                  className="w-[40px]   mt-4 lg:mt-0  text-[0.8rem] text-[#1F4FD8]"
+                  onClick={goBack}
+                >
                   Back
                 </button>
               </div>
@@ -914,7 +948,7 @@ export const JoinUsForm = () => {
               <>
                 {writeText?.language && stepperCount === 16 && (
                   <div className="flex flex-col gap-2">
-                    <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                    <p className="m-0 lg:text-[1.2rem] text-[4.2vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                       {isParent
                         ? 'You’ve selected No. Please enter your child’s preferred medium of instruction.'
                         : 'You’ve selected No. Please enter your preferred medium of instruction.'}
@@ -948,17 +982,17 @@ export const JoinUsForm = () => {
             )}
             {stepperCount === 17 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[4.2vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Are you comfortable paying USD 75/session'
                     : 'Are you comfortable paying USD 25/session'}
                 </p>
-                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
+                <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
                   {PRICING?.map((ele: any) => (
                     <button
                       type="button"
                       key={ele}
-                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
+                      className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                         watch('pricing') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
                       onClick={() => handleSelect(ele, 'pricing')}
@@ -975,7 +1009,7 @@ export const JoinUsForm = () => {
             {stepperCount === 18 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                  <p className="m-0 text-[1.2rem] text-[#0E1B4D] leading-7  font-medium">
+                  <p className="m-0 lg:text-[1.2rem] text-[4.2vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                     {isParent
                       ? 'Would you like to add any additional comments to personalise the classes more for your child? If yes, please mention…'
                       : 'Would you like to add any additional comments to personalise the classes more for you? If yes, pls mention...'}

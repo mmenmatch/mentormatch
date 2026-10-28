@@ -3,12 +3,16 @@ import UnlockImage from '../../../../public/assets/Images/unlock.webp'
 import Image from 'next/image'
 export const Unlock = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-8 lg:py-16 ">
-      <div className="bg-[#2A51FF] max-w-200 mx-auto px-8  rounded-4xl flex ">
-        <div className="w-[55%] text-white py-8 flex flex-col items-start justify-center gap-2">
+    <div className="max-w-7xl mx-auto lg:px-8 px-4  lg:py-16 py-8">
+      <div className="bg-[#2A51FF] max-w-200 mx-auto px-8  rounded-4xl flex flex-col   lg:flex-row ">
+        <div className="w-full lg:w-[55%] text-white py-8 flex flex-col lg:items-start justify-center items-center gap-4">
           {' '}
-          <h1>Unlock Your Child’s Full Potential</h1>
-          <p>Join 4000+ Families on Their Learning Journey</p>
+          <h1 className="lg:text-[2.2rem] text-[7vw] m-0 text-center lg:text-left">
+            Unlock Your Child’s Full Potential
+          </h1>
+          <p className="text-center lg:text-left text-[0.9rem]">
+            Join 4000+ Families on Their Learning Journey
+          </p>
           <div className="">
             <button
               type="submit"
@@ -24,7 +28,7 @@ export const Unlock = () => {
             </button>
           </div>
         </div>
-        <div className="w-[50%] flex flex-1 pt-8 items-end">
+        <div className="w-full lg:w-[50%] flex flex-1  lg:pt-8 items-end">
           <Image src={UnlockImage} alt="Unlock" className="w-full" />
         </div>
       </div>
