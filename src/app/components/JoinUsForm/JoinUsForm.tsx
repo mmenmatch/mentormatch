@@ -49,7 +49,6 @@ export const JoinUsForm = () => {
     'Cambridge/British/IGCSE',
     'American/Common Core',
     'ICSE/CBSE',
-    'ICSE/CBSE',
     'Others',
   ]
   const SUBJECTS = [
@@ -116,7 +115,7 @@ export const JoinUsForm = () => {
   }
 
   const schema = z.object({
-    parentOrChild: z.string().min(3, 'This Field is required')?.optional(),
+    filled_by: z.string().min(3, 'This Field is required')?.optional(),
     grade: z.string().min(3, 'Please select a grade')?.optional(),
     curriculum: z.string().min(3, 'Please select a curriculum')?.optional(),
     ...(writeText?.curriculum && {
@@ -132,7 +131,7 @@ export const JoinUsForm = () => {
     country: z.string().min(3, 'Minimum 3 characters required'),
     city: z.string().min(3, 'Minimum 3 characters required'),
     school: z.string().min(3, 'Minimum 3 characters required'),
-    name: z.string().min(3, 'Minimum 3 characters required'),
+    childName: z.string().min(3, 'Minimum 3 characters required'),
     parentName: z.string().min(3, 'Minimum 3 characters required'),
     email: z.string().email('Please enter a valid email'),
     phone: z
@@ -147,11 +146,11 @@ export const JoinUsForm = () => {
     preferedTeacher: z.string().min(1, 'Please select a preferedTeacher')?.optional(),
     parentsAvailable: z.string().min(1, 'Please select a parentsAvailable')?.optional(),
     laptopAvailable: z.string().min(1, 'Please select a laptopAvailable')?.optional(),
-    language: z.string().min(3, 'Please select a subject')?.optional(),
+    language: z.string().optional(),
     ...(writeText?.language && {
       languageText: z.string().min(3, 'Minimum 3 characters required'),
     }),
-    pricing: z.string().min(1, 'Please select a pricing')?.optional(),
+    pricingAccepted: z.string().min(1, 'Please select a pricing')?.optional(),
     mention: z.string().min(3, 'Minimum 3 characters required'),
   })
 
@@ -169,7 +168,7 @@ export const JoinUsForm = () => {
     mode: 'onChange',
   })
 
-  const parentOrChild = watch('parentOrChild')
+  const filled_by = watch('filled_by')
   const grade = watch('grade')
   const curriculum = watch('curriculum')
   const curriculumText = watch('curriculumText') as String
@@ -181,10 +180,9 @@ export const JoinUsForm = () => {
   const country = watch('country')
   const city = watch('city')
   const school = watch('school')
-  const name = watch('name')
+  const childName = watch('childName')
   const parentName = watch('parentName')
   const email = watch('email')
-  const day = watch('day')
   const time = watch('time')
   const preferedTeacher = watch('preferedTeacher')
   const parentsAvailable = watch('parentsAvailable')
@@ -192,8 +190,9 @@ export const JoinUsForm = () => {
   const language = watch('language')
   const languageText = watch('languageText') as String
   const mention = watch('mention')
+  const day = watch('day')
 
-  const isParent = parentOrChild == 'Parent - For my child' 
+  const isParent = filled_by == 'Parent - For my child'
 
   const handleSelect = (ele: any, name: any) => {
     if ((name == 'curriculum' || name == 'subject') && ele == 'Others') {
@@ -206,7 +205,7 @@ export const JoinUsForm = () => {
       setWriteText((prev) => ({ ...prev, [name]: true }))
       return
     }
-    if (name == 'parentOrChild' && ele == 'I’m applying as a tutor') {
+    if (name == 'filled_by' && ele == 'I’m applying as a tutor') {
       window.location.href = 'https://www.mentormatch.com/become-a-teacher'
     }
     setValue(name, ele, { shouldValidate: true })
@@ -215,6 +214,9 @@ export const JoinUsForm = () => {
   }
 
   const goBack = () => {
+    if (stepperCount === 16) setWriteText((p) => ({ ...p, language: false }))
+    if (stepperCount === 2) setWriteText((p) => ({ ...p, curriculum: false }))
+    if (stepperCount === 3) setWriteText((p) => ({ ...p, subject: false }))
     BackStep()
     setDir(-1)
   }
@@ -229,12 +231,74 @@ export const JoinUsForm = () => {
       setDir(1)
     }
   }, [time, day])
+
   const handleDateTime = (ele: any, name: any) => {
+    // console.log(name, ele)
     setValue(name, ele, { shouldValidate: true })
+    // if (date && time?.length > 0) {
+    //   goNext()
+    // }
+  }
+
+  const onSubmit = async (data: FormData) => {
+    const params = new URLSearchParams(window.location.search)
+    const eventId = crypto.randomUUID()
+
+    const payload = {
+      ...data,
+      pageUrl: window.location.href,
+      referrer: document.referrer,
+      utm_source: params.get('utm_source'),
+      utm_medium: params.get('utm_medium'),
+      utm_campaign: params.get('utm_campaign'),
+      utm_content: params.get('utm_content'),
+      utm_term: params.get('utm_term'),
+      meta_event_id: eventId || '',
+      date: day || '',
+      country: country || '',
+    }
+    localStorage.setItem('formData', JSON.stringify(payload))
+
+    if (typeof window.fbq !== 'undefined') {
+      window.fbq('track', 'Submit Application')
+    }
+
+    try {
+      const res = await fetch('/app/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) throw new Error('Submission failed')
+      goNext()
+      // Google Ads conversion
+      window.gtag?.('event', 'conversion', {
+        send_to: 'AW-11284198205/Lm3eCMyY5eIbEL3m3IQq',
+      })
+
+      // dataLayer (enhanced conversions)
+      window.dataLayer?.push({
+        event: 'ec_form_submit',
+        user_data: {
+          // email: data?.email || '',
+          phone_number: data?.phone || '',
+        },
+      })
+
+      // Meta Pixel Lead
+      if (typeof window.fbq !== 'undefined') {
+        window.fbq(
+          'track',
+          'Lead',
+          { ph: data.phone || '', fn: data.childName || '' },
+          { eventID: eventId },
+        )
+      }
+    } catch {}
   }
 
   return (
-    <div className="bg-white lg:min-w-120 w-full max-w-120 flex flex-col rounded-xl" >
+    <div className="bg-white lg:min-w-120 w-full max-w-120 flex flex-col rounded-xl">
       {isParent ? (
         <p className="text-center text-[#5B6488] text-[0.8rem] font-medium border-b border-[#E3E8F5] py-3 ">
           Help us match your child to the right tutor.{' '}
@@ -266,11 +330,9 @@ export const JoinUsForm = () => {
                       type="button"
                       key={ele}
                       className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
-                        watch('parentOrChild') === ele
-                          ? 'bg-blue-700   text-white '
-                          : 'text-[#0E1B4D]'
+                        watch('filled_by') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                       }`}
-                      onClick={() => handleSelect(ele, 'parentOrChild')}
+                      onClick={() => handleSelect(ele, 'filled_by')}
                     >
                       {ele}
                     </button>
@@ -438,7 +500,6 @@ export const JoinUsForm = () => {
                 )}
               </>
             )}
-
             {stepperCount === 4 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
@@ -530,7 +591,6 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-
             {stepperCount === 7 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
@@ -617,12 +677,12 @@ export const JoinUsForm = () => {
                   </p>
                   <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                     <input
-                      {...register('name')}
+                      {...register('childName')}
                       placeholder="Enter student's name"
                       className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
-                    {errors.name?.message && (
-                      <p className="text-red-500 text-xs mt-0 mb-0">{errors.name.message}</p>
+                    {errors.childName?.message && (
+                      <p className="text-red-500 text-xs mt-0 mb-0">{errors.childName.message}</p>
                     )}
                   </div>
                 </div>
@@ -646,9 +706,9 @@ export const JoinUsForm = () => {
                     Back
                   </button>
                   <button
-                    className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${parentName?.length >= 3 && name?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
+                    className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${parentName?.length >= 3 && childName?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
                     onClick={
-                      parentName?.length >= 3 && name?.length >= 3 ? () => goNext() : () => {}
+                      parentName?.length >= 3 && childName?.length >= 3 ? () => goNext() : () => {}
                     }
                   >
                     Next
@@ -708,9 +768,9 @@ export const JoinUsForm = () => {
                     Back
                   </button>
                   <button
-                    className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${parentName?.length >= 3 && name?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
+                    className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${parentName?.length >= 3 && childName?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
                     onClick={
-                      parentName?.length >= 3 && name?.length >= 3 ? () => goNext() : () => {}
+                      parentName?.length >= 3 && childName?.length >= 3 ? () => goNext() : () => {}
                     }
                   >
                     Next
@@ -744,7 +804,6 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-
             {stepperCount === 12 && (
               <div className="flex flex-col gap-4">
                 <div>
@@ -776,9 +835,9 @@ export const JoinUsForm = () => {
                       Select Time (Gulf Standard Time)
                     </label>
                     <div className="flex flex-wrap  gap-4">
-                      {TIME?.map((ele: any) => (
+                      {TIME?.map((ele: any, index) => (
                         <div
-                          key={ele}
+                          key={index + 1}
                           className={`max-w-[80px] text-center text-[3.2vw] lg:text-[0.8rem] lg:px-4 px-3 text-nowrap py-3 rounded-4xl font-medium  w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
                             watch('time') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
                           }`}
@@ -853,7 +912,6 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )} */}
-
             {stepperCount === 14 && (
               <div className="flex flex-col gap-4">
                 <p className="m-0 lg:text-[1.2rem] text-[4.5vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
@@ -956,7 +1014,7 @@ export const JoinUsForm = () => {
                     <div className="flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2">
                       <input
                         {...register('languageText')}
-                        placeholder="Enter subject"
+                        placeholder="Enter language"
                         className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                       />
                       {errors.languageText?.message && (
@@ -984,7 +1042,7 @@ export const JoinUsForm = () => {
               <div className="flex flex-col gap-4">
                 <p className="m-0 lg:text-[1.2rem] text-[4.2vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
-                    ? 'Are you comfortable paying USD 75/session'
+                    ? 'Are you comfortable paying USD 25/session'
                     : 'Are you comfortable paying USD 25/session'}
                 </p>
                 <div className="flex flex-wrap justify-start lg:gap-2.5  gap-3 mt-2">
@@ -993,9 +1051,11 @@ export const JoinUsForm = () => {
                       type="button"
                       key={ele}
                       className={`lg:px-6 px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3.25vw] w-full bg-[#EEF6FF] hover:bg-blue-600 hover:text-white ${
-                        watch('pricing') === ele ? 'bg-blue-700   text-white ' : 'text-[#0E1B4D]'
+                        watch('pricingAccepted') === ele
+                          ? 'bg-blue-700   text-white '
+                          : 'text-[#0E1B4D]'
                       }`}
-                      onClick={() => handleSelect(ele, 'pricing')}
+                      onClick={() => handleSelect(ele, 'pricingAccepted')}
                     >
                       {ele}
                     </button>
@@ -1032,14 +1092,15 @@ export const JoinUsForm = () => {
                   </button>
                   <button
                     className={`w-[80px] text-[0.8rem] bg-[#1F4FD8] text-white p-2 rounded-4xl  ${mention?.length >= 3 ? 'bg-[#1F4FD8]' : 'bg-gray-500 cursor-not-allowed '}`}
-                    onClick={mention?.length >= 3 ? () => goNext() : () => {}}
+                    onClick={handleSubmit(onSubmit, (errs) =>
+                      console.log('VALIDATION ERRORS:', errs),
+                    )}
                   >
                     Next
                   </button>
                 </div>
               </div>
             )}
-
             {stepperCount === 19 && (
               <div className="flex flex-col gap-4">
                 <div className="w-full flex flex-col justify-between items-center">

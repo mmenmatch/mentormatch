@@ -9,6 +9,5 @@ type joinUsStepperStore = {
 export const useJoinUsStepper = create<joinUsStepperStore>((set) => ({
   stepperCount: 0,
   nextStep: () => set((state) => ({ stepperCount: state.stepperCount + 1 })),
-
   BackStep: () => set((state) => ({ stepperCount: state.stepperCount - 1 })),
 }))

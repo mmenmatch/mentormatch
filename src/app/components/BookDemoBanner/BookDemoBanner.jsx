@@ -37,7 +37,7 @@ export default function BookDemoBanner() {
               <button
                 onClick={handleRedirect}
                 type="submit"
-                className=" lg:w-[200px] w-[50%] text-black border-2 border-black md:py-3 py-3 bg-[#FFF116]  font-semibold rounded-4xl
+                className="lg:w-[200px] w-[50%] text-black border-2 border-black md:py-3 py-3 bg-[#FFF116]  font-semibold rounded-4xl
              disabled:bg-gray-300 transition text-[1rem] mt-4 "
               >
                 Book a Free Trial
