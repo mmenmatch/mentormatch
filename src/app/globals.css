@@ -88,6 +88,7 @@ label{
   border-radius: 8px;
   outline: none;
   font-size: 14px;
+  
 }
 .cuemath-phone-input-wrapper .PhoneInputInput {
   flex: 1;
@@ -263,4 +264,12 @@ border-bottom: 1px solid black;
 
 .swiper-initialized{
   height: auto !important;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+  transform: none;
+  zoom: 1;
 }

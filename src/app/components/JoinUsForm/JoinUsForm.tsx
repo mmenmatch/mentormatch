@@ -150,8 +150,8 @@ export const JoinUsForm = () => {
     ...(writeText?.language && {
       languageText: z.string().min(3, 'Minimum 3 characters required'),
     }),
-    pricingAccepted: z.string().min(1, 'Please select a pricing')?.optional(),
-    mention: z.string().min(3, 'Minimum 3 characters required'),
+    pricingAccepted: z.string().min(1, 'Please select a pricing'),
+    // mention: z.string().min(3, 'Minimum 3 characters required'),
   })
 
   type FormData = z.infer<typeof schema>
@@ -189,12 +189,18 @@ export const JoinUsForm = () => {
   const laptopAvailable = watch('laptopAvailable')
   const language = watch('language')
   const languageText = watch('languageText') as String
-  const mention = watch('mention')
+  // const mention = watch('mention')
   const day = watch('day')
 
   const isParent = filled_by == 'Parent - For my child'
 
   const handleSelect = (ele: any, name: any) => {
+    if (name == 'pricingAccepted') {
+      setValue(name, ele, { shouldValidate: true })
+      handleSubmit(onSubmit, (errs) => console.log('VALIDATION ERRORS:', errs))()
+
+      return
+    }
     if ((name == 'curriculum' || name == 'subject') && ele == 'Others') {
       setValue(name, ele, { shouldValidate: true })
       setWriteText((prev) => ({ ...prev, [name]: true }))
@@ -601,7 +607,7 @@ export const JoinUsForm = () => {
                     <input
                       {...register('country')}
                       placeholder="Enter country"
-                      className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
+                      className="w-full text-base px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
                     {errors.country?.message && (
                       <p className="text-red-500 text-xs mt-0 mb-0">{errors.country.message}</p>
@@ -616,7 +622,7 @@ export const JoinUsForm = () => {
                     <input
                       {...register('city')}
                       placeholder="Enter city"
-                      className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
+                      className="w-full text-base px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
                     {errors.city?.message && (
                       <p className="text-red-500 text-xs mt-0 mb-0">{errors.city.message}</p>
@@ -648,7 +654,7 @@ export const JoinUsForm = () => {
                     <input
                       {...register('school')}
                       placeholder="Enter school name"
-                      className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
+                      className="w-full text-base px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
                     {errors.school?.message && (
                       <p className="text-red-500 text-xs mt-0 mb-0">{errors.school.message}</p>
@@ -679,7 +685,7 @@ export const JoinUsForm = () => {
                     <input
                       {...register('childName')}
                       placeholder="Enter student's name"
-                      className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
+                      className="w-full text-base px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
                     {errors.childName?.message && (
                       <p className="text-red-500 text-xs mt-0 mb-0">{errors.childName.message}</p>
@@ -694,7 +700,7 @@ export const JoinUsForm = () => {
                     <input
                       {...register('parentName')}
                       placeholder="Enter parent's name"
-                      className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
+                      className="w-full text-base px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
                     {errors.parentName?.message && (
                       <p className="text-red-500 text-xs mt-0 mb-0">{errors.parentName.message}</p>
@@ -728,7 +734,7 @@ export const JoinUsForm = () => {
                     <input
                       {...register('email')}
                       placeholder="Enter Email Address"
-                      className="w-full px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
+                      className="w-full text-base px-4 py-3 border rounded-lg outline-none transition border-gray-300 focus:ring-2 focus:ring-blue-200"
                     />
                     {errors.email?.message && (
                       <p className="text-red-500 text-xs mt-0 mb-0">{errors.email.message}</p>
@@ -1040,7 +1046,7 @@ export const JoinUsForm = () => {
             )}
             {stepperCount === 17 && (
               <div className="flex flex-col gap-4">
-                <p className="m-0 lg:text-[1.2rem] text-[4.2vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
+                <p className="m-0 lg:text-[1.2rem] text-[3.7vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
                   {isParent
                     ? 'Are you comfortable paying USD 25/session'
                     : 'Are you comfortable paying USD 25/session'}
@@ -1055,7 +1061,9 @@ export const JoinUsForm = () => {
                           ? 'bg-blue-700   text-white '
                           : 'text-[#0E1B4D]'
                       }`}
-                      onClick={() => handleSelect(ele, 'pricingAccepted')}
+                      onClick={() => {
+                        handleSelect(ele, 'pricingAccepted')
+                      }}
                     >
                       {ele}
                     </button>
@@ -1066,7 +1074,7 @@ export const JoinUsForm = () => {
                 </button>
               </div>
             )}
-            {stepperCount === 18 && (
+            {/* {stepperCount === 18 && (
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
                   <p className="m-0 lg:text-[1.2rem] text-[4.2vw] text-[#0E1B4D]  leading-[140%] lg:leading-8  font-medium">
@@ -1100,8 +1108,8 @@ export const JoinUsForm = () => {
                   </button>
                 </div>
               </div>
-            )}
-            {stepperCount === 19 && (
+            )} */}
+            {stepperCount === 18 && (
               <div className="flex flex-col gap-4">
                 <div className="w-full flex flex-col justify-between items-center">
                   <Image src={ThankYou} alt="success" width={80} />
