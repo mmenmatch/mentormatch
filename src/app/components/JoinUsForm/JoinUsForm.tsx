@@ -758,7 +758,7 @@ export const JoinUsForm = () => {
                               value={value}
                               onChange={onChange}
                               autoComplete="new-password"
-                              className={`phone-input-wrapper ${errors?.phone ? 'phone-error' : ''}`}
+                              className={`phone-input-wrapper ${errors?.phone ? 'phone-error' : ''} text-base`}
                             />
                           )}
                         />
