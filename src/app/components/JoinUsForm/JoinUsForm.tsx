@@ -759,6 +759,9 @@ export const JoinUsForm = () => {
                               onChange={onChange}
                               autoComplete="new-password"
                               className={`phone-input-wrapper ${errors?.phone ? 'phone-error' : ''} text-base`}
+                              numberInputProps={{
+                                className: 'text-base',
+                              }}
                             />
                           )}
                         />
