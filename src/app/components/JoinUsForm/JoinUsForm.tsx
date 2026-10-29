@@ -198,6 +198,7 @@ export const JoinUsForm = () => {
   const handleSelect = (ele: any, name: any) => {
     if (name == 'pricingAccepted') {
       setValue(name, ele, { shouldValidate: true })
+      setStepperCount(18)
       handleSubmit(onSubmit, (errs) => console.log('VALIDATION ERRORS:', errs))()
 
       return
