@@ -7,7 +7,7 @@ export const JoinUsReviewSection = () => {
         <div className="w-full lg:w-[20%] flex flex-col items-center gap-2 lg:gap-4">
           <p className="lg:text-[3rem] text-[12vw] font-bold text-[#2046C2] leading-[100%]">76%</p>
           <p className="text-[#2C2E37] text-[5vw]  lg:text-[1rem] leading-[140%] font-medium text-center">
-            of students reportedly <br></br> improved exam scores
+            of students report <br></br> improved exam scores
           </p>
         </div>
         <div className="w-full lg:w-[20%] flex flex-col items-center  gap-2 lg:gap-4">
