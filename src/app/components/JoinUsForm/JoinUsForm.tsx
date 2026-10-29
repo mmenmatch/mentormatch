@@ -278,8 +278,8 @@ export const JoinUsForm = () => {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
-      setStepperCount(18)
-    
+      // setStepperCount(18)
+
       // Google Ads conversion
       window.gtag?.('event', 'conversion', {
         send_to: 'AW-11284198205/Lm3eCMyY5eIbEL3m3IQq',
@@ -1118,15 +1118,15 @@ export const JoinUsForm = () => {
                 <div className="w-full flex flex-col justify-between items-center">
                   <Image src={ThankYou} alt="success" width={80} />
                   <h3 className="text-[#09C363]">You’re all set!</h3>
-                  <p className="text-[0.9rem] text-[#5B6488]">
+                  <p className="text-[0.9rem] text-[#5B6488] text-center">
                     We’re matching you with the best tutor now.
                   </p>
                 </div>
-                <div className="mt-6 flex flex-col gap-4">
+                <div className="mt-4 flex flex-col gap-4">
                   {SUCCESS_PAGE?.map((ele: any, index) => (
                     <div
                       key={ele}
-                      className={`lg:px-3 flex items-center gap-4  text-left px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] w-full bg-[#EEF6FF]  
+                      className={`lg:px-3 flex items-center gap-4  text-left px-6 py-3 rounded-4xl font-medium lg:text-[0.85rem] text-[3vw] w-full bg-[#EEF6FF]  
                     `}
                       // onClick={() => handleSelect(ele, 'pricing')}
                     >
