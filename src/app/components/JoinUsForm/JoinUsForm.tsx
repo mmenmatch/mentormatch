@@ -30,6 +30,7 @@ export const JoinUsForm = () => {
   const stepperCount = useJoinUsStepper((state) => state?.stepperCount)
   const nextStep = useJoinUsStepper((state) => state?.nextStep)
   const BackStep = useJoinUsStepper((state) => state?.BackStep)
+  const setStepperCount = useJoinUsStepper((state) => state?.setStepperCount)
 
   const [dir, setDir] = useState(1) // 1 = forward, -1 = back
   const variants = {
@@ -248,7 +249,7 @@ export const JoinUsForm = () => {
 
   const onSubmit = async (data: FormData) => {
     const params = new URLSearchParams(window.location.search)
-    const eventId = crypto.randomUUID()
+    const eventId = crypto?.randomUUID()
 
     const payload = {
       ...data,
@@ -276,7 +277,8 @@ export const JoinUsForm = () => {
         body: JSON.stringify(payload),
       })
       if (!res.ok) throw new Error('Submission failed')
-      goNext()
+      setStepperCount(18)
+    
       // Google Ads conversion
       window.gtag?.('event', 'conversion', {
         send_to: 'AW-11284198205/Lm3eCMyY5eIbEL3m3IQq',
@@ -304,7 +306,7 @@ export const JoinUsForm = () => {
   }
 
   return (
-    <div className="bg-white lg:min-w-120 w-full max-w-120 flex flex-col rounded-xl">
+    <div className="bg-white w-full min-w-0 max-w-[480px] flex flex-col rounded-xl">
       {isParent ? (
         <p className="text-center text-[#5B6488] text-[0.8rem] font-medium border-b border-[#E3E8F5] py-3 ">
           Help us match your child to the right tutor.{' '}
@@ -324,6 +326,7 @@ export const JoinUsForm = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="min-w-0"
           >
             {stepperCount === 0 && (
               <div className="flex flex-col gap-4">
@@ -741,13 +744,13 @@ export const JoinUsForm = () => {
                     )}
                   </div>
                 </div>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 w-full">
                   <p className="m-0 lg:text-[1.2rem] text-[4.5vw]  text-[#0E1B4D] leading-[140%] lg:leading-8  font-medium">
                     {isParent ? 'What’s your phone number?' : 'What’s your parent’s phone number?'}
                   </p>
-                  <div className="w-full flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2 w-full">
+                  <div className="w-full flex flex-wrap justify-start lg:gap-2.5  gap-2 mt-2 ">
                     {detectedCountry && (
-                      <div className="flex flex-col gap-2 mb-4 w-full">
+                      <div className="flex flex-col gap-2 mb-4 w-full max-w-full">
                         <Controller
                           name="phone"
                           control={control}
@@ -758,10 +761,7 @@ export const JoinUsForm = () => {
                               value={value}
                               onChange={onChange}
                               autoComplete="new-password"
-                              className={`phone-input-wrapper ${errors?.phone ? 'phone-error' : ''} text-base`}
-                              numberInputProps={{
-                                className: 'text-base',
-                              }}
+                              className={`phone-input-wrapper ${errors?.phone ? 'phone-error' : ''}`}
                             />
                           )}
                         />
