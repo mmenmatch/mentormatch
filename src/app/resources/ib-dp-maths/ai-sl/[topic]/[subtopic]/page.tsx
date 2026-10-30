@@ -29,7 +29,7 @@ export function generateStaticParams() {
 export const metaData: any = {
   'number-and-algebra': {
     'arithmetic-sequences-finding-terms': {
-      metaTitle: 'Arithmetic Progression Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Arithmetic Progression Questions | IB AI SL ',
       metaDescription:
         'Arithmetic progression questions for IB Maths AI SL: find any term of an arithmetic sequence from the first term and common difference.',
       title: 'IB Maths AI SL 1.2 Arithmetic Sequences: Finding Terms',
@@ -37,7 +37,7 @@ export const metaData: any = {
         'Arithmetic progression questions start with two values: the first term and the common difference. These arithmetic sequence questions use them to find any term you are asked for.',
     },
     'arithmetic-sequences-nth-term-formula': {
-      metaTitle: 'Arithmetic Sequence nth Term Formula | IB AI SL | Mentor Match',
+      metaTitle: 'Arithmetic Sequence nth Term Formula | IB AI SL ',
       metaDescription:
         'Use the nth term formula of an arithmetic sequence in IB Maths AI SL: write the general term and use it to find any value in the sequence.',
       title: 'IB Maths AI SL 1.2 Arithmetic Sequence: nth Term Formula',
@@ -45,7 +45,7 @@ export const metaData: any = {
         'Every arithmetic sequence can be written with one formula: u = u₁ + (n − 1)d. These questions ask you to build that nth term formula from given information and use it.',
     },
     'arithmetic-series-sum-of-terms': {
-      metaTitle: 'Arithmetic Series Formula | IB Maths AI SL | Mentor Match',
+      metaTitle: 'Arithmetic Series Formula | IB Maths AI SL ',
       metaDescription:
         'Apply the arithmetic series formula in IB Maths AI SL to find the sum of the first n terms, with practice on choosing the right version.',
       title: 'IB Maths AI SL 1.2 Arithmetic Series: Sum of Terms',
@@ -53,7 +53,7 @@ export const metaData: any = {
         'The arithmetic series formula adds the terms of a sequence without listing them. These arithmetic series questions ask for the sum of the first n terms in both pure and applied settings.',
     },
     'bounds-and-inequalities': {
-      metaTitle: 'Upper and Lower Bounds Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Upper and Lower Bounds Questions | IB AI SL ',
       metaDescription:
         'Upper and lower bounds questions for IB Maths AI SL: find the bounds of rounded values, write them as inequalities and use them in calculations.',
       title: 'IB Maths AI SL 1.6 Bounds & Inequalities Questions',
@@ -61,7 +61,7 @@ export const metaData: any = {
         'A rounded measurement hides a range of possible values. These upper and lower bounds questions find that range and express it as an inequality.',
     },
     'percentage-error': {
-      metaTitle: 'Percentage Error Formula | IB Maths AI SL | Mentor Match',
+      metaTitle: 'Percentage Error Formula | IB Maths AI SL ',
       metaDescription:
         'Use the percentage error formula in IB Maths AI SL to compare an approximate value with the exact value, with mark scheme working.',
       title: 'IB Maths AI SL 1.6 Percentage Error Questions',
@@ -71,7 +71,7 @@ export const metaData: any = {
   },
   probability: {
     'venn-diagrams': {
-      metaTitle: 'Venn Diagram Probability Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Venn Diagram Probability Questions | IB AI SL ',
       metaDescription:
         'Venn diagram probability questions for IB Maths AI SL: complete the diagram, then find probabilities of unions, intersections and complements.',
       title: 'IB Maths AI SL 4.6 Venn Diagram Questions',
@@ -79,7 +79,7 @@ export const metaData: any = {
         'A Venn diagram shows how two events overlap, and most probability questions become simple once it is filled in correctly. These Venn diagram probability questions build that skill.',
     },
     'tree-diagrams': {
-      metaTitle: 'Tree Diagram Probability Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Tree Diagram Probability Questions | IB AI SL ',
       metaDescription:
         'Tree diagram probability questions for IB Maths AI SL: draw each stage, multiply along branches and add the outcomes you need.',
       title: 'IB Maths AI SL 4.6 Tree Diagram Questions',
@@ -87,7 +87,7 @@ export const metaData: any = {
         'A tree diagram breaks a probability problem into stages. These tree diagram probability questions ask you to draw the branches, multiply along them and combine the outcomes.',
     },
     'conditional-probability': {
-      metaTitle: 'Conditional Probability Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Conditional Probability Questions | IB AI SL ',
       metaDescription:
         'Conditional probability for IB Maths AI SL: find P(A | B) from tables, Venn diagrams and tree diagrams, with mark scheme working.',
       title: 'IB Maths AI SL 4.6 Conditional Probability Questions',
@@ -95,7 +95,7 @@ export const metaData: any = {
         'Conditional probability narrows the sample space to the outcomes you already know have happened. These conditional probability questions use tables, Venn diagrams and tree diagrams.',
     },
     'binomial-distribution': {
-      metaTitle: 'Binomial Distribution Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Binomial Distribution Questions | IB AI SL ',
       metaDescription:
         'Binomial distribution questions for IB Maths AI SL: check the conditions and find exact and cumulative probabilities on your GDC.',
       title: 'IB Maths AI SL 4.8 Binomial Distribution Questions',
@@ -103,7 +103,7 @@ export const metaData: any = {
         'The binomial distribution models a fixed number of independent trials with two outcomes. These binomial distribution questions turn on one decision: P(X = k) or a cumulative probability.',
     },
     'binomial-distribution-mean-and-sd': {
-      metaTitle: 'Binomial Distribution Mean and Variance | Mentor Match',
+      metaTitle: 'Binomial Distribution Mean and Variance ',
       metaDescription:
         'Find the binomial distribution mean and variance in IB Maths AI SL using E(X) = np and Var(X) = np(1 − p), then the standard deviation.',
       title: 'IB Maths AI SL 4.8 Binomial Distribution: Mean & Standard Deviation',
@@ -113,7 +113,7 @@ export const metaData: any = {
   },
   trigonometry: {
     'sinusoidal-models-real-world-context': {
-      metaTitle: 'Sinusoidal Function Models | IB Maths AI SL | Mentor Match',
+      metaTitle: 'Sinusoidal Function Models | IB Maths AI SL ',
       metaDescription:
         'Model real situations with a sinusoidal function in IB Maths AI SL: tides, daylight and temperature, using amplitude, period and principal axis.',
       title: 'IB Maths AI SL 2.5 Sinusoidal Models: Real-World Context',
@@ -121,7 +121,7 @@ export const metaData: any = {
         'A sinusoidal function models anything that repeats, from tide heights to hours of daylight. These questions apply the model to real data and interpret each parameter.',
     },
     'sine-rule': {
-      metaTitle: 'Sine Rule Questions: Finding Sides | IB AI SL | Mentor Match',
+      metaTitle: 'Sine Rule Questions: Finding Sides | IB AI SL ',
       metaDescription:
         'Use the sine rule in IB Maths AI SL to find a missing side in a non-right-angled triangle, with mark scheme working for every answer.',
       title: 'IB Maths AI SL 3.2 Sine Rule Questions: Finding Sides',
@@ -129,7 +129,7 @@ export const metaData: any = {
         'The sine rule finds a missing side whenever you know an angle and its opposite side. These sine rule questions practise setting up the ratio and solving it accurately.',
     },
     'cosine-rule': {
-      metaTitle: 'Cosine Rule Questions: Finding Sides | IB AI SL | Mentor Match',
+      metaTitle: 'Cosine Rule Questions: Finding Sides | IB AI SL ',
       metaDescription:
         'Use the cosine rule in IB Maths AI SL to find a missing side when you know two sides and the included angle, with mark scheme working.',
       title: 'IB Maths AI SL 3.2 Cosine Rule Questions: Finding Sides',
@@ -137,7 +137,7 @@ export const metaData: any = {
         'The cosine rule finds the third side of a triangle from two sides and the angle between them. These cosine rule questions practise substituting correctly and evaluating in one step.',
     },
     'area-of-a-triangle': {
-      metaTitle: 'Area of a Triangle Using Sine | IB Maths AI SL | Mentor Match',
+      metaTitle: 'Area of a Triangle Using Sine | IB Maths AI SL ',
       metaDescription:
         'Find the area of a triangle using sine in IB Maths AI SL with ½ab sin C, including problems where you must find a side or angle first.',
       title: 'IB Maths AI SL 3.2 Area of a Triangle Questions',
@@ -145,7 +145,7 @@ export const metaData: any = {
         'When a triangle has no right angle, its area comes from two sides and the angle between them. These questions find the area of a triangle using sine: A = ½ab sin C.',
     },
     'multi-step-trigonometry-problems': {
-      metaTitle: 'Sine and Cosine Rule Problems | IB Maths AI SL | Mentor Match',
+      metaTitle: 'Sine and Cosine Rule Problems | IB Maths AI SL ',
       metaDescription:
         'Multi-step sine and cosine rule problems for IB Maths AI SL: combine both rules and triangle area in longer exam-style questions.',
       title: 'IB Maths AI SL 3.2 Multi-Step Trigonometry Problems',
@@ -155,7 +155,7 @@ export const metaData: any = {
   },
   'geometry-and-trigonometry': {
     'bearings-and-navigation': {
-      metaTitle: 'Bearings Questions | IB Maths AI SL | Mentor Match',
+      metaTitle: 'Bearings Questions | IB Maths AI SL ',
       metaDescription:
         'Bearings questions for IB Maths AI SL: measure three-figure bearings clockwise from north and solve navigation problems with trigonometry.',
       title: 'IB Maths AI SL 3.3 Bearings and Navigation Questions',
@@ -163,7 +163,7 @@ export const metaData: any = {
         'Bearings are measured clockwise from north as three-figure angles. These bearings questions combine that convention with bearings trigonometry to find distances and directions.',
     },
     'angles-of-elevation-and-depression': {
-      metaTitle: 'Angle of Elevation and Depression | IB AI SL | Mentor Match',
+      metaTitle: 'Angle of Elevation and Depression | IB AI SL ',
       metaDescription:
         'Angle of elevation and depression questions for IB Maths AI SL: draw the diagram, then solve with right-angled trigonometry.',
       title: 'IB Maths AI SL 3.3 Angles of Elevation and Depression Questions',
@@ -171,7 +171,7 @@ export const metaData: any = {
         'Every angle of elevation and depression is measured from the horizontal. These angle of elevation and depression questions practise drawing the diagram and solving the triangle.',
     },
     'arc-length-and-sector-area': {
-      metaTitle: 'Arc Length Formula & Sector Area | IB AI SL | Mentor Match',
+      metaTitle: 'Arc Length Formula & Sector Area | IB AI SL ',
       metaDescription:
         'Use the arc length formula and sector area formula in IB Maths AI SL, with angles in degrees and mark scheme working for each answer.',
       title: 'IB Maths AI SL 3.4 Arc Length & Sector Area Questions',
@@ -179,7 +179,7 @@ export const metaData: any = {
         'The arc length formula takes a fraction of the circumference: l = (θ/360) × 2πr. These questions apply it alongside the sector area formula.',
     },
     'arc-length-and-sector-area-finding-radius': {
-      metaTitle: 'Area of a Sector: Finding the Radius | IB AI SL | Mentor Match',
+      metaTitle: 'Area of a Sector: Finding the Radius | IB AI SL ',
       metaDescription:
         'Work backwards from the area of a sector or an arc length to find the radius in IB Maths AI SL, with mark scheme working.',
       title: 'IB Maths AI SL 3.4 Arc Length & Sector Area: Finding the Radius',
@@ -187,7 +187,7 @@ export const metaData: any = {
         'These questions reverse the usual process: you are given the area of a sector or an arc length and must find the radius.',
     },
     'arc-length-and-sector-area-finding-angle': {
-      metaTitle: 'Arc Length Questions: Finding θ | IB AI SL | Mentor Match',
+      metaTitle: 'Arc Length Questions: Finding θ | IB AI SL ',
       metaDescription:
         'Arc length questions for IB Maths AI SL that ask for the angle at the centre, given the arc length or sector area and the radius.',
       title: 'IB Maths AI SL 3.4 Arc Length & Sector Area: Finding the Angle',
@@ -197,7 +197,7 @@ export const metaData: any = {
   },
   'statistical-testing': {
     'chi-squared-goodness-of-fit': {
-      metaTitle: 'Chi Square Goodness of Fit Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Chi Square Goodness of Fit Questions | IB AI SL ',
       metaDescription:
         'Chi square goodness of fit questions for IB Maths AI SL: state hypotheses, find expected frequencies and draw a conclusion from the p-value.',
       title: 'IB Maths AI SL 4.11 Chi-Squared Goodness of Fit Questions',
@@ -205,7 +205,7 @@ export const metaData: any = {
         'A chi square goodness of fit test asks whether observed data match an expected distribution. These questions take you through every stage, from hypotheses to conclusion.',
     },
     'chi-squared-test-for-independence': {
-      metaTitle: 'Chi Square Test for Independence | IB AI SL | Mentor Match',
+      metaTitle: 'Chi Square Test for Independence | IB AI SL ',
       metaDescription:
         'Chi square test for independence questions for IB Maths AI SL: expected frequencies, degrees of freedom and conclusions in context.',
       title: 'IB Maths AI SL 4.11 Chi-Squared Test for Independence Questions',
@@ -213,7 +213,7 @@ export const metaData: any = {
         'The chi square test for independence asks whether two variables in a contingency table are related. These questions practise expected frequencies, degrees of freedom and conclusions.',
     },
     'chi-squared-test-for-independence-full-test': {
-      metaTitle: 'Chi Square Test Questions: Full Test | IB AI SL | Mentor Match',
+      metaTitle: 'Chi Square Test Questions: Full Test | IB AI SL ',
       metaDescription:
         'Full chi square test questions for IB Maths AI SL, from hypotheses to conclusion, set out the way the mark scheme expects.',
       title: 'IB Maths AI SL 4.11 Chi-Squared Test for Independence: Full Test',
@@ -221,7 +221,7 @@ export const metaData: any = {
         'These chi square test questions take a test for independence from start to finish, in the order the mark scheme rewards: hypotheses, expected values, statistic, p-value, conclusion.',
     },
     'one-sample-t-test': {
-      metaTitle: 'One-Sample t Test Questions | IB Maths AI SL | Mentor Match',
+      metaTitle: 'One-Sample t Test Questions | IB Maths AI SL ',
       metaDescription:
         'One-sample t test questions for IB Maths AI SL: test a population mean, find the p-value on your GDC and conclude in context.',
       title: 'IB Maths AI SL 4.11 One-Sample t-Test Questions',
@@ -229,7 +229,7 @@ export const metaData: any = {
         'A one-sample t test compares a sample mean with a claimed population mean when the population standard deviation is unknown. These t test questions practise the full method.',
     },
     'two-sample-t-test': {
-      metaTitle: 'Two-Sample t Test Questions | IB AI SL | Mentor Match',
+      metaTitle: 'Two-Sample t Test Questions | IB AI SL ',
       metaDescription:
         'Two-sample t test questions for IB Maths AI SL: compare the means of two independent groups, find the p-value and conclude in context.',
       title: 'IB Maths AI SL 4.11 Two-Sample t-Test Questions',
