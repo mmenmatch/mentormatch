@@ -22,17 +22,17 @@ export const Form = () => {
 
   const [country, setCountry] = useState('in')
 
-  useEffect(() => {
-    fetch('https://ipapi.co/json/')
-      .then((res) => res.json())
-      .then((data: any) => {
-        if (data?.country_code) {
-          setCountry(data.country_code.toLowerCase())
-        }
-      })
-  }, [])
+  // useEffect(() => {
+  //   fetch('https://ipapi.co/json/')
+  //     .then((res) => res.json())
+  //     .then((data: any) => {
+  //       if (data?.country_code) {
+  //         setCountry(data.country_code.toLowerCase())
+  //       }
+  //     })
+  // }, [])
   const onSubmit = (data: any) => {
-    console.log('Submitted:', data)
+    // console.log('Submitted:', data)
   }
   const isValidRef = useRef(false)
 
@@ -78,8 +78,7 @@ export const Form = () => {
           <label
             className={`w-full px-1 -top-2.5 left-3 bg-white text-[0.75rem] font-normal ${errors?.phone?.message ? 'text-red-600' : ''}`}
           >
-            PHONE NUMBER{' '}
-            <span className="ml-0.5 text-red-600 text-[0.85rem]">*</span>
+            PHONE NUMBER <span className="ml-0.5 text-red-600 text-[0.85rem]">*</span>
           </label>
 
           <Controller

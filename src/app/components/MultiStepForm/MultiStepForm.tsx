@@ -23,6 +23,8 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
   const isActive = (index: any) => (index == activeStep ? 'bg-blue-700' : '')
   const isActiveBorder = (index: any) => (index == activeStep ? 'border-blue-700' : '')
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
+  const [city, setCity] = useState()
+
   const pricingLabel =
     detectedCountry === 'AE'
       ? 'Our fee is 70-100 AED/hour'
@@ -105,8 +107,10 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
     fetch('https://ipinfo.io/json')
       .then((res) => res.json())
       .then((data: any) => {
+        console.log('country', data)
         if (data?.country) {
           setDetectedCountry(data?.country as Country)
+          setCity(data?.city)
         }
       })
       .catch(() => {
@@ -114,6 +118,7 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
       })
   }, [])
 
+  console.log('city', city)
   const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
   const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'CBSE', 'ICSE', 'Other']
   const {
@@ -141,8 +146,7 @@ export const MultiStepForm = ({ TotalCount = 6, type, utm_campaign }: any) => {
 
   const subject = watch('subject')
   const curriculum = watch('curriculum')
-    const pricingAccepted = watch('pricingAccepted')
-
+  const pricingAccepted = watch('pricingAccepted')
 
   const isStep4Valid = subject && curriculum
   const selectedDate = watch('date')
