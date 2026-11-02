@@ -134,7 +134,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-var pixelId = window.location.pathname.includes('book-demo-v2')||window.location.pathname.includes('book-demo-v3')||window.location.pathname.includes('join-us')
+var pixelId = window.location.pathname.includes('book-demo-v2')||window.location.pathname.includes('book-demo-v3')||window.location.pathname.includes('join-us')||window.location.pathname.includes('free-trial-uae')
   ? '1308698014213503'
   : '971978435599656';
 
