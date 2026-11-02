@@ -17,7 +17,7 @@ export const GpsFrameWork = () => {
       id: 2,
       title: 'Personalise',
       description:
-        'Your child gets a master mentor for personalised 1-on-1 sessions, twice a week.',
+        "1:1 lessons tailored to your child's IB or IGCSE curriculum and learning needs.",
       img: PersonalizeImage,
       color: '#006CFF',
       altText: 'Mentor Match Gap, Personalise, Score — physics tuition and online tuition',
@@ -25,8 +25,7 @@ export const GpsFrameWork = () => {
     {
       id: 3,
       title: 'Score',
-      description:
-        'Every month, we test your child under real exam conditions so you know exactly where they stand.',
+      description: "Monthly assessments track your child's progress under real exam conditions.",
       img: ScoreImage,
       color: '#10C36C',
       altText: 'Mentor Match Gap, Personalise, Score — physics tuition and online tuition',

@@ -4,7 +4,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import type { Country } from 'react-phone-number-input'
 
-export const Faqs = () => {
+export const Faqs = ({ type = '' }) => {
   const [openIndex, setOpenIndex] = useState(null)
   const [detectedCountry, setDetectedCountry] = useState<Country>('AE') // fallback
 
@@ -69,7 +69,48 @@ export const Faqs = () => {
         'Yes. Alongside math tuition, we offer physics tuition from dedicated science tutors, matched the same way as our math tutors — by curriculum and grade. ',
     },
   ]
-
+  const indiaFaqData = [
+    {
+      question: 'Which subjects and curricula do you cover?',
+      answer:
+        'We provide private tuition classes online in Maths, Physics and Science for IB and IGCSE students in Grades 6 to 12.',
+    },
+    {
+      question: 'How does our 1:1 online tuition work?',
+      answer:
+        'Each online tuition session lasts 55 minutes, with one student, one dedicated tutor and a live interactive whiteboard. Whether your child attends online maths classes or a science session, the lesson is recorded for review.',
+    },
+    {
+      question: 'How do you match my child with the right tutor?',
+      answer:
+        "We begin with a short diagnostic to understand your child's learning needs, then match them with a tutor trained in their IB or IGCSE curriculum. If the match isn't right, we can arrange a rematch at no extra cost.",
+    },
+    {
+      question: 'How will I know if my child is actually improving?',
+      answer:
+        'Each month, your child takes an assessment under real exam conditions to track progress in Maths, Physics and Science. Every 8 sessions, you receive a progress report showing what has improved.',
+    },
+    {
+      question: 'How flexible are the session timings?',
+      answer:
+        "Session timings can be arranged around your child's school schedule and time zone. Most students attend 2 to 3 sessions a week. You can reschedule with 24 hours' notice.",
+    },
+    {
+      question: 'What does it cost, and what if it does not work out?',
+      answer: priceFaq,
+    },
+    {
+      question: 'Is online math tuition more effective than in-person or group classes?',
+      answer:
+        "Online maths tuition gives your child a tutor's full attention throughout each session, unlike group classes. Each online maths class is recorded so your child can revisit the lesson during revision.",
+    },
+    {
+      question: 'Do you offer physics and science tuition alongside math?',
+      answer:
+        "Yes. Alongside Maths tuition, we offer online science tuition and Physics lessons with tutors matched to your child's curriculum and grade.",
+    },
+  ]
+  const COUNTRY_BASED_FAQ = type == 'india' ? indiaFaqData : faqData
   return (
     <div className="bg-[#EEF6FF] py-12 md:py-16">
       <div className="max-w-360 mx-auto md:px-16 px-4 ">
@@ -77,7 +118,7 @@ export const Faqs = () => {
           Questions Parents Ask Before They Book
         </h2>
         <div className="flex flex-col gap-4 max-w-[70rem] mx-auto">
-          {faqData.map((faq, index) => {
+          {COUNTRY_BASED_FAQ.map((faq, index) => {
             const isOpen = openIndex === index
 
             return (

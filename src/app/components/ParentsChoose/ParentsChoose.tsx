@@ -6,7 +6,7 @@ import Parents2 from '../../../../public/assets/Images/pc-2.webp'
 import Parents3 from '../../../../public/assets/Images/pc-3.webp'
 import Parents4 from '../../../../public/assets/Images/pc-4.webp'
 
-export const ParentsChoose = () => {
+export const ParentsChoose = ({ type = '' }: { type?: any }) => {
   const PARENTS_DATA = [
     {
       name: Parents1,
@@ -30,6 +30,30 @@ export const ParentsChoose = () => {
     },
   ]
 
+  const PARENTS_DATA_INDIA = [
+    {
+      name: Parents1,
+      title: 'Same Tutor, Start to Finish',
+      description: 'The tutor from your free demo is the tutor who continues.',
+    },
+    {
+      name: Parents2,
+      title: 'Curriculum Vetted Tutors',
+      description: `IB & IGCSE-Trained Tutors — Tutors are trained in the specific IB or IGCSE curriculum your child is learning.`,
+    },
+    {
+      name: Parents3,
+      title: 'Unused Sessions Refunded',
+      description: `Any sessions you haven't taken are refunded within 48 hours.`,
+    },
+    {
+      name: Parents4,
+      title: 'Flexible Scheduling',
+      description: 'Reschedule with 24-hour notice. Emergencies are handled within 2 hours.',
+    },
+  ]
+  const COUNTRY_TYPE = type == 'india' ? PARENTS_DATA_INDIA : PARENTS_DATA
+
   return (
     <div className="py-12 md:py-16">
       <div className="max-w-360 md:px-16 px-4 mx-auto">
@@ -45,7 +69,7 @@ export const ParentsChoose = () => {
           </p> */}
         </div>
         <div className="md:w-full w-full flex flex-col justify-center gap-4 items-center">
-          {PARENTS_DATA?.map((data) => (
+          {COUNTRY_TYPE?.map((data) => (
             <div className="flex md:items-center items-start  gap-4 md:w-220 ">
               <span className="md:max-w-[60px] max-w-[30px]">
                 <Image
