@@ -19,8 +19,21 @@ function FreeTrialForm() {
 
   const Grade = ['6', '7', '8', '9', '10', '11', '12']
   const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
-  const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'CBSE', 'ICSE', 'Other']
-  const CITY = ['Bangalore', 'Mumbai', 'Delhi', 'Hyderabad', 'Pune', 'Ahmedabad', 'Other']
+  const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'Other']
+  const CITY = [
+    'Bangalore',
+    'Mumbai',
+    'Delhi',
+    'Hyderabad',
+    'Pune',
+    'Gurugram',
+    'Ahmedabad',
+    'Chennai',
+    'Coimbatore',
+    'Jaipur',
+    'Noida',
+    'Other',
+  ]
   const PRICES_OPTIONS = ['Yes, find my child’s tutor', 'No, this is above my budget']
   const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
     const pricingLabel =
