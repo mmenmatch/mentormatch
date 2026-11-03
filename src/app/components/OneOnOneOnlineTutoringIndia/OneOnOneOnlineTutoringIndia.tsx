@@ -28,7 +28,7 @@ export default function OneOnOneOnlineTutoringIndia() {
             </h1>
             <p className="md:text-[1rem] text-[4vw] leading-[130%]  font-medium ">
               Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students. Learn
-              with curriculum-trained tutors and see measurable progress. Your first class is free.
+              with curriculum-trained tutors.
             </p>
             <div className="md:w-[100%] w-full relative flex justify-end items-end">
               <Image
