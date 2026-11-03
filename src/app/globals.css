@@ -71,6 +71,14 @@ label{
   background-image: url('../../public/assets/Images/primary-paper-1.webp');
 }
 
+.ib-page {
+  background-color: #006CFF;
+  background-image: url('../../public/assets/Images/qb-geometry-bg-transparent.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
 
 /* Phone input overrides */
 .phone-input-wrapper .PhoneInput {

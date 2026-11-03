@@ -13,11 +13,11 @@ import { Metadata } from 'next'
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
 
 export const metadata: Metadata = {
-  title: '1:1 Tutoring That Helps You Excel at School | MentorMatch',
-  description: `Start early before it's too late. Foundation weak? Concepts unclear? Same tutor fixes it all. CBSE, IB, IGCSE, AP. Book a free trial.`,
+  title: '1:1 Online Tuition for IB & IGCSE | Mentor Match',
+  description: `Find 1:1 online tuition for IB and IGCSE students in Maths, Physics and Science. Learn with curriculum-trained tutors. Book your free first class.`,
   openGraph: {
-    title: '1:1 Tutoring That Helps You Excel at School | MentorMatch',
-    description: `Start early before it's too late. Foundation weak? Concepts unclear? Same tutor fixes it all. CBSE, IB, IGCSE, AP. Book a free trial.`,
+    title: '1:1 Online Tuition for IB & IGCSE | Mentor Match',
+    description: `Find 1:1 online tuition for IB and IGCSE students in Maths, Physics and Science. Learn with curriculum-trained tutors. Book your free first class.`,
     images: [
       {
         url: 'https://cdn.prod.website-files.com/645c85e0705da20f26b63b8e/6a21389fc30b68ec4cafbe77_OG.webp', // absolute URL

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice">
+<g font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#FFFFFF" fill-opacity="0.13" font-weight="600">
+<text x="60" y="80" font-size="26" transform="rotate(-4 60 80)">∫ x² dx = x³/3 + C</text>
+<text x="620" y="56" font-size="22">sin²θ + cos²θ = 1</text>
+<text x="1160" y="84" font-size="26" transform="rotate(3 1160 84)">e<tspan dy="-10" font-size="16">iπ</tspan><tspan dy="10"> + 1 = 0</tspan></text>
+
+<text x="40" y="260" font-size="22" transform="rotate(4 40 260)">Σ r = n(n + 1)/2</text>
+<text x="1180" y="250" font-size="24" transform="rotate(-3 1180 250)">z = (x − μ)/σ</text>
+
+<text x="30" y="440" font-size="30">π</text>
+<text x="1360" y="430" font-size="30" transform="rotate(8 1360 430)">∞</text>
+
+<text x="20" y="620" font-size="22" transform="rotate(-3 20 620)">a² + b² = c²</text>
+<text x="1320" y="610" font-size="28">θ</text>
+
+<text x="120" y="720" font-size="22" transform="rotate(3 120 720)">dy/dx = 2x</text>
+<text x="560" y="728" font-size="22">x = (−b ± √(b² − 4ac)) / 2a</text>
+<text x="1110" y="716" font-size="22" transform="rotate(-4 1110 716)">A = πr²</text>
+</g>
+</svg>
