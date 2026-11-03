@@ -13,11 +13,11 @@ import OneOnOneOnlineTutoringIndia from '../components/OneOnOneOnlineTutoringInd
 export const metadata: Metadata = {
   title: '1:1 Online Tuition for IB,IGCSE and Cambridge | Mentor Match',
   description:
-    'Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students from 4 to 12 grade. Learn with curriculum-trained tutors.',
+    'Personalised 1:1 Maths, Physics and Science tuition for IB and Cambridge students from 4 to 12 grade. Learn with curriculum-trained tutors.',
   openGraph: {
     title: '1:1 Online Tuition for IB,IGCSE and Cambridge | Mentor Match',
     description:
-      'Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students from 4 to 12 grade. Learn with curriculum-trained tutors.',
+      'Personalised 1:1 Maths, Physics and Science tuition for IB and Cambridge students from 4 to 12 grade. Learn with curriculum-trained tutors.',
     images: [
       {
         url: 'https://cdn.prod.website-files.com/645c85e0705da20f26b63b8e/6a21389fc30b68ec4cafbe77_OG.webp', // absolute URL
