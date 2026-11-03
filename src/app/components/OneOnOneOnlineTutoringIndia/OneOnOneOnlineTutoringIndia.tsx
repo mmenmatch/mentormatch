@@ -11,14 +11,14 @@ export default function OneOnOneOnlineTutoringIndia() {
       <div className="mx-auto flex bg-[linear-gradient(180deg,_#0285FA_-20.54%,_#006CFF_50.79%)]">
         <div className="max-w-360 w-full flex md:flex-row flex-col lg:gap-4 gap-8 mx-auto md:px-16 px-4 md:py-12 py-10 ">
           <div className="md:w-[55%] w-full text-white flex flex-col justify-center md:gap-6 gap-4">
-            <h1 className="md:text-[2.5rem] m-0 text-[6.5vw] leading-[150%] font-bold">
+            <h1 className="md:text-[2.25rem] m-0 text-[6.5vw] leading-[150%] font-bold">
               <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
                 {' '}
                 1:1 Online Tuition
               </span>{' '}
               That Actually Improves
               <span className="relative ml-2  inline-block">
-                IB & IGCSE Grades
+                IB & Cambridge Grades
                 <Image
                   src={TutorLine}
                   alt="tutorline"
@@ -27,8 +27,8 @@ export default function OneOnOneOnlineTutoringIndia() {
               </span>
             </h1>
             <p className="md:text-[1rem] text-[4vw] leading-[130%]  font-medium ">
-              Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students. Learn
-              with curriculum-trained tutors.
+              Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students from 4
+              to 12 grade. Learn with curriculum-trained tutors.
             </p>
             <div className="md:w-[100%] w-full relative flex justify-end items-end">
               <Image

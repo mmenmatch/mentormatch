@@ -39,7 +39,7 @@ export const ParentsChoose = ({ type = '' }: { type?: any }) => {
     {
       name: Parents2,
       title: 'Curriculum Vetted Tutors',
-      description: `IB & IGCSE-Trained Tutors — Tutors are trained in the specific IB or IGCSE curriculum your child is learning.`,
+      description: `Tutors are trained in the specific IB or IGCSE curriculum your child is learning.`,
     },
     {
       name: Parents3,

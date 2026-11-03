@@ -12,7 +12,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 const Grade = ['6', '7', '8', '9', '10', '11', '12']
 const SUBJECT = ['Maths', ' Science', 'English']
-const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'Other']
+const CURRICULUM = ['IB', 'British/Cambridge/IGCSE']
 const PRICE = ['Yes, find my child’s tutor', 'No, this is above my budget']
 
 const schema = z.object({

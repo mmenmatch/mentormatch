@@ -19,7 +19,7 @@ function FreeTrialForm() {
 
   const Grade = ['6', '7', '8', '9', '10', '11', '12']
   const SUBJECT = ['Math', 'Physics', 'Chemistry', 'Biology', 'Combined Science']
-  const CURRICULUM = ['IB', 'British/Cambridge/IGCSE', 'Other']
+  const CURRICULUM = ['IB', 'British/Cambridge/IGCSE']
   const CITY = [
     'Bangalore',
     'Mumbai',

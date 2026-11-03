@@ -11,13 +11,13 @@ import { FooterBanner } from '../components/FooterBanner/FooterBanner'
 // import OneOnOneOnlineTutoringV2 from '../components/OneOnOneOnlineTutoringV2/OneOnOneOnlineTutoringV2'
 import OneOnOneOnlineTutoringIndia from '../components/OneOnOneOnlineTutoringIndia/OneOnOneOnlineTutoringIndia'
 export const metadata: Metadata = {
-  title: '1:1 Online Tuition for IB & IGCSE | Mentor Match',
+  title: '1:1 Online Tuition for IB,IGCSE and Cambridge | Mentor Match',
   description:
-    'Find 1:1 online tuition for IB and IGCSE students in Maths, Physics and Science. Learn with curriculum-trained tutors. Book your free first class.',
+    'Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students from 4 to 12 grade. Learn with curriculum-trained tutors.',
   openGraph: {
-    title: '1:1 Online Tuition for IB & IGCSE | Mentor Match',
+    title: '1:1 Online Tuition for IB,IGCSE and Cambridge | Mentor Match',
     description:
-      'Find 1:1 online tuition for IB and IGCSE students in Maths, Physics and Science. Learn with curriculum-trained tutors. Book your free first class.',
+      'Personalised 1:1 Maths, Physics and Science tuition for IB and IGCSE students from 4 to 12 grade. Learn with curriculum-trained tutors.',
     images: [
       {
         url: 'https://cdn.prod.website-files.com/645c85e0705da20f26b63b8e/6a21389fc30b68ec4cafbe77_OG.webp', // absolute URL
@@ -40,7 +40,7 @@ export default function page() {
           <StudentsGrowthCard type={'india'} />
           <ParentsChoose type={'india'} />
           <TutorSection />
-          <Faqs />
+          <Faqs type="india" />
           <Footer />
           <FooterBanner />
         </div>
