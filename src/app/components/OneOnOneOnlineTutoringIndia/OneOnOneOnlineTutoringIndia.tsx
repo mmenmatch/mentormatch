@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 import StepperFormIndia from '../StepperFormIndia/StepperFormIndia'
+import StepperForm from '../StepperForm/StepperForm'
 import GoogleTag from '../../../../public/assets/Images/google-tag.png'
 import OnlineTutoring from '../../../../public/assets/Images/one-one-v3.webp'
 
@@ -40,7 +41,7 @@ export default function OneOnOneOnlineTutoringIndia() {
             </div>
           </div>
           <div className="md:w-[50%] flex flex-col justify-center gap-4 items-center ">
-            <StepperFormIndia />
+            <StepperForm />
             <div className="w-full flex gap-8 justify-center items-center">
               <div className="w-50 ">
                 <Image src={GoogleTag} alt="hero" loading="lazy" />
