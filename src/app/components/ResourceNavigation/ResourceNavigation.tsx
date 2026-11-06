@@ -13,7 +13,7 @@ export function ResourceNavigation({ data, type }: any) {
   const activeSubtopic = params?.subtopic
 
   return (
-    <aside className="w-full min-h-full shrink-0 border-b border-slate-200 bg-white  lg:sticky lg:top-16  lg:w-85 lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <aside className="w-full min-h-full shrink-0 border-b border-slate-200 bg-white  lg:sticky lg:top-16  lg:w-85 lg:overflow-y-auto lg:border-b-0 lg:border-r pb-8">
       {/* <Link
         href="/resources/ib-dp-maths/aa-sl"
         className="block rounded-lg px-5 py-3 font-semibold text-slate-900"
@@ -44,7 +44,7 @@ export function ResourceNavigation({ data, type }: any) {
               {topic.subtopics.map((subtopic: any, subInd: number) => (
                 <li
                   key={subtopic.slug}
-                  className={`transition text-wrap hover:bg-blue-100 hover:py-2 hover:pl-2 hover:border-l-4 hover:font-bold text-[1rem] hover:border-[#006CFF] hover:rounded-l hover:text-[#006CFF]  ${subtopic.slug?.toLowerCase() == activeSubtopic ? 'bg-blue-100 py-2 pl-2 border-l-4 border-[#006CFF] rounded-l text-[#006CFF] font-semibold' : 'text-slate-500'}`}
+                  className={`transition text-wrap hover:bg-blue-100 hover:py-2 hover:pl-2 hover:border-l-4 hover:font-semibold text-[0.9rem] hover:border-[#006CFF] hover:rounded-l hover:text-[#006CFF]  ${subtopic.slug?.toLowerCase() == activeSubtopic ? 'bg-blue-100 py-2 pl-2 border-l-4 border-[#006CFF] rounded-l text-[#006CFF] font-semibold' : 'text-slate-500'}`}
                 >
                   <Link
                     href={`/resources/ib-dp-maths/${type}/${topic.slug}/${subtopic.slug}`}

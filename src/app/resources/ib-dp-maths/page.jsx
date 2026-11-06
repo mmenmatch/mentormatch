@@ -11,7 +11,7 @@ function page() {
       name: 'AA HL',
       subtext: 'Analysis & Approach',
       subtext2: 'Higher Level',
-      questions: '100+',
+      questions: '1,529',
       type: 'HL',
       tag: 'Analysis',
       link: 'https://www.mentormatch.com/app/resources/ib-dp-maths/aa-sl/number/standard-form',
