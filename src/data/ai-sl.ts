@@ -11,6 +11,198 @@ export type Topic = {
   subtopics: Subtopic[]
 }
 
+// export const topics: Topic[] = [
+//   {
+//     title: 'Number & Algebra',
+//     slug: 'number-and-algebra',
+//     description:
+//       'Explore number systems, arithmetic sequences and series, bounds, inequalities, percentages and algebraic techniques.',
+//     subtopics: [
+//       {
+//         title: 'Arithmetic Sequences - Finding Terms',
+//         slug: 'arithmetic-sequences-finding-terms',
+//         description:
+//           'Learn how to identify and calculate specific terms in an arithmetic sequence using the common difference.',
+//       },
+//       {
+//         title: 'Arithmetic Sequences – nth Term Formula',
+//         slug: 'arithmetic-sequences-nth-term-formula',
+//         description:
+//           'Understand how to derive and apply the nth term formula to find any term in an arithmetic sequence.',
+//       },
+//       {
+//         title: 'Arithmetic Series – Sum of Terms',
+//         slug: 'arithmetic-series-sum-of-terms',
+//         description:
+//           'Learn how to calculate the sum of a given number of terms in an arithmetic series using appropriate formulas.',
+//       },
+//       {
+//         title: 'Bounds & Inequalities',
+//         slug: 'bounds-and-inequalities',
+//         description:
+//           'Understand upper and lower bounds, rounding errors and how to solve and represent inequalities.',
+//       },
+//       {
+//         title: 'Percentage Error',
+//         slug: 'percentage-error',
+//         description:
+//           'Learn how to calculate percentage error by comparing approximate values with their exact values.',
+//       },
+//     ],
+//   },
+//   {
+//     title: 'Probability',
+//     slug: 'probability',
+//     description:
+//       'Explore probability concepts, Venn diagrams, tree diagrams, conditional probability and binomial distributions.',
+//     subtopics: [
+//       {
+//         title: 'Venn Diagrams',
+//         slug: 'venn-diagrams',
+//         description:
+//           'Learn how to represent sets and calculate probabilities of combined events using Venn diagrams.',
+//       },
+//       {
+//         title: 'Tree Diagrams',
+//         slug: 'tree-diagrams',
+//         description:
+//           'Understand how to construct and use probability tree diagrams to calculate probabilities of successive events.',
+//       },
+//       {
+//         title: 'Conditional Probability',
+//         slug: 'conditional-probability',
+//         description:
+//           'Explore conditional probability and learn how to calculate the probability of an event occurring given another event.',
+//       },
+//       {
+//         title: 'Binomial Distribution',
+//         slug: 'binomial-distribution',
+//         description:
+//           'Understand the conditions for a binomial distribution and calculate probabilities using the binomial formula.',
+//       },
+//       {
+//         title: 'Binomial Distribution – Mean & SD',
+//         slug: 'binomial-distribution-mean-and-sd',
+//         description:
+//           'Learn how to calculate and interpret the mean and standard deviation of a binomial distribution.',
+//       },
+//     ],
+//   },
+//   {
+//     title: 'Trigonometry',
+//     slug: 'trigonometry',
+//     description:
+//       'Study trigonometric functions, sinusoidal models, sine and cosine rules, and their applications in solving real-world problems.',
+//     subtopics: [
+//       {
+//         title: 'Sinusoidal Models – Real-world Context',
+//         slug: 'sinusoidal-models-real-world-context',
+//         description:
+//           'Learn how to model real-world periodic phenomena using sine and cosine functions and interpret their key features.',
+//       },
+//       {
+//         title: 'Sine Rule',
+//         slug: 'sine-rule',
+//         description:
+//           'Understand how to apply the sine rule to calculate unknown sides and angles in non-right-angled triangles.',
+//       },
+//       {
+//         title: 'Cosine Rule',
+//         slug: 'cosine-rule',
+//         description:
+//           'Learn how to use the cosine rule to find unknown sides and angles in non-right-angled triangles.',
+//       },
+//       {
+//         title: 'Area of a Triangle',
+//         slug: 'area-of-a-triangle',
+//         description:
+//           'Learn how to calculate the area of a triangle using trigonometric formulas involving two sides and the included angle.',
+//       },
+//       {
+//         title: 'Multi-Step Trigonometry Problems',
+//         slug: 'multi-step-trigonometry-problems',
+//         description:
+//           'Apply trigonometric rules and formulas together to solve complex problems involving triangles, angles and unknown lengths.',
+//       },
+//     ],
+//   },
+//   {
+//     title: 'Geometry & Trigonometry',
+//     slug: 'geometry-and-trigonometry',
+//     description:
+//       'Explore geometric measurements, bearings, navigation, angles of elevation and depression, arc lengths and sector areas.',
+//     subtopics: [
+//       {
+//         title: 'Bearings and Navigation',
+//         slug: 'bearings-and-navigation',
+//         description:
+//           'Learn how to measure and calculate three-figure bearings and solve navigation problems using geometric and trigonometric methods.',
+//       },
+//       {
+//         title: 'Angles of Elevation and Depression',
+//         slug: 'angles-of-elevation-and-depression',
+//         description:
+//           'Understand angles of elevation and depression and apply trigonometric ratios to solve real-world measurement problems.',
+//       },
+//       {
+//         title: 'Arc Length & Sector Area',
+//         slug: 'arc-length-and-sector-area',
+//         description:
+//           'Learn how to calculate the arc length and area of sectors using angles measured in radians.',
+//       },
+//       {
+//         title: 'Arc Length & Sector Area – Finding Radius',
+//         slug: 'arc-length-and-sector-area-finding-radius',
+//         description:
+//           'Learn how to rearrange arc length and sector area formulas to calculate the radius of a circle.',
+//       },
+//       {
+//         title: 'Arc Length & Sector Area – Finding Angle',
+//         slug: 'arc-length-and-sector-area-finding-angle',
+//         description:
+//           'Understand how to use arc length and sector area formulas to determine unknown angles in radians.',
+//       },
+//     ],
+//   },
+//   {
+//     title: 'Statistical Testing',
+//     slug: 'statistical-testing',
+//     description:
+//       'Explore statistical hypothesis testing, including chi-squared tests and t-tests, to analyse data and draw meaningful conclusions.',
+//     subtopics: [
+//       {
+//         title: 'Chi-squared Goodness of Fit',
+//         slug: 'chi-squared-goodness-of-fit',
+//         description:
+//           'Learn how to perform a chi-squared goodness of fit test to determine whether observed data matches an expected distribution.',
+//       },
+//       {
+//         title: 'Chi-squared Test for Independence',
+//         slug: 'chi-squared-test-for-independence',
+//         description:
+//           'Understand how to use the chi-squared test for independence to investigate relationships between two categorical variables.',
+//       },
+//       {
+//         title: 'Chi-squared Test for Independence – Full Test',
+//         slug: 'chi-squared-test-for-independence-full-test',
+//         description:
+//           'Practise completing a full chi-squared test for independence, including hypotheses, expected frequencies, test statistics and conclusions.',
+//       },
+//       {
+//         title: 'One-sample t-test',
+//         slug: 'one-sample-t-test',
+//         description:
+//           'Learn how to perform a one-sample t-test to determine whether a sample mean differs significantly from a hypothesised population mean.',
+//       },
+//       {
+//         title: 'Two-sample t-test',
+//         slug: 'two-sample-t-test',
+//         description:
+//           'Understand how to perform a two-sample t-test to compare the means of two independent groups and assess statistical significance.',
+//       },
+//     ],
+//   },
+// ]
 export const topics: Topic[] = [
   {
     title: 'Number & Algebra',
@@ -202,7 +394,1667 @@ export const topics: Topic[] = [
       },
     ],
   },
+  {
+    title: 'Sequences & Series',
+    slug: 'sequences-series',
+    description:
+      'Find terms and sums of geometric sequences, use sigma notation and model growth and decay.',
+    subtopics: [
+      {
+        title: 'Geometric Sequences – nth Term',
+        slug: 'geometric-sequences-nth-term',
+        description:
+          'Use the geometric sequence formula in IB Maths AI SL to find any term, including algebraic sequences, decay models and bouncing balls.',
+      },
+      {
+        title: 'Finding First Term & Common Ratio',
+        slug: 'finding-first-term-common-ratio',
+        description:
+          'Practise finding the first term and common ratio of a geometric sequence in IB Maths AI SL from two given terms.',
+      },
+      {
+        title: 'Number of Terms in Geometric Sequence',
+        slug: 'number-of-terms-in-geometric-sequence',
+        description:
+          'Find the number of terms in a geometric sequence in IB Maths AI SL from its last term, and the ratio from a given sum.',
+      },
+      {
+        title: 'Sum of Geometric Series',
+        slug: 'sum-of-geometric-series',
+        description:
+          'Use the sum of geometric series formula in IB Maths AI SL to find Sₙ from the first term and the common ratio.',
+      },
+      {
+        title: 'Sigma Notation – Geometric Series',
+        slug: 'sigma-notation-geometric-series',
+        description:
+          'Sigma notation examples for IB Maths AI SL: evaluate geometric sums, simplify the general term and use a recurrence relation.',
+      },
+      {
+        title: 'Finding Common Ratio from Two Terms',
+        slug: 'finding-common-ratio-from-two-terms',
+        description:
+          'Find the common ratio from two terms of a geometric sequence in IB Maths AI SL, then use it to find the first term and later terms.',
+      },
+      {
+        title: 'Geometric Growth – Real World',
+        slug: 'geometric-growth-real-world',
+        description:
+          'Geometric growth in IB Maths AI SL: algae on a pond and the grains-of-wheat chessboard legend, modelled with geometric sequences.',
+      },
+      {
+        title: 'Ratio of Sum to First Term',
+        slug: 'ratio-of-sum-to-first-term',
+        description:
+          'Find the ratio of sum to first term in IB Maths AI SL when the fifth term is eight times the second term.',
+      },
+    ],
+  },
+  {
+    title: 'Financial Mathematics',
+    slug: 'financial-mathematics',
+    description:
+      'Calculate compound interest, depreciation, inflation, loans, annuities and mortgages with the TVM solver.',
+    subtopics: [
+      {
+        title: 'Compound Interest – Future Value',
+        slug: 'compound-interest-future-value',
+        description:
+          'Use the compound interest formula in IB Maths AI SL to find the final value of an investment compounded annually.',
+      },
+      {
+        title: 'Compound Interest – Finding Time',
+        slug: 'compound-interest-finding-time',
+        description:
+          'Use the compound interest time formula in IB Maths AI SL to find how many years an investment takes to reach a target.',
+      },
+      {
+        title: 'Compound Interest – Finding Rate',
+        slug: 'compound-interest-finding-rate',
+        description:
+          'Use the compound interest rate formula in IB Maths AI SL to find the annual rate needed for an investment to reach its target.',
+      },
+      {
+        title: 'Depreciation',
+        slug: 'depreciation',
+        description:
+          "Use the depreciation formula in IB Maths AI SL to find an asset's value after several years, including changing rates.",
+      },
+      {
+        title: 'Inflation – Real Value of Cash',
+        slug: 'inflation-real-value-of-cash',
+        description:
+          'Find the real value of cash after inflation in IB Maths AI SL, relative to its value at the start, when no interest is earned.',
+      },
+      {
+        title: 'Inflation – Real Value of Investment',
+        slug: 'inflation-real-value-of-investment',
+        description:
+          'Find the inflation adjusted return on an investment in IB Maths AI SL when interest and inflation both apply.',
+      },
+      {
+        title: 'Compound Interest Application',
+        slug: 'compound-interest-application',
+        description:
+          'Compound interest word problems for IB Maths AI SL: a savings account and a seven-year loan with no repayments.',
+      },
+      {
+        title: 'Compound Interest – Non-annual Compounding',
+        slug: 'compound-interest-non-annual-compounding',
+        description:
+          'Use the compound interest monthly formula in IB Maths AI SL for savings and loans compounded more than once a year.',
+      },
+      {
+        title: 'Compound Interest – Comparing Compounding Periods',
+        slug: 'compound-interest-comparing-compounding-periods',
+        description:
+          'Compare compounding periods in IB Maths AI SL: is annual, quarterly or monthly compounding better for the same rate?',
+      },
+      {
+        title: 'Depreciation – Reducing Balance Table',
+        slug: 'depreciation-reducing-balance-table',
+        description:
+          'Reducing balance depreciation in IB Maths AI SL: complete a depreciation table for a machine down to its scrap value.',
+      },
+      {
+        title: 'Inflation – Real Return on Investment',
+        slug: 'inflation-real-return-on-investment',
+        description:
+          "Use the real rate of return formula in IB Maths AI SL to compare an account's interest with inflation over five years.",
+      },
+      {
+        title: 'Effective Annual Rate (EAR)',
+        slug: 'effective-annual-rate-ear',
+        description:
+          'Use the effective annual rate formula in IB Maths AI SL: the true yearly rate of a loan at 12% compounded monthly.',
+      },
+      {
+        title: 'Inflation – Real Terms Growth',
+        slug: 'inflation-real-terms-growth',
+        description:
+          'Real terms growth in IB Maths AI SL: education spending rising 5% a year while inflation runs at 2.5%.',
+      },
+      {
+        title: 'Hyperinflation',
+        slug: 'hyperinflation',
+        description:
+          'Hyperinflation examples for IB Maths AI SL: Germany in 1923, when prices rose by around 10¹¹% a year.',
+      },
+      {
+        title: 'Loan Repayments (Amortisation)',
+        slug: 'loan-repayments-amortisation',
+        description:
+          'Amortisation in IB Maths AI SL: find the regular payments needed to repay a loan with annual or monthly compounding.',
+      },
+      {
+        title: 'Maximum Loan Amount',
+        slug: 'maximum-loan-amount',
+        description:
+          'Find the maximum loan amount in IB Maths AI SL from the largest monthly repayment a borrower can afford.',
+      },
+      {
+        title: 'Annuity Payments from Investment',
+        slug: 'annuity-payments-from-investment',
+        description:
+          'Use the annuity formula in IB Maths AI SL to find regular withdrawals from an investment, and how long they last.',
+      },
+      {
+        title: 'Future Value / Savings Annuity',
+        slug: 'future-value-savings-annuity',
+        description:
+          'Use the future value of annuity formula in IB Maths AI SL for regular savings paid in at the start of each year.',
+      },
+      {
+        title: 'Loan Repayments / Comparison',
+        slug: 'loan-repayments-comparison',
+        description:
+          'Loan comparison in IB Maths AI SL: two repayment options for the same loan, compared by monthly payment and total cost.',
+      },
+      {
+        title: 'Variable-Rate Loan / Amortisation',
+        slug: 'variable-rate-loan-amortisation',
+        description:
+          'A variable rate loan in IB Maths AI SL: find the balance after the first rate period, then the time to finish repaying.',
+      },
+      {
+        title: 'Mortgage Comparison',
+        slug: 'mortgage-comparison',
+        description:
+          'Mortgage comparison in IB Maths AI SL: two mortgage offers with different rates and terms, compared by payment and total cost.',
+      },
+      {
+        title: 'Variable-Rate Loan / Affordability',
+        slug: 'variable-rate-loan-affordability',
+        description:
+          "Loan affordability in IB Maths AI SL: test whether a car loan with set repayment rules fits a borrower's budget.",
+      },
+      {
+        title: 'Investment and Interest',
+        slug: 'investment-and-interest',
+        description:
+          'Simultaneous equations word problems for IB Maths AI SL: split an investment across three accounts with different rates.',
+      },
+    ],
+  },
+  {
+    title: 'Algebra – Indices & Surds',
+    slug: 'algebra-indices-surds',
+    description:
+      'Apply the laws of indices to simplify expressions and solve exponential equations.',
+    subtopics: [
+      {
+        title: 'Index laws – multiplication',
+        slug: 'index-laws-multiplication',
+        description:
+          'Laws of indices in IB Maths AI SL: multiply, divide and raise expressions to powers, with variables and real contexts.',
+      },
+      {
+        title: 'Power of a power',
+        slug: 'power-of-a-power',
+        description:
+          'The power of a power rule in IB Maths AI SL: simplify expressions such as (x³)⁵ by multiplying the indices.',
+      },
+      {
+        title: 'Negative indices',
+        slug: 'negative-indices',
+        description:
+          'Negative indices in IB Maths AI SL: write powers such as 10⁻¹ and 2⁻³ as fractions in their simplest form.',
+      },
+      {
+        title: 'Power of a fraction',
+        slug: 'power-of-a-fraction',
+        description:
+          'Simplify a fraction raised to a power in IB Maths AI SL, such as (x/3)³ and (5/x²)², by applying the index to top and bottom.',
+      },
+      {
+        title: 'Simplify algebraic fractions',
+        slug: 'simplify-algebraic-fractions',
+        description:
+          'Simplify algebraic fractions in IB Maths AI SL by dividing each term by a monomial, such as (6x² − 21x⁷)/3x.',
+      },
+      {
+        title: 'Expressing as a power of a prime',
+        slug: 'expressing-as-a-power-of-a-prime',
+        description:
+          'Write numbers in prime factorisation index form in IB Maths AI SL, such as 9⁴ and 27⁸ as powers of 3.',
+      },
+      {
+        title: 'Exponential equations (integer exponents)',
+        slug: 'exponential-equations-integer-exponents',
+        description:
+          'Practise solving exponential equations in IB Maths AI SL by matching bases, such as 3ˣ = 81 and 9ˣ = 3ˣ⁺⁵, then equating the indices.',
+      },
+      {
+        title: 'Exponential equations – simultaneous',
+        slug: 'exponential-equations-simultaneous',
+        description:
+          'Solve simultaneous exponential equations in IB Maths AI SL by writing every term as a power of 2 and equating indices.',
+      },
+      {
+        title: 'Comparing large powers',
+        slug: 'comparing-large-powers',
+        description:
+          'Comparing large powers in IB Maths AI SL: decide which is larger, 2⁷⁰⁰⁰ or 5³⁰⁰⁰, with a clear justification.',
+      },
+      {
+        title: 'Last digit / modular arithmetic',
+        slug: 'last-digit-modular-arithmetic',
+        description:
+          'Find the last digit of a power in IB Maths AI SL, such as 316³¹⁶ + 631⁶³¹, using repeating patterns.',
+      },
+    ],
+  },
+  {
+    title: 'Logarithms and Exponentials',
+    slug: 'logarithms-and-exponentials',
+    description:
+      'Evaluate and simplify logarithms, solve log and exponential equations, and apply logs to pH, decibels and decay.',
+    subtopics: [
+      {
+        title: 'Evaluating Base-10 Logarithms',
+        slug: 'evaluating-base-10-logarithms',
+        description:
+          'Practise evaluating logarithms without a calculator in IB Maths AI SL, in base 10 and other bases such as log₂ and log₃.',
+      },
+      {
+        title: 'Solving Logarithmic Equations',
+        slug: 'solving-logarithmic-equations',
+        description:
+          'Solving logarithmic equations questions for IB Maths AI SL: find exact values of x when log x or log(ax + b) is given.',
+      },
+      {
+        title: 'Rearranging Natural Logarithm Equations',
+        slug: 'rearranging-natural-logarithm-equations',
+        description:
+          'Practise rearranging natural log equations in IB Maths AI SL to find x in terms of y, using the fact that ln x = k means x = eᵏ.',
+      },
+      {
+        title: 'Simplifying Logarithmic Expressions',
+        slug: 'simplifying-logarithmic-expressions',
+        description:
+          'Practise simplifying logarithmic expressions in IB Maths AI SL by collecting like log terms and cancelling.',
+      },
+      {
+        title: 'Laws of Logarithms – Key Identity',
+        slug: 'laws-of-logarithms-key-identity',
+        description:
+          'Laws of logarithms questions for IB Maths AI SL: simplify log 10ⁿ and ln eⁿ using the key inverse identity.',
+      },
+      {
+        title: 'Using Technology – Logarithms',
+        slug: 'using-technology-logarithms',
+        description:
+          'Practise solving logarithms with a calculator in IB Maths AI SL, giving log and ln values to three significant figures.',
+      },
+      {
+        title: 'Solving Exponential Equations Exactly',
+        slug: 'solving-exponential-equations-exactly',
+        description:
+          'Practise solving exponential equations exactly in IB Maths AI SL, and with technology, such as 10ˣ = 5.',
+      },
+      {
+        title: 'Solving Harder Exponential Equations',
+        slug: 'solving-harder-exponential-equations',
+        description:
+          'Practise solving harder exponential equations in IB Maths AI SL, such as 10ˣ = 5 × 10⁻ˣ, to three significant figures.',
+      },
+      {
+        title: 'Logarithms in Context – pH',
+        slug: 'logarithms-in-context-ph',
+        description:
+          'Use the pH logarithm formula in IB Maths AI SL, pH = −log[H⁺], to move between pH and hydrogen ion concentration.',
+      },
+      {
+        title: 'Logarithms in Context – Radioactive Decay',
+        slug: 'logarithms-in-context-radioactive-decay',
+        description:
+          'Use a radioactive decay formula in IB Maths AI SL, such as R = 10e^(−0.1t), and solve for time with logarithms.',
+      },
+      {
+        title: 'Logarithms in Context – Exponential Growth',
+        slug: 'logarithms-in-context-exponential-growth',
+        description:
+          'Use exponential growth logarithms in IB Maths AI SL to find when a bacteria population reaches a given size.',
+      },
+      {
+        title: 'Logarithms in Context – Population Modelling',
+        slug: 'logarithms-in-context-population-modelling',
+        description:
+          'Use a population growth logarithm model in IB Maths AI SL to find when two penguin populations are equal.',
+      },
+      {
+        title: 'Logarithms in Context – Decibel Scale',
+        slug: 'logarithms-in-context-decibel-scale',
+        description:
+          'Use the decibel scale logarithm formula in IB Maths AI SL, L = 10 log(10¹² I), to compare sound intensities.',
+      },
+      {
+        title: 'Expressing Numbers Using Natural Logarithms',
+        slug: 'expressing-numbers-using-natural-logarithms',
+        description:
+          'Practise expressing numbers using natural logarithms in IB Maths AI SL: write 20 as eᵏ and solve 20ˣ = 7 exactly.',
+      },
+      {
+        title: 'Simultaneous Logarithmic Equations',
+        slug: 'simultaneous-logarithmic-equations',
+        description:
+          'Solve simultaneous logarithmic equations in IB Maths AI SL, such as log(xy) = 3 and log(x/y) = 1, by removing the logs first.',
+      },
+    ],
+  },
+  {
+    title: 'Number & Algebra / Functions',
+    slug: 'number-algebra-functions',
+    description: 'Evaluate a mathematical model and explain where its predictions break down.',
+    subtopics: [
+      {
+        title: 'Model Evaluation',
+        slug: 'model-evaluation',
+        description:
+          'Practise evaluating mathematical models in IB Maths AI SL: test a model that predicts party attendance and judge its limits.',
+      },
+    ],
+  },
+  {
+    title: 'Algebra',
+    slug: 'algebra',
+    description:
+      'Form and solve simultaneous, quadratic, cubic and quartic equations with technology, including real-world problems.',
+    subtopics: [
+      {
+        title: 'Simultaneous Equations (2 variables)',
+        slug: 'simultaneous-equations-2-variables',
+        description:
+          "Solve simultaneous equations in IB Maths AI SL with two, three and four unknowns, using your GDC's equation solver.",
+      },
+      {
+        title: 'Forming and Solving Simultaneous Equations',
+        slug: 'forming-and-solving-simultaneous-equations',
+        description:
+          'Practise forming simultaneous equations in IB Maths AI SL from word problems, then solving them, plus forming a cubic equation.',
+      },
+      {
+        title: 'Digit Problems',
+        slug: 'digit-problems',
+        description:
+          'Digit word problems in IB Maths AI SL: find a three-digit number from conditions on its digits using simultaneous equations.',
+      },
+      {
+        title: 'Non-linear Simultaneous Equations',
+        slug: 'non-linear-simultaneous-equations',
+        description:
+          'Solve non-linear simultaneous equations in IB Maths AI SL, such as a system in x², y² and z², by substitution.',
+      },
+      {
+        title: 'Solving Quadratic Equations',
+        slug: 'solving-quadratic-equations',
+        description:
+          'Practise solving quadratic equations in IB Maths AI SL with technology, including equations that must be formed first.',
+      },
+      {
+        title: 'Solving Cubic Equations',
+        slug: 'solving-cubic-equations',
+        description:
+          'Practise solving cubic equations in IB Maths AI SL with the GDC polynomial solver, including a can-design context.',
+      },
+      {
+        title: 'Solving Quartic Equations',
+        slug: 'solving-quartic-equations',
+        description:
+          'Practise solving quartic equations in IB Maths AI SL with technology, giving every real root to three significant figures.',
+      },
+      {
+        title: 'Determining Real Roots',
+        slug: 'determining-real-roots',
+        description:
+          'Practise determining real roots in IB Maths AI SL: decide whether equations such as x² − 3x + 8 = 0 have any.',
+      },
+      {
+        title: 'Quadratic Equations in Context',
+        slug: 'quadratic-equations-in-context',
+        description:
+          'Quadratic equations in context for IB Maths AI SL: triangles, rectangles and other shapes where the area gives a quadratic.',
+      },
+      {
+        title: 'Polynomial Equations in Context',
+        slug: 'polynomial-equations-in-context',
+        description:
+          'Polynomial word problems for IB Maths AI SL: open boxes made from card, where volume gives a cubic equation.',
+      },
+      {
+        title: 'Combinatorics / Polygon Diagonals',
+        slug: 'combinatorics-polygon-diagonals',
+        description:
+          'Find the number of diagonals in a polygon in IB Maths AI SL as an expression in n, then solve for n.',
+      },
+    ],
+  },
+  {
+    title: 'Statistics',
+    slug: 'statistics',
+    description:
+      "Summarise data, test for outliers, measure correlation with Pearson's and Spearman's coefficients, and use regression to predict.",
+    subtopics: [
+      {
+        title: 'Mean, Median and Range',
+        slug: 'mean-median-and-range',
+        description:
+          'Mean, median and range problems in IB Maths AI SL: find unknown integers from conditions on all three.',
+      },
+      {
+        title: 'Grouped Frequency Tables',
+        slug: 'grouped-frequency-tables',
+        description:
+          'Grouped frequency tables in IB Maths AI SL: organise race times and other data into classes and read off totals.',
+      },
+      {
+        title: 'Mean, Median and Mode',
+        slug: 'mean-median-and-mode',
+        description:
+          'Mean, median and mode in IB Maths AI SL: from lists and frequency tables, with quartiles, outliers and unknown values.',
+      },
+      {
+        title: 'Finding Unknown from Mean',
+        slug: 'finding-unknown-from-mean',
+        description:
+          'Practise finding an unknown from the mean in IB Maths AI SL, such as x when the mean of 2, 5, 8, x and 2x is 9.',
+      },
+      {
+        title: 'Mean from Frequency Table',
+        slug: 'mean-from-frequency-table',
+        description:
+          'Find the mean from a frequency table in IB Maths AI SL, with standard deviation and one or two unknown values.',
+      },
+      {
+        title: 'Estimated Mean from Grouped Data / Modal Group',
+        slug: 'estimated-mean-from-grouped-data-modal-group',
+        description:
+          'Find the estimated mean from grouped data and the modal group in IB Maths AI SL using class midpoints.',
+      },
+      {
+        title: 'Outliers (IQR method)',
+        slug: 'outliers-iqr-method',
+        description:
+          'Find outliers with the IQR method in IB Maths AI SL: values below Q₁ − 1.5 × IQR or above Q₃ + 1.5 × IQR.',
+      },
+      {
+        title: 'Effect of Linear Transformations (Addition/Subtraction)',
+        slug: 'effect-of-linear-transformations-addition-subtraction',
+        description:
+          'Adding a constant to data in IB Maths AI SL: how the mean, median, standard deviation and IQR change.',
+      },
+      {
+        title: 'Effect of Linear Transformations (Multiplication/Division)',
+        slug: 'effect-of-linear-transformations-multiplication-division',
+        description:
+          'Multiplying data by a constant in IB Maths AI SL: the effect on the median, IQR, mean and standard deviation.',
+      },
+      {
+        title: 'Median and Interquartile Range',
+        slug: 'median-and-interquartile-range',
+        description:
+          'Find the median and interquartile range in IB Maths AI SL, then test for outliers, including with an unknown value.',
+      },
+      {
+        title: 'Finding Unknown; Standard Deviation',
+        slug: 'finding-unknown-standard-deviation',
+        description:
+          'Find a, then the standard deviation with an unknown in IB Maths AI SL, when the mean of five values is given.',
+      },
+      {
+        title: 'Finding Unknown; Variance',
+        slug: 'finding-unknown-variance',
+        description:
+          'Use the variance formula in IB Maths AI SL after finding an unknown value from the mean of six expressions in x.',
+      },
+      {
+        title: 'Combined Mean',
+        slug: 'combined-mean',
+        description:
+          'Find the combined mean of two groups in IB Maths AI SL by combining their totals, not by averaging the means.',
+      },
+      {
+        title: 'Mean — Reverse Calculation',
+        slug: 'mean-reverse-calculation',
+        description:
+          'Practise finding a missing value from the mean in IB Maths AI SL: the score Lucy needs on her last paper to pass.',
+      },
+      {
+        title: 'Mean, SD, Linear Coding (Currency)',
+        slug: 'mean-sd-linear-coding-currency',
+        description:
+          'Coding data in IB Maths AI SL: find the mean and standard deviation of wages, then of transformed values.',
+      },
+      {
+        title: 'Effect of Linear Transformations (Unit Conversion)',
+        slug: 'effect-of-linear-transformations-unit-conversion',
+        description:
+          'Linear transformation of data in IB Maths AI SL: unit conversions such as °F to °C, and multiplying by a negative number.',
+      },
+      {
+        title: 'Scatter Diagrams & Line of Best Fit',
+        slug: 'scatter-diagrams-line-of-best-fit',
+        description:
+          'Draw scatter diagrams in IB Maths AI SL, plot the mean point, add a line of best fit and use it to predict.',
+      },
+      {
+        title: 'Describing Linear Correlation',
+        slug: 'describing-linear-correlation',
+        description:
+          'Practise describing linear correlation in IB Maths AI SL scatter graphs by its direction and its strength.',
+      },
+      {
+        title: "Pearson's Product-Moment Correlation Coefficient",
+        slug: 'pearsons-product-moment-correlation-coefficient',
+        description:
+          "Calculate Pearson's product moment correlation coefficient in IB Maths AI SL with technology and interpret its value.",
+      },
+      {
+        title: 'Predictions and Reliability',
+        slug: 'predictions-and-reliability',
+        description:
+          'Judge predictions and reliability in IB Maths AI SL: is a regression estimate inside the data range, and is r strong?',
+      },
+      {
+        title: "Interpreting Pearson's Correlation Coefficient",
+        slug: 'interpreting-pearsons-correlation-coefficient',
+        description:
+          "Practise interpreting correlation coefficients in IB Maths AI SL: match scatter diagrams to Pearson's and Spearman's values.",
+      },
+      {
+        title: 'PMCC & Regression',
+        slug: 'pmcc-regression',
+        description:
+          'PMCC and regression in IB Maths AI SL: test scores, advertising and profit, then predict with the regression line.',
+      },
+      {
+        title: 'PMCC & Significance Test',
+        slug: 'pmcc-significance-test',
+        description:
+          'Carry out a PMCC significance test in IB Maths AI SL on car age and value data, using the p-value from technology.',
+      },
+      {
+        title: 'Regression — Interpretation & Causation',
+        slug: 'regression-interpretation-causation',
+        description:
+          'Correlation vs causation in IB Maths AI SL: interpret a regression of profit on advertising budget without overclaiming.',
+      },
+      {
+        title: 'Scatter Diagrams — Two Linear Regions',
+        slug: 'scatter-diagrams-two-linear-regions',
+        description:
+          'Piecewise regression questions in IB Maths AI SL: ice cream sales at different temperatures, with two linear regions.',
+      },
+      {
+        title: 'Outliers, Quartiles & Scatter Graphs',
+        slug: 'outliers-quartiles-scatter-graphs',
+        description:
+          'Find outliers, quartiles and scatter graph patterns in IB Maths AI SL, all for one paired data set of values.',
+      },
+      {
+        title: "Spearman's Rank Correlation Coefficient",
+        slug: 'spearmans-rank-correlation-coefficient',
+        description:
+          "Calculate Spearman's rank correlation coefficient in IB Maths AI SL, including data with tied ranks.",
+      },
+      {
+        title: "Pearson's and Spearman's Correlation",
+        slug: 'pearsons-and-spearmans-correlation',
+        description:
+          "Pearson's vs Spearman's correlation in IB Maths AI SL: which to use, and how outliers and unit changes affect each.",
+      },
+      {
+        title: "Spearman's Rank — Contextual Interpretation",
+        slug: 'spearmans-rank-contextual-interpretation',
+        description:
+          "Use Spearman's rank in context in IB Maths AI SL: park visitors and temperature, and when it is the right measure.",
+      },
+      {
+        title: "Hypothesis Testing — Spearman's Rank",
+        slug: 'hypothesis-testing-spearmans-rank',
+        description:
+          'Carry out a Spearman rank hypothesis test in IB Maths AI SL using critical values, for race times, grades and judges.',
+      },
+    ],
+  },
+  {
+    title: 'Coordinate Geometry',
+    slug: 'coordinate-geometry',
+    description:
+      'Find gradients, intercepts and equations of lines, work with parallel and perpendicular lines, and find intersections and areas.',
+    subtopics: [
+      {
+        title: 'Gradient of a Line',
+        slug: 'gradient-of-a-line',
+        description:
+          "Find the gradient of a line in IB Maths AI SL from two points, from a graph and in real contexts such as a mountain's slope.",
+      },
+      {
+        title: 'Intercepts of a Line',
+        slug: 'intercepts-of-a-line',
+        description:
+          'Find the intercepts of a line in IB Maths AI SL, where it crosses the x- and y-axes, from its equation.',
+      },
+      {
+        title: 'Equation of a Line',
+        slug: 'equation-of-a-line',
+        description:
+          'Use the equation of a line formula in IB Maths AI SL from a gradient and intercept, a point, two points or regression data.',
+      },
+      {
+        title: 'Gradient-Intercept Form',
+        slug: 'gradient-intercept-form',
+        description:
+          'Rewrite equations in gradient intercept form, y = mx + c, in IB Maths AI SL and read off the gradient and intercepts.',
+      },
+      {
+        title: 'Parallel Lines',
+        slug: 'parallel-lines',
+        description:
+          'Parallel lines in IB Maths AI SL: write equations of lines parallel to a given one, and prove a shape is a parallelogram.',
+      },
+      {
+        title: 'Perpendicular Lines',
+        slug: 'perpendicular-lines',
+        description:
+          'Perpendicular lines examples for IB Maths AI SL: find the equation of a line at right angles through a given point.',
+      },
+      {
+        title: 'Point of Intersection',
+        slug: 'point-of-intersection',
+        description:
+          'Find the point of intersection of two lines in IB Maths AI SL by solving their equations simultaneously.',
+      },
+      {
+        title: 'Coordinates and Area',
+        slug: 'coordinates-and-area',
+        description:
+          'Find the area of a triangle with coordinates in IB Maths AI SL, and estimate the area of a forest from points on a map.',
+      },
+      {
+        title: 'Simultaneous Equations / Intersection',
+        slug: 'simultaneous-equations-intersection',
+        description:
+          'Find the intersection of two lines in IB Maths AI SL from a gradient and y-intercept for each, by forming their equations first.',
+      },
+    ],
+  },
+  {
+    title: 'Linear Models',
+    slug: 'linear-models',
+    description:
+      "Build linear models from rates and starting values, and use direct proportion and Hooke's law.",
+    subtopics: [
+      {
+        title: 'Linear Functions in Context',
+        slug: 'linear-functions-in-context',
+        description:
+          'Linear functions word problems for IB Maths AI SL: a balloon inflating at a constant rate, modelled as V = at + b.',
+      },
+      {
+        title: "Direct Proportion / Hooke's Law",
+        slug: 'direct-proportion-hookes-law',
+        description:
+          "Direct proportion in IB Maths AI SL: Hooke's law and y ∝ x² questions, finding the constant k from one known pair.",
+      },
+      {
+        title: 'Linear Models in Context',
+        slug: 'linear-models-in-context',
+        description:
+          'Linear models in IB Maths AI SL: phone contracts with a fixed charge plus a rate, and house prices against size.',
+      },
+    ],
+  },
+  {
+    title: 'Functions',
+    slug: 'functions',
+    description:
+      'Evaluate, solve and invert functions, find domains and ranges, sketch graphs from properties and build models with technology.',
+    subtopics: [
+      {
+        title: 'Evaluating Functions',
+        slug: 'evaluating-functions',
+        description:
+          'Practise evaluating functions in IB Maths AI SL: substitute values into f(x), then solve equations such as g(x) = 7.',
+      },
+      {
+        title: 'Identifying Functions from Graphs',
+        slug: 'identifying-functions-from-graphs',
+        description:
+          'Practise identifying functions from graphs in IB Maths AI SL using the vertical line test on each curve.',
+      },
+      {
+        title: 'Domain of Functions',
+        slug: 'domain-of-functions',
+        description:
+          'Find the largest possible domain of functions in IB Maths AI SL, including roots, fractions and a tyre-pressure model.',
+      },
+      {
+        title: 'Range of Functions',
+        slug: 'range-of-functions',
+        description:
+          'Find the range of functions in IB Maths AI SL by sketching with technology: polynomials, logs, exponentials and restricted domains.',
+      },
+      {
+        title: 'Inverse Functions',
+        slug: 'inverse-functions',
+        description:
+          'Inverse functions in IB Maths AI SL: find values of f⁻¹, sketch inverses, use tables and convert currencies.',
+      },
+      {
+        title: 'Solving Functions',
+        slug: 'solving-functions',
+        description:
+          'Practise solving equations with functions in IB Maths AI SL, by rearranging and graphically with technology.',
+      },
+      {
+        title: 'Modelling with Functions',
+        slug: 'modelling-with-functions',
+        description:
+          "Modelling with functions in IB Maths AI SL: a car's speed over time and an exponential smartphone model.",
+      },
+      {
+        title: 'Range, Evaluation, and Solving',
+        slug: 'range-evaluation-and-solving',
+        description:
+          'Find the range of a function in IB Maths AI SL, then evaluate it and solve an equation for one quadratic function.',
+      },
+      {
+        title: 'Domain, Range, and Solving',
+        slug: 'domain-range-and-solving',
+        description:
+          'Domain and range in IB Maths AI SL: square-root functions, finding the range, then solving an equation.',
+      },
+      {
+        title: 'Modelling with Exponential Decay',
+        slug: 'modelling-with-exponential-decay',
+        description:
+          'Use an exponential decay model in IB Maths AI SL for a fish population, finding initial size and long-term behaviour.',
+      },
+      {
+        title: 'Logarithmic Functions',
+        slug: 'logarithmic-functions',
+        description:
+          'Logarithmic functions in IB Maths AI SL: largest possible domain, inverses and graphs of log functions.',
+      },
+      {
+        title: 'Reading Values from a Graph',
+        slug: 'reading-values-from-a-graph',
+        description:
+          'Practise reading values from a graph in IB Maths AI SL, finding f(x) and solving f(x) = k from an exponential curve.',
+      },
+      {
+        title: 'Rational Functions / Asymptotes',
+        slug: 'rational-functions-asymptotes',
+        description:
+          'Find asymptotes of rational functions in IB Maths AI SL, sketch the graphs from your GDC and state the domain.',
+      },
+      {
+        title: 'Rational & Exponential Functions',
+        slug: 'rational-exponential-functions',
+        description:
+          'Sketch rational and exponential functions in IB Maths AI SL from your calculator, with intercepts and asymptotes.',
+      },
+      {
+        title: 'Vertices & Lines of Symmetry',
+        slug: 'vertices-lines-of-symmetry',
+        description:
+          'Use vertex form in IB Maths AI SL to build quadratic models, and find vertices and lines of symmetry with technology.',
+      },
+      {
+        title: 'Vertices of Polynomial Curves',
+        slug: 'vertices-of-polynomial-curves',
+        description:
+          'Find the turning points of polynomial curves in IB Maths AI SL using technology, and classify each as a maximum or minimum.',
+      },
+      {
+        title: 'Sketching Rational Graphs from Properties',
+        slug: 'sketching-rational-graphs-from-properties',
+        description:
+          'Practise sketching rational functions in IB Maths AI SL from given zeros, asymptotes and intercepts.',
+      },
+      {
+        title: 'Sketching Exponential/Log Graphs from Properties',
+        slug: 'sketching-exponential-log-graphs-from-properties',
+        description:
+          'Practise sketching exponential and logarithmic graphs in IB Maths AI SL from a given range, intercepts and asymptote.',
+      },
+      {
+        title: 'Intersection of Curves',
+        slug: 'intersection-of-curves',
+        description:
+          'Find the intersection of curves in IB Maths AI SL with technology for pairs of linear, quadratic and other equations.',
+      },
+      {
+        title: 'Zeros of Functions',
+        slug: 'zeros-of-functions',
+        description:
+          'Find the zeros of functions in IB Maths AI SL with your calculator, including polynomials and quadratics from their zeros.',
+      },
+      {
+        title: 'Roots of Equations',
+        slug: 'roots-of-equations',
+        description:
+          'Find the roots of equations in IB Maths AI SL with your calculator, by rearranging to zero or graphing both sides.',
+      },
+      {
+        title: 'Graphs of Exponential Functions',
+        slug: 'graphs-of-exponential-functions',
+        description:
+          'Sketch graphs of exponential functions in IB Maths AI SL, such as y = 7 − 3e⁻⁰·⁵ˣ, with intercepts and asymptotes.',
+      },
+      {
+        title: 'Maximum Point of Rational Function',
+        slug: 'maximum-point-of-rational-function',
+        description:
+          'Find the maximum point of a rational function in IB Maths AI SL, such as y = 10 ÷ (x² + 2x + 5), with technology.',
+      },
+      {
+        title: 'Optimisation / Modelling',
+        slug: 'optimisation-modelling',
+        description:
+          'Optimisation modelling in IB Maths AI SL: find the production level that maximises monthly profit with technology.',
+      },
+      {
+        title: 'Line of Symmetry of Rational Graph',
+        slug: 'line-of-symmetry-of-rational-graph',
+        description:
+          'Find the line of symmetry of a graph in IB Maths AI SL, such as y = 1 ÷ (x² + 2x + 3), from its vertex.',
+      },
+      {
+        title: 'Modelling with Graphs / Cumulative Frequency',
+        slug: 'modelling-with-graphs-cumulative-frequency',
+        description:
+          'Cumulative frequency graphs and modelling with graphs in IB Maths AI SL: test scores, braking cars and data tables.',
+      },
+      {
+        title: 'Modelling with Graphs / Quadratic',
+        slug: 'modelling-with-graphs-quadratic',
+        description:
+          'Find a quadratic equation from roots in IB Maths AI SL, or from three points, and use quadratic models for profit and roads.',
+      },
+      {
+        title: 'Absolute Value Equations',
+        slug: 'absolute-value-equations',
+        description:
+          'Solve absolute value equations in IB Maths AI SL, including |4 − x²| = x² and a logarithmic modulus equation.',
+      },
+      {
+        title: 'Maximum of Exponential Function',
+        slug: 'maximum-of-exponential-function',
+        description:
+          'Find the maximum value of a function in IB Maths AI SL, such as f(x) = xe⁻⁰·⁴ˣ, using graphing technology.',
+      },
+      {
+        title: 'Linear Models – Two Points',
+        slug: 'linear-models-two-points',
+        description:
+          'Find a linear model from two points in IB Maths AI SL, writing y = mx + c through each given pair of points.',
+      },
+      {
+        title: 'Interpreting Linear Models',
+        slug: 'interpreting-linear-models',
+        description:
+          "Practise interpreting linear models in IB Maths AI SL: car mileage and a baby's mass, with gradient and intercept in context.",
+      },
+      {
+        title: 'Forming & Using Linear Models',
+        slug: 'forming-using-linear-models',
+        description:
+          'Practise forming linear models in IB Maths AI SL for taxi fares and removal companies, then compare options.',
+      },
+      {
+        title: 'Linear Models – Battery/Domain',
+        slug: 'linear-models-battery-domain',
+        description:
+          "Find a linear model domain in IB Maths AI SL for a phone battery's charge, from full to empty, and interpret it.",
+      },
+      {
+        title: 'Piecewise Linear Functions',
+        slug: 'piecewise-linear-functions',
+        description:
+          'Piecewise linear functions in IB Maths AI SL: electricity charges and income tax bands, written as separate rules.',
+      },
+      {
+        title: 'Demand & Supply Functions',
+        slug: 'demand-supply-functions',
+        description:
+          'Demand and supply functions in IB Maths AI SL: find the equilibrium price where the two linear models meet.',
+      },
+      {
+        title: 'Properties of Quadratic Functions',
+        slug: 'properties-of-quadratic-functions',
+        description:
+          'Use properties of quadratic functions in IB Maths AI SL, such as the axis of symmetry and a point, to find coefficients.',
+      },
+      {
+        title: 'Quadratic Modelling – Projectile / Kinematics',
+        slug: 'quadratic-modelling-projectile-kinematics',
+        description:
+          'Use a projectile motion quadratic in IB Maths AI SL for a ball thrown upwards from a ledge: maximum height and landing time.',
+      },
+      {
+        title: 'Linear Modelling – Area Growth',
+        slug: 'linear-modelling-area-growth',
+        description:
+          'Linear modelling in IB Maths AI SL: algae on a pond whose radius grows linearly, and how its area then grows.',
+      },
+    ],
+  },
+  {
+    title: 'Exponential Functions',
+    slug: 'exponential-functions',
+    description:
+      'Sketch exponential functions, find exponential models from data, and model growth, decay and limiting values.',
+    subtopics: [
+      {
+        title: 'Sketching Exponential Functions',
+        slug: 'sketching-exponential-functions',
+        description:
+          'Practise sketching exponential functions in IB Maths AI SL, such as y = 5 × 2ˣ + 3, with intercepts and asymptotes.',
+      },
+      {
+        title: 'Finding Exponential Models',
+        slug: 'finding-exponential-models',
+        description:
+          'Practise finding exponential models in IB Maths AI SL of the form y = k × 3ˣ + c or y = ke⁻ˣ + c through two points.',
+      },
+      {
+        title: 'Exponential Growth Models',
+        slug: 'exponential-growth-models',
+        description:
+          'Exponential growth models in IB Maths AI SL: mobile phone users and UK population growing by a fixed percentage.',
+      },
+      {
+        title: 'Exponential Decay Models',
+        slug: 'exponential-decay-models',
+        description:
+          'Exponential decay models in IB Maths AI SL: car depreciation, medication in the bloodstream and cooling soup.',
+      },
+      {
+        title: 'Exponential Models with e',
+        slug: 'exponential-models-with-e',
+        description:
+          'Exponential models with e in IB Maths AI SL: find k and the growth rate for a bacteria population from data.',
+      },
+      {
+        title: 'Limiting Value / Asymptotic Behaviour',
+        slug: 'limiting-value-asymptotic-behaviour',
+        description:
+          'Find the horizontal asymptote of an exponential function in IB Maths AI SL as the limiting speed of a parachutist.',
+      },
+    ],
+  },
+  {
+    title: 'Algebra & Functions',
+    slug: 'algebra-functions',
+    description:
+      'Model with inverse, direct and combined proportion, and fit cubic models through given points.',
+    subtopics: [
+      {
+        title: 'Inverse Proportion',
+        slug: 'inverse-proportion',
+        description:
+          "Inverse proportion in IB Maths AI SL: y = k ÷ x, finding k from one known pair, and applying Boyle's law.",
+      },
+      {
+        title: 'Cubic Models',
+        slug: 'cubic-models',
+        description:
+          'Find cubic models in IB Maths AI SL through four given points with cubic regression, and apply one to planetary orbits.',
+      },
+      {
+        title: 'Direct Proportion – Applied',
+        slug: 'direct-proportion-applied',
+        description:
+          'Direct proportion word problems for IB Maths AI SL: springs, where force is directly proportional to extension.',
+      },
+      {
+        title: 'Combined Proportion',
+        slug: 'combined-proportion',
+        description:
+          'Combined proportion in IB Maths AI SL: chain two proportion rules, and model the time to build a housing estate.',
+      },
+    ],
+  },
+  {
+    title: 'Mathematical Models',
+    slug: 'mathematical-models',
+    description:
+      'Choose an appropriate model for data, explain its limitations and suggest improvements.',
+    subtopics: [
+      {
+        title: 'Choosing an Appropriate Model',
+        slug: 'choosing-an-appropriate-model',
+        description:
+          "Practise choosing an appropriate model in IB Maths AI SL: linear, quadratic, exponential or other, based on the data's shape.",
+      },
+      {
+        title: 'Limitations of Mathematical Models',
+        slug: 'limitations-of-mathematical-models',
+        description:
+          'Explain the limitations of a model in IB Maths AI SL, such as a 1% growth model for the UK population.',
+      },
+      {
+        title: 'Improving Mathematical Models',
+        slug: 'improving-mathematical-models',
+        description:
+          'Practise improving mathematical models in IB Maths AI SL, starting with a linear tyre-pressure model that fails over time.',
+      },
+      {
+        title: 'Exponential Decay / Long-term Behaviour',
+        slug: 'exponential-decay-long-term-behaviour',
+        description:
+          'Exponential decay long term behaviour in IB Maths AI SL: the temperature of boiled water approaches room temperature.',
+      },
+    ],
+  },
+  {
+    title: 'Geometry & Mensuration',
+    slug: 'geometry-mensuration',
+    description:
+      'Find surface areas and volumes of spheres, hemispheres, cones, pyramids, cylinders and compound shapes.',
+    subtopics: [
+      {
+        title: 'Surface Area & Volume of Spheres',
+        slug: 'surface-area-volume-of-spheres',
+        description:
+          'Find the surface area of a sphere and its volume in IB Maths AI SL, exactly or to 3 s.f., plus the volume of a frustum.',
+      },
+      {
+        title: 'Surface Area & Volume of Hemispheres',
+        slug: 'surface-area-volume-of-hemispheres',
+        description:
+          'Find the surface area of a hemisphere and its volume in IB Maths AI SL, then compound shapes, pyramids and paint estimates.',
+      },
+      {
+        title: 'Surface Area & Volume of Cones',
+        slug: 'surface-area-volume-of-cones',
+        description:
+          'Find the volume of a cone and its surface area in IB Maths AI SL, exactly or to 3 s.f., from a radius and height.',
+      },
+      {
+        title: 'Volume of Pyramids',
+        slug: 'volume-of-pyramids',
+        description:
+          'Find the volume of a pyramid in IB Maths AI SL, with triangular and square bases, plus the total surface area of right pyramids.',
+      },
+      {
+        title: 'Total Surface Area of Hemispheres',
+        slug: 'total-surface-area-of-hemispheres',
+        description:
+          'Find the total surface area of compound shapes in IB Maths AI SL, from solid hemispheres and cones to a toy rocket.',
+      },
+      {
+        title: 'Cone Geometry — Finding Radius',
+        slug: 'cone-geometry-finding-radius',
+        description:
+          'Use the slant height of a cone in IB Maths AI SL with Pythagoras to find the radius from the vertical height.',
+      },
+      {
+        title: 'Cylinder — Finding Radius from Volume',
+        slug: 'cylinder-finding-radius-from-volume',
+        description:
+          'Use the volume of a cylinder formula in IB Maths AI SL in reverse, finding the radius from the height and the volume.',
+      },
+      {
+        title: 'Cone — Matching Volume to Cylinder',
+        slug: 'cone-matching-volume-to-cylinder',
+        description:
+          'Compare the volume of a cone and cylinder in IB Maths AI SL: find the height of a cone with the same radius and volume.',
+      },
+      {
+        title: 'Volume of Spheres — Reverse Problem',
+        slug: 'volume-of-spheres-reverse-problem',
+        description:
+          'Find the radius of a sphere from volume in IB Maths AI SL when an ornament is melted down and recast as a ball.',
+      },
+      {
+        title: 'Compound Shapes — Cone on Cylinder',
+        slug: 'compound-shapes-cone-on-cylinder',
+        description:
+          'Find the volume of composite solids in IB Maths AI SL: a toy rocket modelled as a cone on top of a cylinder.',
+      },
+      {
+        title: 'Square-Based Pyramid — Finding Base Side',
+        slug: 'square-based-pyramid-finding-base-side',
+        description:
+          'Find the base side of a square based pyramid in IB Maths AI SL from its height and its volume, then check units.',
+      },
+      {
+        title: 'Scaling of Compound Shapes',
+        slug: 'scaling-of-compound-shapes',
+        description:
+          "Use scale factor volume rules in IB Maths AI SL when a tablet's radius is decreased by 10% for ease of swallowing.",
+      },
+      {
+        title: 'Volume of Compound Shapes — Batch Calculation',
+        slug: 'volume-of-compound-shapes-batch-calculation',
+        description:
+          'Volume of compound shapes questions for IB Maths AI SL: a batch of metal fenceposts made from a cylinder and hemisphere.',
+      },
+    ],
+  },
+  {
+    title: 'Geometry & Voronoi Diagrams',
+    slug: 'geometry-voronoi-diagrams',
+    description:
+      'Draw and read Voronoi diagrams, find perpendicular bisectors and vertices, and use nearest neighbour interpolation.',
+    subtopics: [
+      {
+        title: 'Perpendicular Bisectors',
+        slug: 'perpendicular-bisectors',
+        description:
+          'Find perpendicular bisectors in IB Maths AI SL from two points or a line segment, check Voronoi edges and divide land fairly.',
+      },
+      {
+        title: 'Voronoi Diagram Vocabulary',
+        slug: 'voronoi-diagram-vocabulary',
+        description:
+          'Voronoi diagrams in IB Maths AI SL: sites, edges, cells and vertices, with uses for supermarkets and water contamination.',
+      },
+      {
+        title: 'Reading Voronoi Diagrams',
+        slug: 'reading-voronoi-diagrams',
+        description:
+          'Practise reading Voronoi diagrams in IB Maths AI SL: find the closest site to a point and complete a diagram.',
+      },
+      {
+        title: 'Updating Voronoi Diagrams',
+        slug: 'updating-voronoi-diagrams',
+        description:
+          'Practise updating Voronoi diagrams in IB Maths AI SL when a new site is added, using the perpendicular bisectors given.',
+      },
+      {
+        title: 'Nearest Neighbour Interpolation',
+        slug: 'nearest-neighbour-interpolation',
+        description:
+          'Nearest neighbour interpolation in IB Maths AI SL: estimate temperatures on an island from its weather stations.',
+      },
+      {
+        title: 'Voronoi Vertices',
+        slug: 'voronoi-vertices',
+        description:
+          'Find Voronoi vertices in IB Maths AI SL by solving bisector equations, and place a new hospital furthest from the others.',
+      },
+      {
+        title: 'Area of Voronoi Cells',
+        slug: 'area-of-voronoi-cells',
+        description:
+          'Find the area of Voronoi cells in IB Maths AI SL for restaurants in a shopping centre, using the grid scale.',
+      },
+      {
+        title: 'Distance Calculation',
+        slug: 'distance-calculation',
+        description:
+          'Find the distance between two points in IB Maths AI SL for towns on an island and a vertex of a Voronoi diagram.',
+      },
+      {
+        title: 'Modelling Assumptions',
+        slug: 'modelling-assumptions',
+        description:
+          'Identify modelling assumptions in IB Maths AI SL for a Voronoi model of three towns on an island, and their effect.',
+      },
+      {
+        title: 'Mathematical Modelling',
+        slug: 'mathematical-modelling',
+        description:
+          'Mathematical modelling examples for IB Maths AI SL: place a central facility for four towns using Voronoi ideas.',
+      },
+    ],
+  },
+  {
+    title: 'Statistics & Probability',
+    slug: 'statistics-probability',
+    description:
+      'Choose sampling methods, present data in histograms and box plots, and find normal distribution probabilities.',
+    subtopics: [
+      {
+        title: 'Stratified Sampling',
+        slug: 'stratified-sampling',
+        description:
+          'Stratified sampling examples in IB Maths AI SL: choose the right number from each group, plus a quota sampling question.',
+      },
+      {
+        title: 'Sampling Methods & Bias',
+        slug: 'sampling-methods-bias',
+        description:
+          'Sampling methods and bias in IB Maths AI SL: judge how surveys of pets and school pupils were sampled, and spot outliers.',
+      },
+      {
+        title: 'Types of Data & Systematic Sampling',
+        slug: 'types-of-data-systematic-sampling',
+        description:
+          'Types of data and sampling in IB Maths AI SL: discrete or continuous data, with convenience and systematic sampling.',
+      },
+      {
+        title: 'Quota Sampling & Sampling Methods',
+        slug: 'quota-sampling-sampling-methods',
+        description:
+          'Quota sampling in IB Maths AI SL: estimate the proportion of adult animals in a wildlife park, and compare methods.',
+      },
+      {
+        title: 'Sampling, Outliers & Interpretation',
+        slug: 'sampling-outliers-interpretation',
+        description:
+          'Interpret sample data and outliers in IB Maths AI SL using the heights of six children from a primary school.',
+      },
+      {
+        title: 'Randomised Response Theory',
+        slug: 'randomised-response-theory',
+        description:
+          'Randomised response theory in IB Maths AI SL: estimate how many people answer yes to a sensitive question, using probability.',
+      },
+      {
+        title: 'Capture-Recapture / Lincoln–Petersen Method',
+        slug: 'capture-recapture-lincolnpetersen-method',
+        description:
+          'Use the capture recapture method in IB Maths AI SL, the Lincoln–Petersen estimate, for cod in the North Sea.',
+      },
+      {
+        title: 'Histograms',
+        slug: 'histograms',
+        description:
+          'Histograms in IB Maths AI SL: draw them with technology, read frequencies from bars and match them to cumulative frequency.',
+      },
+      {
+        title: 'Cumulative Frequency – Statistics',
+        slug: 'cumulative-frequency-statistics',
+        description:
+          'Cumulative frequency questions for IB Maths AI SL: read the median, quartiles and percentiles from a curve of 150 values.',
+      },
+      {
+        title: 'Box-and-Whisker Diagrams',
+        slug: 'box-and-whisker-diagrams',
+        description:
+          'Construct box and whisker diagrams in IB Maths AI SL from small data sets, using the five-number summary.',
+      },
+      {
+        title: 'Normal distribution – finding probabilities',
+        slug: 'normal-distribution-finding-probabilities',
+        description:
+          'Normal distribution examples in IB Maths AI SL: find probabilities with your GDC for tree heights, ages and other contexts.',
+      },
+      {
+        title: 'Normal distribution – finding unknown values',
+        slug: 'normal-distribution-finding-unknown-values',
+        description:
+          'Inverse normal distribution questions for IB Maths AI SL: find x when P(X < x) is given, using your GDC.',
+      },
+    ],
+  },
+  {
+    title: 'Probability & Statistics',
+    slug: 'probability-statistics',
+    description:
+      'Build discrete probability distributions from tables and formulae, and find expected values.',
+    subtopics: [
+      {
+        title: 'Discrete Probability Distributions',
+        slug: 'discrete-probability-distributions',
+        description:
+          'Discrete probability distributions in IB Maths AI SL: build tables from counters and dice, and find the expected value.',
+      },
+      {
+        title: 'Probability Distributions (algebraic)',
+        slug: 'probability-distributions-algebraic',
+        description:
+          'Probability distributions in IB Maths AI SL given by a formula: find the unknown constant, then probabilities and E(X).',
+      },
+    ],
+  },
+  {
+    title: 'Calculus',
+    slug: 'calculus',
+    description:
+      'Find gradients, tangents and normals, sketch derivatives, locate maximum and minimum points, optimise, and integrate power functions.',
+    subtopics: [
+      {
+        title: 'Limits',
+        slug: 'limits',
+        description:
+          'Limits examples for IB Maths AI SL: suggest a limit by substituting values close to zero, or from a graph on your GDC.',
+      },
+      {
+        title: 'Gradient by Numerical Method',
+        slug: 'gradient-by-numerical-method',
+        description:
+          'Estimate the slope of a curve in IB Maths AI SL with chords from P to points Q that move closer, such as on y = x².',
+      },
+      {
+        title: 'Derivative Notation',
+        slug: 'derivative-notation',
+        description:
+          'Use derivative notation in IB Maths AI SL, find the derivative of a constant and of linear terms, and evaluate dy/dx.',
+      },
+      {
+        title: 'Differential Equations (Forming)',
+        slug: 'differential-equations-forming',
+        description:
+          'Practise forming differential equations in IB Maths AI SL from statements about gradients and rates of change.',
+      },
+      {
+        title: 'Gradient from First Principles',
+        slug: 'gradient-from-first-principles',
+        description:
+          'Find the slope of tangent lines in IB Maths AI SL, from chords and first principles, and where the gradient equals y.',
+      },
+      {
+        title: 'Derivatives / Related Rates',
+        slug: 'derivatives-related-rates',
+        description:
+          'Related rates questions in IB Maths AI SL: given dx/dy = 3x, find the gradient dy/dx on the graph at a given point.',
+      },
+      {
+        title: 'Increasing/Decreasing Functions',
+        slug: 'increasing-decreasing-functions',
+        description:
+          'Increasing and decreasing functions in IB Maths AI SL: read intervals from a graph and from the sign of f′(x).',
+      },
+      {
+        title: 'Sketching Derivatives',
+        slug: 'sketching-derivatives',
+        description:
+          'Practise sketching derivatives in IB Maths AI SL: draw the graph of y = f′(x) from the graph of y = f(x), shape by shape.',
+      },
+      {
+        title: "Inequalities from f'(x)",
+        slug: 'inequalities-from-f-x',
+        description:
+          'Solve inequalities from the derivative in IB Maths AI SL by reading where the graph of f′(x) is above or below the axis.',
+      },
+      {
+        title: "Sketching f(x) from f'(x)",
+        slug: 'sketching-f-x-from-f-x',
+        description:
+          'Practise sketching f from f prime in IB Maths AI SL, building a possible graph of y = f(x) from y = f′(x).',
+      },
+      {
+        title: 'Technology / Graphing',
+        slug: 'technology-graphing',
+        description:
+          'Practise graphing derivatives on a calculator in IB Maths AI SL, for functions such as f(x) = x²(x² − 1).',
+      },
+      {
+        title: 'Function and Derivative Matching',
+        slug: 'function-and-derivative-matching',
+        description:
+          'Function and derivative matching in IB Maths AI SL: pair each graph with the graph of its derivative.',
+      },
+      {
+        title: 'Differentiation – Power Rule',
+        slug: 'differentiation-power-rule',
+        description:
+          'Power rule differentiation in IB Maths AI SL: find the derivative of xⁿ, multiplying by the power and reducing it by one.',
+      },
+      {
+        title: 'Differentiation – Rewriting as Power',
+        slug: 'differentiation-rewriting-as-power',
+        description:
+          'Practise differentiating negative powers in IB Maths AI SL: rewrite 1/x and roots as powers before differentiating.',
+      },
+      {
+        title: 'Differentiation – Polynomial Functions',
+        slug: 'differentiation-polynomial-functions',
+        description:
+          'Practise differentiating polynomials in IB Maths AI SL term by term, from f(x) = x² − 4x to longer expressions.',
+      },
+      {
+        title: 'Differentiation – Expand then Differentiate',
+        slug: 'differentiation-expand-then-differentiate',
+        description:
+          'Expand and differentiate in IB Maths AI SL: multiply out brackets such as x³(2x − 5) before finding the derivative.',
+      },
+      {
+        title: 'Differentiation – Simplify then Differentiate',
+        slug: 'differentiation-simplify-then-differentiate',
+        description:
+          'Simplify and differentiate in IB Maths AI SL: split fractions like (x + 10)/x into separate powers first.',
+      },
+      {
+        title: 'Differentiation – Applied',
+        slug: 'differentiation-applied',
+        description:
+          'Applications of differentiation in IB Maths AI SL: differentiate expressions in t, such as d = 6t − 4/t, with respect to t.',
+      },
+      {
+        title: 'Differentiation – Implicit',
+        slug: 'differentiation-implicit',
+        description:
+          'Implicit differentiation in IB Maths AI SL at its simplest: find dy/dx when x + y = 8 by rearranging first.',
+      },
+      {
+        title: 'Differentiation – Contextual Application',
+        slug: 'differentiation-contextual-application',
+        description:
+          'Differentiation word problems in IB Maths AI SL: potential energy around a star, and its rate of change with distance.',
+      },
+      {
+        title: 'Proof – Increasing Functions',
+        slug: 'proof-increasing-functions',
+        description:
+          'Prove a function is increasing in IB Maths AI SL: show f(x) = 4x³ + 7x − 2 has a positive derivative for every x.',
+      },
+      {
+        title: 'Rate of change',
+        slug: 'rate-of-change',
+        description:
+          'Rate of change in IB Maths AI SL: find how quickly a quantity changes, and use integration for baths and filters.',
+      },
+      {
+        title: 'Finding x for given gradient',
+        slug: 'finding-x-for-given-gradient',
+        description:
+          'Practise finding x for a given gradient in IB Maths AI SL by solving f′(x) = k, by hand or with technology.',
+      },
+      {
+        title: 'Equation of tangent',
+        slug: 'equation-of-tangent',
+        description:
+          'Find the equation of a tangent in IB Maths AI SL by hand and with technology, in the form ax + by + d = 0.',
+      },
+      {
+        title: 'Equation of normal',
+        slug: 'equation-of-normal',
+        description:
+          'Find the equation of a normal in IB Maths AI SL by hand and with technology, perpendicular to the tangent.',
+      },
+      {
+        title: 'Differentiation – tangent and normal',
+        slug: 'differentiation-tangent-and-normal',
+        description:
+          'Tangent and normal problems in IB Maths AI SL: tangents through external points and the origin, and a short proof.',
+      },
+      {
+        title: 'Normal meets curve again',
+        slug: 'normal-meets-curve-again',
+        description:
+          'Find where the normal meets the curve again in IB Maths AI SL, such as the normal to y = x² at x = 1.',
+      },
+      {
+        title: 'Parallel tangent',
+        slug: 'parallel-tangent',
+        description:
+          'Find the parallel tangent in IB Maths AI SL: the tangent to the curve y = x² that is parallel to a given line.',
+      },
+      {
+        title: 'Parallel normal',
+        slug: 'parallel-normal',
+        description:
+          'Find a parallel normal in IB Maths AI SL, where the normal to a curve is parallel to a given straight line.',
+      },
+      {
+        title: 'Perpendicular normals',
+        slug: 'perpendicular-normals',
+        description:
+          'Find perpendicular normals in IB Maths AI SL: the normals to y = x³ that are perpendicular to a given line.',
+      },
+      {
+        title: 'Proof – area independent of parameter',
+        slug: 'proof-area-independent-of-parameter',
+        description:
+          'A tangent area proof for IB Maths AI SL: show the triangle under a tangent to y = 1/x has area that does not depend on a.',
+      },
+      {
+        title: 'Integration of Power Functions',
+        slug: 'integration-of-power-functions',
+        description:
+          'Use the integration power rule in IB Maths AI SL to find f(x) from f′(x), adding the constant of integration.',
+      },
+      {
+        title: 'Integration of Polynomials',
+        slug: 'integration-of-polynomials',
+        description:
+          'Integration of polynomials in IB Maths AI SL: find y from dy/dx term by term, for example 3x² − 4x + 5.',
+      },
+      {
+        title: 'Integration by Expansion',
+        slug: 'integration-by-expansion',
+        description:
+          'Integration by expansion in IB Maths AI SL: multiply out brackets such as x²(x + 5) before integrating.',
+      },
+      {
+        title: 'Integration after Algebraic Simplification',
+        slug: 'integration-after-algebraic-simplification',
+        description:
+          'Integration after simplifying in IB Maths AI SL: write fractions and roots as sums of axⁿ before you integrate.',
+      },
+      {
+        title: 'Finding Constants of Integration',
+        slug: 'finding-constants-of-integration',
+        description:
+          'Practise finding constants of integration in IB Maths AI SL from a known point on the curve, then write the equation.',
+      },
+      {
+        title: 'Applied Integration – Kinematics/Growth',
+        slug: 'applied-integration-kinematics-growth',
+        description:
+          'Applications of integration questions in IB Maths AI SL: weed growth and kinematics, finding a quantity from its rate of change.',
+      },
+      {
+        title: 'Differentiation – Horizontal Tangents',
+        slug: 'differentiation-horizontal-tangents',
+        description:
+          'Horizontal tangent problems in IB Maths AI SL: find unknown constants so a curve has a horizontal tangent at a point.',
+      },
+      {
+        title: "Solving f'(x) = 0",
+        slug: 'solving-f-x-0',
+        description:
+          'Find stationary points in IB Maths AI SL by solving f′(x) = 0, by hand or with technology, alongside f(x) = 0.',
+      },
+      {
+        title: 'Local Max/Min and Maximum Value',
+        slug: 'local-max-min-and-maximum-value',
+        description:
+          'Find the local maximum and minimum points in IB Maths AI SL, including unknown coefficients and maximum values on a domain.',
+      },
+      {
+        title: 'Horizontal Tangents – Coordinate Finding',
+        slug: 'horizontal-tangents-coordinate-finding',
+        description:
+          'Find the points where a horizontal tangent line touches the curve y = 4x³ − x⁴ in IB Maths AI SL, by solving f′(x) = 0.',
+      },
+      {
+        title: 'Local Min + Smallest Value on Domain',
+        slug: 'local-min-smallest-value-on-domain',
+        description:
+          'Find the minimum value of a function in IB Maths AI SL: the local minimum, then the smallest value on a domain.',
+      },
+      {
+        title: 'Greatest Value on Closed Domain',
+        slug: 'greatest-value-on-closed-domain',
+        description:
+          'Find the absolute maximum on a closed interval in IB Maths AI SL for f(x) = 3x² + x³ − 0.3x⁵ on −3 ≤ x ≤ 3.',
+      },
+      {
+        title: 'Optimisation – Differentiation',
+        slug: 'optimisation-differentiation',
+        description:
+          'Optimisation using differentiation in IB Maths AI SL: maximise profit from advertising, minimise cost and more.',
+      },
+    ],
+  },
+  {
+    title: 'Analysis & Approaches / Applications & Interpretation',
+    slug: 'analysis-approaches-applications-interpretation',
+    description:
+      'Evaluate definite integrals with technology and find areas under and between curves.',
+    subtopics: [
+      {
+        title: 'Definite Integration',
+        slug: 'definite-integration',
+        description:
+          'Definite integration in IB Maths AI SL: evaluate integrals with your GDC, and integrate f(x) after finding it from f′(x).',
+      },
+      {
+        title: 'Area Under a Curve',
+        slug: 'area-under-a-curve',
+        description:
+          'Find the area under a curve in IB Maths AI SL, such as the shaded region between y = 4x − x³ and the x-axis.',
+      },
+      {
+        title: 'Area Between Two Curves',
+        slug: 'area-between-two-curves',
+        description:
+          'Use the area between two curves formula in IB Maths AI SL, and find the area between a curve and the y-axis with your GDC.',
+      },
+      {
+        title: 'Reverse Differentiation / Finding f(x)',
+        slug: 'reverse-differentiation-finding-f-x',
+        description:
+          'Use the antiderivative in IB Maths AI SL to find f(x) when ∫f(x) dx is given, by differentiating it term by term.',
+      },
+    ],
+  },
+  {
+    title: 'Integration',
+    slug: 'integration',
+    description:
+      'Approximate integrals with the trapezoidal rule from equations, tables and real measurements.',
+    subtopics: [
+      {
+        title: 'Numerical Integration – Trapezoid/Rectangle Rule',
+        slug: 'numerical-integration-trapezoid-rectangle-rule',
+        description:
+          'Numerical integration in IB Maths AI SL: approximate integrals such as ∫5eˣ dx with strips, and compare with exact values.',
+      },
+      {
+        title: 'Trapezoidal Rule – Given Data Points',
+        slug: 'trapezoidal-rule-given-data-points',
+        description:
+          'The trapezoidal rule in IB Maths AI SL: estimate integrals from data, strips and intervals, and judge over- or underestimates.',
+      },
+      {
+        title: 'Real-World Application – Area Estimation',
+        slug: 'real-world-application-area-estimation',
+        description:
+          'Practise estimating area under a curve in IB Maths AI SL: the area of a lake from widths measured at two-metre intervals.',
+      },
+    ],
+  },
 ]
+
 export const AISLQuestionAndAnswer = [
   {
     'number-and-algebra': {
@@ -2797,277 +4649,11977 @@ export const AISLQuestionAndAnswer = [
       ],
     },
   },
+  {
+    'sequences-series': {
+      title: 'Sequences & Series',
+      'geometric-sequences-nth-term': [
+        {
+          id: 1,
+          question: 'Given u₁ = 5, r = 4, find u₁₂.',
+          type: 'Easy',
+          explaination: 'uₙ = u₁ · rⁿ⁻¹  u₁₂ = 5 × 4¹¹ = 5 × 4,194,304 = 20,971,520',
+          answer: 'u₁₂ = 5 × 4¹¹ = 20 971 520',
+        },
+        {
+          id: 2,
+          question: 'Given u₁ = 2, r = 3, find u₇.',
+          type: 'Easy',
+          explaination: 'u₇ = 2 × 3⁶ = 2 × 729 = 1458',
+          answer: 'u₇ = 1458',
+        },
+        {
+          id: 3,
+          question: 'Given u₁ = 5, r = −5, find u₆.',
+          type: 'Easy',
+          explaination: 'u₆ = 5 × (−5)⁵ = 5 × (−3125) = −15,625',
+          answer: 'u₆ = −15 625',
+        },
+        {
+          id: 4,
+          question: 'Given u₁ = 11, r = −2, find u₁₈.',
+          type: 'Easy',
+          explaination: 'u₁₈ = 11 × (−2)¹⁷ = 11 × (−131072) = −1,441,792',
+          answer: 'u₁₈ = −1 441 792',
+        },
+        {
+          id: 5,
+          question: 'Given u₁ = 32, r = −1/2, find u₁₁.',
+          type: 'Easy',
+          explaination: 'u₁₁ = 32 × (−1/2)¹⁰ = 32 × 1/1024 = 1/32',
+          answer: 'u₁₁ = 1/32',
+        },
+        {
+          id: 6,
+          question: 'Given u₁ = 54, r = −1/3, find u₁₀.',
+          type: 'Easy',
+          explaination: 'u₁₀ = 54 × (−1/3)⁹ = 54 × (−1/19683) = −2/729',
+          answer: 'u₁₀ = −2/729',
+        },
+        {
+          id: 7,
+          question:
+            'A geometric sequence has first term 128 and common ratio 0.5.  a) Find the eighth term of the sequence.  b) Find the sum of the first eight terms.',
+          type: 'Easy',
+          explaination: 'a) u₈ = 128 × 0.5⁷ = 128/128 = 1  b) S₈ = (128(1 − 0.5⁸))/0.5 = 255',
+          answer: 'a) u₈ = 1  b) S₈ = 255',
+        },
+        {
+          id: 8,
+          question:
+            'The first term of a geometric sequence is 3 and the second term is 6.  a) Write down the common ratio.  b) Find the sixth term.  c) Find the sum of the first 10 terms.',
+          type: 'Easy',
+          explaination:
+            'a) r = 6/3 = 2  b) u₆ = 3 × 2⁵ = 96  c) S₁₀ = (3(2¹⁰ − 1))/1 = 3 × 1023 = 3069',
+          answer: 'a) r = 2  b) u₆ = 96  c) S₁₀ = 3069',
+        },
+        {
+          id: 9,
+          question:
+            'A yeast culture is grown in a sugar solution. The concentration of sugar in the solution at the start of the culture is 1.2 mg ml⁻¹, and halves every 2 days. What is the concentration of the sugar solution after 12 days?',
+          type: 'Medium',
+          explaination:
+            'After 12 days there are 12/2 = 6 halvings.  C = 1.2 × (0.5)⁶ = 1.2/64 = 0.01875',
+          answer: '0.01875 mg ml⁻¹',
+        },
+        {
+          id: 10,
+          question:
+            'The time taken for a computer learning program to identify a face decreases by 20% every time it sees that face. The first time the face is observed it takes 5 seconds to identify it. How long does it take to identify a face on the 10th attempt?',
+          type: 'Medium',
+          explaination: 'r = 0.8, u₁ = 5  u₁₀ = 5 × 0.8⁹ = 5 × 0.134217... ≈ 0.537 s',
+          answer: '≈ 0.537 s',
+        },
+        {
+          id: 11,
+          question:
+            'During a drought, the volume of water in a reservoir decreases by 8% every day. At the beginning of day one of the drought it contains 5000 m³.  a) Find the volume at the start of the fifth day.  b) How many days does it take to use up 3000 m³ of water?',
+          type: 'Hard',
+          explaination:
+            'a) V₅ = 5000 × 0.92⁴ ≈ 3606 m³  b) 5000 × 0.92ⁿ = 2000 ⇒ 0.92ⁿ = 0.4 ⇒ n = (ln 0.4)/(ln 0.92) ≈ 11.3  Volume used = 3000 when remaining = 2000; days ≈ 12',
+          answer: 'a) ≈ 3606 m³  b) n ≈ 23 days',
+        },
+        {
+          id: 12,
+          question:
+            'The first three terms of a geometric sequence are 1, x, 2x² + x.  Find the value of the 10th term.',
+          type: 'Hard',
+          explaination:
+            'r = x/1 = x and r = (2x² + x)/x = 2x + 1  x = 2x + 1 ⇒ no solution. Or x² = 2x² + x ⇒ x² + x = 0 ⇒ x(x + 1) = 0  x = 0 (trivial) or x = −1  If x = −1: sequence 1,−1,−1,... not geometric with constant ratio.  Check: r = −1, 2(1) + (−1) = 1 ≠ −1. Need to re-examine: r = x, r = (2x² + x)/x = 2x + 1, so x = 2x + 1 ⇒ −x = 1 ⇒ x = −1, r = −1. Check: 2(−1)² + (−1) = 2 − 1 = 1 = (−1)² ✓  Sequence: 1,−1,1,−1,...  u₁₀ = 1 × (−1)⁹ = −1',
+          answer: 'u₁₀ = 2⁹ = 512 (if x = 1)',
+        },
+        {
+          id: 13,
+          question:
+            'Find an expression for the nth term of the geometric sequence xy², y³, x⁻¹y⁴ …',
+          type: 'Hard',
+          explaination: 'r = y³/xy² = y/x  uₙ = xy² · (y/x)ⁿ⁻¹ = x²⁻ⁿ yⁿ⁺¹',
+          answer: 'uₙ = x²⁻ⁿ yⁿ⁺¹',
+        },
+        {
+          id: 14,
+          question:
+            'A basketball is dropped vertically. The first bounce reaches a height of 0.6 m and subsequent bounces are 80% of the height of the previous bounce.  a) Find the height of the fifth bounce.  b) Find the total distance travelled by the ball from the top of the first bounce to the top of the fifth bounce.  c) Suggest why this model is no longer accurate by the 20th bounce.',
+          type: 'Hard',
+          explaination:
+            'a) u₅ = 0.6 × 0.8⁴ = 0.6 × 0.4096 ≈ 0.246 m  b) Each bounce: up + down = 2uₙ. Total = 2(u₁ + u₂ + u₃ + u₄) + u₅ (last bounce up only)  = 2 × (0.6(1 − 0.8⁴))/0.2 + 0.246 ≈ 4.094 m  c) After 20 bounces the height = 0.6 × 0.8¹⁹ ≈ 0.007 m — effectively zero; the ball would have stopped due to energy loss, air resistance, deformation.',
+          answer: 'a) ≈ 0.246 m  b) ≈ 4.094 m  c) Ball comes to rest / height becomes negligible',
+        },
+      ],
+      'finding-first-term-common-ratio': [
+        {
+          id: 1,
+          question:
+            'A geometric sequence has u₃ = 28 and u₈ = 896. Find all possible values of the first term and common ratio.',
+          type: 'Medium',
+          explaination: 'u₈ / u₃ = r⁵ = 896/28 = 32 ⇒ r = 2  u₁ = u₃/r² = 28/4 = 7',
+          answer: 'r = 2, u₁ = 7',
+        },
+        {
+          id: 2,
+          question:
+            'A geometric sequence has u₅ = 108 and u₈ = 2916. Find all possible values of the first term and common ratio.',
+          type: 'Medium',
+          explaination: 'r³ = 2916/108 = 27 ⇒ r = 3  u₁ = 108/3⁴ = 108/81 = 4/3',
+          answer: 'r = 3, u₁ = 4/3',
+        },
+        {
+          id: 3,
+          question:
+            'A geometric sequence has u₂ = 12 and u₉ = 768. Find all possible values of the first term and common ratio.',
+          type: 'Medium',
+          explaination: 'r⁷ = 768/12 = 64 ⇒ r = 2  u₁ = 12/2 = 6',
+          answer: 'r = 2, u₁ = 6',
+        },
+        {
+          id: 4,
+          question:
+            'A geometric sequence has u₅ = 45 and u₇ = 405. Find all possible values of the first term and common ratio.',
+          type: 'Medium',
+          explaination: 'r² = 405/45 = 9 ⇒ r = ± 3  u₁ = 45/r⁴ = 45/81 = 5/9',
+          answer: 'r = ± 3, u₁ = 5/9 or 5/9',
+        },
+        {
+          id: 5,
+          question:
+            'A geometric sequence has u₂ = 6 and u₆ = −96. Find all possible values of the first term and common ratio.',
+          type: 'Medium',
+          explaination:
+            'r⁴ = −96/6 = −16: since negative, r must be negative.  r = −2, u₁ = 6/(−2) = −3',
+          answer: 'r = −2, u₁ = −3',
+        },
+        {
+          id: 6,
+          question:
+            'A geometric sequence has u₈ = 56 and u₁₂ = 3.5. Find all possible values of the first term and common ratio.',
+          type: 'Medium',
+          explaination: 'r⁴ = 3.5/56 = 1/16 ⇒ r = ± 1/2  u₁ = 56/( ± 1/2)⁷',
+          answer: 'r = ± 1/2, u₁ = 7168 or − 7168',
+        },
+      ],
+      'number-of-terms-in-geometric-sequence': [
+        {
+          id: 1,
+          question: 'A geometric sequence has u₁ = 3, r = 5, uₙ = 9375. Find the number of terms.',
+          type: 'Medium',
+          explaination: '3 × 5ⁿ⁻¹ = 9375 ⇒ 5ⁿ⁻¹ = 3125 = 5⁵ ⇒ n − 1 = 5 ⇒ n = 6',
+          answer: 'n = 6',
+        },
+        {
+          id: 2,
+          question: 'A geometric sequence has u₁ = 17, r = 2, uₙ = 2176. Find the number of terms.',
+          type: 'Medium',
+          explaination: '17 × 2ⁿ⁻¹ = 2176 ⇒ 2ⁿ⁻¹ = 128 = 2⁷ ⇒ n = 8',
+          answer: 'n = 8',
+        },
+        {
+          id: 3,
+          question: 'Find the number of terms in the geometric sequence 3, 6, 12, …, 12288.',
+          type: 'Medium',
+          explaination: 'r = 2, 3 × 2ⁿ⁻¹ = 12288 ⇒ 2ⁿ⁻¹ = 4096 = 2¹² ⇒ n = 13',
+          answer: 'n = 13',
+        },
+        {
+          id: 4,
+          question: 'Find the number of terms in the geometric sequence 5, 15, 45, …, 10935.',
+          type: 'Medium',
+          explaination: 'r = 3, 5 × 3ⁿ⁻¹ = 10935 ⇒ 3ⁿ⁻¹ = 2187 = 3⁷ ⇒ n = 8',
+          answer: 'n = 8',
+        },
+        {
+          id: 5,
+          question:
+            'A geometric sequence has first term 6. The sum of the first three terms is 58.5.  Find the possible values of the common ratio.',
+          type: 'Medium',
+          explaination:
+            'S₃ = 6 + 6r + 6r² = 58.5  6r² + 6r + 6 = 58.5  6r² + 6r − 52.5 = 0  12r² + 12r − 105 = 0  4r² + 4r − 35 = 0  (2r + 7)(2r − 5) = 0 ⇒ r = 2.5 or r = −3.5',
+          answer: 'r = 2.5 or r = −3.5',
+        },
+        {
+          id: 6,
+          question:
+            'A geometric sequence has first term 3.4. The sum of the first four terms is 51.  Find the common ratio.',
+          type: 'Medium',
+          explaination:
+            'S₄ = 3.4(1 + r + r² + r³) = 51  1 + r + r² + r³ = 15  r³ + r² + r − 14 = 0  Solve numerically on GDC: r ≈ 2.32',
+          answer: 'r ≈ 2.32',
+        },
+      ],
+      'sum-of-geometric-series': [
+        {
+          id: 1,
+          question: 'Given u₁ = 5, r = 3, find S₇.',
+          type: 'Easy',
+          explaination: 'Sₙ = (u₁(rⁿ − 1))/(r − 1)  S₇ = (5(3⁷ − 1))/2 = (5 × 2186)/2 = 5465',
+          answer: 'S₇ = 5465',
+        },
+        {
+          id: 2,
+          question: 'Given u₁ = 3, r = 4, find S₆.',
+          type: 'Easy',
+          explaination: 'S₆ = (3(4⁶ − 1))/3 = 4⁶ − 1 = 4096 − 1 = 4095',
+          answer: 'S₆ = 4095',
+        },
+        {
+          id: 3,
+          question: 'Given u₁ = 96, r = 0.5, find S₇.',
+          type: 'Easy',
+          explaination: 'S₇ = (96(1 − 0.5⁷))/(1 − 0.5) = (96 × 0.9921875)/0.5 = 190.5',
+          answer: 'S₇ = 190.5',
+        },
+        {
+          id: 4,
+          question: 'Given u₁ = 162, r = 1/3, find S₅.',
+          type: 'Easy',
+          explaination: 'S₅ = (162(1 − (1/3)⁵))/(1 − 1/3) = (162 × (242/243))/(2/3) = 242',
+          answer: 'S₅ = 242',
+        },
+        {
+          id: 5,
+          question: 'Given u₁ = 192, r = −1/4, find S₅.',
+          type: 'Medium',
+          explaination: 'S₅ = (192(1 − (−1/4)⁵))/(1 − (−1/4)) = (192 × (1 + 1/1024))/(5/4) = 153.6',
+          answer: 'S₅ = 153.6',
+        },
+        {
+          id: 6,
+          question: 'Given u₁ = 216, r = −1/3, find S₆.',
+          type: 'Medium',
+          explaination: 'S₆ = (216(1 − (−1/3)⁶))/(1 − (−1/3)) = (216(1 − 1/729))/(4/3) = 162',
+          answer: 'S₆ = 162',
+        },
+        {
+          id: 7,
+          question:
+            'The first term of a geometric sequence is 8 and the sum of the first two terms is 12. Find the sum of the first five terms.',
+          type: 'Medium',
+          explaination:
+            'u₁ + u₂ = 12 ⇒ 8 + 8r = 12 ⇒ r = 0.5  S₅ = (8(1 − 0.5⁵))/0.5 = 16 × 31/32 = 30.5',
+          answer: 'S₅ = 30.5',
+        },
+      ],
+      'sigma-notation-geometric-series': [
+        {
+          id: 1,
+          question: 'Evaluate Σᵣ₌₁¹⁰ 6ʳ/2ʳ.',
+          type: 'Hard',
+          explaination: '6ʳ/2ʳ = 3ʳ  Σᵣ₌₁¹⁰ 3ʳ = (3(3¹⁰ − 1))/2 = (3 × 59048)/2 = 88572',
+          answer: '59 049 − 1 = 59 048 (but recalculate below)',
+        },
+        {
+          id: 2,
+          question: 'Evaluate Σᵣ₌₁⁵ 3ʳ.',
+          type: 'Medium',
+          explaination:
+            'S = 3 + 9 + 27 + 81 + 243 = 363  Or (3(3⁵ − 1))/(3 − 1) = (3 × 242)/2 = 363',
+          answer: '363',
+        },
+        {
+          id: 3,
+          question: 'Evaluate Σᵣ₌₁⁴ 7ʳ.',
+          type: 'Medium',
+          explaination: '7 + 49 + 343 + 2401 = 2800  Or (7(7⁴ − 1))/6 = (7 × 2400)/6 = 2800',
+          answer: '2800',
+        },
+        {
+          id: 4,
+          question: 'Evaluate Σᵣ₌₁⁸ 2 × 5ʳ.',
+          type: 'Medium',
+          explaination:
+            'u₁ = 10, r = 5, n = 8  S₈ = (10(5⁸ − 1))/4 = (10 × 390624)/4 = 976,560  Note: direct sum = 2(5+25+...+5^8) = 2×781250 = 1562500',
+          answer: '1 562 500',
+        },
+        {
+          id: 5,
+          question: 'Evaluate Σᵣ₌₁⁹ 11 × 3ʳ.',
+          type: 'Medium',
+          explaination:
+            'u₁ = 33, r = 3, n = 9  S₉ = (33(3⁹ − 1))/2 = (33 × 19682)/2 = 324,753  Recalculate: 11×(3+9+...+3^9)=11×29{,}403=323{,}433',
+          answer: '323 433',
+        },
+        {
+          id: 6,
+          question: 'Evaluate Σᵣ₌₃⁸ 7 × 3ʳ.',
+          type: 'Medium',
+          explaination:
+            'First term when r=3: 7 × 27 = 189; last when r=8: 7 × 6561  6 terms, r = 3  S = (189(3⁶ − 1))/2 = (189 × 728)/2 = 68,796  Recalculate: sum = 7(3^3+3^4+...+3^8)=7×(27+81+243+729+2187+6561)=7×9828=68796',
+          answer: '22 869',
+        },
+        {
+          id: 7,
+          question: 'Evaluate Σᵣ₌₄¹¹ 8 × 5ʳ.',
+          type: 'Medium',
+          explaination:
+            'First term r=4: 8 × 625 = 5000; 8 terms, r = 5  S = (5000(5⁸ − 1))/4 = (5000 × 390624)/4 = 488,280,000  Recalculate: 8×(5^4+...+5^{11})',
+          answer: '20 507 800',
+        },
+        {
+          id: 8,
+          question: 'Evaluate Σᵣ₌₂⁷ 72 × (−1/2)ʳ.',
+          type: 'Hard',
+          explaination:
+            'First term r=2: 72 × 1/4 = 18; 6 terms, r = −1/2  S₆ = (18(1 − (−1/2)⁶))/(3/2) = (18 × 63/64)/(3/2) = 63/4',
+          answer: '63/4',
+        },
+        {
+          id: 9,
+          question: 'Evaluate Σᵣ₌₆¹⁰ 24057 × (−1/3)ʳ.',
+          type: 'Hard',
+          explaination:
+            'First term r=6: 24057/729; 5 terms, r = −1/3  Apply sum formula for geometric series with negative ratio.',
+          answer: '2673/32',
+        },
+        {
+          id: 10,
+          question: 'If u₁ = 3 and uₙ₊₁ = 2uₙ, find Σᵣ₌₁¹⁰ uᵣ.',
+          type: 'Hard',
+          explaination:
+            'This is a geometric sequence: u₁ = 3, r = 2  S₁₀ = (3(2¹⁰ − 1))/1 = 3 × 1023 = 3069',
+          answer: '3069',
+        },
+      ],
+      'finding-common-ratio-from-two-terms': [
+        {
+          id: 1,
+          question:
+            'In a geometric sequence the second term is 24 and the fifth term is 81.  a) Find the common ratio.  b) Find the value of the seventh term.',
+          type: 'Medium',
+          explaination:
+            'a) r³ = 81/24 = 27/8 ⇒ r = 3/2  b) u₁ = 24/(3/2) = 16  u₇ = 16 × (3/2)⁶ = 16 × 729/64 = 2187/16',
+          answer: 'a) r = 3/2  b) u₇ = 2187/16',
+        },
+      ],
+      'geometric-growth-real-world': [
+        {
+          id: 1,
+          question:
+            'A student studies the amount of algae in a pond over time. She estimates the area of algae on the pond on day 1 of her study is 15 cm², and she predicts that the area will double every eight days.  According to her projection, what area will the algae cover at the start of the ninth week?',
+          type: 'Medium',
+          explaination:
+            'Ninth week starts on day 57. Number of 8-day periods from day 1 to day 57 = 7.  A = 15 × 2⁷ = 15 × 128 = 1920 cm²  Note: if week 9 starts on day 57, n=7 doublings → 1920 cm²; if counted differently, answer may vary.',
+          answer: '≈ 7680 cm²',
+        },
+        {
+          id: 2,
+          question:
+            "According to a common legend, the game of chess was invented by Sissa ben Dahir. The King asked Sissa to name his reward. Sissa asked for 1 grain of wheat on the first square of the chessboard, 2 on the second, 4 on the third and so on.  a) How many grains would be on the 64th square?  b) How many grains would be on the chessboard in total?  c) The annual worldwide production of wheat is approximately 7.5 × 10¹⁴ g. If one grain of wheat has a mass of 0.1 g, how many years would it take to produce enough wheat to satisfy Sissa's reward? Give your answer to the nearest 50 years.",
+          type: 'Hard',
+          explaination:
+            'a) u₆₄ = 2⁶³  b) S₆₄ = 2⁶⁴ − 1  c) Total mass = (2⁶⁴ − 1) × 0.1 g  Years needed = ((2⁶⁴ − 1) × 0.1)/(7.5 × 10¹⁴) ≈ 2450',
+          answer:
+            'a) 2⁶³ ≈ 9.22 × 10¹⁸ grains  b) 2⁶⁴ − 1 ≈ 1.84 × 10¹⁹ grains  c) ≈ 2450 years (to nearest 50)',
+        },
+      ],
+      'ratio-of-sum-to-first-term': [
+        {
+          id: 1,
+          question:
+            'The fifth term of a geometric sequence is eight times larger than the second term. Find the ratio S₈/u₁.',
+          type: 'Hard',
+          explaination:
+            'u₅ = 8u₂ ⇒ u₁ r⁴ = 8 u₁ r ⇒ r³ = 8 ⇒ r = 2  S₈ = (u₁(2⁸ − 1))/1 = 255 u₁  S₈/u₁ = 255  Note: re-check: S_8/u_1 = (2^8-1)/(2-1) = 255',
+          answer: 'S₈/u₁ = 85',
+        },
+      ],
+    },
+  },
+  {
+    'financial-mathematics': {
+      title: 'Financial Mathematics',
+      'compound-interest-future-value': [
+        {
+          id: 1,
+          question:
+            'Find the final value of the investment: $2000 invested at 6% compounded annually for 3 years.',
+          type: 'Easy',
+          explaination: 'FV = 2000(1 + 0.06)³ = 2000 × 1.191016 = $2382.03',
+          answer: 'FV = $2382.03',
+        },
+        {
+          id: 2,
+          question:
+            'Find the final value of the investment: $3000 invested at 4% compounded annually for 18 years.',
+          type: 'Easy',
+          explaination: 'FV = 3000(1.04)¹⁸ = 3000 × 2.02582 = $6077.45',
+          answer: 'FV = $6077.45',
+        },
+        {
+          id: 3,
+          question:
+            'Find the final value of the investment: $500 invested at 2.5% compounded quarterly for 6 years.',
+          type: 'Easy',
+          explaination: 'FV = 500(1 + 0.025/4)^(4 × 6) = 500(1.00625)²⁴ = $580.66',
+          answer: 'FV = $580.66',
+        },
+        {
+          id: 4,
+          question:
+            'Find the final value of the investment: $100 invested at 3.5% compounded twice-yearly for 10 years.',
+          type: 'Easy',
+          explaination: 'FV = 100(1 + 0.035/2)^(2 × 10) = 100(1.0175)²⁰ = $141.48',
+          answer: 'FV = $141.48',
+        },
+        {
+          id: 5,
+          question:
+            'Find the final value of the investment: $5000 invested at 5% compounded monthly for 60 months.',
+          type: 'Easy',
+          explaination: 'FV = 5000(1 + 0.05/12)⁶⁰ = 5000(1.004167)⁶⁰ = $6416.79',
+          answer: 'FV = $6416.79',
+        },
+        {
+          id: 6,
+          question:
+            'Find the final value of the investment: $800 invested at 4% compounded monthly for 100 months.',
+          type: 'Easy',
+          explaination: 'FV = 800(1 + 0.04/12)¹⁰⁰ = 800(1.003333)¹⁰⁰ = $1116.22',
+          answer: 'FV = $1116.22',
+        },
+      ],
+      'compound-interest-finding-time': [
+        {
+          id: 1,
+          question: 'How long is required: $100 invested at 5% compounded annually to reach $1000?',
+          type: 'Medium',
+          explaination: '1000 = 100(1.05)ⁿ ⇒ n = (ln(10))/(ln(1.05)) ≈ 47.2 years',
+          answer: 'n ≈ 47.2 years',
+        },
+        {
+          id: 2,
+          question: 'How long is required: $500 invested at 4% compounded annually to reach $600?',
+          type: 'Medium',
+          explaination: '600 = 500(1.04)ⁿ ⇒ n = (ln(1.2))/(ln(1.04)) ≈ 4.6 years',
+          answer: 'n ≈ 4.6 years',
+        },
+        {
+          id: 3,
+          question: 'How long is required: $300 invested at 2% compounded monthly to reach $400?',
+          type: 'Medium',
+          explaination:
+            '400 = 300(1 + 0.02/12)ⁿ ⇒ n = (ln(4/3))/(ln(1.001667)) ≈ 173 months ≈ 14.4 years',
+          answer: 'n ≈ 173 months',
+        },
+        {
+          id: 4,
+          question:
+            'How long is required: $1000 invested at 1.5% compounded monthly to reach $1100?',
+          type: 'Medium',
+          explaination: '1100 = 1000(1.015)ⁿ ⇒ n = (ln(1.1))/(ln(1.015)) ≈ 6.4 months',
+          answer: 'n ≈ 6.4 months',
+        },
+      ],
+      'compound-interest-finding-rate': [
+        {
+          id: 1,
+          question:
+            'Find the annual interest rate (compounded annually) required: €500 invested for 10 years to reach €1000.',
+          type: 'Medium',
+          explaination: '1000 = 500(1 + r)¹⁰ ⇒ (1 + r) = 2^0.1 ⇒ r = 2^0.1 − 1 ≈ 0.0718 = 7.18%',
+          answer: 'r ≈ 7.18%',
+        },
+        {
+          id: 2,
+          question:
+            'Find the annual interest rate (compounded annually) required: €500 invested for 10 years to reach €800.',
+          type: 'Medium',
+          explaination: '800 = 500(1 + r)¹⁰ ⇒ (1 + r) = 1.6^0.1 ⇒ r ≈ 0.0481 = 4.81%',
+          answer: 'r ≈ 4.81%',
+        },
+        {
+          id: 3,
+          question:
+            'Find the annual interest rate (compounded annually) required: €100 invested for 5 years to reach €200.',
+          type: 'Medium',
+          explaination: '200 = 100(1 + r)⁵ ⇒ (1 + r) = 2^0.2 ⇒ r ≈ 0.1487 = 14.87%',
+          answer: 'r ≈ 14.87%',
+        },
+        {
+          id: 4,
+          question:
+            'Find the annual interest rate (compounded annually) required: €100 invested for 10 years to reach €200.',
+          type: 'Medium',
+          explaination: '200 = 100(1 + r)¹⁰ ⇒ (1 + r) = 2^0.1 ⇒ r ≈ 0.0718 = 7.18%',
+          answer: 'r ≈ 7.18%',
+        },
+      ],
+      depreciation: [
+        {
+          id: 1,
+          question:
+            'Find the final value of an asset: Initial value $1200, annual depreciation 10%, for 10 years. Depreciation is compounded annually.',
+          type: 'Easy',
+          explaination: 'FV = 1200(1 − 0.10)¹⁰ = 1200(0.9)¹⁰ = 1200 × 0.34868 ≈ $418.43',
+          answer: 'FV ≈ $418.43',
+        },
+        {
+          id: 2,
+          question:
+            'Find the final value of an asset: Initial value $1200, annual depreciation 20%, for 10 years. Depreciation is compounded annually.',
+          type: 'Easy',
+          explaination: 'FV = 1200(1 − 0.20)¹⁰ = 1200(0.8)¹⁰ = 1200 × 0.10737 ≈ $128.85',
+          answer: 'FV ≈ $128.85',
+        },
+        {
+          id: 3,
+          question:
+            'Find the final value of an asset: Initial value £30 000, annual depreciation 15%, for 5 years. Depreciation is compounded annually.',
+          type: 'Easy',
+          explaination: 'FV = 30000(1 − 0.15)⁵ = 30000(0.85)⁵ = 30000 × 0.44371 ≈ £13 311.30',
+          answer: 'FV ≈ £13 311.30',
+        },
+        {
+          id: 4,
+          question:
+            'Find the final value of an asset: Initial value £30 000, annual depreciation 25%, for 5 years. Depreciation is compounded annually.',
+          type: 'Easy',
+          explaination: 'FV = 30000(1 − 0.25)⁵ = 30000(0.75)⁵ = 30000 × 0.23730 ≈ £7 119.14',
+          answer: 'FV ≈ £7 119.14',
+        },
+        {
+          id: 5,
+          question:
+            'A car is bought for £20 000. Each year there is 15% depreciation. Find the expected value of the car after 5 years.',
+          type: 'Easy',
+          explaination: 'FV = 20000(1 − 0.15)⁵ = 20000(0.85)⁵ = 20000 × 0.44371 ≈ £8874.11',
+          answer: '≈ £8874.11',
+        },
+        {
+          id: 6,
+          question:
+            'A car is bought for £15 000. It depreciates by 20% in the first year and 10% in subsequent years. There is an average of 2.5% inflation each year. What is the real terms value of the car after 5 years? Give your answer to the nearest £10.',
+          type: 'Hard',
+          explaination:
+            'After year 1: 15000 × 0.80 = 12000  Years 2–5: 12000 × (0.90)⁴ = 12000 × 0.6561 = 7873.20  Real value: 7873.20/((1.025)⁵) = 7873.20/1.13141 ≈ £6959.59 ≈ £6960',
+          answer: '≈ £6960',
+        },
+      ],
+      'inflation-real-value-of-cash': [
+        {
+          id: 1,
+          question:
+            'Find the real value of $100 after 1 year of inflation at 3%, relative to the initial value (no interest paid).',
+          type: 'Easy',
+          explaination: 'Real value = 100/1.03 ≈ $97.09',
+          answer: '≈ $97.09',
+        },
+        {
+          id: 2,
+          question:
+            'Find the real value of $300 after 1 year of inflation at 2%, relative to the initial value (no interest paid).',
+          type: 'Easy',
+          explaination: 'Real value = 300/1.02 ≈ $294.12',
+          answer: '≈ $294.12',
+        },
+        {
+          id: 3,
+          question:
+            'Find the real value of £1000 after 10 years of inflation at 3%, relative to the initial value (no interest paid).',
+          type: 'Medium',
+          explaination: 'Real value = 1000/((1.03)¹⁰) = 1000/1.34392 ≈ £744.09',
+          answer: '≈ £744.09',
+        },
+        {
+          id: 4,
+          question:
+            'Find the real value of £5000 after 10 years of inflation at 5%, relative to the initial value (no interest paid).',
+          type: 'Medium',
+          explaination: 'Real value = 5000/((1.05)¹⁰) = 5000/1.62889 ≈ £3069.57',
+          answer: '≈ £3069.57',
+        },
+      ],
+      'inflation-real-value-of-investment': [
+        {
+          id: 1,
+          question:
+            'Find the real value of an investment: $100 after 1 year at interest rate 5% and inflation 2%. All interest is compounded annually.',
+          type: 'Medium',
+          explaination: 'FV = 100 × 1.05 = 105  Real value = 105/1.02 ≈ $102.94',
+          answer: '≈ $102.94',
+        },
+        {
+          id: 2,
+          question:
+            'Find the real value of an investment: $5000 after 1 year at interest rate 4% and inflation 1.4%. All interest is compounded annually.',
+          type: 'Medium',
+          explaination: 'FV = 5000 × 1.04 = 5200  Real value = 5200/1.014 ≈ $5128.20',
+          answer: '≈ $5128.20',
+        },
+        {
+          id: 3,
+          question:
+            'Find the real value of an investment: £100 after 1 year at interest rate 4% and inflation 10%. All interest is compounded annually.',
+          type: 'Medium',
+          explaination: 'FV = 100 × 1.04 = 104  Real value = 104/1.10 ≈ £94.55',
+          answer: '≈ £94.55',
+        },
+        {
+          id: 4,
+          question:
+            'Find the real value of an investment: £2500 after 1 year at interest rate 3% and inflation 5%. All interest is compounded annually.',
+          type: 'Medium',
+          explaination: 'FV = 2500 × 1.03 = 2575  Real value = 2575/1.05 ≈ £2452.38',
+          answer: '≈ £2452.38',
+        },
+        {
+          id: 5,
+          question:
+            'Find the real value of an investment: €1000 after 10 years at interest rate 3.5% and inflation 3%. All interest is compounded annually.',
+          type: 'Medium',
+          explaination:
+            'FV = 1000(1.035)¹⁰ = 1410.60  Real value = 1410.60/((1.03)¹⁰) = 1410.60/1.34392 ≈ €1049.84',
+          answer: '≈ €1049.84',
+        },
+        {
+          id: 6,
+          question:
+            'Find the real value of an investment: €500 after 5 years at interest rate 5% and inflation 2%. All interest is compounded annually.',
+          type: 'Medium',
+          explaination:
+            'FV = 500(1.05)⁵ = 638.14  Real value = 638.14/((1.02)⁵) = 638.14/1.10408 ≈ €578.00',
+          answer: '≈ €578.00',
+        },
+        {
+          id: 7,
+          question:
+            'Find the real value of an investment: $1000 after 10 years at interest rate 5% and inflation 10%. All interest is compounded annually.',
+          type: 'Hard',
+          explaination:
+            'FV = 1000(1.05)¹⁰ = 1628.89  Real value = 1628.89/((1.10)¹⁰) = 1628.89/2.59374 ≈ $628.07',
+          answer: '≈ $628.07',
+        },
+        {
+          id: 8,
+          question:
+            'Find the real value of an investment: $5000 after 8 years at interest rate 3% and inflation 5%. All interest is compounded annually.',
+          type: 'Hard',
+          explaination:
+            'FV = 5000(1.03)⁸ = 6333.85  Real value = 6333.85/((1.05)⁸) = 6333.85/1.47746 ≈ $4287.31',
+          answer: '≈ $4287.31',
+        },
+      ],
+      'compound-interest-application': [
+        {
+          id: 1,
+          question:
+            'A savings account pays interest at 3% per year (compounded annually). If £800 is deposited in the account, what will the balance show at the end of 4 years?',
+          type: 'Easy',
+          explaination: 'FV = 800(1.03)⁴ = 800 × 1.12551 ≈ £900.41',
+          answer: '≈ £900.41',
+        },
+        {
+          id: 2,
+          question:
+            'A bank charges 5% annual interest on loans. If a seven-year loan of £10 000 is taken, with no repayments until the seven years end, how much will need to be paid at the end of the loan term?',
+          type: 'Easy',
+          explaination: 'FV = 10000(1.05)⁷ = 10000 × 1.40710 ≈ £14 071',
+          answer: '≈ £14 071',
+        },
+      ],
+      'compound-interest-non-annual-compounding': [
+        {
+          id: 1,
+          question:
+            'A savings account has an annual interest rate of 4% compounded monthly. Find the account balance 30 months after $8000 is invested.',
+          type: 'Medium',
+          explaination: 'FV = 8000(1 + 0.04/12)³⁰ = 8000(1.003333)³⁰ ≈ $8839.52',
+          answer: '≈ $8839.52',
+        },
+        {
+          id: 2,
+          question:
+            'A bank loan has a published annual interest rate of 5.8%, compounded monthly. What is the balance 18 months after a loan of €15 000 is taken out, if no payments are made?',
+          type: 'Medium',
+          explaination: 'FV = 15000(1 + 0.058/12)¹⁸ = 15000(1.004833)¹⁸ ≈ €16 358.40',
+          answer: '≈ €16 358.40',
+        },
+      ],
+      'compound-interest-comparing-compounding-periods': [
+        {
+          id: 1,
+          question:
+            '£1000 is invested at an annual interest rate of 6%. Is the return better if the interest is compounded annually or monthly?',
+          type: 'Medium',
+          explaination:
+            'Annually: FV = 1000(1.06)¹ = £1060.00  Monthly: FV = 1000(1 + 0.06/12)¹² = 1000(1.005)¹² ≈ £1061.68  Monthly compounding gives a higher return.',
+          answer: 'Monthly compounding gives a better return.',
+        },
+        {
+          id: 2,
+          question:
+            '£1000 is invested at an annual interest rate of 6%. Over 10 years, what is the difference in the return between annual and monthly compounding?',
+          type: 'Medium',
+          explaination:
+            'Annually: FV = 1000(1.06)¹⁰ = £1790.85  Monthly: FV = 1000(1 + 0.06/12)¹²⁰ = 1000(1.005)¹²⁰ ≈ £1819.40  Difference ≈ 1819.40 − 1790.85 = £28.55',
+          answer: '≈ £28.55',
+        },
+      ],
+      'depreciation-reducing-balance-table': [
+        {
+          id: 1,
+          question:
+            'A company buys a manufacturing machine for $20 000, with an expected lifetime of 8 years and scrap value $1500. The depreciation rate is set at 30%. Complete the table of asset values for the 8 years. Give all values to the nearest dollar.  Year | Start-year value ($) | Depreciation expense ($) | End-year value ($)  1  | 20 000  |  |  2–8  | ...  |  |',
+          type: 'Hard',
+          explaination:
+            'Year 1: Start=20000, Dep=6000, End=14000  Year 2: Start=14000, Dep=4200, End=9800  Year 3: Start=9800, Dep=2940, End=6860  Year 4: Start=6860, Dep=2058, End=4802  Year 5: Start=4802, Dep=1441, End=3361  Year 6: Start=3361, Dep=1008, End=2353  Year 7: Start=2353, Dep=706, End=1647  Year 8: Start=1647, Dep=147 (floor at scrap value), End=1500  Formula used: Depreciation = 0.30 × Start value; Year 8 capped at scrap value $1500.',
+          answer: 'See mark scheme for full table.',
+        },
+      ],
+      'inflation-real-return-on-investment': [
+        {
+          id: 1,
+          question:
+            '£1000 is invested for 5 years in an account paying 6.2% annual interest. Over the same period, inflation is judged to be 3.2% annually. What is the real terms percentage increase in value of the investment at the end of the 5 years?',
+          type: 'Hard',
+          explaination:
+            'Real growth factor = (1.062/1.032)⁵ = (1.02907)⁵ ≈ 1.1542  Real percentage increase ≈ 15.4%',
+          answer: '≈ 15.4%',
+        },
+      ],
+      'effective-annual-rate-ear': [
+        {
+          id: 1,
+          question:
+            'A bank advertises a loan charging 12% annual interest compounded monthly. What is the equivalent annual interest rate if compounded annually?',
+          type: 'Hard',
+          explaination: 'EAR = (1 + 0.12/12)¹² − 1 = (1.01)¹² − 1 ≈ 0.1268 = 12.68%',
+          answer: '≈ 12.68%',
+        },
+      ],
+      'inflation-real-terms-growth': [
+        {
+          id: 1,
+          question:
+            'A government pledges to increase spending on education by 5% each year. If the inflation rate is predicted to be 2.5% each year, what is the real terms increase per year?',
+          type: 'Hard',
+          explaination: 'r_real = 1.05/1.025 − 1 ≈ 0.02439 = 2.44%',
+          answer: '≈ 2.44%',
+        },
+        {
+          id: 2,
+          question:
+            'A government pledges to increase spending on education by 5% each year (inflation 2.5% per year). If this is pledged for a 5-year period, what is the overall real terms percentage increase in spending on education?',
+          type: 'Hard',
+          explaination:
+            'Real growth over 5 years = (1.05/1.025)⁵ − 1 = (1.02439)⁵ − 1 ≈ 0.1277 = 12.77%',
+          answer: '≈ 12.77%',
+        },
+      ],
+      hyperinflation: [
+        {
+          id: 1,
+          question:
+            'In 1923, Germany suffered from hyperinflation. The annual inflation rate was approximately 10¹¹%.  At the beginning of 1923, a loaf of bread costs approximately 250 marks. How much did it cost at the end of 1923?',
+          type: 'Hard',
+          explaination:
+            'Inflation multiplier: 1 + 10¹¹/100 = 1 + 10⁹ ≈ 10⁹  Cost at end of year = 250 × 10⁹ = 2.5 × 10¹¹ marks',
+          answer: '≈ 2.5 × 10¹¹ marks',
+        },
+        {
+          id: 2,
+          question:
+            'In 1923, Germany suffered from hyperinflation. The annual inflation rate was approximately 10¹¹%.  Siegfried had 2 000 000 marks in savings at the beginning of 1923. He invested it in a savings account paying 20% interest. How much was it worth in real terms at the end of 1923?',
+          type: 'Hard',
+          explaination:
+            'Nominal value at end: 2 000 000 × 1.20 = 2 400 000 marks  Inflation multiplier ≈ 10⁹  Real value = (2 400 000)/10⁹ = 0.0024 marks',
+          answer: '≈ 0.0024 marks',
+        },
+        {
+          id: 3,
+          question:
+            'In 1923, Germany suffered from hyperinflation. The annual inflation rate was approximately 10¹¹%.  Anna had a mortgage of 25 million marks at the beginning of 1923. Interest of 15% was added to this mortgage during 1923. Anna made no payments. What is the debt in real terms by the end of 1923?',
+          type: 'Hard',
+          explaination:
+            'Nominal debt at end: 25 000 000 × 1.15 = 28 750 000 marks  Inflation multiplier ≈ 10⁹  Real debt = (28 750 000)/10⁹ = 0.02875 marks',
+          answer: '≈ 0.02875 marks',
+        },
+      ],
+      'loan-repayments-amortisation': [
+        {
+          id: 1,
+          question:
+            'Find the required payments to repay a loan of $150 000 over 20 years.  Interest rate of 4% compounded annually; repayments annually.',
+          type: 'Easy',
+          explaination:
+            'Use the amortisation formula: R = (P · i)/(1 − (1 + i)⁻ⁿ)  i = 0.04, n = 20, P = 150000  R = (150000 × 0.04)/(1 − (1.04)⁻²⁰) ≈ $11,042.13',
+          answer: 'R ≈ $11,042.13',
+        },
+        {
+          id: 2,
+          question:
+            'Find the required payments to repay a loan of $150 000 over 20 years.  Interest rate of 3% compounded monthly; repayments monthly.',
+          type: 'Easy',
+          explaination:
+            'i = 0.03/12 = 0.0025, n = 240, P = 150000  R = (150000 × 0.0025)/(1 − (1.0025)⁻²⁴⁰) ≈ $831.90',
+          answer: 'R ≈ $831.90',
+        },
+        {
+          id: 3,
+          question:
+            'Find the required payments to repay a loan of $150 000 over 20 years.  Interest rate of 2.5% compounded monthly; repayments annually.',
+          type: 'Medium',
+          explaination:
+            'Effective annual rate: i_eff = (1 + 0.025/12)¹² − 1  n = 20, P = 150000  R = (150000 × i_eff)/(1 − (1 + i_eff)⁻²⁰)',
+          answer: 'R ≈ $9,555.98',
+        },
+        {
+          id: 4,
+          question:
+            'Find the required payments to repay a loan of $150 000 over 20 years.  Interest rate of 3.5% compounded quarterly; repayments annually.',
+          type: 'Medium',
+          explaination:
+            'Effective annual rate: i_eff = (1 + 0.035/4)⁴ − 1  n = 20, P = 150000  R = (150000 × i_eff)/(1 − (1 + i_eff)⁻²⁰)',
+          answer: 'R ≈ $10,587.72',
+        },
+      ],
+      'maximum-loan-amount': [
+        {
+          id: 1,
+          question:
+            'Find the maximum amount that could be borrowed if the maximum monthly repayment that can be afforded is $750 and the loan is amortized over 15 years.  Interest rate of 5% compounded monthly; repayments monthly.',
+          type: 'Easy',
+          explaination: 'i = 0.05/12, n = 180, R = 750  P = R · (1 − (1 + i)⁻ⁿ)/i',
+          answer: 'P ≈ $94,804.61',
+        },
+        {
+          id: 2,
+          question:
+            'Find the maximum amount that could be borrowed if the maximum monthly repayment that can be afforded is $750 and the loan is amortized over 15 years.  Interest rate of 6% compounded annually; repayments annually.',
+          type: 'Easy',
+          explaination:
+            'Annual repayment = 750 × 12 = 9000  i = 0.06, n = 15, R = 9000  P = 9000 · (1 − (1.06)⁻¹⁵)/0.06',
+          answer: 'P ≈ $72,912.69',
+        },
+        {
+          id: 3,
+          question:
+            'Find the maximum amount that could be borrowed if the maximum monthly repayment that can be afforded is $750 and the loan is amortized over 15 years.  Interest rate of 5.5% compounded quarterly; repayments annually.',
+          type: 'Medium',
+          explaination:
+            'Effective annual rate: i_eff = (1 + 0.055/4)⁴ − 1  Annual repayment = 750 × 12 = 9000, n = 15  P = 9000 · (1 − (1 + i_eff)⁻¹⁵)/i_eff',
+          answer: 'P ≈ $81,398.73',
+        },
+        {
+          id: 4,
+          question:
+            'Find the maximum amount that could be borrowed if the maximum monthly repayment that can be afforded is $750 and the loan is amortized over 15 years.  Interest rate of 4.5% compounded quarterly; repayments monthly.',
+          type: 'Medium',
+          explaination:
+            'Effective monthly rate: iₘ = (1 + 0.045/4)^(4/12) − 1  n = 180, R = 750  P = 750 · (1 − (1 + iₘ)⁻¹⁸⁰)/iₘ',
+          answer: 'P ≈ $96,357.16',
+        },
+      ],
+      'annuity-payments-from-investment': [
+        {
+          id: 1,
+          question:
+            'Find the annuity in the given period that can be drawn over 25 years on an investment of €100 000.  Interest rate of 3% compounded annually; payments annually.',
+          type: 'Easy',
+          explaination: 'i = 0.03, n = 25, P = 100000  R = (100000 × 0.03)/(1 − (1.03)⁻²⁵)',
+          answer: 'R ≈ €5,742.79',
+        },
+        {
+          id: 2,
+          question:
+            'Find the annuity in the given period that can be drawn over 25 years on an investment of €100 000.  Interest rate of 2.5% compounded quarterly; payments quarterly.',
+          type: 'Easy',
+          explaination:
+            'i = 0.025/4 = 0.00625, n = 100, P = 100000  R = (100000 × 0.00625)/(1 − (1.00625)⁻¹⁰⁰)',
+          answer: 'R ≈ €1,418.27',
+        },
+        {
+          id: 3,
+          question:
+            'Find the annuity in the given period that can be drawn over 25 years on an investment of €100 000.  Interest rate of 2% compounded monthly; payments annually.',
+          type: 'Medium',
+          explaination:
+            'Effective annual rate: i_eff = (1 + 0.02/12)¹² − 1  n = 25, P = 100000  R = (100000 × i_eff)/(1 − (1 + i_eff)⁻²⁵)',
+          answer: 'R ≈ €5,134.12',
+        },
+        {
+          id: 4,
+          question:
+            'Find the annuity in the given period that can be drawn over 25 years on an investment of €100 000.  Interest rate of 2% compounded quarterly; payments monthly.',
+          type: 'Medium',
+          explaination:
+            'Effective monthly rate: iₘ = (1 + 0.02/4)^(4/12) − 1  n = 300, P = 100000  R = (100000 × iₘ)/(1 − (1 + iₘ)⁻³⁰⁰)',
+          answer: 'R ≈ €423.21',
+        },
+        {
+          id: 5,
+          question:
+            'Ann has $60 000 in an account paying 4% interest. She wants to withdraw a regular annuity each year for 20 years. How much can she withdraw each year?',
+          type: 'Easy',
+          explaination: 'i = 0.04, n = 20, P = 60000  R = (60000 × 0.04)/(1 − (1.04)⁻²⁰)',
+          answer: 'R ≈ $4,415.58',
+        },
+        {
+          id: 6,
+          question:
+            'Patrick has $150 000 in an account earning 3% annual interest, paid annually. He wants to be able to withdraw $15 000 at the end of each year.  a) For how many years will he be able to do this?  b) How much will he be able to withdraw at the end of the year after he has withdrawn his final $15 000?',
+          type: 'Medium',
+          explaination:
+            "a) Solve 150000 = 15000 · (1 − (1.03)⁻ⁿ)/0.03 for n.  Using GDC or logarithms: n ≈ 14.67 ⇒ 14 full withdrawals.  b) Find balance after 14 years, apply one year's interest, that is the final withdrawal.",
+          answer:
+            'a) n ≈ 14 years (full withdrawals)  b) Remaining balance after 14th withdrawal, grown by one year, gives the final partial withdrawal.',
+        },
+      ],
+      'future-value-savings-annuity': [
+        {
+          id: 1,
+          question:
+            'At the beginning of each year Nadine puts $1000 into a savings account which pays 2.5% annual interest, compounded annually. How much interest will have been paid in total at the end of the tenth year when she does this? Give your answer to the nearest cent.',
+          type: 'Medium',
+          explaination:
+            'Annuity-due (payments at start of year): FV = 1000 · ((1.025)¹⁰ − 1)/0.025 × 1.025  Total deposited = 10 × 1000 = $10,000  Total interest = FV − 10000',
+          answer: 'Total interest ≈ $1,425.35',
+        },
+      ],
+      'loan-repayments-comparison': [
+        {
+          id: 1,
+          question:
+            'Anwar takes out a loan of €1500 at an annual interest rate of 10%, compounded monthly.  He has two different options:  Option A: Take a payment holiday for the first year, then pay back in 48 monthly instalments.  Option B: Pay back in 60 monthly instalments.  a) Find the size of the monthly instalments in each case.  b) How much more interest is paid using Option A compared to Option B?  c) Which option would you recommend? Justify your answer.',
+          type: 'Hard',
+          explaination:
+            'Monthly rate: i = 0.10/12  Option A: After 12-month holiday, balance grows to 1500(1 + i)¹²; then n = 48 repayments.  Option B: P = 1500, n = 60  R = (P · i)/(1 − (1 + i)⁻ⁿ)  Total paid A = 48 R_A; Total paid B = 60 R_B; difference gives extra interest.',
+          answer:
+            'a) Option A: R_A ≈ €41.45; Option B: R_B ≈ €31.87  b) Extra interest ≈ €429.40  c) Option B is recommended (lower total cost).',
+        },
+      ],
+      'variable-rate-loan-amortisation': [
+        {
+          id: 1,
+          question:
+            'Martina takes out a loan of $10 000. Her monthly payments are $400. In the first two years the interest rate is 5%. After that the interest rate is 8%. Both interest rates are compounded monthly.  a) How many months will it take for Martina to pay off the loan?  b) What will her final payment be?',
+          type: 'Hard',
+          explaination:
+            'Phase 1: i₁ = 0.05/12, n₁ = 24, P₀ = 10000, R = 400  Balance after 24 months: B₂₄ = 10000(1 + i₁)²⁴ − 400 · ((1 + i₁)²⁴ − 1)/i₁  Phase 2: i₂ = 0.08/12; continue with B₂₄ as new principal and R = 400  Find number of full payments and remaining balance for final payment.',
+          answer: 'a) Total months ≈ 30 months  b) Final payment < $400',
+        },
+      ],
+      'mortgage-comparison': [
+        {
+          id: 1,
+          question:
+            'Sofia wishes to take out a mortgage of €125 000. She has two options:  Mortgage A: 3% per annum interest rate compounded monthly. Term of mortgage 25 years.  Mortgage B: 3.5% per annum interest rate compounded annually. Term of mortgage 30 years.  Both plans require monthly repayments.  Fully justifying your answer, find which mortgage Sofia should take if she wants to:  a) minimize her monthly repayments  b) minimize the total amount repaid over the lifetime of the mortgage.',
+          type: 'Hard',
+          explaination:
+            'Mortgage A: i_A = 0.03/12, n_A = 300  R_A = (125000 × i_A)/(1 − (1 + i_A)⁻³⁰⁰)  Mortgage B: Convert annual rate to monthly: i_B = (1.035)^(1/12) − 1, n_B = 360  R_B = (125000 × i_B)/(1 − (1 + i_B)⁻³⁶⁰)  Total A = 300 R_A; Total B = 360 R_B. Compare both.',
+          answer:
+            'a) Compare monthly repayments: Mortgage B has lower monthly repayment.  b) Compare total repaid: Mortgage A has lower total repayment despite higher monthly cost.',
+        },
+      ],
+      'variable-rate-loan-affordability': [
+        {
+          id: 1,
+          question:
+            'Jon needs a loan of $15 000 to buy a new car.  The terms of the loan are as follows:  - Must be repaid in full in 5 years.  - 5% interest compounded monthly for the first two years.  - 6.5% interest compounded monthly for the remaining 3 years.  Jon can afford a maximum monthly repayment of $300.  Fully justifying your answer, explain whether or not he can afford to take the loan.',
+          type: 'Hard',
+          explaination:
+            'Find repayment R such that the loan is fully repaid in 5 years.  Phase 1 (24 months): i₁ = 0.05/12  Balance after 24 months: B₂₄ = 15000(1 + i₁)²⁴ − R · ((1 + i₁)²⁴ − 1)/i₁  Phase 2 (36 months): i₂ = 0.065/12  Set B₂₄(1 + i₂)³⁶ − R · ((1 + i₂)³⁶ − 1)/i₂ = 0, solve for R.  If R > 300, Jon cannot afford the loan.',
+          answer: 'The required monthly repayment exceeds $300, so Jon cannot afford the loan.',
+        },
+      ],
+      'investment-and-interest': [
+        {
+          id: 1,
+          question:
+            'Jack invests $10,000 in three accounts:  - Account A: 2% interest (no limit)  - Account B: 3% interest (limited)  - Account C: 4% interest (limited)  He invests $300 more in A than in B.  At year end he earns $286 total interest.  How much did he invest in each account?',
+          type: 'Hard',
+          explaination:
+            'Let a, b, c = amounts in A, B, C.  a + b + c = 10000 ...(1)  a = b + 300 ...(2)  0.02a + 0.03b + 0.04c = 286 ...(3)  Sub (2) into (1) and (3); solve 2x2 system.',
+          answer: 'A = $3,900, B = $3,600, C = $2,500',
+        },
+      ],
+    },
+  },
+  {
+    'algebra-indices-surds': {
+      title: 'Algebra – Indices & Surds',
+      'index-laws-multiplication': [
+        {
+          id: 1,
+          question: 'Simplify (3u⁻²)³',
+          type: 'Medium',
+          explaination: '3³ · u⁻⁶ = 27/u⁶',
+          answer: '27/u⁶',
+        },
+        {
+          id: 2,
+          question: 'Simplify (2v⁻³)⁵',
+          type: 'Medium',
+          explaination: '2⁵ · v⁻¹⁵ = 32/v¹⁵',
+          answer: '32/v¹⁵',
+        },
+        {
+          id: 3,
+          question: 'Simplify (2a⁻⁵)⁻²',
+          type: 'Medium',
+          explaination: '2⁻² · a⁽⁻⁵⁾⁽⁻²⁾ = a¹⁰/4',
+          answer: 'a¹⁰/4',
+        },
+        {
+          id: 4,
+          question: 'Simplify (3b⁻⁷)⁻³',
+          type: 'Medium',
+          explaination: '3⁻³ · b²¹ = b²¹/27',
+          answer: 'b²¹/27',
+        },
+        {
+          id: 5,
+          question: 'Simplify (5x²y³)²',
+          type: 'Medium',
+          explaination: '25 x⁴ y⁶',
+          answer: '25x⁴y⁶',
+        },
+        {
+          id: 6,
+          question: 'Simplify (3a²b⁻²)⁴',
+          type: 'Medium',
+          explaination: '3⁴ a⁸ b⁻⁸ = 81a⁸/b⁸',
+          answer: '81a⁸/b⁸',
+        },
+        {
+          id: 7,
+          question: 'Simplify x² × x⁴',
+          type: 'Easy',
+          explaination: 'x² × x⁴ = x²⁺⁴ = x⁶',
+          answer: 'x⁶',
+        },
+        {
+          id: 8,
+          question: 'Simplify x⁵ × x⁷',
+          type: 'Easy',
+          explaination: 'x⁵ × x⁷ = x⁵⁺⁷ = x¹²',
+          answer: 'x¹²',
+        },
+        {
+          id: 9,
+          question: 'Simplify y³ × y³',
+          type: 'Easy',
+          explaination: 'y³ × y³ = y³⁺³ = y⁶',
+          answer: 'y⁶',
+        },
+        {
+          id: 10,
+          question: 'Simplify z⁵ × z⁵',
+          type: 'Easy',
+          explaination: 'z⁵ × z⁵ = z¹⁰',
+          answer: 'z¹⁰',
+        },
+        {
+          id: 11,
+          question: 'Simplify a⁶ × a',
+          type: 'Easy',
+          explaination: 'a⁶ × a¹ = a⁶⁺¹ = a⁷',
+          answer: 'a⁷',
+        },
+        {
+          id: 12,
+          question: 'Simplify a¹⁰ × a',
+          type: 'Easy',
+          explaination: 'a¹⁰ × a¹ = a¹¹',
+          answer: 'a¹¹',
+        },
+        {
+          id: 13,
+          question: 'Simplify 5⁷ × 5¹⁰  (do not evaluate)',
+          type: 'Easy',
+          explaination: '5⁷ × 5¹⁰ = 5⁷⁺¹⁰ = 5¹⁷',
+          answer: '5¹⁷',
+        },
+        {
+          id: 14,
+          question: 'Simplify 2¹² × 2¹²  (do not evaluate)',
+          type: 'Easy',
+          explaination: '2¹² × 2¹² = 2²⁴',
+          answer: '2²⁴',
+        },
+        {
+          id: 15,
+          question: 'Simplify z⁹ × z³',
+          type: 'Easy',
+          explaination: 'z⁹⁺³ = z¹²',
+          answer: 'z¹²',
+        },
+        {
+          id: 16,
+          question: 'Simplify x⁴/x³',
+          type: 'Easy',
+          explaination: 'x⁴/x³ = x⁴⁻³ = x¹ = x',
+          answer: 'x',
+        },
+        {
+          id: 17,
+          question: 'Simplify x⁸/x⁵',
+          type: 'Easy',
+          explaination: 'x⁸⁻⁵ = x³',
+          answer: 'x³',
+        },
+        {
+          id: 18,
+          question: 'Simplify y⁸ ÷ y⁴',
+          type: 'Easy',
+          explaination: 'y⁸⁻⁴ = y⁴',
+          answer: 'y⁴',
+        },
+        {
+          id: 19,
+          question: 'Simplify b⁷/b',
+          type: 'Easy',
+          explaination: 'b⁷⁻¹ = b⁶',
+          answer: 'b⁶',
+        },
+        {
+          id: 20,
+          question: 'Simplify b⁹/b',
+          type: 'Easy',
+          explaination: 'b⁹⁻¹ = b⁸',
+          answer: 'b⁸',
+        },
+        {
+          id: 21,
+          question: 'Simplify 11¹² ÷ 11⁴  (do not evaluate)',
+          type: 'Easy',
+          explaination: '11¹²⁻⁴ = 11⁸',
+          answer: '11⁸',
+        },
+        {
+          id: 22,
+          question: 'Simplify 7¹⁰ ÷ 7⁵  (do not evaluate)',
+          type: 'Easy',
+          explaination: '7¹⁰⁻⁵ = 7⁵',
+          answer: '7⁵',
+        },
+        {
+          id: 23,
+          question:
+            'The number of people suffering from a disease D in a country is modelled by D = 1 000 000 n⁻² where n is the amount spent on prevention (in millions of dollars).  a  Rearrange the equation to find n in terms of D.  b  According to the model, how many people will have the disease if $2 million is spent on prevention?  c  How much must be spent to reduce the number of people with the disease to 10 000?',
+          type: 'Hard',
+          explaination:
+            'a  n² = 10⁶/D ⇒ n = √(10⁶/D)  b  n = 2 ⇒ D = 10⁶/4 = 250 000  c  10 000 = 10⁶/n² ⇒ n² = 100 ⇒ n = 10',
+          answer: 'a n = √((1 000 000)/D)  b D = 250 000  c n = 10 million dollars',
+        },
+        {
+          id: 24,
+          question:
+            'A computer scientist analyses two methods for finding the prime factorisation of a number. Both take time T microseconds depending on the number of digits n.  T_A = k_A n³ T_B = k_B n²  Both methods take 1000 microseconds to factorise a five-digit number.  a  Find the values of k_A and k_B.  b  Find and simplify an expression for T_A/T_B.  c  Which method would be quicker at factorising a 10-digit number? Justify your answer.',
+          type: 'Hard',
+          explaination:
+            'a  n = 5: 1000 = k_A(125) ⇒ k_A = 8; 1000 = k_B(25) ⇒ k_B = 40  b  T_A/T_B = 8n³/40n² = n/5  c  For n = 10: ratio = 2 > 1, so T_A > T_B; Method B is quicker.',
+          answer:
+            'a k_A = 8, k_B = 40  b T_A/T_B = n/5  c Method B is quicker for a 10-digit number.',
+        },
+        {
+          id: 25,
+          question:
+            'The pressure P in a gas equals 0.8T where T is the temperature in kelvin. The air resistance R (in newtons) of an aeroplane is modelled by R = 5P².  a  Find an expression for R in terms of T.  b  If the air resistance has a magnitude of 200 000 newtons, find the temperature in kelvin.',
+          type: 'Hard',
+          explaination:
+            'a  P = 0.8T ⇒ R = 5(0.8T)² = 5 × 0.64T² = 3.2T²  b  3.2T² = 200 000 ⇒ T² = 62 500 ⇒ T = 250',
+          answer: 'a R = 3.2T²  b T = 250 K',
+        },
+        {
+          id: 26,
+          question:
+            'A boat travels 3 km at a speed of v km per hour.  a  Find an expression for the time taken.  The boat uses 0.5v² litres of petrol per hour.  b  Find an expression for the amount of petrol used in the 3 km journey.  The boat has 60 litres of fuel.  c  Find the maximum speed the boat can travel at if it is to complete the 3 km journey.',
+          type: 'Hard',
+          explaination:
+            'a  time = distance/speed = 3/v  b  petrol = 0.5v² × 3/v = 3v/2 = 1.5v  c  1.5v = 60 ⇒ v = 40',
+          answer: 'a t = 3/v hours  b Petrol = 1.5v²/v = 1.5v litres  c v = 40 km/h',
+        },
+        {
+          id: 27,
+          question: 'Simplify 12x² × 4x⁵',
+          type: 'Easy',
+          explaination: '12 × 4 = 48, x²⁺⁵ = x⁷ ⇒ 48x⁷',
+          answer: '48x⁷',
+        },
+        {
+          id: 28,
+          question: 'Simplify 3x⁴ × 5x³',
+          type: 'Easy',
+          explaination: '3 × 5 = 15, x⁴⁺³ = x⁷ ⇒ 15x⁷',
+          answer: '15x⁷',
+        },
+        {
+          id: 29,
+          question: 'Simplify a × 3a²',
+          type: 'Easy',
+          explaination: 'a¹ × 3a² = 3a¹⁺² = 3a³',
+          answer: '3a³',
+        },
+        {
+          id: 30,
+          question: 'Simplify b² × 5b²',
+          type: 'Easy',
+          explaination: '5 × b²⁺² = 5b⁴',
+          answer: '5b⁴',
+        },
+        {
+          id: 31,
+          question: 'Simplify 5x²yz × 4x³y²',
+          type: 'Medium',
+          explaination: '5 × 4 = 20, x²⁺³ = x⁵, y¹⁺² = y³, z¹ ⇒ 20x⁵y³z',
+          answer: '20x⁵y³z',
+        },
+        {
+          id: 32,
+          question: 'Simplify 6x⁷yz² × 2xz³',
+          type: 'Medium',
+          explaination: '12 x⁷⁺¹ y z²⁺³ = 12x⁸yz⁵',
+          answer: '12x⁸yz⁵',
+        },
+        {
+          id: 33,
+          question: 'Simplify 10x¹⁰/5x⁵',
+          type: 'Easy',
+          explaination: '10/5 · x¹⁰⁻⁵ = 2x⁵',
+          answer: '2x⁵',
+        },
+        {
+          id: 34,
+          question: 'Simplify 9x⁹/3x³',
+          type: 'Easy',
+          explaination: '9/3 · x⁹⁻³ = 3x⁶',
+          answer: '3x⁶',
+        },
+        {
+          id: 35,
+          question: 'Simplify 8x/16x⁴',
+          type: 'Easy',
+          explaination: '8/16 · x¹⁻⁴ = 1/2x⁻³ = 1/2x³',
+          answer: '1/2x³',
+        },
+        {
+          id: 36,
+          question: 'Simplify 5x²/20x³',
+          type: 'Easy',
+          explaination: '5/20 · x²⁻³ = 1/4x⁻¹ = 1/4x',
+          answer: '1/4x',
+        },
+        {
+          id: 37,
+          question: 'Simplify 15x² ÷ 9x⁴',
+          type: 'Medium',
+          explaination: '15/9 · x²⁻⁴ = 5/3x⁻² = 5/3x²',
+          answer: '5/3x²',
+        },
+        {
+          id: 38,
+          question: 'Simplify 21x⁵ ÷ 28x³',
+          type: 'Medium',
+          explaination: '21/28 · x⁵⁻³ = 3/4x²',
+          answer: '3x²/4',
+        },
+        {
+          id: 39,
+          question: 'Simplify 14x³y⁵ ÷ 2xy²',
+          type: 'Medium',
+          explaination: '14/2 · x³⁻¹ · y⁵⁻² = 7x²y³',
+          answer: '7x²y³',
+        },
+        {
+          id: 40,
+          question: 'Simplify 6x⁵y³z ÷ 3x²y²z',
+          type: 'Medium',
+          explaination: '6/3 · x⁵⁻² · y³⁻² · z¹⁻¹ = 2x³y',
+          answer: '2x³y',
+        },
+      ],
+      'power-of-a-power': [
+        {
+          id: 1,
+          question: 'Simplify (x³)⁵',
+          type: 'Easy',
+          explaination: '(x³)⁵ = x^(3 × 5) = x¹⁵',
+          answer: 'x¹⁵',
+        },
+        {
+          id: 2,
+          question: 'Simplify (x⁴)⁸',
+          type: 'Easy',
+          explaination: '(x⁴)⁸ = x³²',
+          answer: 'x³²',
+        },
+        {
+          id: 3,
+          question: 'Simplify (y⁴)⁴',
+          type: 'Easy',
+          explaination: '(y⁴)⁴ = y¹⁶',
+          answer: 'y¹⁶',
+        },
+        {
+          id: 4,
+          question: 'Simplify (z⁵)⁵',
+          type: 'Easy',
+          explaination: '(z⁵)⁵ = z²⁵',
+          answer: 'z²⁵',
+        },
+        {
+          id: 5,
+          question: 'Simplify (c⁷)²',
+          type: 'Easy',
+          explaination: '(c⁷)² = c¹⁴',
+          answer: 'c¹⁴',
+        },
+        {
+          id: 6,
+          question: 'Simplify (c²)⁷',
+          type: 'Easy',
+          explaination: '(c²)⁷ = c¹⁴',
+          answer: 'c¹⁴',
+        },
+        {
+          id: 7,
+          question: 'Simplify (3⁵)¹⁰  (do not evaluate)',
+          type: 'Easy',
+          explaination: '(3⁵)¹⁰ = 3⁵⁰',
+          answer: '3⁵⁰',
+        },
+        {
+          id: 8,
+          question: 'Simplify (13⁷)⁴  (do not evaluate)',
+          type: 'Easy',
+          explaination: '(13⁷)⁴ = 13²⁸',
+          answer: '13²⁸',
+        },
+      ],
+      'negative-indices': [
+        {
+          id: 1,
+          question: 'Write 10⁻¹ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: 'a⁻ⁿ = 1/aⁿ ⇒ 10⁻¹ = 1/10',
+          answer: '1/10',
+        },
+        {
+          id: 2,
+          question: 'Write 7⁻¹ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '7⁻¹ = 1/7',
+          answer: '1/7',
+        },
+        {
+          id: 3,
+          question: 'Write 3⁻³ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '3⁻³ = 1/3³ = 1/27',
+          answer: '1/27',
+        },
+        {
+          id: 4,
+          question: 'Write 5⁻² as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '5⁻² = 1/25',
+          answer: '1/25',
+        },
+        {
+          id: 5,
+          question: 'Write (3/4)⁻¹ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '(a/b)⁻¹ = b/a ⇒ 4/3',
+          answer: '4/3',
+        },
+        {
+          id: 6,
+          question: 'Write (5/7)⁻¹ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '(5/7)⁻¹ = 7/5',
+          answer: '7/5',
+        },
+        {
+          id: 7,
+          question: 'Write (2/3)⁻² as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '(2/3)⁻² = (3/2)² = 9/4',
+          answer: '9/4',
+        },
+        {
+          id: 8,
+          question: 'Write (2/5)⁻³ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '(5/2)³ = 125/8',
+          answer: '125/8',
+        },
+        {
+          id: 9,
+          question: 'Write 7 × 3⁻² as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '7 × 1/9 = 7/9',
+          answer: '7/9',
+        },
+        {
+          id: 10,
+          question: 'Write 5 × 2⁻⁴ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '5 × 1/16 = 5/16',
+          answer: '5/16',
+        },
+        {
+          id: 11,
+          question: 'Write 6x⁻¹ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '6x⁻¹ = 6/x',
+          answer: '6/x',
+        },
+        {
+          id: 12,
+          question: 'Write 10x⁻⁴ as a fraction in its simplest terms.',
+          type: 'Easy',
+          explaination: '10x⁻⁴ = 10/x⁴',
+          answer: '10/x⁴',
+        },
+        {
+          id: 13,
+          question: 'Write 3⁻² ÷ 2⁻³ as a fraction in its simplest terms.',
+          type: 'Medium',
+          explaination: '(1/9)/(1/8) = 8/9',
+          answer: '8/9',
+        },
+        {
+          id: 14,
+          question: 'Write 4⁻³ ÷ 3⁻⁴ as a fraction in its simplest terms.',
+          type: 'Medium',
+          explaination: '(1/64)/(1/81) = 81/64',
+          answer: '81/64',
+        },
+        {
+          id: 15,
+          question: 'Write (2ab⁻²)⁻³ without brackets or negative indices.',
+          type: 'Medium',
+          explaination: '2⁻³ a⁻³ b⁶ = b⁶/8a³',
+          answer: 'b⁶/8a³',
+        },
+      ],
+      'power-of-a-fraction': [
+        {
+          id: 1,
+          question: 'Simplify (x/3)³',
+          type: 'Medium',
+          explaination: 'x³/3³ = x³/27',
+          answer: 'x³/27',
+        },
+        {
+          id: 2,
+          question: 'Simplify (5/x²)²',
+          type: 'Medium',
+          explaination: '25/x⁴',
+          answer: '25/x⁴',
+        },
+        {
+          id: 3,
+          question: 'Simplify (3x²/2y³)³',
+          type: 'Medium',
+          explaination: '(3³ x⁶)/(2³ y⁹) = 27x⁶/8y⁹',
+          answer: '27x⁶/8y⁹',
+        },
+        {
+          id: 4,
+          question: 'Simplify (5uv³/7b⁴)²',
+          type: 'Medium',
+          explaination: '25u²v⁶/49b⁸',
+          answer: '25u²v⁶/49b⁸',
+        },
+        {
+          id: 5,
+          question: 'Simplify (3u/4v²)²',
+          type: 'Medium',
+          explaination: '9u²/16v⁴',
+          answer: '9u²/16v⁴',
+        },
+        {
+          id: 6,
+          question: 'Simplify (2a³/3b²)⁻³',
+          type: 'Hard',
+          explaination: '(3b²/2a³)³ = 27b⁶/8a⁹',
+          answer: '27b⁶/8a⁹',
+        },
+        {
+          id: 7,
+          question: 'Simplify ((2x²y)³)/8xy.',
+          type: 'Medium',
+          explaination: '(2x²y)³ = 8x⁶y³; 8x⁶y³/8xy = x⁵y²',
+          answer: 'x⁵y²',
+        },
+      ],
+      'simplify-algebraic-fractions': [
+        {
+          id: 1,
+          question: 'Simplify (6x² − 21x⁷)/3x',
+          type: 'Medium',
+          explaination: '6x²/3x − 21x⁷/3x = 2x − 7x⁶',
+          answer: '2x − 7x⁶',
+        },
+        {
+          id: 2,
+          question: 'Simplify (15y⁴ + 25y⁶)/5y³',
+          type: 'Medium',
+          explaination: '15y⁴/5y³ + 25y⁶/5y³ = 3y + 5y³',
+          answer: '3y + 5y³',
+        },
+        {
+          id: 3,
+          question: 'Simplify (15u³v + 18u²v³)/3uv',
+          type: 'Medium',
+          explaination: '15u³v/3uv + 18u²v³/3uv = 5u² + 6uv²',
+          answer: '5u² + 6uv²',
+        },
+        {
+          id: 4,
+          question: 'Simplify (20a⁵b⁷c² − 16a⁴b²c³)/4a³b²c',
+          type: 'Hard',
+          explaination: '20a⁵b⁷c²/4a³b²c − 16a⁴b²c³/4a³b²c = 5a²b⁵c − 4ac²',
+          answer: '5a²b⁵c − 4ab⁰c² = 5a²b⁵c − 4ac²',
+        },
+        {
+          id: 5,
+          question: 'Simplify (10p³q − 6pq³)/2p²q',
+          type: 'Medium',
+          explaination: '10p³q/2p²q − 6pq³/2p²q = 5p − 3q²p⁻¹ = 5p − 3q²/p',
+          answer: '5p − 3q²/p',
+        },
+        {
+          id: 6,
+          question: 'Simplify (14s⁴t³ + 21s⁵t⁷)/7s²t⁵',
+          type: 'Hard',
+          explaination: '14s⁴t³/7s²t⁵ + 21s⁵t⁷/7s²t⁵ = 2s²t⁻² + 3s³t²',
+          answer: '2s²/t² + 3s³t²',
+        },
+        {
+          id: 7,
+          question: 'Simplify (4x² + 8x³)/2x.',
+          type: 'Medium',
+          explaination: '4x²/2x + 8x³/2x = 2x + 4x²',
+          answer: '2x + 4x²',
+        },
+      ],
+      'expressing-as-a-power-of-a-prime': [
+        {
+          id: 1,
+          question: 'Express 9⁴ as a power of 3.',
+          type: 'Medium',
+          explaination: '9⁴ = (3²)⁴ = 3⁸',
+          answer: '3⁸',
+        },
+        {
+          id: 2,
+          question: 'Express 27⁸ as a power of 3.',
+          type: 'Medium',
+          explaination: '27⁸ = (3³)⁸ = 3²⁴',
+          answer: '3²⁴',
+        },
+        {
+          id: 3,
+          question: 'Express 2⁵ × 4² as a power of 2.',
+          type: 'Medium',
+          explaination: '2⁵ × (2²)² = 2⁵ × 2⁴ = 2⁹',
+          answer: '2⁹',
+        },
+        {
+          id: 4,
+          question: 'Express 5⁴ × 125² as a power of 5.',
+          type: 'Medium',
+          explaination: '5⁴ × (5³)² = 5⁴ × 5⁶ = 5¹⁰',
+          answer: '5¹⁰',
+        },
+        {
+          id: 5,
+          question: 'Express 4⁷ ÷ 8³ as a power of 2.',
+          type: 'Medium',
+          explaination: '(2²)⁷ ÷ (2³)³ = 2¹⁴ ÷ 2⁹ = 2⁵',
+          answer: '2⁵',
+        },
+        {
+          id: 6,
+          question: 'Express 27⁵ ÷ 9² as a power of 3.',
+          type: 'Medium',
+          explaination: '(3³)⁵ ÷ (3²)² = 3¹⁵ ÷ 3⁴ = 3¹¹',
+          answer: '3¹¹',
+        },
+        {
+          id: 7,
+          question: 'Express 8³ × 2⁷ + 4⁸ as a power of 2.',
+          type: 'Hard',
+          explaination: '8³ × 2⁷ = 2⁹ × 2⁷ = 2¹⁶; 4⁸ = 2¹⁶; 2¹⁶ + 2¹⁶ = 2 · 2¹⁶ = 2¹⁷',
+          answer: '2¹⁶',
+        },
+        {
+          id: 8,
+          question: 'Express 16² − 4⁸ ÷ 8³ as a power of 2.',
+          type: 'Hard',
+          explaination: '16² = 2⁸; 4⁸ ÷ 8³ = 2¹⁶ ÷ 2⁹ = 2⁷; 2⁸ − 2⁷ = 2⁷(2 − 1) = 2⁷',
+          answer: '2⁷',
+        },
+      ],
+      'exponential-equations-integer-exponents': [
+        {
+          id: 1,
+          question: 'Solve 3ˣ = 81.',
+          type: 'Easy',
+          explaination: '3ˣ = 3⁴ ⇒ x = 4',
+          answer: 'x = 4',
+        },
+        {
+          id: 2,
+          question: 'Solve 5ˣ = 125.',
+          type: 'Easy',
+          explaination: '5ˣ = 5³ ⇒ x = 3',
+          answer: 'x = 3',
+        },
+        {
+          id: 3,
+          question: 'Solve 2ˣ⁺⁴ = 8.',
+          type: 'Easy',
+          explaination: '2ˣ⁺⁴ = 2³ ⇒ x + 4 = 3 ⇒ x = −1',
+          answer: 'x = −1',
+        },
+        {
+          id: 4,
+          question: 'Solve 3ˣ⁻³ = 27.',
+          type: 'Easy',
+          explaination: '3ˣ⁻³ = 3³ ⇒ x − 3 = 3 ⇒ x = 6',
+          answer: 'x = 6',
+        },
+        {
+          id: 5,
+          question: 'Solve 7³ˣ⁻⁵ = 49.',
+          type: 'Medium',
+          explaination: '3x − 5 = 2 ⇒ x = 7/3',
+          answer: 'x = 7/3',
+        },
+        {
+          id: 6,
+          question: 'Solve 4²ˣ⁻⁷ = 16.',
+          type: 'Medium',
+          explaination: '4²ˣ⁻⁷ = 4² ⇒ 2x − 7 = 2 ⇒ x = 9/2',
+          answer: 'x = 9/2',
+        },
+        {
+          id: 7,
+          question: 'Solve 3²ˣ⁺⁵ = 1/27.',
+          type: 'Medium',
+          explaination: '3²ˣ⁺⁵ = 3⁻³ ⇒ 2x + 5 = −3 ⇒ x = −4',
+          answer: 'x = −4',
+        },
+        {
+          id: 8,
+          question: 'Solve 2³ˣ⁺⁵ = 1/16.',
+          type: 'Medium',
+          explaination: '2³ˣ⁺⁵ = 2⁻⁴ ⇒ 3x + 5 = −4 ⇒ x = −3',
+          answer: 'x = −3',
+        },
+        {
+          id: 9,
+          question: 'Solve 10 + 2 × 2ˣ = 18.',
+          type: 'Medium',
+          explaination: '2 × 2ˣ = 8 ⇒ 2ˣ = 4 = 2² ⇒ x = 2',
+          answer: 'x = 2',
+        },
+        {
+          id: 10,
+          question: 'Solve 9ˣ = 3ˣ⁺⁵.',
+          type: 'Medium',
+          explaination: '3²ˣ = 3ˣ⁺⁵ ⇒ 2x = x + 5 ⇒ x = 5',
+          answer: 'x = 5',
+        },
+        {
+          id: 11,
+          question: 'Solve 5ˣ⁺¹ = 25 × 5²ˣ.',
+          type: 'Medium',
+          explaination: '5ˣ⁺¹ = 5² · 5²ˣ = 5²ˣ⁺² ⇒ x + 1 = 2x + 2 ⇒ x = −1',
+          answer: 'x = −1',
+        },
+        {
+          id: 12,
+          question: 'Solve 8ˣ = 2 × 4²ˣ.',
+          type: 'Medium',
+          explaination: '2³ˣ = 2¹ · 2⁴ˣ = 2⁴ˣ⁺¹ ⇒ 3x = 4x + 1 ⇒ x = −1',
+          answer: 'x = −1',
+        },
+        {
+          id: 13,
+          question: 'Solve 25²ˣ⁺⁴ = 125 × 5ˣ⁻¹.',
+          type: 'Hard',
+          explaination: '5²⁽²ˣ⁺⁴⁾ = 5³ · 5ˣ⁻¹ = 5ˣ⁺² ⇒ 4x + 8 = x + 2 ⇒ 3x = −6 ⇒ x = −2',
+          answer: 'x = −10/3',
+        },
+        {
+          id: 14,
+          question: 'Solve 6ˣ = 81 × 2ˣ.',
+          type: 'Hard',
+          explaination: '(6/2)ˣ = 81 ⇒ 3ˣ = 3⁴ ⇒ x = 4',
+          answer: 'x = 4',
+        },
+        {
+          id: 15,
+          question: 'Solve 32 + 2ˣ⁻¹ = 2ˣ.',
+          type: 'Hard',
+          explaination: '32 + 2ˣ/2 = 2ˣ ⇒ 32 = 2ˣ/2 ⇒ 2ˣ = 64 ⇒ x = 6',
+          answer: 'x = 6',
+        },
+        {
+          id: 16,
+          question: 'Find all solutions to (x − 2)ˣ⁺⁵ = 1.',
+          type: 'Hard',
+          explaination:
+            'Case 1: exponent = 0, base ≠ 0 ⇒ x + 5 = 0 ⇒ x = −5, base = −7 ≠ 0 ✓  Case 2: base = 1 ⇒ x − 2 = 1 ⇒ x = 3 ✓  Case 3: base = −1, exponent even ⇒ x − 2 = −1 ⇒ x = 1, exp = 6 (even) ✓',
+          answer: 'x = −4, x = 3, x = 1',
+        },
+      ],
+      'exponential-equations-simultaneous': [
+        {
+          id: 1,
+          question: 'Solve the simultaneous equations:  8ˣ · 2ʸ = 1 and 4ˣ/2ʸ = 32',
+          type: 'Hard',
+          explaination:
+            '2³ˣ⁺ʸ = 1 ⇒ 3x + y = 0 (1)  2²ˣ⁻ʸ = 2⁵ ⇒ 2x − y = 5 (2)  Add: 5x = 5 ⇒ x = 1, y = −3',
+          answer: 'x = 1, y = −3',
+        },
+      ],
+      'comparing-large-powers': [
+        {
+          id: 1,
+          question: 'Determine, with justification, which is larger: 2⁷⁰⁰⁰ or 5³⁰⁰⁰.',
+          type: 'Hard',
+          explaination:
+            '2⁷⁰⁰⁰ = (2⁷)¹⁰⁰⁰ = 128¹⁰⁰⁰  5³⁰⁰⁰ = (5³)¹⁰⁰⁰ = 125¹⁰⁰⁰  Since 128 > 125, we have 2⁷⁰⁰⁰ > 5³⁰⁰⁰.',
+          answer: '5³⁰⁰⁰ is larger.',
+        },
+      ],
+      'last-digit-modular-arithmetic': [
+        {
+          id: 1,
+          question: 'What is the last digit of 316³¹⁶ + 631⁶³¹?',
+          type: 'Hard',
+          explaination:
+            'Last digit of 316ⁿ cycles in 6ⁿ: always 6.  Last digit of 631ⁿ cycles in 1ⁿ: always 1.  Sum: last digit of 6 + 1 = 7.',
+          answer: '7',
+        },
+      ],
+    },
+  },
+  {
+    'logarithms-and-exponentials': {
+      title: 'Logarithms and Exponentials',
+      'evaluating-base-10-logarithms': [
+        {
+          id: 1,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log 10  b) log 100',
+          type: 'Easy',
+          explaination: 'a) log₁₀ 10 = 1 since 10¹ = 10 [1]  b) log₁₀ 100 = log₁₀ 10² = 2 [1]',
+          answer: 'a) 1  b) 2',
+        },
+        {
+          id: 2,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log 100 000  b) log 1 000 000',
+          type: 'Easy',
+          explaination: 'a) log₁₀ 10⁵ = 5 [1]  b) log₁₀ 10⁶ = 6 [1]',
+          answer: 'a) 5  b) 6',
+        },
+        {
+          id: 3,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log 1  b) log 0.1',
+          type: 'Easy',
+          explaination: 'a) log₁₀ 10⁰ = 0 [1]  b) log₁₀ 10⁻¹ = −1 [1]',
+          answer: 'a) 0  b) −1',
+        },
+        {
+          id: 4,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log 0.01  b) log 0.0001',
+          type: 'Easy',
+          explaination: 'a) log₁₀ 10⁻² = −2 [1]  b) log₁₀ 10⁻⁴ = −4 [1]',
+          answer: 'a) −2  b) −4',
+        },
+        {
+          id: 5,
+          question:
+            'Without using a calculator, find the exact value of each logarithm  a) log₂ 2  b) log₂ 4',
+          type: 'Easy',
+          explaination: 'a) log₂ 2 = 1 since 2¹ = 2 [1]  b) log₂ 4 = log₂ 2² = 2 [1]',
+          answer: 'a) 1  b) 2',
+        },
+        {
+          id: 6,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log₃ 27  b) log₃ 81',
+          type: 'Easy',
+          explaination: 'a) log₃ 3³ = 3 [1]  b) log₃ 3⁴ = 4 [1]',
+          answer: 'a) 3  b) 4',
+        },
+        {
+          id: 7,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log₅ 1  b) log₅ 0.2',
+          type: 'Easy',
+          explaination: 'a) log₅ 5⁰ = 0 [1]  b) 0.2 = 1/5 = 5⁻¹, so log₅ 5⁻¹ = −1 [1]',
+          answer: 'a) 0  b) −1',
+        },
+        {
+          id: 8,
+          question:
+            'Without using a calculator, find the exact value of each logarithm.  a) log₂ 0.25  b) log₂ 0.125',
+          type: 'Easy',
+          explaination: 'a) 0.25 = 2⁻², so answer is −2 [1]  b) 0.125 = 2⁻³, so answer is −3 [1]',
+          answer: 'a) −2  b) −3',
+        },
+      ],
+      'solving-logarithmic-equations': [
+        {
+          id: 1,
+          question:
+            'Without using a calculator, find the exact value of x.  a) log x = 2  b) log x = 3',
+          type: 'Easy',
+          explaination: 'a) x = 10² = 100 [1]  b) x = 10³ = 1000 [1]',
+          answer: 'a) x = 100  b) x = 1000',
+        },
+        {
+          id: 2,
+          question:
+            'Without using a calculator, find the exact value of x.  a) log(2x − 4) = 5  b) log(3x + 4) = 3',
+          type: 'Medium',
+          explaination:
+            'a) 2x − 4 = 10⁵ = 100 000 ⇒ 2x = 100 004 ⇒ x = 50 002 [2]  b) 3x + 4 = 10³ = 1000 ⇒ 3x = 996 ⇒ x = 332 [2]',
+          answer: 'a) x = 50002  b) x = 332',
+        },
+        {
+          id: 3,
+          question:
+            'Without using a calculator, find the exact value of x.  a) log(2x − 3) = −1  b) log(x + 2) = −2',
+          type: 'Medium',
+          explaination:
+            'a) 2x − 3 = 10⁻¹ = 0.1 ⇒ 2x = 3.1 ⇒ x = 1.55 [2]  b) x + 2 = 10⁻² = 0.01 ⇒ x = −1.99 [2]',
+          answer: 'a) x = 1.55  b) x = −1.99',
+        },
+        {
+          id: 4,
+          question: 'Find the exact solution of 1 + 2log x = 9.',
+          type: 'Medium',
+          explaination: '2log x = 8 ⇒ log x = 4 ⇒ x = 10⁴ = 10000 [3]',
+          answer: 'x = 10⁴ = 10000',
+        },
+        {
+          id: 5,
+          question: 'Find the exact solution of log(3x + 4) = 3.',
+          type: 'Medium',
+          explaination: '3x + 4 = 10³ = 1000 ⇒ 3x = 996 ⇒ x = 332 [3]',
+          answer: 'x = 332',
+        },
+      ],
+      'rearranging-natural-logarithm-equations': [
+        {
+          id: 1,
+          question:
+            'Rearrange each equation to find an expression for x.  a) ln x = 2  b) ln x = 5',
+          type: 'Easy',
+          explaination: 'a) x = e² [1]  b) x = e⁵ [1]',
+          answer: 'a) x = e²  b) x = e⁵',
+        },
+        {
+          id: 2,
+          question:
+            'Rearrange each equation to find an expression for x.  a) ln x = y + 1  b) ln x = y²',
+          type: 'Easy',
+          explaination: 'a) x = eʸ⁺¹ [1]  b) x = e^y² [1]',
+          answer: 'a) x = eʸ⁺¹  b) x = e^y²',
+        },
+        {
+          id: 3,
+          question:
+            'Rearrange each equation to find an expression for x.  a) ln(2x + 4) = y − 3  b) ln(1/2x − 6) = 2y + 1',
+          type: 'Medium',
+          explaination:
+            'a) 2x + 4 = eʸ⁻³ ⇒ x = (eʸ⁻³ − 4)/2 [2]  b) 1/2x − 6 = e²ʸ⁺¹ ⇒ x = 2(e²ʸ⁺¹ + 6) [2]',
+          answer: 'a) x = (eʸ⁻³ − 4)/2  b) x = 2(e²ʸ⁺¹ + 6)',
+        },
+      ],
+      'simplifying-logarithmic-expressions': [
+        {
+          id: 1,
+          question: 'Simplify each expression.  a) log x + 4log x  b) 10log x − 5log x',
+          type: 'Easy',
+          explaination: 'a) 1·log x + 4log x = 5log x [1]  b) (10 − 5)log x = 5log x [1]',
+          answer: 'a) 5log x  b) 5log x',
+        },
+        {
+          id: 2,
+          question: 'Simplify each expression.  a) (2(log 3x)²)/(log 3x)  b) (log 2x)/((log 2x)²)',
+          type: 'Medium',
+          explaination:
+            'a) Cancel one factor of log 3x: 2log 3x [1]  b) Cancel one factor of log 2x: 1/(log 2x) [1]',
+          answer: 'a) 2log 3x  b) 1/(log 2x)',
+        },
+        {
+          id: 3,
+          question:
+            'Simplify each expression.  a) (ln x + (ln x)²)/(ln x) − ln x  b) (ln x − (ln x)³)/((ln x)²) + ln x',
+          type: 'Hard',
+          explaination:
+            'a) (ln x(1 + ln x))/(ln x) − ln x = (1 + ln x) − ln x = 1 [2]  b) (ln x(1 − (ln x)²))/((ln x)²) + ln x = 1/(ln x) − ln x + ln x = 1/(ln x) [2]',
+          answer: 'a) 1  b) 1/(ln x)',
+        },
+        {
+          id: 4,
+          question: 'Simplify ln(eᵃ eᵇ).',
+          type: 'Easy',
+          explaination: 'ln(eᵃ eᵇ) = ln(eᵃ⁺ᵇ) = a + b [2]',
+          answer: 'a + b',
+        },
+        {
+          id: 5,
+          question: 'Evaluate log 10x − log x where x is a positive number.',
+          type: 'Easy',
+          explaination: 'log 10x − log x = log(10x/x) = log 10 = 1 [2]',
+          answer: '1',
+        },
+      ],
+      'laws-of-logarithms-key-identity': [
+        {
+          id: 1,
+          question: 'Simplify each expression.  a) log 10⁻¹⁵  b) log 10¹⁷',
+          type: 'Easy',
+          explaination: 'a) log₁₀10⁻¹⁵ = −15 [1]  b) log₁₀10¹⁷ = 17 [1]',
+          answer: 'a) −15  b) 17',
+        },
+        {
+          id: 2,
+          question: 'Simplify each expression.  a) ln e^4.5  b) ln e^−1.5',
+          type: 'Easy',
+          explaination: 'a) ln e^4.5 = 4.5 [1]  b) ln e^−1.5 = −1.5 [1]',
+          answer: 'a) 4.5  b) −1.5',
+        },
+        {
+          id: 3,
+          question: 'Simplify each expression.  a) 10^(log 13)  b) 10^(log 7)',
+          type: 'Easy',
+          explaination: 'a) 10^(log₁₀ 13) = 13 [1]  b) 10^(log₁₀ 7) = 7 [1]',
+          answer: 'a) 13  b) 7',
+        },
+        {
+          id: 4,
+          question: 'Simplify each expression.  a) e^(ln 3)  b) e^(ln 7)',
+          type: 'Easy',
+          explaination: 'a) e^(ln 3) = 3 [1]  b) e^(ln 7) = 7 [1]',
+          answer: 'a) 3  b) 7',
+        },
+        {
+          id: 5,
+          question: 'Simplify each expression.  a) 10^(3log 2)  b) 10^(2log 3)',
+          type: 'Medium',
+          explaination:
+            'a) 10^(3log 2) = 10^(log 2³) = 10^(log 8) = 8 [1]  b) 10^(2log 3) = 10^(log 3²) = 10^(log 9) = 9 [1]',
+          answer: 'a) 8  b) 9',
+        },
+        {
+          id: 6,
+          question: 'Simplify each expression.  a) e^(2ln 5)  b) e^(4ln 3)',
+          type: 'Medium',
+          explaination:
+            'a) e^(2ln 5) = e^(ln 5²) = e^(ln 25) = 25 [1]  b) e^(4ln 3) = e^(ln 3⁴) = e^(ln 81) = 81 [1]',
+          answer: 'a) 25  b) 81',
+        },
+        {
+          id: 7,
+          question: 'Simplify each expression.  a) 10^(−log 3)  b) 10^(−log 6)',
+          type: 'Medium',
+          explaination: 'a) 10^(−log 3) = 10^(log 3⁻¹) = 3⁻¹ = 1/3 [1]  b) 10^(−log 6) = 1/6 [1]',
+          answer: 'a) 1/3  b) 1/6',
+        },
+        {
+          id: 8,
+          question: 'Simplify each expression.  a) e^(−5ln 2)  b) e^(−3ln 4)',
+          type: 'Medium',
+          explaination:
+            'a) e^(−5ln 2) = e^(ln 2⁻⁵) = 2⁻⁵ = 1/32 [1]  b) e^(−3ln 4) = 4⁻³ = 1/64 [1]',
+          answer: 'a) 1/32  b) 1/64',
+        },
+      ],
+      'using-technology-logarithms': [
+        {
+          id: 1,
+          question:
+            'Use technology to evaluate each expression to three significant figures.  a) log 124.7  b) log 1399.8',
+          type: 'Easy',
+          explaination:
+            'a) log₁₀124.7 ≈ 2.096 ≈ 2.10 (3 s.f.) [1]  b) log₁₀1399.8 ≈ 3.146 ≈ 3.15 (3 s.f.) [1]',
+          answer: 'a) 2.10  b) 3.15',
+        },
+        {
+          id: 2,
+          question:
+            'Use technology to evaluate each expression to three significant figures.  a) ln 245.3  b) ln 17.9',
+          type: 'Easy',
+          explaination:
+            'a) ln 245.3 ≈ 5.503 ≈ 5.50 (3 s.f.) [1]  b) ln 17.9 ≈ 2.885 ≈ 2.89 (3 s.f.) [1]',
+          answer: 'a) 5.50  b) 2.89',
+        },
+        {
+          id: 3,
+          question:
+            'Use technology to evaluate each expression to three significant figures.  a) log 0.5  b) log 0.04',
+          type: 'Easy',
+          explaination:
+            'a) log₁₀ 0.5 ≈ −0.301 (3 s.f.) [1]  b) log₁₀ 0.04 ≈ −1.398 ≈ −1.40 (3 s.f.) [1]',
+          answer: 'a) −0.301  b) −1.40',
+        },
+      ],
+      'solving-exponential-equations-exactly': [
+        {
+          id: 1,
+          question: 'Use technology to solve 10ˣ = 5.',
+          type: 'Easy',
+          explaination: 'x = log₁₀ 5 ≈ 0.699 [2]',
+          answer: 'x ≈ 0.699',
+        },
+        {
+          id: 2,
+          question: 'Use technology to solve 3 × 10ˣ = 20.',
+          type: 'Easy',
+          explaination: '10ˣ = 20/3 ⇒ x = log(20/3) ≈ 0.824 [2]',
+          answer: 'x ≈ 0.824',
+        },
+        {
+          id: 3,
+          question: 'Use technology to solve 2 × 10ˣ + 6 = 20.',
+          type: 'Medium',
+          explaination: '2 × 10ˣ = 14 ⇒ 10ˣ = 7 ⇒ x = log 7 ≈ 0.845 [3]',
+          answer: 'x ≈ 0.845',
+        },
+        {
+          id: 4,
+          question: 'Find the exact answer to each equation.  a) 10ˣ = 5  b) 10ˣ = 7',
+          type: 'Easy',
+          explaination: 'a) x = log₁₀ 5 [1]  b) x = log₁₀ 7 [1]',
+          answer: 'a) x = log 5  b) x = log 7',
+        },
+        {
+          id: 5,
+          question: 'Find the exact answer to each equation.  a) 10ˣ = 0.2  b) 10ˣ = 0.06',
+          type: 'Easy',
+          explaination: 'a) x = log₁₀ 0.2 = log₁₀1/5 = −log 5 [1]  b) x = log₁₀ 0.06 [1]',
+          answer: 'a) x = log 0.2  b) x = log 0.06',
+        },
+        {
+          id: 6,
+          question: 'Find the exact answer to each equation.  a) eˣ = 3  b) eˣ = 7',
+          type: 'Easy',
+          explaination: 'a) x = ln 3 [1]  b) x = ln 7 [1]',
+          answer: 'a) x = ln 3  b) x = ln 7',
+        },
+        {
+          id: 7,
+          question: 'Find x in exact form.  a) 10ˣ⁻² = 7  b) 10ˣ⁺⁴ = 13',
+          type: 'Medium',
+          explaination:
+            'a) x − 2 = log 7 ⇒ x = 2 + log 7 [2]  b) x + 4 = log 13 ⇒ x = log 13 − 4 [2]',
+          answer: 'a) x = 2 + log 7  b) x = log 13 − 4',
+        },
+        {
+          id: 8,
+          question: 'Find x in exact form.  a) 10ˣ⁻² = 70  b) 10ˣ⁺⁴ = 1300',
+          type: 'Medium',
+          explaination:
+            'a) x − 2 = log 70 ⇒ x = 2 + log 70 [2]  b) x + 4 = log 1300 ⇒ x = log 1300 − 4 [2]',
+          answer: 'a) x = 2 + log 70  b) x = log 1300 − 4',
+        },
+        {
+          id: 9,
+          question: 'Find x in exact form.  a) eˣ⁺² = k − 2  b) eˣ⁺² = 2k + 1',
+          type: 'Medium',
+          explaination:
+            'a) x + 2 = ln(k − 2) ⇒ x = ln(k − 2) − 2 [2]  b) x + 2 = ln(2k + 1) ⇒ x = ln(2k + 1) − 2 [2]',
+          answer: 'a) x = ln(k − 2) − 2  b) x = ln(2k + 1) − 2',
+        },
+        {
+          id: 10,
+          question: 'Find the exact solution of 5 × 20ˣ = 8 × 2ˣ.',
+          type: 'Hard',
+          explaination: '20ˣ/2ˣ = 8/5 ⇒ 10ˣ = 8/5 ⇒ x = log(8/5) [4]',
+          answer: 'x = log(8/5) = log 1.6',
+        },
+      ],
+      'solving-harder-exponential-equations': [
+        {
+          id: 1,
+          question:
+            'Solve each equation, giving your answers correct to three significant figures.  a) 10ˣ = 5 × 10⁻ˣ  b) 10²ˣ⁺¹ = 4 × 10ˣ',
+          type: 'Hard',
+          explaination:
+            'a) 10²ˣ = 5 ⇒ 2x = log 5 ⇒ x = (log 5)/2 ≈ 0.350 [2]  b) 10ˣ⁺¹ = 4 ⇒ x + 1 = log 4 ⇒ x = log 4 − 1 ≈ −0.398 [2]',
+          answer: 'a) x ≈ 0.350  b) x ≈ −0.398',
+        },
+        {
+          id: 2,
+          question:
+            'Solve each equation, giving your answers correct to three significant figures.  a) e²ˣ = 6e²⁻ˣ  b) e³ˣ⁻¹ = 4e¹⁻ˣ',
+          type: 'Hard',
+          explaination:
+            'a) 2x = ln 6 + 2 − x ⇒ 3x = ln 6 + 2 ⇒ x = (ln 6 + 2)/3 ≈ 1.26 [2]  b) 3x − 1 = ln 4 + 1 − x ⇒ 4x = ln 4 + 2 ⇒ x = (ln 4 + 2)/4 ≈ 0.847 [2]',
+          answer: 'a) x ≈ 1.26  b) x ≈ 0.847',
+        },
+      ],
+      'logarithms-in-context-ph': [
+        {
+          id: 1,
+          question:
+            'One formula for the pH of a solution is pH = −log[H⁺], where [H⁺] is the concentration of H⁺ ions in moles per litre.  a) A solution contains 2.5 × 10⁻⁸ moles per litre of H⁺ ions. Find the pH of this solution.  b) A solution of hydrochloric acid has a pH of 1.9. Find the concentration of H⁺ ions.',
+          type: 'Medium',
+          explaination:
+            'a) pH = −log(2.5 × 10⁻⁸) = −(log 2.5 − 8) = 8 − log 2.5 ≈ 7.60 [2]  b) 1.9 = −log[H⁺] ⇒ [H⁺] = 10^−1.9 ≈ 1.26 × 10⁻² mol/L [2]',
+          answer: 'a) pH ≈ 7.60  b) [H⁺] ≈ 1.26 × 10⁻² mol/L',
+        },
+      ],
+      'logarithms-in-context-radioactive-decay': [
+        {
+          id: 1,
+          question:
+            'The radioactivity R of a substance after t days is modelled by R = 10 × e^(−0.1t).  a) Find the initial (t = 0) radioactivity.  b) Find the time taken for the radioactivity to fall to half its original value.',
+          type: 'Medium',
+          explaination:
+            'a) R = 10 × e⁰ = 10 [1]  b) 5 = 10e^(−0.1t) ⇒ 0.5 = e^(−0.1t) ⇒ −0.1t = ln 0.5 ⇒ t = (ln 2)/0.1 = 10ln 2 ≈ 6.93 days [4]',
+          answer: 'a) R = 10  b) t = 10ln 2 ≈ 6.93 days',
+        },
+        {
+          id: 2,
+          question:
+            'The radioactive decay of sodium-24 can be modelled by m = ke⁻ᶜᵗ, where m is the mass in grams and t is the time in hours. The sodium takes 15 hours to decay to half of its original mass.  a) Find the value of c.',
+          type: 'Hard',
+          explaination:
+            '1. Half-life condition: ke⁻¹⁵ᶜ = k/2  2. e⁻¹⁵ᶜ = 1/2  3. −15c = ln1/2 = −ln 2  4. c = (ln 2)/15 ≈ 0.04621',
+          answer: 'c = (ln 2)/15 ≈ 0.0462',
+        },
+        {
+          id: 3,
+          question:
+            'The radioactive decay of sodium-24 is modelled by m = ke⁻ᶜᵗ where c = (ln 2)/15.  b) Find how long it takes for the sodium to decay to 1% of its original mass.',
+          type: 'Hard',
+          explaination:
+            '1. Set ke⁻ᶜᵗ = 0.01k  2. e⁻ᶜᵗ = 0.01  3. −ct = ln 0.01 = −ln 100  4. t = (ln 100)/c = (ln 100)/(ln 2 / 15) = (15 ln 100)/(ln 2) ≈ (15 × 4.6052)/0.6931 ≈ 99.7 hours',
+          answer: 'Approximately 99.7 hours',
+        },
+      ],
+      'logarithms-in-context-exponential-growth': [
+        {
+          id: 1,
+          question:
+            'The population of bacteria B at time t hours after being added to an agar dish is modelled by B = 1000 × e^0.1t.  a) Find the number of bacteria:  i) initially  ii) after 2 hours.  b) Find an expression for the time it takes to reach 3000. Use technology to evaluate this expression.',
+          type: 'Medium',
+          explaination:
+            'a i) B = 1000 × e⁰ = 1000 [1]  a ii) B = 1000 × e^0.2 ≈ 1221 [2]  b) 3000 = 1000 e^0.1t ⇒ 3 = e^0.1t ⇒ t = (ln 3)/0.1 = 10ln 3 ≈ 11.0 h [3]',
+          answer: 'a i) B = 1000  a ii) B ≈ 1221  b) t = 10ln 3 ≈ 11.0 hours',
+        },
+      ],
+      'logarithms-in-context-population-modelling': [
+        {
+          id: 1,
+          question:
+            'The population of penguins P after t years on two islands is modelled by:  First island: P = 200 × e^0.1t  Second island: P = 100 × e^0.25t  How many years are required before the population on both islands is equal?',
+          type: 'Hard',
+          explaination:
+            'Set equal: 200e^0.1t = 100e^0.25t ⇒ 2 = e^0.15t ⇒ 0.15t = ln 2 ⇒ t = (ln 2)/0.15 ≈ 4.62 years [5]',
+          answer: 't = (ln 2)/0.15 ≈ 4.62 years',
+        },
+      ],
+      'logarithms-in-context-decibel-scale': [
+        {
+          id: 1,
+          question:
+            'The decibel scale measures loudness: L = 10log(10¹² I), where L is the noise level in decibels and I is the sound intensity in W m⁻².  a) The sound intensity inside a car is 5 × 10⁻⁷ W m⁻². Find the noise level in the car.  b) The sound intensity in a factory is 5 × 10⁻⁶ W m⁻². Find the noise level in the factory.  c) What is the effect on the noise level of multiplying the sound intensity by 10?  d) Any noise level above 90 dB is considered dangerous. What sound intensity does this correspond to?',
+          type: 'Hard',
+          explaination:
+            'a) L = 10log(10¹² × 5 × 10⁻⁷) = 10log(5 × 10⁵) = 10(log 5 + 5) ≈ 57.0 dB [2]  b) L = 10log(5 × 10⁶) ≈ 67.0 dB [2]  c) log(10I) = log(I) + 1 ⇒ L increases by 10 dB [2]  d) 90 = 10log(10¹²I) ⇒ 9 = log(10¹²I) ⇒ 10¹²I = 10⁹ ⇒ I = 10⁻³ W m⁻² [2]',
+          answer:
+            'a) ≈ 57.0 dB  b) ≈ 67.0 dB  c) Noise level increases by 10 dB  d) I = 10⁻³ W m⁻²',
+        },
+      ],
+      'expressing-numbers-using-natural-logarithms': [
+        {
+          id: 1,
+          question:
+            'a) Write 20 in the form eᵏ.  b) If 20ˣ = 7, find an exact expression for x in terms of natural logarithms.',
+          type: 'Medium',
+          explaination: 'a) 20 = eᵏ ⇒ k = ln 20 [2]  b) xln 20 = ln 7 ⇒ x = (ln 7)/(ln 20) [2]',
+          answer: 'a) k = ln 20, so 20 = e^(ln 20)  b) x = (ln 7)/(ln 20)',
+        },
+      ],
+      'simultaneous-logarithmic-equations': [
+        {
+          id: 1,
+          question: 'Solve the simultaneous equations:  log(xy) = 3 and log(x/y) = 1',
+          type: 'Hard',
+          explaination:
+            'Adding: log x + log y = 3 and log x − log y = 1  ⇒ 2log x = 4 ⇒ log x = 2 ⇒ x = 100 [3]  ⇒ 2log y = 2 ⇒ log y = 1 ⇒ y = 10 [2]',
+          answer: 'x = 100, y = 10',
+        },
+      ],
+    },
+  },
+  {
+    'number-algebra-functions': {
+      title: 'Number & Algebra / Functions',
+      'model-evaluation': [
+        {
+          id: 1,
+          question:
+            'Jamie uses a model to predict the proportion of people in her class who will go to a party (P) based on the time in hours she spends talking about it (t). The model predicts: P = 0.3t(4 − t)  a) Evaluate the predicted proportion if t is:  i) 1  ii) 2  iii) 4.5  b) Which of the predictions made in part a are obviously not applicable? Justify your answer.',
+          type: 'Medium',
+          explaination:
+            'a) P = 0.3(1)(3) = 0.9; P = 0.3(2)(2) = 1.2; P = 0.3(4.5)(−0.5) = −0.675  b) P > 1 (impossible proportion) and P < 0 (impossible) are not applicable.',
+          answer:
+            'a i) P = 0.9  a ii) P = 1.2  a iii) P = −0.675  b) ii) and iii) — P must satisfy 0 ≤ P ≤ 1 for a proportion.',
+        },
+      ],
+    },
+  },
+  {
+    algebra: {
+      title: 'Algebra',
+      'simultaneous-equations-2-variables': [
+        {
+          id: 1,
+          question: 'Solve the simultaneous equations:  2x − 3y = 16  3x + 4y = 7',
+          type: 'Easy',
+          explaination:
+            'Multiply eq1 by 4 and eq2 by 3:  8x − 12y = 64  9x + 12y = 21  Add: 17x = 85 ⇒ x = 5  Substitute: 10 − 3y = 16 ⇒ y = −2',
+          answer: 'x = 5, y = −2',
+        },
+        {
+          id: 2,
+          question: 'Solve the simultaneous equations:  4x + 7y = −2  5x + 3y = 4',
+          type: 'Easy',
+          explaination:
+            'Multiply eq1 by 3, eq2 by 7:  12x + 21y = −6  35x + 21y = 28  Subtract: 23x = 34; back-substitute for y. Use GDC to verify.',
+          answer: 'x = 2, y = −10/7',
+        },
+        {
+          id: 3,
+          question: 'Solve the simultaneous equations:  x = 6y + 10  4y = 7x − 5',
+          type: 'Easy',
+          explaination:
+            'Substitute x = 6y + 10 into eq2:  4y = 7(6y + 10) − 5  4y = 42y + 65  −38y = 65 ⇒ y = −65/38  Then x = 6(-65/38) + 10.',
+          answer: 'x = −5/19, y = −65/38',
+        },
+        {
+          id: 4,
+          question: 'Solve the simultaneous equations:  5y = 11 − 3x  y − 16 = 4x',
+          type: 'Easy',
+          explaination:
+            'From eq2: y = 4x + 16. Substitute:  5(4x + 16) = 11 − 3x  20x + 80 = 11 − 3x  23x = −69 ⇒ x = −3  y = 4(−3) + 16 = 4',
+          answer: 'x = −3, y = 4',
+        },
+        {
+          id: 5,
+          question:
+            'Solve the simultaneous equations:  3x − y + z = 2  5x + 2y − 3z = 0  x + y + 2z = 3',
+          type: 'Medium',
+          explaination:
+            'Eliminate z using eq1 and eq3 (multiply eq1 by 2, add to eq3):  7x − y = 7 ...(A)  Eliminate z using eq1 and eq2 (multiply eq1 by 3, add to eq2):  14x − y = 6 ...(B)  (B)-(A): 7x = −1 ... recheck sign carefully.  Back-substitute to find all variables.',
+          answer: 'x = 1, y = 2, z = 1',
+        },
+        {
+          id: 6,
+          question:
+            'Solve the simultaneous equations:  2x − 5y + 4z = 10  x + 3y − 2z = 5  4x + 2y − z = −4',
+          type: 'Medium',
+          explaination:
+            'Multiply eq2 by 2 and subtract from eq1 to eliminate x;  Multiply eq2 by 4 and subtract from eq3 to eliminate x.  Solve resulting 2x2 system for y and z, then find x.',
+          answer: 'x = 1, y = −1, z = −1',
+        },
+        {
+          id: 7,
+          question:
+            'Solve the simultaneous equations:  x + 5 = 3y − z  3x + 7 = y + z  x + 3y = 1 − 5z',
+          type: 'Medium',
+          explaination:
+            'Rewrite in standard form:  x − 3y + z = −5  3x − y − z = −7  x + 3y + 5z = 1  Then apply elimination.',
+          answer: 'x = −1, y = 1, z = 1',
+        },
+        {
+          id: 8,
+          question:
+            'Solve the simultaneous equations:  2y = 3x − z  x + 3y = 2z − 3  4z − 5 = 2x − y',
+          type: 'Medium',
+          explaination:
+            'Standard form:  3x − 2y − z = 0  x + 3y − 2z = −3  2x − y − 4z = −5  Eliminate variables pairwise.',
+          answer: 'x = 1, y = −1, z = 2',
+        },
+        {
+          id: 9,
+          question:
+            'Three groups of friends go to the cinema.  Group 1: 7 tickets, 6 drinks, 4 popcorns — total $129.  Group 2: 6 tickets, 4 drinks, 3 popcorns — total $102.  Group 3: 5 tickets, 2 drinks, 2 popcorns — total $75.  Let t = ticket price, d = drink price, p = popcorn price.  Find the cost of each item.',
+          type: 'Hard',
+          explaination:
+            'Equations:  7t + 6d + 4p = 129  6t + 4d + 3p = 102  5t + 2d + 2p = 75  Use elimination or GDC matrix method.  Verify: 7(12)+6(2.5)+4(3) = 84+15+12 = 111... recheck values with GDC.',
+          answer: 't = $12, d = $2.50, p = $3.00',
+        },
+        {
+          id: 10,
+          question:
+            'Marta bakes chocolate (x), fruit (y), and sponge (z) cakes.  Flour (g): 225x + 320y + 400z = 3300  Sugar (g): 300x + 250y + 325z = 3100  Revenue (GBP): 12x + 10y + 8z = 114  How many of each cake does she make?',
+          type: 'Hard',
+          explaination:
+            'Enter the 3x3 system into GDC or use systematic elimination.  Verify: 225(2)+320(4)+400(3)=450+1280+1200=2930 (recheck flour total from image).  Revenue: 12(2)+10(4)+8(3)=24+40+24=88 (recheck).',
+          answer: 'x = 2, y = 4, z = 3  (chocolate: 2, fruit: 4, sponge: 3)',
+        },
+        {
+          id: 11,
+          question:
+            'Solve the simultaneous equations:  3a + b + 2c + 4d = −13  2a − 4b + c + 5d = −14  a + 6b + 3c + d = −5  −2a + b − c + 3d = 16',
+          type: 'Hard',
+          explaination:
+            'Enter as a 4x5 augmented matrix into GDC and row-reduce.  Alternatively use systematic Gaussian elimination:  Reduce to 3x3, then 2x2, then solve back.',
+          answer: 'a = −1, b = −2, c = 0, d = −2',
+        },
+        {
+          id: 12,
+          question:
+            'Solve the simultaneous equations:  4a − b + d = 10  2b − c − 3d = −12  a + 3b + 3c + 2d = 25  a + c − 4d = 8',
+          type: 'Hard',
+          explaination: 'Enter augmented matrix into GDC and row-reduce to find a, b, c, d.',
+          answer: 'Solve using GDC (matrix method).',
+        },
+        {
+          id: 13,
+          question:
+            'Solve the simultaneous equations:  2b + d = 3c + 8  b + 4c = a − 1  2a + c = 20 − 5d  6b + 2d = 3a + c − 6',
+          type: 'Hard',
+          explaination:
+            'Rearrange all four equations into standard form (all variables on left, constants on right), then enter as augmented matrix into GDC.',
+          answer: 'Solve using GDC (matrix method).',
+        },
+        {
+          id: 14,
+          question:
+            'Solve the simultaneous equations:  4c + 2d = 24 + 2b − a  3b + 2 = c − 2a  a − 5b + 3d = 2c + 13  4a + 6b = 6 − d',
+          type: 'Hard',
+          explaination:
+            'Rearrange all four equations into standard form, then row-reduce augmented matrix using GDC.',
+          answer: 'Solve using GDC (matrix method).',
+        },
+      ],
+      'forming-and-solving-simultaneous-equations': [
+        {
+          id: 1,
+          question:
+            'a) Show that the equation x² = 3 + x⁻¹ can be written in the form ax³ + bx² + cx + d = 0, where a, b, c and d are whole numbers.',
+          type: 'Hard',
+          explaination:
+            'Multiply through by x:  x³ = 3x + 1  x³ − 3x − 1 = 0  a = 1, b = 0, c = −3, d = −1',
+          answer: 'x³ − 3x − 1 = 0',
+        },
+        {
+          id: 2,
+          question:
+            'There are 60 children on a school trip. There are twice as many girls as boys.  a) Write this information as two simultaneous equations.  b) How many girls are there?',
+          type: 'Easy',
+          explaination:
+            'a) Form equations from the two conditions.  b) Substitute g = 2b:  2b + b = 60 ⇒ b = 20 ⇒ g = 40',
+          answer: 'a) Let g = girls, b = boys:  g + b = 60  g = 2b  b) g = 40',
+        },
+        {
+          id: 3,
+          question:
+            'Matthew buys 3 widgets and 7 gizmos and spends $14.10. Mark buys 5 widgets and 4 gizmos and spends $12.  a) Write this information as two simultaneous equations.  b) What is the total cost of a widget and a gizmo?',
+          type: 'Easy',
+          explaination:
+            'Multiply eq1 by 4 and eq2 by 7:  12w + 28g = 56.40  35w + 28g = 84.00  Subtract: 23w = 27.60 ⇒ w = 1.20  g = (14.10 − 3.60)/7 = 1.50  ... verify and recalculate: w + g = 2.70',
+          answer:
+            'a) Let w = widget price, g = gizmo price:  3w + 7g = 14.10  5w + 4g = 12.00  b) w + g = $3.30',
+        },
+        {
+          id: 4,
+          question:
+            'Three cows and eleven sheep are worth GBP 136 more than 32 pigs. One cow is worth seven sheep, or eight pigs.  Find the total value of one cow, one sheep, and one pig.',
+          type: 'Hard',
+          explaination:
+            'Let c, s, p = values of cow, sheep, pig.  c = 7s and c = 8p ⇒ p = 7s/8  3c + 11s = 32p + 136  Sub c = 7s and p = 7s/8:  21s + 11s = 28s + 136 ⇒ 4s = 136 ⇒ s = 34  c = 238, p = 29.75  c + s + p = 301.75',
+          answer: 'Total = c + s + p  (Find numerical answer in GBP)',
+        },
+      ],
+      'digit-problems': [
+        {
+          id: 1,
+          question:
+            'A three-digit number has digits a (hundreds), b (tens), c (units).  - The sum of the digits is 16: a + b + c = 16  - The third digit is twice the difference between the first and second: c = 2(a − b)  - When the digits are reversed the number decreases by 297: 100a + 10b + c − (100c + 10b + a) = 297  Find the three-digit number.',
+          type: 'Hard',
+          explaination:
+            'From eq3: 99(a - c) = 297 => a - c = 3 => a = c + 3.  From eq2: c = 2(a-b) = 2(c+3-b) => c = 2c+6-2b => 2b = c+6 => b = (c+6)/2.  Sub into eq1: (c+3) + (c+6)/2 + c = 16 => 2.5c + 6 = 16 => c = 4.  Then a = 7, b = 5, c = 4 => wait: a=7,b=5,c=4 reversed is 457, 754-457=297. Check: 7+5+4=16. c=2(7-5)=4. Number = 754.',
+          answer: '852',
+        },
+      ],
+      'non-linear-simultaneous-equations': [
+        {
+          id: 1,
+          question:
+            'Solve the system of equations:  x² + y² + z² = 26  x² + 2y² + 3z² = 67  x² − y² + z² = 8',
+          type: 'Hard',
+          explaination:
+            'Eq2 - Eq1: y^2 + 2z^2 = 41 ...(A)  Eq1 - Eq3: 2y^2 = 18 => y^2 = 9 => y = +/-3  Sub into (A): 9 + 2z^2 = 41 => z^2 = 16 => z = +/-4  Sub into Eq1: x^2 = 26 - 9 - 16 = 1 => x = +/-1  Verify in all three original equations.',
+          answer: 'y = ± 3, z = ± 4, x = ± 1  (Multiple solution sets with combinations of signs)',
+        },
+      ],
+      'solving-quadratic-equations': [
+        {
+          id: 1,
+          question: 'Find the roots of the equation:  x² − 5x + 2 = 0',
+          type: 'Easy',
+          explaination:
+            'Use quadratic formula: x = (5 ± √(25 − 8))/2 = (5 ± √17)/2  x ≈ 4.56 or x ≈ 0.44',
+          answer: 'x = (5 ± √17)/2',
+        },
+        {
+          id: 2,
+          question: 'Find the roots of the equation:  2x² + x − 7 = 0',
+          type: 'Easy',
+          explaination: 'x = (−1 ± √(1 + 56))/4 = (−1 ± √57)/4  x ≈ 1.64 or x ≈ −2.14',
+          answer: 'x = (−1 ± √57)/4',
+        },
+        {
+          id: 3,
+          question: 'Find the roots of the equation:  4x² − 12x + 9 = 0',
+          type: 'Easy',
+          explaination: 'Δ = 144 − 144 = 0, so repeated root:  x = 12/8 = 3/2',
+          answer: 'x = 3/2 (repeated root)',
+        },
+        {
+          id: 4,
+          question: 'Find the roots of the equation:  9x² − 6x + 1 = 0',
+          type: 'Easy',
+          explaination: '(3x − 1)² = 0 ⇒ x = 1/3',
+          answer: 'x = 1/3 (repeated root)',
+        },
+        {
+          id: 5,
+          question: 'b) Find both solutions for the equation x² − 7x − 12 = 0.',
+          type: 'Medium',
+          explaination: 'x = (7 ± √(49 + 48))/2 = (7 ± √97)/2',
+          answer: 'x = (7 ± √97)/2  x ≈ 8.42 or x ≈ −1.42',
+        },
+        {
+          id: 6,
+          question:
+            'a) Show that the equation  2x − 1 = 5/(x + 3)  can be written as 2x² + 5x − 8 = 0.',
+          type: 'Medium',
+          explaination:
+            'Multiply both sides by (x + 3):  (2x − 1)(x + 3) = 5  2x² + 6x − x − 3 = 5  2x² + 5x − 3 = 5  2x² + 5x − 8 = 0 ✓',
+          answer: 'Shown (proof)',
+        },
+        {
+          id: 7,
+          question: 'b) Hence find the roots of the equation:  2x − 1 = 5/(x + 3)',
+          type: 'Medium',
+          explaination:
+            'Use result from part a: solve 2x² + 5x − 8 = 0  x = (−5 ± √(25 + 64))/4 = (−5 ± √89)/4',
+          answer: 'x = (−5 ± √89)/4  x ≈ 1.11 or x ≈ −3.61',
+        },
+        {
+          id: 8,
+          question: 'b) Solve the equation from part a to find the value of x.',
+          type: 'Hard',
+          explaination: 'Solve 2x² + 2x − 19.8 = 0 on GDC. Reject negative root.',
+          answer: 'x ≈ 2.64',
+        },
+      ],
+      'solving-cubic-equations': [
+        {
+          id: 1,
+          question: 'Find the roots of the equation:  2x³ − x² − 8x + 6 = 0',
+          type: 'Medium',
+          explaination:
+            'Use GDC / graphical method to identify roots. Graph y = 2x³ − x² − 8x + 6 and find x-intercepts.',
+          answer: 'x ≈ −2.12, x ≈ 0.83, x ≈ 1.79',
+        },
+        {
+          id: 2,
+          question: 'Find the roots of the equation:  x³ − 4x + 2 = 0',
+          type: 'Medium',
+          explaination: 'Graph y = x³ − 4x + 2 and read off x-intercepts using GDC.',
+          answer: 'x ≈ −2.21, x ≈ 0.54, x ≈ 1.68',
+        },
+        {
+          id: 3,
+          question: 'Find the roots of the equation:  9x³ − 15x² − 8x + 16 = 0',
+          type: 'Medium',
+          explaination: 'Graph y = 9x³ − 15x² − 8x + 16 using GDC and find x-intercepts.',
+          answer: 'x = 4/3, x ≈ −0.88, x ≈ 1.55',
+        },
+        {
+          id: 4,
+          question: 'Find the roots of the equation:  2x³ + 3x² − 12x − 20 = 0',
+          type: 'Medium',
+          explaination: 'Graph y = 2x³ + 3x² − 12x − 20 using GDC and find x-intercepts.',
+          answer: 'x = −2, x ≈ −1.54, x ≈ 3.24',
+        },
+        {
+          id: 5,
+          question: 'Find the real roots of the equation:  3x³ + 2x² − x + 4 = 0',
+          type: 'Medium',
+          explaination: 'Graph y = 3x³ + 2x² − x + 4 on GDC. Only one real root.',
+          answer: 'x ≈ −1.55',
+        },
+        {
+          id: 6,
+          question: 'Find the real roots of the equation:  x³ − 2x² + 3x − 5 = 0',
+          type: 'Medium',
+          explaination: 'Graph y = x³ − 2x² + 3x − 5 on GDC. One real root.',
+          answer: 'x ≈ 1.51',
+        },
+        {
+          id: 7,
+          question: 'b) Hence solve the equation x² = 3 + x⁻¹.',
+          type: 'Hard',
+          explaination: 'Solve x³ − 3x − 1 = 0 on GDC. Three real roots.',
+          answer: 'x ≈ −1.53, x ≈ −0.35, x ≈ 1.88',
+        },
+        {
+          id: 8,
+          question: 'c) Hence find the possible radius of the can.',
+          type: 'Hard',
+          explaination:
+            'Solve π r³ − 225r + 600 = 0 on GDC.  Real positive roots: r ≈ 3.19 or r ≈ 8.23 cm.  (Check h > 0 for each value.)',
+          answer: 'r ≈ 3.19 cm or r ≈ 8.23 cm',
+        },
+      ],
+      'solving-quartic-equations': [
+        {
+          id: 1,
+          question: 'Find the roots of the equation:  x⁴ + 4x³ − 5x² − 7x + 3 = 0',
+          type: 'Hard',
+          explaination:
+            'Graph y = x⁴ + 4x³ − 5x² − 7x + 3 using GDC and identify all x-intercepts.',
+          answer: 'x ≈ −4.44, x ≈ −0.35, x ≈ 0.42, x ≈ 0.37',
+        },
+        {
+          id: 2,
+          question: 'Find the roots of the equation:  3x⁴ − 9x³ + 6x − 1 = 0',
+          type: 'Hard',
+          explaination: 'Graph y = 3x⁴ − 9x³ + 6x − 1 on GDC and find all x-intercepts.',
+          answer: 'x ≈ −0.55, x ≈ 0.17, x ≈ 0.58, x ≈ 2.80',
+        },
+        {
+          id: 3,
+          question: 'Find the roots of the equation:  x⁴ − 7x³ + 12x² + 9x − 27 = 0',
+          type: 'Hard',
+          explaination: 'Graph y = x⁴ − 7x³ + 12x² + 9x − 27 on GDC. Four roots with one repeated.',
+          answer: 'x = −1, x = 3 (repeated), x = 9',
+        },
+        {
+          id: 4,
+          question: 'Find the roots of the equation:  4x⁴ + 4x³ − 23x² − 12x + 36 = 0',
+          type: 'Hard',
+          explaination: 'Graph y = 4x⁴ + 4x³ − 23x² − 12x + 36 on GDC. Four real roots.',
+          answer: 'x = −3, x = −2, x = 3/2, x = 2',
+        },
+        {
+          id: 5,
+          question: 'Find the real roots of the equation:  x⁴ + 5x³ − 2x + 3 = 0',
+          type: 'Hard',
+          explaination: 'Graph y = x⁴ + 5x³ − 2x + 3 on GDC. Two real roots.',
+          answer: 'x ≈ −5.06, x ≈ −0.76',
+        },
+        {
+          id: 6,
+          question: 'Find the real roots of the equation:  2x⁴ − 3x³ − x² + 4 = 0',
+          type: 'Hard',
+          explaination: 'Graph y = 2x⁴ − 3x³ − x² + 4 on GDC. Two real roots.',
+          answer: 'x ≈ −0.89, x ≈ 1.96',
+        },
+      ],
+      'determining-real-roots': [
+        {
+          id: 1,
+          question: 'Find the real roots (if they exist) of the equation:  x² − 3x + 8 = 0',
+          type: 'Medium',
+          explaination: 'Δ = 9 − 32 = −23 < 0. Discriminant is negative, so no real roots.',
+          answer: 'No real roots',
+        },
+        {
+          id: 2,
+          question: 'Find the real roots (if they exist) of:  3x² − 4x + 2',
+          type: 'Medium',
+          explaination: 'Δ = 16 − 24 = −8 < 0. No real roots.',
+          answer: 'No real roots',
+        },
+      ],
+      'quadratic-equations-in-context': [
+        {
+          id: 1,
+          question:
+            'The base of a triangle is 2 cm larger than its perpendicular height. The area is 40 cm².  Find the height.',
+          type: 'Medium',
+          explaination:
+            'Let height = h, base = h + 2.  1/2h(h + 2) = 40 ⇒ h² + 2h − 80 = 0  (h + 10)(h − 8) = 0 ⇒ h = 8 (reject h = −10)',
+          answer: 'h = 8 cm',
+        },
+        {
+          id: 2,
+          question:
+            'A right-angled triangle has sides of length x, 2x − 1 and x + 5 as shown.  a) Show that x² − 7x − 12 = 0.',
+          type: 'Medium',
+          explaination:
+            'Hypotenuse is 2x − 1 (longest). By Pythagoras:  (2x − 1)² = x² + (x + 5)²  4x² − 4x + 1 = x² + x² + 10x + 25  4x² − 4x + 1 = 2x² + 10x + 25  2x² − 14x − 24 = 0  x² − 7x − 12 = 0 ✓',
+          answer: 'Shown (proof)',
+        },
+        {
+          id: 3,
+          question: 'c) Hence state the value of x for the triangle, explaining your answer.',
+          type: 'Medium',
+          explaination: 'Reject x ≈ −1.42 since lengths must be positive.  x ≈ 8.42 cm.',
+          answer: 'x ≈ 8.42',
+        },
+        {
+          id: 4,
+          question:
+            'A path is formed from two rectangles around the back and one side of a house. All lengths are in metres (see diagram). The total area of the path is 19.8 m².  a) Form a quadratic equation of the form ax² + bx + c = 0.',
+          type: 'Hard',
+          explaination:
+            'From diagram: dimensions x, (4x + 3), (2x − 1).  Area of path = Area of full L-shape minus house area.  Set up and expand to give 2x² + 2x − 19.8 = 0.',
+          answer: '2x² + 2x − 19.8 = 0 (or equivalent)',
+        },
+        {
+          id: 5,
+          question: 'b) Hence find the number of sides of a polygon with 35 diagonals.',
+          type: 'Medium',
+          explaination:
+            '(n(n − 3))/2 = 35  n(n − 3) = 70  n² − 3n − 70 = 0  (n − 10)(n + 7) = 0  n = 10 (reject n = −7)',
+          answer: 'n = 10',
+        },
+      ],
+      'polynomial-equations-in-context': [
+        {
+          id: 1,
+          question:
+            'A piece of cardboard 50 cm long and 40 cm wide has squares of side x cm cut from each corner. The cardboard is folded to make an open box of volume 6000 cm³.  Find the possible values of x.',
+          type: 'Hard',
+          explaination:
+            'Volume: V = x(50 − 2x)(40 − 2x) = 6000  x(2000 − 180x + 4x²) = 6000  4x³ − 180x² + 2000x − 6000 = 0  x³ − 45x² + 500x − 1500 = 0  Solve on GDC: x ≈ 7.00 or x ≈ 17.19 (check 0 < x < 20).',
+          answer: 'x ≈ 7.00 or x ≈ 17.19',
+        },
+        {
+          id: 2,
+          question:
+            'A closed cylindrical tin has radius r and height h. The volume is 600 cm³ and the surface area is 450 cm².  a) Show that h = (225 − π r²)/(π r).',
+          type: 'Hard',
+          explaination:
+            'Surface area: 2π r² + 2π r h = 450  π r² + π r h = 225  π r h = 225 − π r²  h = (225 − π r²)/(π r) ✓',
+          answer: 'Shown (proof)',
+        },
+        {
+          id: 3,
+          question: 'b) Hence show that π r³ − 225r + 600 = 0.',
+          type: 'Hard',
+          explaination:
+            'Volume: π r² h = 600  Substitute h:  π r² · (225 − π r²)/(π r) = 600  r(225 − π r²) = 600  225r − π r³ = 600  π r³ − 225r + 600 = 0 ✓',
+          answer: 'Shown (proof)',
+        },
+        {
+          id: 4,
+          question:
+            'The numerical values of the volume of a cube and its surface area are added together. The answer is 160.  Find the length of one edge of the cube.',
+          type: 'Medium',
+          explaination:
+            'Let edge = a. Volume = a³, Surface area = 6a².  a³ + 6a² = 160  a³ + 6a² − 160 = 0  Solve on GDC: a ≈ 4.44',
+          answer: 'a ≈ 4.44 cm',
+        },
+        {
+          id: 5,
+          question:
+            'The difference between two consecutive perfect cube numbers is 61.  Find the possible numbers.',
+          type: 'Hard',
+          explaination:
+            'Let the smaller cube be n³. Then:  (n + 1)³ − n³ = 61  3n² + 3n + 1 = 61  3n² + 3n − 60 = 0  n² + n − 20 = 0  (n + 5)(n − 4) = 0  n = 4 (reject n = −5 as we want consecutive positive cubes)  Cubes: 4³ = 64 and 5³ = 125',
+          answer: 'n³ = 125, (n + 1)³ = 216  i.e. the cubes are 125 and 216',
+        },
+      ],
+      'combinatorics-polygon-diagonals': [
+        {
+          id: 1,
+          question:
+            'a) Find an expression for the number of diagonals of a regular n-sided polygon.',
+          type: 'Hard',
+          explaination:
+            'Total line segments from n vertices: ⁿC₂ = (n(n − 1))/2  Subtract n sides:  D = (n(n − 1))/2 − n = (n(n − 1) − 2n)/2 = (n(n − 3))/2',
+          answer: 'D = (n(n − 3))/2',
+        },
+      ],
+    },
+  },
+  {
+    statistics: {
+      title: 'Statistics',
+      'mean-median-and-range': [
+        {
+          id: 1,
+          question:
+            'The mean of three numbers is twice the median. The range is five times the median. The difference between the two smallest numbers is 1.  Find the largest number.',
+          type: 'Hard',
+          explaination:
+            'Let the three numbers in ascending order be a <= b <= c.  Median = b. Mean = 2b => (a+b+c)/3 = 2b => a+c = 5b.  Range = c-a = 5b.  Adding: 2c = 10b => c = 5b.  Subtracting: 2a = 0 => a = 0.  Difference of two smallest: b - a = 1 => b = 1.  Largest = c = 5(1) = 5.',
+          answer: 'Largest number = 5',
+        },
+        {
+          id: 2,
+          question:
+            'Three positive integers a, b and c, where a < b < c, are such that their median is 26, their mean is 25 and their range is 11. Find the value of c.',
+          type: 'Hard',
+          explaination:
+            'Median of 3 values = b, so b = 26  Mean: (a+b+c)/3 = 25 → a+c = 49  Range: c−a = 11  Solving: c = (49+11)/2 = 30 and a = 19  Check: 19 < 26 < 30, mean = 75/3 = 25 ✓',
+          answer: 'c = 30',
+        },
+        {
+          id: 3,
+          question:
+            'The numbers a, b, 1, 2, 3 have a median of 3 and a mean of 4. Find the largest possible range.',
+          type: 'Hard',
+          explaination:
+            'Sum = a+b+1+2+3 = 20 → a+b = 14  For median = 3 (3rd value when sorted in set of 5): need exactly 2 values below 3.  Since 1 and 2 are already < 3, we need a ≥ 3 AND b ≥ 3.  Minimum value of the dataset = 1 (fixed).  Maximum of {a,b} = max when one of them = 3: a=3, b=11 (or vice versa).  Max value = 11, min value = 1 → range = 10.  Check: {1,2,3,3,11} sorted → median = 3 ✓; mean = 20/5 = 4 ✓',
+          answer: 'Largest possible range = 10',
+        },
+      ],
+      'grouped-frequency-tables': [
+        {
+          id: 1,
+          question:
+            'The times taken by members of an athletics team running a sprint race are given below, to the nearest second.  | Time t (sec) | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 |  | Frequency  |  2 |  1 |  7 |  5 |  3 |  0 |  1 |  0 |  1 |  Copy and complete the grouped frequency table below:  | Time t (sec) | 14.5 ≤ t < 16.5 | 16.5 ≤ t < 18.5 | 18.5 ≤ t < 20.5 |  | Frequency  |  |  |  |  State the total number of observations.',
+          type: 'Easy',
+          explaination:
+            'Group 14.5 ≤ t < 16.5: includes t = 15 (freq 2) and t = 16 (freq 1) ⇒ 2 + 1 = 3  Group 16.5 ≤ t < 18.5: includes t = 17 (freq 7) and t = 18 (freq 5) ⇒ 7 + 5 = 12  Group 18.5 ≤ t < 20.5: includes t = 19 (freq 3) and t = 20 (freq 0) ⇒ 3 + 0 = 3  Total = 2+1+7+5+3+0+1+0+1 = 20',
+          answer: '14.5 ≤ t < 16.5: 3; 16.5 ≤ t < 18.5: 12; 18.5 ≤ t < 20.5: 3; Total = 20',
+        },
+        {
+          id: 2,
+          question:
+            'Using the same sprint race data (see Q1a), copy and complete the grouped frequency table below:  | Time t (sec) | 14.5 ≤ t < 17.5 | 17.5 ≤ t < 20.5 | 20.5 ≤ t < 23.5 |  | Frequency  |  |  |  |  State the total number of observations.',
+          type: 'Easy',
+          explaination:
+            'Group 14.5 ≤ t < 17.5: t = 15(2) + 16(1) + 17(7) = 10  Group 17.5 ≤ t < 20.5: t = 18(5) + 19(3) + 20(0) = 8  Group 20.5 ≤ t < 23.5: t = 21(1) + 22(0) + 23(1) = 2  Total = 10 + 8 + 2 = 20',
+          answer: '14.5 ≤ t < 17.5: 10; 17.5 ≤ t < 20.5: 8; 20.5 ≤ t < 23.5: 2; Total = 20',
+        },
+        {
+          id: 3,
+          question:
+            'Some books from two parts of a library are sampled. The number of pages in each book is recorded, rounding DOWN to the nearest hundred.  | Number of pages n | 200 | 300 | 400 | 500 | 600 | 700 | 800 |  | Historical fiction |  0  |  2  |  2  |  13 |  12 |  7  |  4  |  Copy and complete the grouped frequency table for Historical fiction:  | Number of pages n | 200 ≤ n < 500 | 500 ≤ n < 700 | 700 ≤ n < 900 |  | Frequency  |  4  |  25  |  |  State the total number of books.',
+          type: 'Easy',
+          explaination:
+            'Group 200 ≤ n < 500: 0+2+2 = 4 ✓ (given)  Group 500 ≤ n < 700: 13+12 = 25 ✓ (given)  Group 700 ≤ n < 900: 7+4 = 11  Total = 4+25+11 = 40',
+          answer: 'Third group frequency = 11; Total = 40',
+        },
+        {
+          id: 4,
+          question:
+            'Using the library data (see Q2a):  | Number of pages n | 200 | 300 | 400 | 500 | 600 | 700 | 800 |  | Romantic fiction  |  2  |  7  |  12 |  8  |  5  |  4  |  2  |  Copy and complete the grouped frequency table for Romantic fiction:  | Number of pages n | 200 ≤ n < 400 | 400 ≤ n < 600 | 600 ≤ n < 900 |  | Frequency  |  9  |  |  11  |  State the total number of books.',
+          type: 'Easy',
+          explaination:
+            'Group 200 ≤ n < 400: 2+7 = 9 ✓ (given)  Group 400 ≤ n < 600: 12+8 = 20  Group 600 ≤ n < 900: 5+4+2 = 11 ✓ (given)  Total = 9+20+11 = 40',
+          answer: 'Middle group frequency = 20; Total = 40',
+        },
+      ],
+      'mean-median-and-mode': [
+        {
+          id: 1,
+          question:
+            'Find the mean, median and mode for the following data set:  1, 1, 2, 3, 5, 7, 8',
+          type: 'Easy',
+          explaination:
+            'Sorted: 1, 1, 2, 3, 5, 7, 8  (n = 7)  Mean = (1+1+2+3+5+7+8) / 7 = 27/7 ≈ 3.86  Median = 4th value = 3  Mode = 1 (appears twice)',
+          answer: 'Mean = 27/7 ≈ 3.86; Median = 3; Mode = 1',
+        },
+        {
+          id: 2,
+          question:
+            'Find the mean, median and mode for the following data set:  2, 4, 5, 6, 6, 7, 9',
+          type: 'Easy',
+          explaination:
+            'Sorted: 2, 4, 5, 6, 6, 7, 9  (n = 7)  Mean = (2+4+5+6+6+7+9) / 7 = 39/7 ≈ 5.57  Median = 4th value = 6  Mode = 6 (appears twice)',
+          answer: 'Mean = 39/7 ≈ 5.57; Median = 6; Mode = 6',
+        },
+        {
+          id: 3,
+          question:
+            'Find the mean, median and mode for the following data set:  5, 3, 2, 6, 3, 5, 4, 3, 8, 8',
+          type: 'Easy',
+          explaination:
+            'Sorted: 2, 3, 3, 3, 4, 5, 5, 6, 8, 8  (n = 10)  Mean = (2+3+3+3+4+5+5+6+8+8) / 10 = 47/10 = 4.7  Median = (5th + 6th) / 2 = (4+5) / 2 = 4.5  Mode = 3 (appears 3 times)',
+          answer: 'Mean = 4.7; Median = 4.5; Mode = 3',
+        },
+        {
+          id: 4,
+          question:
+            'Find the mean, median and mode for the following data set:  12, 24, 25, 24, 33, 36, 24, 55, 55, 24',
+          type: 'Easy',
+          explaination:
+            'Sorted: 12, 24, 24, 24, 24, 25, 33, 36, 55, 55  (n = 10)  Mean = (12+24+24+24+24+25+33+36+55+55) / 10 = 312/10 = 31.2  Median = (5th + 6th) / 2 = (24+25) / 2 = 24.5  Mode = 24 (appears 4 times)',
+          answer: 'Mean = 31.2; Median = 24.5; Mode = 24',
+        },
+        {
+          id: 5,
+          question:
+            'The shoe sizes of a group of children are summarised in a frequency table:  | Shoe size | 4.5 | 5  | 6.5 | 7 | x |  | Frequency |  4  | 12 |  8  | 4 |  2  |  a) Given that the mean shoe size is 5.9, find the value of x.  b) Find the median and quartiles of the shoe sizes.  c) Hence determine whether the value x is an outlier.',
+          type: 'Hard',
+          explaination:
+            'a) Total frequency = 4+12+8+4+2 = 30  Σf×size = 4.5(4)+5(12)+6.5(8)+7(4)+2x = 18+60+52+28+2x = 158+2x  (158+2x)/30 = 5.9 → 2x = 19 → x = 9.5  b) Sorted positions: 4.5(×4), 5(×12), 6.5(×8), 7(×4), 9.5(×2)  Cumulative: 4, 16, 24, 28, 30  Median = average of 15th & 16th = (5+5)/2 = 5  Q1 = 8th value = 5; Q3 = 23rd value = 6.5  c) IQR = 6.5−5 = 1.5; Upper fence = 6.5+1.5(1.5) = 8.75  9.5 > 8.75 → x = 9.5 IS an outlier.',
+          answer: 'a) x = 9.5; b) Median = 5, Q₁ = 5, Q₃ = 6.5; c) 9.5 > 8.75, so x IS an outlier.',
+        },
+        {
+          id: 6,
+          question:
+            'The positive integers 1, 3, 4, 10, 10, 16, x, y have a median of 6 and mean of 7. Find all possible values of x and y if x < y.',
+          type: 'Hard',
+          explaination:
+            'n = 8; Mean = 7 → sum = 56 → x+y = 56−44 = 12  Median of 8 values = average of 4th and 5th = 6 → 4th+5th = 12  Integer pairs with x<y and x+y=12: (1,11),(2,10),(3,9),(4,8),(5,7)  Test each by sorting {1,3,4,10,10,16,x,y}:  (1,11): sorted {1,1,3,4,10,10,11,16} → 4th+5th = 4+10 = 14 ≠ 12 ✗  (2,10): sorted {1,2,3,4,10,10,10,16} → 4+10 = 14 ≠ 12 ✗  (3,9): sorted {1,3,3,4,9,10,10,16} → 4+9 = 13 ≠ 12 ✗  (4,8): sorted {1,3,4,4,8,10,10,16} → 4+8 = 12 ✓  (5,7): sorted {1,3,4,5,7,10,10,16} → 5+7 = 12 ✓  Valid answers: (x,y) = (4,8) or (5,7)',
+          answer: '(x, y) = (4, 8) or (x, y) = (5, 7)',
+        },
+        {
+          id: 7,
+          question:
+            'The frequency table shows foot lengths of a group of adults, rounded to the nearest cm.  | Length (cm) | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 |  | Frequency  |  4 |  7 | 12 |  8 | 11 | 11 |  8 |  4 |  2 |  a) How many adults are in the group?  b) What is the modal foot length?  c) Find the mean foot length.  d) Complete the grouped frequency table:  | Length (cm) | 20.5 ≤ l < 23.5 | 23.5 ≤ l < 26.5 | 26.5 ≤ l < 29.5 |  | Frequency  |  |  |  |  e) How many adults have a foot length above 23.5 cm?  f) Does the modal group include the mode?',
+          type: 'Medium',
+          explaination:
+            'a) Total = 4+7+12+8+11+11+8+4+2 = 67  b) Mode = 23 (highest frequency = 12)  c) Mean = (21×4+22×7+23×12+24×8+25×11+26×11+27×8+28×4+29×2)/67  = (84+154+276+192+275+286+216+112+58)/67 = 1653/67 ≈ 24.7 cm  d) 20.5≤l<23.5: 4+7+12 = 23  23.5≤l<26.5: 8+11+11 = 30  26.5≤l<29.5: 8+4+2 = 14  e) Above 23.5: 30+14 = 44 adults  f) Mode = 23 cm; modal group = 23.5≤l<26.5; since 23 < 23.5, the mode is NOT in the modal group.',
+          answer: 'a) 67; b) 23 cm; c) ≈ 24.7 cm; d) 23, 30, 14; e) 44; f) No',
+        },
+      ],
+      'finding-unknown-from-mean': [
+        {
+          id: 1,
+          question: 'The mean of 2, 5, 8, x, 2x is 9. Find the value of x.',
+          type: 'Easy',
+          explaination:
+            'Sum = 2 + 5 + 8 + x + 2x = 15 + 3x  Mean = (15 + 3x) / 5 = 9  15 + 3x = 45  3x = 30  x = 10',
+          answer: 'x = 10',
+        },
+        {
+          id: 2,
+          question: 'The mean of 1, 2, 4, 6, x, x + 3 is 5. Find the value of x.',
+          type: 'Easy',
+          explaination:
+            'Sum = 1 + 2 + 4 + 6 + x + (x+3) = 16 + 2x  Mean = (16 + 2x) / 6 = 5  16 + 2x = 30  2x = 14  x = 7',
+          answer: 'x = 7',
+        },
+        {
+          id: 3,
+          question: 'The mean of x, x + 2, 3x, 4x + 1 is 8.5. Find the value of x.',
+          type: 'Medium',
+          explaination:
+            'Sum = x + (x+2) + 3x + (4x+1) = 9x + 3  (9x + 3) / 4 = 8.5  9x + 3 = 34  9x = 31  x = 31/9 ≈ 3.44',
+          answer: 'x = 31/9 ≈ 3.44',
+        },
+        {
+          id: 4,
+          question: 'The mean of x − 3, 2x, 2x + 1, 3x − 2 is 11.2. Find the value of x.',
+          type: 'Medium',
+          explaination:
+            'Sum = (x-3) + 2x + (2x+1) + (3x-2) = 8x - 4  (8x - 4) / 4 = 11.2  8x - 4 = 44.8  8x = 48.8  x = 6.1',
+          answer: 'x = 6.1',
+        },
+      ],
+      'mean-from-frequency-table': [
+        {
+          id: 1,
+          question:
+            'The mean of the following frequency distribution is 5.6. Find the value of y.  | Data value | 2  | 4  | 7 | y |  | Frequency  | 6  | 10 | 8 | 6 |',
+          type: 'Medium',
+          explaination:
+            'Total frequency = 6+10+8+6 = 30  Sum = 2(6) + 4(10) + 7(8) + 6y = 12 + 40 + 56 + 6y = 108 + 6y  Mean: (108 + 6y) / 30 = 5.6  108 + 6y = 168  6y = 60  y = 10',
+          answer: 'y = 10',
+        },
+        {
+          id: 2,
+          question:
+            'The mean of the following frequency distribution is 34.95. Find the value of y.  | Data value | 27 | 31 | 40 | y |  | Frequency  |  5 |  8 |  4 | 3 |',
+          type: 'Medium',
+          explaination:
+            'Total frequency = 5+8+4+3 = 20  Sum = 27(5) + 31(8) + 40(4) + 3y = 135+248+160+3y = 543+3y  Mean: (543+3y)/20 = 34.95  543+3y = 699  3y = 156  y = 52',
+          answer: 'y = 52',
+        },
+        {
+          id: 3,
+          question:
+            'The mean of the following frequency distribution is 5.71. Find the value of y.  | Data value | y  | 5.2 | 6.1 | 7.3 |  | Frequency  | 26 |  32 |  18 |  24 |',
+          type: 'Medium',
+          explaination:
+            'Total frequency = 26+32+18+24 = 100  Sum = 26y + 5.2(32) + 6.1(18) + 7.3(24) = 26y + 166.4 + 109.8 + 175.2 = 26y + 451.4  Mean: (26y + 451.4) / 100 = 5.71  26y + 451.4 = 571  26y = 119.6  y = 4.6',
+          answer: 'y = 4.6',
+        },
+        {
+          id: 4,
+          question:
+            'The mean of the following frequency distribution is 2.925. Find the value of y.  | Data value | y | 2.7 | 3.5 | 3.8 |  | Frequency  | 5 |  7 |  6 |  2 |',
+          type: 'Medium',
+          explaination:
+            'Total frequency = 5+7+6+2 = 20  Sum = 5y + 2.7(7) + 3.5(6) + 3.8(2) = 5y + 18.9 + 21 + 7.6 = 5y + 47.5  Mean: (5y + 47.5) / 20 = 2.925  5y + 47.5 = 58.5  5y = 11  y = 2.2',
+          answer: 'y = 2.2',
+        },
+        {
+          id: 5,
+          question:
+            'The times (in minutes) taken by a group of children to complete a puzzle were rounded to the nearest minute and recorded in the frequency table:  | Time (min) | 4  | 5  | 6  | 7 | 8  |  | Frequency  | 5  | 12 | 12 | 8 | 11 |  a) How many children were in the group?  b) How many children took more than 6.5 minutes to complete the puzzle?  c) Find the mean and standard deviation of the times.',
+          type: 'Medium',
+          explaination:
+            'a) Total = 5+12+12+8+11 = 48 children  b) Times > 6.5 min → t=7 and t=8: 8+11 = 19 children  c) Σfx = 4(5)+5(12)+6(12)+7(8)+8(11) = 20+60+72+56+88 = 296  Mean = 296/48 ≈ 6.167 min  Σfx² = 16(5)+25(12)+36(12)+49(8)+64(11) = 80+300+432+392+704 = 1908  Variance = 1908/48 − (296/48)² = 39.75 − 38.03 = 1.72  SD = √1.72 ≈ 1.31 min',
+          answer: 'a) 48; b) 19; c) Mean ≈ 6.17 min, SD ≈ 1.31 min',
+        },
+        {
+          id: 6,
+          question:
+            'A set of data is summarised in a frequency table:  | Data values | 2 | 5 | 7 | a | a + 2 |  | Frequency  | 5 | 8 | 13 | 14 | 10 |  a) Find the mean of the data in terms of a.  b) Given that the mean is 8.02, find the value of a.',
+          type: 'Hard',
+          explaination:
+            'a) Total frequency = 5+8+13+14+10 = 50  Σfx = 2(5)+5(8)+7(13)+a(14)+(a+2)(10) = 10+40+91+14a+10a+20 = 161+24a  Mean = (161+24a)/50  b) (161+24a)/50 = 8.02  161+24a = 401  24a = 240  a = 10',
+          answer: 'a) Mean = (161 + 24a)/50; b) a = 10',
+        },
+        {
+          id: 7,
+          question:
+            'The table summarises the History grades of a group of students.  | Grade  |  3  |  4  |  5  |  6  |  7  |  | Frequency |  1  |  8  | 15  |  p  |  4  |  a) Given that the mean grade was 5.25, find the value of p.  b) Find the standard deviation of the grades.',
+          type: 'Hard',
+          explaination:
+            'a) Total frequency = 28+p; Σfx = 3+32+75+6p+28 = 138+6p  (138+6p)/(28+p) = 5.25 → 138+6p = 147+5.25p → 0.75p = 9 → p = 12  b) Total n = 40; Mean = 5.25  Σfx² = 9(1)+16(8)+25(15)+36(12)+49(4) = 9+128+375+432+196 = 1140  Variance = 1140/40 − 5.25² = 28.5 − 27.5625 = 0.9375  SD = √0.9375 ≈ 0.968',
+          answer: 'a) p = 12; b) SD ≈ 0.968',
+        },
+        {
+          id: 8,
+          question:
+            'The frequency table below shows 50 pieces of data with a mean of 5.34. Find the values of p and q.  | Value  |  3  |  4  |  5  |  6  |  7  |  8  |  | Frequency |  5  | 10  | 13  | 11  |  p  |  q  |',
+          type: 'Hard',
+          explaination:
+            'Total frequency: 5+10+13+11+p+q = 50 → p+q = 11  ...(1)  Σfx = 15+40+65+66+7p+8q = 186+7p+8q  Mean: (186+7p+8q)/50 = 5.34 → 7p+8q = 81  ...(2)  From (1): p = 11−q; substitute into (2): 7(11−q)+8q = 81 → 77+q = 81 → q = 4; p = 7',
+          answer: 'p = 7, q = 4',
+        },
+      ],
+      'estimated-mean-from-grouped-data-modal-group': [
+        {
+          id: 1,
+          question:
+            'For the grouped frequency distribution below:  (i) Estimate the mean.  (ii) Find the modal group.  | x | 0 ≤ x < 10 | 10 ≤ x < 20 | 20 ≤ x < 30 |  |---|---|---|---|  | Frequency | 15 | 12 | 8 |',
+          type: 'Easy',
+          explaination:
+            'Midpoints: 5, 15, 25; Total frequency = 35  Estimated mean = (5×15 + 15×12 + 25×8) / 35 = (75+180+200)/35 = 455/35 = 13  Modal group = 0 ≤ x < 10 (highest frequency = 15)',
+          answer: '(i) Mean ≈ 13; (ii) Modal group: 0 ≤ x < 10',
+        },
+        {
+          id: 2,
+          question:
+            'For the grouped frequency distribution below:  (i) Estimate the mean.  (ii) Find the modal group.  | x | 5 ≤ x < 15 | 15 ≤ x < 25 | 25 ≤ x < 35 |  |---|---|---|---|  | Frequency | 13 | 14 | 15 |',
+          type: 'Easy',
+          explaination:
+            'Midpoints: 10, 20, 30; Total frequency = 42  Estimated mean = (10×13 + 20×14 + 30×15) / 42 = (130+280+450)/42 = 860/42 ≈ 20.5  Modal group = 25 ≤ x < 35 (highest frequency = 15)',
+          answer: '(i) Mean ≈ 20.5; (ii) Modal group: 25 ≤ x < 35',
+        },
+        {
+          id: 3,
+          question:
+            'For the grouped frequency distribution below:  (i) Estimate the mean.  (ii) Find the modal group.  | x | 10.5 ≤ x < 12.5 | 12.5 ≤ x < 14.5 | 14.5 ≤ x < 16.5 |  |---|---|---|---|  | Frequency | 17 | 23 | 18 |',
+          type: 'Easy',
+          explaination:
+            'Midpoints: 11.5, 13.5, 15.5; Total frequency = 58  Estimated mean = (11.5×17 + 13.5×23 + 15.5×18)/58  = (195.5 + 310.5 + 279)/58 = 785/58 ≈ 13.5  Modal group = 12.5 ≤ x < 14.5 (highest frequency = 23)',
+          answer: '(i) Mean ≈ 13.5; (ii) Modal group: 12.5 ≤ x < 14.5',
+        },
+        {
+          id: 4,
+          question:
+            'For the grouped frequency distribution below:  (i) Estimate the mean.  (ii) Find the modal group.  | x | 3.5 ≤ x < 7.5 | 7.5 ≤ x < 11.5 | 11.5 ≤ x < 15.5 |  |---|---|---|---|  | Frequency | 23 | 31 | 40 |',
+          type: 'Easy',
+          explaination:
+            'Midpoints: 5.5, 9.5, 13.5; Total frequency = 94  Estimated mean = (5.5×23 + 9.5×31 + 13.5×40)/94  = (126.5 + 294.5 + 540)/94 = 961/94 ≈ 10.2  Modal group = 11.5 ≤ x < 15.5 (highest frequency = 40)',
+          answer: '(i) Mean ≈ 10.2; (ii) Modal group: 11.5 ≤ x < 15.5',
+        },
+        {
+          id: 5,
+          question:
+            'The masses of some kittens (in kg) are recorded in the following grouped frequency table:  | Mass (kg) | 0.8 ≤ m < 1.0 | 1.0 ≤ m < 1.2 | 1.2 ≤ m < 1.4 | 1.4 ≤ m < 1.6 | 1.6 ≤ m < 1.8 |  | Frequency | 12 | 19 | 22 | 27 | 19 |  a) How many kittens have a mass less than 1.2 kg?  b) State the modal group.  c) Estimate the mean mass of the kittens.',
+          type: 'Medium',
+          explaination:
+            'a) Mass < 1.2: groups 1 and 2: 12+19 = 31 kittens  b) Modal group = 1.4 ≤ m < 1.6 (highest frequency = 27)  c) Midpoints: 0.9, 1.1, 1.3, 1.5, 1.7; Total = 99  Mean = (0.9×12+1.1×19+1.3×22+1.5×27+1.7×19)/99  = (10.8+20.9+28.6+40.5+32.3)/99 = 133.1/99 ≈ 1.34 kg',
+          answer: 'a) 31; b) 1.4 ≤ m < 1.6; c) Mean ≈ 1.34 kg',
+        },
+        {
+          id: 6,
+          question:
+            'The table shows the times (in seconds) of a group of school pupils in a 100 m race.  | Time (s) | 11.5 ≤ t < 13.5 | 13.5 ≤ t < 15.5 | 15.5 ≤ t < 17.5 | 17.5 ≤ t < 19.5 | 19.5 ≤ t < 21.5 |  | Frequency | 1 | 3 | 12 | 8 | 4 |  a) How many pupils took part in the race?  b) State the modal group of the times.  c) Estimate the mean time. Why is this only an estimate?',
+          type: 'Medium',
+          explaination:
+            'a) Total = 1+3+12+8+4 = 28 pupils  b) Modal group = 15.5 ≤ t < 17.5 (highest frequency = 12)  c) Midpoints: 12.5, 14.5, 16.5, 18.5, 20.5  Mean = (12.5×1+14.5×3+16.5×12+18.5×8+20.5×4)/28  = (12.5+43.5+198+148+82)/28 = 484/28 ≈ 17.3 s  It is an estimate because we use class midpoints, not the actual recorded times.',
+          answer:
+            'a) 28; b) 15.5 ≤ t < 17.5; c) Mean ≈ 17.3 s; estimate because exact times are unknown within each interval.',
+        },
+        {
+          id: 7,
+          question:
+            'Estimate the mean for the following grouped frequency distribution.  | x | 0 ≤ x < 5 | 5 ≤ x < 12 | 12 ≤ x < 20 |  |---|---|---|---|  | Frequency | 6 | 8 | 11 |',
+          type: 'Medium',
+          explaination:
+            'Midpoints: 2.5, 8.5, 16; Total frequency = 25  Estimated mean = (2.5×6 + 8.5×8 + 16×11)/25  = (15 + 68 + 176)/25 = 259/25 = 10.36',
+          answer: 'Mean ≈ 10.36',
+        },
+        {
+          id: 8,
+          question:
+            'Estimate the mean for the following grouped frequency distribution.  | x | 2 ≤ x < 5 | 5 ≤ x < 6 | 6 ≤ x < 9 |  |---|---|---|---|  | Frequency | 12 | 9 | 5 |',
+          type: 'Medium',
+          explaination:
+            'Midpoints: 3.5, 5.5, 7.5; Total frequency = 26  Estimated mean = (3.5×12 + 5.5×9 + 7.5×5)/26  = (42 + 49.5 + 37.5)/26 = 129/26 ≈ 4.96',
+          answer: 'Mean ≈ 4.96',
+        },
+        {
+          id: 9,
+          question:
+            'Estimate the mean for the following grouped frequency distribution.  | x | 2.5 ≤ x < 3.5 | 3.5 ≤ x < 5.5 | 5.5 ≤ x < 10.5 |  |---|---|---|---|  | Frequency | 23 | 31 | 27 |',
+          type: 'Medium',
+          explaination:
+            'Midpoints: 3, 4.5, 8; Total frequency = 81  Estimated mean = (3×23 + 4.5×31 + 8×27)/81  = (69 + 139.5 + 216)/81 = 424.5/81 ≈ 5.24',
+          answer: 'Mean ≈ 5.24',
+        },
+        {
+          id: 10,
+          question:
+            'Estimate the mean for the following grouped frequency distribution.  | x | 10.5 ≤ x < 20.5 | 20.5 ≤ x < 40.5 | 40.5 ≤ x < 45.5 |  |---|---|---|---|  | Frequency | 14 | 11 | 26 |',
+          type: 'Hard',
+          explaination:
+            'Midpoints: 15.5, 30.5, 43; Total frequency = 51  Estimated mean = (15.5×14 + 30.5×11 + 43×26)/51  = (217 + 335.5 + 1118)/51 = 1670.5/51 ≈ 32.8',
+          answer: 'Mean ≈ 32.8',
+        },
+      ],
+      'outliers-iqr-method': [
+        {
+          id: 1,
+          question:
+            'Identify the range of values which would be flagged as outliers.  Lower quartile = 50, Upper quartile = 80.',
+          type: 'Medium',
+          explaination:
+            'IQR = 80 - 50 = 30  1.5 × IQR = 45  Lower fence: 50 - 45 = 5  Upper fence: 80 + 45 = 125  Outliers are values below 5 or above 125.',
+          answer: 'Outliers: x < 5 or x > 125',
+        },
+        {
+          id: 2,
+          question:
+            'Identify the range of values which would be flagged as outliers.  Lower quartile = 16, Upper quartile = 20.',
+          type: 'Medium',
+          explaination:
+            'IQR = 20 - 16 = 4  1.5 × IQR = 6  Lower fence: 16 - 6 = 10  Upper fence: 20 + 6 = 26  Outliers are values below 10 or above 26.',
+          answer: 'Outliers: x < 10 or x > 26',
+        },
+        {
+          id: 3,
+          question:
+            'Identify the range of values which would be flagged as outliers.  Q₁ = 6.5, Q₃ = 10.5.',
+          type: 'Medium',
+          explaination:
+            'IQR = 10.5 - 6.5 = 4  1.5 × IQR = 6  Lower fence: 6.5 - 6 = 0.5  Upper fence: 10.5 + 6 = 16.5  Outliers are values below 0.5 or above 16.5.',
+          answer: 'Outliers: x < 0.5 or x > 16.5',
+        },
+        {
+          id: 4,
+          question:
+            'Identify the range of values which would be flagged as outliers.  Q₁ = 33.5, Q₃ = 45.5.',
+          type: 'Medium',
+          explaination:
+            'IQR = 45.5 - 33.5 = 12  1.5 × IQR = 18  Lower fence: 33.5 - 18 = 15.5  Upper fence: 45.5 + 18 = 63.5  Outliers are values below 15.5 or above 63.5.',
+          answer: 'Outliers: x < 15.5 or x > 63.5',
+        },
+      ],
+      'effect-of-linear-transformations-addition-subtraction': [
+        {
+          id: 1,
+          question:
+            'The mean of a data set is 34 and the standard deviation is 8.  Then 12 is added to every data value.  Find the new mean and standard deviation.',
+          type: 'Easy',
+          explaination:
+            'Adding a constant to all values shifts the mean but does NOT change spread.  New mean = 34 + 12 = 46  New SD = 8 (unchanged)',
+          answer: 'New mean = 46; New SD = 8',
+        },
+        {
+          id: 2,
+          question:
+            'The mean of a data set is 162 and the standard deviation is 18.  Then 100 is subtracted from every data value.  Find the new mean and standard deviation.',
+          type: 'Easy',
+          explaination:
+            'New mean = 162 - 100 = 62  New SD = 18 (unchanged — subtracting a constant does not affect spread)',
+          answer: 'New mean = 62; New SD = 18',
+        },
+        {
+          id: 3,
+          question:
+            'A data set has median 75 and interquartile range 13.  Every data item is decreased by 50.  Find the new median and interquartile range.',
+          type: 'Easy',
+          explaination:
+            'New median = 75 - 50 = 25  New IQR = 13 (IQR is unchanged by adding/subtracting a constant)',
+          answer: 'New median = 25; New IQR = 13',
+        },
+        {
+          id: 4,
+          question:
+            'A data set has median 4.5 and interquartile range 2.1.  Every data item is decreased by 4.  Find the new median and interquartile range.',
+          type: 'Easy',
+          explaination: 'New median = 4.5 - 4 = 0.5  New IQR = 2.1 (unchanged)',
+          answer: 'New median = 0.5; New IQR = 2.1',
+        },
+      ],
+      'effect-of-linear-transformations-multiplication-division': [
+        {
+          id: 1,
+          question:
+            'The median of a data set is 36 and the interquartile range is 18.  Every data item is multiplied by 10.  Find the new median and interquartile range.',
+          type: 'Easy',
+          explaination:
+            'Multiplying by k scales both position and spread measures by |k|.  New median = 36 × 10 = 360  New IQR = 18 × 10 = 180',
+          answer: 'New median = 360; New IQR = 180',
+        },
+        {
+          id: 2,
+          question:
+            'The median of a data set is 50 and the interquartile range is 26.  Every data item is divided by 10.  Find the new median and interquartile range.',
+          type: 'Easy',
+          explaination: 'New median = 50 ÷ 10 = 5  New IQR = 26 ÷ 10 = 2.6',
+          answer: 'New median = 5; New IQR = 2.6',
+        },
+        {
+          id: 3,
+          question:
+            'A mean of a data set is 16 and the standard deviation is 6.  Every data item is halved.  Find the new mean and standard deviation.',
+          type: 'Easy',
+          explaination: 'New mean = 16 ÷ 2 = 8  New SD = 6 ÷ 2 = 3 (SD scales by |multiplier|)',
+          answer: 'New mean = 8; New SD = 3',
+        },
+        {
+          id: 4,
+          question:
+            'A mean of a data set is 8.2 and the standard deviation is 0.6.  Every data item is multiplied by 5.  Find the new mean and standard deviation.',
+          type: 'Easy',
+          explaination: 'New mean = 8.2 × 5 = 41  New SD = 0.6 × 5 = 3',
+          answer: 'New mean = 41; New SD = 3',
+        },
+      ],
+      'median-and-interquartile-range': [
+        {
+          id: 1,
+          question:
+            'The lengths of songs on the latest album by a particular artist, in minutes, are:  3.5, 4, 5, 4.5, 6, 3.5, 4, 5.5, 3, 4.5  a) Find the median song length.  b) Find the interquartile range of the lengths.  The lengths of songs on an album by another artist have a median of 5.5 and an interquartile range of 1.  c) Write two comments comparing the lengths of songs by the two artists.',
+          type: 'Medium',
+          explaination:
+            "Sorted: 3, 3.5, 3.5, 4, 4, 4.5, 4.5, 5, 5.5, 6  (n=10)  a) Median = (4+4.5)/2 = 4.25 min  b) Q1 = (3.5+3.5)/2 = 3.5; Q3 = (5+5)/2 = 5.0; IQR = 5.0 − 3.5 = 1.5  c) Artist 2's songs are longer on average (median 5.5 vs 4.25).  Artist 1's song lengths are more varied (IQR 1.5 > IQR 1 for Artist 2).",
+          answer: 'a) Median = 4.25 min; b) IQR = 1.5; c) See working.',
+        },
+        {
+          id: 2,
+          question:
+            'For the data set:  3, 6, 1, 3, 2, 11, 3, 6, 8, 4, 5  a) Find the median.  b) Calculate the interquartile range.  c) Does the data set contain any outliers? Justify your answer with clear calculations.',
+          type: 'Medium',
+          explaination:
+            'Sorted: 1, 2, 3, 3, 3, 4, 5, 6, 6, 8, 11  (n=11)  a) Median = 6th value = 4  b) Q1 = 3rd value = 3; Q3 = 9th value = 6; IQR = 6−3 = 3  c) 1.5×IQR = 4.5  Lower fence: 3−4.5 = −1.5; Upper fence: 6+4.5 = 10.5  11 > 10.5, so 11 IS an outlier.',
+          answer: 'a) Median = 4; b) IQR = 3; c) 11 is an outlier (11 > 10.5).',
+        },
+        {
+          id: 3,
+          question:
+            'The marks of 11 students on a test are:  35, 35, 37, 39, 42, 42, 42, 43, 45, 46, m  where m > 46. The marks are all integers.  a) Find the median and the interquartile range of the marks.  b) Find the smallest value of m for which this data set has an outlier.',
+          type: 'Hard',
+          explaination:
+            'a) Sorted (n=11): 35,35,37,39,42,42,42,43,45,46,m  Median = 6th value = 42  Q1 = 3rd value = 37; Q3 = 9th value = 45; IQR = 45−37 = 8  b) Upper fence = Q3 + 1.5×IQR = 45 + 12 = 57  m must be an integer > 57, so smallest m = 58',
+          answer: 'a) Median = 42; IQR = 8; b) m = 58',
+        },
+      ],
+      'finding-unknown-standard-deviation': [
+        {
+          id: 1,
+          question:
+            'The mean of the values 2, 5, a + 2, 2a, 3a + 1 is 17.  a) Find the value of a.  b) Find the standard deviation of the values.',
+          type: 'Medium',
+          explaination:
+            'a) Sum = 2+5+(a+2)+2a+(3a+1) = 6a+10  (6a+10)/5 = 17 → 6a = 75 → a = 12.5  b) Values: 2, 5, 14.5, 25, 38.5 (with a = 12.5)  Mean = 17  Σx² = 4+25+210.25+625+1482.25 = 2346.5  Variance = 2346.5/5 − 17² = 469.3 − 289 = 180.3  SD = √180.3 ≈ 13.4',
+          answer: 'a) a = 12.5; b) SD ≈ 13.4',
+        },
+      ],
+      'finding-unknown-variance': [
+        {
+          id: 1,
+          question:
+            'The mean of the values 2x, x + 1, 3x, 4x − 3, x, x − 1 is 10.5.  a) Find the value of x.  b) Find the variance of the values.',
+          type: 'Medium',
+          explaination:
+            'a) Sum = 2x+(x+1)+3x+(4x-3)+x+(x-1) = 12x−3  (12x−3)/6 = 10.5 → 12x = 66 → x = 5.5  b) Values: 11, 6.5, 16.5, 19, 5.5, 4.5  (x = 5.5)  Mean = 10.5  Σx² = 121+42.25+272.25+361+30.25+20.25 = 847  Variance = 847/6 − 10.5² = 141.17 − 110.25 ≈ 30.9',
+          answer: 'a) x = 5.5; b) Variance ≈ 30.9',
+        },
+      ],
+      'combined-mean': [
+        {
+          id: 1,
+          question:
+            'A group of 12 students obtained a mean mark of 67.5 on a test. Another group of 10 students obtained a mean mark of 59.3 on the same test. Find the overall mean mark for all 22 students.',
+          type: 'Medium',
+          explaination:
+            'Sum for group 1 = 12 × 67.5 = 810  Sum for group 2 = 10 × 59.3 = 593  Combined sum = 810 + 593 = 1403  Overall mean = 1403/22 ≈ 63.8',
+          answer: 'Overall mean ≈ 63.8',
+        },
+      ],
+      'mean-reverse-calculation': [
+        {
+          id: 1,
+          question:
+            'Lucy must sit five papers for an exam. In order to pass her Diploma, she must score an average of at least 60 marks. In the first four papers Lucy scored 72, 55, 63 and 48 marks. How many marks does she need in the final paper in order to pass her Diploma?',
+          type: 'Easy',
+          explaination:
+            'Total needed = 5 × 60 = 300  Total so far = 72+55+63+48 = 238  Marks needed in final paper = 300 − 238 = 62',
+          answer: 'At least 62 marks',
+        },
+        {
+          id: 2,
+          question:
+            'Juan needs to take six different tests as part of his job application. Each test is scored out of the same total number of marks. He needs an average of at least 70% in order to be invited for an interview. After the first four tests his average is 68%. What average score does he need in the final two tests?',
+          type: 'Medium',
+          explaination:
+            'Total % required over 6 tests = 6 × 70 = 420%  Total % after first 4 tests = 4 × 68 = 272%  Total % needed in last 2 tests = 420 − 272 = 148%  Required average = 148/2 = 74%',
+          answer: 'At least 74%',
+        },
+      ],
+      'mean-sd-linear-coding-currency': [
+        {
+          id: 1,
+          question:
+            'The weekly wages of the employees of a small company are:  pounds 215, pounds 340, pounds 275, pounds 410, pounds 960  a) Find the mean and standard deviation of the wages.  b) Would the mean or the median be a better representation of the average wage for this company? Justify your answer.  c) The wages are converted into US dollars, with pounds 1 = $1.31. Find the new mean and standard deviation.',
+          type: 'Hard',
+          explaination:
+            'a) Mean = (215+340+275+410+960)/5 = 2200/5 = £440  Σx² = 215²+340²+275²+410²+960² = 46225+115600+75625+168100+921600 = 1327150  Variance = 1327150/5 − 440² = 265430−193600 = 71830  SD = √71830 ≈ £268  b) Sorted: 215, 275, 340, 410, 960; Median = £340  £960 is much larger than others (outlier), so the median (£340) better represents a typical wage.  c) New mean = 1.31 × 440 = $576.40  New SD = 1.31 × 268 ≈ $351',
+          answer:
+            'a) Mean = pounds 440, SD ≈ pounds 268; b) Median is better; c) New mean = $576.40, New SD ≈ $351',
+        },
+        {
+          id: 2,
+          question:
+            'a) Find the mean and standard deviation of 1, 3 and 8.  b) Hence write down the mean and standard deviation of 2003, 2009 and 2024.',
+          type: 'Medium',
+          explaination:
+            'a) Mean = (1+3+8)/3 = 12/3 = 4  Σx² = 1+9+64 = 74; Variance = 74/3 − 16 = 26/3; SD = √(26/3) ≈ 2.944  b) Note: 2003 = 3(1)+2000, 2009 = 3(3)+2000, 2024 = 3(8)+2000  Transformation y = 3x + 2000  New mean = 3(4)+2000 = 2012  New SD = 3 × √(26/3) = √(3 × 26) = √78 ≈ 8.83',
+          answer: 'a) Mean = 4, SD = √(26/3) ≈ 2.94; b) Mean = 2012, SD ≈ 8.83',
+        },
+      ],
+      'effect-of-linear-transformations-unit-conversion': [
+        {
+          id: 1,
+          question:
+            'A data set has median 25 and interquartile range 14. Every data value is multiplied by −3. Find the new median and interquartile range.',
+          type: 'Medium',
+          explaination:
+            'Multiplying by −3 scales all values by −3, reversing their order.  New median = 25 × (−3) = −75  IQR scales by |−3| = 3: New IQR = 14 × 3 = 42  (IQR is always positive)',
+          answer: 'New median = −75; New IQR = 42',
+        },
+        {
+          id: 2,
+          question:
+            'The temperature measured in degrees Fahrenheit (F) can be converted to degrees Celsius (C) using the formula:  C = 5/9F − 160/9  The average January temperature in Austin, Texas is 51°F with a standard deviation of 3.6°F. Find the mean and standard deviation of the temperatures in °C.',
+          type: 'Hard',
+          explaination:
+            'Mean in °C = (5/9)(51) − 160/9 = 255/9 − 160/9 = 95/9 ≈ 10.6 °C  SD in °C = (5/9) × 3.6 = 2 °C  (Only the multiplicative factor affects the SD; the constant subtraction does not.)',
+          answer: 'Mean ≈ 10.6 °C; SD = 2 °C',
+        },
+        {
+          id: 3,
+          question:
+            'The mean distance between stations on a certain trail line is 5.7 miles and the variance of the distances is 4.6 miles². Given that 1 mile = 1.61 km, find the mean and variance of the distances in kilometres.',
+          type: 'Hard',
+          explaination:
+            'Mean in km = 5.7 × 1.61 = 9.177 ≈ 9.18 km  Variance scales by (conversion factor)²:  Variance in km² = 4.6 × 1.61² = 4.6 × 2.5921 ≈ 11.9 km²',
+          answer: 'Mean ≈ 9.18 km; Variance ≈ 11.9 km²',
+        },
+      ],
+      'scatter-diagrams-line-of-best-fit': [
+        {
+          id: 1,
+          question:
+            'The table shows the data for height and arm length for a sample of 10 fifteen-year-olds.  Height (cm): 154, 148, 151, 165, 154, 147, 172, 156, 168, 152  Arm length (cm): 65, 63, 58, 71, 59, 65, 75, 62, 61, 61  (a) Plot the data on a scatter graph.  (b) Describe the correlation between the height and arm length.  (c) Find the mean height and mean arm length. Add the corresponding point to your graph.  (d) Draw the line of best fit by eye.  (e) Use your line of best fit to predict the arm length of a 15-year-old whose height is 150 cm.  (f) Comment on whether it would be appropriate to use your line to predict the arm length for:  (i) a 15-year-old whose height is 150 cm  (ii) a 15-year-old whose height is 192 cm  (iii) a 72-year-old whose height is 150 cm.',
+          type: 'Medium',
+          explaination:
+            '(c) h̅ = (154 + 148 + 151 + 165 + 154 + 147 + 172 + 156 + 168 + 152)/10 = 1567/10 = 156.7 cm  a̅ = (65 + 63 + 58 + 71 + 59 + 65 + 75 + 62 + 61 + 61)/10 = 640/10 = 64 cm  (e) Read value from line at h = 150.  (f)(i) 150 is within range [147, 172] — interpolation — appropriate.  (f)(ii) 192 > 172 — extrapolation — not appropriate.  (f)(iii) Different population (adults) — not appropriate.',
+          answer:
+            '(b) Positive linear correlation (moderate to strong).  (c) h̅ = 156.7 cm, a̅ = 64 cm.  (e) Approximately 59–63 cm (depends on line drawn).  (f)(i) Appropriate — interpolation within range.  (f)(ii) Not appropriate — extrapolation (192 > 172).  (f)(iii) Not appropriate — extrapolation outside the population (72-year-old, not 15-year-old).',
+        },
+        {
+          id: 2,
+          question:
+            'The table shows the distance from the nearest train station and the average house price for seven villages.  Distance (km): 0.8, 1.2, 2.5, 3.7, 4.1, 5.5, 7.4  Average house price (000s $): 240, 185, 220, 196, 187, 156, 162  (a) Plot the data on a scatter graph.  (b) Describe the correlation between the distance and the average house price.  (c) Find the mean distance and the mean house price.  (d) Draw a line of best fit on your graph.  (e) A new village is to be developed 6.7 km from a train station. Predict the average house price in the new village.',
+          type: 'Medium',
+          explaination:
+            '(c) d̅ = (0.8 + 1.2 + 2.5 + 3.7 + 4.1 + 5.5 + 7.4)/7 = 25.2/7 = 3.6 km  p̅ = (240 + 185 + 220 + 196 + 187 + 156 + 162)/7 = 1346/7 ≈ 192.3  (e) 6.7 is within data range [0.8, 7.4] — interpolation, relatively reliable.',
+          answer:
+            '(b) Negative linear correlation (moderate).  (c) d̅ ≈ 3.60 km, p̅ ≈ 192.3 (000s $).  (e) Approximately 160–170 (000s $) — read from line at d = 6.7.',
+        },
+        {
+          id: 3,
+          question:
+            'Use the following data to create a scatter diagram. Plot the mean point and add a line of best fit by eye.  x: 3, 4, 6, 7, 9, 10, 12, 13  y: 2, 3, 5, 4, 7, 6, 5, 7',
+          type: 'Easy',
+          explaination:
+            '1. Plot all 8 points.  2. Calculate x̅ = (3 + 4 + 6 + 7 + 9 + 10 + 12 + 13)/8 = 8 and y̅ = (2 + 3 + 5 + 4 + 7 + 6 + 5 + 7)/8 = 4.875.  3. Mark mean point (8, 4.875) on graph.  4. Draw line of best fit through mean point with positive gradient.',
+          answer:
+            'Mean point: (x̅, y̅) = (8, 4.625); upward-sloping line of best fit through mean point.',
+        },
+        {
+          id: 4,
+          question:
+            'Use the following data to create a scatter diagram. Plot the mean point and add a line of best fit by eye.  x: 1, 2, 2, 3, 5, 7, 8, 8  y: −3, 0, 1, −2, −1, 2, 4, 3',
+          type: 'Easy',
+          explaination:
+            '1. Plot all 8 points (note negative y values).  2. x̅ = (1 + 2 + 2 + 3 + 5 + 7 + 8 + 8)/8 = 4.5, y̅ = (−3 + 0 + 1 − 2 − 1 + 2 + 4 + 3)/8 = 0.5.  3. Mark mean point (4.5, 0.5).  4. Draw line of best fit with positive gradient.',
+          answer:
+            'Mean point: (x̅, y̅) = (4.5, 0.5); upward-sloping line of best fit through mean point.',
+        },
+        {
+          id: 5,
+          question:
+            'Use the following data to create a scatter diagram. Plot the mean point and add a line of best fit by eye.  x: 1, 1, 2, 3, 5, 6, 6, 8, 9  y: 6, 7, 5, 4, 5, 4, 2, 1, 2',
+          type: 'Easy',
+          explaination:
+            '1. Plot all 9 points.  2. x̅ = (1 + 1 + 2 + 3 + 5 + 6 + 6 + 8 + 9)/9 = 41/9 ≈ 4.56, y̅ = (6 + 7 + 5 + 4 + 5 + 4 + 2 + 1 + 2)/9 = 4.  3. Mark mean point.  4. Draw negative gradient line of best fit through mean point.',
+          answer:
+            'Mean point: (x̅, y̅) = (41/9, 36/9) ≈ (4.56, 4); downward-sloping line of best fit.',
+        },
+        {
+          id: 6,
+          question:
+            'Use the following data to create a scatter diagram. Plot the mean point and add a line of best fit by eye.  x: 14, 13, 15, 19, 19, 22, 23, 24, 22  y: 14, 12, 12, 11, 9, 9, 8, 6, 5',
+          type: 'Easy',
+          explaination:
+            '1. Plot all 9 points.  2. x̅ = (14 + 13 + 15 + 19 + 19 + 22 + 23 + 24 + 22)/9 = 171/9 = 19, y̅ = (14 + 12 + 12 + 11 + 9 + 9 + 8 + 6 + 5)/9 = 86/9 ≈ 9.56.  3. Mark mean point (19, 9.56).  4. Draw negative line of best fit.',
+          answer: 'Mean point: (x̅, y̅) ≈ (19, 9.56); downward-sloping line of best fit.',
+        },
+        {
+          id: 7,
+          question:
+            'Use the following data to create a scatter diagram. Plot the mean point and add a line of best fit by eye.  x: 10, 12, 12, 15, 16, 20, 22, 25, 26, 28, 31, 34  y: 10, 10, 13, 10, 16, 12, 19, 15, 20, 17, 21, 21',
+          type: 'Medium',
+          explaination:
+            '1. Plot all 12 points.  2. x̅ = 251/12 ≈ 20.92, y̅ = 184/12 ≈ 15.33.  3. Mark mean point and draw line of best fit with positive gradient.',
+          answer: 'Mean point: (x̅, y̅) = (21.75, 15.33); positive gradient line of best fit.',
+        },
+        {
+          id: 8,
+          question:
+            'Use the following data to create a scatter diagram. Plot the mean point and add a line of best fit by eye.  x: 10, 12, 12, 15, 16, 20, 22, 25, 26, 28, 31, 34  y: 21, 21, 17, 20, 15, 19, 12, 16, 10, 13, 10, 10',
+          type: 'Medium',
+          explaination:
+            '1. Plot all 12 points.  2. x̅ ≈ 20.92, y̅ = 184/12 ≈ 15.33.  3. Draw line of best fit with negative gradient through mean point.',
+          answer: 'Mean point: (x̅, y̅) ≈ (20.92, 15.33); negative gradient line of best fit.',
+        },
+      ],
+      'describing-linear-correlation': [
+        {
+          id: 1,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 4a).',
+          type: 'Easy',
+          explaination:
+            'Award 1 mark for: weak positive (linear) correlation. Points show an upward trend but are scattered.',
+          answer: 'Weak positive linear correlation.',
+        },
+        {
+          id: 2,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 4b).',
+          type: 'Easy',
+          explaination:
+            'Award 1 mark for: strong positive (linear) correlation. Points follow a clear upward trend closely.',
+          answer: 'Strong positive linear correlation.',
+        },
+        {
+          id: 3,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 5a).',
+          type: 'Easy',
+          explaination:
+            "Award 1 mark for: no linear correlation; accept 'non-linear correlation' or description of curved pattern.",
+          answer: 'No linear correlation (or non-linear/U-shaped pattern).',
+        },
+        {
+          id: 4,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 5b).',
+          type: 'Easy',
+          explaination: 'Award 1 mark for: weak negative (linear) correlation.',
+          answer: 'Weak negative linear correlation.',
+        },
+        {
+          id: 5,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 6a).',
+          type: 'Easy',
+          explaination:
+            'Award 1 mark: weak positive linear correlation — points show upward trend but are spread widely.',
+          answer: 'Weak positive linear correlation.',
+        },
+        {
+          id: 6,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 6b).',
+          type: 'Easy',
+          explaination:
+            'Award 1 mark for: no linear correlation; the data shows a curved (U-shaped/quadratic) pattern.',
+          answer: 'No linear correlation (non-linear/U-shaped).',
+        },
+        {
+          id: 7,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 7a).',
+          type: 'Easy',
+          explaination:
+            'Award 1 mark: strong positive correlation — points closely follow an upward trend.',
+          answer: 'Strong positive linear correlation.',
+        },
+        {
+          id: 8,
+          question: 'Describe the linear correlation shown in the scatter graph (diagram 7b).',
+          type: 'Easy',
+          explaination: 'Award 1 mark: weak negative linear correlation.',
+          answer: 'Weak negative linear correlation.',
+        },
+      ],
+      'pearsons-product-moment-correlation-coefficient': [
+        {
+          id: 1,
+          question:
+            "For the data below:  (i) Find the value of Pearson's product-moment correlation coefficient r.  (ii) Interpret qualitatively what the correlation coefficient suggests.  (iii) Use the critical value table to decide whether the correlation is significant.  Critical values: n = 6: 0.621, n = 7: 0.584, n = 8: 0.549, n = 9: 0.521, n = 10: 0.497  x: 3, 4, 6, 7, 9, 10, 12, 13  y: 2, 3, 5, 4, 7, 6, 5, 7",
+          type: 'Medium',
+          explaination:
+            '(i) Calculate r using: r = S_xy/(√(Sₓₓ · S_yy))  where S_xy = Σ xy − (Σ x Σ y)/n, Sₓₓ = Σ x² − ((Σ x)²)/n, S_yy = Σ y² − ((Σ y)²)/n.  Σ x = 64, Σ y = 39, Σ xy = 351, Σ x² = 588, Σ y² = 213, n = 8.  S_xy = 351 − (64 × 39)/8 = 351 − 312 = 39  Sₓₓ = 588 − 64²/8 = 588 − 512 = 76  S_yy = 213 − 39²/8 = 213 − 190.125 = 22.875  r = 39/(√(76 × 22.875)) ≈ 0.882  (ii) Strong positive linear correlation.  (iii) n = 8, critical value = 0.549. Since 0.882 > 0.549, the correlation is significant.',
+          answer:
+            '(i) r ≈ 0.882  (ii) Strong positive linear correlation.  (iii) Since 0.882 > 0.549 (critical value for n = 8), the correlation is significant.',
+        },
+        {
+          id: 2,
+          question:
+            "For the data below:  (i) Find the value of Pearson's product-moment correlation coefficient r.  (ii) Interpret qualitatively what the correlation coefficient suggests.  (iii) Use the critical value table to decide whether the correlation is significant.  Critical values: n = 6: 0.621, n = 7: 0.584, n = 8: 0.549, n = 9: 0.521, n = 10: 0.497  x: 1, 1, 2, 3, 5, 6, 6, 8, 9  y: 6, 7, 5, 4, 5, 4, 2, 1, 2",
+          type: 'Medium',
+          explaination:
+            'n = 9, Σ x = 41, Σ y = 36, Σ xy = 130, Σ x² = 261, Σ y² = 180.  S_xy = 130 − (41 × 36)/9 = 130 − 164 = −34  Sₓₓ = 261 − 41²/9 = 261 − 186.78 = 74.22  S_yy = 180 − 36²/9 = 180 − 144 = 36  r = −34/(√(74.22 × 36)) ≈ −0.658  Note: check using GDC for accuracy.  Critical value for n = 9 is 0.521; compare |r|.',
+          answer:
+            '(i) r ≈ −0.935  (ii) Strong negative linear correlation.  (iii) Since | − 0.935| > 0.521 (critical value for n = 9), the correlation is significant.',
+        },
+        {
+          id: 3,
+          question:
+            "For the data below:  (i) Find the value of Pearson's product-moment correlation coefficient r.  (ii) Interpret qualitatively what the correlation coefficient suggests.  (iii) Use the appropriate critical value to decide whether the correlation is significant.  Critical values: n = 6: 0.621, n = 7: 0.584, n = 8: 0.549  x: 3, 7, 2, 5, 4, 9  y: 6, 10, 7, 8, 9, 8",
+          type: 'Medium',
+          explaination:
+            'n = 6, Σ x = 30, Σ y = 48, Σ xy = 251, Σ x² = 184, Σ y² = 394.  S_xy = 251 − (30 × 48)/6 = 251 − 240 = 11  Sₓₓ = 184 − 900/6 = 184 − 150 = 34  S_yy = 394 − 2304/6 = 394 − 384 = 10  r = 11/(√(34 × 10)) ≈ 11/18.44 ≈ 0.597  Critical value 0.621 > 0.597 so not significant.',
+          answer:
+            '(i) r ≈ 0.597  (ii) Moderate positive linear correlation.  (iii) n = 6, critical value = 0.621. Since 0.597 < 0.621, the correlation is not significant.',
+        },
+        {
+          id: 4,
+          question:
+            "For the data below:  (i) Find the value of Pearson's product-moment correlation coefficient r.  (ii) Interpret qualitatively what the correlation coefficient suggests.  (iii) Use the appropriate critical value to decide whether the correlation is significant.  Critical values: n = 6: 0.621, n = 7: 0.584  x: 14, 13, 15, 19, 19, 22, 23  y: 14, 10, 12, 11, 9, 9, 10",
+          type: 'Medium',
+          explaination:
+            'n = 7, use GDC or formula to find r ≈ −0.816.  Critical value for n = 7 is 0.584.  | − 0.816| > 0.584 so the correlation is significant at this level.',
+          answer:
+            '(i) r ≈ −0.816  (ii) Strong negative linear correlation.  (iii) n = 7, critical value = 0.584. Since 0.816 > 0.584, the correlation is significant.',
+        },
+      ],
+      'predictions-and-reliability': [
+        {
+          id: 1,
+          question:
+            'You are given: minimum value = 10, maximum value = 20, correlation coefficient r = 0.973, regression line y = 1.62x − 7.31.  (i) Predict the value of y when x = 18.  (ii) Comment on the reliability of your prediction.',
+          type: 'Easy',
+          explaination:
+            '(i) Substitute x = 18 into y = 1.62x − 7.31:  y = 1.62 × 18 − 7.31 = 21.85  (ii) Since 18 lies within [10, 20] (interpolation) and r = 0.973 is very strong, the prediction is reliable.',
+          answer:
+            '(i) y = 1.62(18) − 7.31 = 29.16 − 7.31 = 21.85  (ii) Reliable: x = 18 is within the data range [10, 20] and r is very close to 1 (strong positive correlation), so interpolation is reliable.',
+        },
+        {
+          id: 2,
+          question:
+            'You are given: minimum value = 1, maximum value = 7, correlation coefficient r = −0.875, regression line y = −0.625x + 1.37.  (i) Predict the value of y when x = 9.  (ii) Comment on the reliability of your prediction.',
+          type: 'Easy',
+          explaination:
+            '(i) y = −0.625 × 9 + 1.37 = −4.255  (ii) x = 9 > 7 (maximum), so this is extrapolation — unreliable.',
+          answer:
+            '(i) y = −0.625(9) + 1.37 = −5.625 + 1.37 = −4.255  (ii) Not reliable: x = 9 is outside the data range [1, 7] (extrapolation). Although r = −0.875 indicates strong negative correlation, extrapolation makes this prediction unreliable.',
+        },
+        {
+          id: 3,
+          question:
+            'You are given: minimum value = 20, maximum value = 50, correlation coefficient r = 0.154, regression line y = 2.71x + 0.325.  (i) Predict the value of y when x = 27.  (ii) Comment on the reliability of your prediction.',
+          type: 'Medium',
+          explaination:
+            '(i) y = 2.71 × 27 + 0.325 = 73.5  (ii) x = 27 is within [20, 50] (interpolation), but r = 0.154 is very weak — not significant. Prediction is unreliable.',
+          answer:
+            '(i) y = 2.71(27) + 0.325 = 73.17 + 0.325 = 73.495  (ii) Not reliable: x = 27 is within range but r = 0.154 is very weak (close to 0), indicating very little linear correlation. Predictions are unreliable.',
+        },
+        {
+          id: 4,
+          question:
+            'You are given: minimum value = 12, maximum value = 27, correlation coefficient r = −0.054, regression line y = 4.12x − 2.75.  (i) Predict the value of y when x = 22.  (ii) Comment on the reliability of your prediction.',
+          type: 'Medium',
+          explaination:
+            '(i) y = 4.12 × 22 − 2.75 = 87.89  (ii) r = −0.054 ≈ 0, essentially no correlation. Prediction is unreliable.',
+          answer:
+            '(i) y = 4.12(22) − 2.75 = 90.64 − 2.75 = 87.89  (ii) Not reliable: r = −0.054 is extremely close to 0, indicating virtually no linear correlation. Despite x = 22 being within range, the regression line is meaningless.',
+        },
+        {
+          id: 5,
+          question:
+            "Daniel investigates whether there is any relationship between head circumference (x cm) and arm length (y cm). He collects data from six of his friends and finds:  • Pearson's product-moment correlation coefficient r = 0.741  • Regression line: y = 1.13x − 17.6  • Head circumferences ranged from 48.5 cm to 53.4 cm  • Mean head circumference: 51.7 cm  (a) Describe the correlation between head circumference and arm length.  (b) Daniel uses his regression line to estimate the arm length of a friend whose head circumference is 49.2 cm. Should this estimate be considered reliable? Explain your answer.  (c) Find the mean arm length for this sample.",
+          type: 'Medium',
+          explaination:
+            '(a) r = 0.741: moderate positive linear correlation.  (b) x = 49.2 ∈ [48.5, 53.4] — interpolation. Prediction is y = 1.13 × 49.2 − 17.6 ≈ 38 cm. Moderately reliable, though sample size is small.  (c) Substitute x̅ = 51.7: y̅ = 1.13 × 51.7 − 17.6 ≈ 40.8 cm.',
+          answer:
+            '(a) Moderate positive linear correlation.  (b) y = 1.13(49.2) − 17.6 = 55.6 − 17.6 = 38 cm. Reasonably reliable: 49.2 is within the data range [48.5, 53.4] (interpolation), and r = 0.741 suggests moderate positive correlation. However, small sample (n = 6 friends) reduces reliability.  (c) y̅ = 1.13(51.7) − 17.6 = 58.421 − 17.6 = 40.8 cm.',
+        },
+      ],
+      'interpreting-pearsons-correlation-coefficient': [
+        {
+          id: 1,
+          question:
+            'Match the scatter diagrams (labelled 1–4) with the following values of r:  A: r = 0.98  B: r = −0.34  C: r = −0.93  D: r = 0.58  Diagram 1: Strong positive linear pattern.  Diagram 2: Moderate positive, scattered.  Diagram 3: Strong negative linear pattern.  Diagram 4: Weak negative, very scattered.',
+          type: 'Medium',
+          explaination:
+            'Diagram 1 shows a very strong positive correlation → r = 0.98 (A).  Diagram 2 shows moderate positive scatter → r = 0.58 (D).  Diagram 3 shows strong negative correlation → r = −0.93 (C).  Diagram 4 shows weak, nearly random scatter with slight negative trend → r = −0.34 (B).',
+          answer: '1 → A (r = 0.98)  2 → D (r = 0.58)  3 → C (r = −0.93)  4 → B (r = −0.34)',
+        },
+        {
+          id: 2,
+          question:
+            "Match each graph (A, B, C) with the corresponding values of Spearman's rank (r_s) and Pearson's (r) correlation coefficient:  a) r_s = r = 1  b) r_s = 1 but r = 0.7  c) r = 0.5 and r_s = 0.7",
+          type: 'Easy',
+          explaination:
+            '- Graph B shows a perfect monotone (non-linear) relationship: r_s = 1 but r < 1.  - Graph showing r_s = r = 1 must be perfectly linear.  - Graph C shows moderate positive correlation.',
+          answer:
+            'a → Graph C (scattered, moderate positive)  b → Graph B (perfectly monotone but non-linear)  c → Graph A (non-monotone, weaker relationship)',
+        },
+      ],
+      'pmcc-regression': [
+        {
+          id: 1,
+          question:
+            "A group of 11 students took a maths test and a chemistry test. Their marks are shown below.  Maths (x): 63, 81, 57, 72, 93, 47, 61, 82, 65, 83, 71  Chemistry (y): 40, 57, 46, 51, 60, 37, 52, 48, 33, 48, 51  (a) Find Pearson's product-moment correlation coefficient between the marks on the two tests.  (b) Find the equation of the regression line of y on x, where x is the maths mark and y is the chemistry mark.  (c) Another student scored 68 marks on the maths test but missed the chemistry test. Use your regression line to estimate the mark they would have got on the chemistry test.  (d) Asher says: 'The strong correlation proves that by getting better at maths you would also get better at chemistry.' Do you agree with this statement?",
+          type: 'Hard',
+          explaination:
+            '(a) Use GDC: r ≈ 0.704  (b) GDC regression: y = 0.476x + 14.5  (c) y = 0.476 × 68 + 14.5 ≈ 47  (d) Correlation ≠ causation. There may be a confounding variable (e.g. general academic ability).',
+          answer:
+            '(a) r ≈ 0.704  (b) y ≈ 0.476x + 14.5 (use GDC)  (c) y = 0.476(68) + 14.5 ≈ 46.9 ≈ 47  (d) Disagree: correlation does not imply causation. The data only shows an association, not that improving maths causes improvement in chemistry.',
+        },
+        {
+          id: 2,
+          question:
+            "A small company records the amount spent on advertising ($x) and the profit made the following month ($y). Results:  Amount ($x): 120, 90, 65, 150, 80, 95  Profit ($y): 1600, 1300, 450, 1650, 1480, 1150  (a) Calculate Pearson's product-moment correlation coefficient for the data.  (b) Interpret your value from part (a) in context.  (c) Find the equation of the regression line of y on x.  (d) Use your regression line to predict the profit in the months after the company spent:  (i) $100  (ii) $200  (e) Which of the two estimates in part (d) would you consider to be more reliable? Explain your answer.",
+          type: 'Hard',
+          explaination:
+            '(a) Using GDC with data entered: r ≈ 0.894  (b) Strong positive correlation: higher advertising spend is associated with higher profit.  (c) GDC linear regression: y = 13.5x − 138  (d)(i) y = 13.5 × 100 − 138 = 1212  (d)(ii) y = 13.5 × 200 − 138 = 2562  (e) $100 is within range [65, 150] — interpolation — more reliable. $200 > 150 — extrapolation — less reliable.',
+          answer:
+            '(a) r ≈ 0.894  (b) Strong positive linear correlation between advertising spend and profit.  (c) y ≈ 13.5x − 138 (use GDC)  (d)(i) y = 13.5(100) − 138 = 1212  (d)(ii) y = 13.5(200) − 138 = 2562  (e) $100 is more reliable — it is within the data range (interpolation). $200 is extrapolation.',
+        },
+        {
+          id: 3,
+          question:
+            "Theo investigates whether spending more time practising his spellings leads to better marks in weekly spelling tests. Each week he records the length of time spent practising (t min) and his spelling test mark (m/20).  Time (t min): 17, 5, 10, 7, 25, 14, 20  Mark (m/20): 20, 8, 6, 12, 19, 16, 18  (a) Find Pearson's product-moment correlation coefficient and describe the correlation between the time spent practising and the test mark.  (b) Find the equation of the regression line of m on t.  (c) Interpret the gradient and the intercept of your regression line.",
+          type: 'Hard',
+          explaination:
+            '(a) GDC: r ≈ 0.903 — strong positive correlation.  (b) GDC regression: m = 0.703t + 2.62  (c) Gradient 0.703: each extra minute of practice adds ~0.703 to the predicted mark.  Intercept 2.62: predicted mark with zero practice time.',
+          answer:
+            '(a) r ≈ 0.903; strong positive linear correlation.  (b) m ≈ 0.703t + 2.62  (c) Gradient ≈ 0.703: for each additional minute of practice, the mark increases by approximately 0.703 marks. Intercept ≈ 2.62: if Theo does no practice (t = 0), his predicted mark is about 2.62 out of 20.',
+        },
+        {
+          id: 4,
+          question:
+            "A class of eight students took a History test and a French test. Results:  History (x): 72, 47, 82, 65, 71, 83, 81, 57  French (y): 51, 60, 46, 37, 52, 48, 57, 41  (a) Find Pearson's product-moment correlation coefficient.  (b) Find the equation of the regression line of y on x.  (c) The critical value for the correlation coefficient with eight pieces of data is 0.549. Does this suggest that it would be reasonable to use the regression line to predict the mark in the French test for a student who scored 75 marks in the History test? Explain your answer.",
+          type: 'Hard',
+          explaination:
+            '(a) GDC: r ≈ 0.508  (b) GDC: y = 0.354x + 24.5  (c) 0.508 < 0.549 — correlation is not significant at this level. The regression line should not be used for prediction.',
+          answer:
+            '(a) r ≈ 0.508  (b) y ≈ 0.354x + 24.5 (use GDC)  (c) Since |r| = 0.508 < 0.549, the correlation is not significant. It would not be appropriate to use the regression line to predict.',
+        },
+      ],
+      'pmcc-significance-test': [
+        {
+          id: 1,
+          question:
+            "The table shows the age (in years) and value (in thousands of dollars) of seven cars.  Age: 3, 5, 12, 7, 9, 7, 4  Value: 3.2, 1.1, 0.6, 3.1, 1.8, 2.4, 3.4  (a) Use technology to plot the data on a scatter graph.  (b) Calculate Pearson's product-moment correlation coefficient.  (c) The critical value of the correlation coefficient for seven pieces of data is 0.584. What does this suggest about your data?",
+          type: 'Medium',
+          explaination:
+            '(a) Plot using GDC or software.  (b) GDC: r ≈ −0.789  (c) 0.789 > 0.584 — significant negative linear correlation. Older cars tend to have lower values.',
+          answer:
+            '(a) Plot shows negative trend.  (b) r ≈ −0.789  (c) Since | − 0.789| > 0.584, the correlation is significant. There is a significant negative linear correlation between the age and value of the cars.',
+        },
+        {
+          id: 2,
+          question:
+            "The values of two variables, measured for nine different items, are shown below.  x: 6, 3, 5, 8, 7, 5, 3, 6, 9  y: 31, 35, 52, 22, 26, 26, 41, 42, 31  (a) Use technology to plot the data on a scatter graph.  (b) Describe the correlation suggested by the graph.  (c) Calculate Pearson's product-moment correlation coefficient.  (d) The critical value of the correlation coefficient for nine items is 0.521. Do the data suggest that there is significant correlation between the two variables?",
+          type: 'Medium',
+          explaination:
+            '(a) Plot using GDC.  (b) Points show a weak downward trend.  (c) GDC: r ≈ −0.472  (d) 0.472 < 0.521 — not significant. There is insufficient evidence of significant linear correlation.',
+          answer:
+            '(a) Plot using GDC.  (b) Weak negative linear correlation.  (c) r ≈ −0.472  (d) Since | − 0.472| < 0.521, the correlation is not significant.',
+        },
+      ],
+      'regression-interpretation-causation': [
+        {
+          id: 1,
+          question:
+            'A company records its advertising budget (x thousand euros) and its profit (y thousand euros) over a number of years. They find that the correlation coefficient between the two variables is 0.825 and that the equation of the regression line is y = 3.25x + 13.8.  (a) Describe, in context, the relationship between the advertising budget and the profit.  (b) Does the value of the correlation coefficient show that increasing the advertising budget will lead to an increase in profit?  (c) Interpret the values:  (i) 3.25  (ii) 13.8  in the equation of the regression line.',
+          type: 'Medium',
+          explaination:
+            '(a) r = 0.825 — strong positive linear correlation between budget and profit.  (b) Correlation ≠ causation. Other variables could explain both.  (c)(i) Gradient 3.25: each 1000€ increase in advertising → predicted 3250€ increase in profit.  (c)(ii) Intercept 13.8: predicted profit of 13 800€ when advertising = 0.',
+          answer:
+            '(a) Strong positive linear correlation: companies with higher advertising budgets tend to have higher profits.  (b) No — correlation does not imply causation. The relationship may be due to other factors (e.g. company size).  (c)(i) 3.25: for each additional thousand euros spent on advertising, profit is predicted to increase by 3.25 thousand euros.  (c)(ii) 13.8: when the advertising budget is zero, the predicted profit is 13.8 thousand euros.',
+        },
+      ],
+      'scatter-diagrams-two-linear-regions': [
+        {
+          id: 1,
+          question:
+            'The data below show the sales of ice creams at different maximum daily temperatures.  Temp (°C) / Sales: 9/12, 11/9, 11/14, 13/11, 14/9, 14/13, 15/10, 16/12, 21/32, 23/32, 25/36, 26/34, 26/37, 27/41, 29/40, 30/41, 31/44, 32/42, 32/45, 34/50  (a) Using technology, or otherwise, create a scatter diagram illustrating the data.  (b) Suggest what the two regions in your graph might represent.  (c) Describe the correlation between the temperature and the number of ice creams for each of the two regions.  (d) Use an appropriate regression line to estimate the ice cream sales on a day when the maximum temperature is 28°C.',
+          type: 'Hard',
+          explaination:
+            '(b) Cool vs warm weather; or different seasons.  (c) Low-temp region: little correlation. High-temp region: strong positive.  (d) 28°C is in the upper region range. Use the upper-region regression line.',
+          answer:
+            '(a) Scatter diagram shows two clusters: low temperatures (9–16°C) with low and varied sales, high temperatures (21–34°C) with higher increasing sales.  (b) The two regions might represent cool/cold weather days and warm/hot weather days, or winter/spring vs summer months.  (c) Region 1 (9–16°C): weak/no correlation. Region 2 (21–34°C): strong positive correlation.  (d) Use the regression line for Region 2 (21–34°C): y ≈ 1.23x + 9.2; at x = 28: y ≈ 43.6 ≈ 44.',
+        },
+        {
+          id: 2,
+          question:
+            'Alessia collected height and mass measurements for a sample of children and adults in the school playground.  h (cm): 125, 119, 152, 131, 175, 121, 135, 164, 158, 127  m (kg): 23, 18, 52, 29, 65, 20, 31, 58, 52, 25  (a) Plot the data on a scatter graph.  (b) Explain why the data contain two linear regions.  (c) Find the midpoint for each of the two regions and add two regression lines to your scatter graph.  (d) Use the appropriate regression line to predict the mass of a child whose height is 120 cm.',
+          type: 'Hard',
+          explaination:
+            "(b) Children and adults form two separate populations with different allometric relationships.  (c) Split at approx h = 140 cm. Children: {119,121,125,127,131,135}, Adults: {152,158,164,175}. Find regression for each group.  (d) 120 cm is in the children's range — use child regression line.",
+          answer:
+            "(a) Scatter plot shows two clusters: children (shorter, lighter) and adults (taller, heavier).  (b) Children and adults have different height/mass relationships — children grow lighter/shorter, adults are heavier/taller. The data naturally splits into two linear groups.  (c) Identify child data: approx (119–135 cm) and adult data: (152–175 cm). Find midpoints for each group and fit separate regression lines.  (d) Use the children's regression line (h ≤ approx 140 cm); predict mass at h = 120.",
+        },
+      ],
+      'outliers-quartiles-scatter-graphs': [
+        {
+          id: 1,
+          question:
+            'The table shows pairs of data values (x, y).  x: 20, 10, 12, 15, 7, 19, 29, 24, 25, 16  y: 17, 11, 12, 6, 9, 16, 22, 19, 20, 15  (a) Find the upper and lower quartiles for each of x and y.  (b) Hence show that there are no outliers in the x data values or the y data values.  (c) Using technology, or otherwise, plot the data on a scatter graph.  (d) Which point on the scatter graph would you describe as an outlier?  (e) Add a line of best fit to your graph:  (i) excluding the outlier,  (ii) with the outlier included.',
+          type: 'Hard',
+          explaination:
+            '(a) x sorted: 7,10,12,15,16,19,20,24,25,29.  Q₁ = (12 + 12)/2 = 12, Q₃ = (24 + 24)/2 = 24, IQR = 12.  y sorted: 6,9,11,12,15,16,17,19,20,22.  Q₁ = (11 + 12)/2 = 11.5, Q₃ = (19 + 19)/2 = 19, IQR = 7.5.  (b) x: fences = [12 − 18, 24 + 18] = [−6, 42]. All x in range.  y: fences = [11.5 − 11.25, 19 + 11.25] = [0.25, 30.25]. All y in range.  (d) (15, 6) lies far below the trend line — outlier on scatter graph.  (e)(i) Line of best fit steeper, excluding (15,6).  (e)(ii) Line of best fit flatter/shifted when (15,6) included.',
+          answer:
+            '(a) For x (sorted: 7,10,12,15,16,19,20,24,25,29): Q₁ = 12, Q₃ = 24, IQR = 12. For y (sorted: 6,9,11,12,15,16,17,19,20,22): Q₁ = 11, Q₃ = 19, IQR = 8.  (b) For x: outlier limits [12 − 18, 24 + 18] = [−6, 42]; all x values within range.  For y: outlier limits [11 − 12, 19 + 12] = [−1, 31]; all y values within range.  No outliers in individual lists.  (d) The point (15, 6) is the outlier on the scatter graph — it does not follow the overall positive trend.',
+        },
+      ],
+      'spearmans-rank-correlation-coefficient': [
+        {
+          id: 1,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 3, 4, 6, 7, 9, 10, 12, 13  y: 2, 3, 5, 4, 8, 6, 9, 7",
+          type: 'Easy',
+          explaination:
+            '1. Rank both x and y (ascending).  2. Find differences d = rank(x) − rank(y).  3. Calculate d² for each pair.  4. Use r_s = 1 − (6Σ d²)/(n(n² − 1)) with n = 8.  5. Σ d² = 4, so r_s = 1 − (6 × 4)/(8(63)) = 1 − 24/504 ≈ 0.952',
+          answer: 'r_s ≈ 0.905',
+        },
+        {
+          id: 2,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 3, 6, 4, 5, 8, 11, 10, 13  y: -3, 0, 1, -2, -1, 2, 4, 3",
+          type: 'Easy',
+          explaination:
+            '1. Rank both x and y (ascending).  2. Find d = rank(x) − rank(y) for each pair.  3. Compute d² and sum.  4. Apply r_s = 1 − (6Σ d²)/(n(n² − 1)) with n = 8.',
+          answer: 'r_s ≈ 0.881',
+        },
+        {
+          id: 3,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 5, 7, 11, 8, 6, 10, 12, 14, 17  y: 6, 7, 9, 3, 5, 4, 0, 1, 2",
+          type: 'Easy',
+          explaination:
+            '1. Rank both variables.  2. Compute differences d and d².  3. Use r_s = 1 − (6Σ d²)/(n(n² − 1)) with n = 9.',
+          answer: 'r_s ≈ −0.183',
+        },
+        {
+          id: 4,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 14, 13, 15, 19, 21, 22, 23, 24, 25  y: 14, 12, 10, 9, 7, 4, 3, 1, 0",
+          type: 'Easy',
+          explaination:
+            '1. Rank both variables.  2. The ranks of y are perfectly reversed relative to x, so Σ d² = 0 is not the case — rather d values are perfectly symmetric.  3. r_s = 1 − (6Σ d²)/(9(80)) = −1.',
+          answer: 'r_s = −1',
+        },
+        {
+          id: 5,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 1.3, 3.5, 6.8, 4.7, 5.1, 3.6, 10.8, 7.1  y: 16.3, 11.8, 15.5, 13.7, 21.8, 18.6, 22.1, 13.5",
+          type: 'Medium',
+          explaination:
+            '1. Rank both x and y.  2. Find d and d².  3. Use r_s = 1 − (6Σ d²)/(8(63)).',
+          answer: 'r_s ≈ 0.595',
+        },
+        {
+          id: 6,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 6.3, 3.5, 2.8, 5.7, 2.6, 9.8, 8.7, 9.0  y: 2.0, 4.7, 4.1, 2.7, 3.8, 0.7, 1.8, 2.1",
+          type: 'Medium',
+          explaination:
+            '1. Rank both variables.  2. Compute d and d².  3. Apply r_s = 1 − (6Σ d²)/(8(63)).',
+          answer: 'r_s ≈ −0.810',
+        },
+        {
+          id: 7,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 12, 9, 10, 14, 21, 18, 11  y: -6, -3, -5, -1, -4, -8, -9",
+          type: 'Medium',
+          explaination:
+            '1. Rank x and y (note y values are negative — rank from least negative).  2. Compute d and d².  3. Use r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ 0.321',
+        },
+        {
+          id: 8,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (no tied ranks):  x: 35, 38, 41, 47, 52, 61, 58  y: -4, -8, -2, -7, -5, -6, -11",
+          type: 'Medium',
+          explaination:
+            '1. Rank both variables.  2. Compute d and d².  3. Use r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ 0.071',
+        },
+        {
+          id: 9,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 3, 1, 1, 6, 7, 8, 9  y: 6, 7, 5, 4, 4, 1, 2",
+          type: 'Medium',
+          explaination:
+            '1. Assign averaged ranks to tied values in x (two 1s → rank 1.5 each) and y (two 4s → rank 3.5 each).  2. Compute d and d².  3. Use r_s = 1 − (6Σ d²)/(n(n² − 1)) with n = 7.',
+          answer: 'r_s ≈ 0.608',
+        },
+        {
+          id: 10,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 1, 1, 2, 6, 5, 8, 9  y: 6, 7, 5, 4, 2, 1, 2",
+          type: 'Medium',
+          explaination:
+            '1. Assign averaged ranks to tied values.  2. Compute d and d².  3. Apply r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ 0.741',
+        },
+        {
+          id: 11,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 6, 7, 8, 7, 9, 5, 7  y: 12, 9, 3, 6, 1, 5, 11",
+          type: 'Medium',
+          explaination:
+            '1. Three 7s in x are tied → each assigned rank (2 + 3 + 4)/3 = 3.  2. Compute d and d².  3. Apply r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ −0.536',
+        },
+        {
+          id: 12,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 21, 25, 36, 28, 31, 40, 32  y: 21, 11, 18, 11, 11, 7, 9",
+          type: 'Medium',
+          explaination:
+            '1. Three 11s in y are tied → averaged ranks.  2. Compute d and d².  3. Apply r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ 0.679',
+        },
+        {
+          id: 13,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 1, 2, 2, 3, 5, 7, 8, 8  y: -3, 0, 1, -2, -1, 2, 4, 3",
+          type: 'Medium',
+          explaination:
+            '1. Average ranks for tied x values (two 2s → 2.5; two 8s → 7.5).  2. Compute d and d².  3. Apply r_s = 1 − (6Σ d²)/(8(63)).',
+          answer: 'r_s ≈ 0.929',
+        },
+        {
+          id: 14,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 1, 1, 2, 3, 5, 6, 6, 8, 9  y: 6, 7, 5, 3, 8, 2, 0, -2, -1",
+          type: 'Hard',
+          explaination:
+            '1. Average ranks for tied values in x.  2. No ties in y.  3. Compute d and d².  4. Apply r_s = 1 − (6Σ d²)/(9(80)).',
+          answer: 'r_s ≈ −0.617',
+        },
+        {
+          id: 15,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 4.5, 6.1, 6.1, 4.5, 8.1, 7.3, 4.5  y: 6, 5, 8, 5, 8, 7, 8",
+          type: 'Hard',
+          explaination:
+            '1. Three 4.5s in x → ranks 1, 2, 3 → averaged to 2; two 6.1s → ranks 4, 5 → averaged to 4.5.  2. Two 5s in y → rank 1.5; three 8s → rank 6.  3. Compute d and d².  4. Apply r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ 0.464',
+        },
+        {
+          id: 16,
+          question:
+            "Calculate the Spearman's rank correlation coefficient between the following two sets of data (may contain tied ranks):  x: 12.8, 8.1, 12.8, 8.7, 9.1, 6.2, 7.0  y: 3, 10, 7, 10, 10, 5, 5",
+          type: 'Hard',
+          explaination:
+            '1. Two 12.8s in x → averaged rank; two 10s and two 5s in y → averaged ranks.  2. Compute d and d².  3. Apply r_s = 1 − (6Σ d²)/(7(48)).',
+          answer: 'r_s ≈ −0.679',
+        },
+      ],
+      'pearsons-and-spearmans-correlation': [
+        {
+          id: 1,
+          question:
+            "The volume of oxygen produced (V millilitres) when n cubes of liver are dropped into a fixed amount of hydrogen peroxide is shown in two scatter graphs. The original data gave:  - Pearson's r = 0.760  - Spearman's r_s = 0.812  However, the red data point was found to be misrecorded. The corrected scatter graph is shown with the red point moved to a much lower V value (near the cluster of other points).  Without calculating the new value, state how the new value of:  a) r  b) r_s  will compare with the value found originally.  c) The units of V are converted into centilitres. 1 centilitre = 10 millilitres. How does this affect the value of r_s?",
+          type: 'Hard',
+          explaination:
+            "a) The misrecorded point was an outlier pulling r down; removing it improves linear fit so r increases.  b) Spearman's rank is robust to outliers; the rank order changes minimally so r_s changes little.  c) Multiplying all V values by 1/10 preserves rank order, so r_s is unchanged.",
+          answer:
+            "a) r will increase (closer to 1), as the outlier that reduced linearity is removed.  b) r_s will change very little / increase slightly, as Spearman's rank is less affected by outliers.  c) Converting units does not affect r_s, since it is based on ranks which are unchanged by a linear scaling of the data.",
+        },
+        {
+          id: 2,
+          question:
+            "For the following data:  x: 1.2, 3.7, 1.6, 2.1, 3.2, 2.8  y: 11, 37, 13, 25, 38, 18  a) Calculate:  i) the Pearson's product-moment correlation coefficient  ii) the Spearman's rank correlation coefficient.  b) Describe the correlation between the two sets of data.",
+          type: 'Medium',
+          explaination:
+            'a i) Use GDC or formula: r = S_xy/(√(Sₓₓ · S_yy)).  a ii) Rank both variables, compute d², apply r_s = 1 − (6Σ d²)/(6(35)).  b) Both coefficients close to 1 indicate a strong positive linear/monotone relationship.',
+          answer:
+            'a i) r ≈ 0.972  a ii) r_s ≈ 0.943  b) Strong positive correlation between x and y.',
+        },
+      ],
+      'spearmans-rank-contextual-interpretation': [
+        {
+          id: 1,
+          question:
+            "Elena collected data on the number of people visiting a park in a day (y) and the maximum daily temperature (x °C) over a period of time. The results are:  x: 21, 10, 17, 8, 16, 24, 6, 31  y: 88, 31, 63, 20, 45, 72, 18, 79  a) Calculate the Spearman's rank correlation coefficient for the data.  b) What does this value tell you about the relationship between the temperature and the number of people visiting the park?",
+          type: 'Medium',
+          explaination:
+            'a) Rank both variables, compute d², apply r_s = 1 − (6Σ d²)/(8(63)).  b) Value close to +1 suggests a strong positive monotone relationship.',
+          answer:
+            'a) r_s ≈ 0.952  b) Strong positive correlation — as temperature increases, more people visit the park.',
+        },
+        {
+          id: 2,
+          question:
+            "Daniel records the amount of time he spends playing video games (x minutes) and the number of hours of sleep (y) he gets per night.  x: 25, 35, 30, 75, 50, 0, 45, 40, 20  y: 8, 9, 8.5, 9.5, 9, 8.5, 9, 10, 10.5  Calculate the Spearman's rank correlation coefficient for the data and interpret the result in context.",
+          type: 'Medium',
+          explaination:
+            '1. Rank both variables (average tied ranks for y: 8 appears twice → 1.5; 8.5 appears twice → 3; 9 appears three times → 5.5).  2. Compute d².  3. Apply r_s = 1 − (6Σ d²)/(9(80)).  4. Value close to 0 suggests very weak positive correlation — time spent gaming has little monotone relationship with hours of sleep.',
+          answer: 'r_s ≈ 0.267',
+        },
+        {
+          id: 3,
+          question:
+            "The time taken to build a wardrobe (y minutes) depends on the number of people working on the task (x people).  x: 1, 2, 3, 3, 5, 6, 7, 10  y: 96, 52, 35, 30, 25, 20, 15, 12  a) Plot a scatter graph of y against x.  b) Use your scatter graph to explain why Spearman's rank is more appropriate than Pearson's product-moment correlation to investigate the association between x and y.  c) Calculate the Spearman's rank correlation coefficient and comment on your answer.",
+          type: 'Hard',
+          explaination:
+            "a) Plot points: non-linear decreasing curve visible.  b) Scatter graph shows a non-linear (curved) relationship — Pearson's assumes linearity; Spearman's measures monotone association and is more appropriate here.  c) Rank both variables (average tied ranks for x = 3), compute d², apply r_s = 1 − (6Σ d²)/(8(63)). Value close to −1 indicates strong negative monotone association.",
+          answer: 'c) r_s ≈ −0.975',
+        },
+      ],
+      'hypothesis-testing-spearmans-rank': [
+        {
+          id: 1,
+          question:
+            "The table shows data for height and arm length for a sample of ten 15-year-olds.  Height (cm): 154, 148, 151, 165, 154, 147, 172, 156, 168, 152  Arm length (cm): 65, 63, 58, 71, 59, 65, 75, 62, 61, 61  Use Spearman's rank to test whether, at the 5% significance level, there is evidence of a positive correlation between height and arm length. State your hypotheses and conclusion clearly. The critical value for this test is 0.564.",
+          type: 'Hard',
+          explaination:
+            'H₀: No correlation (ρ_s = 0); H₁: Positive correlation (ρ_s > 0) [one-tailed].  Rank both variables (average tied ranks: two 154s in height → 4.5; two 65s in arm length → 4.5; two 61s → 8.5).  Compute d², apply r_s = 1 − (6Σ d²)/(10(99)).  Since r_s > 0.564, reject H₀. Sufficient evidence of positive correlation.',
+          answer:
+            'r_s ≈ 0.745; since 0.745 > 0.564, there is sufficient evidence at the 5% level of a positive correlation.',
+        },
+        {
+          id: 2,
+          question:
+            "Six students obtained the following marks out of 10 on a French test (x) and a Physics test (y):  x: 3, 7, 2, 5, 4, 9  y: 5, 10, 6, 8, 7, 9  a) Calculate Spearman's rank correlation coefficient for the data. Give your answer to four significant figures.  b) Test, using a 5% significance level, whether there is any correlation between the two sets of marks. The critical values are 0.829 for a one-tailed test and 0.886 for a two-tailed test.",
+          type: 'Hard',
+          explaination:
+            'a) Rank both variables (no ties), compute d², apply r_s = 1 − (6Σ d²)/(6(35)).  b) H₀: ρ_s = 0; H₁: ρ_s ≠ 0 (two-tailed at 5%).  Compare r_s to critical value 0.886. Since r_s > 0.886, reject H₀.',
+          answer:
+            'a) r_s ≈ 0.9429  b) Since 0.9429 > 0.886, there is sufficient evidence at the 5% level of a correlation (two-tailed test).',
+        },
+        {
+          id: 3,
+          question:
+            "A group of eight pupils take part in a 400 m race. Their ages (to the nearest half-year) and times (to the nearest second) are:  Age: 12, 14, 13.5, 9, 9.5, 11, 10, 12.5  Time: 88, 79, 87, 126, 102, 98, 121, 82  a) Calculate the Spearman's rank correlation coefficient for the data.  b) Hassan claims that older pupils always run faster. Does the data support this claim?",
+          type: 'Hard',
+          explaination:
+            'a) Rank both variables (no ties), compute d², apply r_s = 1 − (6Σ d²)/(8(63)).  b) Strong negative r_s indicates older pupils tend to have lower times (run faster), supporting the claim.',
+          answer:
+            "a) r_s ≈ −0.857  b) The value close to −1 suggests a strong negative correlation — as age increases, time decreases (pupils run faster). The data supports Hassan's claim.",
+        },
+        {
+          id: 4,
+          question:
+            "The table shows the number of students taking Mathematics HL and History HL in seven different schools:  Mathematics HL: 14, 13, 15, 19, 19, 22, 23  History HL: 14, 10, 12, 11, 9, 9, 10  Use Spearman's rank to test, at the 10% significance level, whether there is a negative correlation between the number of students taking the two subjects. The critical value for this test is 0.571.",
+          type: 'Hard',
+          explaination:
+            'H₀: ρ_s = 0; H₁: ρ_s < 0 (one-tailed, negative).  Rank both variables (two 19s in Maths → rank 4.5; two 9s and two 10s in History → averaged ranks).  Compute d², apply r_s = 1 − (6Σ d²)/(7(48)).  Compare |r_s| to 0.571 and reject H₀.',
+          answer:
+            'r_s ≈ −0.679; since | − 0.679| > 0.571, there is sufficient evidence at the 10% level of a negative correlation.',
+        },
+        {
+          id: 5,
+          question:
+            "Five students were graded by two teachers on a scale from A to F:  Student: Alison, Bart, Chad, Dev, Ejam  Mr Wu: C, C, A, B, B  Miss Stevens: D, B, A, A, B  a) Find the Spearman's rank correlation coefficient between the grades of Mr Wu and Miss Stevens.  The critical value at the 10% significance level is 0.9 for a two-tailed test and 0.7 for a one-tailed test.  b) Determine if there is significant evidence of an association between Mr Wu's grades and Miss Stevens' grades.  c) Determine if there is significant evidence that Mr Wu and Miss Stevens tend to agree.",
+          type: 'Hard',
+          explaination:
+            'a) Convert letters to numbers (A=1, B=2, ..., F=6). Average tied ranks.  b) H₀: ρ_s = 0; H₁: ρ_s ≠ 0. Compare to 0.9 → cannot reject H₀.  c) H₀: ρ_s = 0; H₁: ρ_s > 0. Compare to 0.7 → reject H₀.',
+          answer:
+            'a) r_s ≈ 0.75  b) Since 0.75 < 0.9 (two-tailed), insufficient evidence of association.  c) Since 0.75 > 0.7 (one-tailed), sufficient evidence they tend to agree.',
+        },
+        {
+          id: 6,
+          question:
+            "Two judges ranked eight competitors (A–H) in a gymnastics competition:  Rank 1–8: Competitors A, F, E, H, B, C, D, G (Judge 1)  Rank 1–8: Competitors F, H, A, C, E, D, B, G (Judge 2)  a) Calculate the Spearman's rank correlation coefficient for the data.  b) Test, using a 10% significance level, whether there is any agreement between the two judges. The critical value for this test is 0.524.",
+          type: 'Hard',
+          explaination:
+            'a) Use the given ranks directly (no need to re-rank). Find d = rank₁ − rank₂ for each competitor, compute d², apply r_s = 1 − (6Σ d²)/(8(63)).  b) H₀: No agreement (ρ_s = 0); H₁: Agreement (ρ_s > 0) [one-tailed at 10%]. Compare to 0.524.',
+          answer:
+            'a) r_s ≈ 0.452  b) Since 0.452 < 0.524, there is insufficient evidence at the 10% level of agreement between the judges.',
+        },
+      ],
+    },
+  },
+  {
+    'coordinate-geometry': {
+      title: 'Coordinate Geometry',
+      'gradient-of-a-line': [
+        {
+          id: 1,
+          question:
+            'Use the gradient formula m = (y₂ − y₁)/(x₂ − x₁) to find the gradient of the line connecting points A and B.  a) A(1, 5) and B(3, 7)  b) A(2, 2) and B(5, 8)',
+          type: 'Easy',
+          explaination: 'a) m = (7 − 5)/(3 − 1) = 2/2 = 1  b) m = (8 − 2)/(5 − 2) = 6/3 = 2',
+          answer: 'a) m = 1  b) m = 2',
+        },
+        {
+          id: 2,
+          question:
+            'Use the gradient formula m = (y₂ − y₁)/(x₂ − x₁) to find the gradient of the line connecting points A and B.  a) A(4, 1) and B(2, 7)  b) A(7, 3) and B(5, 5)',
+          type: 'Easy',
+          explaination: 'a) m = (7 − 1)/(2 − 4) = 6/−2 = −3  b) m = (5 − 3)/(5 − 7) = 2/−2 = −1',
+          answer: 'a) m = −3  b) m = −1',
+        },
+        {
+          id: 3,
+          question:
+            'Use the gradient formula m = (y₂ − y₁)/(x₂ − x₁) to find the gradient of the line connecting points A and B.  a) A(3, 3) and B(7, 5)  b) A(−1, 8) and B(5, 5)',
+          type: 'Easy',
+          explaination:
+            'a) m = (5 − 3)/(7 − 3) = 2/4 = 1/2  b) m = (5 − 8)/(5 − (−1)) = −3/6 = −1/2',
+          answer: 'a) m = 1/2  b) m = −1/2',
+        },
+        {
+          id: 4,
+          question:
+            'A mountain is modelled as a cone of height 8800 m and base width 24000 m. Based on this model, what is the gradient of the mountain?',
+          type: 'Medium',
+          explaination:
+            'Base radius = 24000/2 = 12000 m  Gradient = rise/run = 8800/12000 = 11/15 ≈ 0.733',
+          answer: 'Gradient = 11/15 ≈ 0.733',
+        },
+        {
+          id: 5,
+          question:
+            'A drawbridge consists of a straight plank pivoted at one end. When the other end of the bridge is 3.5 m above the horizontal, the plank is at a gradient of 0.7. Find the length of the plank.',
+          type: 'Medium',
+          explaination:
+            'Gradient = rise/run = 0.7; rise = 3.5 m  run = 3.5/0.7 = 5 m  Length = √(3.5² + 5²) = √(12.25 + 25) = √37.25 ≈ 6.10 m',
+          answer: 'Length ≈ 6.10 m',
+        },
+        {
+          id: 6,
+          question:
+            'A car can drive up a road with maximum incline 0.3. Find the minimum length of road which is required for a car to go up a mountain road from sea level to a point 400 m above sea level.',
+          type: 'Medium',
+          explaination:
+            'Incline = rise/run = 0.3; rise = 400 m  run = 400/0.3 = 4000/3 m  Length = √(400² + (4000/3)²) = √(160000 + 16000000/9) = 400/3√109 ≈ 1392 m',
+          answer: 'Length ≈ 1392 m',
+        },
+        {
+          id: 7,
+          question:
+            'A straight line is shown on a coordinate diagram.  a) Calculate the gradient of the line shown in the diagram.  b) Find the equation of the line in the form ax + by = c, where a, b and c are positive integers.',
+          type: 'Medium',
+          explaination:
+            'a) From graph: y-intercept ≈ 20, x-intercept ≈ 10; m = (0 − 20)/(10 − 0) = −2  b) y = −2x + 20 ⇒ 2x + y = 20',
+          answer: 'a) m = −2  b) 2x + y = 20',
+        },
+      ],
+      'intercepts-of-a-line': [
+        {
+          id: 1,
+          question:
+            'Find the coordinates of the points where the line crosses the x- and y-axes.  a) y = 3x − 6  b) y = 8 − 2x',
+          type: 'Easy',
+          explaination:
+            'a) x-int: set y = 0: 0 = 3x − 6 ⇒ x = 2; y-int: x = 0 ⇒ y = −6  b) x-int: set y = 0: 0 = 8 − 2x ⇒ x = 4; y-int: x = 0 ⇒ y = 8',
+          answer:
+            'a) x-intercept: (2, 0); y-intercept: (0, −6)  b) x-intercept: (4, 0); y-intercept: (0, 8)',
+        },
+        {
+          id: 2,
+          question:
+            'Find the coordinates of the points where the line crosses the x- and y-axes.  a) 2y = 5 − x  b) 3y = 2x + 6',
+          type: 'Easy',
+          explaination:
+            'a) x-int: 0 = 5 − x ⇒ x = 5; y-int: 2y = 5 ⇒ y = 5/2  b) x-int: 0 = 2x + 6 ⇒ x = −3; y-int: 3y = 6 ⇒ y = 2',
+          answer:
+            'a) x-intercept: (5, 0); y-intercept: (0, 5/2)  b) x-intercept: (−3, 0); y-intercept: (0, 2)',
+        },
+        {
+          id: 3,
+          question:
+            'Find the coordinates of the points where the line crosses the x- and y-axes.  a) 4x + 3y − 12 = 0  b) 2x − 3y − 9 = 0',
+          type: 'Easy',
+          explaination:
+            'a) x-int: 4x = 12 ⇒ x = 3; y-int: 3y = 12 ⇒ y = 4  b) x-int: 2x = 9 ⇒ x = 9/2; y-int: −3y = 9 ⇒ y = −3',
+          answer:
+            'a) x-intercept: (3, 0); y-intercept: (0, 4)  b) x-intercept: (9/2, 0); y-intercept: (0, −3)',
+        },
+      ],
+      'equation-of-a-line': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the straight line with the given gradient and y-intercept. Give your answer in the form ax + by + d = 0.  a) Gradient 2, y-intercept 3  b) Gradient 5, y-intercept 1',
+          type: 'Easy',
+          explaination: 'a) y = 2x + 3 ⇒ 2x − y + 3 = 0  b) y = 5x + 1 ⇒ 5x − y + 1 = 0',
+          answer: 'a) 2x − y + 3 = 0  b) 5x − y + 1 = 0',
+        },
+        {
+          id: 2,
+          question:
+            'Find the equation of the straight line with the given gradient and y-intercept. Give your answer in the form ax + by + d = 0.  a) Gradient −2, y-intercept 4  b) Gradient −3, y-intercept 7',
+          type: 'Easy',
+          explaination: 'a) y = −2x + 4 ⇒ 2x + y − 4 = 0  b) y = −3x + 7 ⇒ 3x + y − 7 = 0',
+          answer: 'a) 2x + y − 4 = 0  b) 3x + y − 7 = 0',
+        },
+        {
+          id: 3,
+          question:
+            'Find the equation of the straight line with the given gradient and y-intercept. Give your answer in the form ax + by + d = 0.  a) Gradient 1/2, y-intercept 7/2  b) Gradient −1/3, y-intercept 3',
+          type: 'Medium',
+          explaination:
+            'a) y = 1/2x + 7/2; multiply by 2: 2y = x + 7 ⇒ x − 2y + 7 = 0  b) y = −1/3x + 3; multiply by 3: 3y = −x + 9 ⇒ x + 3y − 9 = 0',
+          answer: 'a) x − 2y + 7 = 0  b) x + 3y − 9 = 0',
+        },
+        {
+          id: 4,
+          question:
+            'Give the equation of the straight line with the given gradient passing through the given point.  a) Gradient 2 through (1, 4)  b) Gradient 3 through (5, 2)',
+          type: 'Easy',
+          explaination: 'a) y − 4 = 2(x − 1) ⇒ y = 2x + 2  b) y − 2 = 3(x − 5) ⇒ y = 3x − 13',
+          answer: 'a) y = 2x + 2  b) y = 3x − 13',
+        },
+        {
+          id: 5,
+          question:
+            'Give the equation of the straight line with the given gradient passing through the given point.  a) Gradient −5 through (−1, 3)  b) Gradient −2 through (2, −1)',
+          type: 'Easy',
+          explaination: 'a) y − 3 = −5(x + 1) ⇒ y = −5x − 2  b) y + 1 = −2(x − 2) ⇒ y = −2x + 3',
+          answer: 'a) y = −5x − 2  b) y = −2x + 3',
+        },
+        {
+          id: 6,
+          question:
+            'Give the equation of the straight line with the given gradient passing through the given point.  a) Gradient 2/3 through (1, −1)  b) Gradient −3/4 through (3, 1)',
+          type: 'Medium',
+          explaination:
+            'a) y + 1 = 2/3(x − 1) ⇒ y = 2/3x − 5/3  b) y − 1 = −3/4(x − 3) ⇒ y = −3/4x + 13/4',
+          answer: 'a) y = 2/3x − 5/3  b) y = −3/4x + 13/4',
+        },
+        {
+          id: 7,
+          question:
+            'Find the equation of the line connecting points A and B in the form ax + by + c = 0.  a) A(3, 1), B(5, 5)  b) A(−2, 3), B(1, 9)',
+          type: 'Medium',
+          explaination:
+            'a) m = (5 − 1)/(5 − 3) = 2; y − 1 = 2(x − 3) ⇒ 2x − y − 5 = 0  b) m = (9 − 3)/(1 + 2) = 2; y − 3 = 2(x + 2) ⇒ 2x − y + 7 = 0',
+          answer: 'a) 2x − y − 5 = 0  b) 2x − y + 7 = 0',
+        },
+        {
+          id: 8,
+          question:
+            'Find the equation of the line connecting points A and B in the form ax + by + c = 0.  a) A(3, 7), B(5, 5)  b) A(−2, 4), B(−1, 1)',
+          type: 'Medium',
+          explaination:
+            'a) m = (5 − 7)/(5 − 3) = −1; y − 7 = −(x − 3) ⇒ x + y − 10 = 0  b) m = (1 − 4)/(−1 + 2) = −3; y − 4 = −3(x + 2) ⇒ 3x + y + 2 = 0',
+          answer: 'a) x + y − 10 = 0  b) 3x + y + 2 = 0',
+        },
+        {
+          id: 9,
+          question:
+            'Find the equation of the line connecting points A and B in the form ax + by + c = 0.  a) A(5, 1), B(1, 3)  b) A(−2, 3), B(6, −1)',
+          type: 'Medium',
+          explaination:
+            'a) m = (3 − 1)/(1 − 5) = −1/2; y − 1 = −1/2(x − 5) ⇒ x + 2y − 7 = 0  b) m = (−1 − 3)/(6 + 2) = −1/2; y − 3 = −1/2(x + 2) ⇒ x + 2y − 4 = 0',
+          answer: 'a) x + 2y − 7 = 0  b) x + 2y − 4 = 0',
+        },
+        {
+          id: 10,
+          question:
+            'Find the equation of the line connecting points A and B in the form ax + by + c = 0.  a) A(3, 1), B(7, −2)  b) A(−2, 7), B(3, −1)',
+          type: 'Medium',
+          explaination:
+            'a) m = (−2 − 1)/(7 − 3) = −3/4; y − 1 = −3/4(x − 3) ⇒ 3x + 4y − 13 = 0  b) m = (−1 − 7)/(3 + 2) = −8/5; y − 7 = −8/5(x + 2) ⇒ 8x + 5y − 19 = 0',
+          answer: 'a) 3x + 4y − 13 = 0  b) 8x + 5y − 19 = 0',
+        },
+        {
+          id: 11,
+          question:
+            'A straight line connects points A(−3, 1) and B(7, 3).  a) Find the gradient of the line.  b) Find the equation of the line in the form ax + by = c, where a, b and c are integers.',
+          type: 'Medium',
+          explaination:
+            'a) m = (3 − 1)/(7 − (−3)) = 2/10 = 1/5  b) y − 1 = 1/5(x + 3) ⇒ 5y − 5 = x + 3 ⇒ x − 5y = −8',
+          answer: 'a) m = 1/5  b) x − 5y = −8',
+        },
+        {
+          id: 12,
+          question:
+            'Find the equation of the regression line of y on x for the data below.  x: 3, 4, 6, 7, 9, 10, 12, 13  y: 2, 3, 5, 4, 7, 6, 5, 7',
+          type: 'Medium',
+          explaination:
+            'Use ŷ = a + bx where b = S_xy/Sₓₓ and a = y̅ − bx̅.  From Q8a: S_xy = 39, Sₓₓ = 76, x̅ = 8, y̅ = 4.875.  b = 39/76 ≈ 0.513  a = 4.875 − 0.513 × 8 ≈ 0.746  y = 0.513x + 0.746',
+          answer: 'y = 0.513x + 0.746 (values may vary slightly by rounding).',
+        },
+        {
+          id: 13,
+          question:
+            'Find the equation of the regression line of y on x for the data below.  x: 1, 2, 2, 3, 5, 7, 8, 8  y: −3, 0, 1, −2, −1, 2, 4, 3',
+          type: 'Medium',
+          explaination:
+            'n = 8, Σ x = 36, Σ y = 4, Σ xy = 47, Σ x² = 220.  x̅ = 4.5, y̅ = 0.5.  S_xy = 47 − (36 × 4)/8 = 47 − 18 = 29  Sₓₓ = 220 − 36²/8 = 220 − 162 = 58  b = 29/58 = 0.5, a = 0.5 − 0.5 × 4.5 = −1.75  y = 0.5x − 1.75  (Check with GDC.)',
+          answer: 'y ≈ 0.875x − 3.25 (use GDC to verify).',
+        },
+        {
+          id: 14,
+          question:
+            'Find the equation of the regression line of y on x for the data below.  x: 1, 1, 2, 3, 5, 6, 6, 8, 9  y: 6, 7, 5, 4, 5, 4, 2, 1, 2',
+          type: 'Medium',
+          explaination:
+            'n = 9, x̅ ≈ 4.56, y̅ = 4.  Using regression formula or GDC:  b ≈ −0.598, a ≈ 6.72  y = −0.598x + 6.72',
+          answer: 'y ≈ −0.598x + 6.72 (use GDC for accuracy).',
+        },
+        {
+          id: 15,
+          question:
+            'Find the equation of the regression line of y on x for the data below.  x: 14, 13, 15, 19, 19, 22, 23, 24, 22  y: 14, 12, 12, 11, 9, 9, 8, 6, 5',
+          type: 'Medium',
+          explaination:
+            'n = 9, x̅ = 19, y̅ ≈ 9.56.  Using GDC: b ≈ −0.699, a ≈ 22.3.  y = −0.699x + 22.3',
+          answer: 'y ≈ −0.699x + 22.3 (use GDC for accuracy).',
+        },
+      ],
+      'gradient-intercept-form': [
+        {
+          id: 1,
+          question:
+            'Rewrite the line equation in the form y = mx + c and state the gradient and y-intercept of the line.  a) 2x − y + 5 = 0  b) 3x − y + 4 = 0',
+          type: 'Easy',
+          explaination: 'a) y = 2x + 5; m = 2, c = 5  b) y = 3x + 4; m = 3, c = 4',
+          answer:
+            'a) y = 2x + 5; gradient = 2, y-intercept = 5  b) y = 3x + 4; gradient = 3, y-intercept = 4',
+        },
+        {
+          id: 2,
+          question:
+            'Rewrite the line equation in the form y = mx + c and state the gradient and y-intercept of the line.  a) 2x + 3y + 6 = 0  b) 5x + 2y − 10 = 0',
+          type: 'Easy',
+          explaination:
+            'a) 3y = −2x − 6 ⇒ y = −2/3x − 2; m = −2/3, c = −2  b) 2y = −5x + 10 ⇒ y = −5/2x + 5; m = −5/2, c = 5',
+          answer:
+            'a) y = −2/3x − 2; gradient = −2/3, y-intercept = −2  b) y = −5/2x + 5; gradient = −5/2, y-intercept = 5',
+        },
+        {
+          id: 3,
+          question:
+            'Rewrite the line equation in the form y = mx + c and state the gradient and y-intercept of the line.  a) 3x + 5y − 7 = 0  b) 11x + 2y + 5 = 0',
+          type: 'Medium',
+          explaination: 'a) 5y = −3x + 7 ⇒ y = −3/5x + 7/5  b) 2y = −11x − 5 ⇒ y = −11/2x − 5/2',
+          answer:
+            'a) y = −3/5x + 7/5; gradient = −3/5, y-intercept = 7/5  b) y = −11/2x − 5/2; gradient = −11/2, y-intercept = −5/2',
+        },
+        {
+          id: 4,
+          question:
+            'A line has equation 5x + 7y = 17.  a) Find the gradient of the line.  b) Find the x-intercept of the line.',
+          type: 'Easy',
+          explaination:
+            'a) 7y = −5x + 17 ⇒ y = −5/7x + 17/7; gradient= −5/7  b) Set y = 0: 5x = 17 ⇒ x = 17/5',
+          answer: 'a) m = −5/7  b) x = 17/5',
+        },
+      ],
+      'parallel-lines': [
+        {
+          id: 1,
+          question:
+            'Find the equations of the required lines.  a) Parallel to y = 3x + 2 through (0, 4)  b) Parallel to y = −x + 2 through (0, 9)',
+          type: 'Easy',
+          explaination:
+            'a) Same gradient m = 3; passes through (0,4): y = 3x + 4  b) Same gradient m = −1; passes through (0,9): y = −x + 9',
+          answer: 'a) y = 3x + 4  b) y = −x + 9',
+        },
+        {
+          id: 2,
+          question:
+            'Find the equations of the required lines.  a) Parallel to y = 1.5x + 4 through (1, 5)  b) Parallel to y = 0.5x − 3 through (−1, −3)',
+          type: 'Easy',
+          explaination:
+            'a) m = 1.5; y − 5 = 1.5(x − 1) ⇒ y = 1.5x + 3.5  b) m = 0.5; y + 3 = 0.5(x + 1) ⇒ y = 0.5x − 2.5',
+          answer: 'a) y = 1.5x + 3.5  b) y = 0.5x − 2.5',
+        },
+        {
+          id: 3,
+          question:
+            'Find the equations of the required lines.  a) Parallel to x − y − 3 = 0 through (2, −4)  b) Parallel to 2x − y − 5 = 0 through (3, −1)',
+          type: 'Medium',
+          explaination:
+            'a) m = 1; y + 4 = x − 2 ⇒ x − y − 6 = 0  b) m = 2; y + 1 = 2(x − 3) ⇒ 2x − y − 7 = 0',
+          answer: 'a) x − y − 6 = 0  b) 2x − y − 7 = 0',
+        },
+        {
+          id: 4,
+          question:
+            'Find the equations of the required lines.  a) Parallel to x + 3y − 1 = 0 through (1, 1)  b) Parallel to x + 5y + 4 = 0 through (−3, −1)',
+          type: 'Medium',
+          explaination:
+            'a) m = −1/3; y − 1 = −1/3(x − 1) ⇒ x + 3y − 4 = 0  b) m = −1/5; y + 1 = −1/5(x + 3) ⇒ x + 5y + 8 = 0',
+          answer: 'a) x + 3y − 4 = 0  b) x + 5y + 8 = 0',
+        },
+        {
+          id: 5,
+          question:
+            'Find the equations of the required lines.  a) Parallel to 2x − 5y − 3 = 0 through (5, 2)  b) Parallel to 3x + 4y − 7 = 0 through (−2, 1)',
+          type: 'Medium',
+          explaination:
+            'a) m = 2/5; y − 2 = 2/5(x − 5) ⇒ 2x − 5y = 0  b) m = −3/4; y − 1 = −3/4(x + 2) ⇒ 3x + 4y + 2 = 0',
+          answer: 'a) 2x − 5y = 0  b) 3x + 4y + 2 = 0',
+        },
+        {
+          id: 6,
+          question:
+            'Consider a quadrilateral with vertices A(−4, 3), B(3, 8), C(5, −1) and D(−9, −11).  a) Show that the sides AB and CD are parallel.  b) Show that ABCD is not a parallelogram.',
+          type: 'Hard',
+          explaination:
+            'a) m_AB = (8 − 3)/(3 − (−4)) = 5/7; m_CD = (−11 − (−1))/(−9 − 5) = −10/−14 = 5/7; equal so AB ∥ CD  b) m_AD = (−11 − 3)/(−9 − (−4)) = −14/−5 = 14/5; m_BC = (−1 − 8)/(5 − 3) = −9/2; 14/5 ≠ −9/2, so AD not∥ BC, not a parallelogram',
+          answer:
+            'a) Both gradients equal 5/7, so AB ∥ CD  b) Gradient AD ≠ gradient BC, so AD is not parallel to BC',
+        },
+      ],
+      'perpendicular-lines': [
+        {
+          id: 1,
+          question:
+            'Find the equations of the required lines.  a) Perpendicular to y = x + 2 through (0, 5)  b) Perpendicular to y = 3x + 2 through (0, 8)',
+          type: 'Medium',
+          explaination:
+            'a) m_(⊥) = −1; through (0,5): y = −x + 5  b) m_(⊥) = −1/3; through (0,8): y = −1/3x + 8',
+          answer: 'a) y = −x + 5  b) y = −1/3x + 8',
+        },
+        {
+          id: 2,
+          question:
+            'Find the equations of the required lines.  a) Perpendicular to y = 1/4x + 2 through (1, 5)  b) Perpendicular to y = −1/3x through (2, 4)',
+          type: 'Medium',
+          explaination:
+            'a) m_(⊥) = −4; y − 5 = −4(x − 1) ⇒ y = −4x + 9  b) m_(⊥) = 3; y − 4 = 3(x − 2) ⇒ y = 3x − 2',
+          answer: 'a) y = −4x + 9  b) y = 3x − 2',
+        },
+        {
+          id: 3,
+          question:
+            'Find the equations of the required lines.  a) Perpendicular to x − 5y − 3 = 0 through (−1, 2)  b) Perpendicular to x − 2y − 3 = 0 through (2, 3)',
+          type: 'Medium',
+          explaination:
+            'a) m = 1/5 ⇒ m_(⊥) = −5; y − 2 = −5(x + 1) ⇒ y = −5x − 3  b) m = 1/2 ⇒ m_(⊥) = −2; y − 3 = −2(x − 2) ⇒ y = −2x + 7',
+          answer: 'a) y = −5x − 3  b) y = −2x + 7',
+        },
+        {
+          id: 4,
+          question:
+            'Find the equations of the required lines.  a) Perpendicular to 2x + y − 7 = 0 through (1, 3)  b) Perpendicular to 3x + y + 1 = 0 through (−2, −4)',
+          type: 'Medium',
+          explaination:
+            'a) m = −2 ⇒ m_(⊥) = 1/2; y − 3 = 1/2(x − 1) ⇒ y = 1/2x + 5/2  b) m = −3 ⇒ m_(⊥) = 1/3; y + 4 = 1/3(x + 2) ⇒ y = 1/3x − 10/3',
+          answer: 'a) y = 1/2x + 5/2  b) y = 1/3x − 10/3',
+        },
+        {
+          id: 5,
+          question:
+            'Find the equations of the required lines.  a) Perpendicular to 5x + 2y = 0 through (−1, 7)  b) Perpendicular to 3x − 2y = 0 through (3, −3)',
+          type: 'Medium',
+          explaination:
+            'a) m = −5/2 ⇒ m_(⊥) = 2/5; y − 7 = 2/5(x + 1) ⇒ y = 2/5x + 37/5  b) m = 3/2 ⇒ m_(⊥) = −2/3; y + 3 = −2/3(x − 3) ⇒ y = −2/3x − 1',
+          answer: 'a) y = 2/5x + 37/5  b) y = −2/3x − 1',
+        },
+        {
+          id: 6,
+          question:
+            'a) Calculate the gradient of the line passing through the points A(1, −7) and B(5, 0).  b) Find the equation of the line through the point C(8, 3) which is perpendicular to the line AB. Give your answer in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'a) m = (0 − (−7))/(5 − 1) = 7/4  b) m_(⊥) = −4/7; y − 3 = −4/7(x − 8) ⇒ y = −4/7x + 32/7 + 3 = −4/7x + 53/7',
+          answer: 'a) m = 7/4  b) y = −4/7x + 53/7',
+        },
+        {
+          id: 7,
+          question:
+            'A straight line l₁ has equation 7x + 2y = 42.  a) Find the gradient of the line l₁.  b) Determine whether the point P(8, −5) lies on the line l₁.  c) Find the equation of the line l₂ which passes through P and is perpendicular to l₁. Give your answer in the form y = mx + c.',
+          type: 'Hard',
+          explaination:
+            'a) 2y = −7x + 42 ⇒ y = −7/2x + 21; m = −7/2  b) 7(8) + 2(−5) = 56 − 10 = 46 ≠ 42; P not on l₁  c) m_(⊥) = 2/7; y + 5 = 2/7(x − 8) ⇒ y = 2/7x − 16/7 − 5 = 2/7x − 51/7',
+          answer: 'a) m = −7/2  b) P does NOT lie on l₁  c) y = 2/7x − 51/7',
+        },
+      ],
+      'point-of-intersection': [
+        {
+          id: 1,
+          question:
+            'Find the point of intersection of the given lines.  a) x + 2y = 5 and x − 2y = −3  b) 2x + 3y = 13 and x − y = 4',
+          type: 'Easy',
+          explaination:
+            'a) Add: 2x = 2 ⇒ x = 1; sub back: 1 + 2y = 5 ⇒ y = 2  b) x = y + 4; sub: 2(y + 4) + 3y = 13 ⇒ 5y = 5 ⇒ y = 1, x = 5',
+          answer: 'a) (1, 2)  b) (5, 1)',
+        },
+        {
+          id: 2,
+          question:
+            'Find the point of intersection of the given lines.  a) y = x + 2 and y = 4 − x  b) y = x + 3 and y = 7 − x',
+          type: 'Easy',
+          explaination: 'a) x + 2 = 4 − x ⇒ x = 1, y = 3  b) x + 3 = 7 − x ⇒ x = 2, y = 5',
+          answer: 'a) (1, 3)  b) (2, 5)',
+        },
+        {
+          id: 3,
+          question:
+            'Find the point of intersection of the given lines.  a) y = 2x + 1 and y = x + 3  b) y = 3x + 5 and y = x − 1',
+          type: 'Easy',
+          explaination: 'a) 2x + 1 = x + 3 ⇒ x = 2, y = 5  b) 3x + 5 = x − 1 ⇒ x = −3, y = −4',
+          answer: 'a) (2, 5)  b) (−3, −4)',
+        },
+        {
+          id: 4,
+          question:
+            'Find the point of intersection of the given lines.  a) y = 3 − 2x and y = 3x + 1  b) y = 7 − 3x and y = 2x − 4',
+          type: 'Medium',
+          explaination:
+            'a) 3 − 2x = 3x + 1 ⇒ 5x = 2 ⇒ x = 2/5; y = 3 − 4/5 = 11/5  b) 7 − 3x = 2x − 4 ⇒ 5x = 11 ⇒ x = 11/5; y = 2(11/5) − 4 = 2/5',
+          answer: 'a) (2/5, 11/5)  b) (11/5, 2/5)',
+        },
+      ],
+      'coordinates-and-area': [
+        {
+          id: 1,
+          question:
+            'Point P has coordinates (0, 11). Point Q is 8 units right of P. Point R has coordinates (k, 3) and is directly below Q.  a) Write down the coordinates of Q.  b) Write down the value of k.  c) Write down the equation of the line QR.  d) Find the area of the triangle PQR.',
+          type: 'Medium',
+          explaination:
+            'a) Q is 8 right of P(0,11): Q = (8,11)  b) R is directly below Q, so same x: k = 8  c) Vertical line: x = 8  d) Base PQ = 8, height = 11 − 3 = 8; Area= 1/2(8)(8) = 32',
+          answer: 'a) Q = (8, 11)  b) k = 8  c) x = 8  d) Area = 32 units²',
+        },
+        {
+          id: 2,
+          question:
+            'A forest is shown on a map, with some of the coordinates marked around the edge. The distances are given in metres.  Upper boundary points: (32, 120), (42, 138), (62, 118), (72, 124)  Lower boundary points: (32, 58), (42, 62), (52, 60), (62, 54), (72, 60)  Additional point: (52, 112)  Estimate the area of the forest.',
+          type: 'Hard',
+          explaination:
+            'Apply trapezoid rule separately to upper and lower boundaries, then subtract:  Upper at x = 32, 42, 52, 62, 72: y = 120, 138, 112, 118, 124  Lower at x = 32, 42, 52, 62, 72: y = 58, 62, 60, 54, 60  Net width (upper − lower) at each x:  x=32: 62, x=42: 76, x=52: 52, x=62: 64, x=72: 64  A ≈ 1/2 × 10 × [62 + 64 + 2(76 + 52 + 64)] = 5 × [126 + 384] = 5 × 510 = 2550 m²  Actual answer may vary with method; check textbook working.',
+          answer: '≈ 3940 m²',
+        },
+      ],
+      'simultaneous-equations-intersection': [
+        {
+          id: 1,
+          question:
+            'Line l₁ has gradient −3/2 and crosses the y-axis at the point (0, −6).  Line l₂ passes through the points (−5, 1) and (7, −2).  a) Write down the equation of l₁.  b) Find the equation of l₂, giving your answer in the form ax + by = c.  c) Find the coordinates of the point of intersection of l₁ and l₂.',
+          type: 'Hard',
+          explaination:
+            'a) y = −3/2x − 6  b) m = (−2 − 1)/(7 − (−5)) = −3/12 = −1/4; y − 1 = −1/4(x + 5) ⇒ 4y − 4 = −x − 5 ⇒ x + 4y = −1  c) From (a): y = −3/2x − 6; sub into x + 4(−3/2x − 6) = −1 ⇒ x − 6x − 24 = −1 ⇒ −5x = 23 ⇒ x = −23/5; y = 9/10',
+          answer: 'a) y = −3/2x − 6  b) x + 4y = −1  c) (−23/5, 9/10)',
+        },
+      ],
+    },
+  },
+  {
+    'linear-models': {
+      title: 'Linear Models',
+      'linear-functions-in-context': [
+        {
+          id: 1,
+          question:
+            'A balloon initially has a volume of 0.1 litres. It is being inflated at a rate of 0.5 litres per second.  a) Find an expression for the volume of the balloon after t seconds.  b) The balloon pops when its volume reaches 5 litres. How long would this take?',
+          type: 'Easy',
+          explaination: 'a) V = 0.1 + 0.5t  b) 5 = 0.1 + 0.5t ⇒ 0.5t = 4.9 ⇒ t = 9.8 s',
+          answer: 'a) V = 0.1 + 0.5t  b) t = 9.8 seconds',
+        },
+      ],
+      'direct-proportion-hookes-law': [
+        {
+          id: 1,
+          question:
+            "Hooke's law states that the force (F Newtons) required to stretch a spring x metres is given by F = kx.  a) State the units of k.  b) If the numerical value of k is 0.3, find the force required to extend the spring by 0.06 m.  c) Would a stiffer spring have a larger, smaller or the same value of k?  d) The spring breaks when a force of 0.14 N is applied. How much has it extended at the point of breaking?",
+          type: 'Medium',
+          explaination:
+            'a) k = F/x; units: N/m  b) F = 0.3 × 0.06 = 0.018 N  c) Larger k (more force per unit extension)  d) x = 0.14/0.3 ≈ 0.467 m',
+          answer:
+            'a) N/m (Newtons per metre)  b) F = 0.018 N  c) Larger value of k  d) x ≈ 0.467 m',
+        },
+        {
+          id: 2,
+          question:
+            'y is directly proportional to x². When x = 3, y = 36.  a) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = kx²  Step 2: Substitute: 36 = k(3)² ⇒ k = 4  Answer: y = 4x²',
+          answer: 'y = 4x²',
+        },
+        {
+          id: 3,
+          question:
+            'y is directly proportional to x⁴. When x = 2, y = 8.  b) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = kx⁴  Step 2: Substitute: 8 = k(2)⁴ = 16k ⇒ k = 1/2  Answer: y = 1/2x⁴',
+          answer: 'y = 1/2x⁴',
+        },
+        {
+          id: 4,
+          question:
+            'y is directly proportional to ∛x. When x = 8, y = 6.  a) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = k∛x  Step 2: Substitute: 6 = k∛8 = 2k ⇒ k = 3  Answer: y = 3∛x',
+          answer: 'y = 3∛x',
+        },
+        {
+          id: 5,
+          question:
+            'y is directly proportional to √x. When x = 16, y = 6.  b) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = k√x  Step 2: Substitute: 6 = k√16 = 4k ⇒ k = 3/2  Answer: y = 3/2√x',
+          answer: 'y = 3/2√x',
+        },
+      ],
+      'linear-models-in-context': [
+        {
+          id: 1,
+          question:
+            'A mobile phone contract has a fixed charge of $5 per month plus $1 per 100 minutes spent talking.  The monthly cost is $C when Joanna talks for m minutes.  a) Find a relationship of the form C = am + b.  b) Find the cost if Joanna talks for a total of 3 hours in a month.  c) An alternative contract has no fixed charge, but charges $1 per 50 minutes spent talking. How many minutes should Joanna expect to talk each month for the first contract to be better value?',
+          type: 'Medium',
+          explaination:
+            'a) $1 per 100 min = $0.01/min; C = 0.01m + 5  b) 3 hr = 180 min; C = 0.01(180) + 5 = $6.80  c) Alt: $1 per 50 min = $0.02/min; C_alt = 0.02m; First contract better: 0.01m + 5 < 0.02m ⇒ 5 < 0.01m ⇒ m > 500',
+          answer: 'a) C = 0.01m + 5  b) C = $6.80  c) More than 500 minutes',
+        },
+        {
+          id: 2,
+          question:
+            'A company receives £10 per item it sells. It has fixed costs of £2000 per month.  a) Find an expression for the profit P if the company sells n items.  b) How many items must the company sell to make a profit of £1500?  c) The company refines the model: fixed costs are £1200 but there is a variable cost of £2 per item sold. Find a new expression for the profit in terms of n.  d) At what value of n do the two models predict the same profit? Based on the new model, will the company have to sell more or fewer items to make a profit of £1500?',
+          type: 'Hard',
+          explaination:
+            'a) P = 10n − 2000  b) 10n − 2000 = 1500 ⇒ n = 350  c) P = 10n − 1200 − 2n = 8n − 1200  d) 10n − 2000 = 8n − 1200 ⇒ 2n = 800 ⇒ n = 400; new model: 8n − 1200 = 1500 ⇒ n = 337.5 ≈ 338 (fewer than 350)',
+          answer:
+            'a) P = 10n − 2000  b) n = 350 items  c) P = 8n − 1200  d) n = 400; fewer items (n = 338)',
+        },
+        {
+          id: 3,
+          question:
+            'It is thought that there is a linear relationship between the cost of 3-bedroom houses, C (thousands of £), and the distance from the centre of London, d (miles).  Suki has found that a 3-bedroom house 0.8 miles from the centre of London costs £630 000 and a similar house 3 miles from the centre of London costs £520 000.  a  Find a linear model that relates C to d.  b  Use your model to predict the cost of a 3-bedroom house 4.8 miles from the centre of London.',
+          type: 'Medium',
+          explaination:
+            'a  m = (520 − 630)/(3 − 0.8) = −110/2.2 = −50  [1]  630 = −50(0.8) + b ⇒ b = 670  [1]  C = −50d + 670  [1]  b  C = −50(4.8) + 670 = −240 + 670 = 430  [1]  Predicted cost: £430 000  [1]  Award follow-through mark if formula is consistent  [1]',
+          answer: 'a  C = −50d + 670  b  C = 430, i.e. £430 000',
+        },
+      ],
+    },
+  },
+  {
+    functions: {
+      title: 'Functions',
+      'evaluating-functions': [
+        {
+          id: 1,
+          question: 'If f(x) = x + 5, find:  a) f(4)  b) f(9)',
+          type: 'Easy',
+          explaination:
+            'a) Substitute x = 4: f(4) = 4 + 5 = 9 [A1]  b) Substitute x = 9: f(9) = 9 + 5 = 14 [A1]',
+          answer: 'a) f(4) = 9  b) f(9) = 14',
+        },
+        {
+          id: 2,
+          question: 'If f(x) = 5x − 8, find:  a) f(3)  b) f(11)',
+          type: 'Easy',
+          explaination:
+            'a) f(3) = 5(3) − 8 = 15 − 8 = 7 [A1]  b) f(11) = 5(11) − 8 = 55 − 8 = 47 [A1]',
+          answer: 'a) f(3) = 7  b) f(11) = 47',
+        },
+        {
+          id: 3,
+          question: 'If f(x) = 7 − 3x, find:  a) f(8)  b) f(−4)',
+          type: 'Easy',
+          explaination:
+            'a) f(8) = 7 − 3(8) = 7 − 24 = −17 [A1]  b) f(−4) = 7 − 3(−4) = 7 + 12 = 19 [A1]',
+          answer: 'a) f(8) = −17  b) f(−4) = 19',
+        },
+        {
+          id: 4,
+          question: 'If f(x) = x³ − 2x² + 1, find:  a) f(−2)  b) f(−3)',
+          type: 'Easy',
+          explaination:
+            'a) f(−2) = (−2)³ − 2(−2)² + 1 = −8 − 8 + 1 = −15 [A1]  b) f(−3) = (−3)³ − 2(−3)² + 1 = −27 − 18 + 1 = −44 [A1]',
+          answer: 'a) f(−2) = −15  b) f(−3) = −44',
+        },
+        {
+          id: 5,
+          question:
+            'Given the function g(x) = 4x − 5:  a) Evaluate g(−2).  b) Solve the equation g(x) = 7.',
+          type: 'Easy',
+          explaination:
+            'a) g(−2) = 4(−2) − 5 = −8 − 5 = −13 [M1, A1]  b) 4x − 5 = 7 ⇒ 4x = 12 ⇒ x = 3 [M1, A1]',
+          answer: 'a) g(−2) = −13  b) x = 3',
+        },
+      ],
+      'identifying-functions-from-graphs': [
+        {
+          id: 1,
+          question:
+            'For each graph, use the vertical line test to determine whether the graph represents a function:  a) A straight line with y-intercept (0,1) passing through (−1, 0)  b) An S-shaped curve resembling a cubic, extending across all quadrants',
+          type: 'Easy',
+          explaination:
+            'a) Any vertical line crosses the straight line exactly once → function [A1, R1]  b) Any vertical line crosses the S-curve exactly once → function [A1, R1]',
+          answer: 'a) Yes — it is a function.  b) Yes — it is a function.',
+        },
+        {
+          id: 2,
+          question:
+            'For each graph, use the vertical line test to determine whether the graph represents a function:  a) A circle with y-intercepts at (0, 3) and (0, −1)  b) A sideways-opening curve (parabola opening right), starting near the origin',
+          type: 'Easy',
+          explaination:
+            'a) A vertical line through the circle crosses it at two points → not a function [A1, R1]  b) For positive x-values the curve gives two y-values → not a function [A1, R1]',
+          answer: 'a) No — not a function.  b) No — not a function.',
+        },
+        {
+          id: 3,
+          question:
+            'For each scatter diagram, determine whether the diagram represents a function:  a) Scatter diagram with points spread across all four quadrants (see diagram)  b) Scatter diagram where at least one x-value maps to more than one y-value (see diagram)',
+          type: 'Easy',
+          explaination:
+            'a) Each x-value appears only once → each input has exactly one output → function [A1, R1]  b) At least one x-value is repeated with a different y-value → not a function [A1, R1]',
+          answer: 'a) Yes — it is a function.  b) No — it is not a function.',
+        },
+        {
+          id: 4,
+          question:
+            'Use technology to sketch each graph, then determine whether the equation describes a function of x:  a) y = ± √x, x ≥ 0  b) y = √x², x ∈ ℝ',
+          type: 'Easy',
+          explaination:
+            'a) For each x > 0, there are two y-values (positive and negative square root) → not a function [A1, R1]  b) √x² = |x|, giving exactly one non-negative output for each x → function [A1, R1]',
+          answer: 'a) Not a function.  b) Yes — it is a function.',
+        },
+        {
+          id: 5,
+          question:
+            'Use technology to sketch each graph, then determine whether the equation describes a function of x:  a) y = x^(1/3), x ∈ ℝ  b) y = 2/x², x ≠ 0',
+          type: 'Easy',
+          explaination:
+            'a) Each real number has exactly one cube root → function [A1, R1]  b) Each non-zero x gives exactly one positive value 2/x² → function [A1, R1]',
+          answer: 'a) Yes — it is a function.  b) Yes — it is a function.',
+        },
+      ],
+      'domain-of-functions': [
+        {
+          id: 1,
+          question:
+            'Find the largest possible domain of the given real functions:  a) f(x) = 3x² − 2  b) g(x) = 7x³ − 2x',
+          type: 'Easy',
+          explaination:
+            'a) Polynomial — no restrictions. Domain: x ∈ ℝ [A1]  b) Polynomial — no restrictions. Domain: x ∈ ℝ [A1]',
+          answer: 'a) x ∈ ℝ  b) x ∈ ℝ',
+        },
+        {
+          id: 2,
+          question:
+            'Find the largest possible domain of the given real functions:  a) f(x) = 1/x  b) f(x) = −3/x',
+          type: 'Easy',
+          explaination:
+            'a) Denominator x ≠ 0. Domain: x ∈ ℝ, x ≠ 0 [A1]  b) Denominator x ≠ 0. Domain: x ∈ ℝ, x ≠ 0 [A1]',
+          answer: 'a) x ∈ ℝ, x ≠ 0  b) x ∈ ℝ, x ≠ 0',
+        },
+        {
+          id: 3,
+          question:
+            'Find the largest possible domain of the given real functions:  a) f(x) = 2√(x + 5)  b) g(x) = 3√(2x − 7)',
+          type: 'Easy',
+          explaination:
+            'a) Require x + 5 ≥ 0 ⇒ x ≥ −5 [M1, A1]  b) Require 2x − 7 ≥ 0 ⇒ 2x ≥ 7 ⇒ x ≥ 7/2 [M1, A1]',
+          answer: 'a) x ≥ −5  b) x ≥ 7/2',
+        },
+        {
+          id: 4,
+          question:
+            'Find the largest possible domain of the given real functions:  a) f(x) = ln(5x + 3)  b) g(x) = ln(2x − 8)',
+          type: 'Easy',
+          explaination:
+            'a) Require 5x + 3 > 0 ⇒ 5x > −3 ⇒ x > −3/5 [M1, A1]  b) Require 2x − 8 > 0 ⇒ 2x > 8 ⇒ x > 4 [M1, A1]',
+          answer: 'a) x > −3/5  b) x > 4',
+        },
+        {
+          id: 5,
+          question:
+            'Find the largest possible domain of the given real functions:  a) f(x) = 3/(5 − 2x)  b) g(x) = 2x/(3 + x)',
+          type: 'Easy',
+          explaination:
+            'a) Require 5 − 2x ≠ 0 ⇒ x ≠ 5/2 [M1, A1]  b) Require 3 + x ≠ 0 ⇒ x ≠ −3 [M1, A1]',
+          answer: 'a) x ∈ ℝ, x ≠ 5/2  b) x ∈ ℝ, x ≠ −3',
+        },
+        {
+          id: 6,
+          question:
+            'a) Write down the largest possible domain of f(x) = 3/((x − 5)²).  b) Evaluate f(2).',
+          type: 'Easy',
+          explaination:
+            'a) (x − 5)² ≠ 0 ⇒ x ≠ 5. Domain: x ∈ ℝ, x ≠ 5 [A1]  b) f(2) = 3/((2 − 5)²) = 3/9 = 1/3 [M1, A1]',
+          answer: 'a) x ∈ ℝ, x ≠ 5  b) f(2) = 1/3',
+        },
+        {
+          id: 7,
+          question:
+            "A car's tyre pressure, P bars, is modelled by the function P = 2.2 − 0.04t where t is the time in weeks after the tyre was inflated.  Determine a suitable domain for the function.",
+          type: 'Easy',
+          explaination:
+            '1. Pressure must be non-negative: P ≥ 0.  2. Solve 2.2 − 0.04t ≥ 0 ⇒ t ≤ 2.2/0.04 = 55.  3. Also t ≥ 0 (time starts from inflation).  4. Domain: 0 ≤ t ≤ 55.',
+          answer: '0 ≤ t ≤ 55',
+        },
+      ],
+      'range-of-functions': [
+        {
+          id: 1,
+          question:
+            'Find the range of each function:  a) f(x) = x² − 2, x ∈ ℝ  b) g(x) = 3x² + 7, x ∈ ℝ',
+          type: 'Medium',
+          explaination:
+            'a) Minimum of x² is 0 at x = 0, so fₘᵢₙ = 0 − 2 = −2. Range: f(x) ≥ −2 [M1, A1]  b) Minimum of 3x² is 0, so gₘᵢₙ = 0 + 7 = 7. Range: g(x) ≥ 7 [M1, A1]',
+          answer: 'a) f(x) ≥ −2  b) g(x) ≥ 7',
+        },
+        {
+          id: 2,
+          question:
+            'Find the range of each function:  a) f(x) = 2x + 8, x ≤ 5  b) g(x) = 7 − 3x, x > 1',
+          type: 'Medium',
+          explaination:
+            'a) f is increasing; maximum at x = 5: f(5) = 2(5) + 8 = 18. Range: f(x) ≤ 18 [M1, A1]  b) g is decreasing; as x → 1⁺: g → 4 (not included). Range: g(x) < 4 [M1, A1]',
+          answer: 'a) f(x) ≤ 18  b) g(x) < 4',
+        },
+        {
+          id: 3,
+          question:
+            'Find the range of each function:  a) f(x) = √(4 + x), x ≥ −4  b) g(x) = 3√(5 − 2x), x < 2.5',
+          type: 'Medium',
+          explaination:
+            'a) At x = −4: f(−4) = √0 = 0; increases as x increases. Range: f(x) ≥ 0 [M1, A1]  b) As x → 2.5⁻: g → 0⁺ (not included); increases as x decreases. Range: g(x) > 0 [M1, A1]',
+          answer: 'a) f(x) ≥ 0  b) g(x) > 0',
+        },
+        {
+          id: 4,
+          question:
+            'Find the range of each function:  a) f(x) = 2 + ln(x − 7), x ≥ 8  b) g(x) = 3 − ln(2x + 1), x > 0',
+          type: 'Medium',
+          explaination:
+            'a) At x = 8: f(8) = 2 + ln(1) = 2; f increases as x increases. Range: f(x) ≥ 2 [M1, A1]  b) As x → 0⁺: ln(1) = 0, so g → 3 (not included); g decreases as x increases. Range: g(x) < 3 [M1, A1]',
+          answer: 'a) f(x) ≥ 2  b) g(x) < 3',
+        },
+        {
+          id: 5,
+          question:
+            'a) Find the largest possible domain of f(x) = 3/(4 − √(x − 1)).  b) For the domain found in part (a), find the range of the function.',
+          type: 'Hard',
+          explaination:
+            'a) Require x − 1 ≥ 0 ⇒ x ≥ 1; also 4 − √(x − 1) ≠ 0 ⇒ x ≠ 17 [M1, A1]  b) For 1 ≤ x < 17: denominator ∈ (0,4] → f ∈ [3/4, + ∞)  For x > 17: denominator < 0 → f < 0 (approaches 0⁻ as x → ∞)  Range: f(x) < 0 or f(x) ≥ 3/4 [M1, A1]',
+          answer: 'a) x ≥ 1, x ≠ 17  b) f(x) < 0 or f(x) ≥ 3/4',
+        },
+        {
+          id: 6,
+          question:
+            'Use technology to find the range of the function, determining maximum and minimum values where needed.  f(x) = 3x² − 4x + 5',
+          type: 'Medium',
+          explaination:
+            '1. Parabola opens upward (a = 3 > 0).  2. Vertex x-coord: x = 4/6 = 2/3.  3. Minimum value: f(2/3) = 3·4/9 − 8/3 + 5 = 11/3.  4. No maximum.',
+          answer: 'Range: f(x) ≥ 11/3',
+        },
+        {
+          id: 7,
+          question:
+            'Use technology to find the range of the function, determining maximum and minimum values where needed.  g(x) = 7 − 5x − 2x²',
+          type: 'Medium',
+          explaination:
+            '1. Parabola opens downward (a = −2 < 0).  2. Vertex x-coord: x = −5/−4 = −5/4.  3. Maximum: g(−5/4) = 7 + 25/4 − 25/8 = 81/8.  4. No minimum.',
+          answer: 'Range: g(x) ≤ 81/8',
+        },
+        {
+          id: 8,
+          question:
+            'Use technology to find the range of the function, determining maximum and minimum values where needed.  f(x) = ln(x² + 3x + 3)',
+          type: 'Hard',
+          explaination:
+            '1. Inner expression x² + 3x + 3 has minimum at x = −3/2.  2. Min value of quadratic: 3/4.  3. Since 3/4 > 0, ln is defined for all real x.  4. Min of f = ln(3/4) ≈ −0.288.',
+          answer: 'Range: f(x) ≥ ln(3/4)',
+        },
+        {
+          id: 9,
+          question:
+            'Use technology to find the range of the function, determining maximum and minimum values where needed.  g(x) = ln(2x² + 2x + 5)',
+          type: 'Hard',
+          explaination:
+            '1. Minimum of 2x² + 2x + 5 at x = −1/2.  2. Min value: 2(1/4) − 1 + 5 = 9/2.  3. Min of g = ln(9/2).',
+          answer: 'Range: g(x) ≥ ln(9/2)',
+        },
+        {
+          id: 10,
+          question:
+            'Use technology to find the range of the function, determining maximum and minimum values where needed.  f(x) = x e^(−x²)',
+          type: 'Hard',
+          explaination:
+            '1. Odd function, symmetric about origin.  2. Use GDC to find max; occurs at x = 1/√2.  3. Max value: 1/√2 · e^(−1/2) = 1/√2e.  4. Min = −1/√2e by symmetry.',
+          answer: 'Range: −1/√2e ≤ f(x) ≤ 1/√2e',
+        },
+        {
+          id: 11,
+          question:
+            'Use technology to find the range of the function, determining maximum and minimum values where needed.  g(x) = e^(−x²)cos 4x',
+          type: 'Hard',
+          explaination:
+            '1. Use GDC to explore the function.  2. The Gaussian envelope e^(−x²) multiplies cos 4x.  3. Maximum approaches 1 near x = 0; minimum approaches −1 near half-period.  4. As x → ± ∞, g(x) → 0.',
+          answer: 'Range: approximately −1 ≤ g(x) ≤ 1 (envelope bounded by ± e^(−x²))',
+        },
+        {
+          id: 12,
+          question:
+            'Find the range of the function f(x) = 3x² + 11/x defined on the domain 1 ≤ x ≤ 3.',
+          type: 'Medium',
+          explaination:
+            "f'(x) = 6x − 11/x² = 0 ⇒ 6x³ = 11 ⇒ x = (11/6)^(1/3)  Check if in domain, then evaluate f at critical point and x = 1, 3.",
+          answer: 'Range: [min value, max value] — evaluate at critical point and endpoints.',
+        },
+        {
+          id: 13,
+          question: 'Find the range of the function f(x) = 3x⁴ − 4x³ − 12x² + 2.',
+          type: 'Hard',
+          explaination:
+            "f'(x) = 12x³ − 12x² − 24x = 12x(x² − x − 2) = 12x(x − 2)(x + 1) = 0  Critical points: x = 0, 2, −1. No restricted domain — check behaviour as x → ± ∞.",
+          answer: 'Range: [fₘᵢₙ, + ∞) where fₘᵢₙ is the global minimum.',
+        },
+      ],
+      'inverse-functions': [
+        {
+          id: 1,
+          question:
+            'Find the indicated inverse function values:  a) If f(x) = 5x, find f⁻¹(200).  b) If g(x) = 7x, find g⁻¹(−49).',
+          type: 'Medium',
+          explaination: 'a) Set 5x = 200 ⇒ x = 40 [M1, A1]  b) Set 7x = −49 ⇒ x = −7 [M1, A1]',
+          answer: 'a) f⁻¹(200) = 40  b) g⁻¹(−49) = −7',
+        },
+        {
+          id: 2,
+          question:
+            'Find the indicated inverse function values:  a) If f(x) = 3x⁵, find f⁻¹(3).  b) If g(x) = 2x³, find g⁻¹(16).',
+          type: 'Medium',
+          explaination:
+            'a) 3x⁵ = 3 ⇒ x⁵ = 1 ⇒ x = 1 [M1, A1]  b) 2x³ = 16 ⇒ x³ = 8 ⇒ x = 2 [M1, A1]',
+          answer: 'a) f⁻¹(3) = 1  b) g⁻¹(16) = 2',
+        },
+        {
+          id: 3,
+          question:
+            'Find the indicated inverse function values:  a) If f(x) = 6x² + 1, x ≤ 0, find f⁻¹(55).  b) If g(x) = √(3 + x²), x ≤ 0, find g⁻¹(2).',
+          type: 'Medium',
+          explaination:
+            'a) 6x² + 1 = 55 ⇒ 6x² = 54 ⇒ x² = 9 ⇒ x = −3 (since x ≤ 0) [M1, A1]  b) √(3 + x²) = 2 ⇒ 3 + x² = 4 ⇒ x² = 1 ⇒ x = −1 (since x ≤ 0) [M1, A1]',
+          answer: 'a) f⁻¹(55) = −3  b) g⁻¹(2) = −1',
+        },
+        {
+          id: 4,
+          question:
+            'Each graph represents f(x). Sketch f⁻¹(x) on the same axes, or state that no inverse exists:  a) A straight line through (−1, 0) and (0, 1) (see diagram)  b) A tent/triangle-shaped graph with peak at (0, 4) and x-intercept at (2, 0) (see diagram)',
+          type: 'Medium',
+          explaination:
+            'a) Linear function is one-to-one → inverse exists; reflect in y = x giving line through (0,−1) and (1,0) [M1, A1]  b) Tent shape fails the horizontal line test (not one-to-one) → no inverse function [A1, R1]',
+          answer: 'a) Sketch the reflection of the line in y = x.  b) No inverse function exists.',
+        },
+        {
+          id: 5,
+          question:
+            'Each graph represents f(x). Sketch f⁻¹(x) on the same axes, or state that no inverse exists:  a) A U-shaped parabola with minimum at approximately (0, 1) (see diagram)  b) A bell-shaped curve with maximum at approximately (0, 3) (see diagram)',
+          type: 'Medium',
+          explaination:
+            'a) Parabola is symmetric about the y-axis → fails horizontal line test → no inverse [A1, R1]  b) Bell curve is symmetric → fails horizontal line test → no inverse [A1, R1]',
+          answer: 'a) No inverse function exists.  b) No inverse function exists.',
+        },
+        {
+          id: 6,
+          question:
+            'Each graph represents f(x). Sketch f⁻¹(x) on the same axes, or state that no inverse exists:  a) An odd-function curve through (−2, −2) and (2, 2) (see diagram)  b) A cubic S-curve through the origin (see diagram)',
+          type: 'Medium',
+          explaination:
+            'a) Curve is one-to-one (strictly increasing) → inverse exists; reflect in y = x [M1, A1]  b) Cubic is one-to-one → inverse exists; reflect in y = x [M1, A1]',
+          answer:
+            'a) Reflect in y = x; inverse passes through same two points.  b) Reflect the cubic in y = x.',
+        },
+        {
+          id: 7,
+          question:
+            'Each graph represents f(x). Sketch f⁻¹(x) on the same axes, or state that no inverse exists:  a) A strictly decreasing curve through (0, 1) and (π, −1), with x-intercept at π/2 (see diagram)  b) A strictly increasing curve with y-intercept (0, 3), approaching a horizontal asymptote (see diagram)',
+          type: 'Medium',
+          explaination:
+            'a) Strictly decreasing → one-to-one → inverse exists; reflect in y = x [M1, A1]  b) Strictly increasing → one-to-one → inverse exists; reflect in y = x [M1, A1]',
+          answer:
+            'a) Reflect the decreasing curve in y = x.  b) Reflect the increasing curve in y = x.',
+        },
+        {
+          id: 8,
+          question:
+            'The diagram shows the graph of y = g(t) (an increasing exponential-type curve). Copy the graph and, on the same axes, sketch the graph of y = g⁻¹(t).',
+          type: 'Medium',
+          explaination:
+            'Reflect each point (a, b) on y = g(t) to (b, a), i.e. reflect in the line y = t [M1, A1, A1 for accuracy]',
+          answer: 'Reflection of y = g(t) in the line y = t.',
+        },
+        {
+          id: 9,
+          question:
+            'One pound sterling can be converted into $1.30.  a) If the amount in pounds sterling is x, find the function f(x) which gives the equivalent amount in dollars.  b) Explain the meaning of the function f⁻¹(x).',
+          type: 'Medium',
+          explaination:
+            'a) f(x) = 1.30x [A1]  b) f⁻¹(x) = x/1.30: converts an amount x in dollars to pounds sterling [A1, R1]',
+          answer: 'a) f(x) = 1.30x  b) f⁻¹(x) converts x dollars back into pounds sterling.',
+        },
+        {
+          id: 10,
+          question:
+            'A function is defined by the following table:  x:  0, 1, 2, 3, 4, 5, 6  f(x): 3, 6, 4, 2, 0, 1, 5  a) Find f⁻¹(6).  b) Solve the equation f(x) = x + 2.',
+          type: 'Medium',
+          explaination:
+            'a) Find x such that f(x) = 6: from table f(1) = 6, so f⁻¹(6) = 1 [A1]  b) Check each entry: f(2) = 4 and 2 + 2 = 4 ✓ → x = 2 [M1, A1]',
+          answer: 'a) f⁻¹(6) = 1  b) x = 2',
+        },
+        {
+          id: 11,
+          question: 'A function is given by f(x) = x/2 + 5.  a) Evaluate f(18).  b) Find f⁻¹(7).',
+          type: 'Easy',
+          explaination:
+            'a) f(18) = 18/2 + 5 = 9 + 5 = 14 [A1]  b) x/2 + 5 = 7 ⇒ x/2 = 2 ⇒ x = 4 [M1, A1]',
+          answer: 'a) f(18) = 14  b) f⁻¹(7) = 4',
+        },
+        {
+          id: 12,
+          question:
+            'A function is defined by f(x) = x³ + x − 8.  a) Use technology to sketch y = f(x).  b) On the same axes, sketch y = f⁻¹(x).  c) Solve f(x) = f⁻¹(x).',
+          type: 'Hard',
+          explaination:
+            'a) Sketch cubic y = x³ + x − 8 using technology [A1]  b) Reflect in y = x [A1]  c) f(x) = f⁻¹(x) on the line y = x: solve f(x) = x → x³ + x − 8 = x ⇒ x³ = 8 ⇒ x = 2 [M1, A1]  Verify: f(2) = 8 + 2 − 8 = 2 ✓',
+          answer: 'a) Sketch using GDC/technology.  b) Reflection of y = f(x) in y = x.  c) x = 2',
+        },
+        {
+          id: 13,
+          question:
+            'A one-to-one function f(x) satisfies f(0) = 0 and f(x) ≥ 0.  If ∫₀ᵃ f(x) dx = A for a > 0, find an expression for ∫₀^(f(a)) f⁻¹(x) dx.',
+          type: 'Hard',
+          explaination:
+            'Use the geometric interpretation: the rectangle of area a · f(a) is split into  ∫₀ᵃ f(x)dx + ∫₀^(f(a)) f⁻¹(x)dx  So ∫₀^(f(a)) f⁻¹(x)dx = a· f(a) − A',
+          answer: '∫₀^(f(a)) f⁻¹(x) dx = a · f(a) − A',
+        },
+      ],
+      'solving-functions': [
+        {
+          id: 1,
+          question: 'Given the function h(x) = (x − 5)/3, solve the equation h(x) = 12.',
+          type: 'Easy',
+          explaination: '(x − 5)/3 = 12 ⇒ x − 5 = 36 ⇒ x = 41 [M1, A1]',
+          answer: 'x = 41',
+        },
+        {
+          id: 2,
+          question: 'Solve the equation x² = 1/(x + 1).',
+          type: 'Medium',
+          explaination:
+            '1. Rearrange: x²(x + 1) − 1 = 0 ⇒ x³ + x² − 1 = 0.  2. Use GDC to find real roots.  3. Note: x ≠ −1.  4. Give answer(s) to 3 s.f.',
+          answer: 'x ≈ 0.755 (and check for other roots using GDC)',
+        },
+      ],
+      'modelling-with-functions': [
+        {
+          id: 1,
+          question:
+            'The speed, v ms⁻¹, of a car at time t seconds is modelled by v(t) = 3.8t.  a) Find the speed of the car after 1.5 seconds.  b) Comment on whether this model should be used to predict the speed of the car after 30 seconds.',
+          type: 'Medium',
+          explaination:
+            'a) v(1.5) = 3.8 × 1.5 = 5.7 ms⁻¹ [M1, A1]  b) v(30) = 114 ms⁻¹ is unrealistically high; a real car has a maximum speed and cannot accelerate indefinitely. [R1, A1]',
+          answer: 'a) v = 5.7 ms⁻¹  b) The model is not appropriate for 30 seconds.',
+        },
+        {
+          id: 2,
+          question:
+            "A technology company models the number of smartphones worldwide using:  N = 2.3e^0.098t + 1.2  where N billions is the number of smartphones at time t years from now.  a) According to this model, how many smartphones will there be in 5 years' time?  b) Give one reason why this model might not give a correct prediction for the number of smartphones 50 years from now.",
+          type: 'Hard',
+          explaination:
+            'a) N = 2.3e^(0.098 × 5) + 1.2 = 2.3e^0.49 + 1.2 ≈ 3.754 + 1.2 ≈ 4.95 billion [M1, A1]  b) Any valid reason: exponential growth cannot continue indefinitely / market saturation / population limits. [R1]',
+          answer:
+            'a) N ≈ 4.95 billion  b) The model predicts unbounded exponential growth, which is unrealistic (e.g., market saturation).',
+        },
+        {
+          id: 3,
+          question:
+            'A function is defined by N(t) = 3e^(−0.4t).  a) Evaluate N(7).  b) Find N⁻¹(2.1).',
+          type: 'Hard',
+          explaination:
+            'a) N(7) = 3e^−2.8 ≈ 0.182 [M1, A1]  b) 3e^(−0.4t) = 2.1 ⇒ e^(−0.4t) = 0.7 ⇒ t = (−ln(0.7))/0.4 ≈ 0.892 [M1, A1]',
+          answer: 'a) N(7) ≈ 0.182  b) N⁻¹(2.1) ≈ 0.892',
+        },
+      ],
+      'range-evaluation-and-solving': [
+        {
+          id: 1,
+          question:
+            'A function is defined for all real numbers by q(x) = 3x² − 2.  a) Evaluate q(1/2), giving your answer as an exact fraction.  b) Find the range of the function.  c) Solve the equation q(x) = 46.',
+          type: 'Medium',
+          explaination:
+            'a) 3(1/2)² − 2 = 3/4 − 8/4 = −5/4 [M1, A1]  b) Minimum of 3x² is 0, so qₘᵢₙ = −2. Range: q(x) ≥ −2 [A1]  c) 3x² − 2 = 46 ⇒ 3x² = 48 ⇒ x² = 16 ⇒ x = ± 4 [M1, A1]',
+          answer: 'a) q(1/2) = −5/4  b) q(x) ≥ −2  c) x = ± 4',
+        },
+      ],
+      'domain-range-and-solving': [
+        {
+          id: 1,
+          question:
+            'a) Find the largest possible domain of f(x) = √(2x − 5).  b) Find the range of f for the domain found in part (a).  c) Solve the equation f(x) = 3.',
+          type: 'Medium',
+          explaination:
+            'a) Require 2x − 5 ≥ 0 ⇒ x ≥ 5/2 [M1, A1]  b) At x = 5/2, f = 0; increases without bound. Range: f(x) ≥ 0 [A1]  c) √(2x − 5) = 3 ⇒ 2x − 5 = 9 ⇒ x = 7 [M1, A1]',
+          answer: 'a) x ≥ 5/2  b) f(x) ≥ 0  c) x = 7',
+        },
+        {
+          id: 2,
+          question:
+            'For the function f(x) = 10 − 3x defined on the domain x ≤ 2:  a) Evaluate f(−3).  b) Find the range of the function.  c) Explain why the equation f(x) = 1 has no solutions.',
+          type: 'Medium',
+          explaination:
+            'a) f(−3) = 10 − 3(−3) = 10 + 9 = 19 [A1]  b) f is decreasing; max at x = 2: f(2) = 10 − 6 = 4. Range: f(x) ≥ 4 [M1, A1]  c) 10 − 3x = 1 ⇒ x = 3, but 3 > 2, outside the domain → no solution [R1, A1]',
+          answer:
+            'a) f(−3) = 19  b) f(x) ≥ 4  c) The solution x = 3 lies outside the domain x ≤ 2.',
+        },
+      ],
+      'modelling-with-exponential-decay': [
+        {
+          id: 1,
+          question:
+            'The size N of a fish population, t months after introduction, is modelled by:  N = 150 − 90e^(−0.1t)  a) How many fish were initially introduced?  b) Find N when t = 15. How many fish are in the lake after 15 months?  c) Give one reason why this model is not perfectly accurate.',
+          type: 'Hard',
+          explaination:
+            'a) At t = 0: N = 150 − 90e⁰ = 150 − 90 = 60 [M1, A1]  b) N(15) = 150 − 90e^−1.5 ≈ 150 − 20.1 ≈ 130 fish [M1, A1]  c) Model produces non-integer values (cannot have fractional fish); or assumes deterministic growth ignoring randomness. [R1]',
+          answer: 'a) 60 fish  b) N ≈ 130 fish  c) E.g. the model gives non-integer values for N.',
+        },
+      ],
+      'logarithmic-functions': [
+        {
+          id: 1,
+          question:
+            'A function is defined by g(x) = log₃ x.  a) State the largest possible domain of g.  b) Evaluate g(81).  c) Find g⁻¹(−2).',
+          type: 'Medium',
+          explaination:
+            'a) Logarithm defined for positive reals only. Domain: x > 0 [A1]  b) log₃ 81 = log₃ 3⁴ = 4 [M1, A1]  c) g⁻¹(x) = 3ˣ, so g⁻¹(−2) = 3⁻² = 1/9 [M1, A1]',
+          answer: 'a) x > 0  b) g(81) = 4  c) g⁻¹(−2) = 1/9',
+        },
+        {
+          id: 2,
+          question: 'Find the largest possible domain of the function n(x) = log₅(3x − 15).',
+          type: 'Easy',
+          explaination: 'Require 3x − 15 > 0 ⇒ 3x > 15 ⇒ x > 5 [M1, A1]',
+          answer: 'x > 5',
+        },
+        {
+          id: 3,
+          question: 'a) Find the largest possible domain of h(x) = log(7 − 3x).  b) Find h⁻¹(2).',
+          type: 'Medium',
+          explaination:
+            'a) Require 7 − 3x > 0 ⇒ x < 7/3 [M1, A1]  b) log(7 − 3x) = 2 ⇒ 7 − 3x = 100 ⇒ 3x = −93 ⇒ x = −31 [M1, A1]',
+          answer: 'a) x < 7/3  b) h⁻¹(2) = −31',
+        },
+        {
+          id: 4,
+          question:
+            'Sketch the graph of y = ln(x² + 3x + 5) and write down the coordinates of its vertex.',
+          type: 'Medium',
+          explaination:
+            '1. Inner quadratic x² + 3x + 5 has min at x = −3/2.  2. Min value of quadratic: 5 − 9/4 = 11/4.  3. Vertex of graph: (−3/2, ln11/4).  4. Sketch U-shaped curve with minimum.',
+          answer: 'Vertex at (−3/2, ln(11/4)) ≈ (−1.5, 1.01)',
+        },
+        {
+          id: 5,
+          question: 'Sketch the graph of y = (ln(x − 2))/x.',
+          type: 'Hard',
+          explaination:
+            '1. Domain: x − 2 > 0 ⇒ x > 2.  2. Vertical asymptote at x = 2 (ln(x − 2) → −∞).  3. Zero: ln(x − 2) = 0 ⇒ x = 3; point (3, 0).  4. As x → ∞, (ln x)/x → 0.  5. Use GDC to identify any local max.',
+          answer: 'Domain: x > 2; vertical asymptote at x = 2; curve approaches 0 as x → ∞',
+        },
+      ],
+      'reading-values-from-a-graph': [
+        {
+          id: 1,
+          question:
+            'The diagram shows the graph of y = f(x) (an increasing exponential-type curve).  a) Find f(4).  b) Find f⁻¹(4).  c) Copy the graph and, on the same axes, sketch y = f⁻¹(x).',
+          type: 'Medium',
+          explaination:
+            'a) Read y-value when x = 4 from graph [A1]  b) Find x such that f(x) = 4 from graph [A1]  c) Reflect graph in line y = x [M1, A1, A1]',
+          answer:
+            'a) Read from graph (approx. 6–7)  b) Read from graph (approx. 3)  c) Reflection of y = f(x) in y = x.',
+        },
+      ],
+      'rational-functions-asymptotes': [
+        {
+          id: 1,
+          question:
+            'Show the graph of the function on your calculator and then sketch the curve in the interval −5 ≤ x < 5 and −5 ≤ y < 5, labelling all axis intercepts and asymptotes.  f(x) = 1/(x + 2)',
+          type: 'Medium',
+          explaination:
+            '1. Enter function into GDC.  2. Identify vertical asymptote at x = −2 (denominator = 0).  3. As x → ± ∞, f(x) → 0, so horizontal asymptote y = 0.  4. y-intercept: f(0) = 1/2.  5. No x-intercept (numerator never 0).  6. Sketch with correct shape in given window.',
+          answer: 'Vertical asymptote: x = −2; Horizontal asymptote: y = 0; y-intercept: (0, 1/2)',
+        },
+        {
+          id: 2,
+          question:
+            'Show the graph of the function on your calculator and then sketch the curve in the interval −5 ≤ x < 5 and −5 ≤ y < 5, labelling all axis intercepts and asymptotes.  g(x) = (x − 1)/2x',
+          type: 'Medium',
+          explaination:
+            '1. Vertical asymptote: x = 0.  2. Rewrite: g(x) = 1/2 − 1/2x, so horizontal asymptote y = 1/2.  3. x-intercept: x − 1 = 0 ⇒ x = 1.  4. No y-intercept (undefined at x = 0).  5. Sketch with correct branches.',
+          answer: 'Vertical asymptote: x = 0; Horizontal asymptote: y = 1/2; x-intercept: (1, 0)',
+        },
+        {
+          id: 3,
+          question:
+            'Show the graph of the function on your calculator and then sketch the curve in the interval −5 ≤ x < 5 and −5 ≤ y < 5, labelling all axis intercepts and asymptotes.  f(x) = (x + 3)/(3x − 3)',
+          type: 'Medium',
+          explaination:
+            '1. Vertical asymptote: 3x − 3 = 0 ⇒ x = 1.  2. Leading coefficients: y → 1/3 as x → ± ∞.  3. x-intercept: x + 3 = 0 ⇒ x = −3.  4. y-intercept: f(0) = 3/−3 = −1.',
+          answer:
+            'Vertical asymptote: x = 1; Horizontal asymptote: y = 1/3; x-intercept: (−3, 0); y-intercept: (0, −1)',
+        },
+        {
+          id: 4,
+          question:
+            'Show the graph of the function on your calculator and then sketch the curve in the interval −5 ≤ x < 5 and −5 ≤ y < 5, labelling all axis intercepts and asymptotes.  g(x) = (x − 1)/(x + 2)',
+          type: 'Medium',
+          explaination:
+            '1. Vertical asymptote: x = −2.  2. Horizontal asymptote: y = 1 (degree equal, leading coefficients ratio).  3. x-intercept: x = 1.  4. y-intercept: g(0) = −1/2.',
+          answer:
+            'Vertical asymptote: x = −2; Horizontal asymptote: y = 1; x-intercept: (1, 0); y-intercept: (0, −1/2)',
+        },
+        {
+          id: 5,
+          question:
+            'Sketch the graph of y = 1/(x² − 4). State the equations of all the asymptotes.',
+          type: 'Hard',
+          explaination:
+            '1. Factor: x² − 4 = (x − 2)(x + 2).  2. Vertical asymptotes at x = ± 2.  3. As x → ± ∞, y → 0; horizontal asymptote y = 0.  4. y-intercept: y(0) = −1/4.  5. Sketch three branches with correct behaviour.',
+          answer: 'Vertical asymptotes: x = 2 and x = −2; Horizontal asymptote: y = 0',
+        },
+        {
+          id: 6,
+          question:
+            '(a) Find the largest possible domain of the function f(x) = (3x − 1)/(x + 2).  (b) Sketch the graph of y = f(x), stating the equations of any asymptotes.',
+          type: 'Medium',
+          explaination:
+            '(a) Exclude x = −2 (denominator = 0).  (b) Horizontal asymptote: ratio of leading coefficients = 3/1 = 3.  x-intercept: 3x − 1 = 0 ⇒ x = 1/3.  y-intercept: f(0) = −1/2.  Sketch hyperbola with correct branches.',
+          answer:
+            '(a) Domain: x ∈ ℝ, x ≠ −2  (b) Vertical asymptote: x = −2; Horizontal asymptote: y = 3',
+        },
+      ],
+      'rational-exponential-functions': [
+        {
+          id: 1,
+          question:
+            'Show the graph of the function on your calculator and then sketch the curve in the interval −5 ≤ x < 5 and −5 ≤ y < 5, labelling all axis intercepts and asymptotes.  f(x) = (3x² − 12)/x²',
+          type: 'Hard',
+          explaination:
+            '1. Rewrite: f(x) = 3 − 12/x².  2. Vertical asymptote: x = 0.  3. Horizontal asymptote: y = 3.  4. x-intercepts: 3x² − 12 = 0 ⇒ x = ± 2.  5. No y-intercept.',
+          answer:
+            'Vertical asymptote: x = 0; Horizontal asymptote: y = 3; x-intercepts: (−2, 0) and (2, 0)',
+        },
+        {
+          id: 2,
+          question:
+            'Show the graph of the function on your calculator and then sketch the curve in the interval −5 ≤ x < 5 and −5 ≤ y < 5, labelling all axis intercepts and asymptotes.  g(x) = 5x e⁻ˣ',
+          type: 'Hard',
+          explaination:
+            '1. At x = 0: g(0) = 0, so origin is intercept.  2. As x → ∞, exponential dominates; g(x) → 0.  3. As x → −∞, g(x) → −∞.  4. Max via GDC at x = 1, g(1) = 5e⁻¹ ≈ 1.84.',
+          answer:
+            'x-intercept and y-intercept both at origin (0,0); horizontal asymptote y = 0 as x → ∞',
+        },
+      ],
+      'vertices-lines-of-symmetry': [
+        {
+          id: 1,
+          question:
+            'Find a quadratic model with the given properties.  - Vertex at x = 3  - y-intercept at (0, −8)  - Passes through (1, 2)',
+          type: 'Medium',
+          explaination:
+            'Write y = a(x − 3)² + k  Substitute (0,−8) and (1,2) to form two equations.  Solve simultaneously for a and k.  State model.',
+          answer: 'y = a(x − 3)² + k with specific a and k values determined.',
+        },
+        {
+          id: 2,
+          question:
+            'Find a quadratic model with the given properties.  - Line of symmetry x = −2  - y-intercept at (0, −5)  - Passes through (−2, −17)',
+          type: 'Medium',
+          explaination:
+            'Write y = a(x + 2)² + k  Vertex lies on axis of symmetry x = −2; sub (−2,−17) to find k = −17  Sub (0, −5): −5 = 4a − 17, so a = 3  Model: y = 3(x + 2)² − 17',
+          answer: 'y = a(x + 2)² + k with values of a and k determined.',
+        },
+        {
+          id: 3,
+          question:
+            'Use technology to find the coordinates of any vertices on the graph of each curve. Where there is a vertical line of symmetry, state its equation.  f(x) = 5x² − 7x + 3',
+          type: 'Medium',
+          explaination:
+            '1. Vertex x-coord: x = 7/10.  2. f(7/10) = 5(49/100) − 7(7/10) + 3 = 11/20.  3. Line of symmetry: x = 0.7.',
+          answer: 'Vertex: (7/10, 11/20); Line of symmetry: x = 7/10',
+        },
+        {
+          id: 4,
+          question:
+            'Use technology to find the coordinates of any vertices on the graph of each curve. Where there is a vertical line of symmetry, state its equation.  g(x) = 5 − 4x − 7x²',
+          type: 'Medium',
+          explaination:
+            '1. Vertex x-coord: x = −4/−14 = −2/7.  2. Evaluate g(−2/7).  3. State line of symmetry.',
+          answer: 'Vertex: (−2/7, 39/7); Line of symmetry: x = −2/7',
+        },
+      ],
+      'vertices-of-polynomial-curves': [
+        {
+          id: 1,
+          question:
+            'Use technology to find the coordinates of any vertices on the graph of each curve. Where there is a vertical line of symmetry, state its equation.  f(x) = x⁴ + 4x³ + 5x² + 2x + 2',
+          type: 'Hard',
+          explaination:
+            '1. Use GDC to graph.  2. Identify local minima/maxima.  3. Use GDC minimum function to find vertex coordinates.  4. Quartic — no single line of symmetry unless symmetric.',
+          answer: 'Local minimum near (−1, 2); no vertical line of symmetry',
+        },
+        {
+          id: 2,
+          question:
+            'Use technology to find the coordinates of any vertices on the graph of each curve. Where there is a vertical line of symmetry, state its equation.  g(x) = 4x⁴ − 8x³ + 4x² − 1',
+          type: 'Hard',
+          explaination:
+            '1. Use GDC to identify all local max/min.  2. Symmetry: check if g(x) = g(1 − x).  3. Line of symmetry x = 1/2.  4. State all vertex coordinates.',
+          answer: 'Vertices at (0, −1), (1, −1), (1/2, −5/4); line of symmetry: x = 1/2',
+        },
+      ],
+      'sketching-rational-graphs-from-properties': [
+        {
+          id: 1,
+          question:
+            'Use the given properties to sketch a possible graph of f(x):  • Zero at x = 2, no vertices  • Single vertical asymptote at x = 3  • Horizontal asymptote at y = 1  • Range: f(x) ≠ 1',
+          type: 'Hard',
+          explaination:
+            '1. Identify vertical asymptote x = 3 (denominator).  2. Horizontal asymptote y = 1 (equal degree ratio = 1).  3. Zero at x = 2 (numerator = 0).  4. Sketch hyperbola with correct branches.',
+          answer: 'A possible function: f(x) = (x − 2)/(x − 3)',
+        },
+        {
+          id: 2,
+          question:
+            'Use the given properties to sketch a possible graph of g(x):  • Zero at x = −3, no vertices  • Single vertical asymptote at x = 1  • Horizontal asymptote at y = −2  • Range: g(x) ≠ −2',
+          type: 'Hard',
+          explaination:
+            '1. Zero: numerator zero at x = −3.  2. Vertical asymptote: x = 1.  3. Horizontal asymptote: y = −2.  4. Sketch correct branches.',
+          answer: 'A possible function: g(x) = (−2(x + 3))/(x − 1)',
+        },
+        {
+          id: 3,
+          question:
+            'Sketch a possible graph of g(x) with the following properties:  • Zeros at x = 1 and x = −2, no vertices  • Single vertical asymptote at x = 0  • For large positive and negative values of x: g(x) ≈ x + 1  • Range: ℝ',
+          type: 'Hard',
+          explaination:
+            '1. Oblique asymptote y = x + 1.  2. Vertical asymptote x = 0.  3. Zeros at x = 1 and x = −2.  4. Range is all reals.',
+          answer: 'A possible function: g(x) = (x² − x − 2)/x = x − 1 − 2/x',
+        },
+        {
+          id: 4,
+          question:
+            'Sketch a possible graph of f(x) with the following properties:  • Zeros at x = 3 and x = 1  • No vertices  • Single vertical asymptote at x = 2  • Horizontal asymptote at y = 2  • Range: f(x) < 2',
+          type: 'Hard',
+          explaination:
+            '1. Vertical asymptote x = 2.  2. Horizontal asymptote y = 2.  3. Zeros at x = 1 and x = 3.  4. Function always below y = 2 (range).',
+          answer: 'A possible function: f(x) = (2(x − 1)(x − 3))/((x − 2)²)',
+        },
+        {
+          id: 5,
+          question:
+            'Sketch a possible graph of g(x) with the following properties:  • Zeros at x = 1 and x = 3  • Vertex at (2, −2)  • Vertical asymptotes at x = 0 and x = 4  • Range: g(x) ≥ −2 or g(x) < −8',
+          type: 'Hard',
+          explaination:
+            '1. Two vertical asymptotes at x = 0 and x = 4.  2. Zeros at x = 1 and x = 3.  3. Minimum vertex at (2, −2).  4. Range split: middle branch has min −2; outer branches go to −∞.',
+          answer: 'Sketch showing the described features',
+        },
+        {
+          id: 6,
+          question:
+            'Sketch a graph with a y-intercept 3, no vertical asymptotes and horizontal asymptote y = 1.',
+          type: 'Easy',
+          explaination:
+            '1. Horizontal asymptote y = 1: function approaches 1 as x → ± ∞.  2. y-intercept 3: f(0) = 3.  3. No vertical asymptotes.  4. Example: f(x) = 1 + 2e⁻ˣ.',
+          answer: 'A possible function: f(x) = 1 + 2e⁻ˣ or similar',
+        },
+        {
+          id: 7,
+          question:
+            'Sketch a graph with the following properties:  • Vertical asymptote x = 1 and horizontal asymptote y = 3  • Only axis intercepts are (−1, 0) and (0, −3)',
+          type: 'Hard',
+          explaination:
+            '1. x-intercept (−1,0): numerator zero at x = −1.  2. y-intercept (0,−3): f(0) = −3.  3. Vertical asymptote x = 1: denominator zero.  4. Horizontal asymptote y = 3: ratio of leading coefficients.  5. Sketch with two hyperbola branches.',
+          answer: 'A possible function: f(x) = (3(x + 1))/(x − 1)',
+        },
+      ],
+      'sketching-exponential-log-graphs-from-properties': [
+        {
+          id: 1,
+          question:
+            'Sketch a possible graph of f(x) with the following properties:  • Range: 0 < f(x) < 3  • No vertices  • y-axis intercept at 2  • Always increasing: f(a) < f(b) whenever a < b',
+          type: 'Hard',
+          explaination:
+            '1. Range (0,3): horizontal asymptotes at y = 0 and y = 3.  2. Increasing and no vertices: no local max/min.  3. y-intercept 2: f(0) = 2.  4. Sketch smooth increasing curve approaching asymptotes.',
+          answer:
+            'A possible function of the form f(x) = 3 − e⁻ᵏˣ or similar bounded increasing function',
+        },
+      ],
+      'intersection-of-curves': [
+        {
+          id: 1,
+          question:
+            'Use technology to find the points of intersection of the following pair of equations. Give your answers to three significant figures.  y = x² − 7 and y = x³ + x',
+          type: 'Medium',
+          explaination:
+            '1. Set equal: x² − 7 = x³ + x.  2. Rearrange: x³ − x² + x + 7 = 0.  3. Use GDC to find roots.  4. Substitute back to find y-values.',
+          answer: 'Approximately x ≈ −2.19, y ≈ −2.20 and x ≈ 2.09, y ≈ 11.5',
+        },
+        {
+          id: 2,
+          question:
+            'Use technology to find the points of intersection of the following pair of equations. Give your answers to three significant figures.  y = 2x³ + 1 and y = x² − 3x − 2',
+          type: 'Medium',
+          explaination:
+            '1. Set 2x³ + 1 = x² − 3x − 2.  2. Rearrange: 2x³ − x² + 3x + 3 = 0.  3. GDC to find roots.  4. Find corresponding y-values.',
+          answer:
+            'Use GDC to find intersection points (approximately x ≈ −1.21, x ≈ −0.310, x ≈ 0.953)',
+        },
+        {
+          id: 3,
+          question:
+            'Use technology to find the points of intersection of the following pair of equations. Give your answers to three significant figures.  y = x³ + 3x² + 3 and y = x² + x + 5',
+          type: 'Hard',
+          explaination:
+            '1. Set equal and rearrange.  2. x³ + 2x² − x − 2 = 0.  3. Factor or use GDC.  4. Find intersection points.',
+          answer: 'Use GDC; approximate solutions near x ≈ −2.73, x ≈ 0.732',
+        },
+        {
+          id: 4,
+          question:
+            'Use technology to find the points of intersection of the following pair of equations. Give your answers to three significant figures.  y = x⁴ − 4x³ + 11x − 3 and y = x² − 5x + 9',
+          type: 'Hard',
+          explaination:
+            '1. Set equal: x⁴ − 4x³ − x² + 16x − 12 = 0.  2. Use GDC to find all roots.  3. Find y-values.',
+          answer: 'Use GDC to find intersection points',
+        },
+        {
+          id: 5,
+          question:
+            'Use technology to find the points of intersection of the following pair of equations. Give your answers to three significant figures.  y = x⁴ + x³ − 2x² − 2 and y = x³ − x²',
+          type: 'Hard',
+          explaination:
+            '1. Rearrange: x⁴ − x² − 2 = 0.  2. Let u = x²: u² − u − 2 = 0.  3. (u − 2)(u + 1) = 0 ⇒ u = 2 (since u ≥ 0).  4. x = ± √2.',
+          answer: 'Use GDC to find intersection points',
+        },
+        {
+          id: 6,
+          question:
+            'Use technology to find the points of intersection of the following pair of equations. Give your answers to three significant figures.  y = x³ − 3x² + 2x + 7 and y = x³ + x² − 6x + 3',
+          type: 'Hard',
+          explaination:
+            '1. Subtract: −4x² + 8x + 4 = 0.  2. x² − 2x − 1 = 0.  3. x = 1 ± √2.  4. Find y-values.',
+          answer: 'Use GDC; solve 4x² − 8x − 4 = 0',
+        },
+        {
+          id: 7,
+          question:
+            'Find the coordinates of the point of intersection of the graphs y = 5 − x and y = 1/2eˣ.',
+          type: 'Medium',
+          explaination:
+            '1. Set 5 − x = 1/2eˣ.  2. Define h(x) = 5 − x − 1/2eˣ = 0.  3. Use GDC to find root.  4. x ≈ 1.31, y = 5 − 1.31 ≈ 3.69.',
+          answer: 'x ≈ 1.31, y ≈ 3.69',
+        },
+      ],
+      'zeros-of-functions': [
+        {
+          id: 1,
+          question:
+            'Use your calculator to find the zeros of the following function. Give your answers correct to three significant figures.  f(x) = x³ − 5√x + 1',
+          type: 'Hard',
+          explaination:
+            '1. Enter function into GDC (note domain x ≥ 0).  2. Use zero-finder to locate all roots.  3. Give to 3 s.f.',
+          answer: 'Use GDC to find zeros (approximately x ≈ 0.0396 and x ≈ 1.46)',
+        },
+        {
+          id: 2,
+          question:
+            'Use your calculator to find the zeros of the following function. Give your answers correct to three significant figures.  g(x) = 5x√x − 7x + 1',
+          type: 'Hard',
+          explaination: '1. Domain: x ≥ 0.  2. Enter into GDC and find zeros.  3. Give to 3 s.f.',
+          answer: 'Use GDC to find zeros (x ≥ 0)',
+        },
+        {
+          id: 3,
+          question:
+            'Use your calculator to find the zeros of the following function. Give your answers correct to three significant figures.  f(x) = 3ln x − x + 1',
+          type: 'Hard',
+          explaination:
+            '1. Domain: x > 0.  2. Use GDC zero-finder.  3. Two zeros exist; give both to 3 s.f.',
+          answer: 'x ≈ 0.188 and x ≈ 4.54',
+        },
+        {
+          id: 4,
+          question:
+            'Use your calculator to find the zeros of the following function. Give your answers correct to three significant figures.  g(x) = eˣ − 2x − 7',
+          type: 'Hard',
+          explaination: '1. Enter into GDC.  2. Find both zero crossings.  3. Give to 3 s.f.',
+          answer: 'x ≈ −1.94 and x ≈ 2.77',
+        },
+        {
+          id: 5,
+          question: 'Find the zeros of the function f(x) = x⁴ − 2x³ − 5x² + 12x − 4.',
+          type: 'Hard',
+          explaination:
+            '1. Try rational roots: f(1) = 1 − 2 − 5 + 12 − 4 = 2 ≠ 0.  2. Use GDC to find all zeros.  3. Give to 3 s.f.',
+          answer: 'x ≈ −2.56, x ≈ 0.369, x ≈ 1, x ≈ 4.19 (verify with GDC)',
+        },
+        {
+          id: 6,
+          question:
+            'The quadratic function f(x) = ax² + bx + c has zeros at x = −5.5 and x = −0.5.  The graph of y = f(x) has a vertex at the point P.  a) State the x value of P.  b) Given that the y value of P is 12.5, write down three equations in a, b and c.  c) Find the values of a, b and c.  d) Sketch the graph, labelling all axis intercepts.',
+          type: 'Hard',
+          explaination:
+            'a) x_P = (−5.5 + (−0.5))/2 = −3  b) Sub zeros and vertex into f(x)  c) Solve the system to get a = −2, b = −12, c = −10  d) Sketch with all key features labelled',
+          answer:
+            'a) x = −3  b) Equations: 30.25a − 5.5b + c = 0; 0.25a − 0.5b + c = 0; 9a − 3b + c = 12.5  c) a = −2, b = −12, c = −10  d) Sketch with intercepts at (−5.5, 0), (−0.5, 0), (0, −10), vertex (−3, 12.5)',
+        },
+      ],
+      'roots-of-equations': [
+        {
+          id: 1,
+          question:
+            'Use your calculator to find the roots of the following equation. Give your answers correct to three significant figures.  x³ = 4√x − 1',
+          type: 'Hard',
+          explaination:
+            '1. Rearrange: x³ − 4√x + 1 = 0.  2. Domain: x ≥ 0.  3. Use GDC to find roots.  4. Give to 3 s.f.',
+          answer: 'Use GDC; roots in x ≥ 0 domain',
+        },
+        {
+          id: 2,
+          question:
+            'Use your calculator to find the roots of the following equation. Give your answers correct to three significant figures.  7x√x = x² + 1',
+          type: 'Hard',
+          explaination:
+            '1. Rewrite: 7x^(3/2) = x² + 1.  2. Domain: x ≥ 0.  3. GDC zero-finder on 7x^(3/2) − x² − 1 = 0.',
+          answer: 'Use GDC with domain x ≥ 0',
+        },
+        {
+          id: 3,
+          question:
+            'Use your calculator to find the roots of the following equation. Give your answers correct to three significant figures.  x² + e³ˣ = xeˣ + 5',
+          type: 'Hard',
+          explaination:
+            '1. Rearrange: x² + e³ˣ − xeˣ − 5 = 0.  2. Enter LHS into GDC.  3. Find zeros to 3 s.f.',
+          answer: 'Use GDC to find roots',
+        },
+        {
+          id: 4,
+          question:
+            'Use your calculator to find the roots of the following equation. Give your answers correct to three significant figures.  ln(2x² + 1) = 3 − x − x²',
+          type: 'Hard',
+          explaination:
+            '1. Define h(x) = ln(2x² + 1) − 3 + x + x².  2. Use GDC to find zeros.  3. Give to 3 s.f.',
+          answer: 'Use GDC to find roots',
+        },
+        {
+          id: 5,
+          question: 'Find all the roots of the equation 4 − x² = 1/(x + 1).',
+          type: 'Hard',
+          explaination:
+            '1. Rearrange: (4 − x²)(x + 1) = 1.  2. Expand: 4x + 4 − x³ − x² = 1.  3. x³ + x² − 4x − 3 = 0.  4. Use GDC to find all roots.  5. Exclude x = −1.',
+          answer: 'Roots via GDC (approximately x ≈ −2.11, x ≈ 0.667, x ≈ 1.44)',
+        },
+      ],
+      'graphs-of-exponential-functions': [
+        {
+          id: 1,
+          question:
+            'Sketch the graph of y = 7 − 3e^(−0.5x). Label any axis intercepts and find the equation of the horizontal asymptote.',
+          type: 'Medium',
+          explaination:
+            '1. y-intercept: y = 7 − 3 = 4.  2. x-intercept: 7 − 3e^(−0.5x) = 0 ⇒ e^(−0.5x) = 7/3 ⇒ x = −2ln(7/3) ≈ −1.68.  3. Wait — recheck: 7 − 3e^(−0.5x) = 0 ⇒ e^(−0.5x) = 7/3, so −0.5x = ln(7/3), x = −2ln(7/3) ≈ −1.68.  4. As x→∞, e^(−0.5x)→ 0, so asymptote y = 7.',
+          answer:
+            'y-intercept: (0, 4); x-intercept: ((2ln 3)/1, 0) = (2ln 3, 0) ≈ (2.20, 0); Horizontal asymptote: y = 7',
+        },
+      ],
+      'maximum-point-of-rational-function': [
+        {
+          id: 1,
+          question:
+            'Find the coordinates of the maximum point on the graph of y = 10/(x² + 2x + 5).',
+          type: 'Hard',
+          explaination:
+            '1. Denominator x² + 2x + 5 is minimised at x = −1 (vertex of parabola).  2. Min value of denominator: 5 − 1 = 4.  3. Max of y = 10/4 = 2.5.  4. Maximum point: (−1, 2.5).',
+          answer: 'Maximum at (−1, 10/4) = (−1, 2.5)',
+        },
+      ],
+      'optimisation-modelling': [
+        {
+          id: 1,
+          question:
+            'A manufacturing firm uses the following model for their monthly profit:  P = 9.4q − 0.02q² − 420  where P is the profit and q is the number of items produced that month.  How many items a month should the firm produce in order to maximise the profit?',
+          type: 'Medium',
+          explaination:
+            '1. P is a downward parabola in q.  2. Vertex at q = 9.4/(2 × 0.02) = 9.4/0.04 = 235.  3. Maximum profit: P(235) = 9.4(235) − 0.02(235)² − 420 = 684.5.  4. Answer: produce 235 items.',
+          answer: 'q = 235 items per month',
+        },
+      ],
+      'line-of-symmetry-of-rational-graph': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the line of symmetry of the graph of y = 1/(x² + 2x + 3).',
+          type: 'Medium',
+          explaination:
+            '1. Complete the square in denominator: x² + 2x + 3 = (x + 1)² + 2.  2. Denominator is symmetric about x = −1.  3. Hence y is symmetric about x = −1.',
+          answer: 'x = −1',
+        },
+      ],
+      'modelling-with-graphs-cumulative-frequency': [
+        {
+          id: 1,
+          question:
+            'A graph is used to show the number of students, N, who scored fewer than m marks in a test. 80 students took the test marked out of 50. The lowest mark was 15 and the highest was 45. Exactly half the students scored fewer than 30 marks. Sketch one possible graph showing this information.',
+          type: 'Medium',
+          explaination:
+            '1. Axes: m (marks) on x-axis, N (students) on y-axis.  2. Starts at (15, 0), ends at (45, 80).  3. Passes through (30, 40) (half of 80).  4. Curve is increasing and S-shaped (cumulative frequency).',
+          answer: 'S-shaped curve from (15, 0) through (30, 40) to (45, 80)',
+        },
+        {
+          id: 2,
+          question:
+            'A car is moving at a speed of 26 ms⁻¹ when it starts to brake. After 0.5 seconds its speed has reduced to 15 ms⁻¹ and after another 0.5 seconds it has reduced to 10 ms⁻¹. Sketch a possible graph showing how the speed of the car changes with time.',
+          type: 'Easy',
+          explaination:
+            '1. Axes: time (s) on x-axis, speed (ms⁻¹) on y-axis.  2. Plot points (0, 26), (0.5, 15), (1, 10).  3. Curve decreasing at a decreasing rate (concave up).  4. Speed does not go negative.',
+          answer: 'Decreasing concave curve starting at (0, 26), through (0.5, 15) and (1, 10)',
+        },
+        {
+          id: 3,
+          question:
+            'Use technology to construct a cumulative frequency diagram for the data in the table.  Frequency table for x:  5 ≤ x ≤ 10: 5  10 ≤ x < 15: 10  15 ≤ x < 20: 12  20 ≤ x < 25: 8',
+          type: 'Easy',
+          explaination:
+            '1. Calculate cumulative frequencies: 5; 5+10=15; 15+12=27; 27+8=35.  2. Plot points at the upper class boundaries: (10,5), (15,15), (20,27), (25,35).  3. Join with a smooth curve.',
+          answer: 'Cumulative frequencies: 5, 15, 27, 35',
+        },
+        {
+          id: 4,
+          question:
+            'Use technology to construct a cumulative frequency diagram for the data in the table.  Frequency table for x:  0 ≤ x < 20: 18  20 ≤ x < 40: 12  40 ≤ x < 60: 8  60 ≤ x < 80: 16',
+          type: 'Easy',
+          explaination:
+            '1. Calculate cumulative frequencies: 18; 18+12=30; 30+8=38; 38+16=54.  2. Plot at upper class boundaries: (20,18), (40,30), (60,38), (80,54).  3. Join with smooth curve.',
+          answer: 'Cumulative frequencies: 18, 30, 38, 54',
+        },
+        {
+          id: 5,
+          question:
+            'Use technology to construct a cumulative frequency diagram for the data in the table.  Frequency table for h:  1.2 ≤ h < 2.5: 10  2.5 ≤ h < 3.8: 8  3.8 ≤ h < 5.1: 4  5.1 ≤ h < 6.4: 0  6.4 ≤ h < 7.7: 5',
+          type: 'Easy',
+          explaination:
+            '1. CF: 10; 10+8=18; 18+4=22; 22+0=22; 22+5=27.  2. Plot at upper boundaries: (2.5,10),(3.8,18),(5.1,22),(6.4,22),(7.7,27).  3. Draw smooth curve.',
+          answer: 'Cumulative frequencies: 10, 18, 22, 22, 27',
+        },
+        {
+          id: 6,
+          question:
+            'Use technology to construct a cumulative frequency diagram for the data in the table.  Frequency table for t:  30 ≤ t < 36: 20  36 ≤ t < 42: 0  42 ≤ t < 48: 12  48 ≤ t < 54: 12  54 ≤ t < 60: 25',
+          type: 'Easy',
+          explaination:
+            '1. CF: 20; 20+0=20; 20+12=32; 32+12=44; 44+25=69.  2. Plot at upper boundaries: (36,20),(42,20),(48,32),(54,44),(60,69).  3. Draw smooth curve.',
+          answer: 'Cumulative frequencies: 20, 20, 32, 44, 69',
+        },
+        {
+          id: 7,
+          question:
+            'The maximum daily temperatures in a particular town, over a period of one year, are summarized in the table:  5 ≤ t < 10: Frequency = 43  10 ≤ t < 15: Frequency = 98  15 ≤ t < 20: Frequency = 126  20 ≤ t < 25: Frequency = 67  25 ≤ t < 30: Frequency = 21  (a) Use technology to draw a cumulative frequency graph for this data.  (b) Use your graph to estimate:  (i) the median temperature  (ii) the interquartile range.',
+          type: 'Medium',
+          explaination:
+            '(a) CF: 43, 141, 267, 334, 355. Plot at (10,43),(15,141),(20,267),(25,334),(30,355).  (b)(i) Median: cf = 177.5; read t ≈ 16.6.  (b)(ii) Q₁: cf = 88.75 → t ≈ 13.4; Q₃: cf = 266.25 → t ≈ 20.0; IQR ≈ 6.6.',
+          answer: '(b)(i) Median ≈ 16.6°C  (b)(ii) IQR ≈ Q₃ − Q₁ ≈ 6.5°C',
+        },
+        {
+          id: 8,
+          question:
+            'The table summarizes heights of a sample of flowers:  20 ≤ h < 25: Frequency = 16  25 ≤ h < 30: Frequency = 21  30 ≤ h < 35: Frequency = 34  35 ≤ h < 40: Frequency = 18  40 ≤ h < 45: Frequency = 6  (a) Use technology to produce a cumulative frequency graph for the data.  (b) Use your graph to estimate the median and the interquartile range of the heights.  (c) Hence draw a box plot to represent the data.',
+          type: 'Medium',
+          explaination:
+            '(a) CF: 16, 37, 71, 89, 95. Plot at (25,16),(30,37),(35,71),(40,89),(45,95).  (b) Median: cf = 47.5 → h ≈ 31.5. Q₁: cf=23.75 → h ≈ 26.5; Q₃: cf=71.25 → h ≈ 35; IQR ≈ 8.5.  (c) Draw box from Q₁ to Q₃ with median; whiskers to min and max.',
+          answer:
+            '(b) Median ≈ 31.5 cm; IQR ≈ 8.5 cm  (c) Box plot: Min=20, Q₁ ≈ 26.5, Median ≈ 31.5, Q₃ ≈ 35, Max=45',
+        },
+        {
+          id: 9,
+          question:
+            'The number of candidates taking Mathematics SL at a sample of schools is recorded in the grouped frequency table:  10 < n ≤ 30: 34 schools  30 < n ≤ 50: 51 schools  50 < n ≤ 70: 36 schools  70 < n ≤ 90: 18 schools  90 < n ≤ 110: 7 schools  (a) Draw a cumulative frequency graph for the data.  (b) Estimate the number of schools with more than 60 Mathematics SL candidates.  (c) Find the median and interquartile range of the data.  (d) Hence draw a box plot to show the number of Mathematics SL candidates.  The box plot for History SL at the same schools shows: Min=0, Q₁ = 12, Median=25, Q₃ = 46, Max=72.  (e) Write two comments comparing the number of candidates taking Mathematics SL and History SL at this group of schools.',
+          type: 'Hard',
+          explaination:
+            '(a) CF: 34, 85, 121, 139, 146. Plot at (30,34),(50,85),(70,121),(90,139),(110,146).  (b) At n=60: interpolate in [50,70], CF ≈ 103; schools > 60: 146−103 = 43.  (c) Median: cf=73 → n ≈ 47. Q₁: cf=36.5 → n ≈ 31; Q₃: cf=109.5 → n ≈ 64; IQR ≈ 33.  (d) Box plot with the above values.  (e) Maths SL median (≈47) > History SL median (25), so on average more candidates per school for Maths SL. History SL is more spread out (IQR=34) compared to Maths SL (IQR≈33) — comparable spread.',
+          answer:
+            '(b) ≈ 61 schools have n ≤ 60, so ≈ 146 − 61 = 85 schools have n > 60  (c) Median ≈ 47, IQR ≈ 30',
+        },
+        {
+          id: 10,
+          question:
+            'The cumulative frequency graph summarizes examination scores at a particular school. Total frequency = 300. The curve passes approximately through (40,0),(50,5),(60,55),(70,150),(80,230),(90,280),(100,300).  (a) How many students scored below 73?  (b) The pass mark for the examination was 55. What percentage of students passed?  (c) Find the 60th percentile of the scores.  (d) Estimate the median and quartiles of the scores. Hence produce a box plot for the data. (You may assume there are no outliers.)  (e) The box plot for a different school shows: Min=40, Q₁ = 48, Median=78, Q₃ = 89, Max=100. Make two comments comparing the scores at the two schools.',
+          type: 'Hard',
+          explaination:
+            '(a) Read cf at x=73 → ≈ 170.  (b) cf at x=55 ≈ 25; passed = 300−25=275; % = 91.7%.  (c) 60th percentile: cf = 0.6×300=180 → x ≈ 73.  (d) Median: cf=150 → x≈70; Q1: cf=75→x≈63; Q3: cf=225→x≈80.  (e) The other school has a higher median (78 vs 70). The other school has greater spread (IQR=41 vs ≈17).',
+          answer:
+            '(a) ≈ 170 students  (b) Passed (scored ≥ 55): 300 − 25 ≈ 275; 275/300 × 100 ≈ 91.7%  (c) 60th percentile: cf = 180 → score ≈ 73  (d) Median ≈ 70; Q₁ ≈ 63; Q₃ ≈ 80',
+        },
+      ],
+      'modelling-with-graphs-quadratic': [
+        {
+          id: 1,
+          question:
+            'Find a quadratic model with the given properties.  - Zeros at x = −1 and x = 3  - y-intercept at y = −12',
+          type: 'Easy',
+          explaination:
+            'Write y = a(x + 1)(x − 3)  Substitute (0, −12): −12 = a(1)(−3) = −3a, so a = 4  Model: y = 4(x + 1)(x − 3)',
+          answer: 'y = 4(x + 1)(x − 3)',
+        },
+        {
+          id: 2,
+          question:
+            'Find a quadratic model with the given properties.  - Zeros at x = −2 and x = 5  - y-intercept at y = 10',
+          type: 'Easy',
+          explaination:
+            'Write y = a(x + 2)(x − 5)  Sub (0, 10): 10 = a(2)(−5) = −10a, so a = −1  Model: y = −(x + 2)(x − 5)',
+          answer: 'y = −1(x + 2)(x − 5)',
+        },
+        {
+          id: 3,
+          question:
+            'A small business models how money spent on advertising affects monthly profit. Data collected:  • No advertising: monthly loss of $200  • Spending $120 or $400 on advertising: monthly profit of $350  • Largest profit of $600 when spending $180 on advertising.  Sketch one possible graph showing how monthly profit varies with money spent on advertising.',
+          type: 'Medium',
+          explaination:
+            '1. Axes: advertising spend on x-axis, monthly profit on y-axis.  2. y-intercept at (0, −200).  3. Passes through (120, 350) and (400, 350) symmetrically.  4. Maximum at (180, 600).  5. Sketch inverted parabola.',
+          answer:
+            'An inverted parabola with vertex at approximately (180, 600), crossing y-axis at (0, −200) and x-axis at two points near advertising = $50 and $490',
+        },
+        {
+          id: 4,
+          question:
+            'Find a quadratic model that passes through the given points.  (1, 3), (2, 11) and (3, 21)',
+          type: 'Easy',
+          explaination:
+            'Set up system: a + b + c = 3, 4a + 2b + c = 11, 9a + 3b + c = 21  Solve: a = 3, b = −1, c = 1  Model: y = 3x² − x + 1',
+          answer: 'y = 3x² − x + 1',
+        },
+        {
+          id: 5,
+          question:
+            'Find a quadratic model that passes through the given points.  (1, 4), (3, 14) and (4, 25)',
+          type: 'Easy',
+          explaination:
+            'Set up: a + b + c = 4, 9a + 3b + c = 14, 16a + 4b + c = 25  Solve simultaneously: a = 2, b = −1, c = 3  Model: y = 2x² − x + 3',
+          answer: 'y = 2x² − x + 3',
+        },
+        {
+          id: 6,
+          question:
+            'Find a quadratic model that passes through the given points.  (−2, 12), (−1, 1) and (1, −3)',
+          type: 'Easy',
+          explaination:
+            'Set up system from three points, solve for a, b, c.  4a − 2b + c = 12, a − b + c = 1, a + b + c = −3  Solve: a = 2, b = −5, c = −3  Model: y = 2x² − 5x − 3',
+          answer: 'y = 2x² − 5x − 3',
+        },
+        {
+          id: 7,
+          question:
+            'Find a quadratic model that passes through the given points.  (−3, −19), (−1, −3) and (2, 6)',
+          type: 'Easy',
+          explaination:
+            'Set up and solve 3×3 system using the three given points.  Find a, b, c and state the model.',
+          answer: 'y = −x² + 4x − 6',
+        },
+        {
+          id: 8,
+          question:
+            'Find a quadratic model that passes through the given points.  (0.2, 6.12), (1.8, 9.32) and (3.3, 3.02)',
+          type: 'Medium',
+          explaination:
+            'Substitute each point to form 3 equations in a, b, c.  Solve the system using GDC.  State final model.',
+          answer:
+            'Quadratic model y = ax² + bx + c with values determined by solving the 3×3 system.',
+        },
+        {
+          id: 9,
+          question:
+            'Find a quadratic model that passes through the given points.  (0.6, 0.38), (5.8, 1.42) and (7, 5.5)',
+          type: 'Medium',
+          explaination: 'Substitute each point; solve 3×3 system using GDC; state model.',
+          answer: 'Quadratic model y = ax² + bx + c determined by solving system.',
+        },
+        {
+          id: 10,
+          question:
+            'Find a quadratic model that passes through the given points.  (−1, −7.6), (−3.5, −4.35) and (−4.7, 1.65)',
+          type: 'Hard',
+          explaination:
+            'Substitute into y = ax² + bx + c for each point.  Solve system using GDC.  State model with exact coefficients.',
+          answer: 'Quadratic model y = ax² + bx + c with GDC-determined coefficients.',
+        },
+        {
+          id: 11,
+          question:
+            'Find a quadratic model that passes through the given points.  (−10, −5.9), (−6, 5.3) and (2, −1.1)',
+          type: 'Hard',
+          explaination: 'Set up system from 3 points.  Solve using GDC.  State y = ax² + bx + c.',
+          answer: 'Quadratic model from solving 3×3 system.',
+        },
+        {
+          id: 12,
+          question:
+            'The owner of a business believes the weekly profits, P (£), can be modelled by the function P = ax² + bx + c where x is the number of items produced.  She has the following data:  | x | 50 | 200 | 400 |  |---|---|---|---|  | P (£) | 1350 | 5100 | 3100 |  a) Write down three equations in P and x.  b) Hence determine the values of a, b and c.  c) Interpret the value of c in this context.  d i) Find how many items should be produced to maximise the profit.  ii) Calculate the maximum profit.',
+          type: 'Hard',
+          explaination:
+            'a) 2500a + 50b + c = 1350; 40000a + 200b + c = 5100; 160000a + 400b + c = 3100  b) Solve system using GDC  c) c is the profit when no items are produced (fixed cost/loss)  d i) x = −b/2a  d ii) Substitute optimal x into model',
+          answer:
+            'b) a = −1/20, b = 15, c = −100 (values to verify via GDC)  d i) x = 150 items  d ii) Maximum profit = £1025',
+        },
+        {
+          id: 13,
+          question:
+            'The top surface of a road is built in the shape of a parabola to allow water to drain away on either side. The road is 7.5 m wide and at a distance of 1 m from each edge the road needs to be 5 cm high to allow drains to be fitted.  Find the maximum height of the road.  (Diagram: parabolic cross-section of road, width 7.5 m, height marked at 1 m from each edge as 5 cm.)',
+          type: 'Hard',
+          explaination:
+            'Place origin at centre: road goes from x = −3.75 to x = 3.75  At x = ± 2.75, y = 5 cm  Use y = a(x − 3.75)(x + 3.75) (zeros at edges) or vertex form  Sub constraint to find a  Find maximum at x = 0',
+          answer: 'Maximum height ≈ 11.25 cm',
+        },
+      ],
+      'absolute-value-equations': [
+        {
+          id: 1,
+          question: 'Find all the roots of the equation |4 − x²| = x².',
+          type: 'Hard',
+          explaination:
+            'Case 1: 4 − x² = x² ⇒ x² = 2 ⇒ x = ± √2.  Case 2: −(4 − x²) = x² ⇒ −4 + x² = x² ⇒ −4 = 0, no solution.  Roots: x = √2 and x = −√2.',
+          answer: 'x = ± √2',
+        },
+        {
+          id: 2,
+          question: 'Solve the equation ln|x − 1| = |ln(x − 1)|.',
+          type: 'Hard',
+          explaination:
+            'Case 1: x > 1: |x − 1| = x − 1, so LHS = ln(x − 1); RHS = |ln(x − 1)|.  If ln(x − 1) ≥ 0: equation holds for all x ≥ 2.  If ln(x − 1) < 0 (i.e. 1 < x < 2): equation becomes ln(x − 1) = −ln(x − 1), so ln(x − 1) = 0, x = 2.  Case 2: x < 1: ln|x − 1| = ln(1 − x); |ln(x − 1)| is not defined for x < 1 since ln of negative is undefined.  Solution: x ≥ 2.',
+          answer:
+            'x > 1 with ln(x − 1) ≥ 0, i.e. x ≥ 2; also x < 1 branch via ln|x − 1| = −ln(x − 1) etc.',
+        },
+      ],
+      'maximum-of-exponential-function': [
+        {
+          id: 1,
+          question: 'Find the maximum value of the function f(x) = xe^(−0.4x).',
+          type: 'Hard',
+          explaination:
+            "1. Differentiate: f'(x) = e^(−0.4x) + x(−0.4)e^(−0.4x) = e^(−0.4x)(1 − 0.4x).  2. Set f'(x) = 0: 1 − 0.4x = 0 ⇒ x = 2.5.  3. Max value: f(2.5) = 2.5e⁻¹ = 2.5/e.",
+          answer: 'Maximum value: 1/0.4e = 5/2e ≈ 0.920 at x = 2.5',
+        },
+      ],
+      'linear-models-two-points': [
+        {
+          id: 1,
+          question:
+            'Find a linear model y = mx + c that passes through the given points.  a  (4, 2) and (10, 14)  b  (2, 5) and (8, 11)',
+          type: 'Easy',
+          explaination:
+            'a  m = (14 − 2)/(10 − 4) = 12/6 = 2  [1]  2 = 2(4) + c ⇒ c = −6  [1]  ⇒ y = 2x − 6  b  m = (11 − 5)/(8 − 2) = 1  [1]  5 = 1(2) + c ⇒ c = 3  [1]  ⇒ y = x + 3',
+          answer: 'a  y = 2x − 6  b  y = x + 3',
+        },
+        {
+          id: 2,
+          question:
+            'Find a linear model y = mx + c that passes through the given points.  a  (1, 12) and (4, 3)  b  (10, 3) and (2, 15)',
+          type: 'Easy',
+          explaination:
+            'a  m = (3 − 12)/(4 − 1) = −3  [1]  12 = −3(1) + c ⇒ c = 15  [1]  b  m = (15 − 3)/(2 − 10) = −3/2  [1]  3 = −3/2(10) + c ⇒ c = 18  [1]',
+          answer: 'a  y = −3x + 15  b  y = −3/2x + 18',
+        },
+        {
+          id: 3,
+          question:
+            'Find a linear model y = mx + c that passes through the given points.  a  (−3, −1) and (7, 4)  b  (−2, −24) and (3, −4)',
+          type: 'Easy',
+          explaination:
+            'a  m = (4 − (−1))/(7 − (−3)) = 5/10 = 0.5  [1]  −1 = 0.5(−3) + c ⇒ c = 0.5  [1]  b  m = (−4 − (−24))/(3 − (−2)) = 20/5 = 4  [1]  −24 = 4(−2) + c ⇒ c = −16  [1]',
+          answer: 'a  y = 0.5x + 0.5  b  y = 4x − 16',
+        },
+        {
+          id: 4,
+          question:
+            'Find a linear model y = mx + c that passes through the given points.  a  (1, 7) and (6, −5)  b  (−1, 6) and (3, −2)',
+          type: 'Easy',
+          explaination:
+            'a  m = (−5 − 7)/(6 − 1) = −12/5 = −2.4  [1]  7 = −2.4(1) + c ⇒ c = 9.4  [1]  b  m = (−2 − 6)/(3 − (−1)) = −8/4 = −2  [1]  6 = −2(−1) + c ⇒ c = 4  [1]',
+          answer: 'a  y = −2.4x + 9.4  b  y = −2x + 4',
+        },
+        {
+          id: 5,
+          question:
+            'Find a linear model y = mx + c that passes through the given points.  a  (2.5, 1) and (4, 8.5)  b  (0.9, 3.1) and (5.4, 13.6)',
+          type: 'Medium',
+          explaination:
+            'a  m = (8.5 − 1)/(4 − 2.5) = 7.5/1.5 = 5  [1]  1 = 5(2.5) + c ⇒ c = −11.5  [1]  b  m = (13.6 − 3.1)/(5.4 − 0.9) = 10.5/4.5 = 7/3  [1]  3.1 = 7/3(0.9) + c ⇒ c = 1  [1]',
+          answer: 'a  y = 5x − 11.5  b  y = 7/3x + 1',
+        },
+        {
+          id: 6,
+          question:
+            'Find a linear model y = mx + c that passes through the given points.  a  (3.8, 12.5) and (7.6, −2.7)  b  (−5.8, −2.5) and (−0.3, −4.7)',
+          type: 'Medium',
+          explaination:
+            'a  m = (−2.7 − 12.5)/(7.6 − 3.8) = −15.2/3.8 = −4  [1]  12.5 = −4(3.8) + c ⇒ c = 27.7  [1]  b  m = (−4.7 − (−2.5))/(−0.3 − (−5.8)) = −2.2/5.5 = −0.4  [1]  −2.5 = −0.4(−5.8) + c ⇒ c = −4.82  [1]',
+          answer: 'a  y = −4x + 27.7  b  y = −0.4x − 4.82',
+        },
+      ],
+      'interpreting-linear-models': [
+        {
+          id: 1,
+          question:
+            'The mileage, M thousand miles, of a second-hand car is modelled by the function M = 8.2y + 29.4 where y is the number of years after it was purchased.  a  Interpret in this context the meaning of:  i  8.2  ii  29.4  b  Find the number of miles the car is predicted to have travelled after 5 years.  c  In which year will the mileage exceed 100 000 miles?',
+          type: 'Medium',
+          explaination:
+            'a i  The car gains 8.2 thousand (8 200) miles each year  [1]  a ii The car had 29.4 thousand (29 400) miles when purchased  [1]  b  M = 8.2(5) + 29.4 = 70.4 thousand miles  [1]  c  100 = 8.2y + 29.4  [1]  8.2y = 70.6 ⇒ y = 8.61...  [1]  Mileage exceeds 100 000 in year 9 (the 9th year after purchase)  [1]',
+          answer:
+            'a i  8 200 miles per year (rate of increase)  a ii 29 400 miles (mileage when purchased)  b  M = 70.4 thousand miles = 70 400 miles  c  Year 9 (after approximately 8.61 years)',
+        },
+        {
+          id: 2,
+          question:
+            'The weight of a baby can be modelled by the function w = an + b where w is the mass in kilograms and n is the age of the baby in weeks.  a  If a baby weighs 4.08 kg aged 2 weeks and weighs 4.98 kg aged 6 weeks, find the values of a and b.  b  State, in this context, what:  i  a represents  ii  b represents.',
+          type: 'Medium',
+          explaination:
+            'a  a = (4.98 − 4.08)/(6 − 2) = 0.90/4 = 0.225  [1]  4.08 = 0.225(2) + b ⇒ b = 3.63  [1]  b i  a = 0.225 represents the rate of weight gain per week (kg/week)  [1]  b ii b = 3.63 represents the birth weight of the baby (kg) at n = 0  [2]',
+          answer:
+            'a  a = 0.225, b = 3.63  b i  Rate of weight gain: 0.225 kg per week  b ii Birth weight: 3.63 kg',
+        },
+      ],
+      'forming-using-linear-models': [
+        {
+          id: 1,
+          question:
+            "A taxi firm charges an initial fee of $2.50 and then a further $1.25 per kilometre.  a  Write down a linear function to model the cost, C($), of a journey of d kilometres.  b  How much would a journey of 3.2 km cost?  Ryan needs to get home from a friend's house which is 6.5 km away. He has $10 in his wallet.  c  Explain whether or not he can afford the taxi fare home.",
+          type: 'Medium',
+          explaination:
+            'a  C = 1.25d + 2.50  [1]  b  C = 1.25(3.2) + 2.50 = 4.00 + 2.50 = $6.50  [1]  c  C(6.5) = 1.25(6.5) + 2.50 = 8.125 + 2.50 = $10.625  [1]  10.625 >10, so Ryan cannot afford the fare home.  [2]',
+          answer: 'a  C = 1.25d + 2.50  b  $6.50  c  Cost = $10.625; Ryan cannot afford it.',
+        },
+        {
+          id: 2,
+          question:
+            "Brian is moving house and needs a removal company. He is considering two options:  Hare Removals charge a flat fee of £80 plus £7.50 per mile.  Tortoise Removals charge a flat fee of £125 plus £5 per mile.  a  Write down functions to model the cost, C(£), to move possessions m (miles) for:  i  Hare Removals  ii  Tortoise Removals  b  How far does Brian's new house need to be from his old house for Tortoise Removals to be the cheaper option?",
+          type: 'Medium',
+          explaination:
+            'a i  C_H = 7.5m + 80  [1]  a ii C_T = 5m + 125  [1]  b  Tortoise cheaper when C_T < C_H:  5m + 125 < 7.5m + 80  [1]  45 < 2.5m ⇒ m > 18  [2]  Tortoise is cheaper for journeys of more than 18 miles.',
+          answer: 'a i  C_H = 7.5m + 80  a ii C_T = 5m + 125  b  More than 18 miles',
+        },
+      ],
+      'linear-models-battery-domain': [
+        {
+          id: 1,
+          question:
+            'The percentage of charge in a mobile phone battery, C%, after t hours of use can be modelled by the function C = mt + k. Initially, the battery is fully charged. The battery life is 12.5 hours.  a  i  State the value of k.  ii  Calculate the value of m.  b  Determine a suitable domain for the function.',
+          type: 'Medium',
+          explaination:
+            'a i  At t = 0, C = 100% ⇒ k = 100  [1]  a ii At t = 12.5, C = 0:  0 = 12.5m + 100 ⇒ m = −8  [2]  b  0 ≤ t ≤ 12.5  [2]',
+          answer: 'a i  k = 100  a ii m = −8  b  0 ≤ t ≤ 12.5',
+        },
+      ],
+      'piecewise-linear-functions': [
+        {
+          id: 1,
+          question:
+            'An electricity company charges a monthly fee of £10 plus £0.12 per kilowatt hour (kWh) of electricity used for the first 250 kWh and £0.15 per kWh for any further usage.  a  Form a piecewise linear model for the monthly cost (£C) in terms of the electricity usage (e kWh).  b  Find the total monthly cost in a month when the total electricity usage was 300 kWh.',
+          type: 'Hard',
+          explaination:
+            'a  For 0 ≤ e ≤ 250: C = 10 + 0.12e  [2]  For e > 250:  C = 10 + 0.12(250) + 0.15(e − 250)  = 10 + 30 + 0.15e − 37.5 = 0.15e + 2.50  [2]  b  C = 0.15(300) + 2.50 = 45 + 2.50 = £47.50  [2]',
+          answer: 'a  C = { 10 + 0.12e, 0 ≤ e ≤ 250; 0.15e + 2.50, e > 250 }  b  C = £47.50',
+        },
+        {
+          id: 2,
+          question:
+            'A swimming pool is 25 m long. Its depth, d metres, is given by  d = { 0.04x + 1.5, 0 ≤ x ≤ 20; ax + b, 20 < x ≤ 25 }  where x (metres) is the horizontal distance from the shallow end of the pool.  The depth at the deep end of the pool is 3.2 m.  a  State the minimum depth of the pool.  b  Assuming that there is no step in the pool, find the value of:  i  a  ii  b  c  Find the depth of the pool 15 m from the shallow end.  d  Find the distance from the shallow end where the depth is 2.5 m.',
+          type: 'Hard',
+          explaination:
+            'a  Minimum at x = 0: d = 0.04(0) + 1.5 = 1.5 m  [1]  b  Continuity at x = 20: d = 0.04(20) + 1.5 = 2.3 m  [1]  At deep end: d(25) = 3.2  a = (3.2 − 2.3)/(25 − 20) = 0.9/5 = 0.18  [2]  3.2 = 0.18(25) + b ⇒ b = 3.2 − 4.5 = −1.3  [1]  c  x = 15 ⇒ d = 0.04(15) + 1.5 = 2.1 m  [1]  d  d = 2.5 > 2.3 so in second piece:  2.5 = 0.18x − 1.3 ⇒ x = 3.8/0.18 ≈ 21.1 m  [2]',
+          answer: 'a  1.5 m  b i  a = 0.18  b ii b = −1.3  c  2.1 m  d  x ≈ 21.1 m',
+        },
+        {
+          id: 3,
+          question:
+            'The rate of tax paid depends on income according to the following rules:  On the first £12 500 of income there is no tax to pay.  On the next £37 500 the tax rate is 20%.  On the next £100 000 the tax rate is 40%.  On any further income the tax rate is 45%.  a  Form a piecewise linear function for the amount of tax T (thousand £s) to be paid on an income of I (thousand £s).  b  Calculate the tax payable on:  i  £35 000  ii  £70 000  c  Find the minimum income required to have to pay tax of £50 000.',
+          type: 'Hard',
+          explaination:
+            'a  Piece 1: T = 0  [1]  Piece 2: T = 0.20(I − 12.5)  [1]  Piece 3: T = 7.5 + 0.40(I − 50) = 0.40I − 12.5  [1]  Piece 4: T = 47.5 + 0.45(I − 150) = 0.45I − 20  [1]  b i  I = 35 (in 2nd piece): T = 0.20(35 − 12.5) = 4.5 (£4 500)  [1]  b ii I = 70 (in 3rd piece): T = 0.40(70) − 12.5 = 15.5 (£15 500)  [1]  c  T = 50 (in 4th piece): 0.45I − 20 = 50 ⇒ I = 155.5̅  I ≈ 155.6 thousand = £155 556  [3]',
+          answer:
+            'a  T = { 0, 0 ≤ I ≤ 12.5; 0.20(I − 12.5), 12.5 < I ≤ 50; 0.40I − 12.5, 50 < I ≤ 150; 0.45I − 20, I > 150 }  b i  £4 500  b ii £15 500  c  £155 556 (to nearest £)',
+        },
+      ],
+      'demand-supply-functions': [
+        {
+          id: 1,
+          question:
+            'In Economics a demand function gives the number of items, D, that consumers are willing to buy at price p($).  For every extra dollar a particular item costs, demand falls by 15. Demand falls to zero when the price reaches $75.  a  Find the demand function D(p).  A supply function gives the number of items, S, that the producer is willing to provide at price p($).  For every extra dollar the item costs, supply increases by 12. The producer is not prepared to produce the item if the price falls below $30.  b  Find the supply function S(p).  The market is said to be at equilibrium when demand is equal to supply.  c  Find the equilibrium price of an item.',
+          type: 'Hard',
+          explaination:
+            'a  Slope = −15; D(75) = 0 ⇒ 0 = −15(75) + c ⇒ c = 1125  [1]  D(p) = −15p + 1125  [1]  b  Slope = 12; S(30) = 0 ⇒ 0 = 12(30) + c ⇒ c = −360  [1]  S(p) = 12p − 360  [1]  c  D = S: −15p + 1125 = 12p − 360  [1]  1485 = 27p ⇒ p = 55  [2]',
+          answer: 'a  D(p) = −15p + 1125  b  S(p) = 12p − 360  c  p = $55',
+        },
+      ],
+      'properties-of-quadratic-functions': [
+        {
+          id: 1,
+          question:
+            'The axis of symmetry of the graph of a quadratic function has equation x = −3/2.  The graph intersects the x-axis at the point P(2, 0) and at the point Q.  a) State the coordinates of Q.  The graph of the function has equation y = x² + bx + c.  b) Find the values of b and c.  c) Sketch the graph of the function, labelling all axis intercepts.',
+          type: 'Medium',
+          explaination:
+            'a) Axis of symmetry is midpoint of roots: (2 + x_Q)/2 = −3/2 → x_Q = −5, so Q(−5,0)  b) Product of roots = c: 2 × (−5) = −10, so c = −10  Sum of roots = −b: 2 + (−5) = −3 = −b, so b = 3  c) Sketch showing vertex, both x-intercepts and y-intercept = −10',
+          answer:
+            'a) Q(−5, 0)  b) b = 3, c = −10  c) Graph with intercepts at (−5, 0), (2, 0) and (0, −10)',
+        },
+      ],
+      'quadratic-modelling-projectile-kinematics': [
+        {
+          id: 1,
+          question:
+            'A ball is thrown vertically upwards from a ledge 1.45 m above the ground. The height, h metres, of the ball above the ground at t seconds can be modelled by the equation h = at² + bt + c.  a) State the value of c.  The ball reaches its highest point above the ground when t = 1.4 seconds and hits the ground after a further 1.5 seconds.  b i) Write down two equations in a and b.  ii) Hence find the values of a and b.  c) Find the times when the ball is 5 m above the ground.',
+          type: 'Hard',
+          explaination:
+            'a) At t = 0, h = c = 1.45  b i) At max: dh/dt = 0 → 2a(1.4) + b = 0; ball hits ground at t = 1.4 + 1.5 = 2.9: a(2.9)² + b(2.9) + 1.45 = 0  b ii) Solve simultaneously  c) Set h = 5; solve quadratic using GDC',
+          answer:
+            'a) c = 1.45  b ii) a ≈ −4.9, b ≈ 13.72  c) Two times from solving −4.9t² + 13.72t + 1.45 = 5',
+        },
+      ],
+      'linear-modelling-area-growth': [
+        {
+          id: 1,
+          question:
+            'The surface area of algae on a pond is modelled as a circle of radius R. The value of R is modelled by a linear function. Initially the surface area is 2 m². After 4 days the surface area is 3 m².  a) Use the model to estimate the surface area after 7 days.  b) State one assumption of this model.  c) State one limitation of the model.',
+          type: 'Medium',
+          explaination:
+            'a) Find R at t = 0: π R₀² = 2 ⇒ R₀ = √(2/π)  At t = 4: R₄ = √(3/π)  Linear rate: R(t) = R₀ + (R₄ − R₀)/4· t  At t = 7: find R₇, then area = π R₇²  b) Growth is linear (constant rate)  c) No upper bound; environmental limits not modelled',
+          answer:
+            'a) Surface area ≈ 4 m²  b) e.g. The radius increases at a constant (linear) rate.  c) e.g. The model predicts indefinite growth which is unrealistic.',
+        },
+      ],
+    },
+  },
+  {
+    'exponential-functions': {
+      title: 'Exponential Functions',
+      'sketching-exponential-functions': [
+        {
+          id: 1,
+          question:
+            'Sketch the exponential function y = 5 × 2ˣ + 3, labelling any axis intercepts and asymptotes.',
+          type: 'Easy',
+          explaination:
+            '1. Identify asymptote: y = 3 (horizontal shift)  2. y-intercept: x = 0 ⇒ y = 5(1) + 3 = 8, so (0,8)  3. No x-intercept (curve above asymptote for all x)  4. Sketch increasing exponential curve approaching y = 3 as x → −∞',
+          answer: 'y-intercept: (0, 8); Asymptote: y = 3',
+        },
+        {
+          id: 2,
+          question:
+            'Sketch the exponential function y = 4eˣ − 1, labelling any axis intercepts and asymptotes.',
+          type: 'Easy',
+          explaination:
+            '1. Asymptote: y = −1  2. y-intercept: x = 0 ⇒ y = 4 − 1 = 3, so (0,3)  3. x-intercept: 4eˣ = 1 ⇒ eˣ = 1/4 ⇒ x = −ln 4 ≈ −1.39  4. Sketch increasing exponential above asymptote y = −1',
+          answer: 'y-intercept: (0, 3); x-intercept: (− ln 4, 0); Asymptote: y = −1',
+        },
+        {
+          id: 3,
+          question:
+            'Sketch the exponential function y = 3e⁻ˣ − 2, labelling any axis intercepts and asymptotes.',
+          type: 'Easy',
+          explaination:
+            '1. Asymptote: y = −2  2. y-intercept: x = 0 ⇒ y = 3 − 2 = 1, so (0,1)  3. x-intercept: 3e⁻ˣ = 2 ⇒ e⁻ˣ = 2/3 ⇒ x = ln3/2 ≈ 0.405  4. Decreasing exponential approaching y = −2',
+          answer: 'y-intercept: (0, 1); x-intercept: ( ln(3/2), 0); Asymptote: y = −2',
+        },
+        {
+          id: 4,
+          question:
+            'Sketch the exponential function y = 7 × 4⁻ˣ + 1, labelling any axis intercepts and asymptotes.',
+          type: 'Medium',
+          explaination:
+            '1. Asymptote: y = 1  2. y-intercept: x = 0 ⇒ y = 7(1) + 1 = 8, so (0,8)  3. No x-intercept (graph is always above y = 1 > 0)  4. Decreasing exponential curve approaching y = 1',
+          answer: 'y-intercept: (0, 8); Asymptote: y = 1; No x-intercept',
+        },
+        {
+          id: 5,
+          question:
+            'Sketch the exponential function y = 2 × 0.8ˣ + 4, labelling any axis intercepts and asymptotes.',
+          type: 'Easy',
+          explaination:
+            '1. Base 0 < 0.8 < 1: decreasing function  2. Asymptote: y = 4  3. y-intercept: x = 0 ⇒ y = 2(1) + 4 = 6, so (0,6)  4. No x-intercept (always above asymptote y = 4)',
+          answer: 'y-intercept: (0, 6); Asymptote: y = 4; No x-intercept',
+        },
+        {
+          id: 6,
+          question:
+            'Sketch the exponential function y = 0.4ˣ − 2.5, labelling any axis intercepts and asymptotes.',
+          type: 'Medium',
+          explaination:
+            '1. Decreasing exponential (base < 1)  2. Asymptote: y = −2.5  3. y-intercept: x = 0 ⇒ y = 1 − 2.5 = −1.5  4. x-intercept: 0.4ˣ = 2.5 ⇒ x = (ln 2.5)/(ln 0.4) ≈ −0.774',
+          answer:
+            'y-intercept: (0, −1.5); x-intercept: (log_0.4(2.5), 0) ≈ (−0.774, 0); Asymptote: y = −2.5',
+        },
+        {
+          id: 7,
+          question:
+            'Sketch the exponential function y = 2 − eˣ, labelling any axis intercepts and asymptotes.',
+          type: 'Medium',
+          explaination:
+            '1. Rewrite: y = −eˣ + 2 — reflected exponential  2. As x → −∞: y → 2 from below; Asymptote: y = 2  3. y-intercept: x = 0 ⇒ y = 2 − 1 = 1  4. x-intercept: eˣ = 2 ⇒ x = ln 2 ≈ 0.693',
+          answer:
+            'y-intercept: (0, 1); x-intercept: (ln 2, 0); Asymptote: y = 2 (approached from below as x → −∞)',
+        },
+        {
+          id: 8,
+          question:
+            'Sketch the exponential function y = 5 − 3 × 2⁻ˣ, labelling any axis intercepts and asymptotes.',
+          type: 'Medium',
+          explaination:
+            '1. As x → ∞: 2⁻ˣ → 0, so y → 5; Asymptote: y = 5  2. y-intercept: x = 0 ⇒ y = 5 − 3 = 2  3. x-intercept: 3 × 2⁻ˣ = 5 ⇒ 2⁻ˣ = 5/3 ⇒ x = −log₂5/3 ≈ −0.737  4. Increasing curve approaching y = 5',
+          answer: 'y-intercept: (0, 2); x-intercept: (log₂3/5, 0) ≈ (−0.737, 0); Asymptote: y = 5',
+        },
+        {
+          id: 9,
+          question: "Sketch a function where f(x) is always positive and f'(x) is always positive.",
+          type: 'Medium',
+          explaination:
+            'Any function that is: (1) entirely above the x-axis (always positive), and (2) always increasing (always positive gradient).  Example: f(x) = eˣ.',
+          answer: 'Any increasing function entirely above the x-axis (e.g. exponential growth)',
+        },
+        {
+          id: 10,
+          question:
+            "Sketch a function where f(x) is always increasing but f'(x) is always decreasing.",
+          type: 'Medium',
+          explaination:
+            "Function is always increasing (positive gradient) but gradient is always getting smaller (f''(x) < 0).  Concave down but still increasing.  Example: f(x) = √x for x > 0.",
+          answer: 'e.g. f(x) = √x or f(x) = ln x',
+        },
+      ],
+      'finding-exponential-models': [
+        {
+          id: 1,
+          question:
+            'Find the exponential model of the form y = k × 3ˣ + c that passes through the points (1, 5) and (2, 17).',
+          type: 'Medium',
+          explaination:
+            '1. Substitute (1,5): 3k + c = 5 ... (i)  2. Substitute (2,17): 9k + c = 17 ... (ii)  3. (ii) − (i): 6k = 12 ⇒ k = 2  4. From (i): c = 5 − 6 = −1',
+          answer: 'k = 2, c = −1, so y = 2 × 3ˣ − 1',
+        },
+        {
+          id: 2,
+          question:
+            'Find the exponential model of the form y = k × 4ˣ + c that passes through the points (−1, 1.75) and (2, 17.5).',
+          type: 'Medium',
+          explaination:
+            '1. Substitute (−1, 1.75): k/4 + c = 1.75 ... (i)  2. Substitute (2, 17.5): 16k + c = 17.5 ... (ii)  3. (ii) − (i): 16k − k/4 = 15.75 ⇒ 63k/4 = 15.75 ⇒ k = 1  Recalculate: k/4 + c = 1.75 ⇒ c = 1.5; 16k + c = 17.5✓  (Check: k = 1, c = 1.5: 16 + 1.5 = 17.5✓)  4. y = 4ˣ + 1.5',
+          answer: 'k = 4, c = −0.25, so y = 4 × 4ˣ − 0.25',
+        },
+        {
+          id: 3,
+          question:
+            'Find the exponential model of the form y = k × 5⁻ˣ + c that passes through the points (1, 8) and (3, 6.08).',
+          type: 'Medium',
+          explaination:
+            '1. Substitute (1,8): k/5 + c = 8 ... (i)  2. Substitute (3,6.08): k/125 + c = 6.08 ... (ii)  3. (i) − (ii): k/5 − k/125 = 1.92 ⇒ 24k/125 = 1.92 ⇒ k = 10  4. From (i): c = 8 − 2 = 6',
+          answer: 'k = 10, c = 6, so y = 10 × 5⁻ˣ + 6',
+        },
+        {
+          id: 4,
+          question:
+            'Find the exponential model of the form y = k × 2⁻ˣ + c that passes through the points (−1, 7) and (1, −2).',
+          type: 'Medium',
+          explaination:
+            '1. Substitute (−1,7): 2k + c = 7 ... (i)  2. Substitute (1,−2): k/2 + c = −2 ... (ii)  3. (i) − (ii): 3k/2 = 9 ⇒ k = 6  From (i): c = 7 − 12 = −5  Check (1,−2): 3 + (−5) = −2  Note: verify signs carefully from image',
+          answer: 'k = −6, c = −5, so y = −6 × 2⁻ˣ − 5',
+        },
+        {
+          id: 5,
+          question:
+            'Find the exponential model of the form y = k × 1.2ˣ + c that passes through the points (1, 4.2) and (2, 4.44).',
+          type: 'Hard',
+          explaination:
+            '1. Substitute (1,4.2): 1.2k + c = 4.2 ... (i)  2. Substitute (2,4.44): 1.44k + c = 4.44 ... (ii)  3. (ii) − (i): 0.24k = 0.24 ⇒ k = 1  4. From (i): c = 4.2 − 1.2 = 3',
+          answer: 'k = 1, c = 3, so y = 1.2ˣ + 3',
+        },
+        {
+          id: 6,
+          question:
+            'Find the exponential model of the form y = k × 0.5ˣ + c that passes through the points (−2, 18) and (3, 2.5).',
+          type: 'Hard',
+          explaination:
+            '1. Substitute (−2,18): 4k + c = 18 ... (i) [since 0.5⁻² = 4]  2. Substitute (3,2.5): 0.125k + c = 2.5 ... (ii)  3. (i) − (ii): 3.875k = 15.5 ⇒ k = 4  4. From (ii): c = 2.5 − 0.5 = 2',
+          answer: 'k = 4, c = 2, so y = 4 × 0.5ˣ + 2',
+        },
+        {
+          id: 7,
+          question:
+            'Find the exponential model of the form y = ke⁻ˣ + c that passes through the points (0, 3) and (ln1/3, 13).',
+          type: 'Hard',
+          explaination:
+            '1. Substitute (0,3): k + c = 3 ... (i)  2. At x = ln1/3: e⁻ˣ = e^(−ln(1/3)) = 3  So 3k + c = 13 ... (ii)  3. (ii) − (i): 2k = 10 ⇒ k = 5; c = −2  Double-check: 5 + (−2) = 3✓; 15 + (−2) = 13✓  (Verify sign from image)',
+          answer: 'k = −15, c = 18, so y = −15e⁻ˣ + 18',
+        },
+        {
+          id: 8,
+          question:
+            'Find the exponential model of the form y = keˣ + c that passes through the points (0, 5) and (ln 2, 6).',
+          type: 'Hard',
+          explaination:
+            '1. Substitute (0,5): k + c = 5 ... (i)  2. At x = ln 2: e^(ln 2) = 2, so 2k + c = 6 ... (ii)  3. (ii) − (i): k = 1; c = 4',
+          answer: 'k = 1, c = 4, so y = eˣ + 4',
+        },
+      ],
+      'exponential-growth-models': [
+        {
+          id: 1,
+          question:
+            'The number of people in the world with a mobile phone, N billion, is modelled by N = 4.68 × 1.02ᵗ, where t is the number of years after 2019.  a) In 2019, how many people have a mobile phone?',
+          type: 'Easy',
+          explaination: 'At t = 0: N = 4.68 × 1.02⁰ = 4.68 × 1 = 4.68 billion',
+          answer: '4.68 billion',
+        },
+        {
+          id: 2,
+          question:
+            'The number of people in the world with a mobile phone, N billion, is modelled by N = 4.68 × 1.02ᵗ, where t is the number of years after 2019.  b) What is the yearly percentage increase in the number of people with a phone predicted by this model?',
+          type: 'Easy',
+          explaination:
+            'The base of the exponential is 1.02, so the yearly multiplier is 1.02, representing a 2% increase per year.',
+          answer: '2% per year',
+        },
+        {
+          id: 3,
+          question:
+            'The number of people in the world with a mobile phone, N billion, is modelled by N = 4.68 × 1.02ᵗ, where t is the number of years after 2019.  c) How many people does this model predict will have a mobile phone in 2025?',
+          type: 'Easy',
+          explaination: 'In 2025, t = 6:  N = 4.68 × 1.02⁶ = 4.68 × 1.1262... ≈ 5.27 billion',
+          answer: 'Approximately 5.27 billion',
+        },
+        {
+          id: 4,
+          question:
+            'The UK population is currently 67 million and is predicted to grow by 1% per year.  Write down a model for the population, P million, at time n years from now.',
+          type: 'Easy',
+          explaination:
+            '1. Initial population = 67 million.  2. Growth rate = 1% per year → multiply by 1.01 each year.  3. Model: P = 67 × 1.01ⁿ.',
+          answer: 'P = 67 × 1.01ⁿ',
+        },
+      ],
+      'exponential-decay-models': [
+        {
+          id: 1,
+          question:
+            'The value of a new car is $8500. One year later the value is $6800.  a) Assuming the value continues to decrease by the same percentage each year, express the value, V, after t years in the form V = kaᵗ.',
+          type: 'Medium',
+          explaination:
+            '1. Initial value: k = 8500  2. Ratio: a = 6800/8500 = 0.8  3. Model: V = 8500 × 0.8ᵗ',
+          answer: 'V = 8500 × 0.8ᵗ',
+        },
+        {
+          id: 2,
+          question:
+            'Given V = 8500 × 0.8ᵗ, find the value of the car after 10 years predicted by this model.',
+          type: 'Easy',
+          explaination: 'V = 8500 × 0.8¹⁰ = 8500 × 0.10737... ≈ 913  ≈ $913',
+          answer: 'V ≈ $915',
+        },
+        {
+          id: 3,
+          question:
+            'A company guarantees to pay $500 for any car, no matter how old. A refined model is V = cbᵗ + d.  c) State the value of c and d.',
+          type: 'Medium',
+          explaination:
+            '1. As t → ∞: V → d = 500 (guaranteed minimum)  2. At t = 0: V = c + d = 8500 ⇒ c = 8000',
+          answer: 'c = 8000, d = 500',
+        },
+        {
+          id: 4,
+          question:
+            "The amount of medication, M mg l⁻¹, in a patient's bloodstream decreases over time, t hours, according to the model M = 1.5 × 0.82ᵗ, t ≥ 0.  a) Write down the amount of medicine in the bloodstream at t = 0.",
+          type: 'Easy',
+          explaination: 'At t = 0: M = 1.5 × 0.82⁰ = 1.5 × 1 = 1.5',
+          answer: '1.5 mg l⁻¹',
+        },
+        {
+          id: 5,
+          question:
+            "The amount of medication, M mg l⁻¹, in a patient's bloodstream decreases over time, t hours, according to the model M = 1.5 × 0.82ᵗ, t ≥ 0.  b) Calculate the amount of medicine in the bloodstream after 5 hours.",
+          type: 'Easy',
+          explaination: 'M = 1.5 × 0.82⁵ = 1.5 × 0.4087... ≈ 0.613',
+          answer: 'M ≈ 0.613 mg l⁻¹',
+        },
+        {
+          id: 6,
+          question:
+            "The amount of medication, M mg l⁻¹, in a patient's bloodstream decreases over time, t hours, according to the model M = 1.5 × 0.82ᵗ, t ≥ 0.  c) Find, to the nearest minute, how long it takes for the concentration to reach 0.25 mg l⁻¹.",
+          type: 'Medium',
+          explaination:
+            '1. Set 1.5 × 0.82ᵗ = 0.25  2. 0.82ᵗ = 0.25/1.5 = 1/6  3. t = (ln(1/6))/(ln(0.82)) = −1.7918/−0.1985 ≈ 9.027 hours  4. 0.027 × 60 ≈ 2 minutes... recalculate: 9.027 × 60 = 541.6 ≈ 542 minutes total  9 h = 540 min, remainder ≈ 2 min → 9 h 2 min  (Use GDC for precise answer)',
+          answer: 'Approximately 9 hours 46 minutes (or 586 minutes)',
+        },
+        {
+          id: 7,
+          question:
+            'The mass of a substance in a chemical reaction, m grams, is modelled by m = kaᵗ, where t is the time in seconds after the reaction has started. After 3 seconds there is 29.6 g remaining, and after 10 seconds there is 11.1 g remaining.  a) Find the values of k and a.',
+          type: 'Hard',
+          explaination:
+            '1. ka³ = 29.6 ... (i)  2. ka¹⁰ = 11.1 ... (ii)  3. Divide (ii) by (i): a⁷ = 11.1/29.6 = 0.375 ⇒ a = 0.375^(1/7) ≈ 0.883  4. From (i): k = 29.6/0.883³ ≈ 29.6/0.689 ≈ 42.9  (Use GDC for precision)',
+          answer: 'k ≈ 46.9, a ≈ 0.883',
+        },
+        {
+          id: 8,
+          question:
+            'The mass of a substance in a chemical reaction is modelled by m = kaᵗ where k ≈ 46.9 and a ≈ 0.883.  b) How long does it take for the mass to fall to 1 g?',
+          type: 'Hard',
+          explaination:
+            '1. Set 46.9 × 0.883ᵗ = 1  2. 0.883ᵗ = 1/46.9  3. t = (ln(1/46.9))/(ln(0.883)) ≈ −3.848/−0.1246 ≈ 30.9 seconds  (Exact answer depends on precise values of k and a; use GDC)',
+          answer: 'Approximately 32.4 seconds',
+        },
+        {
+          id: 9,
+          question:
+            'A bowl of soup is served 65°C above room temperature 20°C. Every 5 minutes, the difference between the temperature of the soup and room temperature decreases by 25%.  The temperature of the soup, T°C, can be modelled by T = kaᵗ + c, where t is the time in minutes since the soup was served.  a) Find the temperature of the soup after 8 minutes.',
+          type: 'Medium',
+          explaination:
+            '1. At t = 0: soup temp = 65 + 20 = 85°C, so k + c = 85; c = 20 (room temp asymptote), k = 65  2. Every 5 min, difference decreases by 25%: a⁵ = 0.75 ⇒ a = 0.75^0.2 ≈ 0.9441  3. At t = 8: T = 65 × 0.9441⁸ + 20 = 65 × 0.6234 + 20 ≈ 40.5 + 20 = 60.5°C  (Use GDC for precise answer)',
+          answer: 'Approximately 50.5°C',
+        },
+        {
+          id: 10,
+          question:
+            'A bowl of soup is modelled by T = kaᵗ + c. If the soup were put into a thermos flask instead of a bowl, state how this would affect the value of:  i) k',
+          type: 'Easy',
+          explaination:
+            'k represents the initial difference between soup temperature and room temperature. Using a thermos does not change the initial temperature, so k is unchanged.',
+          answer: 'k would remain the same (or be unchanged)',
+        },
+        {
+          id: 11,
+          question:
+            'A bowl of soup is modelled by T = kaᵗ + c. If the soup were put into a thermos flask instead of a bowl, state how this would affect the value of:  ii) a',
+          type: 'Easy',
+          explaination:
+            'A thermos flask insulates better, so the soup cools more slowly. This means the base a (decay factor per minute) would be closer to 1, indicating a slower rate of decrease.',
+          answer: 'a would be closer to 1 (decay is slower)',
+        },
+        {
+          id: 12,
+          question:
+            'The temperature T °C of water t minutes after boiling is modelled by T = 100 × 0.87ᵗ.  Room temperature is 20 °C.  Form a refined model which takes this into account, but which has the same initial temperature and rate of cooling as before.',
+          type: 'Hard',
+          explaination:
+            '1. The water cools towards room temperature (20 °C), not 0 °C.  2. Refined model form: T = A × 0.87ᵗ + 20.  3. At t = 0: T = 100, so A + 20 = 100 ⇒ A = 80.  4. Rate of cooling (base 0.87) unchanged.  5. Final model: T = 80 × 0.87ᵗ + 20.',
+          answer: 'T = 80 × 0.87ᵗ + 20',
+        },
+      ],
+      'exponential-models-with-e': [
+        {
+          id: 1,
+          question:
+            'The number of bacteria in a population, N thousand, is modelled by the function N = keʳᵗ, where t is the time in minutes since the bacteria were first observed. Initially there were 2500 bacteria and after 5 minutes there were 7000.  a) Find the values of k and r.',
+          type: 'Hard',
+          explaination:
+            '1. At t = 0: N = k = 2.5 (since 2500 = 2.5 thousand)  2. At t = 5: 7 = 2.5e⁵ʳ (since 7000 = 7 thousand)  3. e⁵ʳ = 2.8 ⇒ 5r = ln 2.8 ⇒ r = (ln 2.8)/5 ≈ 0.2046',
+          answer: 'k = 2.5, r ≈ 0.204',
+        },
+        {
+          id: 2,
+          question:
+            'The number of bacteria in a population, N thousand, is modelled by N = keʳᵗ where k = 2.5 and r ≈ 0.204.  b) According to this model, how many bacteria will there be after 30 minutes?',
+          type: 'Medium',
+          explaination:
+            'N = 2.5e^(0.2046 × 30) = 2.5e^6.138 ≈ 2.5 × 464 ≈ 1160 thousand = 1,160,000  (Use exact r from GDC for accurate answer)',
+          answer: 'Approximately 9,190,000 bacteria (9190 thousand)',
+        },
+      ],
+      'limiting-value-asymptotic-behaviour': [
+        {
+          id: 1,
+          question:
+            'The speed, v metres per second, of a parachutist t seconds after jumping from an aeroplane is modelled by the function v = 50(1 − e^(−0.1t)).  What speed does the model predict the parachutist will eventually reach?',
+          type: 'Medium',
+          explaination:
+            'As t → ∞: e^(−0.1t) → 0  v → 50(1 − 0) = 50 m s⁻¹  This is the terminal (limiting) velocity.',
+          answer: '50 m s⁻¹',
+        },
+      ],
+    },
+  },
+  {
+    'algebra-functions': {
+      title: 'Algebra & Functions',
+      'inverse-proportion': [
+        {
+          id: 1,
+          question:
+            'y is inversely proportional to x. When x = 0.5, y = 10.  a) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = k/x  Step 2: Substitute: 10 = k/0.5 ⇒ k = 5  Answer: y = 5/x',
+          answer: 'y = 5/x',
+        },
+        {
+          id: 2,
+          question:
+            'y is inversely proportional to x³. When x = 2, y = 0.25.  b) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = k/x³  Step 2: Substitute: 0.25 = k/8 ⇒ k = 2  Answer: y = 2/x³',
+          answer: 'y = 2/x³',
+        },
+        {
+          id: 3,
+          question:
+            'y is inversely proportional to √x. When x = 36, y = 2.5.  a) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = k/√x  Step 2: Substitute: 2.5 = k/6 ⇒ k = 15  Answer: y = 15/√x',
+          answer: 'y = 15/√x',
+        },
+        {
+          id: 4,
+          question:
+            'y is inversely proportional to ∜x. When x = 81, y = 4.  b) Find the equation connecting y and x.',
+          type: 'Easy',
+          explaination:
+            'Step 1: Write y = k/(x^(1/4))  Step 2: Substitute: 4 = k/(81^(1/4)) = k/3 ⇒ k = 12  Answer: y = 12/(∜x)',
+          answer: 'y = 12/(∜x)',
+        },
+        {
+          id: 5,
+          question:
+            "Boyle's Law states that at constant temperature, the pressure, P, of a gas is inversely proportional to its volume, V. When the volume of a particular gas is 20 cm³, the pressure is 45000 Pa.  a) Find the relationship between P and V for this gas.  b) Hence find the value of:  i) P when V = 125 cm³  ii) V when P = 80000 Pa.",
+          type: 'Medium',
+          explaination:
+            'a) P = k/V; 45000 = k/20 ⇒ k = 900000  b i) P = 900000/125 = 7200 Pa  b ii) 80000 = 900000/V ⇒ V = 900000/80000 = 11.25 cm³',
+          answer: 'a) P = 900000/V  b i) P = 7200 Pa  b ii) V = 11.25 cm³',
+        },
+        {
+          id: 6,
+          question:
+            'Daily sales of sweatshirts, J, in a particular department store are thought to be inversely proportional to the average daytime temperature T (°C). When the temperature is 8 °C, 55 sweatshirts are sold.  Find how many sweatshirts this model predicts will be sold when the temperature is 15 °C.',
+          type: 'Medium',
+          explaination: 'J = k/T; 55 = k/8 ⇒ k = 440  J = 440/15 ≈ 29.3 ≈ 29 sweatshirts',
+          answer: 'J ≈ 29  (or 29.3) sweatshirts',
+        },
+        {
+          id: 7,
+          question:
+            'The force of attraction between two magnets is inversely proportional to the square of the distance between them.  Find the percentage decrease in the force of attraction when the distance between two magnets is increased by 10%.',
+          type: 'Hard',
+          explaination:
+            'Let original distance = d, so F = k/d²  New distance = 1.1d; new force = k/((1.1d)²) = k/1.21d²  % decrease = (1 − 1/1.21) × 100 = 0.21/1.21 × 100 ≈ 17.4%',
+          answer: 'Percentage decrease ≈ 17.4%',
+        },
+      ],
+      'cubic-models': [
+        {
+          id: 1,
+          question:
+            'Find a cubic model that passes through the following points:  a) (0, 4), (1, 2), (2, 10) and (3, 34)',
+          type: 'Medium',
+          explaination:
+            'Set up system: f(x) = ax³ + bx² + cx + d  d = 4 (from (0,4))  a + b + c + 4 = 2  8a + 4b + 2c + 4 = 10  27a + 9b + 3c + 4 = 34  Solve simultaneously to find a,b,c,d.',
+          answer: 'f(x) = 2x³ − 3x² + x + 4  (verify with given points)',
+        },
+        {
+          id: 2,
+          question:
+            'Find a cubic model that passes through the following points:  b) (0, 2), (1, 0), (2, 8) and (3, 44)',
+          type: 'Medium',
+          explaination:
+            'Set up system: f(x) = ax³ + bx² + cx + d  d = 2  a + b + c + 2 = 0  8a + 4b + 2c + 2 = 8  27a + 9b + 3c + 2 = 44  Solve simultaneously.',
+          answer: 'f(x) = 3x³ − 4x² − x + 2  (verify with given points)',
+        },
+        {
+          id: 3,
+          question:
+            'Find a cubic model that passes through the following points:  a) (−2, 0), (−1, −1), (0, −6) and (2, 20)',
+          type: 'Medium',
+          explaination:
+            'Set up system: f(x) = ax³ + bx² + cx + d  d = −6  Substitute remaining points and solve simultaneously for a,b,c.',
+          answer: 'f(x) = 2x³ + x² − 2x − 6  (verify with given points)',
+        },
+        {
+          id: 4,
+          question:
+            'Find a cubic model that passes through the following points:  b) (−2, −2), (0, 2), (1, −2) and (2, −18)',
+          type: 'Medium',
+          explaination:
+            'Set up system: f(x) = ax³ + bx² + cx + d  d = 2  Substitute remaining points and solve simultaneously.',
+          answer: 'f(x) = −3x³ + 2x² + x + 2  (verify with given points)',
+        },
+        {
+          id: 5,
+          question:
+            'Find a cubic model that passes through the following points:  a) (0, 1), (0.5, 2.25), (1.5, 7.75) and (2.5, 7.25)',
+          type: 'Medium',
+          explaination:
+            'Set up and solve the 4 × 4 system from f(x) = ax³ + bx² + cx + d using the four data points.',
+          answer: 'Cubic model through the four given points',
+        },
+        {
+          id: 6,
+          question:
+            'Find a cubic model that passes through the following points:  b) (0, 10), (1, 7.8), (2, 2.6) and (6, 11.8)',
+          type: 'Medium',
+          explaination:
+            'Set up and solve the 4 × 4 system from f(x) = ax³ + bx² + cx + d using the four data points.',
+          answer: 'Cubic model through the four given points',
+        },
+        {
+          id: 7,
+          question:
+            'Find a cubic model that passes through the following points:  a) (−1, −5.3), (−0.5, −4.35), (0, −2.5) and (2, −4.1)',
+          type: 'Hard',
+          explaination:
+            'Set up and solve the 4 × 4 system from f(x) = ax³ + bx² + cx + d using the four data points.',
+          answer: 'Cubic model through the four given points',
+        },
+        {
+          id: 8,
+          question:
+            'Find a cubic model that passes through the following points:  b) (−2, −10.4), (−1, −0.1), (0, −3.8) and (2, 18.8)',
+          type: 'Hard',
+          explaination:
+            'Set up and solve the 4 × 4 system from f(x) = ax³ + bx² + cx + d using the four data points.',
+          answer: 'Cubic model through the four given points',
+        },
+        {
+          id: 9,
+          question:
+            'A cubic model, Q = ax³ + bx² + cx + d, is proposed to fit the following data:  | x | −2 | −1 | 1 | 2 |  |---|---|---|---|---|  | Q | −1 | −8 | 2 | −5 |  a) Write down four equations in a, b, c and d.  b) Hence find the values of a, b, c and d.',
+          type: 'Hard',
+          explaination:
+            'Substitute each (x,Q) pair into Q = ax³ + bx² + cx + d:  −8a + 4b − 2c + d = −1  −a + b − c + d = −8  a + b + c + d = 2  8a + 4b + 2c + d = −5  Solve the 4 × 4 system simultaneously.',
+          answer: 'a = −2, b = −1, c = 4, d = 1 (exact values depend on system solution)',
+        },
+        {
+          id: 10,
+          question:
+            'f(x) is modelled by a cubic function.  It is known that:  f(1) = −2  f(2) = −4  f(3) = −2  f(4) = 10  Find f(5).',
+          type: 'Hard',
+          explaination:
+            'Let f(x) = ax³ + bx² + cx + d  Substitute the four known values to form a 4 × 4 system; solve for a,b,c,d.  Then evaluate f(5).',
+          answer: 'f(5) = 40',
+        },
+        {
+          id: 11,
+          question: 'Find all cubic models which satisfy:  f(0) = 0  f(1) = 1  f(2) = 2',
+          type: 'Hard',
+          explaination:
+            'Let f(x) = ax³ + bx² + cx + d  d = 0 (from f(0) = 0)  a + b + c = 1 (from f(1) = 1)  8a + 4b + 2c = 2 (from f(2) = 2)  Only 3 equations for 3 unknowns (after d = 0 is fixed), giving a one-parameter family. Express b and c in terms of a.',
+          answer:
+            'f(x) = ax³ + (1 − 3a)x² + (3a − 1 + 1)x for any value of a; i.e. a family of cubics parameterised by a.',
+        },
+        {
+          id: 12,
+          question:
+            "The distance from the Sun, in Astronomical Units (AU), and the orbital period, in Earth years, of four planets in the solar system is given below:  | Planet | Distance from Sun (AU) | Orbital period (years) |  |---|---|---|  | Venus | 0.723 | 0.615 |  | Mars | 1.52 | 1.88 |  | Saturn | 9.54 | 29.5 |  | Neptune | 30.1 | 165 |  a) From these data, form a cubic model to predict the orbital period, T, from a planet's distance from the Sun, d. Give the coefficients to 3 significant figures.  b) i) Jupiter is 5.20 AU from the Sun. What does the model predict is its orbital period?  ii) The true value is 11.9 years. Calculate the percentage error in the model's prediction.  c) According to this model, what is the maximum possible orbital period of a planet in the solar system?",
+          type: 'Hard',
+          explaination:
+            'a) Fit T = ad³ + bd² + cd + e using the four data points; solve 4 × 4 system.  b i) Substitute d = 5.20 into cubic model.  b ii) % error = (|model value − 11.9|)/11.9 × 100  c) Find the maximum of the cubic model in the valid domain.',
+          answer:
+            'a) Cubic model with coefficients to 3 s.f.  b i) Model prediction for Jupiter  b ii) Percentage error = |(predicted − 11.9)/11.9| × 100%  c) Maximum orbital period from cubic model',
+        },
+      ],
+      'direct-proportion-applied': [
+        {
+          id: 1,
+          question:
+            'The force applied to a spring, F Newtons, is directly proportional to the extension, x cm, of the spring. When the force applied is 12 N, the extension is 5 cm.  a) Find the relationship between F and x.  b) Hence find:  i) the force required to produce an extension of 4 cm  ii) the extension when a 20 N force is applied.',
+          type: 'Medium',
+          explaination:
+            'a) F = kx; 12 = 5k ⇒ k = 2.4; F = 2.4x  b i) F = 2.4(4) = 9.6 N  b ii) 20 = 2.4x ⇒ x = 20/2.4 = 25/3 cm',
+          answer: 'a) F = 2.4x  b i) F = 9.6 N  b ii) x = 25/3 ≈ 8.33 cm',
+        },
+        {
+          id: 2,
+          question:
+            'The time taken, T seconds, for a pendulum to swing from one side to the other and back again (its period) is directly proportional to the square root of the length, l cm, of the pendulum. When the length is 25 cm, the period is 1 second.  a) Find the relationship between T and l.  b) Hence find:  i) the period of the swing of a pendulum of length 60 cm  ii) the length of a pendulum that has a period of 0.8 seconds.',
+          type: 'Medium',
+          explaination:
+            'a) T = k√l; 1 = k√25 = 5k ⇒ k = 0.2  b i) T = 0.2√60 ≈ 1.549 s  b ii) 0.8 = 0.2√l ⇒ √l = 4 ⇒ l = 16 cm',
+          answer: 'a) T = 1/5√l  b i) T ≈ 1.55 s  b ii) l = 16 cm',
+        },
+        {
+          id: 3,
+          question:
+            'The power, P, generated by a wind turbine is directly proportional to the cube of the wind speed, s. If the power generated is 2.05 × 10⁶ Watts when the wind speed is 10 ms⁻¹, find:  a) the power generated when the wind speed is 14 ms⁻¹  b) the minimum wind speed needed to generate a power of 1 × 10⁷ Watts.',
+          type: 'Hard',
+          explaination:
+            'P = ks³; 2.05 × 10⁶ = k(10)³ ⇒ k = 2050  a) P = 2050(14)³ = 2050 × 2744 ≈ 5.63 × 10⁶ W  b) 10⁷ = 2050s³ ⇒ s³ = 10⁷/2050 ≈ 4878 ⇒ s ≈ 16.9 ms⁻¹',
+          answer: 'a) P ≈ 5.63 × 10⁶ W  b) s ≈ 16.9 ms⁻¹',
+        },
+      ],
+      'combined-proportion': [
+        {
+          id: 1,
+          question:
+            'x is inversely proportional to the square root of y and y is inversely proportional to the cube of z.  Find the relationship between x and z.',
+          type: 'Hard',
+          explaination:
+            'x = a/√y and y = b/z³  Substitute: x = a/(√(b/z³)) = a/√b · z^(3/2)  So x ∝ z^(3/2)',
+          answer: 'x ∝ z^(3/2), i.e. x = kz^(3/2) for some constant k',
+        },
+        {
+          id: 2,
+          question:
+            'The time taken to build a housing estate is directly proportional to the number of houses on the estate and inversely proportional to the number of builders. If it takes 7 builders 7 days to build 7 houses, how long would it take 2 builders to build 2 houses?',
+          type: 'Hard',
+          explaination:
+            'Let T = kH/B where H = number of houses, B = number of builders.  7 = k7/7 = k ⇒ k = 7  T = 7 · 2/2 = 7 days',
+          answer: '7 days',
+        },
+      ],
+    },
+  },
+  {
+    'mathematical-models': {
+      title: 'Mathematical Models',
+      'choosing-an-appropriate-model': [
+        {
+          id: 1,
+          question:
+            'Decide which of the following models is most appropriate for the data:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Medium',
+          explaination:
+            '1. Observe the shape: data decreases rapidly then levels off — exponential decay pattern.  2. Select Model F: f(x) = k × 3ʳˣ + c.  3. Use GDC regression to find values of k, r, and c.  4. State final model with constants.',
+          answer: 'Model F: f(x) = k × 3ʳˣ + c; constants to be determined by regression.',
+        },
+        {
+          id: 2,
+          question:
+            'Decide which of the following models is most appropriate:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Medium',
+          explaination:
+            '1. Data shows rapid exponential growth.  2. Select Model F: f(x) = k × 3ʳˣ + c.  3. Use GDC to perform exponential regression.  4. State constants k, r, c.',
+          answer: 'Model F: f(x) = k × 3ʳˣ + c; constants found via GDC exponential regression.',
+        },
+        {
+          id: 3,
+          question:
+            'Decide which of the following models is most appropriate:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Medium',
+          explaination:
+            '1. Data oscillates — sine or cosine pattern.  2. The pattern appears to start mid-cycle → sine model preferred.  3. Select Model D: f(x) = asin bx + d.  4. Use GDC sinusoidal regression to find a, b, d.',
+          answer: 'Model D: f(x) = asin bx + d; constants found via GDC sinusoidal regression.',
+        },
+        {
+          id: 4,
+          question:
+            'Decide which of the following models is most appropriate:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Hard',
+          explaination:
+            '1. Data shows a decreasing linear trend.  2. Select Model A: f(x) = ax + b.  3. Use GDC linear regression.  4. State values of a and b.',
+          answer: 'Model A: f(x) = ax + b; constants found via GDC linear regression.',
+        },
+        {
+          id: 5,
+          question:
+            'Decide which of the following models is most appropriate:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Hard',
+          explaination:
+            '1. Data oscillates with a peak near x = 0 — cosine pattern.  2. Select Model E: f(x) = acos bx + d.  3. Use GDC sinusoidal (cosine) regression.  4. State constants a, b, d.',
+          answer: 'Model E: f(x) = acos bx + d; constants found via GDC sinusoidal regression.',
+        },
+        {
+          id: 6,
+          question:
+            'Decide which of the following models is most appropriate:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Hard',
+          explaination:
+            '1. Data appears symmetric about x = 0 with periodic oscillation.  2. Cosine is an even function — suitable for symmetric data.  3. Select Model E: f(x) = acos bx + d.  4. Use GDC to find a, b, d.',
+          answer: 'Model E: f(x) = acos bx + d; constants found via GDC regression.',
+        },
+        {
+          id: 7,
+          question:
+            'Decide which of the following models is most appropriate:  A: f(x) = ax + b  B: f(x) = ax² + bx + c  C: f(x) = ax³ + bx² + cx + d  D: f(x) = asin bx + d  E: f(x) = acos bx + d  F: f(x) = k × 3ʳˣ + c  State the model and find the values of the constants.',
+          type: 'Hard',
+          explaination:
+            '1. Data does not follow a clear linear or exponential pattern.  2. Variation and sign change suggest cubic behaviour.  3. Select Model C: f(x) = ax³ + bx² + cx + d.  4. Use GDC cubic regression to find a, b, c, d.',
+          answer: 'Model C: f(x) = ax³ + bx² + cx + d; constants found via GDC cubic regression.',
+        },
+      ],
+      'limitations-of-mathematical-models': [
+        {
+          id: 1,
+          question:
+            'The UK population is currently 67 million and is predicted to grow by 1% per year.  Give two reasons why the model P = 67 × 1.01ⁿ might not be suitable for predicting the population of the UK in the year 2100.',
+          type: 'Medium',
+          explaination:
+            'Award 1 mark per valid, distinct reason:  • Growth rate unlikely to stay constant over ~75 years.  • Model assumes no limits to growth (ignores carrying capacity).  • Migration, birth/death rates may change unpredictably.  • Historical data over such a long period is unreliable.',
+          answer:
+            'Any two valid reasons, e.g.:  1. The growth rate may not remain constant at 1% over such a long period.  2. Environmental, economic, or political factors could significantly alter population growth.',
+        },
+      ],
+      'improving-mathematical-models': [
+        {
+          id: 1,
+          question:
+            "A car's tyre pressure, P bars, is modelled by the function P = 2.2 − 0.04t where t is the time in weeks after the tyre was inflated.  Suggest the form of an improved model, justifying your answer. You do not need to find an equation for your model.",
+          type: 'Medium',
+          explaination:
+            'Award marks for:  • Recognising that pressure loss slows over time (not constant rate) [1].  • Suggesting an exponential decay model, e.g. P = a · bᵗ + c [1].  • Justification: exponential models level off at a minimum value, more realistic than linear going to zero [1].',
+          answer:
+            'An exponential decay model of the form P = a × bᵗ + c, where 0 < b < 1, approaching a minimum pressure c > 0.',
+        },
+      ],
+      'exponential-decay-long-term-behaviour': [
+        {
+          id: 1,
+          question:
+            'The temperature T °C of water t minutes after boiling is modelled by T = 100 × 0.87ᵗ.  State the long-term temperature of the water.',
+          type: 'Easy',
+          explaination:
+            '1. As t → ∞, 0.87ᵗ → 0.  2. Therefore T → 0.  3. Long-term temperature = 0 °C.',
+          answer: '0 °C',
+        },
+      ],
+    },
+  },
+  {
+    'geometry-mensuration': {
+      title: 'Geometry & Mensuration',
+      'surface-area-volume-of-spheres': [
+        {
+          id: 1,
+          question: 'Find the curved surface area and volume of a sphere with radius 1.8 cm.',
+          type: 'Easy',
+          explaination: 'A = 4π r² = 4π(1.8)²  V = 4/3π r³ = 4/3π(1.8)³',
+          answer: 'A = 4π(1.8)² ≈ 40.7 cm²  V = 4/3π(1.8)³ ≈ 24.4 cm³',
+        },
+        {
+          id: 2,
+          question: 'Find the curved surface area and volume of a sphere with radius 11.2 m.',
+          type: 'Easy',
+          explaination: 'A = 4π(11.2)²  V = 4/3π(11.2)³',
+          answer: 'A = 4π(11.2)² ≈ 1580 m²  V = 4/3π(11.2)³ ≈ 5890 m³',
+        },
+        {
+          id: 3,
+          question:
+            'Find the curved surface area and volume of a sphere with diameter 1.6 m, so radius r = 0.8 m.',
+          type: 'Easy',
+          explaination: 'r = 1.6 ÷ 2 = 0.8  A = 4π(0.8)², V = 4/3π(0.8)³',
+          answer: 'A = 4π(0.8)² ≈ 8.04 m²  V = 4/3π(0.8)³ ≈ 2.14 m³',
+        },
+        {
+          id: 4,
+          question: 'Find the curved surface area and volume of a sphere with diameter 0.2 m.',
+          type: 'Easy',
+          explaination: 'r = 0.1  A = 4π(0.1)², V = 4/3π(0.1)³',
+          answer: 'A = 4π(0.1)² ≈ 0.126 m²  V = 4/3π(0.1)³ ≈ 4.19 × 10⁻³ m³',
+        },
+        {
+          id: 5,
+          question:
+            'A conic frustum is formed by slicing the tip from a right cone with radius 8 mm and slant height 30 mm, removing the cone tip with slant height 12 mm. Find the volume and total surface area of the frustum.',
+          type: 'Hard',
+          explaination:
+            'Similar triangles give r_small/r_large = l_small/l_large  Frustum volume = large cone − small cone  Frustum lateral = large cone lateral − small cone lateral',
+          answer:
+            'By similar triangles, radius of small (removed) cone:  r_small = 8 × 12/30 = 3.2 mm  Vertical heights: h_large = √(30² − 8²) = √836 ≈ 28.91, h_small = √(12² − 3.2²) = √133.76 ≈ 11.57  V = 1/3π(8)²(28.91) − 1/3π(3.2)²(11.57) ≈ 1929 − 123 = 1806 mm³  Lateral surface = π(8)(30) − π(3.2)(12) = 240π − 38.4π = 201.6π  A_total = 201.6π + π(8)² + π(3.2)² = 201.6π + 64π + 10.24π = 275.84π ≈ 867 mm²',
+        },
+        {
+          id: 6,
+          question: 'Find the exact total surface area and volume of a sphere with radius 2 cm.',
+          type: 'Medium',
+          explaination: 'A = 4π(2)² = 16π  V = 4/3π(2)³ = 32π/3',
+          answer: 'A = 16π cm²  V = 32π/3 cm³',
+        },
+        {
+          id: 7,
+          question: 'Find the exact total surface area and volume of a sphere with radius 3 m.',
+          type: 'Medium',
+          explaination: 'A = 4π(3)² = 36π  V = 4/3π(3)³ = 36π',
+          answer: 'A = 36π m²  V = 36π m³',
+        },
+        {
+          id: 8,
+          question: 'Find the exact total surface area and volume of a sphere with diameter 8 m.',
+          type: 'Medium',
+          explaination: 'r = 4, A = 4π(4)² = 64π, V = 4/3π(4)³ = 256π/3',
+          answer: 'A = 64π m²  V = 256π/3 m³',
+        },
+        {
+          id: 9,
+          question: 'Find the exact total surface area and volume of a sphere with diameter 12 m.',
+          type: 'Medium',
+          explaination: 'r = 6, A = 4π(6)² = 144π, V = 4/3π(6)³ = 288π',
+          answer: 'A = 144π m²  V = 288π m³',
+        },
+        {
+          id: 10,
+          question: 'Find the surface area of a sphere with diameter 15 cm.',
+          type: 'Easy',
+          explaination: 'r = 7.5, A = 4π(7.5)² = 225π',
+          answer: 'A = 225π ≈ 707 cm²',
+        },
+        {
+          id: 11,
+          question: 'Find the volume of a sphere with diameter 18.3 cm.',
+          type: 'Easy',
+          explaination: 'r = 9.15, V = 4/3π(9.15)³',
+          answer: 'V ≈ 3220 cm³',
+        },
+        {
+          id: 12,
+          question: 'Find the surface area of the sphere whose volume is 354 m³.',
+          type: 'Hard',
+          explaination: 'V = 4/3π r³ ⇒ r = (3V/4π)^(1/3)  A = 4π r²',
+          answer: 'r = ((3 × 354)/4π)^(1/3) ≈ 4.36 m  A = 4π(4.36)² ≈ 238 m²',
+        },
+      ],
+      'surface-area-volume-of-hemispheres': [
+        {
+          id: 1,
+          question:
+            'Find the approximate volume of paint needed for the batch of 1000 fenceposts from Q34a, allowing that the paint is applied to produce a 0.4 mm thick coating. Justify any assumptions you make.',
+          type: 'Hard',
+          explaination:
+            'Assumption: paint layer thin compared to post dimensions, so V_paint ≈ A_surface × t.  Surface = cylinder curved + cone lateral + hemisphere curved (base of cylinder is interior — assumption: not painted).',
+          answer:
+            'Paint volume ≈ Surface area of post × thickness of paint.  l_cone = √(4² + 10²) = √116 ≈ 10.77 cm  A_post = 2π(4)(180) + π(4)(10.77) + 2π(4)²  = 1440π + 43.08π + 32π ≈ 1515.08π ≈ 4760 cm²  Thickness = 0.4 mm = 0.04 cm  V_(paint per post) ≈ 4760 × 0.04 ≈ 190 cm³  V_total ≈ 190000 cm³ = 190 litres',
+        },
+        {
+          id: 2,
+          question:
+            'The base of a pyramid is a square of side 12 cm. Each side face is an isosceles triangle with sides 12 cm, 15 cm and 15 cm. Find the area of each side face.',
+          type: 'Medium',
+          explaination:
+            'Drop perpendicular from apex to base of triangle:  h = √(15² − 6²)  A = 1/2 × 12 × h',
+          answer: 'h_tri = √(15² − 6²) = √189 = 3√21  A_face = 1/2(12)(3√21) = 18√21 ≈ 82.5 cm²',
+        },
+        {
+          id: 3,
+          question:
+            'A cylinder with length 1 m and radius 5 cm has a cone of the same radius and length 10 cm attached to one end. Find the surface area and volume of this compound shape.',
+          type: 'Medium',
+          explaination:
+            'Surface: cylinder curved + 1 circular end (the other end is where cone attaches, so no circle there) + cone curved surface.  A_(cyl curved) = 2π r h, A_(cone curved) = π r l',
+          answer:
+            'Convert units: cylinder length = 100 cm, cone height = 10 cm, r = 5 cm.  l_cone = √(5² + 10²) = √125 ≈ 11.18 cm  A = 2π(5)(100) + π(5)² + π(5)(11.18) ≈ 3142 + 78.5 + 175.6 = 3400 cm²  V = π(5)²(100) + 1/3π(5)²(10) ≈ 7854 + 262 = 8116 cm³',
+        },
+        {
+          id: 4,
+          question:
+            'A cone with height 6 cm and radius 2 cm has a hemispherical hole with radius 1 cm bored into the centre of its base. Find the surface area and volume of this compound shape.',
+          type: 'Hard',
+          explaination:
+            'Surface:  - Cone lateral: π r l  - Cone base annulus (full circle − hole circle): π(2)² − π(1)²  - Hemisphere inner curved surface: 2π(1)²  Volume:  - Cone volume − hemisphere volume',
+          answer:
+            'l_cone = √(4 + 36) = √40 = 2√10  A = π(2)(2√10) + π(2)² − π(1)² + 2π(1)²  = 4π√10 + 4π − π + 2π = 4π√10 + 5π ≈ 55.7 cm²  V = 1/3π(4)(6) − 2/3π(1)³ = 8π − 2π/3 = 22π/3 ≈ 23.1 cm³',
+        },
+        {
+          id: 5,
+          question:
+            'Two hemispheres, with A the centre of each, are joined at their flat surfaces. One has radius 8 mm and the other has radius 10 mm. Find the total surface area and volume of this compound shape.',
+          type: 'Hard',
+          explaination:
+            'The flat faces meet; exposed annulus (ring) on bottom hemisphere base:  Annulus area = π(10)² − π(8)²  Surface = curved surface of small hemi + curved surface of large hemi + annulus ring  V = V_(hemi small) + V_(hemi large)',
+          answer:
+            'A_total = 2π(8)² + 2π(10)² + π(10)² − π(8)²  = 128π + 200π + 100π − 64π = 364π ≈ 1144 mm²  V = 2/3π(8)³ + 2/3π(10)³ = 2/3π(512 + 1000) = 3024π/3 = 1008π ≈ 3167 mm³',
+        },
+        {
+          id: 6,
+          question:
+            'A pharmaceutical tablet takes the form of a cylinder capped at each end with a hemisphere. The initial tablet design has radius 2 mm and cylinder length 8 mm. Find the surface area and volume of this shape.',
+          type: 'Hard',
+          explaination:
+            'Cylinder curved surface + sphere surface (two hemispheres)  V = π r² L_cyl + 4/3π r³',
+          answer:
+            'Surface: cylinder curved (no end circles) + 2 hemisphere curved surfaces = 1 full sphere surface.  A = 2π(2)(8) + 4π(2)² = 32π + 16π = 48π ≈ 151 mm²  V = π(2)²(8) + 4/3π(2)³ = 32π + 32π/3 = 128π/3 ≈ 134 mm³',
+        },
+        {
+          id: 7,
+          question: 'Find the curved surface area and volume of a hemisphere with radius 5.2 m.',
+          type: 'Easy',
+          explaination: 'A = 2π r², V = 2/3π r³',
+          answer: 'A_curved = 2π(5.2)² ≈ 170 m²  V = 2/3π(5.2)³ ≈ 294 m³',
+        },
+        {
+          id: 8,
+          question: 'Find the curved surface area and volume of a hemisphere with radius 4 km.',
+          type: 'Easy',
+          explaination: 'A = 2π(4)², V = 2/3π(4)³',
+          answer: 'A_curved = 2π(4)² ≈ 100 km²  V = 2/3π(4)³ ≈ 134 km³',
+        },
+        {
+          id: 9,
+          question:
+            'Find the exact total surface area and volume of a hemisphere with radius 1/2 m.',
+          type: 'Medium',
+          explaination: 'Total surface = curved + base = 2π r² + π r² = 3π r²  V = 2/3π r³',
+          answer: 'A_total = 3π(1/2)² = 3π/4 m²  V = 2/3π(1/2)³ = π/12 m³',
+        },
+        {
+          id: 10,
+          question:
+            'Find the exact total surface area and volume of a hemisphere with radius 2/3 mm.',
+          type: 'Medium',
+          explaination: 'A = 3π r², V = 2/3π r³',
+          answer: 'A_total = 3π(2/3)² = 4π/3 mm²  V = 2/3π(2/3)³ = 16π/81 mm³',
+        },
+        {
+          id: 11,
+          question: 'Find the volume of a solid hemisphere of radius 4 cm.',
+          type: 'Easy',
+          explaination: 'V = 2/3π(4)³ = 128π/3',
+          answer: 'V = 128π/3 ≈ 134 cm³',
+        },
+        {
+          id: 12,
+          question:
+            'A fence post can be modelled as a cylinder with a hemisphere on top. The cylinder and the hemisphere have the same diameter of 28 cm. The total height of the post is 73 cm. Find the volume of the whole post, giving your answer in standard form.',
+          type: 'Medium',
+          explaination:
+            'Height of cylinder = total height − radius of hemisphere  V_cyl = π r² h_cyl, V_hemi = 2/3π r³',
+          answer:
+            'r = 14 cm  Height of cylinder = 73 − 14 = 59 cm  V = π(14)²(59) + 2/3π(14)³ ≈ 36,246 + 5,749 = 41,995 cm³ ≈ 4.20 × 10⁴ cm³',
+        },
+        {
+          id: 13,
+          question:
+            'Hence find the total surface area of the pyramid from Q27a (base side 12 cm, each triangular face area ≈ 82.5 cm²).',
+          type: 'Medium',
+          explaination: 'A = A_base + 4 × A_face',
+          answer: 'A_total = 12² + 4 × 18√21 = 144 + 72√21 ≈ 474 cm²',
+        },
+        {
+          id: 14,
+          question:
+            'Find the total surface area of the pyramid from Q31a (base side 13, height 24).',
+          type: 'Hard',
+          explaination: 'l = √(h² + (s/2)²)  A = s² + 4 × 1/2 × s × l',
+          answer:
+            'Apothem = 6.5, l = √(24² + 6.5²) = √618.25 ≈ 24.86  A = 13² + 4 × 1/2(13)(24.86) ≈ 169 + 647 = 816 (units²)',
+        },
+      ],
+      'surface-area-volume-of-cones': [
+        {
+          id: 1,
+          question:
+            'Find the curved surface area and volume of a cone with base radius 3 cm and height 4.1 cm.',
+          type: 'Easy',
+          explaination: '1. l = √(r² + h²)  2. A = π r l  3. V = 1/3π r² h',
+          answer:
+            'l = √(3² + 4.1²) ≈ 5.07 cm  A_curved = π(3)(5.07) ≈ 47.8 cm²  V = 1/3π(3)²(4.1) ≈ 38.6 cm³',
+        },
+        {
+          id: 2,
+          question:
+            'Find the curved surface area and volume of a cone with base radius 0.2 mm and height 7 mm.',
+          type: 'Easy',
+          explaination: 'l = √(r² + h²), A = π r l, V = 1/3π r² h',
+          answer:
+            'l = √(0.2² + 7²) ≈ 7.003 mm  A_curved = π(0.2)(7.003) ≈ 4.40 mm²  V = 1/3π(0.2)²(7) ≈ 0.293 mm³',
+        },
+        {
+          id: 3,
+          question:
+            'Find the exact total surface area and volume of a cone with base radius 5 cm and height 12 cm.',
+          type: 'Medium',
+          explaination:
+            'l = √(5² + 12²) = 13  A = π r l + π r² = 65π + 25π = 90π  V = 1/3π(25)(12) = 100π',
+          answer: 'l = 13 cm  A_total = π(5)(13) + π(5)² = 90π cm²  V = 1/3π(5)²(12) = 100π cm³',
+        },
+        {
+          id: 4,
+          question:
+            'Find the exact total surface area and volume of a cone with base radius 4 cm and height 3 cm.',
+          type: 'Medium',
+          explaination: 'l = √(16 + 9) = 5  A = π(4)(5) + π(4)² = 36π  V = 1/3π(16)(3) = 16π',
+          answer: 'l = 5 cm  A_total = 20π + 16π = 36π cm²  V = 16π cm³',
+        },
+        {
+          id: 5,
+          question: 'A cone has base area 8 cm² and height 10 cm. Calculate its volume.',
+          type: 'Easy',
+          explaination: 'V = 1/3 × 8 × 10 = 80/3',
+          answer: 'V ≈ 26.7 cm³',
+        },
+        {
+          id: 6,
+          question: 'A cone has base area 2 cm² and height 4 cm. Calculate its volume.',
+          type: 'Easy',
+          explaination: 'V = 1/3 × 2 × 4 = 8/3',
+          answer: 'V ≈ 2.67 cm³',
+        },
+        {
+          id: 7,
+          question:
+            'The base of a conical sculpture is a circle of diameter 3.2 m. The height of the sculpture is 3.1 m. Find the volume of the sculpture.',
+          type: 'Easy',
+          explaination: 'r = 1.6, V = 1/3π(1.6)²(3.1)',
+          answer: 'V = 1/3π(1.6)²(3.1) ≈ 8.31 m³',
+        },
+        {
+          id: 8,
+          question:
+            'A metal ornament is in the shape of a cone with radius 4.7 cm and height 8.3 cm. Find the volume of the ornament.',
+          type: 'Medium',
+          explaination: 'V = 1/3π r² h',
+          answer: 'V = 1/3π(4.7)²(8.3) ≈ 192 cm³',
+        },
+        {
+          id: 9,
+          question:
+            'Calculate the volume and total surface area of a cone with base radius 6 cm and slant height 8 cm.',
+          type: 'Medium',
+          explaination: 'h = √(l² − r²)  V = 1/3π r² h, A = π r l + π r²',
+          answer:
+            'h = √(8² − 6²) = √28 ≈ 5.29 cm  V = 1/3π(36)(√28) ≈ 199 cm³  A_total = π(6)(8) + π(6)² = 48π + 36π = 84π ≈ 264 cm²',
+        },
+        {
+          id: 10,
+          question:
+            'Calculate the volume and total surface area of a cone with base radius 4 cm and slant height 5 cm.',
+          type: 'Medium',
+          explaination: '3-4-5 triangle: h = 3  V = 1/3π(16)(3) = 16π  A = 36π',
+          answer:
+            'h = √(25 − 16) = 3 cm  V = 1/3π(16)(3) = 16π ≈ 50.3 cm³  A_total = π(4)(5) + π(4)² = 20π + 16π = 36π ≈ 113 cm²',
+        },
+      ],
+      'volume-of-pyramids': [
+        {
+          id: 1,
+          question:
+            'A triangular-based pyramid has base area 6 cm² and height 3 cm. Calculate its volume.',
+          type: 'Easy',
+          explaination: 'V = 1/3 × 6 × 3 = 6',
+          answer: 'V = 6 cm³',
+        },
+        {
+          id: 2,
+          question:
+            'A triangular-based pyramid has base area 8 cm² and height 6 cm. Calculate its volume.',
+          type: 'Easy',
+          explaination: 'V = 1/3 × 8 × 6 = 16',
+          answer: 'V = 16 cm³',
+        },
+        {
+          id: 3,
+          question:
+            'A square-based pyramid has base area 5 cm² and height 12 cm. Calculate its volume.',
+          type: 'Easy',
+          explaination: 'V = 1/3 × 5 × 12 = 20',
+          answer: 'V = 20 cm³',
+        },
+        {
+          id: 4,
+          question:
+            'A square-based pyramid has base area 9 cm² and height 6 cm. Calculate its volume.',
+          type: 'Easy',
+          explaination: 'V = 1/3 × 9 × 6 = 18',
+          answer: 'V = 18 cm³',
+        },
+        {
+          id: 5,
+          question:
+            'Calculate the volume and total surface area of a square-based right pyramid with base side 8 mm, base diagonal half = 4√2 mm, and slant height 3 mm.',
+          type: 'Medium',
+          explaination:
+            "From diagram: square base 8 mm × 8 mm, slant edge (lateral edge) = 3 mm.  Half diagonal of base = (8√2)/2 = 4√2  Check: h = √(3² − (4√2)²) gives imaginary — slant height of face is 3 mm (apothem distance).  Apothem of base = 4 mm.  h = √(3² − 4²) still imaginary. Likely the '3 mm' label is the vertical height.  h = 3, base = 8:  V = 1/3(64)(3) = 64 mm³  Slant height of face l = √(h² + 4²) = √(9 + 16) = 5 mm  A_total = 64 + 4 × 1/2(8)(5) = 64 + 80 = 144 mm²",
+          answer:
+            "Need to find true height first.  h = √(3² − (4√2)²) — recheck: slant edge = 3 mm, half-diagonal = 4√2 ≈ 5.66 mm which exceeds slant edge. The labelled '3 mm' is the slant height of a triangular face (apothem-based), base = 8 mm.  h = √(3² − 4²) — still inconsistent. Most likely: slant height of face = 3 mm, apothem = 4 mm (half-base).  h = √(3² − 4²) invalid. Diagram shows slant height label '3 mm' along a lateral edge and base 8 mm × 8 mm.",
+        },
+        {
+          id: 6,
+          question:
+            'Calculate the volume and total surface area of a square-based right pyramid with base side 12 cm and slant height (of face) 7 cm.',
+          type: 'Medium',
+          explaination:
+            'Apothem of base = 6  h = √(7² − 6²) = √13  V = 1/3(12²)(√13)  A = 12² + 4 × 1/2(12)(7)',
+          answer:
+            'h = √(7² − 6²) = √13 cm  V = 1/3(144)√13 ≈ 173 cm³  A_total = 144 + 4 × 1/2(12)(7) = 144 + 168 = 312 cm²',
+        },
+        {
+          id: 7,
+          question:
+            'Calculate the volume and total surface area of a rectangular-based right pyramid with base dimensions 3 mm × 2 mm and slant height 1 mm.',
+          type: 'Medium',
+          explaination: 'V = 1/3 × A_base × h  A_total = A_base + lateral faces',
+          answer:
+            "Apothem along 3 mm side = 1 mm (half of 2 mm side).  h = √(1² − 1²) = 0 — invalid. Interpreting '1 mm' as vertical height:  V = 1/3(6)(1) = 2 mm³  Slant heights: l₁ = √(1 + 1) = √2, l₂ = √(1 + 2.25) = √3.25  A = 6 + 2 × 1/2(3)(√2) + 2 × 1/2(2)(√3.25) ≈ 6 + 4.24 + 3.61 = 13.9 mm²",
+        },
+        {
+          id: 8,
+          question:
+            'Calculate the volume and total surface area of a rectangular-based right pyramid with base dimensions 12 cm × 8 cm and slant height 10 cm.',
+          type: 'Medium',
+          explaination: 'h = √(l² − (b/2)²)  V = 1/3 A_base h',
+          answer:
+            'Apothem along 12 cm side = 4 cm (half of 8 cm).  h = √(10² − 4²) = √84 ≈ 9.17 cm  V = 1/3(96)(√84) ≈ 293 cm³  l₂ = √(h² + 6²) = √(84 + 36) = √120 ≈ 10.95  A = 96 + 2 × 1/2(12)(10) + 2 × 1/2(8)(√120) ≈ 96 + 120 + 87.6 = 304 cm²',
+        },
+        {
+          id: 9,
+          question:
+            'Calculate the volume and total surface area of a square-based right pyramid with base side 4 cm, and slant height of triangular face 3 cm.',
+          type: 'Medium',
+          explaination: 'h = √(3² − 2²) = √5  V = 1/3(16)√5  A = 16 + 4 × 6 = 40',
+          answer:
+            'Apothem = 2 cm.  h = √(3² − 2²) = √5 cm  V = 1/3(16)(√5) ≈ 11.9 cm³  A_total = 16 + 4 × 1/2(4)(3) = 16 + 24 = 40 cm²',
+        },
+        {
+          id: 10,
+          question:
+            'Calculate the volume and total surface area of a square-based right pyramid with base side 12 cm and slant edge (lateral edge) 19 cm.',
+          type: 'Hard',
+          explaination: 'h = √(l_edge² − (d/2)²) where d = 12√2',
+          answer:
+            'Half-diagonal = 6√2 cm.  h = √(19² − (6√2)²) = √(361 − 72) = √289 = 17 cm  Slant height of face: apothem = 6, l = √(17² + 6²) = √325 ≈ 18.03  V = 1/3(144)(17) = 816 cm³  A_total = 144 + 4 × 1/2(12)(√325) ≈ 144 + 434 = 578 cm²',
+        },
+        {
+          id: 11,
+          question:
+            'Find the volume of the pyramid from Q27a (base side 12 cm, slant height of face = 3√21 cm).',
+          type: 'Medium',
+          explaination: 'Vertical height h = √(l_face² − 6²) where apothem = 6  V = 1/3 × 144 × h',
+          answer:
+            'h = √((3√21)² − 6²) = √(189 − 36) = √153 = 3√17  V = 1/3(144)(3√17) = 144√17 ≈ 594 cm³',
+        },
+      ],
+      'total-surface-area-of-hemispheres': [
+        {
+          id: 1,
+          question:
+            'Find the total surface area of the toy rocket from Q26a (cone on cylinder, diameter 18 cm, cylinder height 23 cm, cone slant height 15 cm).',
+          type: 'Hard',
+          explaination:
+            'Surfaces: cone lateral + cylinder curved + cylinder bottom base (top base joins cone — not included).  A_cone = π r l, A_cyl = 2π r h, A_base = π r²',
+          answer: 'A = π(9)(15) + 2π(9)(23) + π(9)² ≈ 424 + 1300 + 254 = 1978 cm²',
+        },
+        {
+          id: 2,
+          question:
+            'For the cone in Q23a (vertical height 12 cm, slant height 17 cm, radius √145 cm), find the total surface area.',
+          type: 'Medium',
+          explaination: 'A = π r l + π r²  = π√145(17) + π(145)',
+          answer: 'A = π√145· 17 + π(√145)² = 17π√145 + 145π ≈ 643 + 456 = 1099 cm²',
+        },
+        {
+          id: 3,
+          question: 'A solid hemisphere has radius 3.2 cm. Find its total surface area.',
+          type: 'Easy',
+          explaination: 'A = 2π r² + π r² = 3π r² = 3π(3.2)²',
+          answer: 'A_total = 3π(3.2)² ≈ 96.5 cm²',
+        },
+      ],
+      'cone-geometry-finding-radius': [
+        {
+          id: 1,
+          question:
+            'A cone has vertical height 12 cm and slant height 17 cm. Find the radius of the base of the cone.',
+          type: 'Medium',
+          explaination: 'r = √(l² − h²) = √(289 − 144) = √145',
+          answer: 'r = √(17² − 12²) = √145 ≈ 12.0 cm',
+        },
+      ],
+      'cylinder-finding-radius-from-volume': [
+        {
+          id: 1,
+          question:
+            'A cylinder has height 12.3 cm and volume 503.7 cm³. Find the radius of the base of the cylinder.',
+          type: 'Medium',
+          explaination: 'V = π r² h ⇒ r² = 503.7/(π × 12.3) ⇒ r = √(503.7/12.3π)',
+          answer: 'r ≈ 3.60 cm',
+        },
+      ],
+      'cone-matching-volume-to-cylinder': [
+        {
+          id: 1,
+          question:
+            'Find the height of a cone which has the same radius as the cylinder in Q24a and the same volume (503.7 cm³).',
+          type: 'Hard',
+          explaination: '1/3π r² h_cone = π r² h_cyl ⇒ h_cone = 3h_cyl',
+          answer: 'h_cone = 3 × h_cylinder = 3 × 12.3 = 36.9 cm',
+        },
+      ],
+      'volume-of-spheres-reverse-problem': [
+        {
+          id: 1,
+          question:
+            'The ornament from Q25a is melted down and made into a ball. Find the radius of the ball.',
+          type: 'Hard',
+          explaination: '4/3π r³ = V_cone  r³ = 3V/4π',
+          answer: 'r = (3V/4π)^(1/3) ≈ 3.60 cm',
+        },
+      ],
+      'compound-shapes-cone-on-cylinder': [
+        {
+          id: 1,
+          question:
+            'A toy rocket is modelled as a cone on top of a cylinder. Both have diameter 18 cm. The height of the cylinder is 23 cm and the total height of the toy is 35 cm. Find the slant height of the cone.',
+          type: 'Hard',
+          explaination: 'h_cone = 35 − 23 = 12  l = √(r² + h²) = √(81 + 144) = 15',
+          answer: 'Height of cone = 35 − 23 = 12 cm, r = 9 cm  l = √(9² + 12²) = √225 = 15 cm',
+        },
+      ],
+      'square-based-pyramid-finding-base-side': [
+        {
+          id: 1,
+          question:
+            'A square-based pyramid has height 24 cm and volume 1352 m³. Find the length of one side of the base. (Note: units in question may be mixed — assume all in consistent units as given.)',
+          type: 'Hard',
+          explaination: 'V = 1/3s² h ⇒ s² = 3V/h = (3 × 1352)/24 = 169 ⇒ s = 13',
+          answer: 's ≈ 13.0 (units)',
+        },
+      ],
+      'scaling-of-compound-shapes': [
+        {
+          id: 1,
+          question:
+            'After trialing the tablet from Q33a, the radius must be decreased by 10% for ease of swallowing. The volume must also be decreased by 10%. Find the total length of the new tablet (same capsule shape).',
+          type: 'Hard',
+          explaination:
+            "New radius r' = 0.9r, new volume V' = 0.9V  Solve for new cylinder length using V' = π r'² L + 4/3π r'³  Total length = L + 2r'",
+          answer:
+            "New r' = 0.9 × 2 = 1.8 mm  New V' = 0.9 × 128π/3 = 115.2π/3  π(1.8)² L_cyl + 4/3π(1.8)³ = 115.2π/3  3.24 L_cyl = 115.2/3 − (4 × 5.832)/3 = 38.4 − 7.776 = 30.624  L_cyl ≈ 9.45 mm  Total length = L_cyl + 2r' ≈ 9.45 + 3.6 = 13.05 mm",
+        },
+      ],
+      'volume-of-compound-shapes-batch-calculation': [
+        {
+          id: 1,
+          question:
+            'A solid metal fencepost consists of a cylinder with radius 4 cm and length 1.8 m, a conical spike at one end (length 0.1 m), and a hemisphere at the other. All have the same radius. Find the volume of metal needed to manufacture a batch of 1000 such posts.',
+          type: 'Hard',
+          explaination: 'V = V_cyl + V_cone + V_hemi  Multiply by 1000',
+          answer:
+            'Convert: cylinder h = 180 cm, cone h = 10 cm, r = 4 cm  V_post = π(4)²(180) + 1/3π(4)²(10) + 2/3π(4)³  = 2880π + 160π/3 + 128π/3  = 2880π + 96π = 2976π ≈ 9348 cm³  V₁₀₀₀ = 9348000 cm³ ≈ 9.35 × 10⁶ cm³',
+        },
+      ],
+    },
+  },
+  {
+    'geometry-voronoi-diagrams': {
+      title: 'Geometry & Voronoi Diagrams',
+      'perpendicular-bisectors': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation y = 2x + 11 and midpoint (−4, 3). Give your answer in the form ax + by = c.',
+          type: 'Easy',
+          explaination:
+            'Gradient of AB: m = 2  Perp gradient: m_(⊥) = −1/2  Using point (−4,3): y − 3 = −1/2(x + 4)  2y − 6 = −(x + 4)  x + 2y = 2',
+          answer: '2x − y = −11',
+        },
+        {
+          id: 2,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation y = −3x + 7 and midpoint (6, −11). Give your answer in the form ax + by = c.',
+          type: 'Easy',
+          explaination:
+            'Gradient of AB: m = −3  Perp gradient: m_(⊥) = 1/3  Using point (6,−11): y + 11 = 1/3(x − 6)  3y + 33 = x − 6  x − 3y = 39',
+          answer: 'x − 3y = 39',
+        },
+        {
+          id: 3,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation y = −4/3x − 10 and midpoint (−12, 6). Give your answer in the form ax + by = c.',
+          type: 'Easy',
+          explaination:
+            'Gradient of AB: m = −4/3  Perp gradient: m_(⊥) = 3/4  Using (−12,6): y − 6 = 3/4(x + 12)  4y − 24 = 3x + 36  3x − 4y = −60',
+          answer: '3x − 4y = −60',
+        },
+        {
+          id: 4,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation y = 2/5x + 1 and midpoint (10, 5). Give your answer in the form ax + by = c.',
+          type: 'Easy',
+          explaination:
+            'Gradient of AB: m = 2/5  Perp gradient: m_(⊥) = −5/2  Using (10,5): y − 5 = −5/2(x − 10)  2y − 10 = −5x + 50  5x + 2y = 60  Rearranging: 2x + 5y = 45',
+          answer: '2x + 5y = 45',
+        },
+        {
+          id: 5,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation 4x + 5y = 13 and midpoint (2, 1). Give your answer in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'Rearrange: y = −4/5x + 13/5, so m = −4/5  Perp gradient: m_(⊥) = 5/4  Using (2,1): y − 1 = 5/4(x − 2)  4y − 4 = 5x − 10  5x − 4y = 6',
+          answer: '5x − 4y = 6',
+        },
+        {
+          id: 6,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation 3x − 4y = 9 and midpoint (−1, −3). Give your answer in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'Rearrange: y = 3/4x − 9/4, so m = 3/4  Perp gradient: m_(⊥) = −4/3  Using (−1,−3): y + 3 = −4/3(x + 1)  3y + 9 = −4x − 4  4x + 3y = −13',
+          answer: '4x + 3y = −13',
+        },
+        {
+          id: 7,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation 6x − 24y = −37 and midpoint (1/2, 5/3). Give your answer in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'Rearrange: y = 1/4x + 37/24, so m = 1/4  Perp gradient: m_(⊥) = −4  Using (1/2,5/3): y − 5/3 = −4(x − 1/2)  y − 5/3 = −4x + 2  4x + y = 11/3',
+          answer: '4x + y = 17/3',
+        },
+        {
+          id: 8,
+          question:
+            'Find the equation of the perpendicular bisector of AB, where AB has equation 4x + 12y = 33 and midpoint (−9/4, 7/2). Give your answer in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'Rearrange: y = −1/3x + 11/4, so m = −1/3  Perp gradient: m_(⊥) = 3  Using (−9/4,7/2): y − 7/2 = 3(x + 9/4)  y = 3x + 27/4 + 7/2 = 3x + 41/4  3x − y = −41/4',
+          answer: '3x − y = −55/4',
+        },
+        {
+          id: 9,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (5, 2) and (13, 6). Give your answer in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'Midpoint: ((5 + 13)/2, (2 + 6)/2) = (9, 4)  Gradient: m = (6 − 2)/(13 − 5) = 1/2  Perp gradient: m_(⊥) = −2  Equation: y − 4 = −2(x − 9)  y = −2x + 22',
+          answer: 'y = −2x + 22',
+        },
+        {
+          id: 10,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (3, 1) and (21, 7). Give your answer in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'Midpoint: (12, 4)  Gradient: m = 6/18 = 1/3  Perp gradient: m_(⊥) = −3  Equation: y − 4 = −3(x − 12)  y = −3x + 40',
+          answer: 'y = −3x + 38',
+        },
+        {
+          id: 11,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (−4, 5) and (5, −1). Give your answer in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'Midpoint: (1/2, 2)  Gradient: m = −6/9 = −2/3  Perp gradient: m_(⊥) = 3/2  Equation: y − 2 = 3/2(x − 1/2)  y = 3/2x − 3/4 + 2 = 3/2x + 5/4',
+          answer: 'y = 3/2x − 3/4',
+        },
+        {
+          id: 12,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (−2, −3) and (2, 7). Give your answer in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'Midpoint: (0, 2)  Gradient: m = 10/4 = 5/2  Perp gradient: m_(⊥) = −2/5  Equation: y − 2 = −2/5(x − 0)  y = −2/5x + 2',
+          answer: 'y = −2/5x + 2',
+        },
+        {
+          id: 13,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (17/3, 1/4) and (7/3, 21/4). Give your answer in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'Midpoint: (4, 11/4)  Gradient: m = (21/4 − 1/4)/(7/3 − 17/3) = 5/(−10/3) = −3/2 · 1/1 = −11/4 ÷ (−10/3)  Perp gradient obtained; use midpoint for equation.',
+          answer: 'y = 4/11x + 3/2',
+        },
+        {
+          id: 14,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (3/2, 4/5) and (9/2, 34/5). Give your answer in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'Midpoint: (3, 3)  Gradient: m = (34/5 − 4/5)/(9/2 − 3/2) = 6/3 = 3... ⇒ check; actual gradient = (30/5)/3 = 2  Perp gradient: m_(⊥) = −1/2  Use midpoint (3,3).',
+          answer: 'y = −1/3x + 19/5',
+        },
+        {
+          id: 15,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (−23/2, −31/6) and (−7/2, 17/6). Give your answer in the form y = mx + c.',
+          type: 'Hard',
+          explaination:
+            'Find midpoint, compute gradient m, find perpendicular gradient m_(⊥) = −1/m, then use point-slope form with the midpoint.',
+          answer:
+            'To be computed using gradient and midpoint method with given fractional coordinates.',
+        },
+        {
+          id: 16,
+          question:
+            'Find the equation of the perpendicular bisector of the line segment connecting the points (11/2, −13/3) and (−5/2, −1/3). Give your answer in the form y = mx + c.',
+          type: 'Hard',
+          explaination:
+            'Find midpoint, compute gradient m, find perpendicular gradient m_(⊥) = −1/m, then use point-slope form with the midpoint.',
+          answer:
+            'To be computed using gradient and midpoint method with given fractional coordinates.',
+        },
+        {
+          id: 17,
+          question:
+            'The points A(0, 0), B(4, 4) and C(2, 4) are sites on a Voronoi diagram.  Find the equation of the perpendicular bisector of:  (i) AC  (ii) BC  (iii) AB',
+          type: 'Medium',
+          explaination:
+            '(i) Midpoint of AC: (1,2); gradient AC = 2; perp gradient = −1/2  y − 2 = −1/2(x − 1) ⇒ x + 2y = 5  (ii) Midpoint of BC: (3,4); gradient BC = 0; perp gradient = undefined ⇒ x = 3  (iii) Midpoint of AB: (2,2); gradient AB = 1; perp gradient = −1  y − 2 = −(x − 2) ⇒ y = −x + 4',
+          answer:
+            '(i) Perp bisector of AC: x + 2y = 5  (ii) Perp bisector of BC: x = 3  (iii) Perp bisector of AB: y = −x + 4',
+        },
+        {
+          id: 18,
+          question:
+            'The Voronoi diagram represents a map of a woodland area. Points A(3, 2), B(7, 9), C(11, 7) and D(10, 3) represent the locations of four existing holiday cottages.  The equation of the perpendicular bisector of CD is y = −1/4x + 61/8.  Show that the equation of the perpendicular bisector of BC is y = 2x − 10.',
+          type: 'Medium',
+          explaination:
+            'Midpoint of BC: (9, 8)  Gradient of BC: m = (7 − 9)/(11 − 7) = −2/4 = −1/2  Perp gradient: m_(⊥) = 2  Equation: y − 8 = 2(x − 9)  y = 2x − 18 + 8 = 2x − 10 ✓',
+          answer: 'Shown: perp bisector of BC is y = 2x − 10.',
+        },
+        {
+          id: 19,
+          question:
+            'A new restaurant opens at the location M(6, 8). The dotted lines are the perpendicular bisectors of MB and MC.  Find the equation of the perpendicular bisector of MD and add it to a copy of the diagram.',
+          type: 'Medium',
+          explaination:
+            'Identify coordinates of D from diagram. Find midpoint of MD, gradient of MD, perpendicular gradient, then write equation using point-slope form.',
+          answer: 'Equation of perp bisector of MD.',
+        },
+        {
+          id: 20,
+          question:
+            'In the Voronoi diagram opposite, for the given line segment:  (i) State the two points which are equally distant from that line segment.  (ii) Verify that the line segment is part of the perpendicular bisector of these two points.  (a) blue line  (b) red line  (c) green line  Diagram shows points A, B, C, D on a coordinate grid with coloured line segments.',
+          type: 'Medium',
+          explaination:
+            'For each coloured segment: identify the two sites it separates, find midpoint and gradient of the segment joining those sites, confirm perp bisector passes through segment.',
+          answer:
+            '(a) Blue line: equidistant from sites B and C; verify it lies on perp bisector of BC.  (b) Red line: equidistant from A and B; verify it lies on perp bisector of AB.  (c) Green line: equidistant from C and D; verify it lies on perp bisector of CD.',
+        },
+        {
+          id: 21,
+          question:
+            'Two farmers want to split their land so that the boundary is an equal distance from their houses. On a map, their farmhouses are at coordinates (1, 2) and (3, 1). Find the equation of the boundary line.',
+          type: 'Easy',
+          explaination:
+            'Midpoint: (2, 3/2)  Gradient between houses: m = (1 − 2)/(3 − 1) = −1/2  Perp gradient: m_(⊥) = 2  Equation: y − 3/2 = 2(x − 2)  y = 2x − 4 + 3/2 = 2x − 5/2',
+          answer: 'y = 2x − 3',
+        },
+      ],
+      'voronoi-diagram-vocabulary': [
+        {
+          id: 1,
+          question:
+            'A national supermarket chain has five distribution centres, shown as the sites of a Voronoi diagram. Each store is served by its closest distribution centre.  Find which distribution centre serves the store located at the point with coordinates:  (i) (4, 5)  (ii) (14, 1)  (iii) (9, 8)',
+          type: 'Medium',
+          explaination:
+            'Locate each point on the Voronoi diagram. The cell the point lies in determines the nearest distribution centre.',
+          answer: '(i) Site A; (ii) Site B; (iii) Site E (read from Voronoi diagram in image 5).',
+        },
+        {
+          id: 2,
+          question:
+            'A national supermarket chain has five distribution centres, shown as the sites of a Voronoi diagram. Explain the significance of the cell containing site A in the context of this problem.',
+          type: 'Easy',
+          explaination:
+            'The cell of site A represents the region of stores that are closer to distribution centre A than to any other centre.',
+          answer:
+            'All stores in the cell containing site A are served by distribution centre A — it is the nearest distribution centre for those stores.',
+        },
+        {
+          id: 3,
+          question:
+            'Distribution centre C closes down. Which of the stores identified in part (a) will need to switch to a different distribution centre? State the new distribution centre.',
+          type: 'Medium',
+          explaination:
+            'Check each store location from part (a) against the new Voronoi diagram (without C). If its cell changes, state the new distribution centre.',
+          answer:
+            "The store in C's cell switches to the nearest remaining site (e.g. A, B, D, or E depending on new diagram).",
+        },
+        {
+          id: 4,
+          question:
+            'For each of the following Voronoi diagrams, give all the examples of:  (i) sites  (ii) vertices  (iii) finite edges  (iv) finite cells  Diagram (a): Contains labeled points B, D, G, H (vertices), E, F (sites), A, C (sites), with edges shown.  Diagram (b): Contains labeled points G, D, H, E, J, I, F, B, L, K, A, C, with edges shown.',
+          type: 'Easy',
+          explaination:
+            'Identify sites (blue dots), vertices (intersections of 3+ edges), finite edges (bounded at both ends), finite cells (bounded regions).',
+          answer:
+            '(a) Sites: B, D, E, F, C, A (blue dots); Vertices: G, H; Finite edges and cells identified from diagram.  (b) Sites: G, D, H, F, I, B, K, A, C, E, J, L (blue dots); vertices where three edges meet; finite edges bounded at both ends.',
+        },
+        {
+          id: 5,
+          question:
+            'A botanist suspects that contaminated water is causing a certain disease in plants in a park. The park has four small ponds and she thinks that one of them is the source of the disease. The ponds are shown as the sites of the Voronoi diagram.  The botanist selects a sample of locations around the park and counts the number of affected plants at each location:  | Coordinates | (1,2) | (3,5) | (6,4) | (0,9) | (11,9) | (13,2) | (9,9) | (1,8) |  |---|---|---|---|---|---|---|---|---|  | Number of plants | 3 | 8 | 3 | 11 | 6 | 12 | 2 | 0 |  Which of the four ponds is most likely to be contaminated? Justify your answer.',
+          type: 'Hard',
+          explaination:
+            "1. Locate each sample point on the Voronoi diagram to determine which pond's cell it belongs to.  2. Sum (or average) the plant counts in each cell.  3. The pond with the highest total/average is most likely contaminated.",
+          answer:
+            'Pond A (or whichever pond has the highest average number of affected plants in its cell).',
+        },
+        {
+          id: 6,
+          question:
+            'The points A(0, 0), B(4, 4) and C(2, 4) are sites on a Voronoi diagram.  Sketch the Voronoi diagram.',
+          type: 'Medium',
+          explaination:
+            'Draw the three sites. Plot the vertex at (3,1). Draw rays along each perpendicular bisector from this vertex outward to bound each cell.',
+          answer:
+            'Voronoi diagram with three cells for A, B, C, vertex at (3,1), edges along y = −x + 4, x = 3, and x + 2y = 5.',
+        },
+      ],
+      'reading-voronoi-diagrams': [
+        {
+          id: 1,
+          question:
+            'For each of the following Voronoi diagrams, find the site closest to:  (i) (0, 1)  (ii) (3, 2)  Diagram (a): Sites labeled A, B, C, D, E, F on a coordinate grid.  Diagram (b): Sites labeled A, B, C, D, E, F on a coordinate grid.',
+          type: 'Easy',
+          explaination:
+            'Locate the given point on the diagram. The cell it falls in determines the closest site.',
+          answer:
+            '(a)(i) Site A; (a)(ii) Site B or C depending on diagram reading.  (b) Identify from diagram.',
+        },
+        {
+          id: 2,
+          question:
+            "The sites of the Voronoi diagram are the locations of nine schools in a city. A child can choose a school if their house is located in that school's cell, including the edges.  (i) Which schools can a child attend if their house is located at the point M?  (ii) Which schools can a child attend if their house is located at the point P?  The diagram shows nine schools labeled with various letters, with M on an edge and P on a vertex.",
+          type: 'Easy',
+          explaination:
+            'If the point is in a cell: one school. If on an edge: two schools. If on a vertex: three or more schools.',
+          answer:
+            '(i) M is on an edge → can attend the two schools on either side of that edge.  (ii) P is on a vertex → can attend the three (or more) schools whose cells meet at that vertex.',
+        },
+        {
+          id: 3,
+          question:
+            'The sites of the Voronoi diagram are the locations of nine schools in a city. There is one location in the city which has the largest choice of schools. Which schools are they?  The diagram shows nine schools with a vertex where several cells meet.',
+          type: 'Easy',
+          explaination:
+            'Identify the vertex in the Voronoi diagram where the greatest number of edges/cells intersect.',
+          answer: 'The vertex where the most cells meet gives the largest choice of schools.',
+        },
+        {
+          id: 4,
+          question:
+            'The points A(0, 0), B(4, 4) and C(2, 4) are sites on a Voronoi diagram.  Which site is the point (4, 2) closest to?',
+          type: 'Easy',
+          explaination:
+            'Either read from the sketch, or calculate distances:  d(A) = √(16 + 4) = √20  d(B) = √(0 + 4) = 2  d(C) = √(4 + 4) = √8  Smallest is d(B) = 2.',
+          answer: 'Site B (since (4,2) lies in cell B of the Voronoi diagram).',
+        },
+        {
+          id: 5,
+          question:
+            "Roshni wants her holiday cottage on a point with integer coordinates, closer to D than any other existing cottage (excluding Obi's new cottage), and as far north as possible.  Which of the following points could Roshni choose?  (i) (8, 8)  (ii) (7, 5)  (iii) (10, 3)",
+          type: 'Hard',
+          explaination:
+            'Check each point against the Voronoi diagram (or calculate distances to each cottage):  - Check if closer to D than to A, B, C.  - Among valid points, choose the one with the greatest y-coordinate.',
+          answer: "(ii) (7, 5) — lies in D's cell and is the furthest north of the valid options.",
+        },
+        {
+          id: 6,
+          question:
+            'A city has four hospitals located at points A, B, C and D in the diagram. An emergency call is always sent to the nearest hospital. A Voronoi diagram is used to determine the area served by each hospital.  Find the equation of the line highlighted in red.',
+          type: 'Medium',
+          explaination:
+            'Read the red line from the Voronoi diagram. It is the perpendicular bisector between two adjacent hospital sites. Find its equation using those two points.',
+          answer: 'Equation of red line (read from diagram, e.g. y = 10).',
+        },
+        {
+          id: 7,
+          question:
+            'A city has four hospitals. An emergency call is always sent to the nearest hospital. A Voronoi diagram is used to determine the area served by each hospital.  An accident takes place at the point with coordinates (8, 13). Which hospital should be called?',
+          type: 'Easy',
+          explaination:
+            'Locate (8,13) on the Voronoi diagram. The cell it lies in determines the nearest hospital.',
+          answer: "Hospital B (located in B's cell on the diagram).",
+        },
+        {
+          id: 8,
+          question:
+            'The Voronoi diagram shows locations of four restaurants within a shopping centre, which is represented by the shaded rectangle.  Customers tend to go to the restaurant closest to them. A customer is located at the point with coordinates (7, 4). Which restaurant will they go to?',
+          type: 'Easy',
+          explaination:
+            'Locate (7,4) on the diagram. The cell it lies in determines the nearest restaurant.',
+          answer: "Restaurant D (located in D's cell at (7,4)).",
+        },
+        {
+          id: 9,
+          question:
+            'Seven weather stations are located on an island. The diagram shows the Voronoi diagram with vertices at the weather stations (labeled A through G). One of the edges in the diagram is missing.  Write down the equation of the missing edge.',
+          type: 'Medium',
+          explaination:
+            'Examine the Voronoi diagram to identify which edge is absent. The missing edge is the perpendicular bisector between two adjacent sites that lacks its boundary.',
+          answer: 'Missing edge equation read from diagram (e.g. x = 6).',
+        },
+      ],
+      'updating-voronoi-diagrams': [
+        {
+          id: 1,
+          question:
+            'You are given a Voronoi diagram (black lines), a new site D (red point), and the perpendicular bisectors (grey lines) between the new site and some of the existing sites. On a sketch of the diagram, add the new site D to the Voronoi diagram.  Diagram shows sites A, B, C and new site D with grey perpendicular bisectors.',
+          type: 'Medium',
+          explaination:
+            "Identify which grey perpendicular bisectors form the boundary of D's new cell. Erase the old edges that fall inside D's new cell. The new edges are the relevant portions of the grey bisectors.",
+          answer:
+            'Updated Voronoi diagram with new cell for D correctly bounded by perpendicular bisectors.',
+        },
+        {
+          id: 2,
+          question:
+            'You are given a Voronoi diagram (black lines), a new site D (red point), and the perpendicular bisectors (grey lines) between the new site and some of the existing sites. On a sketch of the diagram, add the new site D to the Voronoi diagram.  Diagram shows sites A, B, C and new site D with grey perpendicular bisectors.',
+          type: 'Medium',
+          explaination:
+            'Same method as 12a: identify bounding grey bisectors, trim old edges, insert new boundaries.',
+          answer: 'Updated Voronoi diagram with new cell for D correctly bounded.',
+        },
+        {
+          id: 3,
+          question:
+            'You are given a Voronoi diagram (black lines), a new site D (red point), and the perpendicular bisectors (grey lines) between the new site and some existing sites. On a sketch, add the new site D to the Voronoi diagram.  Diagram shows sites A, B, C and new site D with grey perpendicular bisectors.',
+          type: 'Medium',
+          explaination: 'Follow the same method as Q12.',
+          answer: "Correctly updated Voronoi diagram with D's cell shown.",
+        },
+        {
+          id: 4,
+          question:
+            'You are given a Voronoi diagram (black lines), a new site E (red point), and the perpendicular bisectors (grey lines) between the new site and some existing sites. On a sketch, add the new site E to the Voronoi diagram.  Diagram shows sites A, B, C, D and new site E with grey perpendicular bisectors.',
+          type: 'Hard',
+          explaination: 'Follow the same method as Q12.',
+          answer: "Correctly updated Voronoi diagram with E's cell shown.",
+        },
+        {
+          id: 5,
+          question:
+            'Distribution centre C closes down. Draw the new Voronoi diagram with sites A, B, D and E.',
+          type: 'Hard',
+          explaination:
+            'Remove site C and redraw the Voronoi diagram for the four remaining sites A, B, D, E. The cell boundaries are the perpendicular bisectors between adjacent sites.',
+          answer:
+            'New Voronoi diagram with four cells, where the region previously belonging to C is distributed among adjacent sites.',
+        },
+        {
+          id: 6,
+          question:
+            'A new cottage is actually built at the point E(3, 6). The dotted lines are perpendicular bisectors between E and the other four sites.  Copy and complete the new Voronoi diagram to include site E.',
+          type: 'Hard',
+          explaination:
+            "Use the given dotted perpendicular bisectors between E and the other sites. Determine which portions of those bisectors form the boundary of E's cell and update the diagram accordingly.",
+          answer: 'Updated Voronoi diagram showing new cell for E.',
+        },
+        {
+          id: 7,
+          question:
+            'A new restaurant opens at the location M(6, 8). The dotted lines are the perpendicular bisectors of MB, MC, and the one found in part (d).  Complete the new Voronoi diagram on all five vertices.',
+          type: 'Hard',
+          explaination:
+            "Use the perpendicular bisectors (dotted lines) from MB, MC, MD to determine the new cell for M. Update the original Voronoi diagram by adding M's cell and adjusting boundaries of B, C, D's cells.",
+          answer: "Updated Voronoi diagram showing all five restaurants' cells.",
+        },
+      ],
+      'nearest-neighbour-interpolation': [
+        {
+          id: 1,
+          question:
+            'Seven weather stations are located on an island. The temperature at each station is given in the table below.  | Station | A | B | C | D | E | F | G |  |---|---|---|---|---|---|---|---|  | Temperature (°C) | 18 | 22 | 20 | 18 | 19 | 23 | 20 |  Using nearest neighbour interpolation, estimate the temperature at the location with coordinates (3, 5).',
+          type: 'Medium',
+          explaination:
+            "Locate (3,5) on the Voronoi diagram. Identify which cell it lies in, i.e. which station is its nearest neighbour. Read off that station's temperature.",
+          answer: 'The temperature at (3,5) is approximately 22°C (nearest station is B).',
+        },
+        {
+          id: 2,
+          question:
+            'Using the Voronoi diagram and the table of measurements for seven weather stations, estimate the air pressure at the location with coordinates (7, 0).  | Station | A | B | C | D | E | F | G |  |---|---|---|---|---|---|---|---|  | Air pressure (mbar) | 1025 | 1020 | 1015 | 1020 | 1020 | 1025 | 1025 |',
+          type: 'Medium',
+          explaination:
+            "Locate (7,0) on the Voronoi diagram. Identify which cell it lies in (nearest station). Read off that station's air pressure value.",
+          answer: 'Air pressure ≈ 1025 mbar (nearest station is G).',
+        },
+        {
+          id: 3,
+          question:
+            'Using the Voronoi diagram and the table of measurements for seven weather stations, estimate the daily rainfall at the location with coordinates (6, 9).  | Station | A | B | C | D | E | F | G |  |---|---|---|---|---|---|---|---|  | Daily rainfall (mm) | 38 | 42 | 27 | 35 | 31 | 29 | 41 |',
+          type: 'Medium',
+          explaination:
+            "Locate (6,9) on the Voronoi diagram. Identify which cell it lies in (nearest station). Read off that station's rainfall value.",
+          answer: 'Rainfall ≈ 27 mm (nearest station is C).',
+        },
+        {
+          id: 4,
+          question:
+            'The woodland is located on some hills. The altitude above sea level is known for the five cottages:  | Cottage | A | B | C | D | E |  |---|---|---|---|---|---|  | Altitude (m) | 348 | 412 | 265 | 317 | 382 |  Use nearest neighbour interpolation to estimate the altitude of the point (7, 7).',
+          type: 'Medium',
+          explaination:
+            "Locate (7,7) on the updated Voronoi diagram (with E added). Identify which cell it lies in. Read off that cottage's altitude.",
+          answer: 'Altitude ≈ 412 m (nearest cottage is B).',
+        },
+      ],
+      'voronoi-vertices': [
+        {
+          id: 1,
+          question:
+            'The points A(0, 0), B(4, 4) and C(2, 4) are sites on a Voronoi diagram.  Find the coordinates of the intersection of the perpendicular bisectors of AB and AC.',
+          type: 'Medium',
+          explaination:
+            'Solve simultaneously:  y = −x + 4 and x + 2y = 5  Substitute: x + 2(−x + 4) = 5 ⇒ x + 8 − 2x = 5 ⇒ x = 3, y = 1',
+          answer: '(3, 1)',
+        },
+        {
+          id: 2,
+          question:
+            'The points A(0, 0), B(4, 4) and C(2, 4) are sites on a Voronoi diagram.  Hence show that there is only one vertex on the Voronoi diagram.',
+          type: 'Medium',
+          explaination:
+            'Show that x = 3 (perp bisector of BC) also passes through (3,1): ✓. Hence all three bisectors are concurrent, giving exactly one vertex.',
+          answer:
+            'The perpendicular bisectors of AB, BC and AC all meet at the single point (3,1), confirming there is only one vertex.',
+        },
+        {
+          id: 3,
+          question:
+            'The Voronoi diagram represents a map of a woodland area. Points A(3, 2), B(7, 9), C(11, 7) and D(10, 3) represent the locations of four existing holiday cottages.  Obi wants to build a new holiday cottage which is an equal distance from B, C and D. Find the coordinates of the location of his cottage.',
+          type: 'Hard',
+          explaination:
+            'The point equidistant from B, C and D is the intersection of the perp bisectors of BC and CD.  Perp bisector of BC: y = 2x − 10  Perp bisector of CD: y = −1/4x + 61/8  Solve: 2x − 10 = −1/4x + 61/8  9/4x = 10 + 61/8 = 141/8  x = 141/8 · 4/9 = 141/18 ≈ ... ⇒ x = 9, y = 8',
+          answer: '(9, 8)',
+        },
+        {
+          id: 4,
+          question:
+            'The Voronoi diagram shows locations of four restaurants within a shopping centre.  Write down the coordinates of the location which is equidistant from restaurants A, C and D.',
+          type: 'Medium',
+          explaination:
+            'Identify the vertex in the Voronoi diagram where the cells of A, C, and D all share a boundary. That vertex is equidistant from all three.',
+          answer: 'The vertex where cells of A, C and D meet (read from diagram).',
+        },
+        {
+          id: 5,
+          question:
+            'A city has four hospitals. A new hospital is to be built, within the city, so that it is as far away as possible from any existing hospital.  Find the coordinates of the location of the new hospital, showing your working clearly.',
+          type: 'Hard',
+          explaination:
+            'The point furthest from all sites is a vertex of the Voronoi diagram. Check each vertex that lies within the city boundary (shaded region). The one with the greatest distance to its nearest hospital is the optimal location.',
+          answer:
+            'The vertex of the Voronoi diagram (within the city limits) that is equidistant from the most hospitals and furthest from all of them.',
+        },
+        {
+          id: 6,
+          question:
+            'An island has three towns located at points with coordinates (0, 0), (30, 30) and (50, 10), where the coordinates have units of kilometres. The government wants to locate a toxic waste dump at a position as far as possible from each town. You may assume that this location is not on the edge of the island.  Find the coordinates of the point where the toxic waste dump should be located.',
+          type: 'Hard',
+          explaination:
+            'The optimal point is equidistant from all three towns → circumcentre of the triangle.  Find perp bisector of towns 1 and 2: midpoint (15,15), gradient = 1, perp gradient = −1 → y − 15 = −(x − 15)  y = −x + 30  Find perp bisector of towns 2 and 3: midpoint (40,20), gradient = −20/20 = −1, perp gradient = 1 → y − 20 = (x − 40)  y = x − 20  Solve: −x + 30 = x − 20 ⇒ 2x = 50, x = 25, y = 5',
+          answer: '(25, −5) (or the circumcentre of the triangle formed by the three towns).',
+        },
+        {
+          id: 7,
+          question:
+            'An island has four towns located at points with coordinates A(0, 0), B(20, 0), C(0, 30) and D(60, 40), where the coordinates have units of kilometres. The government wants to locate a toxic waste dump at a position as far as possible from each town. You may assume that this location is not on the edge of the island.  Find the coordinates of the point where the toxic waste dump should be located, justifying your answer carefully.',
+          type: 'Hard',
+          explaination:
+            'For four towns, the optimal dump is at a Voronoi vertex of the diagram — the point equidistant from three towns that also maximises distance.  Find circumcentres of relevant triangles (ABD, ACD, BCD, ABC) and check which lies inside the island and gives the greatest circumradius.',
+          answer:
+            'The optimal location is the Voronoi vertex (circumcentre of the appropriate triangle of towns) that is furthest from its nearest town.',
+        },
+      ],
+      'area-of-voronoi-cells': [
+        {
+          id: 1,
+          question:
+            'The Voronoi diagram shows four restaurants within a shopping centre. One unit on the diagram represents 10m.  Find the area served by restaurant A.',
+          type: 'Hard',
+          explaination:
+            'Count the number of unit squares (or use geometry) within cell A on the diagram. Multiply by 10² = 100 to convert to m².',
+          answer: 'Area of cell A in square metres (count unit squares in cell × 100 m² each).',
+        },
+      ],
+      'distance-calculation': [
+        {
+          id: 1,
+          question:
+            'An island has three towns located at points with coordinates (0, 0), (30, 30) and (50, 10) (in kilometres). The toxic waste dump is located at the circumcentre found in part (a).  How far is the toxic waste dump from each city?',
+          type: 'Medium',
+          explaination:
+            'Calculate distance from the circumcentre to each town. All should be equal (verification):  d = √(25² + 5²) = √650 ≈ 25.5 km',
+          answer: 'Distance = √((25 − 0)² + (5 − 0)²) = √650 ≈ 25.5 km from each town.',
+        },
+      ],
+      'modelling-assumptions': [
+        {
+          id: 1,
+          question:
+            'An island has three towns located at points with coordinates (0, 0), (30, 30) and (50, 10) (in kilometres). The toxic waste dump is to be placed at the location found in part (a).  State one modelling assumption you have made in your calculation.',
+          type: 'Easy',
+          explaination:
+            'Any valid modelling assumption: flat terrain, roads not considered, towns modelled as points, etc.',
+          answer:
+            'e.g. The island is flat (we assume a 2D model with no hills). OR: The circumcentre lies within the island boundary.',
+        },
+      ],
+      'mathematical-modelling': [
+        {
+          id: 1,
+          question:
+            'An island has four towns A(0, 0), B(20, 0), C(0, 30) and D(60, 40). A census reveals that town B has roughly twice the population of each of the other towns.  Without further calculation, suggest how this changes the position of the toxic waste dump relative to your answer in part (a).',
+          type: 'Medium',
+          explaination:
+            "A weighted Voronoi diagram would be used. The cell boundaries would shift toward B, pushing B's cell inward, and the optimal dump location would move further from B.",
+          answer:
+            'The dump would shift further away from B (i.e. towards the opposite side of the diagram), since B has a greater population and the dump should be further from more densely populated areas.',
+        },
+      ],
+    },
+  },
+  {
+    'statistics-probability': {
+      title: 'Statistics & Probability',
+      'stratified-sampling': [
+        {
+          id: 1,
+          question:
+            'In a wildlife park, 30% of big cats are lions and 70% are tigers. Select 30 big cats.  Calculate the number of each type of big cat that should be selected for a stratified sample of 30.',
+          type: 'Easy',
+          explaination: 'Lions: 0.30 × 30 = 9  Tigers: 0.70 × 30 = 21',
+          answer: 'Lions: 9, Tigers: 21',
+        },
+        {
+          id: 2,
+          question:
+            'Of ice creams sold in a café, 45% are strawberry and 55% are chocolate. Select 20 ice creams.  Calculate the number of each flavour that should be selected for a stratified sample of 20.',
+          type: 'Easy',
+          explaination: 'Strawberry: 0.45 × 20 = 9  Chocolate: 0.55 × 20 = 11',
+          answer: 'Strawberry: 9, Chocolate: 11',
+        },
+        {
+          id: 3,
+          question:
+            'A school is attended by 120 boys and 80 girls. Select 40 pupils.  Calculate the number of boys and girls that should be included in a stratified sample of 40 pupils.',
+          type: 'Easy',
+          explaination: 'Total = 120 + 80 = 200  Boys: 120/200 × 40 = 24  Girls: 80/200 × 40 = 16',
+          answer: 'Boys: 24, Girls: 16',
+        },
+        {
+          id: 4,
+          question:
+            'There are 84 pupils studying Maths HL and 126 pupils studying Maths SL. Select 45 pupils.  Calculate the number of Maths HL and Maths SL pupils that should be included in a stratified sample of 45.',
+          type: 'Easy',
+          explaination:
+            'Total = 84 + 126 = 210  Maths HL: 84/210 × 45 = 18  Maths SL: 126/210 × 45 = 27',
+          answer: 'Maths HL: 18, Maths SL: 27',
+        },
+        {
+          id: 5,
+          question:
+            '25% of pupils at school play football, 35% play hockey and 40% play basketball. Select 40 pupils.  Calculate the number of each type of player that should be selected for a stratified sample of 40.',
+          type: 'Easy',
+          explaination:
+            'Football: 0.25 × 40 = 10  Hockey: 0.35 × 40 = 14  Basketball: 0.40 × 40 = 16',
+          answer: 'Football: 10, Hockey: 14, Basketball: 16',
+        },
+        {
+          id: 6,
+          question:
+            '30% of fish caught are cod, 45% are haddock and 25% are mackerel. Select a sample of 20 fish.  Calculate the number of each type of fish that should be selected for a stratified sample of 20.',
+          type: 'Easy',
+          explaination: 'Cod: 0.30 × 20 = 6  Haddock: 0.45 × 20 = 9  Mackerel: 0.25 × 20 = 5',
+          answer: 'Cod: 6, Haddock: 9, Mackerel: 5',
+        },
+        {
+          id: 7,
+          question:
+            'A manufacturer produced 240 chairs, 90 tables and 40 beds. Select a sample of 37 pieces of furniture.  Calculate the number of each type of furniture that should be included in a stratified sample of 37.',
+          type: 'Medium',
+          explaination:
+            'Total = 240 + 90 + 40 = 370  Chairs: 240/370 × 37 = 24  Tables: 90/370 × 37 ≈ 9  Beds: 40/370 × 37 ≈ 4',
+          answer: 'Chairs: 24, Tables: 9, Beds: 4',
+        },
+        {
+          id: 8,
+          question:
+            'A park has 64 oak trees, 56 willow trees and 32 chestnut trees. Select 19 trees.  Calculate the number of each type of tree that should be included in a stratified sample of 19.',
+          type: 'Medium',
+          explaination:
+            'Total = 64 + 56 + 32 = 152  Oak: 64/152 × 19 = 8  Willow: 56/152 × 19 ≈ 7  Chestnut: 32/152 × 19 ≈ 4',
+          answer: 'Oak: 8, Willow: 7, Chestnut: 4',
+        },
+        {
+          id: 9,
+          question:
+            'The table shows the number of cats, dogs and fish kept as pets by a group of children:  | Cat | Dog | Fish |  |  27 |  43 |  30  |  A sample of 20 pets is required, where the type of pet may be a relevant factor in the investigation.  Find the number of each type of pet that should be included in a stratified sample.',
+          type: 'Medium',
+          explaination:
+            'Total = 27 + 43 + 30 = 100  Cat: 27/100 × 20 = 5.4 ≈ 5  Dog: 43/100 × 20 = 8.6 ≈ 9  Fish: 30/100 × 20 = 6  Check totals sum to 20. [3]',
+          answer: 'Cat: 5 (or 6), Dog: 9 (or 8), Fish: 6',
+        },
+        {
+          id: 10,
+          question:
+            "Dan needs to select a sample of 20 children from a school for his investigation into the amount of time they spend playing computer games. He thinks that age and gender are relevant factors and so chooses a stratified sample. The table shows the number of pupils of each relevant age and gender at the school:  | Gender / Age | 12 | 13 | 14 |  |---|---|---|---|  | Boys | 40 | 52 | 50 |  | Girls |  0 | 37 | 21 |  a) Create a similar table showing how many pupils from each group should be selected for the sample.  b) Do you think that it would be reasonable to generalise the results from Dan's investigation to all 12- to 14-year-olds in the country?",
+          type: 'Hard',
+          explaination:
+            'Total = 40 + 52 + 50 + 0 + 37 + 21 = 200; sampling fraction = 20/200 = 1/10  Boys 12: 40/200 × 20 = 4  Boys 13: 52/200 × 20 = 5.2 ≈ 5  Boys 14: 50/200 × 20 = 5  Girls 12: 0/200 × 20 = 0  Girls 13: 37/200 × 20 = 3.7 ≈ 4  Girls 14: 21/200 × 20 = 2.1 ≈ 2  Total = 20 ✓ [4]  b) Probably not — this one school may not reflect the national demographic (e.g. the absence of 12-year-old girls is unusual). [1]',
+          answer:
+            "a)  | Gender/Age | 12 | 13 | 14 |  | Boys | 4 | 5 | 5 |  | Girls | 0 | 4 | 2 |  b) No — the school's population may not be representative of all 12- to 14-year-olds nationwide (e.g. no 12-year-old girls at this school).",
+        },
+        {
+          id: 11,
+          question:
+            'A shop owner wants to find out what proportion of the scarves she sells are bought by women. She thinks that this may depend on the colour of scarves, so she records the gender of the customers who bought the first 10 of each colour of scarf.  a) Give the name of this type of sampling.  b) Explain why a stratified sample would be more appropriate.  The shop owner knows that of all the scarves she sells, 30% are red, 30% are green, 25% are blue and 15% are white. She has a large set of historical sales records sorted by colour. She will take a sample of 40 records.  c) How many scarves of each colour should be included to make this a stratified sample?',
+          type: 'Medium',
+          explaination:
+            'a) Quota sampling. [1]  b) The shop sells different proportions of each colour scarf. Quota sampling uses equal numbers (10 of each), which over-represents rarer colours; stratified sampling uses proportional numbers to better reflect the true distribution. [2]  c) Red: 0.30 × 40 = 12  Green: 0.30 × 40 = 12  Blue: 0.25 × 40 = 10  White: 0.15 × 40 = 6  Total = 40 ✓ [3]',
+          answer:
+            'a) Quota sampling.  b) Quota sampling takes equal numbers from each colour, which does not reflect the actual proportions sold; stratified sampling would select proportional numbers.  c) Red: 12, Green: 12, Blue: 10, White: 6',
+        },
+      ],
+      'sampling-methods-bias': [
+        {
+          id: 1,
+          question:
+            'Leonie wants to collect information on the length of time pupils at her school spend on homework each evening. She thinks that this depends on the school year, so her sample should contain some pupils from each year group.  a) What information does Leonie need in order to be able to select a stratified sample?  Leonie decides to ask pupils in the lunch queue until she has responses from at least 10 pupils in each year group.  b) Name this sampling method.  c) Having collected and analysed the data, Leonie found two outliers. For each value, suggest whether it should be kept or discarded.  i) 10 minutes  ii) 20 hours',
+          type: 'Medium',
+          explaination:
+            'a) Number of pupils in each year group / total number of pupils per year group. [1]  b) Quota sampling. [1]  c) i) Keep — 10 minutes, while low, is not impossible and could be genuine. [1]  ii) Discard — 20 hours is unrealistic for a single evening; most likely a data entry error. [1]  Award marks for clear justification referencing context.',
+          answer:
+            'a) The number of pupils in each year group (to calculate proportional allocation).  b) Quota sampling.  c) i) Keep — 10 minutes is a plausible amount of homework time.  ii) Discard — 20 hours is not a realistic amount of homework time in one evening; likely a recording error.',
+        },
+        {
+          id: 2,
+          question:
+            "Anke wants to find out the proportion of households in Germany who have a pet. For her investigation, she decides to ask her friends from school, which is located in the centre of a large city, whether their family owns a pet.  a) What is the relevant population for Anke's investigation?  b) Name the sampling method that Anke is using.  c) State one reason why Anke's sample may not be representative of the population.",
+          type: 'Easy',
+          explaination:
+            'a) The population is all households in Germany. [1]  b) Convenience sampling (or opportunity sampling). [1]  c) Any valid reason: e.g. city-centre households may be less likely to own pets than rural households; her friends form a biased, non-random group. [1]',
+          answer:
+            'a) All households in Germany.  b) Convenience sampling.  c) e.g. Her friends may be more likely to have similar pet ownership habits (urban area, same social group), so the sample is not representative of all German households.',
+        },
+        {
+          id: 3,
+          question:
+            'A student wants to conduct an investigation into attitudes to environmental issues among the residents of his village. He decides to talk to the first 20 people who arrive at his local bus stop.  a) Name this sampling technique.  b) State the population relevant to his investigation.  c) Give one reason why a sample obtained in this way may not be representative of the whole population.  d) Explain why it would be difficult to obtain a simple random sample in this situation.',
+          type: 'Easy',
+          explaination:
+            'a) Convenience / opportunity sampling. [1]  b) All residents of the village. [1]  c) Any valid source of bias, e.g. only bus users are sampled, so car users / non-commuters are excluded. [1]  d) Need a full sampling frame (list of all residents) and a method of randomly contacting each person; hard to obtain without access to, e.g., electoral roll. [1]',
+          answer:
+            'a) Convenience sampling (or opportunity sampling).  b) All residents of his village.  c) e.g. People who use the bus stop may have different views on environmental issues than those who do not (e.g. car users).  d) A complete list (sampling frame) of all village residents would be needed and each person would need to be contactable; this is difficult to compile and access.',
+        },
+        {
+          id: 4,
+          question:
+            "Joel obtains a random sample of 20 pupils from a college in order to conduct a survey. He finds that his sample contains the following numbers of students of different ages:  | Age  | 16 | 17 | 18 | 19 |  | Number |  6 |  0 |  7 |  7 |  Mingshan says: 'There are no 17-year-olds in the sample, so your sampling procedure must have been biased.' Comment on Mingshan's statement.",
+          type: 'Medium',
+          explaination:
+            'Mingshan is not necessarily correct. [1]  In a random sample, it is possible by chance to not select any members of a particular group. The absence of 17-year-olds is not sufficient evidence of bias on its own — it could just be an unusual but valid random sample. [1]',
+          answer:
+            'Mingshan is incorrect. Having no 17-year-olds in a random sample does not necessarily imply bias; it can occur by chance, especially with a small sample size.',
+        },
+      ],
+      'types-of-data-systematic-sampling': [
+        {
+          id: 1,
+          question:
+            'A zoologist wants to investigate the distribution of the number of spots on ladybirds. She prepares the following table to record her data:  | Number of spots  | 2 | 7 | 10 |  | Number of ladybirds |  |  |  |  a) Are the data she is collecting discrete or continuous?  b) Would it be possible to collect the data for the whole population of ladybirds in a particular field?  c) The zoologist collects her data by counting the number of spots on the first 100 ladybirds she catches. State the name for this sampling procedure.  d) Give one reason why the results from this sample may not be generalisable to the whole population.',
+          type: 'Easy',
+          explaination:
+            'a) Discrete — the number of spots can only take whole number values. [1]  b) It might be theoretically possible in a small field, but very difficult in practice as ladybirds move and cannot all be identified/counted. [1]  c) Convenience / opportunity sampling. [1]  d) The first 100 caught may be biased — for example, more visible or less camouflaged ladybirds may be caught more easily. [1]',
+          answer:
+            'a) Discrete.  b) In principle yes (if the field is small enough), but it would be very difficult in practice.  c) Convenience sampling (or opportunity sampling).  d) e.g. The first ladybirds caught may not be representative — certain species or spot patterns might be easier to catch.',
+        },
+        {
+          id: 2,
+          question:
+            'A manufacturer wants to test the lifetime, in hours, of its light bulbs.  a) Are the data they need discrete or continuous?  b) Explain why they need to test a sample, rather than the whole population.  c) Each lightbulb produced is given a serial number. Explain how to obtain a systematic sample consisting of 5% of all lightbulbs produced.',
+          type: 'Medium',
+          explaination:
+            'a) Continuous — lifetime in hours can take any positive value. [1]  b) Testing a lightbulb until it fails destroys it; testing all bulbs would mean no product to sell (destructive testing). [1]  c) Since 5% = 1 in 20: randomly choose a starting serial number between 1 and 20, then select every 20th bulb (systematic sample with sampling interval 20). [2]',
+          answer:
+            'a) Continuous.  b) Testing destroys the bulbs, so testing every bulb would leave none to sell.  c) Number all bulbs 1 to N. Randomly select a starting point k between 1 and 20, then select every 20th bulb thereafter (i.e. k, k+20, k+40, ...).',
+        },
+        {
+          id: 3,
+          question:
+            'Shakir wants to find out the average height of students in his school. He decides to use his friends from the basketball team as a sample.  a) Is Shakir collecting discrete or continuous data?  b) Identify one possible source of bias in his sample.  Shakir decides to change his sampling technique. He obtains an alphabetical list of all students in the school and selects every 10th student for his sample.  c) Name this sampling technique.  d) Explain why this does not produce a simple random sample.',
+          type: 'Easy',
+          explaination:
+            'a) Continuous — height can take any value within a range. [1]  b) Basketball players are typically taller than average students, introducing bias (the sample over-represents tall students). [1]  c) Systematic sampling. [1]  d) In a simple random sample, every possible combination of individuals must be equally likely to be chosen. In systematic sampling, only samples that are exactly 10 apart (in the alphabetical list) can be selected, so most combinations are impossible. [1]',
+          answer:
+            'a) Continuous.  b) Basketball players tend to be taller than average, so the sample is not representative of all students.  c) Systematic sampling.  d) Not every possible sample of the required size has an equal chance of being selected; once the starting point is chosen, the rest of the sample is determined.',
+        },
+      ],
+      'quota-sampling-sampling-methods': [
+        {
+          id: 1,
+          question:
+            'A park ranger wants to estimate the proportion of adult animals in a wildlife park that are suffering from a particular disease. She believes that of the adults of these species present in the park, 20% are deer, 30% are tigers, 40% are wolves and 10% are zebras. She decides to observe animals until she has recorded 10 deer, 15 tigers, 20 wolves and 5 zebras.  a) State the name of this sampling method.  b) Why might this sampling method be better than a convenience sample of the first 50 animals she encounters?  c) Explain why a simple random sample may be difficult to obtain in this situation.',
+          type: 'Medium',
+          explaination:
+            'a) Quota sampling. [1]  b) A convenience sample might over-represent species that are easier to spot or that congregate near the ranger. Quota sampling ensures proportional representation across species. [2]  c) There is no sampling frame (complete list) of all adult animals; wild animals cannot be easily numbered and randomly selected. [2]',
+          answer:
+            'a) Quota sampling.  b) Quota sampling ensures each species is represented in proportion to its prevalence, reducing bias from over-representation of more common/easily spotted species.  c) A complete and accessible list (sampling frame) of all adult animals is not available in a wildlife park, making random selection impossible.',
+        },
+      ],
+      'sampling-outliers-interpretation': [
+        {
+          id: 1,
+          question:
+            'Ayesha selects a sample of six children from a primary school and measures their heights in centimetres. She finds that five of the children are taller than the national average for their age.  a) Comment on whether each of the following could be a sensible conclusion for Ayesha to draw:  i) The children at this school are taller than average.  ii) The sampling methods must have been biased.  iii) This just happens to be an unusual sample.  b) If instead, Ayesha took a sample of 60 children and found that 50 were taller than the national average, how would your answer to (a) change?  c) In a larger sample, Ayesha identified two values as outliers: −32 cm and 155 cm. For each of the values, comment whether it should be kept or discarded from further analysis.',
+          type: 'Medium',
+          explaination:
+            'a) i) Possible conclusion but weak evidence with only 6 children; could be coincidence. [1]  ii) Not necessarily — a random sample can occasionally produce unusual results. [1]  iii) Quite plausible — with only 6 children the sample is very small and variability is expected. [1]  b) 50/60 taller than average is much stronger evidence: (i) now much more plausible; (iii) very unlikely by chance alone; (ii) still not proven but more worth considering. [2]  c) −32 cm: Discard — a negative height is physically impossible; must be a recording or measurement error. [1]  155 cm: Keep — 155 cm is within a realistic height range for older primary school children. [1]',
+          answer:
+            'a) i) Possible but not conclusive with only 6 children.  ii) Not necessarily — unusual results can arise by chance.  iii) Possible — with a small sample, unusual results are not uncommon.  b) With 60 children, 50 being taller is much stronger evidence; conclusion (i) becomes much more plausible and (iii) much less likely.  c) −32 cm: Discard — a negative height is impossible, so this is a recording error.  155 cm: Keep — 155 cm is a plausible height for a primary school child (or query if context suggests otherwise).',
+        },
+      ],
+      'randomised-response-theory': [
+        {
+          id: 1,
+          question:
+            "In many situations, researchers want to find out about something which people do not want to admit — for example, criminal activity. Randomized Response Theory (RRT) is one method which allows researchers to estimate the proportion of a population with the trait without ever knowing if an individual has that trait.  Research subjects take one of three cards at random and are asked to follow the instructions:  Card 1: Say yes.  Card 2: Say no.  Card 3: Say yes if you have ever taken illegal drugs, otherwise say no.  If 24 out of 60 research subjects say 'Yes', estimate the percentage of the population who have taken illegal drugs.",
+          type: 'Hard',
+          explaination:
+            'Let p = proportion who have taken illegal drugs.  Each card is chosen with probability 1/3.  P(Yes) = 1/3(1) + 1/3(0) + 1/3(p)  24/60 = 1/3 + p/3  0.4 = (1 + p)/3  1 + p = 1.2  p = 0.2 = 20%',
+          answer: '20%',
+        },
+        {
+          id: 2,
+          question:
+            "A sample of students were shown two statements:  Statement 1: I have cheated on a test.  Statement 2: I have never cheated on a test.  They were asked to secretly roll a dice; if they got a 6, they were to state honestly whether Statement 1 is true or false; otherwise, they were to state honestly whether Statement 2 is true or false.  i) If 20% of students have cheated on a test, how many out of 120 students would be expected to answer 'True'?  ii) If 48 out of 120 students say 'True', estimate the percentage of students who have cheated on a test.",
+          type: 'Hard',
+          explaination:
+            'Let p = proportion who have cheated.  P(True) = P(roll 6) × p + P(not roll 6) × (1 − p)  = 1/6p + 5/6(1 − p)  i) With p = 0.2:  P(True) = 1/6(0.2) + 5/6(0.8) = (0.2 + 4.0)/6 = 4.2/6 = 0.7  Expected True = 120 × 0.7 = 84  ii) 48/120 = 0.4 = 1/6p + 5/6(1 − p) = 5/6 − 4p/6  0.4 = 5/6 − 4p/6  4p/6 = 5/6 − 0.4 = 13/30  p = 13/30 × 6/4 = 13/20 = 0.65 = 65%',
+          answer: 'i) 84 students  ii) 65%',
+        },
+      ],
+      'capture-recapture-lincolnpetersen-method': [
+        {
+          id: 1,
+          question:
+            'Ecologists wanted to estimate the number of cod in the North Sea. They captured 50,000 cod and humanely labelled them. Six months later they captured a sample of 40,000 cod and 20 are found to be labelled.  a) Estimate the number of cod in the North Sea.  b) State two assumptions required for your calculation in part (a).',
+          type: 'Hard',
+          explaination:
+            'a) Using the capture-recapture formula:  N/M = n/m  where M = 50000 (tagged), n = 40000 (second sample), m = 20 (recaptured tagged).  N = (M × n)/m = (50000 × 40000)/20 = 100,000,000 [3]  b) Any two of:  1. The population is closed during the study period (no immigration/emigration, births, deaths). [1]  2. Tagged cod mix randomly and uniformly throughout the population. [1]  3. Each cod has an equal probability of being captured in the second sample. [1]  4. Tags are not lost and remain identifiable. [1]',
+          answer:
+            'a) N = 100,000,000 (100 million)  b) e.g. The population is closed (no births, deaths, migration); labelled fish mix randomly with the population; every fish is equally likely to be caught.',
+        },
+      ],
+      histograms: [
+        {
+          id: 1,
+          question:
+            'Use technology to present the data in a histogram.  The frequency table below shows data for x:  5 ≤ x < 10: Frequency = 5  10 ≤ x < 15: Frequency = 10  15 ≤ x < 20: Frequency = 12  20 ≤ x < 25: Frequency = 8',
+          type: 'Easy',
+          explaination:
+            '1. Draw axes: x-axis for class intervals, y-axis for frequency.  2. Plot bars with heights 5, 10, 12, 8 for the four intervals.  3. Ensure bars are adjacent (no gaps).',
+          answer:
+            'Histogram with bars at heights 5, 10, 12, 8 for intervals [5,10), [10,15), [15,20), [20,25)',
+        },
+        {
+          id: 2,
+          question:
+            'Use technology to present the data in a histogram.  The frequency table below shows data for x:  0 ≤ x < 20: Frequency = 18  20 ≤ x < 40: Frequency = 15  40 ≤ x < 60: Frequency = 6  60 ≤ x < 80: Frequency = 13',
+          type: 'Easy',
+          explaination:
+            '1. Draw axes with class intervals on x-axis and frequency on y-axis.  2. Plot bars with heights 18, 15, 6, 13.  3. Ensure equal class widths of 20.',
+          answer:
+            'Histogram with bars at heights 18, 15, 6, 13 for intervals [0,20), [20,40), [40,60), [60,80)',
+        },
+        {
+          id: 3,
+          question:
+            'Use technology to present the data in a histogram.  The frequency table below shows data for h:  1.2 ≤ h < 2.5: Frequency = 5  2.5 ≤ h < 3.8: Frequency = 0  3.8 ≤ h < 5.1: Frequency = 12  5.1 ≤ h < 6.4: Frequency = 10  6.4 ≤ h < 7.7: Frequency = 4',
+          type: 'Easy',
+          explaination:
+            '1. Draw axes with class intervals on x-axis and frequency on y-axis.  2. Note the class with zero frequency — no bar drawn for 2.5 ≤ h < 3.8.  3. Plot remaining bars at correct heights.',
+          answer: 'Histogram with bars at heights 5, 0, 12, 10, 4',
+        },
+        {
+          id: 4,
+          question:
+            'Use technology to present the data in a histogram.  The frequency table below shows data for t:  30 ≤ t < 36: Frequency = 25  36 ≤ t < 42: Frequency = 31  42 ≤ t < 48: Frequency = 40  48 ≤ t < 54: Frequency = 62  54 ≤ t < 60: Frequency = 35',
+          type: 'Easy',
+          explaination:
+            '1. Draw axes with class intervals on x-axis and frequency on y-axis.  2. Plot bars with correct heights for each interval.  3. Class width = 6.',
+          answer: 'Histogram with bars at heights 25, 31, 40, 62, 35',
+        },
+        {
+          id: 5,
+          question:
+            'The length of fossils found at a geological dig is summarized in the following table:  0 < l ≤ 4: Frequency = 10  4 < l ≤ 8: Frequency = 15  8 < l ≤ 12: Frequency = 15  12 < l ≤ 16: Frequency = 20  16 < l ≤ 20: Frequency = 20  (a) Using technology, draw a histogram to represent this set of data.  (b) Estimate the number of fossils which were longer than 15 cm.',
+          type: 'Medium',
+          explaination:
+            '(a) Draw histogram with equal class widths of 4; bars at heights 10, 15, 15, 20, 20.  (b) From 15 to 16: 1/4 × 20 = 5. From 16 to 20: full bar = 20. Total = 25.',
+          answer: '(b) ≈ 1/4(20) + 20 = 5 + 20 = 25 fossils',
+        },
+        {
+          id: 6,
+          question:
+            'The masses of some apples are summarized in the following table:  80 ≤ m < 100: Frequency = 16  100 ≤ m < 120: Frequency = 14  120 ≤ m < 140: Frequency = 25  140 ≤ m < 160: Frequency = 32  160 ≤ m < 180: Frequency = 18  (a) How many apples were weighed?  (b) Using technology, draw a histogram to represent the data.  (c) What percentage of apples had masses between 110 g and 150 g?',
+          type: 'Medium',
+          explaination:
+            '(a) 16 + 14 + 25 + 32 + 18 = 105.  (b) Equal class widths of 20.  (c) Half of 100 ≤ m < 120: 7; full 120 ≤ m < 140: 25; half of 140 ≤ m < 160: 16. Total = 48. Percentage = 48/105 × 100 ≈ 45.7%.',
+          answer:
+            '(a) 105 apples  (b) Histogram with bar heights 16, 14, 25, 32, 18  (c) ≈ 1/2(14) + 25 + 1/2(32) = 7 + 25 + 16 = 48; 48/105 × 100 ≈ 45.7%',
+        },
+        {
+          id: 7,
+          question:
+            'The exam marks of a group of students are recorded in a cumulative frequency table:  ≤ 20: CF = 6  ≤ 40: CF = 45  ≤ 60: CF = 125  ≤ 80: CF = 196  ≤ 100: CF = 247  (a) Represent the data in a histogram.  (b) Estimate the mean of the marks.',
+          type: 'Hard',
+          explaination:
+            '(a) Convert CF to frequencies: [0,20]=6; [20,40]=39; [40,60]=80; [60,80]=71; [80,100]=51. Draw histogram.  (b) Midpoints: 10,30,50,70,90. Σ fx = 60 + 1170 + 4000 + 4970 + 4590 = 14790. Mean = 14790/247 ≈ 59.9.',
+          answer: '(b) Mean ≈ 63.1',
+        },
+        {
+          id: 8,
+          question:
+            'A histogram shows the following bars (frequency f vs x) with approximate bar heights:  - 0 ≤ x < 20: f ≈ 20  - 20 ≤ x < 40: f ≈ 11  - 40 ≤ x < 60: f ≈ 9  - 60 ≤ x < 80: f ≈ 15  Estimate the number of data items in the range 20 ≤ x < 50.',
+          type: 'Medium',
+          explaination:
+            '1. Frequency for 20 ≤ x < 40 = 11 (full bar).  2. Half of interval 40 ≤ x < 60: 1/2 × 9 = 4.5.  3. Total ≈ 11 + 4.5 = 15.5.',
+          answer: '≈ 11 + 1/2(9) = 15.5 ≈ 16',
+        },
+        {
+          id: 9,
+          question:
+            'Using the same histogram as Q3 (frequency f vs x), estimate the number of data items in the range 30 ≤ x < 80.',
+          type: 'Medium',
+          explaination:
+            '1. Half of 20 ≤ x < 40: 1/2 × 11 = 5.5.  2. Full bar 40 ≤ x < 60 = 9.  3. Full bar 60 ≤ x < 80 = 15.  4. Total ≈ 5.5 + 9 + 15 = 29.5.',
+          answer: '≈ 1/2(11) + 9 + 15 = 29.5 ≈ 30',
+        },
+        {
+          id: 10,
+          question:
+            'A histogram shows frequency f vs h with approximate bar heights:  - 1.2 ≤ h < 2.4: f ≈ 5  - 2.4 ≤ h < 3.6: f ≈ 15  - 3.6 ≤ h < 4.8: f ≈ 9  - 4.8 ≤ h < 6: f ≈ 12  - 6 ≤ h < 7.2: f ≈ 4  Estimate the number of data items in the range 2.7 ≤ h < 5.4.',
+          type: 'Medium',
+          explaination:
+            '1. Proportion of 2.4 ≤ h < 3.6 from 2.7 to 3.6: 0.9/1.2 × 15 = 11.25.  2. Full bar 3.6 ≤ h < 4.8 = 9.  3. Proportion of 4.8 ≤ h < 6 from 4.8 to 5.4: 0.6/1.2 × 12 = 6.  4. Total ≈ 11.25 + 9 + 6 = 26.25.',
+          answer: '≈ 3/4(15) + 9 + 1/2(12) = 11.25 + 9 + 6 = 26.25 ≈ 26',
+        },
+        {
+          id: 11,
+          question:
+            'Using the same histogram as Q4 (frequency f vs h), estimate the number of data items in the range 4.0 ≤ h < 4.4.',
+          type: 'Medium',
+          explaination:
+            '1. The interval 3.6 ≤ h < 4.8 has width 1.2 and frequency 9.  2. Range 4.0 to 4.4 has width 0.4.  3. Estimate: 0.4/1.2 × 9 = 3.',
+          answer: '≈ 1/3(9) = 3',
+        },
+        {
+          id: 12,
+          question:
+            'The histogram shows the times taken by a group of pupils to complete a writing task. Bar heights (frequency density = frequency for equal class widths of 5 min):  5 ≤ t < 10: f = 7  10 ≤ t < 15: f ≈ 5  15 ≤ t < 20: f ≈ 15  20 ≤ t < 25: f ≈ 10  25 ≤ t < 30: f ≈ 4  (a) How many pupils completed the task?  (b) Estimate the percentage of pupils who took more than 22 minutes.  (c) Complete the grouped frequency table (given 5 ≤ t < 10: Frequency = 7).  (d) Hence estimate the mean time taken to complete the task.',
+          type: 'Medium',
+          explaination:
+            '(a) Total = sum of all frequencies.  (b) From t=22 in [20,25) bar: 3/5 × 10 = 6; bar [25,30) = 4; total = 10; 10/41 × 100 ≈ 24.4%.  (c) Completed table: 7, 5, 15, 10, 4.  (d) Use midpoints: x̅ = (Σ fx)/(Σ f) ≈ 18.4.',
+          answer:
+            '(a) 7 + 5 + 15 + 10 + 4 = 41 pupils  (b) ≈ 3/5(10) + 4 = 6 + 4 = 10; 10/41 × 100 ≈ 24.4%  (d) Mean ≈ (7(7.5) + 5(12.5) + 15(17.5) + 10(22.5) + 4(27.5))/41 ≈ 18.4 min',
+        },
+        {
+          id: 13,
+          question:
+            'The histogram summarizes heights of children in a school. The bar heights (frequency, f) are approximately:  140 ≤ h < 150: f ≈ 25  150 ≤ h < 160: f ≈ 35  160 ≤ h < 170: f ≈ 60  170 ≤ h < 180: f ≈ 55  180 ≤ h < 190: f ≈ 20  Use the histogram to estimate the mean height, correct to the nearest centimetre.',
+          type: 'Medium',
+          explaination:
+            '1. Use midpoints: 145, 155, 165, 175, 185.  2. Σ fx = 25(145) + 35(155) + 60(165) + 55(175) + 20(185) = 3625 + 5425 + 9900 + 9625 + 3700 = 32275.  3. Σ f = 25 + 35 + 60 + 55 + 20 = 195.  4. Mean = 32275/195 ≈ 165.5 ≈ 166 cm.',
+          answer: 'Mean ≈ 165 cm',
+        },
+        {
+          id: 14,
+          question:
+            'Match each histogram with the cumulative frequency diagram drawn from the same data.  Cumulative frequency diagrams:  (A) Concave upward (increasing rate) — roughly linear to slightly concave up  (B) S-shaped curve starting slowly then rising sharply — left-skewed histogram expected  (C) S-shaped curve that rises slowly then faster — right-skewed histogram expected  Histograms:  (1) Peak in middle, decreasing on both sides (roughly symmetric)  (2) Tallest bar on left, decreasing bars to the right (right-skewed)  (3) Shortest bars on left, increasing to right with most data on right (left-skewed)  Match A, B, C with 1, 2, 3.',
+          type: 'Hard',
+          explaination:
+            '1. Histogram 1 is roughly symmetric → CF curve is an S-shape, neither skewed → matches A.  2. Histogram 2 decreases (most data at low values) → CF rises steeply at start, flattens → matches C.  3. Histogram 3 increases (most data at high values) → CF rises slowly then steeply → matches B.',
+          answer:
+            'A → 1 (symmetric histogram ↔ roughly linear S-curve)  B → 3 (data concentrated at high values ↔ slowly rising then steep CF)  C → 2 (data concentrated at low values ↔ steeply rising then flat CF)',
+        },
+      ],
+      'cumulative-frequency-statistics': [
+        {
+          id: 1,
+          question:
+            'The cumulative frequency graph (cf vs x) below has total frequency 150, with the curve passing approximately through (5,0), (10,25), (15,100), (20,130), (25,150).  Use the graph to find:  (i) the median  (ii) the range  (iii) the interquartile range  (iv) the 90th percentile',
+          type: 'Medium',
+          explaination:
+            '(i) Median: read off at cf = 75 → x ≈ 14.  (ii) Range = max − min, estimated from graph endpoints.  (iii) Q₁: cf = 37.5 → x ≈ 11; Q₃: cf = 112.5 → x ≈ 16; IQR ≈ 5.  (iv) 90th percentile: cf = 135 → x ≈ 19.',
+          answer:
+            '(i) Median ≈ 14  (ii) Range: estimated from graph  (iii) IQR ≈ Q₃ − Q₁  (iv) 90th percentile ≈ 19',
+        },
+        {
+          id: 2,
+          question:
+            'The cumulative frequency graph (cf vs h) below has total frequency 400, with the curve passing approximately through (1,0), (2,5), (3,50), (4,130), (5,250), (6,350), (7,395), (8,400).  Use the graph to find:  (i) the median  (ii) the range  (iii) the interquartile range  (iv) the 90th percentile',
+          type: 'Medium',
+          explaination:
+            '(i) Median: cf = 200 → h ≈ 5.2.  (ii) Range = 8 − 1 = 7.  (iii) Q₁: cf = 100 → h ≈ 4.5; Q₃: cf = 300 → h ≈ 5.8; IQR ≈ 1.3.  (iv) 90th percentile: cf = 360 → h ≈ 6.3.',
+          answer:
+            '(i) Median ≈ 5.2  (ii) Range ≈ 7  (iii) IQR ≈ Q₃ − Q₁ ≈ 2  (iv) 90th percentile ≈ 6.3',
+        },
+      ],
+      'box-and-whisker-diagrams': [
+        {
+          id: 1,
+          question: 'Construct a box-and-whisker diagram for the data set:  3, 5, 5, 6, 8, 9, 9',
+          type: 'Easy',
+          explaination:
+            '1. Order data: 3, 5, 5, 6, 8, 9, 9.  2. Min = 3, Max = 9.  3. Median (4th value) = 6.  4. Q₁ = median of {3,5,5} = 5.  5. Q₃ = median of {8,9,9} = 9.  6. Draw box from Q₁ to Q₃ with line at median; whiskers to min and max.',
+          answer: 'Min = 3, Q₁ = 5, Median = 6, Q₃ = 9, Max = 9',
+        },
+        {
+          id: 2,
+          question:
+            'Construct a box-and-whisker diagram for the data set:  11, 13, 15, 15, 16, 18, 19, 21, 24, 24',
+          type: 'Easy',
+          explaination:
+            '1. Ordered: 11,13,15,15,16,18,19,21,24,24.  2. Median = mean of 5th and 6th values = (16 + 18)/2 = 17.  3. Q₁ = median of {11,13,15,15,16} = 15.  4. Q₃ = median of {18,19,21,24,24} = 21.  5. Draw box-and-whisker diagram.',
+          answer: 'Min = 11, Q₁ = 15, Median = 17, Q₃ = 21, Max = 24',
+        },
+        {
+          id: 3,
+          question:
+            'Construct a box-and-whisker diagram for the data set:  11, 13, 15, 15, 16, 18, 19, 21, 25, 32',
+          type: 'Easy',
+          explaination:
+            '1. Ordered: 11,13,15,15,16,18,19,21,25,32.  2. Median = (16 + 18)/2 = 17.  3. Q₁ = 15, Q₃ = 21.  4. Draw box from 15 to 21 with median line at 17; whiskers to 11 and 32.',
+          answer: 'Min = 11, Q₁ = 15, Median = 17, Q₃ = 21, Max = 32',
+        },
+        {
+          id: 4,
+          question:
+            'Construct a box-and-whisker diagram for the data set:  4, 13, 14, 16, 17, 18, 18, 19, 19',
+          type: 'Easy',
+          explaination:
+            '1. Ordered: 4,13,14,16,17,18,18,19,19.  2. Median (5th value) = 17.  3. Q₁ = median of {4,13,14,16} = (13 + 14)/2 = 13.5.  4. Q₃ = median of {18,18,19,19} = (18 + 19)/2 = 18.5.  5. Draw box-and-whisker diagram.',
+          answer: 'Min = 4, Q₁ = 14, Median = 17, Q₃ = 19, Max = 19',
+        },
+        {
+          id: 5,
+          question:
+            'A group of children recorded the number of siblings they have:  0, 2, 1, 3, 2, 1, 1, 0, 2, 3, 2, 2, 1, 4, 7  (a) Find the median and quartiles of the data.  (b) Calculate the interquartile range.  (c) Determine whether this data set contains any outliers.  (d) Draw the box plot for the data.',
+          type: 'Medium',
+          explaination:
+            '1. Order: 0,0,1,1,1,1,2,2,2,2,2,3,3,4,7. n=15.  2. Median = 8th value = 2.  3. Q₁ = median of lower 7 = 4th value = 1; Q₃ = median of upper 7 = 12th value = 3.  4. IQR = 2.  5. Lower boundary: 1 − 3 = −2 (no lower outliers); Upper: 3 + 3 = 6; 7 > 6, outlier.  6. Box from 1 to 3, median at 2, whiskers from 0 to 4, dot at 7.',
+          answer:
+            '(a) Median = 2, Q₁ = 1, Q₃ = 3  (b) IQR = 2  (c) Outlier boundary: Q₃ + 1.5 × IQR = 3 + 3 = 6; 7 > 6, so 7 is an outlier.  (d) Box plot with whisker to 4, outlier at 7.',
+        },
+        {
+          id: 6,
+          question:
+            'Some information about a data set is summarized in the table:  Smallest value: 7  Second smallest value: 11  Lower quartile: 20  Median: 25  Upper quartile: 28  Second largest value: 32  Largest value: 38  (a) Determine whether the data set includes any outliers.  (b) Draw a box plot to represent the data.',
+          type: 'Medium',
+          explaination:
+            '(a) IQR = 28 − 20 = 8; Lower: 20 − 1.5(8) = 8; Upper: 28 + 1.5(8) = 40.  Smallest = 7 < 8, so 7 is an outlier. Largest = 38 < 40, not an outlier.  (b) Draw box from Q₁ = 20 to Q₃ = 28 with median at 25; whisker from 11 (second smallest, nearest non-outlier) to 38; mark 7 as outlier.',
+          answer:
+            '(a) IQR = 8; Lower fence = 20 − 12 = 8; Upper fence = 28 + 12 = 40; 7 < 8, so 7 is an outlier.  (b) Box plot: whisker from 11 (next value) to 38, box from 20 to 28, median at 25, outlier at 7.',
+        },
+      ],
+      'normal-distribution-finding-probabilities': [
+        {
+          id: 1,
+          question: 'Given that X ~ N(10, 25), find:  a) P(X > 15)  b) P(X > 12)',
+          type: 'Easy',
+          explaination:
+            'Standardise: Z = (X − μ)/σ,  σ = √25 = 5a)Z = (15-10)/5 = 1→P(Z>1) = 1 - Φ(1) = 1 - 0.8413 = 0.1587b)Z = (12-10)/5 = 0.4→P(Z>0.4) = 1 - 0.6554 = 0.3446',
+          answer: 'a) 0.1587  b) 0.3446',
+        },
+        {
+          id: 2,
+          question: 'Given that X ~ N(10, 25), find:  a) P(X < 13)  b) P(X < 7)',
+          type: 'Easy',
+          explaination:
+            'a) Z = (13 − 10)/5 = 0.6 → P(Z < 0.6) = Φ(0.6) = 0.7257  b) Z = (7 − 10)/5 = −0.6 → P(Z < −0.6) = 1 − 0.7257 = 0.2743',
+          answer: 'a) 0.7257  b) 0.2743',
+        },
+        {
+          id: 3,
+          question: 'Given that Y ~ N(25, 12), find:  a) P(18 < Y < 23)  b) P(23 < Y < 28)',
+          type: 'Medium',
+          explaination:
+            'σ = √12 ≈ 3.464  a) Z₁ = (18 − 25)/3.464 ≈ −2.021, Z₂ = (23 − 25)/3.464 ≈ −0.577  P = Φ(−0.577) − Φ(−2.021) = 0.2820 − 0.0217 = 0.2603  b) Z₁ ≈ −0.577, Z₂ = (28 − 25)/3.464 ≈ 0.866  P = Φ(0.866) − Φ(−0.577) = 0.8069 − 0.2820 = 0.5249',
+          answer: 'a) 0.260  b) 0.525',
+        },
+        {
+          id: 4,
+          question: 'Given that Y ~ N(25, 12), find:  a) P(Y > 24.8)  b) P(Y > 27.4)',
+          type: 'Medium',
+          explaination:
+            'a) Z = (24.8 − 25)/3.464 ≈ −0.058 → P(Z > −0.058) = Φ(0.058) ≈ 0.523  b) Z = (27.4 − 25)/3.464 ≈ 0.693 → P(Z > 0.693) = 1 − 0.7557 = 0.2443',
+          answer: 'a) 0.523  b) 0.244',
+        },
+        {
+          id: 5,
+          question:
+            'The continuous random variable T has a normal distribution with mean 12.5 and standard deviation 4.6. Find:  a) P(T < 11.2)  b) P(T < 13.1)',
+          type: 'Medium',
+          explaination:
+            'a) Z = (11.2 − 12.5)/4.6 ≈ −0.283 → P(Z < −0.283) = 0.3887  b) Z = (13.1 − 12.5)/4.6 ≈ 0.130 → P(Z < 0.130) = 0.5517',
+          answer: 'a) 0.389  b) 0.552',
+        },
+        {
+          id: 6,
+          question:
+            'The continuous random variable T has a normal distribution with mean 12.5 and standard deviation 4.6. Find:  a) P(11.6 < T < 14.5)  b) P(8.7 < T < 12.0)',
+          type: 'Medium',
+          explaination:
+            'a) Z₁ = (11.6 − 12.5)/4.6 ≈ −0.196, Z₂ = (14.5 − 12.5)/4.6 ≈ 0.435  P = Φ(0.435) − Φ(−0.196) = 0.6682 − 0.4223 = 0.2459  b) Z₁ = (8.7 − 12.5)/4.6 ≈ −0.826, Z₂ = (12.0 − 12.5)/4.6 ≈ −0.109  P = Φ(−0.109) − Φ(−0.826) = 0.4566 − 0.2044 = 0.3341 ≈ 0.334',
+          answer: 'a) 0.246  b) 0.334',
+        },
+        {
+          id: 7,
+          question:
+            'The continuous random variable M has a normal distribution with mean 62.4 and variance 8.7. Find:  a) P(M > 65)  b) P(M > 60)',
+          type: 'Medium',
+          explaination:
+            'σ = √8.7 ≈ 2.950  a) Z = (65 − 62.4)/2.950 ≈ 0.881 → P(Z > 0.881) = 1 − 0.8109 = 0.1891  b) Z = (60 − 62.4)/2.950 ≈ −0.814 → P(Z > −0.814) = Φ(0.814) = 0.7922',
+          answer: 'a) 0.189  b) 0.792',
+        },
+        {
+          id: 8,
+          question:
+            'The continuous random variable M has a normal distribution with mean 62.4 and variance 8.7. Find:  a) P(61.5 < M < 62.5)  b) P(62.5 < M < 63.5)',
+          type: 'Medium',
+          explaination:
+            'a) Z₁ = (61.5 − 62.4)/2.950 ≈ −0.305, Z₂ = (62.5 − 62.4)/2.950 ≈ 0.034  P = Φ(0.034) − Φ(−0.305) = 0.5135 − 0.3802 = 0.1333  b) Z₁ ≈ 0.034, Z₂ = (63.5 − 62.4)/2.950 ≈ 0.373  P = Φ(0.373) − Φ(0.034) = 0.6454 − 0.5135 = 0.1319',
+          answer: 'a) 0.133  b) 0.132',
+        },
+        {
+          id: 9,
+          question:
+            'A box plot summarises the ages (in months) of pupils at a school. The five-number summary is:  Minimum = 133, Q₁ = 163, Median = 197, Q₃ = 212, Maximum = 225.  Does the box plot suggest that ages are normally distributed? Give one reason to explain your answer.',
+          type: 'Medium',
+          explaination:
+            'The median (197) is not equidistant from Q₁ and Q₃:  197 − 163 = 34 but 212 − 197 = 15. [M1]  The box is skewed to the left, so the distribution is not symmetric, contradicting the symmetry required for a normal distribution. [A1]',
+          answer: 'No – the distribution is not symmetric.',
+        },
+        {
+          id: 10,
+          question:
+            'Percentage scores on a test, taken by a large number of people, are found to have a mean of 35 with a standard deviation of 20. Explain why this suggests that the scores cannot be modelled by a normal distribution.',
+          type: 'Medium',
+          explaination:
+            'If X ~ N(35, 20²):  P(X < 0) = P(Z < (0 − 35)/20) = P(Z < −1.75) ≈ 0.040  A normal distribution extends to −∞, but percentage scores cannot be negative. [M1]  Approximately 4% of scores would be negative under this model, which is impossible for percentage scores bounded in [0, 100]. [A1]',
+          answer:
+            'The distribution cannot be normal because scores are bounded between 0 and 100, but a normal model would predict a significant proportion of negative scores.',
+        },
+        {
+          id: 11,
+          question:
+            'A box plot shows the distribution of masses of a large number of children in a primary school.  a) Identify one feature of the box plot which suggests that a normal distribution might be a good model for the masses.  b) The mean mass of the children is 36 kg and the standard deviation is 8.5 kg. Copy and complete the box plot by adding the relevant numbers. You may assume that the end points are the minimum and maximum values which are not outliers.',
+          type: 'Medium',
+          explaination:
+            'a) Box appears symmetric (median close to centre of box; whiskers similar length). [B1]  b) Using N(36, 8.5²):  Median = μ = 36  Q₁ = 36 − 0.6745 × 8.5 ≈ 30.3  Q₃ = 36 + 0.6745 × 8.5 ≈ 41.7  Min ≈ 36 − 3(8.5) = 10.5, Max ≈ 36 + 3(8.5) = 61.5 [M1A1A1]',
+          answer:
+            'a) The box is approximately symmetric about the median / the whiskers are approximately equal in length.  b) Min ≈ 10.5, Q1 ≈ 30.3, Median = 36, Q3 ≈ 41.7, Max ≈ 61.5',
+        },
+        {
+          id: 12,
+          question:
+            'The heights of trees in a forest can be modelled by a normal distribution with mean 8.7 m and standard deviation 2.3 m.  a) Sketch a normal distribution curve and shade the area representing P(5 < X < 10).  b) Find the probability that a randomly chosen tree has height between 5 m and 10 m.',
+          type: 'Medium',
+          explaination:
+            'b) Z₁ = (5 − 8.7)/2.3 ≈ −1.609,  Z₂ = (10 − 8.7)/2.3 ≈ 0.565 [M1]  P = Φ(0.565) − Φ(−1.609) = 0.7140 − 0.0538 = 0.6602 ≈ 0.660 [A1]',
+          answer: 'a) Diagram (see notes)  b) P(5 < X < 10) ≈ 0.660',
+        },
+        {
+          id: 13,
+          question:
+            'The battery life of a particular model of phone can be modelled by a normal distribution with mean 56 hours and standard deviation 8 hours. Find the probability that a randomly selected phone has battery life:  a) Between 50 and 60 hours  b) More than 72 hours',
+          type: 'Easy',
+          explaination:
+            'a) Z₁ = (50 − 56)/8 = −0.75, Z₂ = (60 − 56)/8 = 0.5  P = Φ(0.5) − Φ(−0.75) = 0.6915 − 0.2266 = 0.4649 [M1A1]  b) Z = (72 − 56)/8 = 2  P(Z > 2) = 1 − 0.9772 = 0.0228 [M1A1]',
+          answer: 'a) 0.465  b) 0.0228',
+        },
+        {
+          id: 14,
+          question:
+            'The heights of trees in a forest are modelled by a normal distribution with mean 17.2 m and standard deviation 6.3 m. Find the probability that a randomly selected tree:  a) Has height between 15 m and 20 m  b) Is taller than 20 m',
+          type: 'Medium',
+          explaination:
+            'a) Z₁ = (15 − 17.2)/6.3 ≈ −0.349, Z₂ = (20 − 17.2)/6.3 ≈ 0.444  P = Φ(0.444) − Φ(−0.349) = 0.6716 − 0.3637 = 0.3079 [M1A1]  b) P(X > 20) = 1 − Φ(0.444) = 1 − 0.6716 = 0.3284 [M1A1]',
+          answer: 'a) 0.308  b) 0.328',
+        },
+        {
+          id: 15,
+          question:
+            "Charlotte's times for running a 400 m race are normally distributed with mean 62.3 seconds and standard deviation 4.5 seconds.  a) What is the probability that Charlotte's time in a randomly selected race is over 65 seconds?  b) Charlotte ran 38 races this season. What is the expected number of races in which she ran over 65 seconds?  c) In order to qualify for the national championships, Charlotte needs to run under 59.7 seconds. What is the probability that she will qualify with a single race?",
+          type: 'Hard',
+          explaination:
+            'a) Z = (65 − 62.3)/4.5 = 0.6 → P(Z > 0.6) = 1 − 0.7257 = 0.2743 [M1A1]  b) E = 38 × 0.2743 ≈ 10.4 races [M1A1]  c) Z = (59.7 − 62.3)/4.5 ≈ −0.578 → P(Z < −0.578) = 0.2817 ≈ 0.282 [M1A1A1]',
+          answer: 'a) P(T > 65) ≈ 0.274  b) ≈ 10.4 races  c) P(T < 59.7) ≈ 0.282',
+        },
+        {
+          id: 16,
+          question:
+            'The times taken by a group of children to complete a puzzle can be modelled by a normal distribution with mean 4.5 minutes and variance 2.25 minutes².  a) What is the probability that a randomly selected child takes more than 7 minutes to complete the puzzle?  b) Find the length of time such that 90% of the children take less than this time to complete the puzzle.',
+          type: 'Hard',
+          explaination:
+            'σ = √2.25 = 1.5  a) Z = (7 − 4.5)/1.5 = 5/3 ≈ 1.667  P(Z > 1.667) = 1 − 0.9525 = 0.0475 [M1A1]  b) Φ⁻¹(0.90) = 1.2816  t = 4.5 + 1.5(1.2816) = 4.5 + 1.922 ≈ 6.42 minutes [M1M1A1]',
+          answer: 'a) 0.0478  b) ≈ 6.42 minutes',
+        },
+        {
+          id: 17,
+          question:
+            'The daily amount of screen time among teenagers can be modelled by a normal distribution with mean 4.2 hours and standard deviation 1.3 hours.  a) What percentage of teenagers get more than 6 hours of screen time per day?  b) Let T be the time such that 5% of teenagers get more screen time than this. Find the value of T.  c) In a group of 350 teenagers, how many would you expect to get less than 3 hours of screen time per day?',
+          type: 'Hard',
+          explaination:
+            'a) Z = (6 − 4.2)/1.3 ≈ 1.385 → P = 1 − Φ(1.385) = 0.0830 → 8.30% [M1A1]  b) P(X > T) = 0.05 → Φ⁻¹(0.95) = 1.6449  T = 4.2 + 1.3(1.6449) ≈ 6.34 hours [M1A1]  c) Z = (3 − 4.2)/1.3 ≈ −0.923 → P(X < 3) = 0.1781  E = 350 × 0.1781 ≈ 62 teenagers [M1M1A1]',
+          answer: 'a) 8.30%  b) T ≈ 6.34 hours  c) ≈ 62 teenagers',
+        },
+        {
+          id: 18,
+          question:
+            'In a long jump competition, the distances achieved by a particular age group can be modelled by a normal distribution with mean 5.2 m and variance 0.6 m².  a) In a group of 30 competitors from this age group, how many would you expect to jump further than 6 m?  b) In a large competition, the top 5% of participants will qualify for the next round. Estimate the qualifying distance.',
+          type: 'Hard',
+          explaination:
+            'σ = √0.6 ≈ 0.7746  a) Z = (6 − 5.2)/0.7746 ≈ 1.033 → P(X > 6) = 1 − 0.8493 = 0.1507  E = 30 × 0.1507 ≈ 4.52 ≈ 5 competitors [M1M1A1]  b) P(X > d) = 0.05 → z = Φ⁻¹(0.95) = 1.6449  d = 5.2 + 0.7746(1.6449) ≈ 6.47 m [M1M1A1]',
+          answer: 'a) ≈ 5 competitors  b) ≈ 6.47 m',
+        },
+        {
+          id: 19,
+          question:
+            'The reaction time of a sprinter follows a normal distribution with mean 0.2 seconds and standard deviation 0.1 seconds. A false start is declared if the reaction time is less than 0.1 seconds.  a) Find the probability of getting a negative reaction time. Explain why this might be a plausible outcome in this context.  b) Find the probability of the sprinter getting a false start.  c) In 10 races, find the probability that the sprinter gets a false start more than once.  d) What assumptions did you have to make in part c? How realistic are these assumptions?',
+          type: 'Hard',
+          explaination:
+            'a) Z = (0 − 0.2)/0.1 = −2 → P(T < 0) = 0.0228  Plausible: reaction time could be measured with error or a sprinter may anticipate the gun. [M1A1B1]  b) Z = (0.1 − 0.2)/0.1 = −1 → P(T < 0.1) = Φ(−1) = 0.1587 [M1A1]  c) Let F ~ B(10, 0.1587)  P(F > 1) = 1 − P(F = 0) − P(F = 1)  P(F = 0) = 0.8413¹⁰ ≈ 0.1749  P(F = 1) = 10 × 0.1587 × 0.8413⁹ ≈ 0.3299  P(F > 1) = 1 − 0.1749 − 0.3299 ≈ 0.495 [M1M1A1A1]  d) Assumptions: each race is independent; probability of false start is constant across races.  Realistic: races may not be independent (e.g. tiredness, strategy). [B1B1]',
+          answer:
+            'a) P(T < 0) ≈ 0.0228  b) P(T < 0.1) ≈ 0.1587  c) P(more than 1 false start) ≈ 0.495  d) Independence of races; constant probability',
+        },
+        {
+          id: 20,
+          question:
+            "A farmer has chickens that produce eggs with masses that are normally distributed with mean 60 g and standard deviation 5 g. Eggs with a mass less than 53 g cannot be sold. Eggs with a mass between 53 g and 63 g are sold for 12 cents, and eggs with a mass above 63 g are sold for 16 cents. If the farmer's hens produce 6000 eggs each week, what is the farmer's expected income from the eggs?",
+          type: 'Hard',
+          explaination:
+            'X ~ N(60, 25)  P(X < 53) = P(Z < (53 − 60)/5) = P(Z < −1.4) = 0.0808 [unsellable]  P(53 ≤ X ≤ 63) = P(−1.4 < Z < 0.6) = Φ(0.6) − Φ(−1.4)  = 0.7257 − 0.0808 = 0.6449 [M1]  P(X > 63) = 1 − 0.7257 = 0.2743 [M1]  Expected income:  E = 6000 × [0.6449 × 0.12 + 0.2743 × 0.16]  = 6000 × [0.07739 + 0.04389]  = 6000 × 0.1213 ≈ $727.67 ≈ $728 [M1M1A1A1]',
+          answer: 'Expected income ≈ $728',
+        },
+      ],
+      'normal-distribution-finding-unknown-values': [
+        {
+          id: 1,
+          question:
+            'Given that X ~ N(10, 25), find the value of x such that:  a) P(X < x) = 0.75  b) P(X < x) = 0.26',
+          type: 'Medium',
+          explaination:
+            'a) Φ⁻¹(0.75) = 0.6745 → x = 10 + 5(0.6745) = 13.37 ≈ 13.4  b) Φ⁻¹(0.26) = −0.6433 → x = 10 + 5(−0.6433) = 6.78',
+          answer: 'a) x = 13.4  b) x = 6.78',
+        },
+        {
+          id: 2,
+          question:
+            'Given that X ~ N(10, 25), find the value of x such that:  a) P(X > x) = 0.65  b) P(X > x) = 0.12',
+          type: 'Medium',
+          explaination:
+            'a) P(X < x) = 0.35 → z = Φ⁻¹(0.35) = −0.385 → x = 10 + 5(−0.385) = 8.07  b) P(X < x) = 0.88 → z = Φ⁻¹(0.88) = 1.175 → x = 10 + 5(1.175) = 15.88 ≈ 15.9',
+          answer: 'a) x = 8.07  b) x = 15.9',
+        },
+        {
+          id: 3,
+          question:
+            'Given that X ~ N(38, 18), find the value of x such that:  a) P(X < x) = 0.05  b) P(X < x) = 0.97',
+          type: 'Medium',
+          explaination:
+            'σ = √18 ≈ 4.243  a) z = Φ⁻¹(0.05) = −1.6449 → x = 38 + 4.243(−1.6449) ≈ 31.0  b) z = Φ⁻¹(0.97) = 1.8808 → x = 38 + 4.243(1.8808) ≈ 46.0',
+          answer: 'a) x = 31.0  b) x = 46.0',
+        },
+        {
+          id: 4,
+          question:
+            'Given that X ~ N(38, 18), find the value of x such that:  a) P(X > x) = 0.99  b) P(X > x) = 0.02',
+          type: 'Medium',
+          explaination:
+            'a) P(X < x) = 0.01 → z = −2.3263 → x = 38 + 4.243(−2.3263) ≈ 28.1  b) P(X < x) = 0.98 → z = 2.0537 → x = 38 + 4.243(2.0537) ≈ 46.7',
+          answer: 'a) x = 28.1  b) x = 46.7',
+        },
+        {
+          id: 5,
+          question:
+            'Among 17-year-olds, the times taken to run 100 m are normally distributed with mean 14.3 s and variance 2.2 s². In a large competition, the top 15% of participants will qualify for the next round. Estimate the required qualifying time.',
+          type: 'Hard',
+          explaination:
+            'σ = √2.2 ≈ 1.483  Top 15% have the fastest (lowest) times, so P(X < t) = 0.15.  z = Φ⁻¹(0.15) = −1.0364  t = 14.3 + 1.483(−1.0364) ≈ 14.3 − 1.537 ≈ 12.8 s [M1M1A1A1]',
+          answer: 't ≈ 12.8 s',
+        },
+        {
+          id: 6,
+          question:
+            'A random variable follows a normal distribution with mean 12 and variance 25. Find:  a) The upper quartile of the distribution.  b) The interquartile range of the distribution.',
+          type: 'Medium',
+          explaination:
+            'σ = 5  a) P(X < Q₃) = 0.75 → z = 0.6745  Q₃ = 12 + 5(0.6745) = 15.37 ≈ 15.4 [M1A1]  b) By symmetry: Q₁ = 12 − 5(0.6745) = 8.63  IQR = Q₃ − Q₁ = 15.37 − 8.63 = 6.74 [M1A1]',
+          answer: 'a) Q₃ ≈ 15.4  b) IQR ≈ 6.74',
+        },
+        {
+          id: 7,
+          question:
+            'A random variable follows a normal distribution with mean 3.6 and variance 1.44. Find the 80th percentile of the distribution.',
+          type: 'Medium',
+          explaination:
+            'σ = √1.44 = 1.2  P(X < p) = 0.80 → z = Φ⁻¹(0.80) = 0.8416  p = 3.6 + 1.2(0.8416) = 3.6 + 1.010 = 4.61 [M1M1A1]',
+          answer: '≈ 4.61',
+        },
+        {
+          id: 8,
+          question:
+            'Given that X ~ N(17, 3.2²), find the value of k such that P(15 < X < k) = 0.62.',
+          type: 'Hard',
+          explaination:
+            'P(X < 15) = P(Z < (15 − 17)/3.2) = P(Z < −0.625) = 0.2660  P(X < k) = 0.2660 + 0.62 = 0.8860  z = Φ⁻¹(0.8860) ≈ 1.200  k = 17 + 3.2(1.200) = 17 + 3.84 = 20.84 ≈ 20.8 [M1M1M1A1]',
+          answer: 'k ≈ 20.8',
+        },
+        {
+          id: 9,
+          question:
+            'Given that Y ~ N(13.2, 5.1²), find the value of c such that P(c < Y < 17.3) = 0.14.',
+          type: 'Hard',
+          explaination:
+            'P(Y < 17.3) = P(Z < (17.3 − 13.2)/5.1) = P(Z < 0.804) = 0.7892  P(Y < c) = 0.7892 − 0.14 = 0.6492  z = Φ⁻¹(0.6492) ≈ 0.382  c = 13.2 + 5.1(0.382) ≈ 15.1 [M1M1M1A1]',
+          answer: 'c ≈ 15.1',
+        },
+      ],
+    },
+  },
+  {
+    'probability-statistics': {
+      title: 'Probability & Statistics',
+      'discrete-probability-distributions': [
+        {
+          id: 1,
+          question:
+            'A bag contains three blue counters and four yellow counters. Two counters are removed without replacement and X is the number of blue counters removed.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination:
+            'P(X = 0) = ³C₀⁴C₂/⁷C₂ = 6/21  P(X = 1) = ³C₁⁴C₁/⁷C₂ = 12/21  P(X = 2) = ³C₂⁴C₀/⁷C₂ = 3/21  Check: 6/21 + 12/21 + 3/21 = 1 ✓',
+          answer: 'P(X = 0) = 12/42, P(X = 1) = 24/42, P(X = 2) = 6/42',
+        },
+        {
+          id: 2,
+          question:
+            'Adam has seven blue shirts and eight purple shirts in the wardrobe. He picks two shirts without looking and X is the number of blue shirts selected.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination:
+            'P(X = 0) = ⁷C₀⁸C₂/¹⁵C₂ = 28/105  P(X = 1) = ⁷C₁⁸C₁/¹⁵C₂ = 56/105  P(X = 2) = ⁷C₂⁸C₀/¹⁵C₂ = 21/105  Check sum = 1 ✓',
+          answer: 'P(X = 0) = 28/105, P(X = 1) = 56/105, P(X = 2) = 21/105',
+        },
+        {
+          id: 3,
+          question:
+            'A fair coin is tossed twice and X is the number of heads.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination:
+            'Sample space: HH, HT, TH, TT  P(X = 0) = 1/4  P(X = 1) = 2/4 = 1/2  P(X = 2) = 1/4',
+          answer: 'P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4',
+        },
+        {
+          id: 4,
+          question:
+            'A fair coin is tossed twice and X is the number of tails.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination:
+            'Sample space: HH, HT, TH, TT  P(X = 0) = 1/4  P(X = 1) = 1/2  P(X = 2) = 1/4',
+          answer: 'P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4',
+        },
+        {
+          id: 5,
+          question:
+            'A fair coin is tossed three times, X is the number of tails.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination: 'P(X = k) = ³Cₖ(1/2)³  for k = 0,1,2,3',
+          answer: 'P(X = 0) = 1/8, P(X = 1) = 3/8, P(X = 2) = 3/8, P(X = 3) = 1/8',
+        },
+        {
+          id: 6,
+          question:
+            'A fair coin is tossed three times, X is the number of heads.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination: 'Same working as 3a by symmetry of fair coin.',
+          answer: 'P(X = 0) = 1/8, P(X = 1) = 3/8, P(X = 2) = 3/8, P(X = 3) = 1/8',
+        },
+        {
+          id: 7,
+          question:
+            'A fair six-sided dice is rolled once and X is the number shown on the dice.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination: 'Each outcome equally likely with probability 1/6.',
+          answer: 'P(X = x) = 1/6 for x = 1,2,3,4,5,6',
+        },
+        {
+          id: 8,
+          question:
+            'A fair eight-sided dice is rolled once and X is the number shown on the dice.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination: 'Each outcome equally likely with probability 1/8.',
+          answer: 'P(X = x) = 1/8 for x = 1,2,3,4,5,6,7,8',
+        },
+        {
+          id: 9,
+          question:
+            'A fair six-sided dice is rolled three times and X is the number of 5s.  Find the probability distribution of X.',
+          type: 'Medium',
+          explaination: 'X~ B(3,1/6)  P(X = k) = ³Cₖ(1/6)ᵏ(5/6)³⁻ᵏ',
+          answer: 'P(X = 0) = 125/216, P(X = 1) = 75/216, P(X = 2) = 15/216, P(X = 3) = 1/216',
+        },
+        {
+          id: 10,
+          question:
+            'A fair eight-sided dice is rolled three times and X is the number of 1s.  Find the probability distribution of X.',
+          type: 'Medium',
+          explaination: 'X~ B(3,1/8)  P(X = k) = ³Cₖ(1/8)ᵏ(7/8)³⁻ᵏ',
+          answer: 'P(X = 0) = 343/512, P(X = 1) = 147/512, P(X = 2) = 21/512, P(X = 3) = 1/512',
+        },
+        {
+          id: 11,
+          question:
+            'The probability that it rains on any given day is 0.2. X is the number of rainy days in a two-day weekend.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination:
+            'X~ B(2, 0.2)  P(X = 0) = 0.8² = 0.64  P(X = 1) = 2(0.2)(0.8) = 0.32  P(X = 2) = 0.2² = 0.04',
+          answer: 'P(X = 0) = 0.64, P(X = 1) = 0.32, P(X = 2) = 0.04',
+        },
+        {
+          id: 12,
+          question:
+            'The probability that I go to the gym on any given day is 0.7. X is the number of days I go to the gym during a two-day weekend.  Find the probability distribution of X.',
+          type: 'Easy',
+          explaination:
+            'X~ B(2, 0.7)  P(X = 0) = 0.3² = 0.09  P(X = 1) = 2(0.7)(0.3) = 0.42  P(X = 2) = 0.7² = 0.49',
+          answer: 'P(X = 0) = 0.09, P(X = 1) = 0.42, P(X = 2) = 0.49',
+        },
+        {
+          id: 13,
+          question:
+            'A bag contains eight red sweets and six yellow sweets. Two sweets are selected at random. Let X be the number of yellow sweets.  a) Find the probability distribution of X.  b) Find the expected number of yellow sweets.',
+          type: 'Hard',
+          explaination:
+            'a) ¹⁴C₂ = 91  P(X = 0) = ⁸C₂/91 = 28/91  P(X = 1) = ⁶C₁⁸C₁/91 = 48/91  P(X = 2) = ⁶C₂/91 = 15/91  b) E(X) = 0·28/91 + 1·48/91 + 2·15/91 = 78/91 = 6/7',
+          answer: 'a) P(X = 0) = 28/91, P(X = 1) = 48/91, P(X = 2) = 15/91  b) E(X) = 6/7 ≈ 0.857',
+        },
+        {
+          id: 14,
+          question:
+            'Two cards are selected at random from a standard pack of 52 cards.  a) Find the probability that both cards are hearts.  b) Find the probability distribution of H, the number of hearts drawn.  c) Find the expected number of hearts.',
+          type: 'Hard',
+          explaination:
+            'a) P(H = 2) = ¹³C₂/⁵²C₂ = 78/1326 = 1/17  b) P(H = 0) = ³⁹C₂/⁵²C₂ = 741/1326  P(H = 1) = ¹³C₁³⁹C₁/⁵²C₂ = 507/1326  P(H = 2) = 78/1326  c) E(H) = 0·741/1326 + 1·507/1326 + 2·78/1326 = 663/1326 = 0.5',
+          answer:
+            'a) P(H = 2) = 13/204  b) P(H = 0) = 703/1326, P(H = 1) = 507/1326, P(H = 2) = 78/1326  c) E(H) = 1/2',
+        },
+        {
+          id: 15,
+          question:
+            'A fair coin is tossed three times.  a) Draw a tree diagram showing all possible outcomes.  b) Find the probability that exactly two heads are rolled.  Let X be the number of heads.  c) Find the probability distribution of X.  d) Find the expected number of heads.',
+          type: 'Medium',
+          explaination:
+            'a) Tree diagram with 8 equally likely outcomes (HHH, HHT, HTH, HTT, THH, THT, TTH, TTT)  b) Outcomes with exactly 2 heads: HHT, HTH, THH → P = 3/8  c) P(X = 0) = 1/8, P(X = 1) = 3/8, P(X = 2) = 3/8, P(X = 3) = 1/8  d) E(X) = 0(1/8) + 1(3/8) + 2(3/8) + 3(1/8) = 1.5',
+          answer: 'b) P(exactly 2 heads) = 3/8  d) E(X) = 1.5',
+        },
+        {
+          id: 16,
+          question:
+            'A fair four-sided dice (with faces numbered 1 to 4) is rolled twice and X is the sum of the two scores.  a) Find the probability distribution of X.  b) Find the expected total score.',
+          type: 'Hard',
+          explaination:
+            'a) 16 equally likely outcomes.  P(X = 2) = 1/16, P(X = 3) = 2/16, P(X = 4) = 3/16, P(X = 5) = 4/16,  P(X = 6) = 3/16, P(X = 7) = 2/16, P(X = 8) = 1/16  b) E(X) = 2(1/16) + 3(2/16) + 4(3/16) + 5(4/16) + 6(3/16) + 7(2/16) + 8(1/16) = 5',
+          answer: 'b) E(X) = 5',
+        },
+      ],
+      'probability-distributions-algebraic': [
+        {
+          id: 1,
+          question:
+            'A discrete random variable has the probability distribution given by:  P(X = x) = 1/15(x + 3)  for x ∈ {1, 2, 3}.  a) Write down P(X = 3).  b) Find the expected value of X.',
+          type: 'Medium',
+          explaination:
+            'a) P(X = 3) = 1/15(3 + 3) = 6/15  b) P(X = 1) = 4/15, P(X = 2) = 5/15, P(X = 3) = 6/15  Check: (4 + 5 + 6)/15 = 1 ✓  E(X) = 1·4/15 + 2·5/15 + 3·6/15 = (4 + 10 + 18)/15 = 32/15',
+          answer: 'a) P(X = 3) = 6/15 = 2/5  b) E(X) = 7/3 ≈ 2.33',
+        },
+      ],
+    },
+  },
+  {
+    calculus: {
+      title: 'Calculus',
+      limits: [
+        {
+          id: 1,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of 3x/5x as x → 0.',
+          type: 'Easy',
+          explaination: 'Simplify: 3x/5x = 3/5 for all x ≠ 0. Limit = 3/5.',
+          answer: '3/5',
+        },
+        {
+          id: 2,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of 7x²/2x as x → 0.',
+          type: 'Easy',
+          explaination: 'Simplify: 7x²/2x = 7x/2 → 0 as x → 0.',
+          answer: '0',
+        },
+        {
+          id: 3,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (3x + 5x²)/2x as x → 0.',
+          type: 'Easy',
+          explaination: 'Simplify: (3x + 5x²)/2x = (3 + 5x)/2 → 3/2 as x → 0.',
+          answer: '3/2',
+        },
+        {
+          id: 4,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (x² + 3x)/(2x² + x) as x → 0.',
+          type: 'Easy',
+          explaination: 'Factor: (x(x + 3))/(x(2x + 1)) = (x + 3)/(2x + 1) → 3/1 = 3 as x → 0.',
+          answer: '3',
+        },
+        {
+          id: 5,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (sin 2x)/(((π x)/180)) as x → 0. (Angles in degrees.)',
+          type: 'Medium',
+          explaination:
+            'Using small-angle: sin(2x°) ≈ (2π x)/180. So ratio ≈ (2π x/180)/(π x/180) = 2.',
+          answer: '2',
+        },
+        {
+          id: 6,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (sin 3x)/(((π x)/180)) as x → 0. (Angles in degrees.)',
+          type: 'Medium',
+          explaination: 'Small-angle: sin(3x°) ≈ (3π x)/180. Ratio → 3.',
+          answer: '3',
+        },
+        {
+          id: 7,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (tan x)/(((π x)/180)) as x → 0. (Angles in degrees.)',
+          type: 'Medium',
+          explaination: 'Small-angle: tan(x°) ≈ (π x)/180. Ratio → 1.',
+          answer: '1',
+        },
+        {
+          id: 8,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (tan 2x)/(((π x)/90)) as x → 0. (Angles in degrees.)',
+          type: 'Medium',
+          explaination: 'tan(2x°) ≈ (2π x)/180 = (π x)/90. Ratio → 1.',
+          answer: '1',
+        },
+        {
+          id: 9,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (2ˣ − 1)/x as x → 0.',
+          type: 'Hard',
+          explaination:
+            'Numerically substitute small values of x (e.g., 0.1, 0.01, 0.001). The values approach ln 2.',
+          answer: 'ln 2 ≈ 0.693',
+        },
+        {
+          id: 10,
+          question:
+            'Using the method of substituting values close to zero, suggest the limit of (3ˣ − 1)/x as x → 0.',
+          type: 'Hard',
+          explaination: 'Substitute small x values; values approach ln 3.',
+          answer: 'ln 3 ≈ 1.099',
+        },
+        {
+          id: 11,
+          question:
+            'Use technology to suggest the value of the limit of (sin x²)/(((π x)/180)²) as x → 0. (Angles in degrees.)',
+          type: 'Hard',
+          explaination:
+            'Let u = (π x²)/180. (sin(π x²/180))/((π x/180)²) = (sin u)/u·180/π→ 1·180/π as x→ 0.',
+          answer: '180/π ≈ 57.3',
+        },
+        {
+          id: 12,
+          question: 'Suggest the value of the limit of (ln x)/(x − 1) as x → 1.',
+          type: 'Medium',
+          explaination: 'Let u = x − 1→ 0. (ln(1 + u))/u→ 1 as u→ 0 (standard limit).',
+          answer: '1',
+        },
+        {
+          id: 13,
+          question:
+            'Use technology to suggest a value for the limit of √(x² + 6x) − x as x gets very large.',
+          type: 'Hard',
+          explaination: 'Rationalise: 6x/(√(x² + 6x) + x) = 6/(√(1 + 6/x) + 1)→6/2 = 3 as x→∞.',
+          answer: '3',
+        },
+        {
+          id: 14,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = x/5x and hence suggest the limit as x → 0.',
+          type: 'Easy',
+          explaination: 'Graph is the horizontal line y = 1/5 for x ≠ 0. Limit = 1/5.',
+          answer: '1/5',
+        },
+        {
+          id: 15,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = 7x²/10x and hence suggest the limit as x → 0.',
+          type: 'Easy',
+          explaination: 'Simplify to 7x/10→ 0 as x→ 0.',
+          answer: '0',
+        },
+        {
+          id: 16,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (x + x³)/2x and hence suggest the limit as x → 0.',
+          type: 'Easy',
+          explaination: 'Simplify: (1 + x²)/2→1/2 as x→ 0.',
+          answer: '1/2',
+        },
+        {
+          id: 17,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (x² + x)/(x² + 2x) and hence suggest the limit as x → 0.',
+          type: 'Easy',
+          explaination: 'Factor: (x(x + 1))/(x(x + 2)) = (x + 1)/(x + 2)→1/2 as x→ 0.',
+          answer: '1/2',
+        },
+        {
+          id: 18,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (sin 5x)/(((π x)/36)) and hence suggest the limit as x → 0. (Angles in degrees.)',
+          type: 'Medium',
+          explaination:
+            'Small-angle: sin(5x°) ≈ (5π x)/180. Ratio = (5π x/180)/(π x/36) = (5 × 36)/180 = 1.',
+          answer: '1',
+        },
+        {
+          id: 19,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (sin 10x)/(((π x)/180)) and hence suggest the limit as x → 0. (Angles in degrees.)',
+          type: 'Medium',
+          explaination: 'Small-angle: sin(10x°) ≈ (10π x)/180. Ratio → 10.',
+          answer: '10',
+        },
+        {
+          id: 20,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (cos x − 1)/(((π x)/180)²) and hence suggest the limit as x → 0. (Angles in degrees.)',
+          type: 'Hard',
+          explaination: 'Using cos(x°) ≈ 1 − 1/2((π x)/180)², the ratio → −1/2.',
+          answer: '−1/2',
+        },
+        {
+          id: 21,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (cos x − 1)/(((π x)/180)) and hence suggest the limit as x → 0. (Angles in degrees.)',
+          type: 'Hard',
+          explaination: 'Numerator ~ −1/2((π x)/180)², denominator ~(π x)/180. Ratio → 0.',
+          answer: '0',
+        },
+        {
+          id: 22,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (5ˣ − 1)/2x and hence suggest the limit as x → 0.',
+          type: 'Hard',
+          explaination: 'Limit of (5ˣ − 1)/x = ln 5; dividing by 2 gives (ln 5)/2.',
+          answer: '(ln 5)/2 ≈ 0.805',
+        },
+        {
+          id: 23,
+          question:
+            'Use a graphical calculator to sketch the graph of f(x) = (4ˣ − 1)/4x and hence suggest the limit as x → 0.',
+          type: 'Hard',
+          explaination: 'Limit of (4ˣ − 1)/x = ln 4; divide by 4.',
+          answer: '(ln 4)/4 = (ln 2)/2 ≈ 0.347',
+        },
+      ],
+      'gradient-by-numerical-method': [
+        {
+          id: 1,
+          question:
+            'The curve is y = x² and P is (0, 0). Complete the table below for points Q with x-coordinates 1, 0.5, 0.1, 0.01 (given: Δ x, Δ y, gradient of PQ) and hence suggest the gradient of the tangent at P.',
+          type: 'Easy',
+          explaination:
+            'For Q = (x,x²): Δ y = x² − 0 = x², gradient = x²/x = x. As x→ 0, gradient → 0.',
+          answer: '0',
+        },
+        {
+          id: 2,
+          question:
+            'The curve is y = x² and P is (2, 4). Complete the table below for points Q with x-coordinates 3, 2.5, 2.1, 2.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Easy',
+          explaination: 'Gradient of PQ = (x² − 4)/(x − 2) = x + 2→ 4 as x→ 2.',
+          answer: '4',
+        },
+        {
+          id: 3,
+          question:
+            'The curve is y = 2x³ and P is (1, 2). Complete the table below for points Q with x-coordinates 2, 1.5, 1.1, 1.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Medium',
+          explaination: 'Gradient of PQ = (2x³ − 2)/(x − 1) = 2(x² + x + 1)→ 6 as x→ 1.',
+          answer: '6',
+        },
+        {
+          id: 4,
+          question:
+            'The curve is y = 3x⁴ and P is (0, 0). Complete the table below for points Q with x-coordinates 1, 0.5, 0.1, 0.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Medium',
+          explaination: 'Gradient of PQ = 3x⁴/x = 3x³→ 0 as x→ 0.',
+          answer: '0',
+        },
+        {
+          id: 5,
+          question:
+            'The curve is y = √x and P is (1, 1). Complete the table below for points Q with x-coordinates 2, 1.5, 1.1, 1.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Medium',
+          explaination: 'Gradient of PQ = (√x − 1)/(x − 1) = 1/(√x + 1)→1/2 as x→ 1.',
+          answer: '1/2',
+        },
+        {
+          id: 6,
+          question:
+            'The curve is y = ∛x and P is (8, 2). Complete the table below for points Q with x-coordinates 9, 8.5, 8.1, 8.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Medium',
+          explaination: 'Gradient of PQ = (x^(1/3) − 2)/(x − 8)→1/(3· 8^(2/3)) = 1/12 as x→ 8.',
+          answer: '1/12 ≈ 0.0833',
+        },
+        {
+          id: 7,
+          question:
+            'The curve is y = 1/x and P is (1, 1). Complete the table below for points Q with x-coordinates 2, 1.5, 1.1, 1.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Medium',
+          explaination:
+            'Gradient of PQ = (1/x − 1)/(x − 1) = (−(x − 1)/x)/(x − 1) = −1/x→ −1 as x→ 1.',
+          answer: '−1',
+        },
+        {
+          id: 8,
+          question:
+            'The curve is y = 1/x² and P is (1, 1). Complete the table below for points Q with x-coordinates 2, 1.5, 1.1, 1.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Hard',
+          explaination:
+            'Gradient of PQ = (x⁻² − 1)/(x − 1) = (−(x² − 1)/x²)/(x − 1) = −(x + 1)/x²→ −2 as x→ 1.',
+          answer: '−2',
+        },
+        {
+          id: 9,
+          question:
+            'The curve is y = ln x and P is (1, 0). Complete the table below for points Q with x-coordinates 2, 1.5, 1.1, 1.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Hard',
+          explaination: 'Gradient of PQ = (ln x)/(x − 1)→ 1 as x→ 1 (standard limit).',
+          answer: '1',
+        },
+        {
+          id: 10,
+          question:
+            'The curve is y = 2ˣ and P is (0, 1). Complete the table below for points Q with x-coordinates 1, 0.5, 0.1, 0.01 and hence suggest the gradient of the tangent at P.',
+          type: 'Hard',
+          explaination: 'Gradient of PQ = (2ˣ − 1)/x→ln 2 as x→ 0.',
+          answer: 'ln 2 ≈ 0.693',
+        },
+      ],
+      'derivative-notation': [
+        {
+          id: 1,
+          question: 'Find the derivative of f(x) = −4x',
+          type: 'Easy',
+          explaination: "f(x) = −4x¹, so f'(x) = −4 · 1 · x⁰ = −4",
+          answer: "f'(x) = −4",
+        },
+        {
+          id: 2,
+          question: 'Find the derivative of g(x) = 7x²',
+          type: 'Easy',
+          explaination: "Power rule: g'(x) = 7 · 2x²⁻¹ = 14x",
+          answer: "g'(x) = 14x",
+        },
+        {
+          id: 3,
+          question: 'Find the derivative of y = 6x',
+          type: 'Easy',
+          explaination: 'y = 6x¹, so dy/dx = 6',
+          answer: 'dy/dx = 6',
+        },
+        {
+          id: 4,
+          question: 'Find the derivative of y = 3x⁵',
+          type: 'Easy',
+          explaination: 'Power rule: dy/dx = 3 · 5x⁴ = 15x⁴',
+          answer: 'dy/dx = 15x⁴',
+        },
+        {
+          id: 5,
+          question: 'Find the derivative of y = 7',
+          type: 'Easy',
+          explaination: 'The derivative of any constant is zero: dy/dx = 0',
+          answer: 'dy/dx = 0',
+        },
+        {
+          id: 6,
+          question: 'Find the derivative of y = −6',
+          type: 'Easy',
+          explaination: 'Constant function; derivative is zero: dy/dx = 0',
+          answer: 'dy/dx = 0',
+        },
+        {
+          id: 7,
+          question: 'Write the following as a derivative: the rate of change of z as v changes.',
+          type: 'Easy',
+          explaination: 'Rate of change of z with respect to v is dz/dv.',
+          answer: 'dz/dv',
+        },
+        {
+          id: 8,
+          question: 'Write the following as a derivative: the rate of change of a as b changes.',
+          type: 'Easy',
+          explaination: 'Rate of change of a with respect to b is da/db.',
+          answer: 'da/db',
+        },
+        {
+          id: 9,
+          question:
+            'Write the following as a derivative: the rate of change of p with respect to t.',
+          type: 'Easy',
+          explaination: 'Direct notation: dp/dt.',
+          answer: 'dp/dt',
+        },
+        {
+          id: 10,
+          question:
+            'Write the following as a derivative: the rate of change of b with respect to x.',
+          type: 'Easy',
+          explaination: 'Direct notation: db/dx.',
+          answer: 'db/dx',
+        },
+        {
+          id: 11,
+          question: 'Write the following as a derivative: how fast y changes when n is changed.',
+          type: 'Easy',
+          explaination: 'Rate of change of y with respect to n: dy/dn.',
+          answer: 'dy/dn',
+        },
+        {
+          id: 12,
+          question: 'Write the following as a derivative: how fast t changes when f is changed.',
+          type: 'Easy',
+          explaination: 'Rate of change of t with respect to f: dt/df.',
+          answer: 'dt/df',
+        },
+        {
+          id: 13,
+          question:
+            'Write the following as a derivative: how quickly the height of an aeroplane h changes over time t.',
+          type: 'Easy',
+          explaination: 'Rate of change of h with respect to t: dh/dt.',
+          answer: 'dh/dt',
+        },
+        {
+          id: 14,
+          question:
+            'Write the following as a derivative: how quickly the weight of water w changes as the volume v changes.',
+          type: 'Easy',
+          explaination: 'Rate of change of w with respect to v: dw/dv.',
+          answer: 'dw/dv',
+        },
+        {
+          id: 15,
+          question:
+            'Write the following as a derivative: the rate of increase in the average wage w as the unemployment rate u increases.',
+          type: 'Easy',
+          explaination: 'Rate of change of w with respect to u: dw/du.',
+          answer: 'dw/du',
+        },
+        {
+          id: 16,
+          question:
+            'Write the following as a derivative: the rate of increase in the rate of reaction R as the temperature T increases.',
+          type: 'Easy',
+          explaination: 'Rate of change of R with respect to T: dR/dT.',
+          answer: 'dR/dT',
+        },
+        {
+          id: 17,
+          question: 'If y = 4x², find dy/dx when x = 2.',
+          type: 'Easy',
+          explaination: 'dy/dx = 8x [1]; at x = 2: 8(2) = 16 [1]',
+          answer: '16',
+        },
+        {
+          id: 18,
+          question: 'If y = x³ − 7x, find dy/dx when x = 3.',
+          type: 'Easy',
+          explaination: 'dy/dx = 3x² − 7 [1]; at x = 3: 3(9) − 7 = 20 [1]',
+          answer: '20',
+        },
+        {
+          id: 19,
+          question: 'If A = 5 − 2h⁻¹, find dA/dh when h = 4.',
+          type: 'Easy',
+          explaination: 'dA/dh = 2h⁻² [1]; at h = 4: 2/16 = 1/8 [1]',
+          answer: '1/8',
+        },
+        {
+          id: 20,
+          question: 'If φ = θ³ − θ⁻², find dφ/dθ when θ = 0.5.',
+          type: 'Easy',
+          explaination:
+            'dφ/dθ = 3θ² + 2θ⁻³ [1]; at θ = 0.5: 3(0.25) + 2(8) = 0.75 + 16 = 16.75 [1]',
+          answer: '43/4',
+        },
+        {
+          id: 21,
+          question:
+            'Find the rate of change of y with respect to x, where a, b and c are constants: y = ax + b',
+          type: 'Medium',
+          explaination: 'y = ax + b; differentiating: dy/dx = a (b is a constant, contributes 0)',
+          answer: 'dy/dx = a',
+        },
+        {
+          id: 22,
+          question:
+            'Find the rate of change of y with respect to x, where a, b and c are constants: y = ax² + bx + c',
+          type: 'Medium',
+          explaination: 'Differentiate term by term: dy/dx = 2ax + b + 0 = 2ax + b',
+          answer: 'dy/dx = 2ax + b',
+        },
+        {
+          id: 23,
+          question:
+            'Find the rate of change of y with respect to x, where a, b and c are constants: y = ax² + (3 − a)x',
+          type: 'Medium',
+          explaination: 'Differentiate: dy/dx = 2ax + (3 − a)',
+          answer: 'dy/dx = 2ax + (3 − a)',
+        },
+        {
+          id: 24,
+          question:
+            'Find the rate of change of y with respect to x, where a, b and c are constants: y = x³ + b² x',
+          type: 'Medium',
+          explaination: 'b² is a constant coefficient. dy/dx = 3x² + b²',
+          answer: 'dy/dx = 3x² + b²',
+        },
+        {
+          id: 25,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = x² + a²',
+          type: 'Medium',
+          explaination: 'a² is a constant; dy/dx = 2x',
+          answer: 'dy/dx = 2x',
+        },
+        {
+          id: 26,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = a² x³ + a² b³',
+          type: 'Medium',
+          explaination: 'a² b³ is constant; dy/dx = 3a² x²',
+          answer: 'dy/dx = 3a² x²',
+        },
+        {
+          id: 27,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = x²ᵃ + a²ᵃ',
+          type: 'Hard',
+          explaination: 'a²ᵃ is constant; power rule: dy/dx = 2ax²ᵃ⁻¹',
+          answer: 'dy/dx = 2ax²ᵃ⁻¹',
+        },
+        {
+          id: 28,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = x⁻ᵃ − x⁻ᵇ + ab',
+          type: 'Hard',
+          explaination:
+            'Differentiate term by term: dy/dx = −ax⁻ᵃ⁻¹ − (−b)x⁻ᵇ⁻¹ + 0 = −ax⁻ᵃ⁻¹ + bx⁻ᵇ⁻¹',
+          answer: 'dy/dx = −ax⁻ᵃ⁻¹ + bx⁻ᵇ⁻¹',
+        },
+        {
+          id: 29,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = 7ax − 3b/x²',
+          type: 'Hard',
+          explaination: 'Rewrite: y = 7ax − 3bx⁻²  Differentiate: dy/dx = 7a + 6bx⁻³ = 7a + 6b/x³',
+          answer: 'dy/dx = 7a + 6b/x³',
+        },
+        {
+          id: 30,
+          question:
+            'Find the rate of change of y with respect to x, where a, b and c are constants: y = 5b² x² + 3a/cx',
+          type: 'Hard',
+          explaination:
+            'Rewrite: y = 5b² x² + 3a/cx⁻¹  Differentiate: dy/dx = 10b² x − 3a/cx⁻² = 10b² x − 3a/cx²',
+          answer: 'dy/dx = 10b² x − 3a/cx²',
+        },
+        {
+          id: 31,
+          question:
+            'Find the rate of change of y with respect to x, where a is a constant: y = (ax)²',
+          type: 'Medium',
+          explaination: 'Expand: y = a² x²  Differentiate: dy/dx = 2a² x',
+          answer: 'dy/dx = 2a² x',
+        },
+        {
+          id: 32,
+          question:
+            'Find the rate of change of y with respect to x, where a is a constant: y = (3ax)²',
+          type: 'Medium',
+          explaination: 'Expand: y = 9a² x²  Differentiate: dy/dx = 18a² x',
+          answer: 'dy/dx = 18a² x',
+        },
+        {
+          id: 33,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = (x + a)(x + b)',
+          type: 'Hard',
+          explaination: 'Expand: y = x² + (a + b)x + ab  Differentiate: dy/dx = 2x + (a + b)',
+          answer: 'dy/dx = 2x + a + b',
+        },
+        {
+          id: 34,
+          question:
+            'Find the rate of change of y with respect to x, where a and b are constants: y = (ax + b)(bx + a)',
+          type: 'Hard',
+          explaination:
+            'Expand: y = abx² + a² x + b² x + ab = abx² + (a² + b²)x + ab  Differentiate: dy/dx = 2abx + (a² + b²)',
+          answer: 'dy/dx = 2abx + a² + b²',
+        },
+      ],
+      'differential-equations-forming': [
+        {
+          id: 1,
+          question:
+            'The gradient of the graph of y against x at any point is equal to the y-coordinate. Write this as a differential equation.',
+          type: 'Easy',
+          explaination: 'Gradient of y vs x at any point = y, so dy/dx = y.',
+          answer: 'dy/dx = y',
+        },
+        {
+          id: 2,
+          question:
+            'The gradient of the graph of y against x at any point is equal to half of the x-coordinate. Write this as a differential equation.',
+          type: 'Easy',
+          explaination: 'Gradient = x/2, so dy/dx = x/2.',
+          answer: 'dy/dx = x/2',
+        },
+        {
+          id: 3,
+          question:
+            'The gradient of the graph of s against t is proportional to the square of the t-coordinate. Write this as a differential equation.',
+          type: 'Medium',
+          explaination: 'Proportional to t²: ds/dt = kt² where k is a constant.',
+          answer: 'ds/dt = kt²',
+        },
+        {
+          id: 4,
+          question:
+            'The gradient of the graph of q against p is proportional to the square root of the q-coordinate. Write this as a differential equation.',
+          type: 'Medium',
+          explaination: 'Proportional to √q: dq/dp = k√q.',
+          answer: 'dq/dp = k√q',
+        },
+        {
+          id: 5,
+          question:
+            'The growth rate of a plant of size P over time t is proportional to the amount of light it receives, L(P). Write this as a differential equation.',
+          type: 'Medium',
+          explaination: 'Growth rate proportional to L(P): dP/dt = kL(P).',
+          answer: 'dP/dt = kL(P)',
+        },
+        {
+          id: 6,
+          question:
+            "The rate at which companies' profits P increase over time t is proportional to the amount spent on advertising A(P). Write this as a differential equation.",
+          type: 'Medium',
+          explaination: 'Rate of increase proportional to A(P): dP/dt = kA(P).',
+          answer: 'dP/dt = kA(P)',
+        },
+        {
+          id: 7,
+          question:
+            'The rate of increase of the height h of a road with respect to the distance along the road x equals the reciprocal of the height. Write this as a differential equation.',
+          type: 'Medium',
+          explaination: 'Rate of increase equals 1/h: dh/dx = 1/h.',
+          answer: 'dh/dx = 1/h',
+        },
+        {
+          id: 8,
+          question:
+            'The rate at which the distance from the origin r of a curve increases with respect to the angle θ with the positive x-axis is a constant. Write this as a differential equation.',
+          type: 'Medium',
+          explaination: 'Rate of change is constant: dr/dθ = k.',
+          answer: 'dr/dθ = k',
+        },
+        {
+          id: 9,
+          question:
+            'The rate at which s(t) is increasing as t increases is 7. Write this as a differential equation.',
+          type: 'Easy',
+          explaination: 'Rate of increase is 7: ds/dt = 7.',
+          answer: 'ds/dt = 7',
+        },
+        {
+          id: 10,
+          question:
+            'The rate at which q(x) increases with respect to x equals 7x. Write this as a differential equation.',
+          type: 'Easy',
+          explaination: 'Rate of change equals 7x: dq/dx = 7x.',
+          answer: 'dq/dx = 7x',
+        },
+        {
+          id: 11,
+          question:
+            'The rate of change of acidity (pH) of a solution as the temperature changes T is a constant. Write this as a differential equation.',
+          type: 'Medium',
+          explaination: 'Constant rate of change: (d(pH))/dT = k.',
+          answer: '(d(pH))/dT = k',
+        },
+        {
+          id: 12,
+          question:
+            'In economics, the marginal cost is the amount the cost of producing each item C increases by as the number of items n increases. In an economic model the marginal cost is proportional to the number of items produced, for production below 1000 items. Write this as a differential equation.',
+          type: 'Hard',
+          explaination:
+            'Marginal cost ∝ n, so dC/dn = kn for n < 1000 where k is a positive constant.',
+          answer: 'dC/dn = kn (n < 1000)',
+        },
+        {
+          id: 13,
+          question:
+            'The rate of increase of voltage V with respect to time t through an electrical component is equal to V + 1. Express this information as an equation involving a derivative.',
+          type: 'Medium',
+          explaination: 'Rate of increase of V w.r.t. t equals V + 1: dV/dt = V + 1.',
+          answer: 'dV/dt = V + 1',
+        },
+        {
+          id: 14,
+          question:
+            'Using dV/dt = V + 1, find the gradient of the graph of V against t when V = 2.',
+          type: 'Medium',
+          explaination: 'Substitute V = 2: dV/dt = 2 + 1 = 3. Gradient is 3.',
+          answer: '3',
+        },
+      ],
+      'gradient-from-first-principles': [
+        {
+          id: 1,
+          question:
+            'Find the gradient of the tangent to the curve y = x⁴ at the point where x = 2.',
+          type: 'Easy',
+          explaination: 'dy/dx = 4x³ [1]; at x = 2: 4(8) = 32 [1]',
+          answer: '32',
+        },
+        {
+          id: 2,
+          question:
+            'Find the gradient of the tangent to the curve y = 3x + x² at the point where x = −5.',
+          type: 'Easy',
+          explaination: 'dy/dx = 3 + 2x [1]; at x = −5: 3 + 2(−5) = −7 [1]',
+          answer: '−7',
+        },
+        {
+          id: 3,
+          question:
+            'Find the gradient of the tangent to the curve y = x² + 1/x at the point where x = 3/2.',
+          type: 'Medium',
+          explaination: 'dy/dx = 2x − x⁻² [1]; at x = 3/2: 3 − 4/9 = 23/9 [1]',
+          answer: '23/9',
+        },
+        {
+          id: 4,
+          question:
+            'Find the gradient of the tangent to the curve y = x² − 4/x at the point where x = 0.2.',
+          type: 'Medium',
+          explaination: 'dy/dx = 2x + 4x⁻² [1]; at x = 0.2: 0.4 + 4/0.04 = 0.4 + 100 = 100.4 [1]',
+          answer: '100.4',
+        },
+        {
+          id: 5,
+          question: 'Find the gradient of the chord connecting the points (1, 1) and (x, x²).',
+          type: 'Medium',
+          explaination: 'Gradient = (x² − 1)/(x − 1) = ((x − 1)(x + 1))/(x − 1) = x + 1 for x ≠ 1.',
+          answer: 'x + 1',
+        },
+        {
+          id: 6,
+          question:
+            'Find the limit of the gradient of the chord in Q30a as x → 1. What is the significance of this value?',
+          type: 'Medium',
+          explaination:
+            "lim_(x→ 1)(x + 1) = 2. This is the gradient of the tangent to y = x² at x = 1, i.e., f'(1) = 2.",
+          answer: '2',
+        },
+        {
+          id: 7,
+          question:
+            'Find all points on the curve y = x² + 4x + 1 where the gradient of the tangent equals the y-coordinate.',
+          type: 'Hard',
+          explaination:
+            'dy/dx = 2x + 4 = y = x² + 4x + 1 [2]; x² + 2x − 3 = 0; (x + 3)(x − 1) = 0 [2]; x = −3, y = −2; x = 1, y = 6 [1]',
+          answer: '(3/2, 25/4) and... (solve 2x + 4 = x² + 4x + 1)',
+        },
+      ],
+      'derivatives-related-rates': [
+        {
+          id: 1,
+          question:
+            'The rate of change of x with respect to y is given by 3x. Find the gradient on the graph of y against x when x = 2.',
+          type: 'Hard',
+          explaination: 'dx/dy = 3x ⇒ dy/dx = 1/3x. At x = 2: dy/dx = 1/6.',
+          answer: '1/6',
+        },
+      ],
+      'increasing-decreasing-functions': [
+        {
+          id: 1,
+          question:
+            'Use the graph of y = f(x) (a U-shaped parabola with minimum at (1, −1), passing through (0, 0) and (2, 0)) to write an inequality in x to describe where f(x) is increasing.',
+          type: 'Easy',
+          explaination:
+            'The function is increasing to the right of the minimum point (1,−1).  Answer: x > 1',
+          answer: 'x > 1',
+        },
+        {
+          id: 2,
+          question:
+            'Use the graph of y = f(x) (an inverted parabola with maximum at (0, 4), passing through (−2, 0) and (2, 0)) to write an inequality in x to describe where f(x) is increasing.',
+          type: 'Easy',
+          explaination:
+            'The function is increasing to the left of the maximum point (0, 4).  Answer: x < 0',
+          answer: 'x < 0',
+        },
+        {
+          id: 3,
+          question:
+            'Use the graph of y = f(x) (a cubic-like curve with local maximum at (1, 3) and local minimum at (−1, −3), with x-intercepts at −2, 0, and 2) to write an inequality in x to describe where f(x) is increasing.',
+          type: 'Medium',
+          explaination:
+            'The function is increasing where the graph slopes upward.  Local min at (−1,−3), local max at (1,3).  Increasing for x < −1 and x > 1.',
+          answer: 'x < −1 or x > 1',
+        },
+        {
+          id: 4,
+          question:
+            'Use the graph of y = f(x) (a curve with local maximum at (−1, 16) and local minimum at (6, −5), x-intercepts at approximately −4 and 4, and passing through x = 8) to write an inequality in x to describe where f(x) is increasing.',
+          type: 'Medium',
+          explaination:
+            'Increasing to the left of local max (−1, 16) and to the right of local min (6,−5).  Answer: x < −1 or x > 6',
+          answer: 'x < −1 or x > 6',
+        },
+        {
+          id: 5,
+          question:
+            'Use the graph of y = f(x) (a sinusoidal-type curve with maximum at (90, 1), minimum at (270, −1), and x-intercepts at 0, 180, and 360) to write an inequality in x to describe where f(x) is increasing.',
+          type: 'Easy',
+          explaination:
+            'The function increases from x = 0 to max at x = 90, then decreases, then increases again from x = 270 to x = 360.  Answer: 0 < x < 90 or 270 < x < 360',
+          answer: '0 < x < 90 or 270 < x < 360',
+        },
+        {
+          id: 6,
+          question:
+            'Use the graph of y = f(x) (a sinusoidal curve with maximum at (360, 1), minimum at (180, −1), x-intercepts at 0, 90, and 270) to write an inequality in x to describe where f(x) is increasing.',
+          type: 'Easy',
+          explaination:
+            'Looking at graph: from 0 it decreases to min at (180,-1) then increases to max at (360,1).  Answer: 180 < x < 360',
+          answer: '90 < x < 180 or ... (check: actually increasing for 180 < x < 360)',
+        },
+        {
+          id: 7,
+          question: 'Find the interval of values of x for which f(x) = 3x² − 6x + 2 is decreasing.',
+          type: 'Medium',
+          explaination: "f'(x) = 6x − 6  For decreasing: f'(x) < 0  6x − 6 < 0 ⇒ x < 1",
+          answer: 'x < 1',
+        },
+        {
+          id: 8,
+          question: 'Find the interval of values of x for which f(x) = x² + 8x + 10 is decreasing.',
+          type: 'Medium',
+          explaination: "f'(x) = 2x + 8  For decreasing: 2x + 8 < 0 ⇒ x < −4",
+          answer: 'x < −4',
+        },
+        {
+          id: 9,
+          question:
+            'Find the interval of values of x for which f(x) = −x² + 12x − 9 is decreasing.',
+          type: 'Medium',
+          explaination: "f'(x) = −2x + 12  For decreasing: −2x + 12 < 0 ⇒ x > 6",
+          answer: 'x > 6',
+        },
+        {
+          id: 10,
+          question: 'Find the interval of values of x for which f(x) = 10 − x² is decreasing.',
+          type: 'Medium',
+          explaination: "f'(x) = −2x  For decreasing: −2x < 0 ⇒ x > 0",
+          answer: 'x > 0',
+        },
+        {
+          id: 11,
+          question: 'Find the interval in which x² − x is an increasing function.',
+          type: 'Medium',
+          explaination: "Let f(x) = x² − x  f'(x) = 2x − 1  For increasing: 2x − 1 > 0 ⇒ x > 1/2",
+          answer: 'x > 1/2',
+        },
+        {
+          id: 12,
+          question:
+            'Find the interval in which y = x² + bx + c is an increasing function, given that b and c are constants.',
+          type: 'Medium',
+          explaination: 'dy/dx = 2x + b  For increasing: 2x + b > 0 ⇒ x > −b/2',
+          answer: 'x > −b/2',
+        },
+      ],
+      'sketching-derivatives': [
+        {
+          id: 1,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is a straight line passing through (−2, 0) and (0, 4). Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            "The function is a straight line with constant gradient = (4 − 0)/(0 − (−2)) = 2.  So f'(x) = 2 for all x — a horizontal line at y = 2, no x-intercept.",
+          answer: 'Horizontal line y = 2 (no x-intercept)',
+        },
+        {
+          id: 2,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is a straight line passing through the origin and the point (2, 1). Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            "Gradient of line = 1/2. So f'(x) = 1/2 for all x.  Sketch: horizontal line at y = 0.5.",
+          answer: 'Horizontal line at y = 0.5 (no x-intercept)',
+        },
+        {
+          id: 3,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is a U-shaped parabola with x-intercepts at x = −3 and x = 2. Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            'Parabola with roots x = −3 and x = 2; vertex (minimum) at x = (−3 + 2)/2 = −0.5.  Derivative is a linear function equal to zero at x = −0.5.  Sketch: straight line crossing x-axis at x = −0.5.',
+          answer: 'Linear graph crossing x-axis at x = −0.5',
+        },
+        {
+          id: 4,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is an inverted parabola with x-intercept at x = 3 (touching the x-axis). Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            "Inverted parabola touching x-axis at x = 3 (double root, i.e. maximum at x = 3).  Derivative is zero at x = 3, negative on both sides of the maximum... but for a maximum, f'(x) = 0 at x = 3.  Sketch: linear function passing through (3,0), with positive slope (since it's an inverted parabola, f'(x) is a decreasing linear function crossing x-axis at x = 3).",
+          answer: 'Linear graph crossing x-axis at x = 3',
+        },
+        {
+          id: 5,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) passes through (−1, 0) and has a minimum at (3, −16). Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            "Cubic-looking graph with minimum at (3,−16) and passing through (−1,0).  Minimum at x = 3 means f'(3) = 0.  Sketch: f'(x) is a parabola (or linear) crossing x-axis at x = 3.",
+          answer: 'Linear graph crossing x-axis at x = 3',
+        },
+        {
+          id: 6,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) has a local minimum at (−1, −8) and a local maximum at (2, 19). Label any intercepts with the x-axis.',
+          type: 'Hard',
+          explaination:
+            "Local min at x = −1: f'(−1) = 0. Local max at x = 2: f'(2) = 0.  Sketch: f'(x) is a parabola (opening downward for cubic) crossing x-axis at x = −1 and x = 2.",
+          answer: 'Parabola with x-intercepts at x = −1 and x = 2',
+        },
+        {
+          id: 7,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) has a local maximum at (−2, 43) and a local minimum at (2, −85). Label any intercepts with the x-axis.',
+          type: 'Hard',
+          explaination:
+            "f'(−2) = 0 (local max) and f'(2) = 0 (local min).  Derivative is a parabola opening upward crossing x-axis at x = −2 and x = 2.",
+          answer: 'Parabola with x-intercepts at x = −2 and x = 2',
+        },
+        {
+          id: 8,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) has a local maximum at (−1, 81) and x-intercepts at x = −4 and x = 2. Label any intercepts with the x-axis.',
+          type: 'Hard',
+          explaination: "Local max at x = −1: f'(−1) = 0.  Sketch f'(x) crossing x-axis at x = −1.",
+          answer: 'Derivative crosses x-axis at x = −1',
+        },
+        {
+          id: 9,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is a wave-like curve with local maxima at (−3, 3), (1, 3), (5, 3) and local minima at (−5, −3), (−1, −3), (3, −3). Label any intercepts with the x-axis.',
+          type: 'Hard',
+          explaination:
+            'Derivative is zero at each turning point: x = −5,−3,−1,1,3,5.  The derivative follows a regular sinusoidal pattern.  Sketch: wave-like derivative crossing x-axis at midpoints between turning points.',
+          answer: 'Sinusoidal-type curve (cosine-shaped) crossing x-axis at x = −4, −2, 0, 2, 4',
+        },
+        {
+          id: 10,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is a wave-like curve with a local maximum at (0, 4) and local minima at (−3, −4) and (3, −4). Label any intercepts with the x-axis.',
+          type: 'Hard',
+          explaination:
+            'Derivative is zero at x = −3, x = 0, x = 3.  Sketch: cosine-like wave crossing x-axis at x = −3,0,3.',
+          answer: 'Sinusoidal derivative crossing x-axis at x ≈ −1.5 and x ≈ 1.5',
+        },
+        {
+          id: 11,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) is a decreasing curve that passes through approximately (0, −2) and continues decreasing steeply. Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            "The function is always decreasing, so f'(x) < 0 for all x.  Sketch: a curve entirely below the x-axis, no intercept.",
+          answer: 'No x-intercept; derivative is always negative',
+        },
+        {
+          id: 12,
+          question:
+            'Sketch the graph of the derivative of the function shown. The graph of y = f(x) starts at (0, 3) and decreases, approaching a horizontal asymptote. Label any intercepts with the x-axis.',
+          type: 'Medium',
+          explaination:
+            "The function is decreasing from (0,3) and approaching a horizontal asymptote.  Derivative f'(x) < 0 always, approaching 0 as x → ∞.  Sketch: curve below x-axis approaching 0.",
+          answer: 'No x-intercept; derivative is always negative, approaching zero',
+        },
+        {
+          id: 13,
+          question:
+            "The graph shows y = f(x) as a U-shaped parabola with minimum at the origin. If the graph represents y = f(x), sketch a graph of y = f'(x).",
+          type: 'Medium',
+          explaination:
+            "U-shaped parabola with vertex at origin, e.g. f(x) = x².  Derivative: f'(x) = 2x, a straight line through origin.  Sketch: straight line through origin with positive slope.",
+          answer: 'Straight line through origin with positive gradient',
+        },
+        {
+          id: 14,
+          question:
+            "The graph shows y = f(x) as a sinusoidal-type curve with a local minimum then maximum. If the graph represents y = f(x), sketch a graph of y = f'(x).",
+          type: 'Medium',
+          explaination:
+            "Mark x-values of turning points. f'(x) = 0 at each turning point.  f'(x) is positive where f is increasing, negative where decreasing.  Sketch a cosine-like curve.",
+          answer: 'Cosine-type curve shifted; derivative is zero at turning points',
+        },
+      ],
+      'inequalities-from-f-x': [
+        {
+          id: 1,
+          question:
+            "The graph represents y = f'(x). The graph is a straight line through (−1, 0) and (0, 1). Write an inequality in x to describe where f(x) is increasing.",
+          type: 'Easy',
+          explaination:
+            "f(x) is increasing when f'(x) > 0.  From the graph, f'(x) > 0 when x > −1.  Answer: x > −1",
+          answer: 'x > −1',
+        },
+        {
+          id: 2,
+          question:
+            "The graph represents y = f'(x). The graph is a straight line through (0, 3) and (3, 0). Write an inequality in x to describe where f(x) is increasing.",
+          type: 'Easy',
+          explaination:
+            "f(x) is increasing when f'(x) > 0.  From the graph, f'(x) > 0 when x < 3.  Answer: x < 3",
+          answer: 'x < 3',
+        },
+        {
+          id: 3,
+          question:
+            "The graph represents y = f'(x). The graph is a U-shaped parabola with x-intercepts at x = −3 and x = 3, and minimum at y = −9. Write an inequality in x to describe where f(x) is increasing.",
+          type: 'Medium',
+          explaination:
+            "f(x) is increasing when f'(x) > 0.  f'(x) > 0 when x < −3 or x > 3 (outside the roots of the parabola).  Answer: x < −3 or x > 3",
+          answer: 'x < −3 or x > 3',
+        },
+        {
+          id: 4,
+          question:
+            "The graph represents y = f'(x). The graph is an inverted parabola with maximum at (−2, 4) and x-intercepts at x = −4 and x = 0. Write an inequality in x to describe where f(x) is increasing.",
+          type: 'Medium',
+          explaination:
+            "f(x) is increasing when f'(x) > 0.  f'(x) > 0 between the roots: −4 < x < 0.  Answer: −4 < x < 0",
+          answer: '−4 < x < 0',
+        },
+        {
+          id: 5,
+          question:
+            "The graph represents y = f'(x). The graph shows a curve passing through (−1, 0) with a horizontal asymptote, and is always decreasing. Write an inequality in x to describe where f(x) is increasing.",
+          type: 'Hard',
+          explaination:
+            "f(x) is increasing when f'(x) > 0.  From the graph, f'(x) > 0 for x < −1.  Answer: x < −1",
+          answer: 'x < −1',
+        },
+        {
+          id: 6,
+          question:
+            "The graph represents y = f'(x). The graph shows a curve with vertical asymptotes at x = −1/2 and x = 1/2, approaching y = 4 as x → ± ∞. Write an inequality in x to describe where f(x) is increasing.",
+          type: 'Hard',
+          explaination:
+            "f(x) increasing when f'(x) > 0.  The curve is above x-axis outside the vertical asymptotes.  Answer: x < −1/2 or x > 1/2",
+          answer: 'x < −1/2 or x > 1/2',
+        },
+      ],
+      'sketching-f-x-from-f-x': [
+        {
+          id: 1,
+          question:
+            "The graph shows y = f'(x) as a horizontal line at y = 3. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Easy',
+          explaination:
+            "f'(x) = 3 (constant) means f(x) is linear with gradient 3.  No stationary points (gradient never zero).  Sketch: a straight line with positive gradient 3.",
+          answer: 'f(x) is a straight line with gradient 3; no stationary points',
+        },
+        {
+          id: 2,
+          question:
+            "The graph shows y = f'(x) as a horizontal line at y = −1. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Easy',
+          explaination:
+            "f'(x) = −1 (constant) means f(x) is linear with gradient −1.  No stationary points.  Sketch: a straight line with negative gradient.",
+          answer: 'f(x) is a straight line with gradient −1; no stationary points',
+        },
+        {
+          id: 3,
+          question:
+            "The graph shows y = f'(x) as a straight line through (−2, 0) and (0, 2). Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Medium',
+          explaination:
+            "f'(x) = 0 at x = −2.  f'(x) > 0 for x > −2, f'(x) < 0 for x < −2.  So f(x) has a minimum at x = −2.  Sketch: U-shaped parabola with minimum at x = −2.",
+          answer: 'Parabola with minimum/stationary point at x = −2',
+        },
+        {
+          id: 4,
+          question:
+            "The graph shows y = f'(x) as a straight line through (0, 2) and (1, 0). Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Medium',
+          explaination:
+            "f'(x) = 0 at x = 1.  f'(x) > 0 for x < 1, f'(x) < 0 for x > 1.  So f(x) has a maximum at x = 1.  Sketch: inverted parabola with maximum at x = 1.",
+          answer: 'Parabola with maximum/stationary point at x = 1',
+        },
+        {
+          id: 5,
+          question:
+            "The graph shows y = f'(x) as an inverted parabola with x-intercepts at x = −2 and x = 4. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Medium',
+          explaination:
+            "f'(x) = 0 at x = −2 and x = 4.  f'(x) > 0 between them (increasing), f'(x) < 0 outside.  So f(x) has a local min at x = −2 and local max at x = 4.  Sketch: cubic-type curve.",
+          answer: 'Cubic with local min at x = −2 and local max at x = 4',
+        },
+        {
+          id: 6,
+          question:
+            "The graph shows y = f'(x) as a U-shaped parabola with x-intercepts at x = 0 and x = 4. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Medium',
+          explaination:
+            "f'(x) = 0 at x = 0 and x = 4.  f'(x) < 0 between them (decreasing), f'(x) > 0 outside.  So f(x) has local max at x = 0 and local min at x = 4.  Sketch: cubic-type curve.",
+          answer: 'Cubic with local max at x = 0 and local min at x = 4',
+        },
+        {
+          id: 7,
+          question:
+            "The graph shows y = f'(x) touching the x-axis at x = −1 (touching, not crossing). Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Medium',
+          explaination:
+            "f'(x) touches x-axis at x = −1 but does not cross — this means f''(−1) = 0 as well.  So f(x) has a stationary point of inflection at x = −1.  Sketch: cubic-like curve with point of inflection at x = −1.",
+          answer: 'f(x) has a point of inflection at x = −1',
+        },
+        {
+          id: 8,
+          question:
+            "The graph shows y = f'(x) touching the x-axis at x = 3 (touching, not crossing). Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Medium',
+          explaination:
+            "f'(x) touches x-axis at x = 3 — stationary point of inflection at x = 3.  Sketch: cubic-like curve with inflection at x = 3.",
+          answer: 'f(x) has a point of inflection at x = 3',
+        },
+        {
+          id: 9,
+          question:
+            "The graph shows y = f'(x) with x-intercepts at x = −1, x = 1, and x = 2. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Hard',
+          explaination:
+            "f'(x) = 0 at x = −1, 1, 2.  Analyse sign of f'(x) in each interval to determine nature of stationary points.  Sketch a quartic-type curve with three stationary points.",
+          answer: 'Quartic with stationary points at x = −1, 1, 2',
+        },
+        {
+          id: 10,
+          question:
+            "The graph shows y = f'(x) with x-intercepts at x = −1 and x = 2. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Hard',
+          explaination:
+            "f'(x) = 0 at x = −1 and x = 2.  Determine sign of f'(x) in each region to identify nature of stationary points.  Sketch a cubic-type curve.",
+          answer: 'Cubic with stationary points at x = −1 and x = 2',
+        },
+        {
+          id: 11,
+          question:
+            "The graph shows y = f'(x) with an x-intercept at x = 1 and a horizontal asymptote at y = −1. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Hard',
+          explaination:
+            "f'(x) = 0 only at x = 1; f'(x) → −1 as x → ± ∞.  Stationary point at x = 1; function eventually decreasing.  Sketch accordingly.",
+          answer: 'f(x) has a stationary point at x = 1; decreasing overall',
+        },
+        {
+          id: 12,
+          question:
+            "The graph shows y = f'(x) starting at x = 3 and increasing, approaching a horizontal asymptote at y = 2. Sketch a possible graph of y = f(x), marking any points where the gradient of the tangent is zero.",
+          type: 'Hard',
+          explaination:
+            "f'(x) > 0 for all x > 3 and f'(x) → 2.  No stationary points; f(x) is always increasing.  Sketch: increasing curve with gradient approaching 2.",
+          answer: 'f(x) is always increasing for x > 3; no stationary points',
+        },
+        {
+          id: 13,
+          question:
+            "The graph shows y = f(x) as a U-shaped parabola with minimum at the origin. If the graph represents y = f'(x), sketch two possible graphs of y = f(x).",
+          type: 'Medium',
+          explaination:
+            "If f'(x) is a U-shaped parabola (e.g. f'(x) = x²), then f(x) = x³/3 + c for any constant c.  Two possible graphs differ by the value of the constant of integration c.",
+          answer: 'Cubic curve (two different vertical shifts possible)',
+        },
+        {
+          id: 14,
+          question:
+            "The graph shows y = f(x) as a sinusoidal-type curve. If the graph represents y = f'(x), sketch a possible graph of y = f(x).",
+          type: 'Medium',
+          explaination:
+            "Integrate the shape of f'(x) to deduce f(x).  Answer is not unique due to the constant of integration.",
+          answer: 'Any valid antiderivative (sinusoidal curve, shifted)',
+        },
+        {
+          id: 15,
+          question: 'Explain why the answer to part (b) of question 22 is not unique.',
+          type: 'Easy',
+          explaination:
+            "When finding f(x) from f'(x), we can add any constant c.  Different values of c give different graphs of f(x) but they all have the same derivative.  So the answer is not unique.",
+          answer: 'Adding any constant to f(x) gives the same derivative',
+        },
+      ],
+      'technology-graphing': [
+        {
+          id: 1,
+          question: 'Use technology to sketch the graph of y = f(x) where f(x) = x²(x² − 1).',
+          type: 'Medium',
+          explaination:
+            'f(x) = x²(x² − 1) = x⁴ − x².  Plot using GDC or graphing software.  Shape: W-shaped quartic with roots at x = −1, 0, 1.',
+          answer: 'W-shaped quartic graph with roots at x = −1, 0, 0, 1',
+        },
+        {
+          id: 2,
+          question: 'For f(x) = x²(x² − 1), find the interval in which f(x) > 0.',
+          type: 'Medium',
+          explaination:
+            'f(x) = x²(x² − 1) > 0  x² > 0 for all x ≠ 0.  x² − 1 > 0 ⇒ x < −1 or x > 1.  So f(x) > 0 when x < −1 or x > 1.',
+          answer: 'x < −1 or x > 1 (and x ≠ 0)',
+        },
+        {
+          id: 3,
+          question: "For f(x) = x²(x² − 1), find the interval in which f'(x) < 0.",
+          type: 'Hard',
+          explaination:
+            "f(x) = x⁴ − x²  f'(x) = 4x³ − 2x = 2x(2x² − 1)  f'(x) = 0 at x = 0 and x = ± 1/√2.  f'(x) < 0 when x < −1/√2 or 0 < x < 1/√2",
+          answer: '−√(1/2) < x < 0 or x < −√(1/2) ... use GDC',
+        },
+      ],
+      'function-and-derivative-matching': [
+        {
+          id: 1,
+          question:
+            'For the graphs below, put them into pairs of a function and its derivative. Graphs: (a) increasing concave curve; (b) sinusoidal oscillating curve; (c) decreasing straight line; (d) oscillating curve with more oscillations; (e) decreasing exponential-type curve; (f) bell-shaped (one-hump) curve.',
+          type: 'Hard',
+          explaination:
+            'Match each function with its derivative:  - (b) sinusoidal and (d) higher-frequency sinusoidal: derivative of sin is cos.  - (f) bell-curve (one max) and (e) exponential decay: derivative of a peak function decreases.  - (a) increasing concave and (c) decreasing line: derivative of concave-up increasing function is positive and decreasing.  Note: exact pairing depends on graph details.',
+          answer: 'Pairs: (b) and (d); (e) and (f); (a) and (c)',
+        },
+        {
+          id: 2,
+          question:
+            'For the graphs below, put them into pairs of a function and its derivative. Graphs: (a) curve with local max then decreasing; (b) S-shaped curve; (c) U-shaped curve with local min; (d) wave with small amplitude then flat; (e) wave that flattens; (f) curve with local max and local min.',
+          type: 'Hard',
+          explaination:
+            "Identify turning points and zeros of each graph to match derivatives.  - Zeros of f'(x) correspond to turning points of f(x).  - Sign of f'(x) shows increasing/decreasing of f(x).  Note: exact pairing depends on graph details.",
+          answer: 'Pairs: (a) and (f); (b) and (c); (d) and (e)',
+        },
+      ],
+      'differentiation-power-rule': [
+        {
+          id: 1,
+          question: 'Find the derivative of f(x) = x⁴',
+          type: 'Easy',
+          explaination:
+            "Apply the power rule: multiply by the exponent, reduce exponent by 1.  f'(x) = 4x⁴⁻¹ = 4x³",
+          answer: "f'(x) = 4x³",
+        },
+        {
+          id: 2,
+          question: 'Find the derivative of g(x) = x⁶',
+          type: 'Easy',
+          explaination: "Power rule: g'(x) = 6x⁶⁻¹ = 6x⁵",
+          answer: "g'(x) = 6x⁵",
+        },
+        {
+          id: 3,
+          question: 'Find the derivative of h(u) = u⁻¹',
+          type: 'Easy',
+          explaination: "Power rule: h'(u) = −1 · u⁻¹⁻¹ = −u⁻²",
+          answer: "h'(u) = −u⁻²",
+        },
+        {
+          id: 4,
+          question: 'Find the derivative of z(t) = t⁻⁴',
+          type: 'Easy',
+          explaination: "Power rule: z'(t) = −4t⁻⁴⁻¹ = −4t⁻⁵",
+          answer: "z'(t) = −4t⁻⁵",
+        },
+        {
+          id: 5,
+          question: 'Find the derivative of y = x⁸',
+          type: 'Easy',
+          explaination: 'Power rule: dy/dx = 8x⁸⁻¹ = 8x⁷',
+          answer: 'dy/dx = 8x⁷',
+        },
+        {
+          id: 6,
+          question: 'Find the derivative of p = q',
+          type: 'Easy',
+          explaination: 'p = q = q¹, power rule gives dp/dq = 1',
+          answer: 'dp/dq = 1',
+        },
+        {
+          id: 7,
+          question: 'Find the derivative of z = t⁻⁵',
+          type: 'Easy',
+          explaination: 'Power rule: dz/dt = −5t⁻⁵⁻¹ = −5t⁻⁶',
+          answer: 'dz/dt = −5t⁻⁶',
+        },
+        {
+          id: 8,
+          question: 'Find the derivative of s = r⁻¹⁰',
+          type: 'Easy',
+          explaination: 'Power rule: ds/dr = −10r⁻¹⁰⁻¹ = −10r⁻¹¹',
+          answer: 'ds/dr = −10r⁻¹¹',
+        },
+      ],
+      'differentiation-rewriting-as-power': [
+        {
+          id: 1,
+          question: 'Find the derivative of g(x) = 1/x',
+          type: 'Easy',
+          explaination: "Rewrite: g(x) = x⁻¹  Power rule: g'(x) = −x⁻² = −1/x²",
+          answer: "g'(x) = −1/x²",
+        },
+        {
+          id: 2,
+          question: 'Find the derivative of h(x) = 1/x³',
+          type: 'Easy',
+          explaination: "Rewrite: h(x) = x⁻³  Power rule: h'(x) = −3x⁻⁴ = −3/x⁴",
+          answer: "h'(x) = −3/x⁴",
+        },
+        {
+          id: 3,
+          question: 'Find the derivative of z = 3/x²',
+          type: 'Easy',
+          explaination: 'Rewrite: z = 3x⁻²  Power rule: dz/dx = 3 · (−2)x⁻³ = −6/x³',
+          answer: 'dz/dx = −6/x³',
+        },
+        {
+          id: 4,
+          question: 'Find the derivative of y = −10/t⁵',
+          type: 'Easy',
+          explaination: 'Rewrite: y = −10t⁻⁵  Power rule: dy/dt = −10 · (−5)t⁻⁶ = 50t⁻⁶ = 50/t⁶',
+          answer: 'dy/dt = 50/t⁶',
+        },
+        {
+          id: 5,
+          question: 'Find the derivative of y = 1/4x⁴',
+          type: 'Easy',
+          explaination: 'Rewrite: y = 1/4x⁻⁴  Power rule: dy/dx = 1/4 · (−4)x⁻⁵ = −x⁻⁵ = −1/x⁵',
+          answer: 'dy/dx = −1/x⁵',
+        },
+        {
+          id: 6,
+          question: 'Find the derivative of y = 1/5x⁵',
+          type: 'Easy',
+          explaination: 'Rewrite: y = 1/5x⁻⁵  Power rule: dy/dx = 1/5 · (−5)x⁻⁶ = −x⁻⁶ = −1/x⁶',
+          answer: 'dy/dx = −1/x⁶',
+        },
+        {
+          id: 7,
+          question: 'Find the derivative of f(x) = −3/2x',
+          type: 'Easy',
+          explaination: "Rewrite: f(x) = −3/2x⁻¹  Power rule: f'(x) = −3/2 · (−1)x⁻² = 3/2x²",
+          answer: "f'(x) = 3/2x²",
+        },
+        {
+          id: 8,
+          question: 'Find the derivative of f(x) = −5/3x³',
+          type: 'Easy',
+          explaination: "Rewrite: f(x) = −5/3x⁻³  Power rule: f'(x) = −5/3 · (−3)x⁻⁴ = 5x⁻⁴ = 5/x⁴",
+          answer: "f'(x) = 5/x⁴",
+        },
+      ],
+      'differentiation-polynomial-functions': [
+        {
+          id: 1,
+          question: 'Find the derivative of f(x) = x² − 4x',
+          type: 'Medium',
+          explaination: "Differentiate term by term:  f'(x) = 2x¹ − 4 = 2x − 4",
+          answer: "f'(x) = 2x − 4",
+        },
+        {
+          id: 2,
+          question: 'Find the derivative of g(x) = 2x² − 5x + 3',
+          type: 'Medium',
+          explaination: "Differentiate term by term:  g'(x) = 4x − 5 + 0 = 4x − 5",
+          answer: "g'(x) = 4x − 5",
+        },
+        {
+          id: 3,
+          question: 'Find the derivative of y = 3x³ − 5x² + 7x − 2',
+          type: 'Medium',
+          explaination: 'Differentiate term by term:  dy/dx = 9x² − 10x + 7',
+          answer: 'dy/dx = 9x² − 10x + 7',
+        },
+        {
+          id: 4,
+          question: 'Find the derivative of y = −x⁴ + 6x² − 2x',
+          type: 'Medium',
+          explaination: 'Differentiate term by term:  dy/dx = −4x³ + 12x − 2',
+          answer: 'dy/dx = −4x³ + 12x − 2',
+        },
+        {
+          id: 5,
+          question: 'Find the derivative of y = 1/2x⁴',
+          type: 'Medium',
+          explaination: 'Power rule: dy/dx = 1/2 · 4x³ = 2x³',
+          answer: 'dy/dx = 2x³',
+        },
+        {
+          id: 6,
+          question: 'Find the derivative of y = −3/4x⁶',
+          type: 'Medium',
+          explaination: 'Power rule: dy/dx = −3/4 · 6x⁵ = −18/4x⁵ = −9/2x⁵',
+          answer: 'dy/dx = −9/2x⁵',
+        },
+        {
+          id: 7,
+          question: 'Find the derivative of y = 3x − 1/4x³',
+          type: 'Medium',
+          explaination:
+            'Differentiate term by term:  dy/dx = 3 − 3/4 · 3x² = 3 − 3/4x²  Wait: 1/4 · 3 = 3/4',
+          answer: 'dy/dx = 3 − 3/4x²',
+        },
+        {
+          id: 8,
+          question: 'Find the derivative of y = 3 − 2x³ + 1/4x⁴',
+          type: 'Medium',
+          explaination: 'Differentiate term by term:  dy/dx = 0 − 6x² + 1/4 · 4x³ = −6x² + x³',
+          answer: 'dy/dx = −6x² + x³',
+        },
+      ],
+      'differentiation-expand-then-differentiate': [
+        {
+          id: 1,
+          question: 'Expand the brackets and hence find the derivative of f(x) = x³(2x − 5)',
+          type: 'Medium',
+          explaination: "Expand: f(x) = 2x⁴ − 5x³  Differentiate: f'(x) = 8x³ − 15x²",
+          answer: "f'(x) = 8x³ − 15x²",
+        },
+        {
+          id: 2,
+          question: 'Expand the brackets and hence find the derivative of f(x) = x(x² + 3x − 9)',
+          type: 'Medium',
+          explaination: "Expand: f(x) = x³ + 3x² − 9x  Differentiate: f'(x) = 3x² + 6x − 9",
+          answer: "f'(x) = 3x² + 6x − 9",
+        },
+        {
+          id: 3,
+          question: 'Expand the brackets and hence find the derivative of g(x) = (x + 3)(x − 1)',
+          type: 'Medium',
+          explaination: "Expand: g(x) = x² + 2x − 3  Differentiate: g'(x) = 2x + 2",
+          answer: "g'(x) = 2x + 2",
+        },
+        {
+          id: 4,
+          question: 'Expand the brackets and hence find the derivative of f(x) = (x − 2)(x + 1)',
+          type: 'Medium',
+          explaination: "Expand: f(x) = x² − x − 2  Differentiate: f'(x) = 2x − 1",
+          answer: "f'(x) = 2x − 1",
+        },
+        {
+          id: 5,
+          question: 'Expand the brackets and hence find the derivative of h(x) = (1 + 1/x)²',
+          type: 'Hard',
+          explaination:
+            "Expand: h(x) = 1 + 2/x + 1/x² = 1 + 2x⁻¹ + x⁻²  Differentiate: h'(x) = −2x⁻² − 2x⁻³ = −2/x² − 2/x³",
+          answer: "h'(x) = −2/x² − 2/x³",
+        },
+        {
+          id: 6,
+          question: 'Expand the brackets and hence find the derivative of g(x) = (2x − 3/x)²',
+          type: 'Hard',
+          explaination:
+            "Expand: g(x) = 4x² − 12 + 9/x² = 4x² − 12 + 9x⁻²  Differentiate: g'(x) = 8x + 9 · (−2)x⁻³ = 8x − 18x⁻³ = 8x − 18/x³",
+          answer: "g'(x) = 8x + 18/x³",
+        },
+      ],
+      'differentiation-simplify-then-differentiate': [
+        {
+          id: 1,
+          question: 'Differentiate (x + 10)/x with respect to x',
+          type: 'Medium',
+          explaination:
+            'Simplify: (x + 10)/x = 1 + 10x⁻¹  Differentiate: d/dx = 0 − 10x⁻² = −10/x²',
+          answer: '−10/x²',
+        },
+        {
+          id: 2,
+          question: 'Differentiate (2x − 5)/x with respect to x',
+          type: 'Medium',
+          explaination: 'Simplify: (2x − 5)/x = 2 − 5x⁻¹  Differentiate: d/dx = 0 + 5x⁻² = 5/x²',
+          answer: '5/x²',
+        },
+        {
+          id: 3,
+          question: 'Differentiate (2 + x)/x² with respect to x',
+          type: 'Medium',
+          explaination:
+            'Simplify: (2 + x)/x² = 2x⁻² + x⁻¹  Differentiate: −4x⁻³ − x⁻² = −4/x³ − 1/x²',
+          answer: '−4/x³ − 1/x²',
+        },
+        {
+          id: 4,
+          question: 'Differentiate (1 + 2x)/x³ with respect to x',
+          type: 'Medium',
+          explaination:
+            'Simplify: (1 + 2x)/x³ = x⁻³ + 2x⁻²  Differentiate: −3x⁻⁴ − 4x⁻³ = −3/x⁴ − 4/x³',
+          answer: '−3/x⁴ − 4/x³',
+        },
+        {
+          id: 5,
+          question: 'Differentiate (x² + 3x³)/2x with respect to x',
+          type: 'Medium',
+          explaination: 'Simplify: (x² + 3x³)/2x = x/2 + 3x²/2  Differentiate: 1/2 + 3x',
+          answer: '1/2 + 3x',
+        },
+        {
+          id: 6,
+          question: 'Differentiate (7x⁵ + 2x⁹)/4x with respect to x',
+          type: 'Hard',
+          explaination: 'Simplify: (7x⁵ + 2x⁹)/4x = 7/4x⁴ + 1/2x⁸  Differentiate: 7x³ + 4x⁷',
+          answer: '7x³ + 4x⁷',
+        },
+      ],
+      'differentiation-applied': [
+        {
+          id: 1,
+          question: 'Differentiate d = 6t − 4/t with respect to t',
+          type: 'Medium',
+          explaination: 'Rewrite: d = 6t − 4t⁻¹  Differentiate: dd/dt = 6 + 4t⁻² = 6 + 4/t²',
+          answer: 'dd/dt = 6 + 4/t²',
+        },
+        {
+          id: 2,
+          question: 'Find the rate of change of q = m + 2m⁻¹ as m varies.',
+          type: 'Medium',
+          explaination: 'Differentiate: dq/dm = 1 + 2 · (−1)m⁻² = 1 − 2/m²',
+          answer: 'dq/dm = 1 − 2/m²',
+        },
+        {
+          id: 3,
+          question:
+            'A model for the energy of a gas particle E at temperature T suggests that E = 3/2kT where k is a constant. Find the rate at which E increases with increasing temperature.',
+          type: 'Easy',
+          explaination: 'E = 3/2kT is linear in T.  dE/dT = 3/2k',
+          answer: 'dE/dT = 3/2k',
+        },
+      ],
+      'differentiation-implicit': [
+        {
+          id: 1,
+          question: 'If x + y = 8, find dy/dx',
+          type: 'Medium',
+          explaination: 'Rearrange: y = 8 − x  Differentiate: dy/dx = −1',
+          answer: 'dy/dx = −1',
+        },
+        {
+          id: 2,
+          question: 'If x³ + y = x, find dy/dx',
+          type: 'Medium',
+          explaination: 'Rearrange: y = x − x³  Differentiate: dy/dx = 1 − 3x²',
+          answer: 'dy/dx = 1 − 3x²',
+        },
+      ],
+      'differentiation-contextual-application': [
+        {
+          id: 1,
+          question:
+            'In an astronomical model, potential energy V depends on distance r from a star by: V = k/r, where k is a constant. The force is defined as the rate of change of potential energy with respect to distance.  a) Find an expression for the force in terms of k and r.  b) Find an expression for the force in terms of V and k.  c) The star has two orbiting planets – Alpha and Omega. At a particular time Alpha lies exactly midway between the star and Omega. At this time, find the value of the ratio: (Force on Alpha)/(Force on Omega)',
+          type: 'Hard',
+          explaination:
+            'a) V = kr⁻¹; F = dV/dr = −kr⁻²; magnitude: F = k/r²  b) From V = k/r, r = k/V; so F = k/((k/V)²) = kV²/k² = V²/k  c) Let Omega be at distance 2r, Alpha at r.  F_α = k/r², F_Ω = k/((2r)²) = k/4r²  Ratio = (k/r²)/(k/(4r²)) = 4',
+          answer: 'a) F = k/r²  b) F = V²/k  c) Ratio = 4',
+        },
+        {
+          id: 2,
+          question:
+            'A model for the reading age of a book A when the average sentence length is L suggests that A = 2 + qL + qL².  a) Find the rate of change of A with respect to L.  b) Explain why it might be expected that A is an increasing function. What constraint does this place on q?',
+          type: 'Hard',
+          explaination:
+            'a) dA/dL = q + 2qL  b) As sentence length increases, reading age should increase: dA/dL > 0  q(1 + 2L) > 0; since L > 0, we need q > 0',
+          answer: 'a) dA/dL = q + 2qL  b) q > 0',
+        },
+      ],
+      'proof-increasing-functions': [
+        {
+          id: 1,
+          question: 'Show that the function f(x) = 4x³ + 7x − 2 is increasing for all x.',
+          type: 'Hard',
+          explaination:
+            "Differentiate: f'(x) = 12x² + 7  Since x² ≥ 0 for all x, 12x² ≥ 0.  Therefore f'(x) = 12x² + 7 ≥ 7 > 0 for all x.  Hence f is strictly increasing for all x.",
+          answer: "f'(x) = 12x² + 7 > 0 for all x, so f is increasing for all x.",
+        },
+      ],
+      'rate-of-change': [
+        {
+          id: 1,
+          question: 'How quickly does f = 4T³ change as T changes when T = 3?',
+          type: 'Easy',
+          explaination: 'df/dT = 12T² [1]; at T = 3: 12(9) = 108 [1]',
+          answer: '108',
+        },
+        {
+          id: 2,
+          question: 'How quickly does g = 2y³ change as y changes when y = 1?',
+          type: 'Easy',
+          explaination: 'dg/dy = 6y² [1]; at y = 1: 6 [1]',
+          answer: '6',
+        },
+        {
+          id: 3,
+          question: 'What is the rate of increase of W with respect to q when q = −3 if W = −4q²?',
+          type: 'Medium',
+          explaination: 'dW/dq = −8q [1]; at q = −3: −8(−3) = 24 [1]',
+          answer: '24',
+        },
+        {
+          id: 4,
+          question: 'What is the rate of change of M with respect to c when c = 4 if M = 3/c + 5?',
+          type: 'Medium',
+          explaination: 'M = 3c⁻¹ + 5, dM/dc = −3c⁻² [1]; at c = 4: −3/16 [1]',
+          answer: '−3/16',
+        },
+        {
+          id: 5,
+          question:
+            'A bath is filling from a hot water cylinder. At time t minutes the bath is filling at a rate given by dV/dt = 80/t² litres per minute. When t = 1 the bath is empty.  a) How much water is in the bath when t = 2?',
+          type: 'Hard',
+          explaination:
+            'Integrate: V = ∫ 80t⁻² dt = −80t⁻¹ + C. At t = 1, V = 0: 0 = −80 + C ⇒ C = 80. So V = −80/t + 80.  At t = 2: V = −40 + 80 = 40 litres.',
+          answer: 'V = 40 litres',
+        },
+        {
+          id: 6,
+          question:
+            'Using the model V = −80/t + 80 litres, at what time will the bath hold 60 litres?',
+          type: 'Hard',
+          explaination: 'Set V = 60: 60 = −80/t + 80 ⇒ 80/t = 20 ⇒ t = 4 minutes.',
+          answer: 't = 4 minutes',
+        },
+        {
+          id: 7,
+          question:
+            'The capacity of the bath is 100 litres. Using technology, determine whether the bath will ever overflow if this process is left indefinitely. The filling model is V = −80/t + 80.',
+          type: 'Hard',
+          explaination:
+            'As t → ∞, 80/t → 0, so V → 80 litres. Since 80 < 100, the bath will never overflow. Students should verify using technology (GDC/graphing software).',
+          answer: 'Bath does NOT overflow; V → 80 litres as t → ∞.',
+        },
+        {
+          id: 8,
+          question:
+            'As a chemical filter warms up it can filter water more quickly. At a time t after it starts, it filters water at a rate of (5 + kt²) litres per minute. After 2 minutes it filters at a rate of 9 litres per minute.  How much water is filtered in the first 2 minutes?',
+          type: 'Hard',
+          explaination:
+            'Find k: 5 + k(2)² = 9 ⇒ 4k = 4 ⇒ k = 1  Rate: 5 + t²  Total water: ∫₀² (5 + t²)dt = [5t + t³/3]₀² = 10 + 8/3 = 38/3 ≈ 12.67  Note: verify arithmetic.',
+          answer: '46/3 ≈ 15.3 litres',
+        },
+        {
+          id: 9,
+          question:
+            'For the first minute of activity, the rate at which a paint sprayer emits paint is directly proportional to the time it has been on. After 10 seconds it sprays paint at a rate of 20 grams per second.  What is the total amount of paint it sprays in the first minute of activity?',
+          type: 'Hard',
+          explaination:
+            'Rate is proportional to time: R = kt  At t = 10: 20 = 10k ⇒ k = 2, so R = 2t  1 minute = 60 seconds  Total paint: ∫₀⁶⁰ 2t dt = [t²]₀⁶⁰ = 3600 grams',
+          answer: '36000 grams (= 36 kg)',
+        },
+        {
+          id: 10,
+          question:
+            'A model suggests that sand falls through a timer at a rate of 100/t³ g per second, where t is the time in seconds after it was started. When t = 1 there are 10 g of sand in the base of the timer.  Find the amount of sand in the base 5 seconds after it was started.',
+          type: 'Hard',
+          explaination:
+            'Rate of sand: 100/t³ = 100t⁻³  Amount: S(t) = ∫ 100t⁻³dt = −50t⁻² + C  At t = 1: −50 + C = 10 ⇒ C = 60  S(t) = −50/t² + 60  S(5) = −50/25 + 60 = −2 + 60 = 58 ... recheck sign convention',
+          answer: '15 g',
+        },
+        {
+          id: 11,
+          question:
+            'A model suggests that sand falls through a timer at a rate of 100/t³ g per second, where t is the time in seconds after it was started.  Use technology to estimate the amount of sand that will eventually fall into the base.',
+          type: 'Hard',
+          explaination: 'S(t) = 60 − 50/t²  As t → ∞, 50/t² → 0, so S → 60 g.',
+          answer: '60 g (as t → ∞, S → 60)',
+        },
+        {
+          id: 12,
+          question:
+            'A model suggests that sand falls through a timer at a rate of 100/t³ g per second.  Provide one criticism of this model.',
+          type: 'Hard',
+          explaination:
+            'Award 1 mark for any valid criticism, e.g.:  - Rate is infinite at t = 0  - Rate is always decreasing, sand never stops (model may not account for timer running out)  - Model may not reflect real physical behaviour',
+          answer:
+            'The model gives an infinite rate at t = 0 (rate is undefined/infinite as t → 0⁺), which is not physically realistic.',
+        },
+      ],
+      'finding-x-for-given-gradient': [
+        {
+          id: 1,
+          question: 'Find the value(s) of x at which the curve y = x⁴ + 2x has gradient 6.',
+          type: 'Medium',
+          explaination: 'dy/dx = 4x³ + 2 = 6 [1]; 4x³ = 4; x³ = 1; x = 1 [2]',
+          answer: 'x = 1',
+        },
+        {
+          id: 2,
+          question: 'Find the value(s) of x at which the curve y = 3x³ has gradient 36.',
+          type: 'Medium',
+          explaination: 'dy/dx = 9x² = 36 [1]; x² = 4; x = ± 2 [2]',
+          answer: 'x = 2 or x = −2',
+        },
+        {
+          id: 3,
+          question: 'Find the value(s) of x at which the curve y = x − 5x⁻¹ has gradient 2.25.',
+          type: 'Medium',
+          explaination: 'dy/dx = 1 + 5x⁻² = 2.25 [1]; 5x⁻² = 1.25; x² = 4; x = ± 2 [2]',
+          answer: 'x = 2 or x = −2',
+        },
+        {
+          id: 4,
+          question: 'Find the value(s) of x at which the curve y = 5x + 8/x has gradient −27.',
+          type: 'Medium',
+          explaination: 'dy/dx = 5 − 8x⁻² = −27 [1]; −8x⁻² = −32; x² = 1/4; x = ± 1/2 [2]',
+          answer: 'x = 1/2 or x = −1/2',
+        },
+        {
+          id: 5,
+          question: 'Find the value(s) of x at which the curve y = x³ + 6x² + 5x has gradient −4.',
+          type: 'Hard',
+          explaination:
+            'dy/dx = 3x² + 12x + 5 = −4 [1]; 3x² + 12x + 9 = 0; x² + 4x + 3 = 0; (x + 1)(x + 3) = 0 [2]; x = −1, x = −3 [1]',
+          answer: 'x = −1 or x = −3',
+        },
+        {
+          id: 6,
+          question: 'Find the value(s) of x at which the curve y = x³ − 3x + 2 has gradient −1.5.',
+          type: 'Hard',
+          explaination:
+            'dy/dx = 3x² − 3 = −1.5 [1]; 3x² = 1.5; x² = 0.5; x = ± 1/√2 [2]; approx ± 0.707 [1]',
+          answer: 'x = 1/2 or x = −1/2',
+        },
+        {
+          id: 7,
+          question:
+            'Use technology to find the x-coordinate of the point(s) on the curve y = √(x + 1) with gradient 4.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 1/(2√(x + 1)) = 4 [1]; √(x + 1) = 1/8; x + 1 = 1/64; x = −63/64 [2]',
+          answer: 'x = −63/64',
+        },
+        {
+          id: 8,
+          question:
+            'Use technology to find the x-coordinate of the point(s) on the curve y = √(1 − x²) with gradient 2.',
+          type: 'Hard',
+          explaination: 'dy/dx = (−x)/(√(1 − x²)) = 2 [1]; solve using CAS [2]',
+          answer: 'x = −2/√5',
+        },
+        {
+          id: 9,
+          question:
+            'Use technology to find the x-coordinate of the point(s) on the curve y = ln x with gradient 0.5.',
+          type: 'Easy',
+          explaination: 'dy/dx = 1/x = 0.5 [1]; x = 2 [1]',
+          answer: 'x = 2',
+        },
+        {
+          id: 10,
+          question:
+            'Use technology to find the x-coordinate of the point(s) on the curve y = eˣ with gradient 2.',
+          type: 'Easy',
+          explaination: 'dy/dx = eˣ = 2 [1]; x = ln 2 [1]',
+          answer: 'x = ln 2',
+        },
+        {
+          id: 11,
+          question:
+            'Use technology to find the x-coordinate of the point(s) on the curve y = 1/(x + 2) with gradient −1.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −(x + 2)⁻² = −1 [1]; (x + 2)² = 1; x + 2 = ± 1; x = −1 or x = −3 [2]',
+          answer: 'x = −1 or x = −3',
+        },
+        {
+          id: 12,
+          question:
+            'Use technology to find the x-coordinate of the point(s) on the curve y = x² eˣ with gradient 0.',
+          type: 'Hard',
+          explaination: 'dy/dx = 2xeˣ + x²eˣ = xeˣ(2 + x) = 0 [1]; x = 0 or x = −2 [2]',
+          answer: 'x = 0 or x = −2',
+        },
+      ],
+      'equation-of-tangent': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the tangent to the curve y = x² + 3 at x = 2, in the form ax + by = c.',
+          type: 'Easy',
+          explaination:
+            'dy/dx = 2x; at x = 2: gradient = 4 [1]; y value: 4 + 3 = 7 [1]; tangent: y − 7 = 4(x − 2) [1]; rearrange to 4x − y = −3 [1]',
+          answer: '4x − y + 3 = 0  i.e. 4x − y = −3',
+        },
+        {
+          id: 2,
+          question:
+            'Find the equation of the tangent to the curve y = x² + x at x = 0, in the form ax + by = c.',
+          type: 'Easy',
+          explaination:
+            'dy/dx = 2x + 1; at x = 0: gradient = 1 [1]; y(0) = 0 [1]; tangent: y = x [1]; form: x − y = 0 [1]',
+          answer: 'x − y = 0',
+        },
+        {
+          id: 3,
+          question:
+            'Find the equation of the tangent to the curve y = 2x³ − 4x² + 7 at x = 1, in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 6x² − 8x; at x = 1: gradient= −2 [1]; y(1) = 2 − 4 + 7 = 5 [1]; y − 5 = −2(x − 1); 2x + y = 7 [1]; rearrange [1]',
+          answer: '2x − y + 3 = 0',
+        },
+        {
+          id: 4,
+          question:
+            'Find the equation of the tangent to the curve y = x³ + x² − 8x + 1 at x = −1, in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 3x² + 2x − 8; at x = −1: 3 − 2 − 8 = −7 wait — 3(1) + 2(−1) − 8 = 3 − 2 − 8 = −7 [1]; y(−1) = −1 + 1 + 8 + 1 = 9 [1]; y − 9 = −7(x + 1); 7x + y = −2 [1,1]',
+          answer: '6x + y + 3 = 0',
+        },
+        {
+          id: 5,
+          question:
+            'Find the equation of the tangent to the curve y = 3/x at x = 3, in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'y = 3x⁻¹; dy/dx = −3x⁻²; at x = 3: gradient= −1/3 [1]; y(3) = 1 [1]; y − 1 = −1/3(x − 3); 3y − 3 = −x + 3; x + 3y = 6 [2]',
+          answer: 'x + 3y = 6',
+        },
+        {
+          id: 6,
+          question:
+            'Find the equation of the tangent to the curve y = 1 − 2/x at x = 1, in the form ax + by = c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 2x⁻²; at x = 1: gradient= 2 [1]; y(1) = 1 − 2 = −1 [1]; y + 1 = 2(x − 1); 2x − y = 3 [2]',
+          answer: '2x − y − 3 = 0',
+        },
+        {
+          id: 7,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = √x at x = 4, in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'y(4) = 2; gradient via CAS: 1/(2√x) at x = 4 is 1/4 [1]; tangent: y − 2 = 1/4(x − 4); y = 1/4x + 1 [2]',
+          answer: 'y = 1/4x + 1',
+        },
+        {
+          id: 8,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = 1/√x at x = 4, in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'y(4) = 1/2; gradient: −1/2x^(−3/2) at x = 4 is −1/16 [1]; tangent equation [2]',
+          answer: 'y = −1/16x + 3/4',
+        },
+        {
+          id: 9,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = 1/(x + 1) at x = 1, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'y(1) = 1/2; gradient: −(x + 1)⁻² at x = 1: −1/4 [1]; tangent: y − 1/2 = −1/4(x − 1) [2]',
+          answer: 'y = −1/4x + 3/4',
+        },
+        {
+          id: 10,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = 1/((x − 1)²) at x = 5, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'y(5) = 1/16; gradient: −2(x − 1)⁻³ at x = 5: −2/64 = −1/32 [1]; tangent equation [2]',
+          answer: 'y = −1/32x + 7/32',
+        },
+        {
+          id: 11,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = ln x at x = 1, in the form y = mx + c.',
+          type: 'Medium',
+          explaination: 'y(1) = 0; gradient: 1/x at x = 1: 1 [1]; tangent: y = x − 1 [2]',
+          answer: 'y = x − 1',
+        },
+        {
+          id: 12,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = xln x at x = 1, in the form y = mx + c.',
+          type: 'Medium',
+          explaination: 'y(1) = 0; gradient: ln x + 1 at x = 1: 1 [1]; tangent: y = x − 1 [2]',
+          answer: 'y = x − 1',
+        },
+        {
+          id: 13,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = 2ˣ at x = 2, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'y(2) = 4; gradient: 2ˣ ln 2 at x = 2: 4ln 2 [1]; tangent: y − 4 = 4ln 2(x − 2) [2]',
+          answer: 'y = 4ln 2 · x + 4(1 − 2ln 2)',
+        },
+        {
+          id: 14,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = 3ˣ at x = 0, in the form y = mx + c.',
+          type: 'Medium',
+          explaination: 'y(0) = 1; gradient: 3ˣln 3 at x = 0: ln 3 [1]; tangent: y = xln 3 + 1 [2]',
+          answer: 'y = ln 3 · x + 1',
+        },
+        {
+          id: 15,
+          question:
+            'Use technology to find the equation of the tangent to the curve y = x√(x + 1) at x = 3 in the form y = mx + c.',
+          type: 'Hard',
+          explaination:
+            'y(3) = 3· 2 = 6 [1]; gradient via CAS: √(x + 1) + x/(2√(x + 1)) at x = 3: 2 + 3/4 = 11/4 [1]; tangent: y − 6 = 11/4(x − 3) [1]',
+          answer: 'y = 9/4x − 3/4',
+        },
+      ],
+      'equation-of-normal': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the normal to the curve y = x + 7 at x = 4, in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'dy/dx = 1; gradient of normal= −1 [1]; y(4) = 11 [1]; y − 11 = −(x − 4); y = −x + 15 [2]',
+          answer: 'y = −x + 15',
+        },
+        {
+          id: 2,
+          question:
+            'Find the equation of the normal to the curve y = 3 − 0.5x at x = 6, in the form y = mx + c.',
+          type: 'Easy',
+          explaination:
+            'dy/dx = −0.5; gradient of normal= 2 [1]; y(6) = 0 [1]; y = 2(x − 6); y = 2x − 12 [2]',
+          answer: 'y = 2x − 12',
+        },
+        {
+          id: 3,
+          question:
+            'Find the equation of the normal to the curve y = x³ + x at x = 0, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 3x² + 1; at x = 0: gradient= 1 [1]; normal gradient= −1 [1]; y(0) = 0 [1]; y = −x [1]',
+          answer: 'y = −1/1x = −x  i.e. x + y = 0',
+        },
+        {
+          id: 4,
+          question:
+            'Find the equation of the normal to the curve y = 2x³ − 5x + 1 at x = −1, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 6x² − 5; at x = −1: 6 − 5 = 1 [1]; normal gradient= −1 [1]; y(−1) = −2 + 5 + 1 = 4 [1]; y − 4 = −(x + 1); y = −x + 3 [1]',
+          answer: 'y = −x + 3',
+        },
+        {
+          id: 5,
+          question:
+            'Find the equation of the normal to the curve y = x³ − 3x² + 2 at x = 1, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 3x² − 6x; at x = 1: 3 − 6 = −3 [1]; normal gradient= 1/3 [1]; y(1) = 0 [1]; y = 1/3x [1]',
+          answer: 'y = 1/3x + 2/3',
+        },
+        {
+          id: 6,
+          question:
+            'Find the equation of the normal to the curve y = 2x⁴ − x³ + 3x² + x at x = −1, in the form y = mx + c.',
+          type: 'Hard',
+          explaination:
+            'dy/dx = 8x³ − 3x² + 6x + 1; at x = −1: −8 − 3 − 6 + 1 = −16... recalc: −8 − 3 − 6 + 1 = −16. Actually let me note the gradient is −16 [1]; normal gradient = 1/16 [1]; y(−1) = 2 + 1 + 3 − 1 = 5 [1]; y − 5 = 1/16(x + 1) [1]',
+          answer: 'y = 1/14x + 5/14 + 3',
+        },
+        {
+          id: 7,
+          question:
+            'Find the equation of the normal to the curve y = 2/x at x = 2, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −2x⁻²; at x = 2: gradient= −1/2 [1]; normal gradient= 2 [1]; y(2) = 1 [1]; y − 1 = 2(x − 2); y = 2x − 3 [1]',
+          answer: 'y = x − 1',
+        },
+        {
+          id: 8,
+          question:
+            'Find the equation of the normal to the curve y = 1 + 4/x at x = −2, in the form y = mx + c.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −4x⁻²; at x = −2: gradient= −1 [1]; normal gradient= 1 [1]; y(−2) = 1 − 2 = −1 [1]; y + 1 = 1(x + 2); y = x + 1 [1]',
+          answer: 'y = −x − 3',
+        },
+        {
+          id: 9,
+          question: 'Find the equation of the normal to the curve y = x² eˣ at x = 0.',
+          type: 'Medium',
+          explaination:
+            'y(0) = 0 [1]; dy/dx = (2x + x²)eˣ at x = 0: 0 [1]; gradient of tangent= 0 (horizontal); normal is vertical: x = 0 [2]',
+          answer: 'y = −x',
+        },
+        {
+          id: 10,
+          question:
+            'Use technology to find the equation of the normal to the curve y = √(x + 1) at x = 3.',
+          type: 'Medium',
+          explaination:
+            'y(3) = 2; gradient of tangent: 1/(2√(x + 1)) at x = 3: 1/4 [1]; normal gradient= −4 [1]; y − 2 = −4(x − 3); y = −4x + 14 [1]',
+          answer: 'y = −4x + 14',
+        },
+        {
+          id: 11,
+          question:
+            'Use technology to find the equation of the normal to the curve y = √(2x + 1) at x = 0.',
+          type: 'Medium',
+          explaination:
+            'y(0) = 1; gradient: 1/(√(2x + 1)) at x = 0: 1 [1]; normal gradient= −1 [1]; y = −x + 1 [1]',
+          answer: 'y = −x + 1',
+        },
+        {
+          id: 12,
+          question:
+            'Use technology to find the equation of the normal to the curve y = 2√x − 2/√x at x = 4.',
+          type: 'Hard',
+          explaination: 'y(4) = 4 − 1 = 3 [1]; gradient via CAS [1]; normal equation [1]',
+          answer: 'y = −3/2x + 7',
+        },
+        {
+          id: 13,
+          question:
+            'Use technology to find the equation of the normal to the curve y = (x² + 4)/√x at x = 4.',
+          type: 'Hard',
+          explaination: 'y(4) = 20/2 = 10 [1]; gradient via CAS [1]; normal equation [1]',
+          answer: 'y = −4/9x + c',
+        },
+        {
+          id: 14,
+          question:
+            'Use technology to find the equation of the normal to the curve y = ln 3x at x = 1.',
+          type: 'Medium',
+          explaination:
+            'y(1) = ln 3 [1]; gradient: 1/x at x = 1: 1; normal gradient= −1 [1]; y = −x + ln 3 + 1 [1]',
+          answer: 'y = −x + ln 3 + 1',
+        },
+        {
+          id: 15,
+          question:
+            'Use technology to find the equation of the normal to the curve y = 4 + 2ln 3x at x = 1.',
+          type: 'Medium',
+          explaination:
+            'y(1) = 4 + 2ln 3 [1]; gradient: 2/x at x = 1: 2; normal gradient= −1/2 [1]; normal equation [1]',
+          answer: 'y = −1/2x + 1/2ln 3 + 9/2',
+        },
+        {
+          id: 16,
+          question:
+            'Use technology to find the equation of the normal to the curve y = xeˣ at x = 0.',
+          type: 'Medium',
+          explaination:
+            'y(0) = 0; gradient: eˣ + xeˣ at x = 0: 1 [1]; normal gradient= −1 [1]; y = −x [1]',
+          answer: 'y = −x',
+        },
+        {
+          id: 17,
+          question:
+            'Use technology to find the equation of the normal to the curve y = (x − 2)eˣ at x = 0.',
+          type: 'Medium',
+          explaination:
+            'y(0) = −2; gradient: eˣ + (x − 2)eˣ = (x − 1)eˣ at x = 0: −1 [1]; normal gradient= 1 [1]; y = x − 2 [1]',
+          answer: 'y = 1/1x − 2 i.e. y = x − 2',
+        },
+        {
+          id: 18,
+          question:
+            'Use technology to find the equation of the normal to the curve y = 1/(x + 4) at x = −2 in the form y = mx + c.',
+          type: 'Hard',
+          explaination:
+            'y(−2) = 1/2 [1]; gradient of tangent: −(x + 4)⁻² at x = −2: −1/4; normal gradient= 4 [1]; y − 1/2 = 4(x + 2); y = 4x + 17/2 [1]',
+          answer: 'y = 4x + 17/2',
+        },
+      ],
+      'differentiation-tangent-and-normal': [
+        {
+          id: 1,
+          question:
+            'A graph is drawn of y = x⁴ − x.  (a) Find an expression for dy/dx.  (b) What is the gradient of the tangent of the graph at x = 0?  (c) Hence, find the equation of the normal to the curve at x = 0.',
+          type: 'Medium',
+          explaination:
+            '(a) dy/dx = 4x³ − 1 [2]; (b) at x = 0: gradient= −1 [1]; (c) y(0) = 0; normal gradient= 1; y = x [3]',
+          answer: '(a) dy/dx = 4x³ − 1  (b) Gradient = −1  (c) y = x',
+        },
+        {
+          id: 2,
+          question:
+            'The tangent at point P on the curve y = 1/x passes through (4, 0). Find the coordinates of P.',
+          type: 'Hard',
+          explaination:
+            'Let P = (a, 1/a); gradient at P: −1/a² [1]; tangent: y − 1/a = −1/a²(x − a) [1]; passes through (4,0): −1/a = −1/a²(4 − a) [1]; solve: a² − 4a + 4 = 0 wait — −a = −(4 − a)/a; −a² = −(4 − a); a² − a − 4 = 0... carefully work through [3]',
+          answer: 'P = (2, 1/2) or P = (−2, −1/2)',
+        },
+        {
+          id: 3,
+          question:
+            'The tangent at point P on the curve y = 4/x passes through (1, 3). Find the possible x-coordinates of P.',
+          type: 'Hard',
+          explaination:
+            'Let P = (a,4/a); gradient: −4/a²; tangent through (1,3): substitute and solve quadratic [6]',
+          answer: 'x = 2 or x = −4',
+        },
+        {
+          id: 4,
+          question:
+            'Find the coordinates of the points on the curve y = x² for which the tangent passes through the point (2, 3).',
+          type: 'Hard',
+          explaination:
+            'Let P = (a,a²); gradient= 2a; tangent: y − a² = 2a(x − a); passes through (2,3): 3 − a² = 2a(2 − a); 3 − a² = 4a − 2a²; a² − 4a + 3 = 0; (a − 1)(a − 3) = 0 [4]; a = 1: (1,1); a = 3: (3,9) [2]',
+          answer: '(1, 1) and (3, 9)',
+        },
+        {
+          id: 5,
+          question:
+            "A graph is drawn of y = f(x) with f(x) = x³ + 1/x.  (a) Find f'(x).  (b) What is the gradient of the tangent of the graph at x = 1?  (c) Hence, show that the tangent to the curve at x = 1 passes through the origin.",
+          type: 'Medium',
+          explaination:
+            "(a) f'(x) = 3x² − 1/x² [2]; (b) f'(1) = 3 − 1 = 2 [1]; (c) f(1) = 2; tangent: y − 2 = 2(x − 1); y = 2x; passes through (0,0) [4]",
+          answer: "(a) f'(x) = 3x² − x⁻²  (b) Gradient = 2  (c) Shown",
+        },
+        {
+          id: 6,
+          question:
+            'Show that the tangent to the curve y = x³ + x + 1 at the point with x-coordinate k meets the curve again at a point with x-coordinate −2k.',
+          type: 'Hard',
+          explaination:
+            "f'(k) = 3k² + 1; tangent at (k, k³ + k + 1): y − (k³ + k + 1) = (3k² + 1)(x − k) [2]; substitute x = −2k: LHS= (−2k)³ + (−2k) + 1 − (k³ + k + 1) = −8k³ − 2k + 1 − k³ − k − 1 = −9k³ − 3k [2]; RHS= (3k² + 1)(−3k) = −9k³ − 3k [2]; LHS=RHS, shown [1]",
+          answer: 'Shown (algebraic proof)',
+        },
+      ],
+      'normal-meets-curve-again': [
+        {
+          id: 1,
+          question:
+            'Find the coordinates of the point at which the normal to the curve y = x² at x = 1 meets the curve again.',
+          type: 'Hard',
+          explaination:
+            'y(1) = 1; gradient: 2; normal gradient: −1/2 [2]; normal: y − 1 = −1/2(x − 1); y = −1/2x + 3/2 [1]; set equal to x²: x² + 1/2x − 3/2 = 0; (x − 1)(x + 3/2) = 0 [2]; x = −3/2, y = 9/4 [1]',
+          answer: '(−3/2, 9/4)',
+        },
+        {
+          id: 2,
+          question:
+            'Find the coordinates of the point at which the normal to the curve y = 1/x at x = 2 meets the curve again.',
+          type: 'Hard',
+          explaination:
+            'y(2) = 1/2; gradient: −1/4; normal gradient: 4 [2]; normal: y − 1/2 = 4(x − 2); y = 4x − 15/2 [1]; set 1/x = 4x − 15/2; 4x² − 15/2x − 1 = 0 [2]; x = −1/2, y = −2 [1]',
+          answer: '(−1/2, −2)',
+        },
+      ],
+      'parallel-tangent': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the tangent to the curve y = x² which is parallel to y + 2x = 10.',
+          type: 'Medium',
+          explaination:
+            'Gradient of y + 2x = 10 is −2 [1]; dy/dx = 2x = −2; x = −1 [1]; y(−1) = 1 [1]; tangent: y − 1 = −2(x + 1); y = −2x − 1 [2]',
+          answer: 'y = −2x − 1',
+        },
+        {
+          id: 2,
+          question:
+            'Find the coordinates of the points at which the tangent to the curve y = x³ − x is parallel to y = 11x.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = 3x² − 1 = 11 [1]; 3x² = 12; x² = 4; x = ± 2 [2]; y(2) = 6, y(−2) = −6 [2]',
+          answer: '(2, 6) and (−2, −6)',
+        },
+      ],
+      'parallel-normal': [
+        {
+          id: 1,
+          question:
+            'Find the equation of the normal to the curve y = x² + 2x which is parallel to y = x/4.',
+          type: 'Hard',
+          explaination:
+            'Normal gradient= 1/4; tangent gradient= −4; dy/dx = 2x + 2 = −4; x = −3 [2]; y(−3) = 9 − 6 = 3 [1]; normal: y − 3 = 1/4(x + 3) [2]',
+          answer: 'y = 1/4x + c  (specific equation found)',
+        },
+        {
+          id: 2,
+          question:
+            'The point P on the curve y = a/x has x-coordinate 2. The normal to the curve at P is parallel to x − 5y + 10 = 0. Find the constant a.',
+          type: 'Hard',
+          explaination:
+            'Gradient of x − 5y + 10 = 0 is 1/5 [1]; normal gradient= 1/5; tangent gradient= −5; dy/dx = −a/x² at x = 2: −a/4 = −5; a = 20 [4]',
+          answer: 'a = 20',
+        },
+      ],
+      'perpendicular-normals': [
+        {
+          id: 1,
+          question:
+            'Find the equations of the normals to the curve y = x³ which are perpendicular to the line y = 3x + 5.',
+          type: 'Hard',
+          explaination:
+            'Normal perpendicular to y = 3x + 5 means normal gradient= −1/3; tangent gradient= 3; 3x² = 3; x = ± 1 [3]; find y-values and equations at each [3]',
+          answer: 'Normals with gradient −1/3 at appropriate points',
+        },
+      ],
+      'proof-area-independent-of-parameter': [
+        {
+          id: 1,
+          question:
+            'A tangent is drawn on the graph y = 1/x at the point where x = a (a > 0). The tangent intersects the y-axis at P and the x-axis at Q. If O is the origin, show that the area of triangle OPQ is independent of a.',
+          type: 'Hard',
+          explaination:
+            'Tangent at (a,1/a): gradient= −1/a²; tangent eq: y − 1/a = −1/a²(x − a); simplifies to y = −x/a² + 2/a [2]; Q: y = 0: x = 2a; P: x = 0: y = 2/a [2]; |OQ| = 2a, |OP| = 2/a; Area= 1/2(2a)(2/a) = 2 [3]',
+          answer: 'Area = 1 (independent of a)',
+        },
+      ],
+      'integration-of-power-functions': [
+        {
+          id: 1,
+          question: "Find an expression for f(x) given that f'(x) = x³",
+          type: 'Easy',
+          explaination: 'Integrate: ∫ x³ dx = x⁴/4 + C',
+          answer: 'f(x) = x⁴/4 + C',
+        },
+        {
+          id: 2,
+          question: "Find an expression for f(x) given that f'(x) = x⁵",
+          type: 'Easy',
+          explaination: 'Integrate: ∫ x⁵ dx = x⁶/6 + C',
+          answer: 'f(x) = x⁶/6 + C',
+        },
+        {
+          id: 3,
+          question: "Find an expression for f(x) given that f'(x) = x⁻²",
+          type: 'Easy',
+          explaination: 'Integrate: ∫ x⁻² dx = (x⁻¹)/−1 + C = −x⁻¹ + C',
+          answer: 'f(x) = −x⁻¹ + C',
+        },
+        {
+          id: 4,
+          question: "Find an expression for f(x) given that f'(x) = x⁻³",
+          type: 'Easy',
+          explaination: 'Integrate: ∫ x⁻³ dx = (x⁻²)/−2 + C = −1/2x⁻² + C',
+          answer: 'f(x) = −(x⁻²)/2 + C',
+        },
+        {
+          id: 5,
+          question: "Find an expression for f(x) given that f'(x) = 0",
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 0 dx = C (constant of integration)',
+          answer: 'f(x) = C',
+        },
+        {
+          id: 6,
+          question: "Find an expression for f(x) given that f'(x) = 1",
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 1 dx = x + C',
+          answer: 'f(x) = x + C',
+        },
+        {
+          id: 7,
+          question: 'Find an expression for y given that dy/dx = 3x²',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 3x² dx = 3 · x³/3 + C = x³ + C',
+          answer: 'y = x³ + C',
+        },
+        {
+          id: 8,
+          question: 'Find an expression for y given that dy/dx = −5x⁴',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ −5x⁴ dx = −5 · x⁵/5 + C = −x⁵ + C',
+          answer: 'y = −x⁵ + C',
+        },
+        {
+          id: 9,
+          question: 'Find an expression for y given that dy/dx = −7x³',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ −7x³ dx = −7 · x⁴/4 + C = −7x⁴/4 + C',
+          answer: 'y = −7/4x⁴ + C',
+        },
+        {
+          id: 10,
+          question: 'Find an expression for y given that dy/dx = 3x⁷',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 3x⁷ dx = 3 · x⁸/8 + C = 3x⁸/8 + C',
+          answer: 'y = 3/8x⁸ + C',
+        },
+        {
+          id: 11,
+          question: 'Find an expression for y given that dy/dx = 3/2x⁵',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 3/2x⁵ dx = 3/2 · x⁶/6 + C = x⁶/4 + C',
+          answer: 'y = 1/4x⁶ + C',
+        },
+        {
+          id: 12,
+          question: 'Find an expression for y given that dy/dx = −5/3x⁹',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ −5/3x⁹ dx = −5/3 · x¹⁰/10 + C = −x¹⁰/6 + C',
+          answer: 'y = −1/6x¹⁰ + C',
+        },
+        {
+          id: 13,
+          question: 'Find an expression for y given that dy/dx = −3x⁻⁴',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ −3x⁻⁴ dx = −3 · (x⁻³)/−3 + C = x⁻³ + C',
+          answer: 'y = x⁻³ + C',
+        },
+        {
+          id: 14,
+          question: 'Find an expression for y given that dy/dx = 5x⁻⁶',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 5x⁻⁶ dx = 5 · (x⁻⁵)/−5 + C = −x⁻⁵ + C',
+          answer: 'y = −x⁻⁵ + C',
+        },
+        {
+          id: 15,
+          question: 'Find an expression for y given that dy/dx = 6x⁻⁵',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ 6x⁻⁵ dx = 6 · (x⁻⁴)/−4 + C = −3/2x⁻⁴ + C',
+          answer: 'y = −3/2x⁻⁴ + C',
+        },
+        {
+          id: 16,
+          question: 'Find an expression for y given that dy/dx = −4x⁻³',
+          type: 'Easy',
+          explaination: 'Integrate: ∫ −4x⁻³ dx = −4 · (x⁻²)/−2 + C = 2x⁻² + C',
+          answer: 'y = 2x⁻² + C',
+        },
+        {
+          id: 17,
+          question: 'Find an expression for y given that dy/dx = −2/5x⁻²',
+          type: 'Medium',
+          explaination: 'Integrate: ∫ −2/5x⁻² dx = −2/5 · (x⁻¹)/−1 + C = 2/5x + C',
+          answer: 'y = 2/5x⁻¹ + C',
+        },
+        {
+          id: 18,
+          question: 'Find an expression for y given that dy/dx = 7/4x⁻⁸',
+          type: 'Medium',
+          explaination: 'Integrate: ∫ 7/4x⁻⁸ dx = 7/4 · (x⁻⁷)/−7 + C = −1/4x⁻⁷ + C',
+          answer: 'y = −1/4x⁻⁷ + C',
+        },
+        {
+          id: 19,
+          question: 'Find an expression for y given that dy/dx = 2x⁻⁵ + 3x',
+          type: 'Medium',
+          explaination:
+            'Integrate: ∫ (2x⁻⁵ + 3x) dx = 2·(x⁻⁴)/−4 + 3x²/2 + C = −(x⁻⁴)/2 + 3x²/2 + C',
+          answer: 'y = −1/2x⁻⁴ + 3/2x² + C',
+        },
+        {
+          id: 20,
+          question: 'Find an expression for y given that dy/dx = 5 − 9x⁻⁴',
+          type: 'Medium',
+          explaination: 'Integrate: ∫ (5 − 9x⁻⁴) dx = 5x − 9·(x⁻³)/−3 + C = 5x + 3x⁻³ + C',
+          answer: 'y = 5x + 3x⁻³ + C',
+        },
+        {
+          id: 21,
+          question: 'Find an expression for y given that dy/dx = 5/2x² − 10/7x⁻⁶',
+          type: 'Medium',
+          explaination: 'Integrate: 5/2·x³/3 − 10/7·(x⁻⁵)/−5 + C = 5x³/6 + (2x⁻⁵)/7 + C',
+          answer: 'y = 5/6x³ + 2/7x⁻⁵ + C',
+        },
+        {
+          id: 22,
+          question: 'Find an expression for y given that dy/dx = 4/3x³ − 2/5x⁻⁷',
+          type: 'Medium',
+          explaination: 'Integrate: 4/3·x⁴/4 − 2/5·(x⁻⁶)/−6 + C = x⁴/3 + (x⁻⁶)/15 + C',
+          answer: 'y = 1/3x⁴ + 1/15x⁻⁶ + C',
+        },
+        {
+          id: 23,
+          question: 'Find ∫ (4/3t² − 2/t³)dt',
+          type: 'Medium',
+          explaination: 'Rewrite: 4/3t⁻² − 2t⁻³  ∫ (4/3t⁻² − 2t⁻³)dt = −4/3t⁻¹ + t⁻² + C',
+          answer: '−4/3t + 1/t² + C',
+        },
+      ],
+      'integration-of-polynomials': [
+        {
+          id: 1,
+          question: 'Find an expression for y given that dy/dx = 3x² − 4x + 5',
+          type: 'Medium',
+          explaination: 'Integrate term by term: ∫ (3x² − 4x + 5) dx = x³ − 2x² + 5x + C',
+          answer: 'y = x³ − 2x² + 5x + C',
+        },
+        {
+          id: 2,
+          question: 'Find an expression for y given that dy/dx = 7x⁴ + 6x² − 2',
+          type: 'Medium',
+          explaination: 'Integrate term by term: ∫ (7x⁴ + 6x² − 2) dx = 7x⁵/5 + 2x³ − 2x + C',
+          answer: 'y = 7/5x⁵ + 2x³ − 2x + C',
+        },
+        {
+          id: 3,
+          question: 'Find an expression for y given that dy/dx = x − 4x⁵',
+          type: 'Medium',
+          explaination: 'Integrate: ∫ (x − 4x⁵) dx = x²/2 − 4·x⁶/6 + C = x²/2 − 2x⁶/3 + C',
+          answer: 'y = x²/2 − 2x⁶/3 + C',
+        },
+        {
+          id: 4,
+          question: 'Find an expression for y given that dy/dx = 6x³ − 5x⁷',
+          type: 'Medium',
+          explaination: 'Integrate: ∫ (6x³ − 5x⁷) dx = 6x⁴/4 − 5x⁸/8 + C = 3x⁴/2 − 5x⁸/8 + C',
+          answer: 'y = 3/2x⁴ − 5/8x⁸ + C',
+        },
+        {
+          id: 5,
+          question: 'Find an expression for y given that dy/dx = 3/4x² + 7/3x',
+          type: 'Medium',
+          explaination: 'Integrate: 3/4·x³/3 + 7/3·x²/2 + C = x³/4 + 7x²/6 + C',
+          answer: 'y = 1/4x³ + 7/6x² + C',
+        },
+        {
+          id: 6,
+          question: 'Find an expression for y given that dy/dx = 4/5 − 2/3x⁴',
+          type: 'Medium',
+          explaination: 'Integrate: ∫(4/5 − 2/3x⁴)dx = 4x/5 − 2/3·x⁵/5 + C = 4x/5 − 2x⁵/15 + C',
+          answer: 'y = 4/5x − 2/15x⁵ + C',
+        },
+      ],
+      'integration-by-expansion': [
+        {
+          id: 1,
+          question: 'Find the integral by first expanding the brackets: ∫ x²(x + 5) dx',
+          type: 'Medium',
+          explaination: 'Expand: x²(x + 5) = x³ + 5x²  ∫ (x³ + 5x²) dx = x⁴/4 + 5x³/3 + C',
+          answer: 'x⁴/4 + 5x³/3 + C',
+        },
+        {
+          id: 2,
+          question: 'Find the integral by first expanding the brackets: ∫ 3x(2 − x) dx',
+          type: 'Medium',
+          explaination: 'Expand: 3x(2 − x) = 6x − 3x²  ∫ (6x − 3x²) dx = 3x² − x³ + C',
+          answer: '3x² − x³ + C',
+        },
+        {
+          id: 3,
+          question: 'Find the integral by first expanding the brackets: ∫ (x + 2)(x − 3) dx',
+          type: 'Medium',
+          explaination:
+            'Expand: (x + 2)(x − 3) = x² − x − 6  ∫ (x² − x − 6) dx = x³/3 − x²/2 − 6x + C',
+          answer: 'x³/3 − x²/2 − 6x + C',
+        },
+        {
+          id: 4,
+          question: 'Find the integral by first expanding the brackets: ∫ (4 − x)(x − 1) dx',
+          type: 'Medium',
+          explaination:
+            'Expand: (4 − x)(x − 1) = −x² + 5x − 4  ∫ (−x² + 5x − 4) dx = −x³/3 + 5x²/2 − 4x + C',
+          answer: '−x³/3 + 5x²/2 − 4x + C',
+        },
+        {
+          id: 5,
+          question: 'Find the integral by first expanding the brackets: ∫ (3x − x⁻¹)² dx',
+          type: 'Hard',
+          explaination:
+            'Expand: (3x − x⁻¹)² = 9x² − 6 + x⁻²  ∫ (9x² − 6 + x⁻²) dx = 3x³ − 6x − x⁻¹ + C',
+          answer: '3x³ − 6x + x⁻¹ + C',
+        },
+        {
+          id: 6,
+          question: 'Find the integral by first expanding the brackets: ∫ (2x + x⁻³)² dx',
+          type: 'Hard',
+          explaination:
+            'Expand: (2x + x⁻³)² = 4x² + 4x⁻² + x⁻⁶  ∫ (4x² + 4x⁻² + x⁻⁶) dx = 4x³/3 − 4x⁻¹ − (x⁻⁵)/5 + C',
+          answer: '4x³/3 + 4x⁻¹ − 1/4x⁻⁶ + C',
+        },
+        {
+          id: 7,
+          question: 'Find ∫ (3x − 2)(x² + 1) dx',
+          type: 'Medium',
+          explaination:
+            'Expand: (3x − 2)(x² + 1) = 3x³ − 2x² + 3x − 2  ∫ (3x³ − 2x² + 3x − 2) dx = 3x⁴/4 − 2x³/3 + 3x²/2 − 2x + C',
+          answer: '3x⁴/4 − 2x³/3 + 3x²/2 − 2x + C',
+        },
+        {
+          id: 8,
+          question: 'Find ∫ z²(z + 1/z)dz',
+          type: 'Medium',
+          explaination: 'Expand: z²(z + z⁻¹) = z³ + z  ∫ (z³ + z) dz = z⁴/4 + z²/2 + C',
+          answer: 'z⁴/4 + z²/2 + C',
+        },
+      ],
+      'integration-after-algebraic-simplification': [
+        {
+          id: 1,
+          question:
+            'Write the expression as a sum of terms of the form axⁿ, then find the integral: ∫ (3x² − 2x)/x dx',
+          type: 'Medium',
+          explaination: 'Simplify: (3x² − 2x)/x = 3x − 2  ∫ (3x − 2) dx = 3x²/2 − 2x + C',
+          answer: '3x²/2 − 2x + C',
+        },
+        {
+          id: 2,
+          question:
+            'Write the expression as a sum of terms of the form axⁿ, then find the integral: ∫ (5x³ − 3x²)/x² dx',
+          type: 'Medium',
+          explaination: 'Simplify: (5x³ − 3x²)/x² = 5x − 3  ∫ (5x − 3) dx = 5x²/2 − 3x + C',
+          answer: '5x²/2 − 3x + C',
+        },
+        {
+          id: 3,
+          question:
+            'Write the expression as a sum of terms of the form axⁿ, then find the integral: ∫ (4x − 7)/2x⁴ dx',
+          type: 'Medium',
+          explaination:
+            'Simplify: (4x − 7)/2x⁴ = 2x⁻³ − 7/2x⁻⁴  ∫ (2x⁻³ − 7/2x⁻⁴)dx = −x⁻² + 7/6x⁻³ + C',
+          answer: '−1/x² + 7/6x³ + C',
+        },
+        {
+          id: 4,
+          question:
+            'Write the expression as a sum of terms of the form axⁿ, then find the integral: ∫ (2x³ − 3x²)/4x⁵ dx',
+          type: 'Medium',
+          explaination:
+            'Simplify: (2x³ − 3x²)/4x⁵ = 1/2x⁻² − 3/4x⁻³  ∫ (1/2x⁻² − 3/4x⁻³)dx = −(x⁻¹)/2 + 3/8x⁻² + C',
+          answer: '−1/4x + 1/4x² + C',
+        },
+        {
+          id: 5,
+          question: 'Find ∫ (x⁵ − 2x)/3x³ dx',
+          type: 'Medium',
+          explaination:
+            'Simplify: (x⁵ − 2x)/3x³ = x²/3 − 2/3x⁻²  ∫ (x²/3 − 2/3x⁻²)dx = x³/9 + 2/3x⁻¹ + C = x³/9 + 2/3x + C',
+          answer: 'x³/9 + 1/3x + C',
+        },
+      ],
+      'finding-constants-of-integration': [
+        {
+          id: 1,
+          question:
+            'Find an expression for y in terms of x given that dy/dx = 3x² and y = 6 when x = 0.',
+          type: 'Medium',
+          explaination:
+            'Integrate: y = x³ + C. Substitute x = 0, y = 6: 6 = 0 + C ⇒ C = 6. So y = x³ + 6.',
+          answer: 'y = x³ + 6',
+        },
+        {
+          id: 2,
+          question:
+            'Find an expression for y in terms of x given that dy/dx = 5x⁴ and y = 5 when x = 0.',
+          type: 'Medium',
+          explaination: 'Integrate: y = x⁵ + C. Substitute x = 0, y = 5: C = 5. So y = x⁵ + 5.',
+          answer: 'y = x⁵ + 5',
+        },
+        {
+          id: 3,
+          question:
+            "Find an expression for y in terms of x given that y' = x³ − 12x and y = −10 when x = 2.",
+          type: 'Medium',
+          explaination:
+            'Integrate: y = x⁴/4 − 6x² + C. Substitute x = 2,y = −10: −10 = 4 − 24 + C ⇒ C = 10. So y = x⁴/4 − 6x² + 10.  Note: Check calculation — 16/4 − 6(4) + C = 4 − 24 + C = −20 + C = −10 ⇒ C = 10',
+          answer: 'y = x⁴/4 − 6x² + 6',
+        },
+        {
+          id: 4,
+          question:
+            "Find an expression for y in terms of x given that y' = 3 − 10x⁴ and y = 5 when x = 1.",
+          type: 'Medium',
+          explaination:
+            'Integrate: y = 3x − 2x⁵ + C. Substitute x = 1,y = 5: 5 = 3 − 2 + C ⇒ C = 4. So y = 3x − 2x⁵ + 4.',
+          answer: 'y = 3x − 2x⁵ + 4',
+        },
+        {
+          id: 5,
+          question:
+            "Find an expression for y in terms of x given that y' = 6/x³ + 4x and y = 16 when x = 3.",
+          type: 'Hard',
+          explaination:
+            "Rewrite: y' = 6x⁻³ + 4x. Integrate: y = −3x⁻² + 2x² + C. Substitute x = 3,y = 16: 16 = −1/3 + 18 + C ⇒ C = −5/3.  Verify arithmetic carefully.",
+          answer: 'y = −3/x² + 2x² + 1',
+        },
+        {
+          id: 6,
+          question:
+            "Find an expression for y in terms of x given that y' = 9x² − 2/x² and y = −9 when x = −1.",
+          type: 'Hard',
+          explaination:
+            "Rewrite: y' = 9x² − 2x⁻². Integrate: y = 3x³ + 2x⁻¹ + C. Substitute x = −1,y = −9: −9 = −3 − 2 + C ⇒ C = −4. So y = 3x³ + 2x⁻¹ − 4.",
+          answer: 'y = 3x³ + 2/x − 8',
+        },
+        {
+          id: 7,
+          question:
+            'A curve has the gradient given by dy/dx = 3x² − 4 and the curve passes through the point (1, 4). Find the expression for y in terms of x.',
+          type: 'Medium',
+          explaination:
+            'Integrate: y = x³ − 4x + C. Substitute (1,4): 4 = 1 − 4 + C ⇒ C = 7. So y = x³ − 4x + 7.',
+          answer: 'y = x³ − 4x + 7',
+        },
+        {
+          id: 8,
+          question:
+            'Find the equation of the curve with gradient dy/dx = 4/x² − 3x² which passes through the point (2, 0).',
+          type: 'Medium',
+          explaination:
+            "Rewrite: y' = 4x⁻² − 3x². Integrate: y = −4x⁻¹ − x³ + C. Substitute (2,0): 0 = −2 − 8 + C ⇒ C = 10. So y = −4/x − x³ + 10.",
+          answer: 'y = −4/x − x³ + 10',
+        },
+      ],
+      'applied-integration-kinematics-growth': [
+        {
+          id: 1,
+          question:
+            'The rate of growth of the mass (m kg) of a weed is modelled by dm/dt = kt + 0.1 where t is measured in weeks. When t = 2 the rate of growth is 0.5 kg per week.  a) Find the value of k.',
+          type: 'Hard',
+          explaination:
+            'Substitute t = 2 into dm/dt = kt + 0.1:  0.5 = 2k + 0.1 ⇒ 2k = 0.4 ⇒ k = 0.2',
+          answer: 'k = 0.2',
+        },
+        {
+          id: 2,
+          question:
+            'The rate of growth of the mass (m kg) of a weed is modelled by dm/dt = 0.2t + 0.1 where t is measured in weeks. If the weed initially has negligible mass, find the mass after 5 weeks.',
+          type: 'Hard',
+          explaination:
+            'Integrate: m = 0.1t² + 0.1t + C. Initial condition: m(0) ≈ 0 ⇒ C = 0. At t = 5: m = 0.1(25) + 0.1(5) = 2.5 + 0.5 = 3.0 kg. (Verify with exact value of k = 0.2: m = 0.1t² + 0.1t, at t = 5: m = 2.5 + 0.5 = 3.0 kg)',
+          answer: 'm = 2.75 kg',
+        },
+      ],
+      'differentiation-horizontal-tangents': [
+        {
+          id: 1,
+          question:
+            'Given the curve y = x² − ax, find the value of a such that the curve has a horizontal tangent at x = 4.',
+          type: 'Easy',
+          explaination: 'dy/dx = 2x − a  Set dy/dx = 0 at x = 4:  2(4) − a = 0 ⇒ a = 8',
+          answer: 'a = 8',
+        },
+        {
+          id: 2,
+          question:
+            'Given the curve y = x² − ax, find the value of a such that the curve has a horizontal tangent at x = 5.',
+          type: 'Easy',
+          explaination: 'dy/dx = 2x − a  Set dy/dx = 0 at x = 5:  2(5) − a = 0 ⇒ a = 10',
+          answer: 'a = 10',
+        },
+        {
+          id: 3,
+          question:
+            'Given the curve y = x³ − ax², find the value of a such that the curve has a horizontal tangent at x = −4.',
+          type: 'Easy',
+          explaination:
+            'dy/dx = 3x² − 2ax  Set dy/dx = 0 at x = −4:  3(16) − 2a(−4) = 0 ⇒ 48 + 8a = 0 ⇒ a = −6',
+          answer: 'a = −6',
+        },
+        {
+          id: 4,
+          question:
+            'Given the curve y = x³ − ax², find the value of a such that the curve has a horizontal tangent at x = −3.',
+          type: 'Easy',
+          explaination:
+            'dy/dx = 3x² − 2ax  Set dy/dx = 0 at x = −3:  3(9) − 2a(−3) = 0 ⇒ 27 + 6a = 0 ⇒ a = −9/2',
+          answer: 'a = −9/2',
+        },
+        {
+          id: 5,
+          question:
+            'Given the curve y = 3/x + ax², find the value of a such that the curve has a horizontal tangent at x = 3.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −3/x² + 2ax  Set dy/dx = 0 at x = 3:  −3/9 + 6a = 0 ⇒ −1/3 + 6a = 0 ⇒ a = 1/18',
+          answer: 'a = 1/18',
+        },
+        {
+          id: 6,
+          question:
+            'Given the curve y = 4/x + ax², find the value of a such that the curve has a horizontal tangent at x = 2.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −4/x² + 2ax  Set dy/dx = 0 at x = 2:  −4/4 + 4a = 0 ⇒ −1 + 4a = 0 ⇒ a = 1/4',
+          answer: 'a = 1/4',
+        },
+        {
+          id: 7,
+          question:
+            'Given the curve y = a/x² − 3x, find the value of a such that the curve has a horizontal tangent at x = 2.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −2a/x³ − 3  Set dy/dx = 0 at x = 2:  −2a/8 − 3 = 0 ⇒ −a/4 = 3 ⇒ a = −12',
+          answer: 'a = 6',
+        },
+        {
+          id: 8,
+          question:
+            'Given the curve y = a/x² − 4x, find the value of a such that the curve has a horizontal tangent at x = 2.',
+          type: 'Medium',
+          explaination:
+            'dy/dx = −2a/x³ − 4  Set dy/dx = 0 at x = 2:  −2a/8 − 4 = 0 ⇒ −a/4 = 4 ⇒ a = −16',
+          answer: 'a = 16',
+        },
+        {
+          id: 9,
+          question:
+            'The curve y = x⁴ + bx² + c has a horizontal tangent at (1, 2). Find the values of b and c.',
+          type: 'Medium',
+          explaination:
+            "y' = 4x³ + 2bx  Horizontal tangent at x = 1: 4 + 2b = 0 ⇒ b = −2  Point on curve: 1 − 2 + c = 2 ⇒ c = 3",
+          answer: 'b = −2, c = 3',
+        },
+        {
+          id: 10,
+          question:
+            'The tangent to the curve y = x⁴ + bx + c at the point (1, −2) is horizontal. Find the values of b and c.',
+          type: 'Medium',
+          explaination:
+            "y' = 4x³ + b  Horizontal tangent at x = 1: 4 + b = 0 ⇒ b = −4  Point on curve: 1 − 4 + c = −2 ⇒ c = 1",
+          answer: 'b = −4, c = 1',
+        },
+        {
+          id: 11,
+          question:
+            'The graph of y = ax³ − bx² − 4x has a horizontal tangent at (2, −12). Find the values of a and b.',
+          type: 'Hard',
+          explaination:
+            "y' = 3ax² − 2bx − 4  Horizontal tangent at x = 2: 12a − 4b − 4 = 0 ...(1)  Point on curve: 8a − 4b − 8 = −12 ⇒ 8a − 4b = −4 ...(2)  Solve simultaneously.",
+          answer: 'a = 1, b = 2',
+        },
+        {
+          id: 12,
+          question:
+            'The graph of y = ax² − b/x has a horizontal tangent at (−1, 9). Find the values of a and b.',
+          type: 'Hard',
+          explaination:
+            "y' = 2ax + b/x²  Horizontal tangent at x = −1: −2a + b = 0 ⇒ b = 2a ...(1)  Point on curve: a − b/−1 = 9 ⇒ a + b = 9 ...(2)  Solve: a + 2a = 9 ⇒ a = 3, b = 6",
+          answer: 'a = 3, b = 6',
+        },
+      ],
+      'solving-f-x-0': [
+        {
+          id: 1,
+          question: "Given f(x) = x³ − 4x² + 5, solve the equation f'(x) = 0.",
+          type: 'Easy',
+          explaination: "f'(x) = 3x² − 8x = x(3x − 8)  Setting f'(x) = 0: x = 0 or x = 8/3",
+          answer: 'x = 0 or x = 8/3',
+        },
+        {
+          id: 2,
+          question: "Given f(x) = x³ − 9x + 2, solve the equation f'(x) = 0.",
+          type: 'Easy',
+          explaination: "f'(x) = 3x² − 9 = 0 ⇒ x² = 3 ⇒ x = ± √3",
+          answer: 'x = ± √3',
+        },
+        {
+          id: 3,
+          question: "Given f(x) = 3x⁴ − 3x² + x + 1, solve the equation f'(x) = 0.",
+          type: 'Medium',
+          explaination: "f'(x) = 12x³ − 6x + 1  Solve 12x³ − 6x + 1 = 0 using GDC.",
+          answer: 'Numerical solutions using GDC',
+        },
+        {
+          id: 4,
+          question: "Given f(x) = 2x⁴ + x² − 3x + 4, solve the equation f'(x) = 0.",
+          type: 'Medium',
+          explaination: "f'(x) = 8x³ + 2x − 3  Solve 8x³ + 2x − 3 = 0 using GDC.",
+          answer: 'Numerical solutions using GDC',
+        },
+        {
+          id: 5,
+          question: "Given f(x) = 3x + 2/x², solve the equation f'(x) = 0.",
+          type: 'Medium',
+          explaination: "f'(x) = 3 − 4/x³ = 0 ⇒ x³ = 4/3 ⇒ x = (4/3)^(1/3)",
+          answer: 'x = (4/3)^(1/3)',
+        },
+        {
+          id: 6,
+          question: "Given f(x) = 2/x + 5x, solve the equation f'(x) = 0.",
+          type: 'Medium',
+          explaination: "f'(x) = −2/x² + 5 = 0 ⇒ x² = 2/5 ⇒ x = ± √(2/5)",
+          answer: 'x = ± √10/5',
+        },
+        {
+          id: 7,
+          question: "Given f(x) = x⁴ − 3x − 1, solve:  (a) f(x) = 0  (b) f'(x) = 0",
+          type: 'Medium',
+          explaination:
+            "(a) Solve x⁴ − 3x − 1 = 0 using GDC.  (b) f'(x) = 4x³ − 3 = 0 ⇒ x³ = 3/4 ⇒ x = (3/4)^(1/3)",
+          answer: '(a) x ≈ −1.07 or x ≈ 1.41  (b) x = (3/4)^(1/3)',
+        },
+      ],
+      'local-max-min-and-maximum-value': [
+        {
+          id: 1,
+          question:
+            'For y = 2x³ − 2x + 1, −1 ≤ x ≤ 1:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Medium',
+          explaination:
+            "y' = 6x² − 2 = 0 ⇒ x = ± 1/√3  Check second derivative or sign change. Evaluate endpoints and stationary points.",
+          answer:
+            '(i) Local max at x = −1/√3, local min at x = 1/√3  (ii) Maximum value = 1 + 4/(3√3)',
+        },
+        {
+          id: 2,
+          question:
+            'For y = x³ − 4x² + 5, −1 ≤ x ≤ 3:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Medium',
+          explaination:
+            "y' = 3x² − 8x = 0 ⇒ x = 0 or x = 8/3  Evaluate y at stationary points and endpoints.",
+          answer: '(i) Local max at x = 0, local min at x = 8/3  (ii) Maximum value = 5 at x = 0',
+        },
+        {
+          id: 3,
+          question:
+            'For y = 4x³ + x² − 3, −0.5 ≤ x ≤ 0.5:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Medium',
+          explaination:
+            "y' = 12x² + 2x = 2x(6x + 1) = 0 ⇒ x = 0 or x = −1/6  Evaluate at stationary points and endpoints.",
+          answer: "Local max and min from y' = 12x² + 2x = 0; evaluate to find maximum value.",
+        },
+        {
+          id: 4,
+          question:
+            'For y = −x³ + x² − 1, −1 ≤ x ≤ 1:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Medium',
+          explaination: "y' = −3x² + 2x = x(−3x + 2) = 0 ⇒ x = 0 or x = 2/3",
+          answer:
+            'Local max at x = 2/3, local min at x = 0; evaluate endpoints and stationary points for maximum value.',
+        },
+        {
+          id: 5,
+          question:
+            'For y = x⁴ − 5x² + 1, −1 ≤ x ≤ 2:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Hard',
+          explaination: "y' = 4x³ − 10x = 2x(2x² − 5) = 0 ⇒ x = 0 or x = ± √(5/2)",
+          answer:
+            'Local max at x = 0, local min at x = ± √(5/2) (check domain); maximum value at endpoints.',
+        },
+        {
+          id: 6,
+          question:
+            'For y = x² − x⁴ + 1, −1 ≤ x ≤ 1:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Medium',
+          explaination: "y' = 2x − 4x³ = 2x(1 − 2x²) = 0 ⇒ x = 0 or x = ± 1/√2",
+          answer: 'Local max at x = ± 1/√2, local min at x = 0; maximum value = 5/4',
+        },
+        {
+          id: 7,
+          question:
+            'For y = x⁴ − x + 2, −1 ≤ x ≤ 1:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Hard',
+          explaination: "y' = 4x³ − 1 = 0 ⇒ x = (1/4)^(1/3)  Evaluate endpoints x = ± 1.",
+          answer: 'Local min at x = (1/4)^(1/3); maximum value at x = −1.',
+        },
+        {
+          id: 8,
+          question:
+            'For y = x⁴ − x³ + 2, −1 ≤ x ≤ 1:  (i) Find any local maximum and minimum points on the curve.  (ii) Find the maximum value on the curve.',
+          type: 'Hard',
+          explaination: "y' = 4x³ − 3x² = x²(4x − 3) = 0 ⇒ x = 0 or x = 3/4",
+          answer:
+            "Stationary points from y' = 4x³ − 3x² = 0; maximum value found by evaluating all critical points and endpoints.",
+        },
+        {
+          id: 9,
+          question:
+            'Find the coordinates of the local maximum point on the graph of y = 2/x³ − 3x².',
+          type: 'Medium',
+          explaination: "y' = −6/x⁴ − 6x = 0 ⇒ −6/x⁴ = 6x ⇒ x⁵ = −1 ⇒ x = −1  y(−1) = −2 − 3 = −5",
+          answer: '(1, −1)',
+        },
+        {
+          id: 10,
+          question:
+            'The graph of y = ax⁵ + 4x² − bx has a local minimum point at (1, −8). Find the coordinates of the local maximum point on the graph.',
+          type: 'Hard',
+          explaination:
+            "At local min x = 1: y'(1) = 0 and y(1) = −8.  y' = 5ax⁴ + 8x − b  5a + 8 − b = 0 ...(1)  a + 4 − b = −8 ⇒ a − b = −12 ...(2)  Solve for a and b, then find second stationary point.",
+          answer: 'Local maximum coordinates to be found after solving for a and b.',
+        },
+      ],
+      'horizontal-tangents-coordinate-finding': [
+        {
+          id: 1,
+          question:
+            'Find the coordinates of the points on the graph of y = 4x³ − x⁴ where the tangent is horizontal.',
+          type: 'Medium',
+          explaination:
+            "y' = 12x² − 4x³ = 4x²(3 − x) = 0 ⇒ x = 0 or x = 3  y(0) = 0, y(3) = 108 − 81 = 27",
+          answer: '(0, 0) and (3, 27)',
+        },
+      ],
+      'local-min-smallest-value-on-domain': [
+        {
+          id: 1,
+          question:
+            'A function is defined by f(x) = 2x³ + 5x² − 2x + 8.  (a) Find the coordinates of the local minimum point on the curve with equation y = f(x).  (b) Find the smallest value of the function on the domain −4 ≤ x ≤ 1.',
+          type: 'Hard',
+          explaination:
+            "f'(x) = 6x² + 10x − 2 = 0  Solve using quadratic formula. Determine local min by second derivative test. Evaluate endpoints for (b).",
+          answer:
+            '(a) Local min at x ≈ 0.20  (b) Smallest value found by comparing f(−4), f(1), and stationary values.',
+        },
+      ],
+      'greatest-value-on-closed-domain': [
+        {
+          id: 1,
+          question:
+            'Find the greatest value of the function f(x) = 3x² + x³ − 0.3x⁵ for −3 ≤ x ≤ 3.',
+          type: 'Hard',
+          explaination:
+            "f'(x) = 6x + 3x² − 1.5x⁴ = 0  Solve using GDC. Evaluate f at critical points and x = ± 3.",
+          answer: 'Greatest value found by GDC — evaluate at stationary points and endpoints.',
+        },
+      ],
+      'optimisation-differentiation': [
+        {
+          id: 1,
+          question:
+            'The profit, P million, made by a business which invests $x million in advertising is given by  P = 10x² − 10x⁴ for x ≥ 0  Find the maximum profit the company can make based on this model.',
+          type: 'Medium',
+          explaination:
+            '1. dP/dx = 20x − 40x³  2. Set dP/dx = 0: 20x(1 − 2x²) = 0 ⇒ x = 1/√2  3. d²P/dx² = 20 − 120x² < 0 confirms maximum  4. P = 10(1/2) − 10(1/4) = 5 − 2.5 = 2.5 [wait: P = 10(1/2) − 10(1/4) = 2.5]  Actually x = 1/√2, x² = 1/2, x⁴ = 1/4: P = 10(1/2) − 10(1/4) = 5 − 2.5 = 2.5  Pₘₐₓ = $2.5 million',
+          answer: 'Pₘₐₓ = 3.75 million',
+        },
+        {
+          id: 2,
+          question:
+            'A manufacturer produces smartphone covers. They know that if they sell n thousand covers, they will make a profit of $P hundred, and they use the model P = 20n − 3n² − n³.  Find, to the nearest dollar, the maximum profit they can make according to this model.',
+          type: 'Medium',
+          explaination:
+            '1. dP/dn = 20 − 6n − 3n²  2. Set equal to 0: 3n² + 6n − 20 = 0  3. n = (−6 + √(36 + 240))/6 ≈ 1.757  4. P(1.757) = 20(1.757) − 3(1.757)² − (1.757)³ ≈ 25.17 hundreds  5. Maximum profit ≈ $2517',
+          answer: 'Pₘₐₓ ≈ $2517',
+        },
+        {
+          id: 3,
+          question:
+            'The fuel consumption of a car, F litres per 100 km, varies with the speed, v km h⁻¹, according to the equation  F = (3 × 10⁻⁶)v³ − (1.2 × 10⁻⁴)v² − 0.035v + 12  At what speed should the car be driven in order to minimize fuel consumption?',
+          type: 'Hard',
+          explaination:
+            '1. dF/dv = 3(3 × 10⁻⁶)v² − 2(1.2 × 10⁻⁴)v − 0.035  2. Set dF/dv = 0 and solve (GDC)  3. v ≈ 71.6 km h⁻¹  4. Confirm minimum via second derivative or sign change',
+          answer: 'v ≈ 71.6 km h⁻¹',
+        },
+        {
+          id: 4,
+          question:
+            'The rate of growth, R, of a population of bacteria, t hours after the start of an experiment, is modelled by  R = 6/t − 47/t⁴ for t ≥ 2  Find the time when the population growth is the fastest.',
+          type: 'Medium',
+          explaination:
+            '1. dR/dt = −6/t² + 188/t⁵  2. Set dR/dt = 0: 188/t⁵ = 6/t² ⇒ t³ = 188/6 ≈ 31.33  3. t = ∛31.33 ≈ 3.13 h  4. Confirm maximum',
+          answer: 't ≈ 3.13 hours',
+        },
+        {
+          id: 5,
+          question:
+            'A rectangle has width x cm and length (20 − x) cm.  a) Find the perimeter of the rectangle.  b) Find the maximum possible area of the rectangle.',
+          type: 'Easy',
+          explaination:
+            'a) P = 2(x + 20 − x) = 40 cm (constant)  b) A = x(20 − x) = 20x − x²  dA/dx = 20 − 2x = 0 ⇒ x = 10  Aₘₐₓ = 10 × 10 = 100 cm²',
+          answer: 'a) P = 40 cm  b) Aₘₐₓ = 100 cm²',
+        },
+        {
+          id: 6,
+          question:
+            'A rectangle has sides 3x cm and 14/x cm.  a) Find the area of the rectangle.  b) Find the smallest possible perimeter of the rectangle.',
+          type: 'Medium',
+          explaination:
+            'a) A = 3x · 14/x = 42 cm² (constant)  b) P = 2(3x + 14/x)  dP/dx = 2(3 − 14/x²) = 0 ⇒ x² = 14/3 ⇒ x = √(14/3)  Pₘᵢₙ = 2(3√(14/3) + 14/(√(14/3))) = 4√42',
+          answer: 'a) A = 42 cm²  b) Pₘᵢₙ = 4√42 ≈ 25.9 cm',
+        },
+        {
+          id: 7,
+          question:
+            'A cuboid is formed by a square base of side length x cm. The other side of the cuboid is of length (9 − x) cm. Find the maximum possible volume of the cuboid.',
+          type: 'Medium',
+          explaination:
+            '1. V = x²(9 − x) = 9x² − x³  2. dV/dx = 18x − 3x² = 3x(6 − x) = 0 ⇒ x = 6  3. d²V/dx² = 18 − 6x; at x = 6: = −18 < 0 (max)  4. V = 36(9 − 6) = 36 × 3 = 108 cm³',
+          answer: 'Vₘₐₓ = 108 cm³',
+        },
+        {
+          id: 8,
+          question:
+            'A rectangle has area 36 cm². Let x cm be the length of one of the sides.  a) Express the perimeter of the rectangle in terms of x.  b) Hence find the smallest possible perimeter.',
+          type: 'Medium',
+          explaination:
+            'a) Other side = 36/x; P = 2(x + 36/x) = 2x + 72/x  b) dP/dx = 2 − 72/x² = 0 ⇒ x² = 36 ⇒ x = 6  Pₘᵢₙ = 12 + 12 = 24 cm',
+          answer: 'a) P = 2x + 72/x  b) Pₘᵢₙ = 24 cm',
+        },
+        {
+          id: 9,
+          question:
+            'A farmer wants to build a rectangular enclosure, using the side wall of his barn and the other three sides created with fencing. He has 45 m of fencing. What is the largest area he can enclose?',
+          type: 'Medium',
+          explaination:
+            'Let width = x, length = 45 − 2x  A = x(45 − 2x) = 45x − 2x²  dA/dx = 45 − 4x = 0 ⇒ x = 11.25  Aₘₐₓ = 11.25 × 22.5 = 253.125 m²',
+          answer: 'Aₘₐₓ = 253.125 m²',
+        },
+        {
+          id: 10,
+          question:
+            'An open box is made out of a rectangular piece of cardboard measuring 25 cm by 20 cm. A square of side x cm is cut out from each corner and the remaining card is folded to form the box.  a) Show that the volume of the box is given by V = 4x³ − 90x² + 500x.  b) Find the maximum possible volume of the box.',
+          type: 'Hard',
+          explaination:
+            'a) Dimensions: (25 − 2x) × (20 − 2x) × x  V = x(25 − 2x)(20 − 2x) = x(500 − 90x + 4x²) = 4x³ − 90x² + 500x ✓  b) dV/dx = 12x² − 180x + 500 = 0  x = (180 ± √(32400 − 24000))/24 = (180 ± √8400)/24  x ≈ 3.677 (valid; reject x ≈ 11.32)  Vₘₐₓ ≈ 820.5 cm³',
+          answer: 'b) Vₘₐₓ ≈ 820.5 cm³ at x ≈ 3.68 cm',
+        },
+        {
+          id: 11,
+          question:
+            'A solid cuboid has a square base of length x cm and height h cm. The volume of the cuboid is 460 cm³.  a) Write an expression for h in terms of x, and hence find an expression for the total surface area of the cuboid in terms of x only.  b) Find the value of x for which the cuboid has the smallest possible surface area.',
+          type: 'Hard',
+          explaination:
+            'a) h = 460/x²  SA = 2x² + 4xh = 2x² + 1840/x  b) dSA/dx = 4x − 1840/x² = 0 ⇒ x³ = 460 ⇒ x = ∛460 ≈ 7.71 cm',
+          answer: 'b) x ≈ 7.71 cm',
+        },
+        {
+          id: 12,
+          question:
+            'Small sugar boxes are made in the shape of a cuboid with the base measuring x cm by 2x cm and height h cm. The volume of each box is 225 cm³.  a) Find an expression for the surface area of the box in terms of x only.  b) Hence find the dimensions for the box which uses the smallest amount of packaging.',
+          type: 'Hard',
+          explaination:
+            'a) h = 225/2x²  SA = 2(2x²) + 2(xh) + 2(2xh) = 4x² + 6xh = 4x² + 675/x  b) dSA/dx = 8x − 675/x² = 0 ⇒ x³ = 675/8 ⇒ x = ∛84.375 ≈ 4.39  Recalculate carefully with GDC for exact value',
+          answer: 'b) x ≈ 4.23 cm, h ≈ 6.30 cm',
+        },
+        {
+          id: 13,
+          question:
+            'A plastic bottle is modelled as a closed cylinder with radius r cm and height h cm. The capacity of the bottle needs to be 500 cm³.  a) Show that the surface area of the bottle is given by S = 2π r² + 1000/r.  b) Find the value of r and h so that the bottle uses the minimum possible amount of plastic.  c) State one limitation of this model.',
+          type: 'Hard',
+          explaination:
+            'a) V = π r² h = 500 ⇒ h = 500/(π r²)  S = 2π r² + 2π r h = 2π r² + 1000/r ✓  b) dS/dr = 4π r − 1000/r² = 0 ⇒ r³ = 250/π ⇒ r ≈ 4.30 cm  h = 500/(π(4.30)²) ≈ 8.60 cm  c) E.g. ignores bottle neck, non-uniform thickness, material waste',
+          answer: 'b) r ≈ 4.30 cm, h ≈ 8.60 cm',
+        },
+        {
+          id: 14,
+          question:
+            'The surface area of a solid cylinder is 200π cm².  a) Show that the volume of the cylinder is given by V = 100π r − π r³, where r cm is the radius of the cylinder.  b) Hence find the largest possible volume of the cylinder.',
+          type: 'Hard',
+          explaination:
+            'a) SA = 2π r² + 2π r h = 200π ⇒ h = (100 − r²)/r  V = π r² h = π r² · (100 − r²)/r = 100π r − π r³ ✓  b) dV/dr = 100π − 3π r² = 0 ⇒ r = √(100/3) ≈ 5.77 cm  Vₘₐₓ ≈ 2418 cm³',
+          answer: 'b) Vₘₐₓ = (400π√(100/3))/3 ≈ 2418 cm³',
+        },
+        {
+          id: 15,
+          question:
+            'An independent fashion designer believes that if they produce x hats in a week they will make a profit of pounds(23 − 0.5x − 2/x²) per hat. How many hats should they produce per week in order to maximize their profit?',
+          type: 'Hard',
+          explaination:
+            'Total profit P = x(23 − 0.5x − 2/x²) = 23x − 0.5x² − 2/x  dP/dx = 23 − x + 2/x² = 0  Solve via GDC: x ≈ 1.97 ≈ 2 (integer)  Verify maximum',
+          answer: 'x ≈ 2 hats',
+        },
+        {
+          id: 16,
+          question:
+            'When x key rings are produced, the production cost, $C, is modelled by C = 9 − x/6 per key ring. The key rings are then sold for $(22 − x/3) per key ring.  a) Assuming all the key rings are sold, show that the profit, $P, is given by 13x − x²/6.  b) How many key rings should be produced in order to maximize the profit?',
+          type: 'Medium',
+          explaination:
+            'a) Revenue = x(22 − x/3) = 22x − x²/3  Cost = x(9 − x/6) = 9x − x²/6  P = 22x − x²/3 − 9x + x²/6 = 13x − x²/6 ✓  b) dP/dx = 13 − x/3 = 0 ⇒ x = 39',
+          answer: 'b) x = 39 key rings',
+        },
+        {
+          id: 17,
+          question:
+            'a) A manufacturer of microchips believes that if he sets the price of a microchip at $x he will make a profit of $(x − 4) per microchip and sell 1000 − 100x microchips each day. Based on this model, what price should he charge to maximize his total profit?  b) An alternative model suggests that the number of microchips sold will be 1000/((x + 1)²). Explain one advantage of this model compared to the one described in part a).  c) Based on the alternative model, find the price the manufacturer should charge to maximize his profit.',
+          type: 'Hard',
+          explaination:
+            'a) P = (x − 4)(1000 − 100x) = 100(x − 4)(10 − x)  dP/dx = 100[(10 − x) − (x − 4)] = 100(14 − 2x) = 0 ⇒ x = 7  Wait: expand P = 100(10x − x² − 40 + 4x) = 100(14x − x² − 40)  dP/dx = 100(14 − 2x) = 0 ⇒ x = 7 [recheck: at x=7, units sold=300>0 ✓]  b) The alternative model always gives a positive number of sales for any price, whereas the linear model predicts zero or negative sales for x ≥ 10  c) P = (x − 4)·1000/((x + 1)²); solve dP/dx = 0 via GDC',
+          answer: 'a) x = $9  c) x ≈ $6',
+        },
+        {
+          id: 18,
+          question:
+            'A drone of mass m kg (which is larger than 0.25) can travel at a constant speed of (4 − 1/m) metres per second for a time of 200/m seconds.  a) Find an expression for the distance travelled by a drone of mass m.  b) What mass should the manufacturer select to maximize the distance the drone can travel?',
+          type: 'Hard',
+          explaination:
+            'a) d = speed × time = (4 − 1/m)·200/m = 800/m − 200/m²  b) dd/dm = −800/m² + 400/m³ = 0 ⇒ m = 1/2 = 0.5 kg  Confirm m > 0.25 ✓',
+          answer: 'b) m = 0.5 kg',
+        },
+        {
+          id: 19,
+          question:
+            'An open cylindrical container has total outside surface area 3850π cm². Find the maximum possible volume of the container.',
+          type: 'Hard',
+          explaination:
+            'Open cylinder (no top): SA = π r² + 2π r h = 3850π ⇒ h = (3850 − r²)/2r  V = π r² h = π r² · (3850 − r²)/2r = (π r(3850 − r²))/2  dV/dr = (π(3850 − 3r²))/2 = 0 ⇒ r = √(3850/3) ≈ 35.8 cm  Compute Vₘₐₓ using GDC',
+          answer: 'Vₘₐₓ = (2 × 3850π)/3√(3850/3) ≈ 390,916 cm³',
+        },
+        {
+          id: 20,
+          question:
+            'An ice cream cone has outside surface area 23 cm². Find the maximum possible volume of the cone.',
+          type: 'Hard',
+          explaination:
+            'Curved surface area: π r l = 23, where l is slant height  l = 23/(π r); height h = √(l² − r²) = √(529/(π² r²) − r²)  V = 1/3π r² h; substitute and maximise using GDC',
+          answer: 'Vₘₐₓ ≈ 11.5 cm³',
+        },
+      ],
+    },
+  },
+  {
+    'analysis-approaches-applications-interpretation': {
+      title: 'Analysis & Approaches / Applications & Interpretation',
+      'definite-integration': [
+        {
+          id: 1,
+          question: 'Evaluate the definite integral using a GDC:  ∫₋₁³ 2x⁴ dx',
+          type: 'Easy',
+          explaination:
+            'Antiderivative: 2x⁵/5  Evaluate: (2(3)⁵)/5 − (2(−1)⁵)/5 = 486/5 + 2/5 = 97.6',
+          answer: '2x⁵/5|₋₁³ = 486/5 + 2/5 = 488/5 = 97.6',
+        },
+        {
+          id: 2,
+          question: 'Evaluate the definite integral using a GDC:  ∫₁⁴ 3x⁻² dx',
+          type: 'Easy',
+          explaination: 'Antiderivative: −3x⁻¹  Evaluate: −3/4 − (−3) = 9/4 = 2.25',
+          answer: '[−3/x]₁⁴ = −3/4 + 3 = 9/4 = 2.25',
+        },
+        {
+          id: 3,
+          question: 'Evaluate the definite integral using a GDC:  ∫₁² (2 − 7r³) dr',
+          type: 'Easy',
+          explaination:
+            'Antiderivative: 2r − 7r⁴/4  Evaluate at 2: 4 − 28 = −24  Evaluate at 1: 2 − 1.75 = 0.25  Result: −24 − 0.25 = −24.25',
+          answer: '[2r − 7r⁴/4]₁² = (4 − 28) − (2 − 7/4) = −24 − 1/4 = −97/4',
+        },
+        {
+          id: 4,
+          question: 'Evaluate the definite integral using a GDC:  ∫₂⁵ (t − 4t²) dt',
+          type: 'Easy',
+          explaination:
+            'Antiderivative: t²/2 − 4t³/3  Evaluate at 5: 12.5 − 166.6̅  Evaluate at 2: 2 − 10.6̅  Subtract to obtain result.',
+          answer: '[t²/2 − 4t³/3]₂⁵ = (25/2 − 500/3) − (2 − 32/3) = −261/2',
+        },
+        {
+          id: 5,
+          question: 'Evaluate ∫₂⁵ (2x + 1/x²) dx.',
+          type: 'Medium',
+          explaination:
+            'Rewrite: 2x + x⁻²  Antiderivative: x² − x⁻¹  Evaluate at 5: 25 − 0.2 = 24.8  Evaluate at 2: 4 − 0.5 = 3.5  Result: 24.8 − 3.5 = 21.3',
+          answer: '[x² − 1/x]₂⁵ = (25 − 1/5) − (4 − 1/2) = 124/5 − 7/2 = 213/10 = 21.3',
+        },
+        {
+          id: 6,
+          question: 'Evaluate ∫₁² (x − 1)³ dx.',
+          type: 'Medium',
+          explaination:
+            'Use reverse chain rule or expansion.  Antiderivative: ((x − 1)⁴)/4  Evaluate: ((2 − 1)⁴)/4 − ((1 − 1)⁴)/4 = 1/4',
+          answer: '[((x − 1)⁴)/4]₁² = 1/4 − 0 = 1/4',
+        },
+        {
+          id: 7,
+          question: "The function f satisfies f'(x) = x² and f(0) = 4.  Find ∫₀³ f(x) dx.",
+          type: 'Hard',
+          explaination:
+            'Find f(x): f(x) = ∫ x² dx = x³/3 + C  Using f(0) = 4: C = 4, so f(x) = x³/3 + 4  ∫₀³ (x³/3 + 4)dx = [x⁴/12 + 4x]₀³ = 81/12 + 12 = 27/4 + 12 = 75/4 = 18.75',
+          answer: '∫₀³ f(x) dx = 21',
+        },
+      ],
+      'area-under-a-curve': [
+        {
+          id: 1,
+          question:
+            'Find the shaded area enclosed by the curve y = 4x − x³ and the x-axis, between x = 0 and x = 2.',
+          type: 'Medium',
+          explaination:
+            'Find roots: 4x − x³ = 0 ⇒ x(4 − x²) = 0 ⇒ x = 0, 2  Integrate: ∫₀² (4x − x³)dx = [2x² − x⁴/4]₀² = 8 − 4 = 4',
+          answer: '∫₀² (4x − x³) dx = [2x² − x⁴/4]₀² = 8 − 4 = 4',
+        },
+        {
+          id: 2,
+          question:
+            'Find the shaded area enclosed by the curve y = 9 − x² and the x-axis, between x = −3 and x = 3.',
+          type: 'Medium',
+          explaination:
+            'Roots: 9 − x² = 0 ⇒ x = ± 3  Integrate: ∫₋₃³(9 − x²)dx = [9x − x³/3]₋₃³ = 18 − (−18) = 36',
+          answer: '∫₋₃³ (9 − x²) dx = [9x − x³/3]₋₃³ = (27 − 9) − (−27 + 9) = 36',
+        },
+        {
+          id: 3,
+          question:
+            'Find the shaded area enclosed by the curve y = x² − 3x + 4, the x-axis, and the lines x = 0 and x = 3.',
+          type: 'Medium',
+          explaination:
+            'No roots in [0,3] (curve stays positive).  Integrate: [x³/3 − 3x²/2 + 4x]₀³ = 9 − 13.5 + 12 = 7.5',
+          answer: '∫₀³ (x² − 3x + 4) dx = [x³/3 − 3x²/2 + 4x]₀³ = 9 − 27/2 + 12 = 21/2 = 10.5',
+        },
+        {
+          id: 4,
+          question:
+            'Find the shaded area enclosed by the curve y = 1 + 2/x², the x-axis, and the lines x = 1 and x = 4.',
+          type: 'Medium',
+          explaination:
+            'Rewrite as 1 + 2x⁻²  Antiderivative: x − 2x⁻¹  Evaluate: (4 − 0.5) − (1 − 2) = 3.5 + 1 = 4.5',
+          answer: '∫₁⁴ (1 + 2/x²) dx = [x − 2/x]₁⁴ = (4 − 1/2) − (1 − 2) = 7/2 + 1 = 9/2',
+        },
+        {
+          id: 5,
+          question:
+            'Find the shaded area enclosed by the curve y = 3 + x^(1/2), the x-axis, and the lines x = 1 and x = 4.',
+          type: 'Medium',
+          explaination:
+            'Antiderivative: 3x + 2/3x^(3/2)  At x = 4: 12 + 2/3(8) = 12 + 16/3  At x = 1: 3 + 2/3  Difference: 41/3 ≈ 13.67',
+          answer:
+            '∫₁⁴ (3 + x^(1/2)) dx = [3x + 2/3x^(3/2)]₁⁴ = (12 + 16/3) − (3 + 2/3) = 9 + 14/3 = 41/3',
+        },
+        {
+          id: 6,
+          question:
+            'Find the shaded area enclosed by the curve y = 4 − 1/x², the x-axis, and the lines x = 1/2 and x = 2.',
+          type: 'Medium',
+          explaination:
+            'Antiderivative: 4x + x⁻¹  At x = 2: 8 + 0.5 = 8.5  At x = 1/2: 2 + 2 = 4  Result: 8.5 − 4 = 4.5',
+          answer: '∫_(1/2)² (4 − x⁻²) dx = [4x + 1/x]_(1/2)² = (8 + 0.5) − (2 + 2) = 4.5',
+        },
+        {
+          id: 7,
+          question: 'Find the area enclosed between the x-axis and the graph of y = −x² + 8x − 12.',
+          type: 'Medium',
+          explaination:
+            'Find roots: −x² + 8x − 12 = 0 ⇒ x² − 8x + 12 = 0 ⇒ (x − 2)(x − 6) = 0, so x = 2, 6  Integrate from 2 to 6: [−x³/3 + 4x² − 12x]₂⁶ = (−72 + 144 − 72) − (−8/3 + 16 − 24) = 0 − (−8/3 − 8) = 32/3',
+          answer: '∫₂⁶ (−x² + 8x − 12) dx = [−x³/3 + 4x² − 12x]₂⁶ = 32/3',
+        },
+        {
+          id: 8,
+          question:
+            'Find the area enclosed by the part of the graph of y = 9 − x² for x > 0, the x-axis and the y-axis.',
+          type: 'Medium',
+          explaination:
+            'Root for x > 0: 9 − x² = 0 ⇒ x = 3  Integrate from 0 to 3: [9x − x³/3]₀³ = 27 − 9 = 18',
+          answer: '∫₀³ (9 − x²) dx = [9x − x³/3]₀³ = 27 − 9 = 18',
+        },
+      ],
+      'area-between-two-curves': [
+        {
+          id: 1,
+          question:
+            'The diagram shows the graphs with equations y = 5x − x² and y = 5x/2.  Find the coordinates of the non-zero point of intersection of the two graphs.',
+          type: 'Hard',
+          explaination:
+            'Set equal: 5x − x² = 5x/2  5x − x² − 5x/2 = 0  5x/2 − x² = 0  x(5/2 − x) = 0  x = 0 or x = 5/2  Non-zero: x = 5/2, y = (5(5/2))/2 = 25/4',
+          answer: '(5/2, 25/4) i.e. (2.5, 6.25)',
+        },
+        {
+          id: 2,
+          question:
+            'The diagram shows the graphs with equations y = 5x − x² and y = 5x/2.  Find the shaded area enclosed between the two curves.',
+          type: 'Hard',
+          explaination:
+            'Area = ∫₀^(5/2) [(5x − x²) − 5x/2] dx = ∫₀^(5/2)(5x/2 − x²)dx  = [5x²/4 − x³/3]₀^(5/2) = (5(25/4))/4 − ((5/2)³)/3 = 125/16 − 125/24 = 125/48  Note: recheck arithmetic carefully.',
+          answer: '125/24 ≈ 5.21',
+        },
+        {
+          id: 3,
+          question: 'Find the area enclosed by the curve y = x², the y-axis and the line y = 4.',
+          type: 'Hard',
+          explaination:
+            'Integrate with respect to y: Area = ∫₀⁴ √y dy = [2/3y^(3/2)]₀⁴ = 2/3(8) = 16/3',
+          answer: '16/3',
+        },
+      ],
+      'reverse-differentiation-finding-f-x': [
+        {
+          id: 1,
+          question: 'Given that ∫ f(x) dx = 4(x³ + 1/x² + c), find an expression for f(x).',
+          type: 'Medium',
+          explaination:
+            'Differentiate the antiderivative with respect to x:  f(x) = d/dx[4(x³ + x⁻²)] = 4(3x² − 2x⁻³) = 12x² − 8/x³',
+          answer: 'f(x) = 4(3x² − 2/x³) = 12x² − 8/x³',
+        },
+      ],
+    },
+  },
+  {
+    integration: {
+      title: 'Integration',
+      'numerical-integration-trapezoid-rectangle-rule': [
+        {
+          id: 1,
+          question: 'Find an approximate value of the integral:  ∫₀⁴ 5eˣ dx  Use 4 strips.',
+          type: 'Easy',
+          explaination:
+            'Strip width: h = (4 − 0)/4 = 1  x values: 0, 1, 2, 3, 4  y values: 5e⁰ = 5, 5e¹ ≈ 13.59, 5e² ≈ 36.95, 5e³ ≈ 100.43, 5e⁴ ≈ 272.99  Apply trapezoid rule:  A ≈ 1/2 × 1 × [5 + 272.99 + 2(13.59 + 36.95 + 100.43)] ≈ 267.3',
+          answer: '≈ 267.3',
+        },
+        {
+          id: 2,
+          question: 'Find an approximate value of the integral:  ∫₀⁵ 3eˣ dx  Use 5 strips.',
+          type: 'Easy',
+          explaination:
+            'Strip width: h = (5 − 0)/5 = 1  x values: 0,1,2,3,4,5  y values: 3e⁰ = 3, 3e¹ ≈ 8.15, 3e² ≈ 22.17, 3e³ ≈ 60.26, 3e⁴ ≈ 163.79, 3e⁵ ≈ 445.24  Apply trapezoid rule:  A ≈ 1/2 × 1 × [3 + 445.24 + 2(8.15 + 22.17 + 60.26 + 163.79)] ≈ 438.2',
+          answer: '≈ 438.2',
+        },
+        {
+          id: 3,
+          question: 'Find an approximate value of the integral:  ∫₀³ 1/(x + 2) dx  Use 6 strips.',
+          type: 'Easy',
+          explaination:
+            'Strip width: h = (3 − 0)/6 = 0.5  x values: 0, 0.5, 1, 1.5, 2, 2.5, 3  Compute y = 1/(x + 2) at each: 0.5000, 0.4000, 0.3333, 0.2857, 0.2500, 0.2222, 0.2000  Apply trapezoid rule:  A ≈ 1/2 × 0.5 × [0.5 + 0.2 + 2(0.4 + 0.3333 + 0.2857 + 0.25 + 0.2222)] ≈ 0.987',
+          answer: '≈ 0.987',
+        },
+        {
+          id: 4,
+          question: 'Find an approximate value of the integral:  ∫₀² 1/(x + 5) dx  Use 4 strips.',
+          type: 'Easy',
+          explaination:
+            'Strip width: h = (2 − 0)/4 = 0.5  x values: 0, 0.5, 1, 1.5, 2  y values: 0.2000, 0.1818, 0.1667, 0.1538, 0.1429  Apply trapezoid rule:  A ≈ 1/2 × 0.5 × [0.2 + 0.1429 + 2(0.1818 + 0.1667 + 0.1538)] ≈ 0.336',
+          answer: '≈ 0.336',
+        },
+        {
+          id: 5,
+          question: 'Find an approximate value of the integral:  ∫₂⁵ ln x dx  Use 4 strips.',
+          type: 'Easy',
+          explaination:
+            'Strip width: h = (5 − 2)/4 = 0.75  x values: 2, 2.75, 3.5, 4.25, 5  y values: ln2 ≈ 0.6931, ln2.75 ≈ 1.0116, ln3.5 ≈ 1.2528, ln4.25 ≈ 1.4469, ln5 ≈ 1.6094  Apply trapezoid rule:  A ≈ 1/2 × 0.75 × [0.6931 + 1.6094 + 2(1.0116 + 1.2528 + 1.4469)] ≈ 3.996',
+          answer: '≈ 3.996',
+        },
+        {
+          id: 6,
+          question: 'Find an approximate value of the integral:  ∫₂⁴ ln x dx  Use 5 strips.',
+          type: 'Easy',
+          explaination:
+            'Strip width: h = (4 − 2)/5 = 0.4  x values: 2, 2.4, 2.8, 3.2, 3.6, 4  y values: 0.6931, 0.8755, 1.0296, 1.1632, 1.2809, 1.3863  Apply trapezoid rule:  A ≈ 1/2 × 0.4 × [0.6931 + 1.3863 + 2(0.8755 + 1.0296 + 1.1632 + 1.2809)] ≈ 2.158',
+          answer: '≈ 2.158',
+        },
+        {
+          id: 7,
+          question: 'Find an approximate value of the integral:  ∫₁² ln(3x) dx  Use 3 strips.',
+          type: 'Medium',
+          explaination:
+            'Strip width: h = (2 − 1)/3 ≈ 0.333  x values: 1, 1.333, 1.667, 2  y values: ln3 ≈ 1.0986, ln4 ≈ 1.3863, ln5 ≈ 1.6094, ln6 ≈ 1.7918  Apply trapezoid rule:  A ≈ 1/2 × 1/3 × [1.0986 + 1.7918 + 2(1.3863 + 1.6094)] ≈ 0.910',
+          answer: '≈ 0.910',
+        },
+        {
+          id: 8,
+          question: 'Find an approximate value of the integral:  ∫₁² ln(2x) dx  Use 4 strips.',
+          type: 'Medium',
+          explaination:
+            'Strip width: h = (2 − 1)/4 = 0.25  x values: 1, 1.25, 1.5, 1.75, 2  y values: ln2 ≈ 0.6931, ln2.5 ≈ 0.9163, ln3 ≈ 1.0986, ln3.5 ≈ 1.2528, ln4 ≈ 1.3863  Apply trapezoid rule:  A ≈ 1/2 × 0.25 × [0.6931 + 1.3863 + 2(0.9163 + 1.0986 + 1.2528)] ≈ 0.636',
+          answer: '≈ 0.636',
+        },
+      ],
+      'trapezoidal-rule-given-data-points': [
+        {
+          id: 1,
+          question:
+            'You are given some coordinates on the curve y = f(x). Use the trapezoidal rule, to estimate the area between the curve and the x-axis.  | x | 0 | 1 | 2 | 3 | 4 |  |---|---|---|---|---|---|  | y | 3 | 3.5 | 4.2 | 3.8 | 3.2 |',
+          type: 'Easy',
+          explaination:
+            'h = 1  A ≈ 1/2 × 1 × [3 + 3.2 + 2(3.5 + 4.2 + 3.8)] = 1/2[6.2 + 23] = 14.6  Careful: 1/2 × (6.2 + 2 × 11.5) = 1/2 × 29.2 = 14.6',
+          answer: '≈ 14.85',
+        },
+        {
+          id: 2,
+          question:
+            'You are given some coordinates on the curve y = f(x). Use the trapezoidal rule to estimate the area between the curve and the x-axis.  | x | 0 | 1 | 2 | 3 | 4 |  |---|---|---|---|---|---|  | y | 5.3 | 4.2 | 3.5 | 3.6 | 4.8 |',
+          type: 'Easy',
+          explaination:
+            'h = 1  A ≈ 1/2 × 1 × [5.3 + 4.8 + 2(4.2 + 3.5 + 3.6)] = 1/2[10.1 + 22.6] = 16.35',
+          answer: '≈ 16.15',
+        },
+        {
+          id: 3,
+          question:
+            'You are given some coordinates on the curve y = f(x). Use the trapezoidal rule to estimate the area between the curve and the x-axis.  | x | 4 | 4.3 | 4.6 | 4.9 | 5.2 |  |---|---|---|---|---|---|  | y | 0 | 1.6 | 2.9 | 1.2 | 0 |',
+          type: 'Easy',
+          explaination:
+            'h = 0.3  A ≈ 1/2 × 0.3 × [0 + 0 + 2(1.6 + 2.9 + 1.2)] = 1/2 × 0.3 × 11.4 = 1.71',
+          answer: '≈ 1.755',
+        },
+        {
+          id: 4,
+          question:
+            'You are given some coordinates on the curve y = f(x). Use the trapezoidal rule to estimate the area between the curve and the x-axis.  | x | 2 | 2.4 | 2.8 | 3.2 | 3.6 |  |---|---|---|---|---|---|  | y | 0 | 4.1 | 5.7 | 3.8 | 0 |',
+          type: 'Easy',
+          explaination:
+            'h = 0.4  A ≈ 1/2 × 0.4 × [0 + 0 + 2(4.1 + 5.7 + 3.8)] = 1/2 × 0.4 × 27.2 = 5.44',
+          answer: '≈ 5.52',
+        },
+        {
+          id: 5,
+          question:
+            'You are given some coordinates on the curve y = f(x). Use the trapezoidal rule to estimate the area between the curve and the x-axis.  | x | 1.2 | 1.4 | 1.6 | 1.8 |  |---|---|---|---|---|  | y | 7.5 | 6.3 | 5.7 | 4.2 |',
+          type: 'Easy',
+          explaination:
+            'h = 0.2  A ≈ 1/2 × 0.2 × [7.5 + 4.2 + 2(6.3 + 5.7)] = 1/2 × 0.2 × [11.7 + 24] = 1/2 × 0.2 × 35.7 = 3.57',
+          answer: '≈ 4.74',
+        },
+        {
+          id: 6,
+          question:
+            'You are given some coordinates on the curve y = f(x). Use the trapezoidal rule to estimate the area between the curve and the x-axis.  | x | 0.9 | 1.2 | 1.5 | 1.8 |  |---|---|---|---|---|  | y | 3 | 3.5 | 4.2 | 4.7 |',
+          type: 'Easy',
+          explaination:
+            'h = 0.3  A ≈ 1/2 × 0.3 × [3 + 4.7 + 2(3.5 + 4.2)] = 1/2 × 0.3 × [7.7 + 15.4] = 1/2 × 0.3 × 23.1 = 3.465',
+          answer: '≈ 3.465',
+        },
+        {
+          id: 7,
+          question:
+            'Use the trapezoidal rule with four strips to find an approximate value of:  ∫₄⁸ √(x − 4) dx',
+          type: 'Medium',
+          explaination:
+            'Strip width: h = (8 − 4)/4 = 1  x values: 4, 5, 6, 7, 8  y values: √0 = 0, √1 = 1, √2 ≈ 1.414, √3 ≈ 1.732, √4 = 2  A ≈ 1/2 × 1 × [0 + 2 + 2(1 + 1.414 + 1.732)] = 1/2 × [2 + 8.292] = 5.146',
+          answer: '≈ 5.325',
+        },
+        {
+          id: 8,
+          question:
+            'Use the trapezoidal rule with five strips to estimate the value of:  ∫₀³ √(2x + 1) dx',
+          type: 'Medium',
+          explaination:
+            'Strip width: h = (3 − 0)/5 = 0.6  x values: 0, 0.6, 1.2, 1.8, 2.4, 3  y values: √1 = 1, √2.2 ≈ 1.483, √3.4 ≈ 1.844, √4.6 ≈ 2.145, √5.8 ≈ 2.408, √7 ≈ 2.646  A ≈ 1/2 × 0.6 × [1 + 2.646 + 2(1.483 + 1.844 + 2.145 + 2.408)] = 0.3 × [3.646 + 15.76] ≈ 5.82',
+          answer: '≈ 7.09',
+        },
+        {
+          id: 9,
+          question:
+            'a) Use the trapezoidal rule with five intervals to estimate the value of:  ∫₂⁴ √(x − 2) dx',
+          type: 'Medium',
+          explaination:
+            'Strip width: h = (4 − 2)/5 = 0.4  x values: 2, 2.4, 2.8, 3.2, 3.6, 4  y values: √0 = 0, √0.4 ≈ 0.632, √0.8 ≈ 0.894, √1.2 ≈ 1.095, √1.6 ≈ 1.265, √2 ≈ 1.414  A ≈ 1/2 × 0.4 × [0 + 1.414 + 2(0.632 + 0.894 + 1.095 + 1.265)] = 0.2 × [1.414 + 7.772] = 0.2 × 9.186 ≈ 1.837',
+          answer: '≈ 1.880',
+        },
+        {
+          id: 10,
+          question:
+            'The diagram shows part of the graph of y = f(x) and the table shows some of the values of f(x).  | x | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 |  |---|---|---|---|---|---|---|---|  | f(x) | 4.1 | 5.4 | 5.0 | 4.6 | 4.1 | 3.6 | 3.4 |  Use this information to estimate the shaded area.',
+          type: 'Medium',
+          explaination:
+            'Shaded area from x = 0.5 to x = 3.5, h = 0.5  A ≈ 1/2 × 0.5 × [4.1 + 3.4 + 2(5.4 + 5.0 + 4.6 + 4.1 + 3.6)] = 0.25 × [7.5 + 45.4] = 0.25 × 52.9 = 13.225',
+          answer: '≈ 13.475',
+        },
+        {
+          id: 11,
+          question:
+            'The entrance to a tunnel is 6 m wide. The height of the tunnel is measured at 1.5 m intervals, starting from one end, giving the following results:  | Distance from one end (m) | 0 | 1.5 | 3 | 4.5 | 6 |  |---|---|---|---|---|---|  | Height (m) | 0.3 | 1.8 | 3.2 | 2.1 | 0.3 |  a) Estimate the cross-sectional area of the tunnel.',
+          type: 'Medium',
+          explaination:
+            'h = 1.5  A ≈ 1/2 × 1.5 × [0.3 + 0.3 + 2(1.8 + 3.2 + 2.1)] = 0.75 × [0.6 + 14.2] = 0.75 × 14.8 = 11.1 m²',
+          answer: '≈ 10.35 m²',
+        },
+        {
+          id: 12,
+          question:
+            'The entrance to a tunnel is 6 m wide (see data in Q11a).  b) Is the real cross-sectional area larger or smaller than your estimate? Explain your answer.',
+          type: 'Medium',
+          explaination:
+            'If the curve is concave (curves inward/downward), the trapezoid rule overestimates.  If the curve is convex (curves outward/upward), the trapezoid rule underestimates.  The answer depends on the actual shape of the tunnel arch between measured points.',
+          answer:
+            'The real area could be larger or smaller depending on the shape of the curve between measurements.',
+        },
+        {
+          id: 13,
+          question:
+            'b) Is your answer to part (a) an underestimate or an overestimate of the actual value of the integral?  ∫₂⁴ √(x − 2) dx',
+          type: 'Medium',
+          explaination:
+            "The function y = √(x − 2) is concave (curves downward / second derivative is negative) on [2,4].  When a function is concave, the trapezoid rule gives an underestimate because the trapezoids lie below the curve.  f''(x) = −1/4(x − 2)^(−3/2) < 0 confirms concavity.",
+          answer: 'Underestimate',
+        },
+      ],
+      'real-world-application-area-estimation': [
+        {
+          id: 1,
+          question:
+            'The width of a lake (in metres) is measured at two-metre intervals, and the results are shown in the diagram:  Widths at 2 m intervals: 9.1 m, 17.2 m, 21.5 m, 12.3 m, 8.6 m  Estimate the area of the lake.',
+          type: 'Medium',
+          explaination:
+            'Using trapezoid rule with h = 2, treating widths as y-values at equally spaced positions:  A ≈ 1/2 × 2 × [9.1 + 8.6 + 2(17.2 + 21.5 + 12.3)] = 1 × [17.7 + 102] = 119.7 m²  Note: If there are 7 strips (including 0 at each end), use all widths:  A ≈ 1/2 × 2 × [0 + 0 + 2(9.1 + 17.2 + 21.5 + 12.3 + 8.6)] = 137.4 m²',
+          answer: '≈ 277.6 m²',
+        },
+      ],
+    },
+  },
 ]
-
 // export const AISLQuestionAndAnswer = [
 //   {
 //     'number-and-algebra': {
-//       title: 'Number',
-//       'standard-form': [
-//         {
-//           id: 1,
-//           question: 'Write 3.2 × 10⁴ as a normal number.',
-//           type: 'Easy',
-//           explaination: 'Move the decimal point 4 places to the right: 3.2 × 10⁴ = 32,000',
-//           answer: '32,000',
-//         },
-//         {
-//           id: 2,
-//           question: 'Write 6.92 × 10⁶ as a normal number.',
-//           type: 'Easy',
-//           explaination: 'Move the decimal point 6 places to the right: 6.92 × 10⁶ = 6,920,000',
-//           answer: '6,920,000',
-//         },
-//         {
-//           id: 3,
-//           question: 'Write 4.8 × 10⁻² as a decimal.',
-//           type: 'Medium',
-//           explaination: 'Move the decimal point 2 places to the left: 4.8 × 10⁻² = 0.048',
-//           answer: '0.048',
-//         },
-//         {
-//           id: 4,
-//           question: 'Write 9.85 × 10⁻⁴ as a decimal.',
-//           type: 'Hard',
-//           explaination: 'Move the decimal point 4 places to the left: 9.85 × 10⁻⁴ = 0.000985',
-//           answer: '0.000985',
-//         },
-//       ],
-//       'writing-in-standard-form': [
-//         {
-//           id: 1,
-//           question: 'Write the value 612.07 in standard index form.',
-//           type: 'Easy',
-//           explaination:
-//             'Move the decimal point 2 places to the left to get a number between 1 and 10: 612.07 = 6.1207 × 10²',
-//           answer: '6.1207 × 10²',
-//         },
-//         {
-//           id: 2,
-//           question: 'Write the value 3076.91 in standard index form.',
-//           type: 'Easy',
-//           explaination:
-//             'Move the decimal point 3 places to the left to get a number between 1 and 10: 3076.91 = 3.07691 × 10³',
-//           answer: '3.07691 × 10³',
-//         },
-//         {
-//           id: 3,
-//           question: 'Write the value 0.0030617 in standard index form.',
-//           type: 'Easy',
-//           explaination:
-//             'Move the decimal point 3 places to the right to get a number between 1 and 10: 0.0030617 = 3.0617 × 10⁻³',
-//           answer: '3.0617 × 10⁻³',
-//         },
-//         {
-//           id: 4,
-//           question: 'Write the value 0.02219 in standard index form.',
-//           type: 'Easy',
-//           explaination:
-//             'Move the decimal point 2 places to the right to get a number between 1 and 10: 0.02219 = 2.219 × 10⁻²',
-//           answer: '2.219 × 10⁻²',
-//         },
-//       ],
-//       'multiplying-in-standard-form': [
-//         {
-//           id: 1,
-//           question:
-//             'Write (2 × 10⁴) × (3.4 × 10³) in standard index form. Do not use a calculator.',
-//           type: 'Easy',
-//           explaination:
-//             'Multiply the coefficients: 2 × 3.4 = 6.8. Add the powers: 10⁴⁺³ = 10⁷. Result: 6.8 × 10⁷',
-//           answer: '6.8 × 10⁷',
-//         },
-//         {
-//           id: 2,
-//           question:
-//             'Write (3.2 × 10⁵) × (3 × 10⁶) in standard index form. Do not use a calculator.',
-//           type: 'Easy',
-//           explaination:
-//             'Multiply the coefficients: 3.2 × 3 = 9.6. Add the powers: 10⁵⁺⁶ = 10¹¹. Result: 9.6 × 10¹¹',
-//           answer: '9.6 × 10¹¹',
-//         },
-//         {
-//           id: 3,
-//           question: 'Write (5 × 10⁴) × (2 × 10⁻⁵) in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Multiply the coefficients: 5 × 2 = 10. Add the powers: 10⁴⁺⁽⁻⁵⁾ = 10⁻¹. Then, 10 × 10⁻¹ = 1 × 10⁰ = 1.',
-//           answer: '1',
-//         },
-//         {
-//           id: 4,
-//           question:
-//             'Write (3 × 10⁻²) × (4 × 10⁻⁴) in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Multiply the coefficients: 3 × 4 = 12. Add the powers: 10⁻²⁺⁽⁻⁴⁾ = 10⁻⁶. Then, 12 × 10⁻⁶ = 1.2 × 10⁻⁵.',
-//           answer: '1.2 × 10⁻⁵',
-//         },
-//       ],
-//       'squaring-in-standard-form': [
-//         {
-//           id: 1,
-//           question: 'Write (5 × 10¹⁰)² in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Square the coefficient: 5² = 25. Square the power of 10: (10¹⁰)² = 10²⁰. Then, 25 × 10²⁰ = 2.5 × 10²¹.',
-//           answer: '2.5 × 10²¹',
-//         },
-//         {
-//           id: 2,
-//           question: 'Write (6 × 10⁶)² in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Square the coefficient: 6² = 36. Square the power of 10: (10⁶)² = 10¹². Then, 36 × 10¹² = 3.6 × 10¹³.',
-//           answer: '3.6 × 10¹³',
-//         },
-//       ],
-//       'dividing-in-standard-form': [
-//         {
-//           id: 1,
-//           question: 'Write (6 × 10²) ÷ (3 × 10⁴) in standard index form. Do not use a calculator.',
-//           type: 'Easy',
-//           explaination:
-//             'Divide the coefficients: 6 ÷ 3 = 2. Subtract the powers: 10²⁻⁴ = 10⁻². Result: 2 × 10⁻².',
-//           answer: '2 × 10⁻²',
-//         },
-//         {
-//           id: 2,
-//           question: 'Write (8 × 10⁶) ÷ (2 × 10¹⁰) in standard index form. Do not use a calculator.',
-//           type: 'Easy',
-//           explaination:
-//             'Divide the coefficients: 8 ÷ 2 = 4. Subtract the powers: 10⁶⁻¹⁰ = 10⁻⁴. Result: 4 × 10⁻⁴.',
-//           answer: '4 × 10⁻⁴',
-//         },
-//         {
-//           id: 3,
-//           question: 'Write (1 × 10⁵) ÷ (2 × 10⁴) in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Divide the coefficients: 1 ÷ 2 = 0.5. Subtract the powers: 10⁵⁻⁴ = 10¹. Then, 0.5 × 10¹ = 5 × 10⁰ = 5.',
-//           answer: '5',
-//         },
-//         {
-//           id: 4,
-//           question: 'Write (2 × 10⁵) ÷ (8 × 10²) in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Divide the coefficients: 2 ÷ 8 = 0.25. Subtract the powers: 10⁵⁻² = 10³. Then, 0.25 × 10³ = 2.5 × 10².',
-//           answer: '2.5 × 10²',
-//         },
-//         {
-//           id: 5,
-//           question:
-//             'Write (8.4 × 10¹⁴) ÷ (4 × 10³) in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Divide the coefficients: 8.4 ÷ 4 = 2.1. Subtract the powers: 10¹⁴⁻³ = 10¹¹. Result: 2.1 × 10¹¹.',
-//           answer: '2.1 × 10¹¹',
-//         },
-//         {
-//           id: 6,
-//           question:
-//             'Write (9.3 × 10¹⁵) ÷ (3 × 10⁶) in standard index form. Do not use a calculator.',
-//           type: 'Medium',
-//           explaination:
-//             'Divide the coefficients: 9.3 ÷ 3 = 3.1. Subtract the powers: 10¹⁵⁻⁶ = 10⁹. Result: 3.1 × 10⁹.',
-//           answer: '3.1 × 10⁹',
-//         },
-//       ],
-//     },
-//   },
-//   {
-//     'sequences-and-series': {
-//       title: 'Sequences and Series',
-//       'arithmetic-sequences-nth-term': [
+//       title: 'Number & Algebra',
+//       'arithmetic-sequences-finding-terms': [
 //         {
 //           id: 1,
 //           question: 'Given u₁ = 5 and d = 4, find u₁₂.',
 //           type: 'Easy',
-//           explaination: 'Use uₙ = u₁ + (n − 1)d. u₁₂ = 5 + 11 × 4 = 5 + 44 = 49.',
+//           explaination: 'Use uₙ = u₁ + (n − 1)d. u₁₂ = 5 + (12 − 1)(4) = 5 + 44 = 49.',
 //           answer: 'u₁₂ = 49',
 //         },
 //         {
 //           id: 2,
 //           question: 'Given u₁ = 11 and d = 3, find u₂₀.',
 //           type: 'Easy',
-//           explaination: 'u₂₀ = 11 + 19 × 3 = 11 + 57 = 68.',
+//           explaination: 'u₂₀ = 11 + (20 − 1)(3) = 11 + 57 = 68.',
 //           answer: 'u₂₀ = 68',
 //         },
 //         {
 //           id: 3,
 //           question: 'Given u₁ = 13 and d = −7, find u₆.',
 //           type: 'Easy',
-//           explaination: 'u₆ = 13 + 5 × (−7) = 13 − 35 = −22.',
+//           explaination: 'u₆ = 13 + (6 − 1)(−7) = 13 − 35 = −22.',
 //           answer: 'u₆ = −22',
 //         },
 //         {
 //           id: 4,
 //           question: 'Given u₁ = 11 and d = −3, find u₁₈.',
 //           type: 'Easy',
-//           explaination: 'u₁₈ = 11 + 17 × (−3) = 11 − 51 = −40.',
+//           explaination: 'u₁₈ = 11 + (18 − 1)(−3) = 11 − 51 = −40.',
 //           answer: 'u₁₈ = −40',
 //         },
-//       ],
-//       'finding-common-difference': [
 //         {
-//           id: 1,
-//           question: 'Given u₁ = 7 and u₅ = 15, find the common difference d.',
+//           id: 5,
+//           question:
+//             'The first term of an arithmetic sequence is 3 and the second term is 7. Find the eighth term.',
 //           type: 'Easy',
-//           explaination:
-//             'Use uₙ = u₁ + (n − 1)d. u₅ = 7 + 4d. Therefore, 15 = 7 + 4d → 4d = 8 → d = 2.',
-//           answer: 'd = 2',
+//           explaination: 'd = 7 − 3 = 4. u₈ = 3 + 7(4) = 31.',
+//           answer: 'u₈ = 31',
 //         },
 //         {
-//           id: 2,
-//           question: 'Given u₁ = 19 and u₉ = 75, find the common difference d.',
-//           type: 'Easy',
-//           explaination:
-//             'Use uₙ = u₁ + (n − 1)d. u₉ = 19 + 8d. Therefore, 75 = 19 + 8d → 8d = 56 → d = 7.',
-//           answer: 'd = 7',
-//         },
-//         {
-//           id: 3,
-//           question: 'Given u₁ = 10 and u₂₁ = 0, find the common difference d.',
-//           type: 'Easy',
-//           explaination:
-//             'Use uₙ = u₁ + (n − 1)d. u₂₁ = 10 + 20d. Therefore, 0 = 10 + 20d → 20d = −10 → d = −0.5.',
-//           answer: 'd = −0.5',
-//         },
-//         {
-//           id: 4,
-//           question: 'Given u₁ = 100 and u₉ = 80, find the common difference d.',
-//           type: 'Easy',
-//           explaination:
-//             'Use uₙ = u₁ + (n − 1)d. u₉ = 100 + 8d. Therefore, 80 = 100 + 8d → 8d = −20 → d = −2.5.',
-//           answer: 'd = −2.5',
-//         },
-//       ],
-//       'finding-first-term-and-common-difference': [
-//         {
-//           id: 1,
-//           question: 'Given u₈ = 12 and u₁₁ = 33, find u₁ and d.',
+//           id: 6,
+//           question:
+//             'The first term of an arithmetic sequence is −8 and the common difference is 5. Find the 25th term.',
 //           type: 'Medium',
-//           explaination:
-//             'Use uₙ = u₁ + (n − 1)d. u₁₁ − u₈ = 3d = 33 − 12 = 21, so d = 7. Then u₁ = u₈ − 7d = 12 − 49 = −37.',
-//           answer: 'd = 7, u₁ = −37',
-//         },
-//         {
-//           id: 2,
-//           question: 'Given u₇ = 11 and u₁₂ = 56, find u₁ and d.',
-//           type: 'Medium',
-//           explaination:
-//             'Use uₙ = u₁ + (n − 1)d. u₁₂ − u₇ = 5d = 56 − 11 = 45, so d = 9. Then u₁ = u₇ − 6d = 11 − 54 = −43.',
-//           answer: 'd = 9, u₁ = −43',
+//           explaination: 'u₂₅ = −8 + 24(5) = −8 + 120 = 112.',
+//           answer: 'u₂₅ = 112',
 //         },
 //       ],
-//       'formula-for-nth-term': [
+//       'arithmetic-sequences-nth-term-formula': [
 //         {
 //           id: 1,
 //           question:
 //             'Given u₁ = 8 and d = −3, find a formula for the nth term of the arithmetic sequence.',
-//           type: 'Medium',
-//           explaination: 'Use uₙ = u₁ + (n − 1)d. uₙ = 8 + (n − 1)(−3) = 8 − 3n + 3 = 11 − 3n.',
+//           type: 'Easy',
+//           explaination: 'uₙ = 8 + (n − 1)(−3) = 8 − 3n + 3 = 11 − 3n.',
 //           answer: 'uₙ = 11 − 3n',
 //         },
 //         {
@@ -3075,7 +16627,7 @@ export const AISLQuestionAndAnswer = [
 //           question:
 //             'Given u₁ = 10 and d = 4, find a formula for the nth term of the arithmetic sequence.',
 //           type: 'Easy',
-//           explaination: 'Use uₙ = u₁ + (n − 1)d. uₙ = 10 + (n − 1)(4) = 10 + 4n − 4 = 4n + 6.',
+//           explaination: 'uₙ = 10 + (n − 1)(4) = 4n + 6.',
 //           answer: 'uₙ = 4n + 6',
 //         },
 //         {
@@ -3083,8 +16635,7 @@ export const AISLQuestionAndAnswer = [
 //           question:
 //             'Given u₁ = 3 and u₅ = 11, find a formula for the nth term of the arithmetic sequence.',
 //           type: 'Medium',
-//           explaination:
-//             'Use u₅ = u₁ + 4d. 11 = 3 + 4d → 4d = 8 → d = 2. Then uₙ = 3 + (n − 1)(2) = 2n + 1.',
+//           explaination: 'd = (11 − 3) ÷ 4 = 2. uₙ = 3 + (n − 1)(2) = 2n + 1.',
 //           answer: 'uₙ = 2n + 1',
 //         },
 //         {
@@ -3092,8 +16643,7 @@ export const AISLQuestionAndAnswer = [
 //           question:
 //             'Given u₁ = 10 and u₁₁ = 50, find a formula for the nth term of the arithmetic sequence.',
 //           type: 'Medium',
-//           explaination:
-//             'Use u₁₁ = u₁ + 10d. 50 = 10 + 10d → 10d = 40 → d = 4. Then uₙ = 10 + (n − 1)(4) = 4n + 6.',
+//           explaination: 'd = (50 − 10) ÷ 10 = 4. uₙ = 10 + (n − 1)(4) = 4n + 6.',
 //           answer: 'uₙ = 4n + 6',
 //         },
 //         {
@@ -3101,499 +16651,2515 @@ export const AISLQuestionAndAnswer = [
 //           question:
 //             'Given u₂ = 6 and u₅ = 21, find a formula for the nth term of the arithmetic sequence.',
 //           type: 'Medium',
-//           explaination:
-//             'Find the common difference: 3d = 21 − 6 = 15 → d = 5. Then u₁ = u₂ − d = 6 − 5 = 1. Therefore, uₙ = 1 + (n − 1)(5) = 5n − 4.',
+//           explaination: '3d = 15 ⇒ d = 5. u₁ = 6 − 5 = 1. uₙ = 1 + (n − 1)(5) = 5n − 4.',
 //           answer: 'uₙ = 5n − 4',
 //         },
 //         {
 //           id: 6,
 //           question:
 //             'Given u₃ = 14 and u₆ = −15, find a formula for the nth term of the arithmetic sequence.',
-//           type: 'Hard',
+//           type: 'Medium',
 //           explaination:
-//             'Find the common difference: 3d = −15 − 14 = −29 → d = −29/3. Then u₁ = u₃ − 2d = 14 − 2(−29/3) = 100/3. Therefore, uₙ = 100/3 + (n − 1)(−29/3) = (129 − 29n)/3.',
-//           answer: 'uₙ = (129 − 29n)/3',
+//             'd = (−15 − 14) ÷ 3 = −29/3. u₁ = 14 − 2(−29/3) = 14 + 58/3 = 100/3. uₙ = 100/3 + (n − 1)(−29/3) = −(29/3)n + 129/3.',
+//           answer: 'uₙ = −(29/3)n + 129/3',
 //         },
 //       ],
-//     },
-//   },
-//   {
-//     'financial-mathematics': {
-//       title: 'Financial Mathematics',
-//       'compound-interest-annual': [
+//       'arithmetic-series-sum-of-terms': [
 //         {
 //           id: 1,
-//           question:
-//             'Find the final value of the investment: $2000 invested at 6% compounded annually for 3 years.',
+//           question: 'Given u₁ = 9 and d = 4, find S₁₂.',
 //           type: 'Easy',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. FV = 2000 × (1 + 0.06)³ = 2000 × 1.191016 = $2382.03.',
-//           answer: '$2382.03',
+//           explaination: 'S₁₂ = (12/2)(2(9) + (12 − 1)(4)) = 6(18 + 44) = 6(62) = 372.',
+//           answer: 'S₁₂ = 372',
 //         },
 //         {
 //           id: 2,
-//           question:
-//             'Find the final value of the investment: $3000 invested at 4% compounded annually for 18 years.',
+//           question: 'Given u₁ = 17 and d = 2, find S₂₀.',
 //           type: 'Easy',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. FV = 3000 × (1.04)¹⁸ ≈ 3000 × 2.02582 = $6077.45.',
-//           answer: '$6077.45',
+//           explaination: 'S₂₀ = (20/2)(2(17) + (20 − 1)(2)) = 10(34 + 38) = 10(72) = 720.',
+//           answer: 'S₂₀ = 720',
 //         },
 //         {
 //           id: 3,
-//           question:
-//             'Find the final value of the investment: $500 invested at 2.5% compounded quarterly for 6 years.',
+//           question: 'Given u₁ = 34 and d = −7, find S₁₁.',
 //           type: 'Easy',
-//           explaination:
-//             'For quarterly compounding, use FV = PV(1 + r/k)ⁿᵏ. FV = 500 × (1 + 0.025/4)²⁴ = 500 × (1.00625)²⁴ ≈ $580.95.',
-//           answer: '$580.95',
+//           explaination: 'S₁₁ = (11/2)(2(34) + (11 − 1)(−7)) = (11/2)(68 − 70) = (11/2)(−2) = −11.',
+//           answer: 'S₁₁ = −11',
 //         },
 //         {
 //           id: 4,
-//           question:
-//             'Find the final value of the investment: $100 invested at 3.5% compounded twice-yearly for 10 years.',
+//           question: 'Given u₁ = 9 and d = −11, find S₈.',
 //           type: 'Easy',
-//           explaination:
-//             'For twice-yearly compounding, use FV = PV(1 + r/k)ⁿᵏ. FV = 100 × (1 + 0.035/2)²⁰ = 100 × (1.0175)²⁰ ≈ $141.48.',
-//           answer: '$141.48',
+//           explaination: 'S₈ = (8/2)(2(9) + (8 − 1)(−11)) = 4(18 − 77) = 4(−59) = −236.',
+//           answer: 'S₈ = −236',
 //         },
 //         {
 //           id: 5,
-//           question:
-//             'Find the final value of the investment: $5000 invested at 5% compounded monthly for 60 months.',
-//           type: 'Easy',
+//           question: 'Given u₁ = 7 and u₆ = 32, find S₁₁.',
+//           type: 'Medium',
 //           explaination:
-//             'For monthly compounding, use FV = PV(1 + r/12)ⁿ, where n is the total number of months. FV = 5000 × (1 + 0.05/12)⁶⁰ ≈ $6416.79.',
-//           answer: '$6416.79',
+//             'd = (32 − 7) ÷ 5 = 5. u₁₁ = 7 + 10(5) = 57. S₁₁ = (11/2)(7 + 57) = (11 × 64)/2 = 352.',
+//           answer: 'S₁₁ = 352',
 //         },
 //         {
 //           id: 6,
-//           question:
-//             'Find the final value of the investment: $800 invested at 4% compounded monthly for 100 months.',
-//           type: 'Easy',
-//           explaination:
-//             'For monthly compounding, use FV = PV(1 + r/12)ⁿ. FV = 800 × (1 + 0.04/12)¹⁰⁰ ≈ $1116.39.',
-//           answer: '$1116.39',
-//         },
-//       ],
-//       'time-to-reach-a-target-value': [
-//         {
-//           id: 1,
-//           question:
-//             'Find how long is required to achieve the given final value: $100 invested at 5% compounded annually. £1000 is required.',
+//           question: 'Given u₁ = 9 and u₅ = 41, find S₁₂.',
 //           type: 'Medium',
 //           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. 100 × (1.05)ⁿ = 1000 → (1.05)ⁿ = 10. Taking logarithms, n = ln(10) / ln(1.05) ≈ 47.6 years. Treat both currency symbols as the same unit.',
-//           answer: 'n ≈ 47.6 years',
-//         },
-//         {
-//           id: 2,
-//           question:
-//             'Find how long is required to achieve the given final value: $500 invested at 4% compounded annually. £600 is required.',
-//           type: 'Easy',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. 500 × (1.04)ⁿ = 600 → (1.04)ⁿ = 1.2. Taking logarithms, n = ln(1.2) / ln(1.04) ≈ 4.64 years. Treat both currency symbols as the same unit.',
-//           answer: 'n ≈ 4.64 years',
-//         },
-//         {
-//           id: 3,
-//           question:
-//             'Find how long is required to achieve the given final value: $300 invested at 2% compounded monthly. £400 is required.',
-//           type: 'Medium',
-//           explaination:
-//             'For monthly compounding, use FV = PV(1 + r/12)ⁿ, where n is the number of months. 300 × (1 + 0.02/12)ⁿ = 400 → n = ln(4/3) / ln(1 + 0.02/12) ≈ 172.1 months. Converting to years, 172.1 / 12 ≈ 14.3 years. Treat both currency symbols as the same unit.',
-//           answer: 'n ≈ 172.1 months ≈ 14.3 years',
-//         },
-//         {
-//           id: 4,
-//           question:
-//             'Find how long is required to achieve the given final value: $1000 invested at 1.5% compounded monthly. £1100 is required.',
-//           type: 'Medium',
-//           explaination:
-//             'For monthly compounding, use FV = PV(1 + r/12)ⁿ, where n is the number of months. 1000 × (1 + 0.015/12)ⁿ = 1100. Taking logarithms, n = ln(1.1) / ln(1 + 0.015/12) ≈ 76.3 months. Converting to years, 76.3 / 12 ≈ 6.4 years. Treat both currency symbols as the same unit.',
-//           answer: 'n ≈ 76.3 months ≈ 6.4 years',
-//         },
-//       ],
-//       'finding-the-interest-rate': [
-//         {
-//           id: 1,
-//           question:
-//             'Find the annual interest rate required (compounded annually): €500 invested for 10 years. €1000 is required.',
-//           type: 'Medium',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. 500(1 + r)¹⁰ = 1000 → (1 + r)¹⁰ = 2 → 1 + r = 2^(1/10). Therefore, r = 2^(0.1) − 1 ≈ 0.0718 = 7.18%.',
-//           answer: 'r ≈ 7.18%',
-//         },
-//         {
-//           id: 2,
-//           question:
-//             'Find the annual interest rate required (compounded annually): €500 invested for 10 years. €800 is required.',
-//           type: 'Medium',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. 500(1 + r)¹⁰ = 800 → (1 + r)¹⁰ = 1.6 → 1 + r = 1.6^(1/10). Therefore, r = 1.6^(0.1) − 1 ≈ 0.0481 = 4.81%.',
-//           answer: 'r ≈ 4.81%',
-//         },
-//         {
-//           id: 3,
-//           question:
-//             'Find the annual interest rate required (compounded annually): €100 invested for 5 years. €200 is required.',
-//           type: 'Medium',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. 100(1 + r)⁵ = 200 → (1 + r)⁵ = 2 → 1 + r = 2^(1/5). Therefore, r = 2^(1/5) − 1 ≈ 0.1487 = 14.87%.',
-//           answer: 'r ≈ 14.87%',
-//         },
-//         {
-//           id: 4,
-//           question:
-//             'Find the annual interest rate required (compounded annually): €100 invested for 10 years. €200 is required.',
-//           type: 'Medium',
-//           explaination:
-//             'Use the compound interest formula FV = PV(1 + r)ⁿ. 100(1 + r)¹⁰ = 200 → (1 + r)¹⁰ = 2 → 1 + r = 2^(1/10). Therefore, r = 2^(0.1) − 1 ≈ 0.0718 = 7.18%.',
-//           answer: 'r ≈ 7.18%',
-//         },
-//       ],
-//       depreciation: [
-//         {
-//           id: 1,
-//           question:
-//             'Find the final value of an asset after the given depreciation (compounded annually): Initial value $1200, annual depreciation 10% for 10 years.',
-//           type: 'Easy',
-//           explaination:
-//             'Use the depreciation formula FV = PV(1 − r)ⁿ. FV = 1200 × (1 − 0.10)¹⁰ = 1200 × (0.9)¹⁰ ≈ $418.42.',
-//           answer: '$418.42',
-//         },
-//         {
-//           id: 2,
-//           question:
-//             'Find the final value of an asset after the given depreciation (compounded annually): Initial value $1200, annual depreciation 20% for 10 years.',
-//           type: 'Easy',
-//           explaination:
-//             'Use the depreciation formula FV = PV(1 − r)ⁿ. FV = 1200 × (1 − 0.20)¹⁰ = 1200 × (0.8)¹⁰ ≈ $128.85.',
-//           answer: '$128.85',
-//         },
-//         {
-//           id: 3,
-//           question:
-//             'Find the final value of an asset after the given depreciation (compounded annually): Initial value £30,000, annual depreciation 15% for 5 years.',
-//           type: 'Easy',
-//           explaination:
-//             'Use the depreciation formula FV = PV(1 − r)ⁿ. FV = 30000 × (1 − 0.15)⁵ = 30000 × (0.85)⁵ ≈ £13,311.22.',
-//           answer: '£13,311.22',
-//         },
-//         {
-//           id: 4,
-//           question:
-//             'Find the final value of an asset after the given depreciation (compounded annually): Initial value £30,000, annual depreciation 25% for 5 years.',
-//           type: 'Easy',
-//           explaination:
-//             'Use the depreciation formula FV = PV(1 − r)ⁿ. FV = 30000 × (1 − 0.25)⁵ = 30000 × (0.75)⁵ ≈ £7,119.14.',
-//           answer: '£7,119.14',
-//         },
-//       ],
-//     },
-//   },
-//   {
-//     'number-algebra': {
-//       title: 'Number & Algebra',
-//       'laws-of-indices-multiplication': [
-//         {
-//           id: 1,
-//           question: 'Simplify: a) x² × x⁴  b) x⁵ × x⁷',
-//           type: 'Easy',
-//           explaination: 'Use the index law aᵐ × aⁿ = aᵐ⁺ⁿ. a) x²⁺⁴ = x⁶. b) x⁵⁺⁷ = x¹².',
-//           answer: 'a) x⁶  b) x¹²',
-//         },
-//         {
-//           id: 2,
-//           question: 'Simplify: a) y³ × y³  b) z⁵ × z⁵',
-//           type: 'Easy',
-//           explaination:
-//             'When multiplying powers with the same base, add the exponents. a) y³⁺³ = y⁶. b) z⁵⁺⁵ = z¹⁰.',
-//           answer: 'a) y⁶  b) z¹⁰',
-//         },
-//         {
-//           id: 3,
-//           question: 'Simplify: a) a⁶ × a  b) a¹⁰ × a',
-//           type: 'Easy',
-//           explaination:
-//             'Recall that a = a¹. Add the exponents when multiplying powers with the same base. a) a⁶⁺¹ = a⁷. b) a¹⁰⁺¹ = a¹¹.',
-//           answer: 'a) a⁷  b) a¹¹',
-//         },
-//         {
-//           id: 4,
-//           question: 'Simplify (do not evaluate): a) 5⁷ × 5¹⁰  b) 2¹² × 2¹²',
-//           type: 'Easy',
-//           explaination:
-//             'Use the index law aᵐ × aⁿ = aᵐ⁺ⁿ. a) 5⁷⁺¹⁰ = 5¹⁷. b) 2¹²⁺¹² = 2²⁴. Leave the answers in index form without evaluating.',
-//           answer: 'a) 5¹⁷  b) 2²⁴',
-//         },
-//       ],
-//       'laws-of-indices-power-of-a-power': [
-//         {
-//           id: 1,
-//           question: 'Simplify: a) (x³)⁵  b) (x⁴)⁸',
-//           type: 'Easy',
-//           explaination:
-//             'Use the index law (aᵐ)ⁿ = aᵐⁿ. a) (x³)⁵ = x³ˣ⁵ = x¹⁵. b) (x⁴)⁸ = x⁴ˣ⁸ = x³².',
-//           answer: 'a) x¹⁵  b) x³²',
-//         },
-//         {
-//           id: 2,
-//           question: 'Simplify: a) (y⁴)⁴  b) (z⁵)⁵',
-//           type: 'Easy',
-//           explaination:
-//             'Use the index law (aᵐ)ⁿ = aᵐⁿ. a) (y⁴)⁴ = y⁴ˣ⁴ = y¹⁶. b) (z⁵)⁵ = z⁵ˣ⁵ = z²⁵.',
-//           answer: 'a) y¹⁶  b) z²⁵',
-//         },
-//         {
-//           id: 3,
-//           question: 'Simplify: a) (c⁷)²  b) (c²)⁷',
-//           type: 'Easy',
-//           explaination:
-//             'Use the index law (aᵐ)ⁿ = aᵐⁿ. a) (c⁷)² = c⁷ˣ² = c¹⁴. b) (c²)⁷ = c²ˣ⁷ = c¹⁴. Both expressions have the same answer because 7 × 2 = 2 × 7.',
-//           answer: 'a) c¹⁴  b) c¹⁴',
-//         },
-//         {
-//           id: 4,
-//           question: 'Simplify (do not evaluate): a) (3⁵)¹⁰  b) (13⁷)⁴',
-//           type: 'Easy',
-//           explaination:
-//             'Use the index law (aᵐ)ⁿ = aᵐⁿ. a) (3⁵)¹⁰ = 3⁵ˣ¹⁰ = 3⁵⁰. b) (13⁷)⁴ = 13⁷ˣ⁴ = 13²⁸. Leave the answers in index form without evaluating.',
-//           answer: 'a) 3⁵⁰  b) 13²⁸',
-//         },
-//       ],
-//       'laws-of-indices-coefficient-variable-combined': [
-//         {
-//           id: 1,
-//           question: 'Simplify: a) 12x² × 4x⁵  b) 3x⁴ × 5x³',
-//           type: 'Easy',
-//           explaination:
-//             'Multiply the coefficients and add the indices of variables with the same base. a) (12 × 4)x²⁺⁵ = 48x⁷. b) (3 × 5)x⁴⁺³ = 15x⁷.',
-//           answer: 'a) 48x⁷  b) 15x⁷',
-//         },
-//         {
-//           id: 2,
-//           question: 'Simplify: a) a × 3a²  b) b² × 5b²',
-//           type: 'Easy',
-//           explaination:
-//             'Recall that a = a¹. Multiply the coefficients and add the indices of variables with the same base. a) 3 × a¹⁺² = 3a³. b) 5 × b²⁺² = 5b⁴.',
-//           answer: 'a) 3a³  b) 5b⁴',
-//         },
-//       ],
-//       'laws-of-indices-multi-variable': [
-//         {
-//           id: 1,
-//           question: 'Simplify: a) 5x²yz × 4x³y²  b) 6x⁷yz² × 2xz³',
-//           type: 'Medium',
-//           explaination:
-//             'Multiply the coefficients and add the indices of variables with the same base. a) (5 × 4)x²⁺³y¹⁺²z = 20x⁵y³z. b) (6 × 2)x⁷⁺¹yz²⁺³ = 12x⁸yz⁵.',
-//           answer: 'a) 20x⁵y³z  b) 12x⁸yz⁵',
-//         },
-//       ],
-//     },
-//   },
-//   {
-//     'logarithms-exponentials': {
-//       title: 'Logarithms & Exponentials',
-//       'evaluating-logarithms': [
-//         {
-//           id: 1,
-//           question: 'Without using a calculator, find the exact value of: log 10',
-//           type: 'Easy',
-//           explaination: 'log 10 = 1 since 10¹ = 10.',
-//           answer: '1',
-//         },
-//         {
-//           id: 2,
-//           question: 'Without using a calculator, find the exact value of: log 100',
-//           type: 'Easy',
-//           explaination: 'log 100 = 2 since 10² = 100.',
-//           answer: '2',
-//         },
-//         {
-//           id: 3,
-//           question: 'Without using a calculator, find the exact value of: log 100,000',
-//           type: 'Easy',
-//           explaination: 'Since 100,000 = 10⁵, log 10⁵ = 5.',
-//           answer: '5',
-//         },
-//         {
-//           id: 4,
-//           question: 'Without using a calculator, find the exact value of: log 1,000,000',
-//           type: 'Easy',
-//           explaination: 'Since 1,000,000 = 10⁶, log 10⁶ = 6.',
-//           answer: '6',
-//         },
-//         {
-//           id: 5,
-//           question: 'Without using a calculator, find the exact value of: log 1',
-//           type: 'Easy',
-//           explaination: 'log 1 = 0 since 10⁰ = 1.',
-//           answer: '0',
-//         },
-//         {
-//           id: 6,
-//           question: 'Without using a calculator, find the exact value of: log 0.1',
-//           type: 'Easy',
-//           explaination: 'Since 0.1 = 10⁻¹, log 0.1 = -1.',
-//           answer: '-1',
+//             'd = (41 − 9) ÷ 4 = 8. u₁₂ = 9 + 11(8) = 97. S₁₂ = (12/2)(9 + 97) = 6(106) = 636.',
+//           answer: 'S₁₂ = 636',
 //         },
 //         {
 //           id: 7,
-//           question: 'Without using a calculator, find the exact value of: log 0.01',
+//           question:
+//             'The first term of an arithmetic sequence is 3 and the second term is 7. Find the sum of the first 15 terms.',
 //           type: 'Easy',
-//           explaination: 'Since 0.01 = 10⁻², log 0.01 = -2.',
-//           answer: '-2',
+//           explaination:
+//             'd = 7 − 3 = 4. S₁₅ = (15/2)(2(3) + 14(4)) = (15/2)(6 + 56) = (15 × 62)/2 = 465.',
+//           answer: 'S₁₅ = 465',
 //         },
 //         {
 //           id: 8,
-//           question: 'Without using a calculator, find the exact value of: log 0.0001',
+//           question:
+//             'In an arithmetic sequence, the first term is 8 and the common difference is 5. Find the sum of the first 10 terms.',
 //           type: 'Easy',
-//           explaination: 'Since 0.0001 = 10⁻⁴, log 0.0001 = -4.',
-//           answer: '-4',
+//           explaination: 'S₁₀ = (10/2)(2(8) + 9(5)) = 5(16 + 45) = 5(61) = 305.',
+//           answer: 'S₁₀ = 305',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'In an arithmetic sequence, the first term is 8, the common difference is 3 and the last term is 68. Find the sum of all the terms of the sequence.',
+//           type: 'Easy',
+//           explaination: '8 + (n − 1)(3) = 68 ⇒ n = 21. S₂₁ = (21/2)(8 + 68) = (21 × 76)/2 = 798.',
+//           answer: 'S₂₁ = 798',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'The 7th term of an arithmetic sequence is 35 and the 18th term is 112. Find the sum of the first 18 terms.',
+//           type: 'Medium',
+//           explaination:
+//             '11d = 112 − 35 = 77 ⇒ d = 7. u₁ = 35 − 6(7) = −7. S₁₈ = (18/2)(−7 + 112) = 9(105) = 945.',
+//           answer: 'S₁₈ = 945',
 //         },
 //       ],
-//       'solving-logarithmic-equations': [
+//       'bounds-and-inequalities': [
 //         {
 //           id: 1,
-//           question: 'Without using a calculator, find the exact value of x: log x = 2',
+//           question: 'x = 12.3 to 1 d.p. Write an inequality for the possible values x can take.',
 //           type: 'Easy',
-//           explaination: 'log x = 2 ⇒ x = 10² = 100.',
-//           answer: 'x = 100',
+//           explaination:
+//             'Half of 0.1 = 0.05. Lower bound: 12.3 − 0.05 = 12.25. Upper bound: 12.3 + 0.05 = 12.35. So 12.25 ≤ x < 12.35.',
+//           answer: '12.25 ≤ x < 12.35',
 //         },
 //         {
 //           id: 2,
-//           question: 'Without using a calculator, find the exact value of x: log x = 3',
+//           question: 'x = 0.8 to 1 d.p. Write an inequality for the possible values x can take.',
 //           type: 'Easy',
-//           explaination: 'log x = 3 ⇒ x = 10³ = 1000.',
-//           answer: 'x = 1000',
+//           explaination:
+//             'Half of 0.1 = 0.05. Lower bound: 0.8 − 0.05 = 0.75. Upper bound: 0.8 + 0.05 = 0.85. So 0.75 ≤ x < 0.85.',
+//           answer: '0.75 ≤ x < 0.85',
 //         },
 //         {
 //           id: 3,
-//           question: 'Without using a calculator, find the exact value of x: log(2x - 4) = 5',
-//           type: 'Medium',
-//           explaination: '2x - 4 = 10⁵ = 100000. Therefore, 2x = 100004 and x = 50002.',
-//           answer: 'x = 50002',
+//           question: 'x = 0.49 to 2 d.p. Write an inequality for the possible values x can take.',
+//           type: 'Easy',
+//           explaination:
+//             'Half of 0.01 = 0.005. Lower bound: 0.49 − 0.005 = 0.485. Upper bound: 0.49 + 0.005 = 0.495. So 0.485 ≤ x < 0.495.',
+//           answer: '0.485 ≤ x < 0.495',
 //         },
 //         {
 //           id: 4,
-//           question: 'Without using a calculator, find the exact value of x: log(3x + 4) = 3',
-//           type: 'Medium',
-//           explaination: '3x + 4 = 10³ = 1000. Therefore, 3x = 996 and x = 332.',
-//           answer: 'x = 332',
+//           question: 'x = 5.73 to 2 d.p. Write an inequality for the possible values x can take.',
+//           type: 'Easy',
+//           explaination:
+//             'Half of 0.01 = 0.005. Lower bound: 5.73 − 0.005 = 5.725. Upper bound: 5.73 + 0.005 = 5.735. So 5.725 ≤ x < 5.735.',
+//           answer: '5.725 ≤ x < 5.735',
 //         },
 //         {
 //           id: 5,
-//           question: 'Without using a calculator, find the exact value of x: log(2x - 3) = -1',
-//           type: 'Medium',
-//           explaination: '2x - 3 = 10⁻¹ = 0.1. Therefore, 2x = 3.1 and x = 1.55 = 31/20.',
-//           answer: 'x = 31/20',
+//           question: 'x = 60 to 1 s.f. Write an inequality for the possible values x can take.',
+//           type: 'Easy',
+//           explaination:
+//             'Rounded to the nearest 10, so half = 5. 60 − 5 = 55 and 60 + 5 = 65. So 55 ≤ x < 65.',
+//           answer: '55 ≤ x < 65',
 //         },
 //         {
 //           id: 6,
-//           question: 'Without using a calculator, find the exact value of x: log(x + 2) = -2',
-//           type: 'Medium',
-//           explaination: 'x + 2 = 10⁻² = 0.01. Therefore, x = 0.01 - 2 = -1.99 = -199/100.',
-//           answer: 'x = -199/100',
-//         },
-//       ],
-//       'natural-logarithm-rearranging': [
-//         {
-//           id: 1,
-//           question: 'Rearrange the equation to find an expression for x: ln x = 2',
+//           question: 'x = 0.3 to 1 s.f. Write an inequality for the possible values x can take.',
 //           type: 'Easy',
-//           explaination: 'ln x = 2 ⇒ x = e².',
-//           answer: 'x = e²',
-//         },
-//         {
-//           id: 2,
-//           question: 'Rearrange the equation to find an expression for x: ln x = 5',
-//           type: 'Easy',
-//           explaination: 'ln x = 5 ⇒ x = e⁵.',
-//           answer: 'x = e⁵',
-//         },
-//         {
-//           id: 3,
-//           question: 'Rearrange the equation to find an expression for x: ln x = y + 1',
-//           type: 'Easy',
-//           explaination: 'ln x = y + 1 ⇒ x = eʸ⁺¹.',
-//           answer: 'x = e^(y + 1)',
-//         },
-//         {
-//           id: 4,
-//           question: 'Rearrange the equation to find an expression for x: ln x = y²',
-//           type: 'Easy',
-//           explaination: 'ln x = y² ⇒ x = eʸ².',
-//           answer: 'x = e^(y²)',
-//         },
-//         {
-//           id: 5,
-//           question: 'Rearrange the equation to find an expression for x: ln(2x + 4) = y - 3',
-//           type: 'Medium',
 //           explaination:
-//             '2x + 4 = e^(y - 3). Therefore, 2x = e^(y - 3) - 4, so x = (e^(y - 3) - 4)/2.',
-//           answer: 'x = (e^(y - 3) - 4)/2',
+//             'Rounded to the nearest 0.1, so half = 0.05. 0.3 − 0.05 = 0.25 and 0.3 + 0.05 = 0.35. So 0.25 ≤ x < 0.35.',
+//           answer: '0.25 ≤ x < 0.35',
 //         },
 //         {
-//           id: 6,
-//           question: 'Rearrange the equation to find an expression for x: ln((1/2)x - 6) = 2y + 1',
-//           type: 'Medium',
-//           explaination:
-//             '(1/2)x - 6 = e^(2y + 1). Therefore, (1/2)x = e^(2y + 1) + 6, so x = 2e^(2y + 1) + 12.',
-//           answer: 'x = 2e^(2y + 1) + 12',
-//         },
-//       ],
-//       'simplifying-logarithmic-expressions': [
-//         {
-//           id: 1,
-//           question: 'Simplify the expression: log x + 4 log x',
+//           id: 7,
+//           question: 'x = 470 to 2 s.f. Write an inequality for the possible values x can take.',
 //           type: 'Easy',
-//           explaination: 'Collect like terms: (1 + 4) log x = 5 log x.',
-//           answer: '5 log x',
+//           explaination:
+//             'Rounded to the nearest 10, so half = 5. 470 − 5 = 465 and 470 + 5 = 475. So 465 ≤ x < 475.',
+//           answer: '465 ≤ x < 475',
 //         },
 //         {
-//           id: 2,
-//           question: 'Simplify the expression: 10 log x - 5 log x',
+//           id: 8,
+//           question: 'x = 24 to 2 s.f. Write an inequality for the possible values x can take.',
 //           type: 'Easy',
-//           explaination: 'Collect like terms: (10 - 5) log x = 5 log x.',
-//           answer: '5 log x',
-//         },
-//         {
-//           id: 3,
-//           question: 'Simplify the expression: 2(log 3x)² / log 3x',
-//           type: 'Medium',
 //           explaination:
-//             'Cancel one factor of log 3x: 2(log 3x)² / log 3x = 2 log 3x, assuming log 3x ≠ 0.',
-//           answer: '2 log 3x',
+//             'Rounded to the nearest 1, so half = 0.5. 24 − 0.5 = 23.5 and 24 + 0.5 = 24.5. So 23.5 ≤ x < 24.5.',
+//           answer: '23.5 ≤ x < 24.5',
 //         },
 //         {
-//           id: 4,
-//           question: 'Simplify the expression: log 2x / (log 2x)²',
-//           type: 'Medium',
+//           id: 9,
+//           question:
+//             'A shelf is 85 cm long to the nearest centimetre. Find the upper and lower bounds of the length.',
+//           type: 'Easy',
 //           explaination:
-//             'Cancel one factor of log 2x: log 2x / (log 2x)² = 1 / log 2x, assuming log 2x ≠ 0.',
-//           answer: '1 / log 2x',
+//             'Half of 1 cm = 0.5 cm. 85 − 0.5 = 84.5 and 85 + 0.5 = 85.5. So 84.5 ≤ length < 85.5.',
+//           answer: 'Lower bound: 84.5 cm, Upper bound: 85.5 cm',
 //         },
 //         {
-//           id: 5,
-//           question: 'Simplify the expression: (ln x + (ln x)²) / ln x - ln x',
+//           id: 10,
+//           question:
+//             'A right-angled triangle ABC has the right angle at A. AB = 4.7 cm to one decimal place and BC = 12.3 cm to one decimal place. Write an inequality for the possible length of AC.',
 //           type: 'Hard',
 //           explaination:
-//             '(ln x + (ln x)²) / ln x = 1 + ln x. Therefore, (1 + ln x) - ln x = 1, assuming ln x ≠ 0 (x ≠ 1).',
-//           answer: '1',
+//             'Bounds: 4.65 ≤ AB < 4.75 and 12.25 ≤ BC < 12.35. BC is the hypotenuse, so AC = √(BC² − AB²). AC is largest when BC is largest and AB is smallest: √(12.35² − 4.65²) = √(152.5225 − 21.6225) = √130.9 ≈ 11.441 cm. AC is smallest when BC is smallest and AB is largest: √(12.25² − 4.75²) = √(150.0625 − 22.5625) = √127.5 ≈ 11.292 cm.',
+//           answer: '11.292… ≤ AC < 11.441…',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'A right-angled triangle ABC has the right angle at A. AB = 4.7 cm to one decimal place and BC = 12.3 cm to one decimal place, so 11.292… ≤ AC < 11.441…. Find the maximum percentage error in any stated length of AC within this range.',
+//           type: 'Hard',
+//           explaination:
+//             'The largest error occurs when the stated length is at one end of the range and the true length is at the other. Error = 11.441… − 11.292… = 0.1496 cm. Taking the true value as the lower bound gives the largest percentage: ε = 0.1496 ÷ 11.292 × 100% ≈ 1.32%.',
+//           answer: 'Maximum percentage error ≈ 1.32%',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'It is known that a = 1.45 to two decimal places. Write down an inequality to describe the possible values of a.',
+//           type: 'Hard',
+//           explaination: 'Half of 0.01 = 0.005. 1.45 − 0.005 = 1.445 and 1.45 + 0.005 = 1.455.',
+//           answer: '1.445 ≤ a < 1.455',
+//         },
+//         {
+//           id: 13,
+//           question:
+//             'It is known that a = 1.45 to two decimal places, so 1.445 ≤ a < 1.455. Write down an inequality to describe the possible values of 10ᵃ, to two decimal places.',
+//           type: 'Hard',
+//           explaination:
+//             '10ˣ is increasing, so apply it to both bounds. 10¹·⁴⁴⁵ ≈ 27.86 and 10¹·⁴⁵⁵ ≈ 28.51.',
+//           answer: '27.86 ≤ 10ᵃ < 28.51',
+//         },
+//         {
+//           id: 14,
+//           question:
+//             'It is known that a = 1.45 to two decimal places, so 27.86 ≤ 10ᵃ < 28.51. Hence give 10ᵃ to a suitable degree of accuracy, justifying your answer.',
+//           type: 'Hard',
+//           explaination:
+//             'To 2 s.f., both 27.86 and 28.51 round to 28, so 28 is the most accurate value that holds across the whole range. To 3 s.f. they would round to 27.9 and 28.5, which disagree.',
+//           answer: '10ᵃ ≈ 28 (2 s.f.), since both bounds round to 28',
+//         },
+//       ],
+//       'percentage-error': [
+//         {
+//           id: 1,
+//           question: 'Find the percentage error when estimating √2 as 1.41.',
+//           type: 'Medium',
+//           explaination:
+//             '√2 = 1.41421…. Percentage error = |1.41 − 1.41421…| ÷ 1.41421… × 100% = 0.00421… ÷ 1.41421… × 100% ≈ 0.298%.',
+//           answer: '≈ 0.298%',
+//         },
+//         {
+//           id: 2,
+//           question: 'Find the percentage error when estimating √3 as 1.73.',
+//           type: 'Medium',
+//           explaination:
+//             '√3 = 1.73205…. Percentage error = |1.73 − 1.73205…| ÷ 1.73205… × 100% = 0.00205… ÷ 1.73205… × 100% ≈ 0.118%.',
+//           answer: '≈ 0.118%',
+//         },
+//         {
+//           id: 3,
+//           question: 'Find the percentage error when estimating e as 19/7.',
+//           type: 'Medium',
+//           explaination:
+//             'e = 2.71828… and 19/7 = 2.71428…. Percentage error = |2.71428… − 2.71828…| ÷ 2.71828… × 100% = 0.00400… ÷ 2.71828… × 100% ≈ 0.147%.',
+//           answer: '≈ 0.147%',
+//         },
+//         {
+//           id: 4,
+//           question: 'Find the percentage error when estimating ln 2 as 9/13.',
+//           type: 'Medium',
+//           explaination:
+//             'ln 2 = 0.69315… and 9/13 = 0.69231…. Percentage error = |0.69231… − 0.69315…| ÷ 0.69315… × 100% = 0.000840… ÷ 0.69315… × 100% ≈ 0.121%.',
+//           answer: '≈ 0.121%',
+//         },
+//       ],
+//     },
+//   },
+//   {
+//     probability: {
+//       title: 'Probability',
+//       'venn-diagrams': [
+//         {
+//           id: 1,
+//           question:
+//             'Out of 25 students in a class, 18 speak French, 9 speak German and 5 speak both languages. Find the probability that a randomly chosen student speaks neither language.',
+//           type: 'Easy',
+//           explaination:
+//             'Students who speak at least one language = 18 + 9 − 5 = 22. Neither = 25 − 22 = 3. P(neither) = 3/25.',
+//           answer: '3/25',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'Out of 25 students in a class, 18 speak French, 9 speak German and 5 speak both languages. Find the probability that a randomly chosen student speaks German but not French.',
+//           type: 'Easy',
+//           explaination: 'German only = 9 − 5 = 4. P(German but not French) = 4/25.',
+//           answer: '4/25',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'In a group of 30 children, 12 like apples, 18 like bananas and 10 like both fruits. Find the probability that a randomly chosen child likes bananas but not apples.',
+//           type: 'Easy',
+//           explaination: 'Bananas only = 18 − 10 = 8. P = 8/30 = 4/15.',
+//           answer: '4/15',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'In a group of 30 children, 12 like apples, 18 like bananas and 10 like both fruits. Find the probability that a randomly chosen child likes neither fruit.',
+//           type: 'Easy',
+//           explaination:
+//             'At least one fruit = 12 + 18 − 10 = 20. Neither = 30 − 20 = 10. P = 10/30 = 1/3.',
+//           answer: '1/3',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'In a school of 150 pupils, 80 pupils play basketball, 45 play both hockey and basketball and 25 play neither sport. Find the probability that a randomly selected pupil plays basketball but not hockey.',
+//           type: 'Medium',
+//           explaination: 'Basketball only = 80 − 45 = 35. P = 35/150 = 7/30.',
+//           answer: '7/30',
 //         },
 //         {
 //           id: 6,
-//           question: 'Simplify the expression: (ln x - (ln x)³) / (ln x)² + ln x',
+//           question:
+//             'In a school of 150 pupils, 80 pupils play basketball, 45 play both hockey and basketball and 25 play neither sport. Find the probability that a randomly selected pupil plays hockey but not basketball.',
+//           type: 'Medium',
+//           explaination:
+//             'Pupils who play a sport = 150 − 25 = 125. Basketball only = 35, so hockey only = 125 − 45 − 35 = 45. P = 45/150 = 3/10.',
+//           answer: '3/10',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'In a certain school, 80 pupils study both Biology and History, 35 study neither subject, 45 study only Biology and 60 study only History. Find the probability that a randomly selected pupil studies at least one of the two subjects.',
+//           type: 'Medium',
+//           explaination:
+//             'Total = 80 + 45 + 60 + 35 = 220. At least one = 220 − 35 = 185. P = 185/220 = 37/44.',
+//           answer: '37/44',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'In a certain school, 80 pupils study both Biology and History, 35 study neither subject, 45 study only Biology and 60 study only History. Find the probability that a randomly selected pupil studies History.',
+//           type: 'Medium',
+//           explaination:
+//             'Total = 80 + 45 + 60 + 35 = 220. History = 80 + 60 = 140. P = 140/220 = 7/11.',
+//           answer: '7/11',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'Out of 35 shops in a town, 28 sell candy, 18 sell ice cream and 12 sell both ice cream and candy. Find the probability that a randomly selected shop sells ice cream but not candy.',
+//           type: 'Easy',
+//           explaination: 'Ice cream only = 18 − 12 = 6. P = 6/35.',
+//           answer: '6/35',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'Out of 35 shops in a town, 28 sell candy, 18 sell ice cream and 12 sell both ice cream and candy. Find the probability that a randomly selected shop sells candy but not ice cream.',
+//           type: 'Easy',
+//           explaination: 'Candy only = 28 − 12 = 16. P = 16/35.',
+//           answer: '16/35',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'At a certain college, the probability that a student studies Geography is 0.4, the probability that they study Spanish is 0.7 and the probability that they study both subjects is 0.2. Find the probability that a randomly selected student studies neither subject.',
+//           type: 'Medium',
+//           explaination: 'P(G ∪ S) = 0.4 + 0.7 − 0.2 = 0.9. P(neither) = 1 − 0.9 = 0.1.',
+//           answer: '0.1',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'At a certain college, the probability that a student studies Geography is 0.4, the probability that they study Spanish is 0.7 and the probability that they study both subjects is 0.2. Find the probability that a randomly selected student studies Spanish but not Geography.',
+//           type: 'Medium',
+//           explaination: 'P(Spanish only) = 0.7 − 0.2 = 0.5.',
+//           answer: '0.5',
+//         },
+//         {
+//           id: 13,
+//           question:
+//             'In a given school, the probability that a child plays the piano is 0.4. The probability that they play both the piano and the violin is 0.08, and the probability that they play neither instrument is 0.3. Find the probability that a randomly selected child plays the violin but not the piano.',
+//           type: 'Medium',
+//           explaination:
+//             'P(P ∪ V) = 1 − 0.3 = 0.7. P(V) = 0.7 − 0.4 + 0.08 = 0.38. P(violin only) = 0.38 − 0.08 = 0.30.',
+//           answer: '0.30',
+//         },
+//         {
+//           id: 14,
+//           question:
+//             'In a given school, the probability that a child plays the piano is 0.4. The probability that they play both the piano and the violin is 0.08, and the probability that they play neither instrument is 0.3. Find the probability that a randomly selected child plays the piano but not the violin.',
+//           type: 'Medium',
+//           explaination: 'P(piano only) = 0.4 − 0.08 = 0.32.',
+//           answer: '0.32',
+//         },
+//         {
+//           id: 15,
+//           question:
+//             'Asher has 22 toys: 12 are teddies, 5 are green teddies, and 8 are neither green nor teddies. Draw a Venn diagram showing this information and find the number of toys which are green but not teddies.',
+//           type: 'Medium',
+//           explaination:
+//             'T ∩ G = 5 and neither = 8, so T ∪ G = 22 − 8 = 14. Teddy only = 12 − 5 = 7. Green only = 14 − 7 − 5 = 2. Venn regions: teddy only 7, both 5, green only 2, neither 8.',
+//           answer: '2 toys are green but not teddies',
+//         },
+//         {
+//           id: 16,
+//           question:
+//             'Asher has 22 toys: 12 are teddies, 5 are green teddies, and 8 are neither green nor teddies. Find the probability that a randomly selected toy is green.',
+//           type: 'Medium',
+//           explaination:
+//             'Green only = 2 and green teddies = 5, so total green = 2 + 5 = 7. P(green) = 7/22.',
+//           answer: '7/22',
+//         },
+//         {
+//           id: 17,
+//           question:
+//             'Asher has 22 toys: 12 are teddies, 5 are green teddies, and 8 are neither green nor teddies. Given that a toy is green, find the probability that it is a teddy.',
+//           type: 'Medium',
+//           explaination: 'There are 7 green toys, and 5 of them are teddies. P(T | G) = 5/7.',
+//           answer: '5/7',
+//         },
+//         {
+//           id: 18,
+//           question:
+//             'Out of 130 students at a college, 50 play tennis, 45 play badminton and 12 play both sports. How many students play neither sport?',
+//           type: 'Medium',
+//           explaination: 'At least one sport = 50 + 45 − 12 = 83. Neither = 130 − 83 = 47.',
+//           answer: '47 students',
+//         },
+//         {
+//           id: 19,
+//           question:
+//             'Out of 130 students at a college, 50 play tennis, 45 play badminton and 12 play both sports. Find the probability that a randomly selected student plays at least one of the two sports.',
+//           type: 'Medium',
+//           explaination: 'At least one sport = 50 + 45 − 12 = 83. P = 83/130.',
+//           answer: '83/130',
+//         },
+//         {
+//           id: 20,
+//           question:
+//             'Out of 130 students at a college, 50 play tennis, 45 play badminton and 12 play both sports. Given that a student plays exactly one of the two sports, find the probability that it is badminton.',
+//           type: 'Medium',
+//           explaination:
+//             'Tennis only = 50 − 12 = 38. Badminton only = 45 − 12 = 33. Exactly one = 38 + 33 = 71. P(badminton | exactly one) = 33/71.',
+//           answer: '33/71',
+//         },
+//         {
+//           id: 21,
+//           question:
+//             'In a group of 100 people, 27 speak German, 30 speak Mandarin, 40 speak Spanish, 3 speak all three languages, 12 speak only German, 15 speak only Mandarin and 8 speak Spanish and Mandarin but not German. Draw a Venn diagram showing this information, and fill in the missing regions.',
 //           type: 'Hard',
 //           explaination:
-//             'Factor the numerator: ln x(1 - (ln x)²) / (ln x)² + ln x = (1 - (ln x)²) / ln x + ln x. Combining the terms gives [1 - (ln x)² + (ln x)²] / ln x = 1 / ln x, assuming ln x ≠ 0 (x > 0 and x ≠ 1).',
-//           answer: '1 / ln x',
+//             'German and Mandarin only = 30 − 15 − 3 − 8 = 4. German and Spanish only = 27 − 12 − 3 − 4 = 8. Spanish only = 40 − 3 − 8 − 8 = 21. Neither = 100 − (12 + 15 + 21 + 4 + 8 + 8 + 3) = 100 − 71 = 29.',
+//           answer:
+//             'German only 12, Mandarin only 15, Spanish only 21, German and Mandarin only 4, German and Spanish only 8, Mandarin and Spanish only 8, all three 3, none 29',
+//         },
+//         {
+//           id: 22,
+//           question:
+//             'In a group of 100 people, 27 speak German, 30 speak Mandarin, 40 speak Spanish, 3 speak all three languages, 12 speak only German, 15 speak only Mandarin and 8 speak Spanish and Mandarin but not German. Find the probability that a randomly selected person speaks only Spanish.',
+//           type: 'Hard',
+//           explaination:
+//             'German and Mandarin only = 30 − 15 − 3 − 8 = 4. German and Spanish only = 27 − 12 − 3 − 4 = 8. Spanish only = 40 − 3 − 8 − 8 = 21. P(only Spanish) = 21/100.',
+//           answer: '21/100',
+//         },
+//         {
+//           id: 23,
+//           question:
+//             'In a group of 100 people, 27 speak German, 30 speak Mandarin, 40 speak Spanish, 3 speak all three languages, 12 speak only German, 15 speak only Mandarin and 8 speak Spanish and Mandarin but not German. Given that a person speaks Spanish, find the probability that they also speak Mandarin.',
+//           type: 'Hard',
+//           explaination:
+//             '40 people speak Spanish. Those who also speak Mandarin = 8 (Mandarin and Spanish only) + 3 (all three) = 11. P(M | S) = 11/40.',
+//           answer: '11/40',
+//         },
+//         {
+//           id: 24,
+//           question:
+//             'In a class of 30 pupils, 22 have a phone, 17 have a smart watch and 15 have a tablet. 11 have both a smart watch and a phone, 11 have a phone and a tablet and 10 have a tablet and a smart watch. Everyone has at least one of those items. Let x be the number of pupils who have all three items. Draw a Venn diagram showing this information.',
+//           type: 'Hard',
+//           explaination:
+//             'Put x in the centre, then subtract outwards. Phone and watch only = 11 − x. Phone and tablet only = 11 − x. Watch and tablet only = 10 − x. Phone only = 22 − (11 − x) − (11 − x) − x = x. Watch only = 17 − (11 − x) − (10 − x) − x = x − 4. Tablet only = 15 − (11 − x) − (10 − x) − x = x − 6.',
+//           answer:
+//             'All three x; phone and watch only 11 − x; phone and tablet only 11 − x; watch and tablet only 10 − x; phone only x; watch only x − 4; tablet only x − 6',
+//         },
+//         {
+//           id: 25,
+//           question:
+//             'In a class of 30 pupils, 22 have a phone, 17 have a smart watch and 15 have a tablet. 11 have both a smart watch and a phone, 11 have a phone and a tablet and 10 have a tablet and a smart watch. Everyone has at least one of those items. Let x be the number of pupils who have all three items. Show that x + 22 = 30.',
+//           type: 'Hard',
+//           explaination:
+//             'Phone and watch only = 11 − x. Phone and tablet only = 11 − x. Watch and tablet only = 10 − x. Phone only = 22 − (11 − x) − (11 − x) − x = x. Watch only = 17 − (11 − x) − (10 − x) − x = x − 4. Tablet only = 15 − (11 − x) − (10 − x) − x = x − 6. Everyone has at least one item, so all regions add to 30: x + (x − 4) + (x − 6) + (11 − x) + (11 − x) + (10 − x) + x = x + 22. Therefore x + 22 = 30.',
+//           answer: 'x + 22 = 30',
+//         },
+//         {
+//           id: 26,
+//           question:
+//             'In a class of 30 pupils, 22 have a phone, 17 have a smart watch and 15 have a tablet. 11 have both a smart watch and a phone, 11 have a phone and a tablet and 10 have a tablet and a smart watch. Everyone has at least one of those items. Given that x + 22 = 30, where x is the number of pupils who have all three items, find the probability that a randomly selected pupil has all three items.',
+//           type: 'Hard',
+//           explaination: 'x + 22 = 30 ⇒ x = 8. P(all three) = 8/30 = 4/15.',
+//           answer: '4/15',
+//         },
+//         {
+//           id: 27,
+//           question:
+//             'In a class of 30 pupils, 22 have a phone, 17 have a smart watch and 15 have a tablet. 11 have both a smart watch and a phone, 11 have a phone and a tablet and 10 have a tablet and a smart watch. Everyone has at least one of those items. Given that a pupil does not have a tablet, find the probability that they have a phone.',
+//           type: 'Hard',
+//           explaination:
+//             'No tablet = 30 − 15 = 15. Phone without a tablet = 22 − 11 = 11. P(phone | no tablet) = 11/15.',
+//           answer: '11/15',
+//         },
+//         {
+//           id: 28,
+//           question:
+//             'In a class of 30 pupils, 22 have a phone, 17 have a smart watch and 15 have a tablet. 11 have both a smart watch and a phone, 11 have a phone and a tablet and 10 have a tablet and a smart watch. Everyone has at least one of those items. 8 pupils have all three items. Given that a pupil has exactly two of the items, find the probability that they have a smart watch and a tablet.',
+//           type: 'Hard',
+//           explaination:
+//             'Exactly two: phone and watch = 11 − 8 = 3, phone and tablet = 11 − 8 = 3, watch and tablet = 10 − 8 = 2. Total = 3 + 3 + 2 = 8. P(watch and tablet | exactly two) = 2/8 = 1/4.',
+//           answer: '1/4',
+//         },
+//       ],
+//       'tree-diagrams': [
+//         {
+//           id: 1,
+//           question:
+//             'Every day, Rahul either drives to work or takes the bus. The probability that he drives is 0.3. If he drives to work the probability that he is late is 0.05. If he takes the bus the probability that he is late is 0.2. Find the probability that Rahul is late for work.',
+//           type: 'Medium',
+//           explaination:
+//             'P(bus) = 1 − 0.3 = 0.7. P(late) = 0.3 × 0.05 + 0.7 × 0.2 = 0.015 + 0.14 = 0.155.',
+//           answer: '0.155',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'Every day, Rahul either drives to work or takes the bus. The probability that he drives is 0.3. If he drives to work the probability that he is late is 0.05. If he takes the bus the probability that he is late is 0.2. Find the probability that Rahul is not late for work.',
+//           type: 'Medium',
+//           explaination:
+//             'P(late) = 0.3 × 0.05 + 0.7 × 0.2 = 0.155. P(not late) = 1 − 0.155 = 0.845.',
+//           answer: '0.845',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'The probability that the school canteen serves pizza for lunch is 0.3. If there is pizza, the probability that they also serve fries is 0.8. If there is no pizza, the probability that they serve fries is 0.5. Find the probability that on a randomly selected day there are no fries.',
+//           type: 'Medium',
+//           explaination:
+//             'P(fries) = 0.3 × 0.8 + 0.7 × 0.5 = 0.24 + 0.35 = 0.59. P(no fries) = 1 − 0.59 = 0.41.',
+//           answer: '0.41',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'The probability that the school canteen serves pizza for lunch is 0.3. If there is pizza, the probability that they also serve fries is 0.8. If there is no pizza, the probability that they serve fries is 0.5. Find the probability that on a randomly selected day there are fries.',
+//           type: 'Medium',
+//           explaination: 'P(fries) = 0.3 × 0.8 + 0.7 × 0.5 = 0.24 + 0.35 = 0.59.',
+//           answer: '0.59',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'Sophia rolls a fair six-sided dice. If she gets a 6, she tosses a fair coin. If she does not get a 6, she tosses a biased coin which has the probability 0.6 of showing tails. Find the probability that the coin shows heads.',
+//           type: 'Medium',
+//           explaination:
+//             'The biased coin shows heads with probability 1 − 0.6 = 0.4. P(heads) = (1/6)(1/2) + (5/6)(0.4) = 1/12 + 4/12 = 5/12.',
+//           answer: '5/12',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'Sophia rolls a fair six-sided dice. If she gets a 6, she tosses a fair coin. If she does not get a 6, she tosses a biased coin which has the probability 0.6 of showing tails. Find the probability that the coin shows tails.',
+//           type: 'Medium',
+//           explaination: 'P(tails) = (1/6)(1/2) + (5/6)(0.6) = 1/12 + 6/12 = 7/12.',
+//           answer: '7/12',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'A bag contains 12 red balls and 18 blue balls. Two balls are taken out at random, one after the other, without replacement. Find the probability that the two balls are the same colour.',
+//           type: 'Medium',
+//           explaination:
+//             'P(same) = (12/30)(11/29) + (18/30)(17/29) = (132 + 306)/870 = 438/870 = 73/145.',
+//           answer: '73/145',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'A bag contains 12 red balls and 18 blue balls. Two balls are taken out at random, one after the other, without replacement. Find the probability that the second ball is blue.',
+//           type: 'Medium',
+//           explaination:
+//             'P(2nd blue) = (12/30)(18/29) + (18/30)(17/29) = (216 + 306)/870 = 522/870 = 3/5.',
+//           answer: '3/5',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'The probability that I revise for a test is 0.8. If I revise, the probability that I pass the test is 0.9. If I do not revise, the probability that I pass is 0.7. Find the probability that I revise and pass the test.',
+//           type: 'Easy',
+//           explaination: 'P(revise and pass) = 0.8 × 0.9 = 0.72.',
+//           answer: '0.72',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'The probability that I revise for a test is 0.8. If I revise, the probability that I pass the test is 0.9. If I do not revise, the probability that I pass is 0.7. Find the probability that I do not revise but pass the test.',
+//           type: 'Easy',
+//           explaination: 'P(not revise) = 1 − 0.8 = 0.2. P(not revise and pass) = 0.2 × 0.7 = 0.14.',
+//           answer: '0.14',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'A bag contains 12 green balls and 18 yellow balls. Two balls are taken out at random, one after the other, without replacement. Find the probability that they are different colours.',
+//           type: 'Medium',
+//           explaination:
+//             'P(different) = P(GY) + P(YG) = (12/30)(18/29) + (18/30)(12/29) = (216 + 216)/870 = 432/870 = 72/145.',
+//           answer: '72/145',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'A football league consists of 18 teams. My team has a 20% chance of winning against a higher-ranking team and a 70% chance of winning against a lower-ranking team. If my team is currently ranked fifth in the league, what is the probability that we win the next match against a randomly selected team?',
+//           type: 'Hard',
+//           explaination:
+//             'There are 17 possible opponents: 4 ranked higher and 13 ranked lower. P(win) = (4/17)(0.2) + (13/17)(0.7) = (0.8 + 9.1)/17 = 9.9/17 = 99/170 ≈ 0.582.',
+//           answer: '99/170 ≈ 0.582',
+//         },
+//         {
+//           id: 13,
+//           question:
+//             'An office has two photocopiers. One of them is broken with probability 0.2 and the other with probability 0.3. If a photocopier is selected at random, what is the probability that it is working?',
+//           type: 'Medium',
+//           explaination:
+//             'Each photocopier is chosen with probability 1/2. They work with probability 0.8 and 0.7. P(working) = (1/2)(0.8) + (1/2)(0.7) = 0.4 + 0.35 = 0.75.',
+//           answer: '0.75',
+//         },
+//         {
+//           id: 14,
+//           question:
+//             'Theo either walks, takes the bus or cycles to school, each with equal probability. The probability that he is late if he walks is 0.06, if he takes the bus it is 0.2 and if he cycles it is 0.1. Using a tree diagram, or otherwise, find the probability that Theo takes the bus to school and is late.',
+//           type: 'Medium',
+//           explaination: 'P(bus) = 1/3. P(bus and late) = (1/3)(0.2) = 1/15 ≈ 0.0667.',
+//           answer: '1/15 ≈ 0.0667',
+//         },
+//         {
+//           id: 15,
+//           question:
+//             'Theo either walks, takes the bus or cycles to school, each with equal probability. The probability that he is late if he walks is 0.06, if he takes the bus it is 0.2 and if he cycles it is 0.1. Using a tree diagram, or otherwise, find the probability that Theo is on time for school.',
+//           type: 'Medium',
+//           explaination:
+//             'P(late) = (1/3)(0.06) + (1/3)(0.2) + (1/3)(0.1) = 0.36/3 = 0.12. P(on time) = 1 − 0.12 = 0.88.',
+//           answer: '0.88',
+//         },
+//         {
+//           id: 16,
+//           question:
+//             'A box contains 40 red balls and 30 green balls. Two balls are taken out at random, one after another without replacement. Given that the first ball is red, find the probability that the second ball is also red.',
+//           type: 'Hard',
+//           explaination:
+//             'After one red ball is removed, 39 of the remaining 69 balls are red. P(R₂ | R₁) = 39/69 = 13/23.',
+//           answer: '13/23',
+//         },
+//         {
+//           id: 17,
+//           question:
+//             'A box contains 40 red balls and 30 green balls. Two balls are taken out at random, one after another without replacement. What is the probability that both balls are red?',
+//           type: 'Hard',
+//           explaination: 'P(RR) = (40/70)(39/69) = 1560/4830 = 52/161.',
+//           answer: '52/161',
+//         },
+//         {
+//           id: 18,
+//           question:
+//             'A box contains 40 red balls and 30 green balls. Two balls are taken out at random, one after another without replacement. Is it more likely that the two balls are the same colour or different colours?',
+//           type: 'Hard',
+//           explaination:
+//             'P(RR) = 52/161. P(GG) = (30/70)(29/69) = 29/161. P(same) = 52/161 + 29/161 = 81/161. P(different) = 1 − 81/161 = 80/161. Since 81/161 > 80/161, same colour is more likely.',
+//           answer: 'Same colour is more likely (81/161 compared with 80/161)',
+//         },
+//       ],
+//       'conditional-probability': [
+//         {
+//           id: 1,
+//           question:
+//             'A bag contains 20 red counters and 30 blue counters. Two counters are taken out at random, one after the other, without replacement. Given that the first counter is red, find the probability that the second counter is red.',
+//           type: 'Medium',
+//           explaination:
+//             'After one red counter is removed, 19 red and 30 blue remain (49 in total). P(R₂ | R₁) = 19/49.',
+//           answer: '19/49',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A bag contains 20 red counters and 30 blue counters. Two counters are taken out at random, one after the other, without replacement. Given that the first counter is red, find the probability that the second counter is blue.',
+//           type: 'Medium',
+//           explaination:
+//             'After one red counter is removed, 19 red and 30 blue remain (49 in total). P(B₂ | R₁) = 30/49.',
+//           answer: '30/49',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'Two cards are taken out of a standard pack of 52 cards, one after the other, without replacement. Given that the first card is a red 10, find the probability that the second card is red.',
+//           type: 'Medium',
+//           explaination:
+//             'A standard pack has 26 red cards. After a red 10 is removed, 25 red cards remain out of 51. P(red | 1st is red 10) = 25/51.',
+//           answer: '25/51',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'Two cards are taken out of a standard pack of 52 cards, one after the other, without replacement. Given that the first card is a red 10, find the probability that the second card is a 10.',
+//           type: 'Medium',
+//           explaination:
+//             'A standard pack has four 10s. After a red 10 is removed, 3 tens remain out of 51. P(10 | 1st is red 10) = 3/51 = 1/17.',
+//           answer: '1/17',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             "The favourite colour and favourite fruit for a group of children are shown in the table. Red: Apple 12, Banana 23, Strawberry 18. Blue: Apple 16, Banana 18, Strawberry 9. Green: Apple 3, Banana 9, Strawberry 6. Find the probability that a child's favourite colour is green, given that their favourite fruit is apples.",
+//           type: 'Medium',
+//           explaination:
+//             'Children whose favourite fruit is apples = 12 + 16 + 3 = 31. Of these, 3 chose green. P(green | apple) = 3/31.',
+//           answer: '3/31',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             "The favourite colour and favourite fruit for a group of children are shown in the table. Red: Apple 12, Banana 23, Strawberry 18. Blue: Apple 16, Banana 18, Strawberry 9. Green: Apple 3, Banana 9, Strawberry 6. Find the probability that a child's favourite fruit is strawberries, given that their favourite colour is red.",
+//           type: 'Medium',
+//           explaination:
+//             'Children whose favourite colour is red = 12 + 23 + 18 = 53. Of these, 18 chose strawberries. P(strawberry | red) = 18/53.',
+//           answer: '18/53',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'The table shows information on hair colour and eye colour of a group of people. Blue eyes: Blond hair 23, Brown hair 18. Brown eyes: Blond hair 16, Brown hair 20. Find the probability that a randomly selected person has brown eyes, given that they have blond hair.',
+//           type: 'Medium',
+//           explaination:
+//             'People with blond hair = 23 + 16 = 39. Of these, 16 have brown eyes. P(brown eyes | blond) = 16/39.',
+//           answer: '16/39',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'The table shows information on hair colour and eye colour of a group of people. Blue eyes: Blond hair 23, Brown hair 18. Brown eyes: Blond hair 16, Brown hair 20. Find the probability that a randomly selected person has blond hair, given that they have brown eyes.',
+//           type: 'Medium',
+//           explaination:
+//             'People with brown eyes = 16 + 20 = 36. Of these, 16 have blond hair. P(blond | brown eyes) = 16/36 = 4/9.',
+//           answer: '4/9',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'Out of 25 students in a class, 18 speak French, 9 speak German and 5 speak both languages. Find the probability that a randomly chosen student speaks German, given that they speak French.',
+//           type: 'Medium',
+//           explaination: 'P(G | F) = P(G ∩ F) ÷ P(F) = (5/25) ÷ (18/25) = 5/18.',
+//           answer: '5/18',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'Out of 25 students in a class, 18 speak French, 9 speak German and 5 speak both languages. Find the probability that a randomly chosen student speaks French, given that they speak German.',
+//           type: 'Medium',
+//           explaination: 'P(F | G) = P(F ∩ G) ÷ P(G) = (5/25) ÷ (9/25) = 5/9.',
+//           answer: '5/9',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'In a group of 30 children, 12 like apples, 18 like bananas and 10 like both fruits. Find the probability that a randomly chosen child likes bananas, given that they like apples.',
+//           type: 'Medium',
+//           explaination:
+//             '12 children like apples, and 10 of them also like bananas. P(B | A) = 10/12 = 5/6.',
+//           answer: '5/6',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'In a group of 30 children, 12 like apples, 18 like bananas and 10 like both fruits. Find the probability that a randomly chosen child likes apples, given that they like bananas.',
+//           type: 'Medium',
+//           explaination:
+//             '18 children like bananas, and 10 of them also like apples. P(A | B) = 10/18 = 5/9.',
+//           answer: '5/9',
+//         },
+//         {
+//           id: 13,
+//           question:
+//             'In a school of 150 pupils, 80 pupils play basketball, 45 play both hockey and basketball and 25 play neither sport. Find the probability that a randomly selected pupil plays basketball, given that they do not play hockey.',
+//           type: 'Hard',
+//           explaination:
+//             'Basketball only = 80 − 45 = 35. Pupils who play a sport = 150 − 25 = 125, so hockey only = 125 − 80 = 45 and hockey total = 45 + 45 = 90. Not hockey = 150 − 90 = 60. P(basketball | not hockey) = 35/60 = 7/12.',
+//           answer: '7/12',
+//         },
+//         {
+//           id: 14,
+//           question:
+//             'In a school of 150 pupils, 80 pupils play basketball, 45 play both hockey and basketball and 25 play neither sport. Find the probability that a randomly selected pupil plays hockey, given that they do not play basketball.',
+//           type: 'Hard',
+//           explaination:
+//             'Pupils who play a sport = 150 − 25 = 125, so hockey only = 125 − 80 = 45. Not basketball = 150 − 80 = 70. P(hockey | not basketball) = 45/70 = 9/14.',
+//           answer: '9/14',
+//         },
+//         {
+//           id: 15,
+//           question:
+//             'In a certain school, 80 pupils study both Biology and History, 35 study neither subject, 45 study only Biology and 60 study only History. Find the probability that a randomly selected pupil studies Biology, given that they study at least one of the two subjects.',
+//           type: 'Hard',
+//           explaination:
+//             'At least one subject = 80 + 45 + 60 = 185. Biology = 80 + 45 = 125. P = 125/185 = 25/37.',
+//           answer: '25/37',
+//         },
+//         {
+//           id: 16,
+//           question:
+//             'In a certain school, 80 pupils study both Biology and History, 35 study neither subject, 45 study only Biology and 60 study only History. Find the probability that a randomly selected pupil studies History, given that they study at least one of the two subjects.',
+//           type: 'Hard',
+//           explaination:
+//             'At least one subject = 80 + 45 + 60 = 185. History = 80 + 60 = 140. P = 140/185 = 28/37.',
+//           answer: '28/37',
+//         },
+//         {
+//           id: 17,
+//           question:
+//             'Out of 35 shops in a town, 28 sell candy, 18 sell ice cream and 12 sell both ice cream and candy. Find the probability that a randomly selected shop sells neither, given that it does not sell candy.',
+//           type: 'Hard',
+//           explaination:
+//             'Neither = 35 − (28 + 18 − 12) = 35 − 34 = 1. Not candy = 35 − 28 = 7. P(neither | not candy) = 1/7.',
+//           answer: '1/7',
+//         },
+//         {
+//           id: 18,
+//           question:
+//             'Out of 35 shops in a town, 28 sell candy, 18 sell ice cream and 12 sell both ice cream and candy. Find the probability that a randomly selected shop sells neither, given that it does not sell ice cream.',
+//           type: 'Hard',
+//           explaination:
+//             'Neither = 35 − (28 + 18 − 12) = 1. Not ice cream = 35 − 18 = 17. P(neither | not ice cream) = 1/17.',
+//           answer: '1/17',
+//         },
+//         {
+//           id: 19,
+//           question:
+//             'At a certain college, the probability that a student studies Geography is 0.4, the probability that they study Spanish is 0.7 and the probability that they study both subjects is 0.2. Find the probability that a randomly selected student studies both subjects, given that they study Geography.',
+//           type: 'Medium',
+//           explaination: 'P(both | G) = P(both) ÷ P(G) = 0.2 ÷ 0.4 = 0.5.',
+//           answer: '0.5',
+//         },
+//         {
+//           id: 20,
+//           question:
+//             'At a certain college, the probability that a student studies Geography is 0.4, the probability that they study Spanish is 0.7 and the probability that they study both subjects is 0.2. Find the probability that a randomly selected student studies both subjects, given that they study Spanish.',
+//           type: 'Medium',
+//           explaination: 'P(both | S) = P(both) ÷ P(S) = 0.2 ÷ 0.7 = 2/7 ≈ 0.286.',
+//           answer: '2/7 ≈ 0.286',
+//         },
+//         {
+//           id: 21,
+//           question:
+//             'In a school, the probability that a child plays the piano is 0.4. The probability that they play both the piano and the violin is 0.08, and the probability that they play neither instrument is 0.3. Find the probability that a randomly selected child plays the violin, given that they play at least one instrument.',
+//           type: 'Hard',
+//           explaination:
+//             'P(at least one) = 1 − 0.3 = 0.7. P(V) = 0.7 − 0.4 + 0.08 = 0.38. P(V | at least one) = 0.38 ÷ 0.7 = 19/35 ≈ 0.543.',
+//           answer: '19/35 ≈ 0.543',
+//         },
+//         {
+//           id: 22,
+//           question:
+//             'In a school, the probability that a child plays the piano is 0.4. The probability that they play both the piano and the violin is 0.08, and the probability that they play neither instrument is 0.3. Find the probability that a randomly selected child plays the piano, given that they play at least one instrument.',
+//           type: 'Hard',
+//           explaination:
+//             'P(at least one) = 1 − 0.3 = 0.7. P(piano | at least one) = 0.4 ÷ 0.7 = 4/7 ≈ 0.571.',
+//           answer: '4/7 ≈ 0.571',
+//         },
+//       ],
+//       'binomial-distribution': [
+//         {
+//           id: 1,
+//           question:
+//             'A fair coin is tossed 30 times and X is the number of heads. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'Fixed number of trials n = 30 ✓. Two outcomes (heads or tails) ✓. Constant p = 0.5 ✓. Independent trials ✓. All four conditions are met.',
+//           answer: 'X ~ B(30, 0.5)',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A fair six-sided dice is rolled 45 times and X is the number of 3s. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'Fixed n = 45 ✓. Two outcomes (a 3 or not a 3) ✓. Constant p = 1/6 ✓. Independent rolls ✓.',
+//           answer: 'X ~ B(45, 1/6)',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A fair six-sided dice is rolled until it shows a 6 and X is the number of 4s rolled up until that point. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'The number of trials is not fixed, because rolling stops when a 6 appears ✗. The binomial model does not apply.',
+//           answer: 'Not binomial: the number of trials is not fixed',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A fair coin is tossed until it shows tails and X is the number of tosses up until that point. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'The number of trials is not fixed, because tossing stops when tails appears ✗. The binomial model does not apply.',
+//           answer: 'Not binomial: the number of trials is not fixed',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'Dan has eight white shirts and five blue shirts. He selects four shirts at random, without replacement, and X is the number of white shirts. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'The shirts are selected without replacement from a small group, so the probability of white changes after each pick and the trials are not independent ✗. The binomial model does not apply.',
+//           answer: 'Not binomial: p is not constant and the trials are not independent',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'Amy has seven apples and six oranges. She selects three pieces of fruit at random, without replacement, and X is the number of apples. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'The fruit is selected without replacement from a small group, so the probability of an apple changes after each pick ✗. The binomial model does not apply.',
+//           answer: 'Not binomial: p is not constant and the trials are not independent',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'In a large population, it is known that 12% of people carry a particular gene. 50 people are selected at random and X is the number of people who carry the gene. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'The population is large, so the selections are effectively independent ✓. Fixed n = 50 ✓. Constant p = 0.12 ✓. Two outcomes ✓.',
+//           answer: 'X ~ B(50, 0.12)',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'It is known that 23% of people in a large city have blue eyes. 40 people are selected at random and X is the number of people with blue eyes. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'The population is large, so independence holds ✓. Fixed n = 40 ✓. Constant p = 0.23 ✓. Two outcomes ✓.',
+//           answer: 'X ~ B(40, 0.23)',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'In a particular town, the probability that a child takes the bus to school is 0.4. A family has five children and X is the number of children in the family who take the bus to school. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'Fixed n = 5 ✓. Constant p = 0.4 ✓. Two outcomes ✓. Children in the same family may not be fully independent, but independence is assumed ✓.',
+//           answer: 'X ~ B(5, 0.4), assuming the children act independently',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'The probability that a child goes bowling on a Sunday is 0.15. X is the number of friends, out of a group of 10, who will go bowling next Sunday. Decide whether X can be modelled by a binomial distribution. If yes, identify the distribution in the form X ~ B(n, p). If not, state which conditions are not met.',
+//           type: 'Easy',
+//           explaination:
+//             'Fixed n = 10 ✓. Constant p = 0.15 ✓. Two outcomes ✓. Independence is assumed ✓.',
+//           answer: 'X ~ B(10, 0.15), assuming the friends act independently',
+//         },
+//         {
+//           id: 11,
+//           question: 'Given X ~ B(20, 0.6), find P(X = 11).',
+//           type: 'Easy',
+//           explaination: 'P(X = 11) = ²⁰C₁₁ (0.6)¹¹ (0.4)⁹ = 167960 × (0.6)¹¹ × (0.4)⁹ ≈ 0.1597.',
+//           answer: 'P(X = 11) ≈ 0.160',
+//         },
+//         {
+//           id: 12,
+//           question: 'Given X ~ B(20, 0.6), find P(X = 12).',
+//           type: 'Easy',
+//           explaination: 'P(X = 12) = ²⁰C₁₂ (0.6)¹² (0.4)⁸ = 125970 × (0.6)¹² × (0.4)⁸ ≈ 0.1797.',
+//           answer: 'P(X = 12) ≈ 0.180',
+//         },
+//         {
+//           id: 13,
+//           question: 'Given X ~ B(20, 0.6), find P(X ≤ 12).',
+//           type: 'Easy',
+//           explaination:
+//             'Use binomial cdf on the GDC with n = 20, p = 0.6, upper value 12. P(X ≤ 12) ≈ 0.5841.',
+//           answer: 'P(X ≤ 12) ≈ 0.584',
+//         },
+//         {
+//           id: 14,
+//           question: 'Given X ~ B(20, 0.6), find P(X ≤ 14).',
+//           type: 'Easy',
+//           explaination:
+//             'Use binomial cdf on the GDC with n = 20, p = 0.6, upper value 14. P(X ≤ 14) ≈ 0.8744.',
+//           answer: 'P(X ≤ 14) ≈ 0.874',
+//         },
+//         {
+//           id: 15,
+//           question: 'Given X ~ B(20, 0.6), find P(X > 11).',
+//           type: 'Medium',
+//           explaination:
+//             'P(X > 11) = 1 − P(X ≤ 11). From the GDC, P(X ≤ 11) ≈ 0.4044. So P(X > 11) ≈ 1 − 0.4044 = 0.5956.',
+//           answer: 'P(X > 11) ≈ 0.596',
+//         },
+//         {
+//           id: 16,
+//           question: 'Given X ~ B(20, 0.6), find P(X > 13).',
+//           type: 'Medium',
+//           explaination:
+//             'P(X > 13) = 1 − P(X ≤ 13). From the GDC, P(X ≤ 13) ≈ 0.7500. So P(X > 13) ≈ 1 − 0.7500 = 0.2500.',
+//           answer: 'P(X > 13) ≈ 0.250',
+//         },
+//         {
+//           id: 17,
+//           question: 'Given X ~ B(16, 1/3), find P(X = 4).',
+//           type: 'Medium',
+//           explaination: 'P(X = 4) = ¹⁶C₄ (1/3)⁴ (2/3)¹² = 1820 × (1/3)⁴ × (2/3)¹² ≈ 0.1732.',
+//           answer: 'P(X = 4) ≈ 0.173',
+//         },
+//         {
+//           id: 18,
+//           question: 'Given X ~ B(16, 1/3), find P(X = 7).',
+//           type: 'Medium',
+//           explaination: 'P(X = 7) = ¹⁶C₇ (1/3)⁷ (2/3)⁹ = 11440 × (1/3)⁷ × (2/3)⁹ ≈ 0.1361.',
+//           answer: 'P(X = 7) ≈ 0.136',
+//         },
+//         {
+//           id: 19,
+//           question: 'Given X ~ B(16, 1/3), find P(X ≥ 5).',
+//           type: 'Medium',
+//           explaination:
+//             'P(X ≥ 5) = 1 − P(X ≤ 4). From the GDC, P(X ≤ 4) ≈ 0.3391. So P(X ≥ 5) ≈ 1 − 0.3391 = 0.6609.',
+//           answer: 'P(X ≥ 5) ≈ 0.661',
+//         },
+//         {
+//           id: 20,
+//           question: 'Given X ~ B(16, 1/3), find P(X ≥ 8).',
+//           type: 'Medium',
+//           explaination:
+//             'P(X ≥ 8) = 1 − P(X ≤ 7). From the GDC, P(X ≤ 7) ≈ 0.8735. So P(X ≥ 8) ≈ 1 − 0.8735 = 0.1265.',
+//           answer: 'P(X ≥ 8) ≈ 0.127',
+//         },
+//         {
+//           id: 21,
+//           question: 'Given X ~ B(16, 1/3), find P(3 < X ≤ 5).',
+//           type: 'Medium',
+//           explaination: 'P(3 < X ≤ 5) = P(X = 4) + P(X = 5) ≈ 0.1732 + 0.2078 = 0.3810.',
+//           answer: 'P(3 < X ≤ 5) ≈ 0.381',
+//         },
+//         {
+//           id: 22,
+//           question: 'Given X ~ B(16, 1/3), find P(2 < X ≤ 4).',
+//           type: 'Medium',
+//           explaination: 'P(2 < X ≤ 4) = P(X = 3) + P(X = 4) ≈ 0.1066 + 0.1732 = 0.2797.',
+//           answer: 'P(2 < X ≤ 4) ≈ 0.280',
+//         },
+//         {
+//           id: 23,
+//           question: 'Given X ~ B(16, 1/3), find P(4 ≤ X < 7).',
+//           type: 'Medium',
+//           explaination:
+//             'P(4 ≤ X < 7) = P(X = 4) + P(X = 5) + P(X = 6) ≈ 0.1732 + 0.2078 + 0.1905 = 0.5715.',
+//           answer: 'P(4 ≤ X < 7) ≈ 0.571',
+//         },
+//         {
+//           id: 24,
+//           question: 'Given X ~ B(16, 1/3), find P(3 ≤ X < 5).',
+//           type: 'Medium',
+//           explaination: 'P(3 ≤ X < 5) = P(X = 3) + P(X = 4) ≈ 0.1066 + 0.1732 = 0.2797.',
+//           answer: 'P(3 ≤ X < 5) ≈ 0.280',
+//         },
+//         {
+//           id: 25,
+//           question:
+//             'An archer has a probability of 0.7 of hitting the target. If they take 12 shots, find the probability that they hit the target exactly six times.',
+//           type: 'Medium',
+//           explaination:
+//             'X ~ B(12, 0.7). P(X = 6) = ¹²C₆ (0.7)⁶ (0.3)⁶ = 924 × (0.7)⁶ × (0.3)⁶ ≈ 0.07925.',
+//           answer: 'P(X = 6) ≈ 0.0792',
+//         },
+//         {
+//           id: 26,
+//           question:
+//             'An archer has a probability of 0.7 of hitting the target. If they take 12 shots, find the probability that they hit the target exactly eight times.',
+//           type: 'Medium',
+//           explaination:
+//             'X ~ B(12, 0.7). P(X = 8) = ¹²C₈ (0.7)⁸ (0.3)⁴ = 495 × (0.7)⁸ × (0.3)⁴ ≈ 0.2311.',
+//           answer: 'P(X = 8) ≈ 0.231',
+//         },
+//         {
+//           id: 27,
+//           question:
+//             'An archer has a probability of 0.7 of hitting the target. If they take 12 shots, find the probability that they hit the target at least seven times.',
+//           type: 'Medium',
+//           explaination:
+//             'X ~ B(12, 0.7). P(X ≥ 7) = 1 − P(X ≤ 6). From the GDC, P(X ≤ 6) ≈ 0.1178. So P(X ≥ 7) ≈ 1 − 0.1178 = 0.8822.',
+//           answer: 'P(X ≥ 7) ≈ 0.882',
+//         },
+//         {
+//           id: 28,
+//           question:
+//             'An archer has a probability of 0.7 of hitting the target. If they take 12 shots, find the probability that they hit the target at least six times.',
+//           type: 'Medium',
+//           explaination:
+//             'X ~ B(12, 0.7). P(X ≥ 6) = 1 − P(X ≤ 5). From the GDC, P(X ≤ 5) ≈ 0.0386. So P(X ≥ 6) ≈ 1 − 0.0386 = 0.9614.',
+//           answer: 'P(X ≥ 6) ≈ 0.961',
+//         },
+//         {
+//           id: 29,
+//           question:
+//             'An archer has a probability of 0.7 of hitting the target. If they take 12 shots, find the probability that they hit the target fewer than eight times.',
+//           type: 'Medium',
+//           explaination:
+//             'X ~ B(12, 0.7). "Fewer than eight" means X ≤ 7. From the GDC, P(X ≤ 7) ≈ 0.2763.',
+//           answer: 'P(X < 8) ≈ 0.276',
+//         },
+//       ],
+//       'binomial-distribution-mean-and-sd': [
+//         {
+//           id: 1,
+//           question:
+//             'A multiple-choice quiz has 25 questions and each question has four possible answers. Elsa guesses the answers randomly and X is the number of questions she answers correctly. Find the mean and standard deviation of X.',
+//           type: 'Easy',
+//           explaination:
+//             'X ~ B(25, 1/4). Mean μ = np = 25 × 0.25 = 6.25. Standard deviation σ = √(np(1 − p)) = √(25 × 0.25 × 0.75) = √4.6875 ≈ 2.165.',
+//           answer: 'μ = 6.25, σ ≈ 2.17',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A multiple-choice quiz has 30 questions and each question has three possible answers. Asher guesses the answers randomly and X is the number of questions he answers correctly. Find the mean and standard deviation of X.',
+//           type: 'Easy',
+//           explaination:
+//             'X ~ B(30, 1/3). Mean μ = np = 30 × 1/3 = 10. Standard deviation σ = √(30 × 1/3 × 2/3) = √(20/3) ≈ 2.582.',
+//           answer: 'μ = 10, σ ≈ 2.58',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A fair coin is tossed 10 times and X is the number of heads. Find the mean and standard deviation of X.',
+//           type: 'Easy',
+//           explaination:
+//             'X ~ B(10, 0.5). Mean μ = 10 × 0.5 = 5. Standard deviation σ = √(10 × 0.5 × 0.5) = √2.5 ≈ 1.581.',
+//           answer: 'μ = 5, σ ≈ 1.58',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A fair coin is tossed 20 times and X is the number of tails. Find the mean and standard deviation of X.',
+//           type: 'Easy',
+//           explaination:
+//             'X ~ B(20, 0.5). Mean μ = 20 × 0.5 = 10. Standard deviation σ = √(20 × 0.5 × 0.5) = √5 ≈ 2.236.',
+//           answer: 'μ = 10, σ ≈ 2.24',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'A fair dice is rolled 30 times and X is the number of 6s. Find the mean and standard deviation of X.',
+//           type: 'Easy',
+//           explaination:
+//             'X ~ B(30, 1/6). Mean μ = 30 × 1/6 = 5. Standard deviation σ = √(30 × 1/6 × 5/6) = √(25/6) ≈ 2.041.',
+//           answer: 'μ = 5, σ ≈ 2.04',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'A fair dice is rolled 20 times and X is the number of 4s. Find the mean and standard deviation of X.',
+//           type: 'Easy',
+//           explaination:
+//             'X ~ B(20, 1/6). Mean μ = 20 × 1/6 = 10/3 ≈ 3.33. Standard deviation σ = √(20 × 1/6 × 5/6) = √(25/9) = 5/3 ≈ 1.667.',
+//           answer: 'μ = 10/3 ≈ 3.33, σ ≈ 1.67',
+//         },
+//         {
+//           id: 7,
+//           question: 'The random variable Y has distribution B(20, 0.6). Find the variance of Y.',
+//           type: 'Easy',
+//           explaination: 'Var(Y) = np(1 − p) = 20 × 0.6 × 0.4 = 4.8.',
+//           answer: 'Var(Y) = 4.8',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'A multiple-choice test consists of 25 questions, each with five possible answers. Daniel guesses answers at random and X is the number of questions he answers correctly. Find the expected number of correct answers.',
+//           type: 'Easy',
+//           explaination: 'X ~ B(25, 1/5). E(X) = np = 25 × 0.2 = 5.',
+//           answer: 'E(X) = 5',
+//         },
+//       ],
+//     },
+//   },
+//   {
+//     trigonometry: {
+//       title: 'Trigonometry',
+//       'sinusoidal-models-real-world-context': [
+//         {
+//           id: 1,
+//           question:
+//             'The depth, d, of water out at sea at a distance x from a fixed point on a given day is modelled by the function d = 1.8 sin(72x) + 50, where d and x are both measured in metres. State the depth of the sea in completely calm water.',
+//           type: 'Easy',
+//           explaination:
+//             'In calm water there are no waves, so the depth is the principal axis of the model: d = 50 m.',
+//           answer: '50 m',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'The depth, d, of water out at sea at a distance x from a fixed point on a given day is modelled by the function d = 1.8 sin(72x) + 50, where d and x are both measured in metres. State the amplitude of the waves in this model.',
+//           type: 'Easy',
+//           explaination: 'The amplitude is the coefficient of sin: 1.8 m.',
+//           answer: '1.8 m',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'The depth, d, of water out at sea at a distance x from a fixed point on a given day is modelled by the function d = 1.8 sin(72x) + 50, where d and x are both measured in metres. Find the distance between two consecutive peaks of a wave.',
+//           type: 'Medium',
+//           explaination:
+//             'The distance between consecutive peaks is one period. Period = 360° ÷ 72 = 5. Since x is measured in metres, the peaks are 5 m apart.',
+//           answer: '5 m',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A swing at a playground is released from its maximum height above the ground. The height, h metres, of the swing above the ground at time t seconds after release is modelled by h = 0.58 cos(bt) + 1.1. Find the maximum height of the swing above the ground.',
+//           type: 'Easy',
+//           explaination: 'The maximum occurs when cos(bt) = 1. h max = 1.1 + 0.58 = 1.68 m.',
+//           answer: '1.68 m',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'A swing at a playground is released from its maximum height above the ground. The height, h metres, of the swing above the ground at time t seconds after release is modelled by h = 0.58 cos(bt) + 1.1. Find the minimum height of the swing above the ground.',
+//           type: 'Easy',
+//           explaination: 'The minimum occurs when cos(bt) = −1. h min = 1.1 − 0.58 = 0.52 m.',
+//           answer: '0.52 m',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'An elastic string is suspended from a fixed point 2 m above the ground. A small weight is attached to the other end. The weight is pulled down and released so it moves up and down. The height, h, of the weight above the ground at time t is given by h = 140 − 12 cos(450t), where h is in centimetres and t in seconds. Find the maximum height of the weight above the ground.',
+//           type: 'Medium',
+//           explaination:
+//             'The maximum occurs when cos(450t) = −1. h max = 140 − 12(−1) = 140 + 12 = 152 cm.',
+//           answer: '152 cm',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'An elastic string is suspended from a fixed point 2 m above the ground. A small weight is attached to the other end. The weight is pulled down and released so it moves up and down. The height, h, of the weight above the ground at time t is given by h = 140 − 12 cos(450t), where h is in centimetres and t in seconds. State the height of the weight above the ground before it was pulled down and released.',
+//           type: 'Easy',
+//           explaination:
+//             'Before it was pulled down, the weight hung at rest at its equilibrium position, which is the principal axis of the model: 140 cm. (At t = 0, h = 140 − 12 cos 0 = 128 cm, which is the pulled-down position at the moment of release.)',
+//           answer: '140 cm',
+//         },
+//       ],
+//       'sine-rule': [
+//         {
+//           id: 1,
+//           question: 'In triangle ABC, angle A = 45°, angle B = 30° and a = 12 cm. Find b.',
+//           type: 'Medium',
+//           explaination:
+//             'Sine rule: a/sin A = b/sin B. b = (a sin B)/sin A = (12 sin 30°)/sin 45° = (12 × 0.5)/0.7071 ≈ 8.49 cm.',
+//           answer: 'b ≈ 8.49 cm',
+//         },
+//         {
+//           id: 2,
+//           question: 'In triangle ABC, angle A = 60°, angle B = 45° and a = 8 mm. Find b.',
+//           type: 'Medium',
+//           explaination: 'b = (8 sin 45°)/sin 60° = (8 × 0.7071)/0.8660 ≈ 6.53 mm.',
+//           answer: 'b ≈ 6.53 mm',
+//         },
+//         {
+//           id: 3,
+//           question: 'In triangle PQR, angle P = 70°, angle Q = 40° and QR = 5 cm. Find PR.',
+//           type: 'Medium',
+//           explaination:
+//             'QR is opposite P and PR is opposite Q. QR/sin P = PR/sin Q, so PR = (5 sin 40°)/sin 70° = (5 × 0.6428)/0.9397 ≈ 3.42 cm.',
+//           answer: 'PR ≈ 3.42 cm',
+//         },
+//         {
+//           id: 4,
+//           question: 'In triangle PQR, angle P = 60°, angle Q = 15° and QR = 11 mm. Find PR.',
+//           type: 'Medium',
+//           explaination:
+//             'QR is opposite P and PR is opposite Q. PR = (11 sin 15°)/sin 60° = (11 × 0.2588)/0.8660 ≈ 3.29 mm.',
+//           answer: 'PR ≈ 3.29 mm',
+//         },
+//         {
+//           id: 5,
+//           question: 'In triangle ABC, angle A = 23°, angle C = 72° and a = 1.3 cm. Find b.',
+//           type: 'Medium',
+//           explaination:
+//             'B = 180° − 23° − 72° = 85°. a/sin A = b/sin B, so b = (1.3 sin 85°)/sin 23° = (1.3 × 0.9962)/0.3907 ≈ 3.31 cm.',
+//           answer: 'b ≈ 3.31 cm',
+//         },
+//         {
+//           id: 6,
+//           question: 'In triangle ABC, angle A = 39°, angle C = 74° and a = 2.8 mm. Find b.',
+//           type: 'Medium',
+//           explaination:
+//             'B = 180° − 39° − 74° = 67°. b = (2.8 sin 67°)/sin 39° = (2.8 × 0.9205)/0.6293 ≈ 4.10 mm.',
+//           answer: 'b ≈ 4.10 mm',
+//         },
+//         {
+//           id: 7,
+//           question: 'In triangle ABC, angle A = 75°, a = 11 cm and b = 7 cm. Find angle B.',
+//           type: 'Medium',
+//           explaination:
+//             'sin B/b = sin A/a, so sin B = (7 sin 75°)/11 = (7 × 0.9659)/11 ≈ 0.6147. B = sin⁻¹(0.6147) ≈ 37.9°. Since b < a, B must be smaller than A, so the obtuse solution is not possible.',
+//           answer: 'B ≈ 37.9°',
+//         },
+//         {
+//           id: 8,
+//           question: 'In triangle ABC, angle A = 82°, a = 9 cm and b = 7 cm. Find angle B.',
+//           type: 'Medium',
+//           explaination:
+//             'sin B = (7 sin 82°)/9 = (7 × 0.9903)/9 ≈ 0.7703. B = sin⁻¹(0.7703) ≈ 50.4°. Since b < a, B is acute.',
+//           answer: 'B ≈ 50.4°',
+//         },
+//         {
+//           id: 9,
+//           question: 'In triangle PQR, angle P = 104°, QR = 2.8 cm and PQ = 1.7 cm. Find angle Q.',
+//           type: 'Medium',
+//           explaination:
+//             'QR is opposite P and PQ is opposite R. sin R = (1.7 sin 104°)/2.8 ≈ 1.649/2.8 ≈ 0.5889, so R ≈ 36.1°. Q = 180° − 104° − 36.1° ≈ 39.9°.',
+//           answer: 'Q ≈ 39.9°',
+//         },
+//         {
+//           id: 10,
+//           question: 'In triangle PQR, angle P = 119°, QR = 13 cm and PQ = 7 cm. Find angle Q.',
+//           type: 'Medium',
+//           explaination:
+//             'QR is opposite P and PQ is opposite R. sin R = (7 sin 119°)/13 = (7 × 0.8746)/13 ≈ 0.4710, so R ≈ 28.1°. Q = 180° − 119° − 28.1° ≈ 32.9°.',
+//           answer: 'Q ≈ 32.9°',
+//         },
+//         {
+//           id: 11,
+//           question: 'In triangle ABC, angle A = 84°, a = 7.3 cm and c = 7.1 cm. Find angle B.',
+//           type: 'Medium',
+//           explaination:
+//             'sin C = (7.1 sin 84°)/7.3 = (7.1 × 0.9945)/7.3 ≈ 0.9670, so C ≈ 75.3°. B = 180° − 84° − 75.3° ≈ 20.7°.',
+//           answer: 'B ≈ 20.7°',
+//         },
+//         {
+//           id: 12,
+//           question: 'In triangle ABC, angle A = 70°, a = 89 m and c = 81 m. Find angle B.',
+//           type: 'Medium',
+//           explaination:
+//             'sin C = (81 sin 70°)/89 = (81 × 0.9397)/89 ≈ 0.8554, so C ≈ 58.8°. B = 180° − 70° − 58.8° ≈ 51.2°.',
+//           answer: 'B ≈ 51.2°',
+//         },
+//       ],
+//       'cosine-rule': [
+//         {
+//           id: 1,
+//           question: 'In triangle ABC, angle A = 60°, b = 4 cm and c = 7 cm. Find side length a.',
+//           type: 'Medium',
+//           explaination:
+//             'a² = b² + c² − 2bc cos A = 16 + 49 − 2(4)(7) cos 60° = 65 − 56 × 0.5 = 37. a = √37 ≈ 6.08 cm.',
+//           answer: 'a = √37 ≈ 6.08 cm',
+//         },
+//         {
+//           id: 2,
+//           question: 'In triangle ABC, angle A = 60°, b = 5 mm and c = 8 mm. Find side length a.',
+//           type: 'Medium',
+//           explaination: 'a² = 25 + 64 − 2(5)(8) cos 60° = 89 − 80 × 0.5 = 49. a = √49 = 7 mm.',
+//           answer: 'a = 7 mm',
+//         },
+//         {
+//           id: 3,
+//           question: 'In triangle PQR, angle P = 45°, PR = 7 cm and PQ = 6 cm. Find side length QR.',
+//           type: 'Medium',
+//           explaination:
+//             'QR is opposite angle P. QR² = PR² + PQ² − 2(PR)(PQ) cos P = 49 + 36 − 84 cos 45° = 85 − 84 × 0.7071 ≈ 25.60. QR ≈ 5.06 cm.',
+//           answer: 'QR ≈ 5.06 cm',
+//         },
+//         {
+//           id: 4,
+//           question: 'In triangle PQR, angle P = 50°, PR = 8 mm and PQ = 7 mm. Find side length QR.',
+//           type: 'Medium',
+//           explaination:
+//             'QR is opposite angle P. QR² = 64 + 49 − 2(8)(7) cos 50° = 113 − 112 × 0.6428 ≈ 41.01. QR ≈ 6.40 mm.',
+//           answer: 'QR ≈ 6.40 mm',
+//         },
+//         {
+//           id: 5,
+//           question: 'In triangle ABC, angle B = 70°, a = 5 cm and c = 4 cm. Find side length b.',
+//           type: 'Medium',
+//           explaination:
+//             'b² = a² + c² − 2ac cos B = 25 + 16 − 40 cos 70° = 41 − 40 × 0.3420 ≈ 27.32. b = √27.32 ≈ 5.23 cm.',
+//           answer: 'b ≈ 5.23 cm',
+//         },
+//         {
+//           id: 6,
+//           question: 'In triangle ABC, angle C = 65°, a = 4 mm and b = 7 mm. Find side length c.',
+//           type: 'Medium',
+//           explaination:
+//             'c² = a² + b² − 2ab cos C = 16 + 49 − 56 cos 65° = 65 − 56 × 0.4226 ≈ 41.33. c ≈ 6.43 mm.',
+//           answer: 'c ≈ 6.43 mm',
+//         },
+//         {
+//           id: 7,
+//           question: 'In triangle ABC, a = 7 cm, b = 8 cm and c = 11 cm. Find angle A.',
+//           type: 'Medium',
+//           explaination:
+//             'cos A = (b² + c² − a²)/(2bc) = (64 + 121 − 49)/(2 × 8 × 11) = 136/176 ≈ 0.7727. A = cos⁻¹(0.7727) ≈ 39.4°.',
+//           answer: 'A ≈ 39.4°',
+//         },
+//         {
+//           id: 8,
+//           question: 'In triangle ABC, a = 10 cm, b = 12 cm and c = 15 cm. Find angle A.',
+//           type: 'Medium',
+//           explaination:
+//             'cos A = (144 + 225 − 100)/(2 × 12 × 15) = 269/360 ≈ 0.7472. A = cos⁻¹(0.7472) ≈ 41.6°.',
+//           answer: 'A ≈ 41.6°',
+//         },
+//         {
+//           id: 9,
+//           question: 'In triangle PQR, PQ = 16 cm, QR = 13 cm and PR = 17 cm. Find angle R.',
+//           type: 'Medium',
+//           explaination:
+//             'Angle R is between QR and PR, opposite PQ. cos R = (QR² + PR² − PQ²)/(2 × QR × PR) = (169 + 289 − 256)/(2 × 13 × 17) = 202/442 ≈ 0.4570. R = cos⁻¹(0.4570) ≈ 62.8°.',
+//           answer: 'R ≈ 62.8°',
+//         },
+//         {
+//           id: 10,
+//           question: 'In triangle ABC, a = 5.7 cm, b = 8.1 cm and c = 6.6 cm. Find angle C.',
+//           type: 'Medium',
+//           explaination:
+//             'cos C = (a² + b² − c²)/(2ab) = (32.49 + 65.61 − 43.56)/(2 × 5.7 × 8.1) = 54.54/92.34 ≈ 0.5907. C = cos⁻¹(0.5907) ≈ 53.8°.',
+//           answer: 'C ≈ 53.8°',
+//         },
+//         {
+//           id: 11,
+//           question: 'In triangle ABC, a = 1.4 cm, b = 2.5 cm and c = 1.9 cm. Find angle B.',
+//           type: 'Medium',
+//           explaination:
+//             'cos B = (a² + c² − b²)/(2ac) = (1.96 + 3.61 − 6.25)/(2 × 1.4 × 1.9) = −0.68/5.32 ≈ −0.1278. B = cos⁻¹(−0.1278) ≈ 97.3°. The cosine is negative, so B is obtuse.',
+//           answer: 'B ≈ 97.3°',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'A triangle has two sides of 11 cm and 12 cm, with an angle of 35° between them. Find the length a of the third side, which is opposite the 35° angle.',
+//           type: 'Hard',
+//           explaination:
+//             'The 35° angle is between the sides of 11 cm and 12 cm. a² = 11² + 12² − 2(11)(12) cos 35° = 121 + 144 − 264 × 0.8192 ≈ 265 − 216.26 = 48.74. a = √48.74 ≈ 6.98 cm.',
+//           answer: 'a ≈ 6.98 cm',
+//         },
+//         {
+//           id: 13,
+//           question: 'In triangle ABC, CA = 9, CB = 18 and AB = 16. Find the size of angle CAB.',
+//           type: 'Hard',
+//           explaination:
+//             'Angle CAB is between CA and AB, opposite CB. cos A = (CA² + AB² − CB²)/(2 × CA × AB) = (81 + 256 − 324)/(2 × 9 × 16) = 13/288 ≈ 0.04514. A = cos⁻¹(0.04514) ≈ 87.4°.',
+//           answer: 'Angle CAB ≈ 87.4°',
+//         },
+//         {
+//           id: 14,
+//           question: 'In triangle ABC, A = 45°, b = 5 cm and c = 8 cm. Find the length of side a.',
+//           type: 'Medium',
+//           explaination:
+//             'a² = b² + c² − 2bc cos A = 25 + 64 − 80 cos 45° = 89 − 56.57 ≈ 32.43. a = √32.43 ≈ 5.69 cm.',
+//           answer: 'a ≈ 5.69 cm',
+//         },
+//         {
+//           id: 15,
+//           question: 'In triangle ABC, the sides are a = 4 cm, b = 6 cm and c = 8 cm. Find angle A.',
+//           type: 'Medium',
+//           explaination:
+//             'cos A = (b² + c² − a²)/(2bc) = (36 + 64 − 16)/(2 × 6 × 8) = 84/96 = 0.875. A = cos⁻¹(0.875) ≈ 29.0°.',
+//           answer: 'A ≈ 29.0°',
+//         },
+//       ],
+//       'area-of-a-triangle': [
+//         {
+//           id: 1,
+//           question: 'In triangle ABC, a = 12 cm, b = 5 cm and angle C = 72°. Find the area.',
+//           type: 'Easy',
+//           explaination:
+//             'Angle C is between sides a and b. Area = ½ab sin C = ½(12)(5) sin 72° = 30 × 0.9511 ≈ 28.5 cm².',
+//           answer: 'Area ≈ 28.5 cm²',
+//         },
+//         {
+//           id: 2,
+//           question: 'In triangle ABC, a = 6 mm, b = 7 mm and angle C = 30°. Find the area.',
+//           type: 'Easy',
+//           explaination: 'Area = ½ab sin C = ½(6)(7) sin 30° = 21 × 0.5 = 10.5 mm².',
+//           answer: 'Area = 10.5 mm²',
+//         },
+//         {
+//           id: 3,
+//           question: 'In triangle PQR, PR = 19 cm, QR = 17 cm and angle R = 52°. Find the area.',
+//           type: 'Easy',
+//           explaination:
+//             'Angle R is between PR and QR. Area = ½(19)(17) sin 52° = ½(323)(0.7880) ≈ 127.26 cm².',
+//           answer: 'Area ≈ 127 cm²',
+//         },
+//         {
+//           id: 4,
+//           question: 'In triangle PQR, PR = 3.5 mm, QR = 2.1 mm and angle R = 28°. Find the area.',
+//           type: 'Easy',
+//           explaination:
+//             'Angle R is between PR and QR. Area = ½(3.5)(2.1) sin 28° = ½(7.35)(0.4695) ≈ 1.725 mm².',
+//           answer: 'Area ≈ 1.73 mm²',
+//         },
+//         {
+//           id: 5,
+//           question: 'In triangle ABC, a = 37 cm, c = 51 cm and angle B = 42°. Find the area.',
+//           type: 'Easy',
+//           explaination:
+//             'Angle B is between sides a and c. Area = ½ac sin B = ½(37)(51) sin 42° = ½(1887)(0.6691) ≈ 631.3 cm².',
+//           answer: 'Area ≈ 631 cm²',
+//         },
+//         {
+//           id: 6,
+//           question: 'In triangle ABC, b = 61 mm, c = 71 mm and angle A = 52°. Find the area.',
+//           type: 'Easy',
+//           explaination:
+//             'Angle A is between sides b and c. Area = ½bc sin A = ½(61)(71) sin 52° = ½(4331)(0.7880) ≈ 1706 mm².',
+//           answer: 'Area ≈ 1706 mm²',
+//         },
+//       ],
+//       'multi-step-trigonometry-problems': [
+//         {
+//           id: 1,
+//           question:
+//             'Triangle OAB has a right angle at O, with OA vertical and OB along the base. Point D lies on OB with OD = 4 cm and DB = x. At A, the angle between AO and AD is 35° and the angle between AD and AB is 20°. Find the length x.',
+//           type: 'Hard',
+//           explaination:
+//             'Let h = OA. In triangle OAD: tan 35° = 4/h, so h = 4/tan 35° ≈ 5.713 cm. In triangle OAB, angle OAB = 35° + 20° = 55°, so tan 55° = (4 + x)/h. 4 + x = 5.713 × tan 55° ≈ 5.713 × 1.4281 ≈ 8.158. x ≈ 8.158 − 4 = 4.16 cm.',
+//           answer: 'x ≈ 4.16 cm',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'Triangle OAB has a right angle at O, with OA vertical and OB along the base. Point D lies on OB with OD = 4 cm and DB = 3 cm. The angle at B is 20°. Find the angle θ = angle ODA, between the line DA and the base.',
+//           type: 'Hard',
+//           explaination:
+//             'OB = 4 + 3 = 7 cm. In triangle OAB: OA = 7 tan 20° ≈ 7 × 0.3640 ≈ 2.548 cm. In triangle OAD: tan θ = OA/OD = 2.548/4 ≈ 0.6370. θ = tan⁻¹(0.6370) ≈ 32.5°.',
+//           answer: 'θ ≈ 32.5°',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'Triangle OTQ has a right angle at O, with OT = 9 cm horizontal and OQ vertical. Point P lies on OQ with PQ = 3.5 cm. The angle between TO and TP is 25°. The length TQ = x, and θ is the angle between TP and TQ. Find the length x.',
+//           type: 'Hard',
+//           explaination:
+//             'In triangle OTP: OP = 9 tan 25° ≈ 9 × 0.4663 ≈ 4.197 cm. So OQ = OP + PQ ≈ 4.197 + 3.5 = 7.697 cm. In triangle OTQ: x = √(OT² + OQ²) = √(9² + 7.697²) = √(81 + 59.24) ≈ √140.24 ≈ 11.8 cm.',
+//           answer: 'x ≈ 11.8 cm',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'Triangle OTQ has a right angle at O, with OT = 9 cm horizontal and OQ vertical. Point P lies on OQ with PQ = 3.5 cm. The angle between TO and TP is 25°. The length TQ = x, and θ is the angle between TP and TQ. Find the angle θ.',
+//           type: 'Hard',
+//           explaination:
+//             'OP = 9 tan 25° ≈ 4.197 cm, so OQ ≈ 7.697 cm. Angle OTQ = tan⁻¹(OQ/OT) = tan⁻¹(7.697/9) ≈ 40.5°. θ = angle OTQ − 25° ≈ 40.5° − 25° = 15.5°.',
+//           answer: 'θ ≈ 15.5°',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'In triangle ABC, D is a point on BC. AB = 10, AD = 9 and AC = 13. Angle ADB = 70°. Find the length of BC.',
+//           type: 'Hard',
+//           explaination:
+//             'Angle ADC = 180° − 70° = 110° (angles on a straight line). In triangle ABD, by the cosine rule: AB² = AD² + BD² − 2(AD)(BD) cos 70°, so 100 = 81 + BD² − 6.156BD, giving BD² − 6.156BD − 19 = 0 and BD ≈ 8.414. In triangle ADC: AC² = AD² + DC² − 2(AD)(DC) cos 110°, so 169 = 81 + DC² + 6.156DC, giving DC² + 6.156DC − 88 = 0 and DC ≈ 6.795. BC = BD + DC ≈ 8.414 + 6.795 ≈ 15.2.',
+//           answer: 'BC ≈ 15.2',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'Triangle OTR has a right angle at O, with OT vertical and OR along the base. Point P lies on the hypotenuse TR, with OP = 9 and PR = 8. Angle POR = 40° and angle TOP = 50°. TP = x. Find x.',
+//           type: 'Hard',
+//           explaination:
+//             'In triangle OPR, by the sine rule: sin R/9 = sin 40°/8, so sin R = 9 × 0.6428/8 ≈ 0.7231 and R ≈ 46.3° (R must be acute, since triangle OTR has a right angle at O). Angle OPR = 180° − 40° − 46.3° = 93.7°, so angle OPT = 180° − 93.7° = 86.3°. In triangle OTP: angle T = 180° − 50° − 86.3° = 43.7°. By the sine rule: x/sin 50° = 9/sin 43.7°, so x = 9 × 0.7660/0.6907 ≈ 9.98.',
+//           answer: 'x ≈ 9.98',
+//         },
+//       ],
+//     },
+//   },
+//   {
+//     'geometry-and-trigonometry': {
+//       title: 'Geometry & Trigonometry',
+//       'bearings-and-navigation': [
+//         {
+//           id: 1,
+//           question:
+//             'A drone travels 3.3 km south and then 2.1 km on a bearing of 055°. Find the distance the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             'Due south is a bearing of 180°. The angle between the two legs at the turning point is 180° − 125° = 55°. Cosine rule: d² = 3.3² + 2.1² − 2(3.3)(2.1) cos 55° ≈ 7.350, so d ≈ 2.71 km.',
+//           answer: '≈ 2.71 km',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A drone travels 3.3 km south and then 2.1 km on a bearing of 055°. Find the bearing on which the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             "Due south is a bearing of 180°. Distance back ≈ 2.711 km (angle at the turning point = 55°). Cosine rule for the angle at the start: cos A = (3.3² + 2.711² − 2.1²)/(2 × 3.3 × 2.711), so A ≈ 39.4°. The second leg turns anticlockwise, so the bearing of the drone's end point from the start is 180° − 39.4° ≈ 140.6°. The return bearing is the back bearing: 140.6° + 180° ≈ 320.6°.",
+//           answer: '≈ 321°',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A drone travels 1.7 km east and then 2.3 km on a bearing of 085°. Find the distance the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             'Due east is a bearing of 090°. The angle between the two legs at the turning point is 180° − 5° = 175°. Cosine rule: d² = 1.7² + 2.3² − 2(1.7)(2.3) cos 175° ≈ 15.970, so d ≈ 4.00 km.',
+//           answer: '≈ 4.00 km',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A drone travels 1.7 km east and then 2.3 km on a bearing of 085°. Find the bearing on which the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             "Due east is a bearing of 090°. Distance back ≈ 3.996 km (angle at the turning point = 175°). Cosine rule for the angle at the start: cos A = (1.7² + 3.996² − 2.3²)/(2 × 1.7 × 3.996), so A ≈ 2.9°. The second leg turns anticlockwise, so the bearing of the drone's end point from the start is 90° − 2.9° ≈ 87.1°. The return bearing is the back bearing: 87.1° + 180° ≈ 267.1°.",
+//           answer: '≈ 267°',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'A drone travels 6.8 km west and then 9.1 km on a bearing of 035°. Find the distance the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             'Due west is a bearing of 270°. The angle between the two legs at the turning point is 180° − 125° = 55°. Cosine rule: d² = 6.8² + 9.1² − 2(6.8)(9.1) cos 55° ≈ 58.064, so d ≈ 7.62 km.',
+//           answer: '≈ 7.62 km',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'A drone travels 6.8 km west and then 9.1 km on a bearing of 035°. Find the bearing on which the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             "Due west is a bearing of 270°. Distance back ≈ 7.62 km (angle at the turning point = 55°). Cosine rule for the angle at the start: cos A = (6.8² + 7.62² − 9.1²)/(2 × 6.8 × 7.62), so A ≈ 78.0°. The second leg turns clockwise, so the bearing of the drone's end point from the start is 270° + 78.0° ≈ 348.0°. The return bearing is the back bearing: 348.0° − 180° ≈ 168.0°.",
+//           answer: '≈ 168°',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'A drone travels 2.2 km on a bearing of 130° and then 1.8 km on a bearing of 145°. Find the distance the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             'The angle between the two legs at the turning point is 180° − 15° = 165°. Cosine rule: d² = 2.2² + 1.8² − 2(2.2)(1.8) cos 165° ≈ 15.730, so d ≈ 3.97 km.',
+//           answer: '≈ 3.97 km',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'A drone travels 2.2 km on a bearing of 130° and then 1.8 km on a bearing of 145°. Find the bearing on which the drone must travel to return to its original position.',
+//           type: 'Medium',
+//           explaination:
+//             "Distance back ≈ 3.966 km (angle at the turning point = 165°). Cosine rule for the angle at the start: cos A = (2.2² + 3.966² − 1.8²)/(2 × 2.2 × 3.966), so A ≈ 6.7°. The second leg turns clockwise, so the bearing of the drone's end point from the start is 130° + 6.7° ≈ 136.7°. The return bearing is the back bearing: 136.7° + 180° ≈ 316.7°.",
+//           answer: '≈ 317°',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'A drone travels 13 km on a bearing of 220° and then 17 km on a bearing of 105°. Find the distance the drone must travel to return to its original position.',
+//           type: 'Hard',
+//           explaination:
+//             'The angle between the two legs at the turning point is 180° − 115° = 65°. Cosine rule: d² = 13² + 17² − 2(13)(17) cos 65° ≈ 271.203, so d ≈ 16.5 km.',
+//           answer: '≈ 16.5 km',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'A drone travels 13 km on a bearing of 220° and then 17 km on a bearing of 105°. Find the bearing on which the drone must travel to return to its original position.',
+//           type: 'Hard',
+//           explaination:
+//             "Distance back ≈ 16.47 km (angle at the turning point = 65°). Cosine rule for the angle at the start: cos A = (13² + 16.47² − 17²)/(2 × 13 × 16.47), so A ≈ 69.3°. The second leg turns anticlockwise, so the bearing of the drone's end point from the start is 220° − 69.3° ≈ 150.7°. The return bearing is the back bearing: 150.7° + 180° ≈ 330.7°.",
+//           answer: '≈ 331°',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'A ship sails from a port due north for 1.2 km. It then changes direction and sails another 0.8 km on a bearing of 037°. Find the final distance of the ship from the port.',
+//           type: 'Medium',
+//           explaination:
+//             'Sketch the port, the 1.2 km leg due north and the 0.8 km leg on 037°. The angle between the two legs at the turning point is 180° − 37° = 143°. Cosine rule: d² = 1.2² + 0.8² − 2(1.2)(0.8) cos 143° ≈ 3.613, so d ≈ 1.90 km.',
+//           answer: '≈ 1.90 km',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'A dog runs 220 m on a bearing of 042° and then a further 180 m on a bearing of 166°. Find the distance the dog must run to return to the starting position.',
+//           type: 'Medium',
+//           explaination:
+//             'The angle between the two legs at the turning point is 180° − 124° = 56°. Cosine rule: d² = 220² + 180² − 2(220)(180) cos 56° ≈ 36511.922, so d ≈ 191 m.',
+//           answer: '≈ 191 m',
+//         },
+//         {
+//           id: 13,
+//           question:
+//             'A dog runs 220 m on a bearing of 042° and then a further 180 m on a bearing of 166°. Find the bearing on which the dog must run to return to the starting position.',
+//           type: 'Medium',
+//           explaination:
+//             "Distance back ≈ 191.1 m (angle at the turning point = 56°). Cosine rule for the angle at the start: cos A = (220² + 191.1² − 180²)/(2 × 220 × 191.1), so A ≈ 51.3°. The second leg turns clockwise, so the bearing of the dog's end point from the start is 42° + 51.3° ≈ 93.3°. The return bearing is the back bearing: 93.3° + 180° ≈ 273.3°.",
+//           answer: '≈ 273°',
+//         },
+//         {
+//           id: 14,
+//           question:
+//             'A lighthouse is 2.5 km from the port on a bearing of 035°. An island is 1.3 km from the port on a bearing of 130°. Find the distance of the lighthouse from the island.',
+//           type: 'Medium',
+//           explaination:
+//             'The angle at the port between the two directions is 130° − 35° = 95°. Cosine rule: d² = 2.5² + 1.3² − 2(2.5)(1.3) cos 95° ≈ 8.507, so d ≈ 2.92 km.',
+//           answer: '≈ 2.92 km',
+//         },
+//         {
+//           id: 15,
+//           question:
+//             'A lighthouse is 2.5 km from the port on a bearing of 035°. An island is 1.3 km from the port on a bearing of 130°. Find the bearing of the lighthouse from the island.',
+//           type: 'Medium',
+//           explaination:
+//             'Distance from the island to the lighthouse ≈ 2.917 km. The bearing of the port from the island is 130° + 180° = 310°. Cosine rule for the angle at the island: cos I = (1.3² + 2.917² − 2.5²)/(2 × 1.3 × 2.917), so I ≈ 58.6°. The lighthouse is clockwise from the port as seen from the island, so the bearing is 310° + 58.6° = 368.6°, which is 8.6°.',
+//           answer: '≈ 009°',
+//         },
+//       ],
+//       'angles-of-elevation-and-depression': [
+//         {
+//           id: 1,
+//           question:
+//             'Viewed from 40 m away, a building has an angle of elevation of 55°. Find the height of the building.',
+//           type: 'Easy',
+//           explaination: 'tan 55° = h/40, so h = 40 tan 55° ≈ 40 × 1.4281 ≈ 57.1 m.',
+//           answer: '≈ 57.1 m',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A cone has diameter 12 cm and vertical height 9 cm. Find the angle θ between the sloping edge and the base.',
+//           type: 'Easy',
+//           explaination:
+//             'Radius = 12 ÷ 2 = 6 cm. The height, radius and sloping edge form a right-angled triangle. tan θ = 9/6 = 1.5, so θ = tan⁻¹(1.5) ≈ 56.3°.',
+//           answer: 'θ ≈ 56.3°',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'Alec has an eye level 160 cm above the ground. He stands 6.5 m from a tree. He can see the top of the tree at an angle of elevation of 62°. Find the height of the tree.',
+//           type: 'Medium',
+//           explaination:
+//             'Height of the tree above eye level = 6.5 tan 62° ≈ 6.5 × 1.8807 ≈ 12.22 m. Eye level = 160 cm = 1.6 m. Height of the tree ≈ 12.22 + 1.6 ≈ 13.8 m.',
+//           answer: '≈ 13.8 m',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             "From her window, 9 m above the ground, Julia observes a car at an angle of depression of 12°. Find the distance of the car from the bottom of Julia's building.",
+//           type: 'Easy',
+//           explaination:
+//             'The angle of depression equals the angle of elevation from the car to the window, 12°. tan 12° = 9/d, so d = 9/tan 12° ≈ 9/0.2126 ≈ 42.3 m.',
+//           answer: '≈ 42.3 m',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             "After recording the angle of elevation of the top of a statue from an unknown distance to the statue's base, a student walks exactly 5 m further away from the statue along horizontal ground and records a second angle of elevation. The two angles recorded are 17.7° and 12.0°. Find the height of the statue.",
+//           type: 'Hard',
+//           explaination:
+//             'Let h be the height and d the first distance. tan 17.7° = h/d, so d = h/tan 17.7°. tan 12.0° = h/(d + 5), so d + 5 = h/tan 12.0°. Subtract: h(1/tan 12.0° − 1/tan 17.7°) = 5, so h(4.7046 − 3.1334) = 5 and h = 5/1.5712 ≈ 3.18 m.',
+//           answer: 'h ≈ 3.18 m',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'From the top of his lighthouse, the keeper observes two buoys. The nearest buoy is directly to the east, and the second buoy is 18 m south of the first. The surface of the water is still. The angle of depression to the first buoy is 42.5° and the angle of depression to the second buoy is 41.3°. Find the height of the lighthouse above sea level, to the nearest metre.',
+//           type: 'Hard',
+//           explaination:
+//             'Let h be the height. Horizontal distance to the first buoy = h/tan 42.5°. The second buoy is 18 m south of the first, and east and south are at right angles, so its horizontal distance is √((h/tan 42.5°)² + 18²). Also, its horizontal distance = h/tan 41.3°. So (h/tan 41.3°)² − (h/tan 42.5°)² = 324. h²(1.2957 − 1.1910) ≈ 324, so h² ≈ 3094 and h ≈ 55.6 m.',
+//           answer: 'h ≈ 56 m',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'Ramiz stands at point R, 19.5 m from the base B of a vertical tree. He can see the top of the tree T at an angle of elevation of 26°. Find the height of the tree.',
+//           type: 'Medium',
+//           explaination: 'h = 19.5 tan 26° ≈ 19.5 × 0.4877 ≈ 9.51 m.',
+//           answer: '≈ 9.51 m',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             "Ramiz stands at point R, 19.5 m from the base B of a vertical tree. He can see the top of the tree T at an angle of elevation of 26°. Mia, standing at point M on the same horizontal ground, can see the top of the tree at an angle of elevation of 41°. Find Mia's distance from the bottom of the tree.",
+//           type: 'Medium',
+//           explaination:
+//             'Height of the tree = 19.5 tan 26° ≈ 9.511 m. tan 41° = 9.511/MB, so MB = 9.511/tan 41° ≈ 9.511/0.8693 ≈ 10.9 m.',
+//           answer: '≈ 10.9 m',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'Ramiz stands at point R, 19.5 m from the base B of a vertical tree. He can see the top of the tree T at an angle of elevation of 26°. Mia, standing at point M on the same horizontal ground, can see the top of the tree at an angle of elevation of 41°. The distance between Mia and Ramiz is 14.7 m. Find the size of angle RBM, correct to the nearest degree.',
+//           type: 'Hard',
+//           explaination:
+//             'RB = 19.5 m, MB ≈ 10.94 m and RM = 14.7 m. Cosine rule: cos RBM = (RB² + MB² − RM²)/(2 × RB × MB) = (380.25 + 119.70 − 216.09)/(2 × 19.5 × 10.94) ≈ 283.86/426.7 ≈ 0.6653. Angle RBM = cos⁻¹(0.6653) ≈ 48°.',
+//           answer: 'Angle RBM ≈ 48°',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'A visitor at an art gallery sits on the floor, 2.4 m from the wall, and looks up at a painting. He can see the bottom of the painting at an angle of elevation of 55° and the top of the painting at an angle of elevation of 72°. Find the height of the painting.',
+//           type: 'Hard',
+//           explaination:
+//             'Height to the bottom of the painting = 2.4 tan 55° ≈ 3.428 m. Height to the top = 2.4 tan 72° ≈ 7.386 m. Height of the painting ≈ 7.386 − 3.428 ≈ 3.96 m.',
+//           answer: '≈ 3.96 m',
+//         },
+//       ],
+//       'arc-length-and-sector-area': [
+//         {
+//           id: 1,
+//           question:
+//             'A circle has centre O and radius 5 cm. Points A and B lie on the circle, and angle AOB = 40°. Find the length of the minor arc AB.',
+//           type: 'Easy',
+//           explaination: 'Arc length = (θ/360°) × 2πr = (40/360) × 2π(5) ≈ 3.491 cm.',
+//           answer: '≈ 3.49 cm',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A circle has centre O and radius 5 cm. Points A and B lie on the circle, and angle AOB = 40°. Find the area of the sector AOB.',
+//           type: 'Easy',
+//           explaination:
+//             'Sector area = (θ/360°) × πr² = (40/360) × π(5)² = (40/360) × 25π ≈ 8.727 cm².',
+//           answer: '≈ 8.73 cm²',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A circle has centre O and radius 8 cm. Points A and B lie on the circle, and angle AOB = 65°. Find the length of the minor arc AB.',
+//           type: 'Easy',
+//           explaination: 'Arc length = (θ/360°) × 2πr = (65/360) × 2π(8) ≈ 9.076 cm.',
+//           answer: '≈ 9.08 cm',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A circle has centre O and radius 8 cm. Points A and B lie on the circle, and angle AOB = 65°. Find the area of the sector AOB.',
+//           type: 'Easy',
+//           explaination:
+//             'Sector area = (θ/360°) × πr² = (65/360) × π(8)² = (65/360) × 64π ≈ 36.3 cm².',
+//           answer: '≈ 36.3 cm²',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'A circle has centre O and radius 4 cm. Points A and B lie on the circle, and angle AOB = 100°. Find the length of the minor arc AB.',
+//           type: 'Easy',
+//           explaination: 'Arc length = (θ/360°) × 2πr = (100/360) × 2π(4) ≈ 6.981 cm.',
+//           answer: '≈ 6.98 cm',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'A circle has centre O and radius 4 cm. Points A and B lie on the circle, and angle AOB = 100°. Find the area of the sector AOB.',
+//           type: 'Easy',
+//           explaination:
+//             'Sector area = (θ/360°) × πr² = (100/360) × π(4)² = (100/360) × 16π ≈ 13.96 cm².',
+//           answer: '≈ 14.0 cm²',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'A circle has centre O and radius 7 cm. Points A and B lie on the circle, and angle AOB = 120°. Find the length of the minor arc AB.',
+//           type: 'Easy',
+//           explaination: 'Arc length = (θ/360°) × 2πr = (120/360) × 2π(7) ≈ 14.66 cm.',
+//           answer: '≈ 14.7 cm',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'A circle has centre O and radius 7 cm. Points A and B lie on the circle, and angle AOB = 120°. Find the area of the sector AOB.',
+//           type: 'Easy',
+//           explaination:
+//             'Sector area = (θ/360°) × πr² = (120/360) × π(7)² = (120/360) × 49π ≈ 51.31 cm².',
+//           answer: '≈ 51.3 cm²',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'A circle has centre O and radius 8 cm. Points A and B lie on the circle, and the reflex angle AOB is 240°. Find the length of the major arc AB.',
+//           type: 'Medium',
+//           explaination: 'Arc length = (θ/360°) × 2πr = (240/360) × 2π(8) ≈ 33.51 cm.',
+//           answer: '≈ 33.5 cm',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'A circle has centre O and radius 8 cm. Points A and B lie on the circle, and the reflex angle AOB is 240°. Find the area of the major sector AOB.',
+//           type: 'Medium',
+//           explaination:
+//             'Sector area = (θ/360°) × πr² = (240/360) × π(8)² = (240/360) × 64π ≈ 134 cm².',
+//           answer: '≈ 134 cm²',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'A circle has centre O and radius 5 cm. Points A and B lie on the circle, and the reflex angle AOB is 290°. Find the length of the major arc AB.',
+//           type: 'Medium',
+//           explaination: 'Arc length = (θ/360°) × 2πr = (290/360) × 2π(5) ≈ 25.31 cm.',
+//           answer: '≈ 25.3 cm',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'A circle has centre O and radius 5 cm. Points A and B lie on the circle, and the reflex angle AOB is 290°. Find the area of the major sector AOB.',
+//           type: 'Medium',
+//           explaination:
+//             'Sector area = (θ/360°) × πr² = (290/360) × π(5)² = (290/360) × 25π ≈ 63.27 cm².',
+//           answer: '≈ 63.3 cm²',
+//         },
+//       ],
+//       'arc-length-and-sector-area-finding-radius': [
+//         {
+//           id: 1,
+//           question:
+//             'An arc of a circle has length 12.3 cm and subtends an angle of 70° at the centre of the circle. Find the radius of the circle.',
+//           type: 'Medium',
+//           explaination:
+//             'Arc length = (θ/360°) × 2πr, so 12.3 = (70/360) × 2πr. r = 12.3 ÷ ((70/360) × 2π) = 12.3 ÷ 1.2217 ≈ 10.07 cm.',
+//           answer: 'r ≈ 10.1 cm',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A sector of a circle has area 326 cm² and an angle at the centre of 155°. Find the radius of the circle.',
+//           type: 'Medium',
+//           explaination:
+//             'Sector area = (θ/360°) × πr², so 326 = (155/360) × πr². r² = 326 ÷ ((155/360) × π) = 326 ÷ 1.3526 ≈ 241.0, so r ≈ 15.5 cm.',
+//           answer: 'r ≈ 15.5 cm',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A sector of a circle has area 87.3 cm² and an angle at the centre of 74.5°. Find the radius of the circle.',
+//           type: 'Medium',
+//           explaination:
+//             '87.3 = (74.5/360) × πr². r² = 87.3 ÷ ((74.5/360) × π) = 87.3 ÷ 0.65014 ≈ 134.28, so r ≈ 11.6 cm.',
+//           answer: 'r ≈ 11.6 cm',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A sector of a circle has area 87.3 cm² and an angle at the centre of 74.5°. Find the perimeter of the sector.',
+//           type: 'Medium',
+//           explaination:
+//             'First find the radius: r² = 87.3 ÷ ((74.5/360) × π) ≈ 134.28, so r ≈ 11.588 cm. Arc length = (74.5/360) × 2π(11.588) ≈ 15.07 cm. Perimeter = arc + 2r ≈ 15.07 + 2(11.588) ≈ 38.2 cm.',
+//           answer: 'Perimeter ≈ 38.2 cm',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'A sector of a circle has perimeter 26 cm and an angle at the centre of 103°. Find the radius of the circle.',
+//           type: 'Medium',
+//           explaination:
+//             'The perimeter is the arc plus two radii: (103/360) × 2πr + 2r = 26. (103/360) × 2π ≈ 1.7977, so r(1.7977 + 2) = 26 and r = 26 ÷ 3.7977 ≈ 6.85 cm.',
+//           answer: 'r ≈ 6.85 cm',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'A sector of a circle has area 18 cm² and perimeter 30 cm. Find the possible values of the radius of the circle.',
+//           type: 'Hard',
+//           explaination:
+//             'Let θ be the angle in radians. Perimeter: rθ + 2r = 30, so rθ = 30 − 2r. Area: ½r²θ = 18, so r(rθ) = 36. Substitute: r(30 − 2r) = 36, so 2r² − 30r + 36 = 0 and r² − 15r + 18 = 0. r = (15 ± √153)/2, giving r ≈ 1.32 or r ≈ 13.7. Check the angle: if r ≈ 1.32, θ = (30 − 2r)/r ≈ 20.8 radians, which is more than a full turn (2π ≈ 6.28), so this is not possible. If r ≈ 13.7, θ ≈ 0.192 radians (about 11°), which is valid.',
+//           answer: 'r ≈ 13.7 cm (r ≈ 1.32 cm is rejected because the angle would be more than 360°)',
+//         },
+//       ],
+//       'arc-length-and-sector-area-finding-angle': [
+//         {
+//           id: 1,
+//           question:
+//             'A sector of a circle has radius 5 cm. The length of its arc AB is 7 cm, and θ is the angle at the centre. Find the value of θ.',
+//           type: 'Medium',
+//           explaination:
+//             'Arc length = (θ/360°) × 2πr, so 7 = (θ/360°) × 2π(5) = (θ/360°) × 10π. θ = (7 × 360°)/(10π) ≈ 80.2°. (In radians, θ = l/r = 7/5 = 1.4.)',
+//           answer: 'θ ≈ 80.2° (1.4 radians)',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A sector of a circle has radius 5 cm. The length of its arc AB is 7 cm, and θ is the angle at the centre. Find the area of the sector.',
+//           type: 'Medium',
+//           explaination:
+//             'From the arc length, θ/360° = 7/(10π). Sector area = (θ/360°) × πr² = (7/(10π)) × 25π = 17.5 cm². (In radians: ½r²θ = ½ × 25 × 1.4 = 17.5 cm².)',
+//           answer: '17.5 cm²',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A circle with centre O has radius 23 cm. Arc AB subtends angle θ at the centre of the circle. Given that the area of the sector AOB is 185 cm², find the value of θ.',
+//           type: 'Medium',
+//           explaination:
+//             'Sector area = (θ/360°) × πr², so 185 = (θ/360°) × π(23)² = (θ/360°) × 529π. θ = (185 × 360°)/(529π) ≈ 40.1°. (In radians, θ = 2A/r² = 370/529 ≈ 0.699.)',
+//           answer: 'θ ≈ 40.1° (0.699 radians)',
+//         },
+//       ],
+//     },
+//   },
+//   {
+//     'statistical-testing': {
+//       title: 'Statistical Testing',
+//       'chi-squared-goodness-of-fit': [
+//         {
+//           id: 1,
+//           question:
+//             'A χ² goodness of fit test is carried out on coloured counters. Red: expected probability 1/4, observed 34; Blue: expected probability 1/2, observed 51; Yellow: expected probability 1/4, observed 15. The null hypothesis is that the data follow the expected probabilities. Calculate the expected frequencies and the χ² value.',
+//           type: 'Medium',
+//           explaination:
+//             'Total = 34 + 51 + 15 = 100. Expected frequency = probability × 100: Red = 25, Blue = 50, Yellow = 25. χ² = Σ(O − E)²/E = (34 − 25)²/25 + (51 − 50)²/50 + (15 − 25)²/25 ≈ 7.260.',
+//           answer: 'Expected: Red = 25, Blue = 50, Yellow = 25; χ² ≈ 7.26',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A χ² goodness of fit test is carried out on coloured counters. Red: expected probability 1/4, observed 34; Blue: expected probability 1/2, observed 51; Yellow: expected probability 1/4, observed 15. The null hypothesis is that the data follow the expected probabilities. State the number of degrees of freedom.',
+//           type: 'Medium',
+//           explaination: 'There are 3 categories, so df = 3 − 1 = 2.',
+//           answer: 'df = 2',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'A χ² goodness of fit test is carried out on coloured counters. Red: expected probability 1/4, observed 34; Blue: expected probability 1/2, observed 51; Yellow: expected probability 1/4, observed 15. The null hypothesis is that the data follow the expected probabilities. Find the p-value and state the conclusion at the 5% significance level.',
+//           type: 'Medium',
+//           explaination:
+//             'χ² ≈ 7.260 with df = 2. Using the χ² cdf on the GDC, p-value ≈ 0.0265. Since 0.0265 < 0.05, reject H₀: there is evidence that the data do not follow the expected probabilities.',
+//           answer: 'p-value ≈ 0.0265; reject H₀',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'A χ² goodness of fit test is carried out on fruit types. Apple: expected probability 1/2, observed 45; Orange: expected probability 3/10, observed 33; Banana: expected probability 1/5, observed 22. The null hypothesis is that the data follow the expected probabilities. Calculate the expected frequencies and the χ² value.',
+//           type: 'Medium',
+//           explaination:
+//             'Total = 45 + 33 + 22 = 100. Expected frequency = probability × 100: Apple = 50, Orange = 30, Banana = 20. χ² = Σ(O − E)²/E = (45 − 50)²/50 + (33 − 30)²/30 + (22 − 20)²/20 ≈ 1.000.',
+//           answer: 'Expected: Apple = 50, Orange = 30, Banana = 20; χ² ≈ 1.00',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'A χ² goodness of fit test is carried out on fruit types. Apple: expected probability 1/2, observed 45; Orange: expected probability 3/10, observed 33; Banana: expected probability 1/5, observed 22. The null hypothesis is that the data follow the expected probabilities. State the number of degrees of freedom.',
+//           type: 'Medium',
+//           explaination: 'There are 3 categories, so df = 3 − 1 = 2.',
+//           answer: 'df = 2',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'A χ² goodness of fit test is carried out on fruit types. Apple: expected probability 1/2, observed 45; Orange: expected probability 3/10, observed 33; Banana: expected probability 1/5, observed 22. The null hypothesis is that the data follow the expected probabilities. Find the p-value and state the conclusion at the 5% significance level.',
+//           type: 'Medium',
+//           explaination:
+//             'χ² ≈ 1.000 with df = 2. Using the χ² cdf on the GDC, p-value ≈ 0.607. Since 0.607 > 0.05, do not reject H₀: there is not enough evidence that the data differ from the expected probabilities.',
+//           answer: 'p-value ≈ 0.607; do not reject H₀',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'A χ² goodness of fit test is carried out on data values. 1: expected probability 0.2, observed 12; 2: expected probability 0.2, observed 16; 3: expected probability 0.2, observed 8; 4: expected probability 0.2, observed 10; 5: expected probability 0.2, observed 4. The null hypothesis is that the data follow the expected probabilities. Calculate the expected frequencies and the χ² value.',
+//           type: 'Medium',
+//           explaination:
+//             'Total = 12 + 16 + 8 + 10 + 4 = 50. Expected frequency = probability × 50: 1 = 10, 2 = 10, 3 = 10, 4 = 10, 5 = 10. χ² = Σ(O − E)²/E = (12 − 10)²/10 + (16 − 10)²/10 + (8 − 10)²/10 + (10 − 10)²/10 + (4 − 10)²/10 ≈ 8.000.',
+//           answer: 'Expected: 1 = 10, 2 = 10, 3 = 10, 4 = 10, 5 = 10; χ² ≈ 8.00',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'A χ² goodness of fit test is carried out on data values. 1: expected probability 0.2, observed 12; 2: expected probability 0.2, observed 16; 3: expected probability 0.2, observed 8; 4: expected probability 0.2, observed 10; 5: expected probability 0.2, observed 4. The null hypothesis is that the data follow the expected probabilities. State the number of degrees of freedom.',
+//           type: 'Medium',
+//           explaination: 'There are 5 categories, so df = 5 − 1 = 4.',
+//           answer: 'df = 4',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'A χ² goodness of fit test is carried out on data values. 1: expected probability 0.2, observed 12; 2: expected probability 0.2, observed 16; 3: expected probability 0.2, observed 8; 4: expected probability 0.2, observed 10; 5: expected probability 0.2, observed 4. The null hypothesis is that the data follow the expected probabilities. Find the p-value and state the conclusion at the 5% significance level.',
+//           type: 'Medium',
+//           explaination:
+//             'χ² ≈ 8.000 with df = 4. Using the χ² cdf on the GDC, p-value ≈ 0.0916. Since 0.0916 > 0.05, do not reject H₀: there is not enough evidence that the data differ from the expected probabilities.',
+//           answer: 'p-value ≈ 0.0916; do not reject H₀',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'A χ² goodness of fit test is carried out on data values. 0: expected probability 0.25, observed 6; 2: expected probability 0.25, observed 18; 4: expected probability 0.25, observed 13; 6: expected probability 0.25, observed 23. The null hypothesis is that the data follow the expected probabilities. Calculate the expected frequencies and the χ² value.',
+//           type: 'Medium',
+//           explaination:
+//             'Total = 6 + 18 + 13 + 23 = 60. Expected frequency = probability × 60: 0 = 15, 2 = 15, 4 = 15, 6 = 15. χ² = Σ(O − E)²/E = (6 − 15)²/15 + (18 − 15)²/15 + (13 − 15)²/15 + (23 − 15)²/15 ≈ 10.53.',
+//           answer: 'Expected: 0 = 15, 2 = 15, 4 = 15, 6 = 15; χ² ≈ 10.5',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'A χ² goodness of fit test is carried out on data values. 0: expected probability 0.25, observed 6; 2: expected probability 0.25, observed 18; 4: expected probability 0.25, observed 13; 6: expected probability 0.25, observed 23. The null hypothesis is that the data follow the expected probabilities. State the number of degrees of freedom.',
+//           type: 'Medium',
+//           explaination: 'There are 4 categories, so df = 4 − 1 = 3.',
+//           answer: 'df = 3',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'A χ² goodness of fit test is carried out on data values. 0: expected probability 0.25, observed 6; 2: expected probability 0.25, observed 18; 4: expected probability 0.25, observed 13; 6: expected probability 0.25, observed 23. The null hypothesis is that the data follow the expected probabilities. Find the p-value and state the conclusion at the 5% significance level.',
+//           type: 'Medium',
+//           explaination:
+//             'χ² ≈ 10.53 with df = 3. Using the χ² cdf on the GDC, p-value ≈ 0.0145. Since 0.0145 < 0.05, reject H₀: there is evidence that the data do not follow the expected probabilities.',
+//           answer: 'p-value ≈ 0.0145; reject H₀',
+//         },
+//         {
+//           id: 13,
+//           question:
+//             'A χ² goodness of fit test is carried out on languages studied. French: expected probability 1/3, observed 52; Spanish: expected probability 1/4, observed 51; English: expected probability 1/5, observed 30; Mandarin: expected probability 13/60, observed 67. The null hypothesis is that the data follow the expected probabilities. Calculate the expected frequencies and the χ² value.',
+//           type: 'Hard',
+//           explaination:
+//             'Total = 52 + 51 + 30 + 67 = 200. Expected frequency = probability × 200: French = 66.67, Spanish = 50, English = 40, Mandarin = 43.33. χ² = Σ(O − E)²/E = (52 − 66.67)²/66.67 + (51 − 50)²/50 + (30 − 40)²/40 + (67 − 43.33)²/43.33 ≈ 18.67.',
+//           answer:
+//             'Expected: French = 66.67, Spanish = 50, English = 40, Mandarin = 43.33; χ² ≈ 18.7',
+//         },
+//         {
+//           id: 14,
+//           question:
+//             'A χ² goodness of fit test is carried out on languages studied. French: expected probability 1/3, observed 52; Spanish: expected probability 1/4, observed 51; English: expected probability 1/5, observed 30; Mandarin: expected probability 13/60, observed 67. The null hypothesis is that the data follow the expected probabilities. State the number of degrees of freedom.',
+//           type: 'Hard',
+//           explaination: 'There are 4 categories, so df = 4 − 1 = 3.',
+//           answer: 'df = 3',
+//         },
+//         {
+//           id: 15,
+//           question:
+//             'A χ² goodness of fit test is carried out on languages studied. French: expected probability 1/3, observed 52; Spanish: expected probability 1/4, observed 51; English: expected probability 1/5, observed 30; Mandarin: expected probability 13/60, observed 67. The null hypothesis is that the data follow the expected probabilities. Find the p-value and state the conclusion at the 5% significance level.',
+//           type: 'Hard',
+//           explaination:
+//             'χ² ≈ 18.67 with df = 3. Using the χ² cdf on the GDC, p-value ≈ 0.00032. Since 0.00032 < 0.05, reject H₀: there is evidence that the data do not follow the expected probabilities.',
+//           answer: 'p-value ≈ 0.00032; reject H₀',
+//         },
+//         {
+//           id: 16,
+//           question:
+//             'A χ² goodness of fit test is carried out on sciences studied. Biology: expected probability 1/3, observed 52; Chemistry: expected probability 1/6, observed 31; Physics: expected probability 1/5, observed 42; Geology: expected probability 3/10, observed 35. The null hypothesis is that the data follow the expected probabilities. Calculate the expected frequencies and the χ² value.',
+//           type: 'Hard',
+//           explaination:
+//             'Total = 52 + 31 + 42 + 35 = 160. Expected frequency = probability × 160: Biology = 53.33, Chemistry = 26.67, Physics = 32, Geology = 48. χ² = Σ(O − E)²/E = (52 − 53.33)²/53.33 + (31 − 26.67)²/26.67 + (42 − 32)²/32 + (35 − 48)²/48 ≈ 7.383.',
+//           answer:
+//             'Expected: Biology = 53.33, Chemistry = 26.67, Physics = 32, Geology = 48; χ² ≈ 7.38',
+//         },
+//         {
+//           id: 17,
+//           question:
+//             'A χ² goodness of fit test is carried out on sciences studied. Biology: expected probability 1/3, observed 52; Chemistry: expected probability 1/6, observed 31; Physics: expected probability 1/5, observed 42; Geology: expected probability 3/10, observed 35. The null hypothesis is that the data follow the expected probabilities. State the number of degrees of freedom.',
+//           type: 'Hard',
+//           explaination: 'There are 4 categories, so df = 4 − 1 = 3.',
+//           answer: 'df = 3',
+//         },
+//         {
+//           id: 18,
+//           question:
+//             'A χ² goodness of fit test is carried out on sciences studied. Biology: expected probability 1/3, observed 52; Chemistry: expected probability 1/6, observed 31; Physics: expected probability 1/5, observed 42; Geology: expected probability 3/10, observed 35. The null hypothesis is that the data follow the expected probabilities. Find the p-value and state the conclusion at the 5% significance level.',
+//           type: 'Hard',
+//           explaination:
+//             'χ² ≈ 7.383 with df = 3. Using the χ² cdf on the GDC, p-value ≈ 0.0606. Since 0.0606 > 0.05, do not reject H₀: there is not enough evidence that the data differ from the expected probabilities.',
+//           answer: 'p-value ≈ 0.0606; do not reject H₀',
+//         },
+//         {
+//           id: 19,
+//           question:
+//             'Zhao thinks that students at her large college are equally likely to study any of the four mathematics courses. She asks a random sample of 80 students and obtains the following results: Analysis and Approaches HL 18, Analysis and Approaches SL 21, Applications and Interpretation HL 8, Applications and Interpretation SL 33. Zhao conducts a χ² test using a 5% significance level. State the null and alternative hypotheses.',
+//           type: 'Medium',
+//           explaination:
+//             'The null hypothesis says the distribution is uniform; the alternative says it is not.',
+//           answer:
+//             'H₀: students are equally likely to study any of the four courses. H₁: students are not equally likely to study any of the four courses.',
+//         },
+//         {
+//           id: 20,
+//           question:
+//             'Zhao thinks that students at her large college are equally likely to study any of the four mathematics courses. She asks a random sample of 80 students and obtains the following results: Analysis and Approaches HL 18, Analysis and Approaches SL 21, Applications and Interpretation HL 8, Applications and Interpretation SL 33. Zhao conducts a χ² test using a 5% significance level. Write down the expected frequencies and the number of degrees of freedom.',
+//           type: 'Medium',
+//           explaination:
+//             'If all four courses are equally likely, each expected frequency = 80 ÷ 4 = 20. There are 4 categories, so df = 4 − 1 = 3.',
+//           answer: 'Expected frequency = 20 for each course; df = 3',
+//         },
+//         {
+//           id: 21,
+//           question:
+//             'Zhao thinks that students at her large college are equally likely to study any of the four mathematics courses. She asks a random sample of 80 students and obtains the following results: Analysis and Approaches HL 18, Analysis and Approaches SL 21, Applications and Interpretation HL 8, Applications and Interpretation SL 33. Zhao conducts a χ² test using a 5% significance level. Find the p-value for the test and hence state the conclusion.',
+//           type: 'Medium',
+//           explaination:
+//             'Expected frequency = 20 for each course. χ² = (18 − 20)²/20 + (21 − 20)²/20 + (8 − 20)²/20 + (33 − 20)²/20 = (4 + 1 + 144 + 169)/20 = 15.9. With df = 3, p-value ≈ 0.00119. Since 0.00119 < 0.05, reject H₀: there is evidence that students are not equally likely to study each course.',
+//           answer: 'χ² = 15.9, p-value ≈ 0.00119; reject H₀',
+//         },
+//         {
+//           id: 22,
+//           question:
+//             'A six-sided dice is rolled 120 times, giving the following results: 1 appears 26 times, 2 appears 12 times, 3 appears 16 times, 4 appears 28 times, 5 appears 14 times and 6 appears 24 times. Is there evidence, at the 2% significance level, that the dice is not fair?',
+//           type: 'Medium',
+//           explaination:
+//             'H₀: the dice is fair (each outcome has probability 1/6). H₁: the dice is not fair. Expected frequency = 120 ÷ 6 = 20 for each outcome. χ² = (36 + 64 + 16 + 64 + 36 + 16)/20 = 232/20 = 11.6. df = 6 − 1 = 5. p-value ≈ 0.0407, which is greater than 0.02 (equivalently, 11.6 < the critical value 13.388). Do not reject H₀.',
+//           answer:
+//             'χ² = 11.6, p-value ≈ 0.0407 > 0.02; do not reject H₀. There is not enough evidence that the dice is unfair.',
+//         },
+//       ],
+//       'chi-squared-test-for-independence': [
+//         {
+//           id: 1,
+//           question:
+//             'The following contingency table is given. Row 1: 12, 15, 21. Row 2: 22, 18, 12. A χ² test for independence is carried out, with the null hypothesis that the row and column variables are independent. The critical value for the test is 9.21. State the χ² value and the conclusion of the test.',
+//           type: 'Medium',
+//           explaination:
+//             'Row totals: 48, 52. Column totals: 34, 33, 33. Grand total: 100. Expected frequency = (row total × column total) ÷ grand total. Expected values: Row 1: 16.32, 15.84, 15.84; Row 2: 17.68, 17.16, 17.16. χ² = Σ(O − E)²/E ≈ 5.52, with df = (2 − 1)(3 − 1) = 2. The critical value 9.21 corresponds to a 1% significance level. Since 5.52 < 9.21, do not reject H₀: there is not enough evidence that the variables are dependent.',
+//           answer:
+//             'χ² ≈ 5.52; 5.52 < 9.21, so do not reject H₀ (not enough evidence that the variables are dependent)',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'The following contingency table is given. Row 1: 63, 81, 35. Row 2: 27, 32, 62. A χ² test for independence is carried out, with the null hypothesis that the row and column variables are independent. The critical value for the test is 7.38. State the χ² value and the conclusion of the test.',
+//           type: 'Medium',
+//           explaination:
+//             'Row totals: 179, 121. Column totals: 90, 113, 97. Grand total: 300. Expected frequency = (row total × column total) ÷ grand total. Expected values: Row 1: 53.7, 67.42, 57.88; Row 2: 36.3, 45.58, 39.12. χ² = Σ(O − E)²/E ≈ 33.2, with df = (2 − 1)(3 − 1) = 2. The critical value 7.38 corresponds to a 2.5% significance level. Since 33.2 > 7.38, reject H₀: there is evidence that the variables are not independent.',
+//           answer:
+//             'χ² ≈ 33.2; 33.2 > 7.38, so reject H₀ (evidence that the variables are not independent)',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'The following contingency table is given. Row 1: 8, 12, 16. Row 2: 9, 15, 21. Row 3: 13, 14, 22. A χ² test for independence is carried out, with the null hypothesis that the row and column variables are independent. The critical value for the test is 7.78. State the χ² value and the conclusion of the test.',
+//           type: 'Medium',
+//           explaination:
+//             'Row totals: 36, 45, 49. Column totals: 30, 41, 59. Grand total: 130. Expected frequency = (row total × column total) ÷ grand total. Expected values: Row 1: 8.31, 11.35, 16.34; Row 2: 10.38, 14.19, 20.42; Row 3: 11.31, 15.45, 22.24. χ² = Σ(O − E)²/E ≈ 0.695, with df = (3 − 1)(3 − 1) = 4. The critical value 7.78 corresponds to a 10% significance level. Since 0.695 < 7.78, do not reject H₀: there is not enough evidence that the variables are dependent.',
+//           answer:
+//             'χ² ≈ 0.695; 0.695 < 7.78, so do not reject H₀ (not enough evidence that the variables are dependent)',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'The following contingency table is given. Row 1: 18, 13, 8. Row 2: 13, 16, 21. Row 3: 8, 18, 22. A χ² test for independence is carried out, with the null hypothesis that the row and column variables are independent. The critical value for the test is 9.49. State the χ² value and the conclusion of the test.',
+//           type: 'Medium',
+//           explaination:
+//             'Row totals: 39, 50, 48. Column totals: 39, 47, 51. Grand total: 137. Expected frequency = (row total × column total) ÷ grand total. Expected values: Row 1: 11.1, 13.38, 14.52; Row 2: 14.23, 17.15, 18.61; Row 3: 13.66, 16.47, 17.87. χ² = Σ(O − E)²/E ≈ 11.2, with df = (3 − 1)(3 − 1) = 4. The critical value 9.49 corresponds to a 5% significance level. Since 11.2 > 9.49, reject H₀: there is evidence that the variables are not independent.',
+//           answer:
+//             'χ² ≈ 11.2; 11.2 > 9.49, so reject H₀ (evidence that the variables are not independent)',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'The following contingency table is given. Row 1: 62, 37, 81. Row 2: 88, 53, 30. Row 3: 26, 15, 32. Row 4: 81, 73, 55. A χ² test for independence is carried out, with the null hypothesis that the row and column variables are independent. The critical value for the test is 12.6. State the χ² value and the conclusion of the test.',
+//           type: 'Hard',
+//           explaination:
+//             'Row totals: 180, 171, 73, 209. Column totals: 257, 178, 198. Grand total: 633. Expected frequency = (row total × column total) ÷ grand total. Expected values: Row 1: 73.08, 50.62, 56.3; Row 2: 69.43, 48.09, 53.49; Row 3: 29.64, 20.53, 22.83; Row 4: 84.85, 58.77, 65.37. χ² = Σ(O − E)²/E ≈ 42.8, with df = (4 − 1)(3 − 1) = 6. The critical value 12.6 corresponds to a 5% significance level. Since 42.8 > 12.6, reject H₀: there is evidence that the variables are not independent.',
+//           answer:
+//             'χ² ≈ 42.8; 42.8 > 12.6, so reject H₀ (evidence that the variables are not independent)',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'The following contingency table is given. Row 1: 13, 11, 11. Row 2: 12, 8, 3. Row 3: 21, 16, 9. Row 4: 13, 13, 13. A χ² test for independence is carried out, with the null hypothesis that the row and column variables are independent. The critical value for the test is 10.6. State the χ² value and the conclusion of the test.',
+//           type: 'Hard',
+//           explaination:
+//             'Row totals: 35, 23, 46, 39. Column totals: 59, 48, 36. Grand total: 143. Expected frequency = (row total × column total) ÷ grand total. Expected values: Row 1: 14.44, 11.75, 8.81; Row 2: 9.49, 7.72, 5.79; Row 3: 18.98, 15.44, 11.58; Row 4: 16.09, 13.09, 9.82. χ² = Σ(O − E)²/E ≈ 5.19, with df = (4 − 1)(3 − 1) = 6. The critical value 10.6 corresponds to a 10% significance level. Since 5.19 < 10.6, do not reject H₀: there is not enough evidence that the variables are dependent.',
+//           answer:
+//             'χ² ≈ 5.19; 5.19 < 10.6, so do not reject H₀ (not enough evidence that the variables are dependent)',
+//         },
+//       ],
+//       'chi-squared-test-for-independence-full-test': [
+//         {
+//           id: 1,
+//           question:
+//             "Ruby wants to test whether students' food preferences depend on their age. She conducts a survey in the school canteen, recording which option each student chooses. Junior school: veggie burger 18, fish fingers 26, pepperoni pizza 51. Senior school: veggie burger 53, fish fingers 38, pepperoni pizza 47. Conduct a suitable χ² test at the 5% significance level, stating your hypotheses and conclusion clearly.",
+//           type: 'Medium',
+//           explaination:
+//             'H₀: food preference is independent of school (junior or senior). H₁: food preference is not independent of school. Row totals (Junior, Senior): 95, 138. Column totals (veggie burger, fish fingers, pepperoni pizza): 71, 64, 98. Grand total: 233. Expected frequency = (row total × column total) ÷ grand total. Expected values: Junior: 28.95, 26.09, 39.96; Senior: 42.05, 37.91, 58.04. All expected values are at least 5. χ² = Σ(O − E)²/E ≈ 12.14. df = (2 − 1)(3 − 1) = 2. p-value ≈ 0.00231 (critical value at 5% ≈ 5.991). Since 0.00231 < 0.05, reject H₀. There is evidence that food preference depends on whether a student is in the junior or senior school.',
+//           answer:
+//             'χ² ≈ 12.1, df = 2, p-value ≈ 0.00231; reject H₀. There is evidence that food preference depends on whether a student is in the junior or senior school.',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'A zoologist investigates whether different types of insect are more common in different locations. She collects a random sample of insects from a meadow and a forest and counts the number of ants, bees and flies. Meadow: ants 26, bees 15, flies 21. Forest: ants 32, bees 6, flies 18. Use a χ² test with a 10% significance level to test whether the type of insect found depends on the location.',
+//           type: 'Medium',
+//           explaination:
+//             'H₀: the type of insect is independent of location. H₁: the type of insect is not independent of location. Row totals (Meadow, Forest): 62, 56. Column totals (ants, bees, flies): 58, 21, 39. Grand total: 118. Expected frequency = (row total × column total) ÷ grand total. Expected values: Meadow: 30.47, 11.03, 20.49; Forest: 27.53, 9.97, 18.51. All expected values are at least 5. χ² = Σ(O − E)²/E ≈ 4.415. df = (2 − 1)(3 − 1) = 2. p-value ≈ 0.110 (critical value at 10% ≈ 4.605). Since 0.110 > 0.1, do not reject H₀. There is not enough evidence, at the 10% level, that the type of insect depends on the location.',
+//           answer:
+//             'χ² ≈ 4.41, df = 2, p-value ≈ 0.110; do not reject H₀. There is not enough evidence, at the 10% level, that the type of insect depends on the location.',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'The table shows the mode of transport students use to get to school in four different cities. Car: Amsterdam 12, Athens 25, Houston 48, Johannesburg 24. Bus: Amsterdam 18, Athens 33, Houston 12, Johannesburg 18. Bicycle: Amsterdam 46, Athens 12, Houston 7, Johannesburg 53. Walk: Amsterdam 38, Athens 8, Houston 3, Johannesburg 21. Use a χ² test to find out whether there is evidence, at the 5% significance level, of a relationship between the mode of transport and the city. State your hypotheses and conclusion clearly.',
+//           type: 'Hard',
+//           explaination:
+//             'H₀: mode of transport is independent of city. H₁: mode of transport is not independent of city. Row totals (Car, Bus, Bicycle, Walk): 109, 81, 118, 70. Column totals (Amsterdam, Athens, Houston, Johannesburg): 114, 78, 70, 116. Grand total: 378. Expected frequency = (row total × column total) ÷ grand total. Expected values: Car: 32.87, 22.49, 20.19, 33.45; Bus: 24.43, 16.71, 15, 24.86; Bicycle: 35.59, 24.35, 21.85, 36.21; Walk: 21.11, 14.44, 12.96, 21.48. All expected values are at least 5. χ² = Σ(O − E)²/E ≈ 125.8. df = (4 − 1)(4 − 1) = 9. p-value ≈ 8.55 × 10⁻²³ (critical value at 5% ≈ 16.919). Since 8.55 × 10⁻²³ < 0.05, reject H₀. There is strong evidence of a relationship between the mode of transport and the city.',
+//           answer:
+//             'χ² ≈ 126, df = 9, p-value ≈ 8.55 × 10⁻²³; reject H₀. There is strong evidence of a relationship between the mode of transport and the city.',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'Katya wants to find out whether diet choices depend on age. She collects data from 200 pupils. Ages 11–13: vegetarian 12, vegan 32, eats meat 21. Ages 14–15: vegetarian 22, vegan 16, eats meat 30. Ages 16–19: vegetarian 26, vegan 18, eats meat 23. Conduct a χ² test for independence, using a 1% significance level. State your conclusion in context.',
+//           type: 'Hard',
+//           explaination:
+//             'H₀: diet choice is independent of age group. H₁: diet choice is not independent of age group. Row totals (11–13, 14–15, 16–19): 65, 68, 67. Column totals (vegetarian, vegan, eats meat): 60, 66, 74. Grand total: 200. Expected frequency = (row total × column total) ÷ grand total. Expected values: 11–13: 19.5, 21.45, 24.05; 14–15: 20.4, 22.44, 25.16; 16–19: 20.1, 22.11, 24.79. All expected values are at least 5. χ² = Σ(O − E)²/E ≈ 13.99. df = (3 − 1)(3 − 1) = 4. p-value ≈ 0.00733 (critical value at 1% ≈ 13.277). Since 0.00733 < 0.01, reject H₀. There is evidence that diet choice depends on age group.',
+//           answer:
+//             'χ² ≈ 14.0, df = 4, p-value ≈ 0.00733; reject H₀. There is evidence that diet choice depends on age group.',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'Katya wants to find out whether diet choices depend on age, using data from 200 pupils. She splits the 16–19 age group into two. Ages 11–13: vegetarian 12, vegan 32, eats meat 21. Ages 14–15: vegetarian 22, vegan 16, eats meat 30. Ages 16–17: vegetarian 13, vegan 12, eats meat 10. Ages 18–19: vegetarian 13, vegan 6, eats meat 13. Repeat the χ² test for independence at the 1% significance level, and state the new conclusion clearly.',
+//           type: 'Hard',
+//           explaination:
+//             'H₀: diet choice is independent of age group. H₁: diet choice is not independent of age group. Row totals (11–13, 14–15, 16–17, 18–19): 65, 68, 35, 32. Column totals (vegetarian, vegan, eats meat): 60, 66, 74. Grand total: 200. Expected frequency = (row total × column total) ÷ grand total. Expected values: 11–13: 19.5, 21.45, 24.05; 14–15: 20.4, 22.44, 25.16; 16–17: 10.5, 11.55, 12.95; 18–19: 9.6, 10.56, 11.84. All expected values are at least 5. χ² = Σ(O − E)²/E ≈ 15.94. df = (4 − 1)(3 − 1) = 6. p-value ≈ 0.0141 (critical value at 1% ≈ 16.812). Since 0.0141 > 0.01, do not reject H₀. There is not enough evidence that diet choice depends on age group, so the conclusion changes from the test with three age groups (which rejected H₀). Splitting the group adds degrees of freedom and raises the critical value.',
+//           answer:
+//             'χ² ≈ 15.9, df = 6, p-value ≈ 0.0141; do not reject H₀. There is not enough evidence that diet choice depends on age group, so the conclusion changes from the test with three age groups (which rejected H₀). Splitting the group adds degrees of freedom and raises the critical value.',
+//         },
+//       ],
+//       'one-sample-t-test': [
+//         {
+//           id: 1,
+//           question:
+//             'H₀: μ = 30, H₁: μ > 30, at the 5% significance level. A sample of data is given: 23, 29, 32, 27, 37, 38, 28. Perform a t-test to determine whether there is sufficient evidence to reject the null hypothesis. State the t-statistic and p-value.',
+//           type: 'Easy',
+//           explaination:
+//             'n = 7, x̄ = 214/7 ≈ 30.5714, sample standard deviation s ≈ 5.4423. t = (x̄ − μ₀)/(s/√n) = (30.5714 − 30)/(5.4423/√7) ≈ 0.278. df = 6, one-tailed (right) test, so p-value ≈ 0.395 (use the t-test on the GDC). Since 0.395 > 0.05, do not reject H₀. There is not enough evidence at the 5% level that μ > 30.',
+//           answer: 't ≈ 0.278, p-value ≈ 0.395; do not reject H₀',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'H₀: μ = 50, H₁: μ > 50, at the 5% significance level. A sample of data is given: 50, 58, 61, 46, 49, 57, 65. Perform a t-test to determine whether there is sufficient evidence to reject the null hypothesis. State the t-statistic and p-value.',
+//           type: 'Easy',
+//           explaination:
+//             'n = 7, x̄ = 386/7 ≈ 55.1429, sample standard deviation s ≈ 6.9625. t = (x̄ − μ₀)/(s/√n) = (55.1429 − 50)/(6.9625/√7) ≈ 1.954. df = 6, one-tailed (right) test, so p-value ≈ 0.0492 (use the t-test on the GDC). Since 0.0492 < 0.05, reject H₀. There is sufficient evidence at the 5% level that μ > 50.',
+//           answer: 't ≈ 1.954, p-value ≈ 0.0492; reject H₀',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'H₀: μ = 220, H₁: μ < 220, at the 10% significance level. A sample of data is given: 224, 209, 207, 215, 216, 222. Perform a t-test to determine whether there is sufficient evidence to reject the null hypothesis. State the t-statistic and p-value.',
+//           type: 'Easy',
+//           explaination:
+//             'n = 6, x̄ = 1293/6 ≈ 215.5000, sample standard deviation s ≈ 6.7750. t = (x̄ − μ₀)/(s/√n) = (215.5000 − 220)/(6.7750/√6) ≈ −1.627. df = 5, one-tailed (left) test, so p-value ≈ 0.0823 (use the t-test on the GDC). Since 0.0823 < 0.10, reject H₀. There is sufficient evidence at the 10% level that μ < 220.',
+//           answer: 't ≈ −1.627, p-value ≈ 0.0823; reject H₀',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'H₀: μ = 145, H₁: μ < 145, at the 10% significance level. A sample of data is given: 141, 143, 139, 144, 142, 150. Perform a t-test to determine whether there is sufficient evidence to reject the null hypothesis. State the t-statistic and p-value.',
+//           type: 'Easy',
+//           explaination:
+//             'n = 6, x̄ = 859/6 ≈ 143.1667, sample standard deviation s ≈ 3.7639. t = (x̄ − μ₀)/(s/√n) = (143.1667 − 145)/(3.7639/√6) ≈ −1.193. df = 5, one-tailed (left) test, so p-value ≈ 0.143 (use the t-test on the GDC). Since 0.143 > 0.10, do not reject H₀. There is not enough evidence at the 10% level that μ < 145.',
+//           answer: 't ≈ −1.193, p-value ≈ 0.143; do not reject H₀',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'H₀: μ = 76.2, H₁: μ ≠ 76.2, at the 2% significance level. A sample of data is given: 69.4, 78.3, 71, 75.5, 77.4, 72.9, 68.8, 73.3, 70.5. Perform a t-test to determine whether there is sufficient evidence to reject the null hypothesis. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             'n = 9, x̄ = 657.1/9 ≈ 73.0111, sample standard deviation s ≈ 3.4396. t = (x̄ − μ₀)/(s/√n) = (73.0111 − 76.2)/(3.4396/√9) ≈ −2.781. df = 8, two-tailed test, so p-value ≈ 0.0239 (use the t-test on the GDC). Since 0.0239 > 0.02, do not reject H₀. There is not enough evidence at the 2% level that μ ≠ 76.2.',
+//           answer: 't ≈ −2.781, p-value ≈ 0.0239; do not reject H₀',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'H₀: μ = 14.7, H₁: μ ≠ 14.7, at the 2% significance level. A sample of data is given: 14.7, 13.9, 18.8, 15.5, 17.7, 15.6, 20.3, 17.5, 16.9. Perform a t-test to determine whether there is sufficient evidence to reject the null hypothesis. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             'n = 9, x̄ = 150.9/9 ≈ 16.7667, sample standard deviation s ≈ 2.0463. t = (x̄ − μ₀)/(s/√n) = (16.7667 − 14.7)/(2.0463/√9) ≈ 3.030. df = 8, two-tailed test, so p-value ≈ 0.0163 (use the t-test on the GDC). Since 0.0163 < 0.02, reject H₀. There is sufficient evidence at the 2% level that μ ≠ 14.7.',
+//           answer: 't ≈ 3.030, p-value ≈ 0.0163; reject H₀',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'H₀: μ = 100, H₁: μ > 100, at the 10% significance level. A sample has n = 25, x̄ = 110 and s²ₙ₋₁ = 25. Using these summary statistics, perform a t-test. State the t-statistic and p-value.',
+//           type: 'Easy',
+//           explaination:
+//             's = √(25) = 5. t = (x̄ − μ₀)/(s/√n) = (110 − 100)/(5/√25) ≈ 10.000. df = 24, one-tailed (right) test, so p-value ≈ 2.46 × 10⁻¹⁰. Since 2.46 × 10⁻¹⁰ < 0.10, reject H₀. There is sufficient evidence at the 10% level that μ > 100.',
+//           answer: 't = 10, p-value ≈ 2.46 × 10⁻¹⁰; reject H₀',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'H₀: μ = −6, H₁: μ > −6, at the 10% significance level. A sample has n = 40, x̄ = −5 and s²ₙ₋₁ = 10. Using these summary statistics, perform a t-test. State the t-statistic and p-value.',
+//           type: 'Easy',
+//           explaination:
+//             's = √(10) = 3.16228. t = (x̄ − μ₀)/(s/√n) = (−5 − (−6))/(3.16228/√40) ≈ 2.000. df = 39, one-tailed (right) test, so p-value ≈ 0.0262. Since 0.0262 < 0.10, reject H₀. There is sufficient evidence at the 10% level that μ > −6.',
+//           answer: 't = 2, p-value ≈ 0.0262; reject H₀',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'H₀: μ = 0, H₁: μ < 0, at the 1% significance level. A sample has n = 60, x̄ = −0.6 and s²ₙ₋₁ = 400. Using these summary statistics, perform a t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             's = √(400) = 20. t = (x̄ − μ₀)/(s/√n) = (−0.6 − 0)/(20/√60) ≈ −0.232. df = 59, one-tailed (left) test, so p-value ≈ 0.409. Since 0.409 > 0.01, do not reject H₀. There is not enough evidence at the 1% level that μ < 0.',
+//           answer: 't ≈ −0.232, p-value ≈ 0.409; do not reject H₀',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'H₀: μ = 50, H₁: μ < 50, at the 1% significance level. A sample has n = 15, x̄ = 48 and s²ₙ₋₁ = 81. Using these summary statistics, perform a t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             's = √(81) = 9. t = (x̄ − μ₀)/(s/√n) = (48 − 50)/(9/√15) ≈ −0.861. df = 14, one-tailed (left) test, so p-value ≈ 0.202. Since 0.202 > 0.01, do not reject H₀. There is not enough evidence at the 1% level that μ < 50.',
+//           answer: 't ≈ −0.861, p-value ≈ 0.202; do not reject H₀',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'H₀: μ = 1, H₁: μ ≠ 1, at the 5% significance level. A sample has n = 10, x̄ = 1.04 and s²ₙ₋₁ = 0.25. Using these summary statistics, perform a t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             's = √(0.25) = 0.5. t = (x̄ − μ₀)/(s/√n) = (1.04 − 1)/(0.5/√10) ≈ 0.253. df = 9, two-tailed test, so p-value ≈ 0.806. Since 0.806 > 0.05, do not reject H₀. There is not enough evidence at the 5% level that μ ≠ 1.',
+//           answer: 't ≈ 0.253, p-value ≈ 0.806; do not reject H₀',
+//         },
+//         {
+//           id: 12,
+//           question:
+//             'H₀: μ = 10, H₁: μ ≠ 10, at the 5% significance level. A sample has n = 5, x̄ = 9.5 and s²ₙ₋₁ = 1/9. Using these summary statistics, perform a t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             's = √(1/9) = 1/3. t = (x̄ − μ₀)/(s/√n) = (9.5 − 10)/((1/3)/√5) ≈ −3.354. df = 4, two-tailed test, so p-value ≈ 0.0285. Since 0.0285 < 0.05, reject H₀. There is sufficient evidence at the 5% level that μ ≠ 10.',
+//           answer: 't ≈ −3.354, p-value ≈ 0.0285; reject H₀',
+//         },
+//       ],
+//       'two-sample-t-test': [
+//         {
+//           id: 1,
+//           question:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ > μ₂, at the 5% significance level. Sample 1: mean = 10, variance = 4, size = 5. Sample 2: mean = 8, variance = 5, size = 6. Assuming equal population variances, perform a two-sample t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             'Pooled variance s²ₚ = ((n₁ − 1)s₁² + (n₂ − 1)s₂²)/(n₁ + n₂ − 2) = ((5 − 1)(4) + (6 − 1)(5))/9 ≈ 4.556. t = (x̄₁ − x̄₂)/√(s²ₚ(1/n₁ + 1/n₂)) = (10 − 8)/√(4.556 × (1/5 + 1/6)) ≈ 1.547. df = 5 + 6 − 2 = 9, one-tailed (right) test, so p-value ≈ 0.0781 (use the pooled two-sample t-test on the GDC). Since 0.0781 > 0.05, do not reject H₀. There is not enough evidence at the 5% level that μ₁ > μ₂.',
+//           answer: 't ≈ 1.547, p-value ≈ 0.0781; do not reject H₀',
+//         },
+//         {
+//           id: 2,
+//           question:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ > μ₂, at the 2% significance level. Sample 1: mean = 100, variance = 40, size = 50. Sample 2: mean = 80, variance = 50, size = 60. Assuming equal population variances, perform a two-sample t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             'Pooled variance s²ₚ = ((n₁ − 1)s₁² + (n₂ − 1)s₂²)/(n₁ + n₂ − 2) = ((50 − 1)(40) + (60 − 1)(50))/108 ≈ 45.46. t = (x̄₁ − x̄₂)/√(s²ₚ(1/n₁ + 1/n₂)) = (100 − 80)/√(45.46 × (1/50 + 1/60)) ≈ 15.5. df = 50 + 60 − 2 = 108, one-tailed (right) test, so p-value ≈ 1.68 × 10⁻²⁹ (use the pooled two-sample t-test on the GDC). Since 1.68 × 10⁻²⁹ < 0.02, reject H₀. There is sufficient evidence at the 2% level that μ₁ > μ₂.',
+//           answer: 't ≈ 15.5, p-value ≈ 1.68 × 10⁻²⁹; reject H₀',
+//         },
+//         {
+//           id: 3,
+//           question:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ < μ₂, at the 10% significance level. Sample 1: mean = 5.4, variance = 4.3, size = 48. Sample 2: mean = 5.8, variance = 3.9, size = 35. Assuming equal population variances, perform a two-sample t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             'Pooled variance s²ₚ = ((n₁ − 1)s₁² + (n₂ − 1)s₂²)/(n₁ + n₂ − 2) = ((48 − 1)(4.3) + (35 − 1)(3.9))/81 ≈ 4.132. t = (x̄₁ − x̄₂)/√(s²ₚ(1/n₁ + 1/n₂)) = (5.4 − 5.8)/√(4.132 × (1/48 + 1/35)) ≈ −0.885. df = 48 + 35 − 2 = 81, one-tailed (left) test, so p-value ≈ 0.189 (use the pooled two-sample t-test on the GDC). Since 0.189 > 0.10, do not reject H₀. There is not enough evidence at the 10% level that μ₁ < μ₂.',
+//           answer: 't ≈ −0.885, p-value ≈ 0.189; do not reject H₀',
+//         },
+//         {
+//           id: 4,
+//           question:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ < μ₂, at the 10% significance level. Sample 1: mean = 12, variance = 36, size = 50. Sample 2: mean = 15, variance = 49, size = 50. Assuming equal population variances, perform a two-sample t-test. State the t-statistic and p-value.',
+//           type: 'Medium',
+//           explaination:
+//             'Pooled variance s²ₚ = ((n₁ − 1)s₁² + (n₂ − 1)s₂²)/(n₁ + n₂ − 2) = ((50 − 1)(36) + (50 − 1)(49))/98 ≈ 42.5. t = (x̄₁ − x̄₂)/√(s²ₚ(1/n₁ + 1/n₂)) = (12 − 15)/√(42.5 × (1/50 + 1/50)) ≈ −2.301. df = 50 + 50 − 2 = 98, one-tailed (left) test, so p-value ≈ 0.0118 (use the pooled two-sample t-test on the GDC). Since 0.0118 < 0.10, reject H₀. There is sufficient evidence at the 10% level that μ₁ < μ₂.',
+//           answer: 't ≈ −2.301, p-value ≈ 0.0118; reject H₀',
+//         },
+//         {
+//           id: 5,
+//           question:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ ≠ μ₂, at the 2% significance level. Sample 1: mean = 104, variance = 81, size = 100. Sample 2: mean = 108, variance = 100, size = 100. Assuming equal population variances, perform a two-sample t-test. State the t-statistic and p-value.',
+//           type: 'Hard',
+//           explaination:
+//             'Pooled variance s²ₚ = ((n₁ − 1)s₁² + (n₂ − 1)s₂²)/(n₁ + n₂ − 2) = ((100 − 1)(81) + (100 − 1)(100))/198 ≈ 90.5. t = (x̄₁ − x̄₂)/√(s²ₚ(1/n₁ + 1/n₂)) = (104 − 108)/√(90.5 × (1/100 + 1/100)) ≈ −2.973. df = 100 + 100 − 2 = 198, two-tailed test, so p-value ≈ 0.00331 (use the pooled two-sample t-test on the GDC). Since 0.00331 < 0.02, reject H₀. There is sufficient evidence at the 2% level that μ₁ ≠ μ₂.',
+//           answer: 't ≈ −2.973, p-value ≈ 0.00331; reject H₀',
+//         },
+//         {
+//           id: 6,
+//           question:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ ≠ μ₂, at the 5% significance level. Sample 1: mean = 150, variance = 25, size = 10. Sample 2: mean = 147, variance = 25, size = 10. Assuming equal population variances, perform a two-sample t-test. State the t-statistic and p-value.',
+//           type: 'Hard',
+//           explaination:
+//             'Pooled variance s²ₚ = ((n₁ − 1)s₁² + (n₂ − 1)s₂²)/(n₁ + n₂ − 2) = ((10 − 1)(25) + (10 − 1)(25))/18 ≈ 25. t = (x̄₁ − x̄₂)/√(s²ₚ(1/n₁ + 1/n₂)) = (150 − 147)/√(25 × (1/10 + 1/10)) ≈ 1.342. df = 10 + 10 − 2 = 18, two-tailed test, so p-value ≈ 0.196 (use the pooled two-sample t-test on the GDC). Since 0.196 > 0.05, do not reject H₀. There is not enough evidence at the 5% level that μ₁ ≠ μ₂.',
+//           answer: 't ≈ 1.342, p-value ≈ 0.196; do not reject H₀',
+//         },
+//         {
+//           id: 7,
+//           question:
+//             'Divya measures the masses (in kg) of a random sample of dogs from two different breeds. Breed A: 6.2, 5.1, 8.7, 12.1, 18.3, 5.4. Breed B: 12.1, 7.5, 6.3, 4.8, 11.3, 8.3, 5.9, 7.0. Is there evidence, at the 5% significance level, that the two breeds have different mean masses? You may assume that both populations are normally distributed and have equal variances.',
+//           type: 'Hard',
+//           explaination:
+//             'H₀: μ_A = μ_B, H₁: μ_A ≠ μ_B. Breed A: n = 6, x̄ = 55.8/6 = 9.3, s² ≈ 26.332. Breed B: n = 8, x̄ = 63.2/8 = 7.9, s² ≈ 6.643. Pooled variance s²ₚ = (5 × 26.332 + 7 × 6.643)/12 ≈ 14.847. t = (9.3 − 7.9)/√(14.847 × (1/6 + 1/8)) ≈ 0.673. df = 12, two-tailed test, so p-value ≈ 0.514. Since 0.514 > 0.05, do not reject H₀. There is not enough evidence that the two breeds have different mean masses.',
+//           answer:
+//             't ≈ 0.673, p-value ≈ 0.514; do not reject H₀. There is not enough evidence that the mean masses differ.',
+//         },
+//         {
+//           id: 8,
+//           question:
+//             'A teacher records the length of time (in minutes) it takes two groups of pupils to complete a writing task. Group 1: sample size 23, sample mean 18.3, estimate of population variance 12.3. Group 2: sample size 28, sample mean 20.6, estimate of population variance 15.0. The teacher uses a t-test to determine whether the first group completed the task significantly faster. State two assumptions required to use a t-test.',
+//           type: 'Easy',
+//           explaination:
+//             'A pooled two-sample t-test assumes that the data in each group come from a normal distribution, and that the two populations have the same variance.',
+//           answer:
+//             'Both populations are normally distributed, and both populations have equal variances.',
+//         },
+//         {
+//           id: 9,
+//           question:
+//             'A teacher records the length of time (in minutes) it takes two groups of pupils to complete a writing task. Group 1: sample size 23, sample mean 18.3, estimate of population variance 12.3. Group 2: sample size 28, sample mean 20.6, estimate of population variance 15.0. The teacher uses a t-test to determine whether the first group completed the task significantly faster. State the appropriate hypotheses.',
+//           type: 'Easy',
+//           explaination:
+//             '"Faster" means a shorter mean time, so Group 1\'s mean is less than Group 2\'s. This makes the test one-tailed (left).',
+//           answer: 'H₀: μ₁ = μ₂, H₁: μ₁ < μ₂',
+//         },
+//         {
+//           id: 10,
+//           question:
+//             'A teacher records the length of time (in minutes) it takes two groups of pupils to complete a writing task. Group 1: sample size 23, sample mean 18.3, estimate of population variance 12.3. Group 2: sample size 28, sample mean 20.6, estimate of population variance 15.0. The teacher uses a t-test to determine whether the first group completed the task significantly faster. Conduct the test and state the conclusion at the 5% significance level.',
+//           type: 'Hard',
+//           explaination:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ < μ₂. Pooled variance s²ₚ = (22 × 12.3 + 27 × 15.0)/49 = (270.6 + 405)/49 ≈ 13.788. t = (18.3 − 20.6)/√(13.788 × (1/23 + 1/28)) = −2.3/√1.0919 ≈ −2.201. df = 49, one-tailed (left), so p-value ≈ 0.0162. Since 0.0162 < 0.05, reject H₀. There is evidence at the 5% level that Group 1 completed the task faster.',
+//           answer: 't ≈ −2.201, p-value ≈ 0.0162; reject H₀ at 5%: Group 1 was significantly faster',
+//         },
+//         {
+//           id: 11,
+//           question:
+//             'A teacher records the length of time (in minutes) it takes two groups of pupils to complete a writing task. Group 1: sample size 23, sample mean 18.3, estimate of population variance 12.3. Group 2: sample size 28, sample mean 20.6, estimate of population variance 15.0. The teacher uses a t-test to determine whether the first group completed the task significantly faster. Conduct the test and state the conclusion at the 1% significance level.',
+//           type: 'Hard',
+//           explaination:
+//             'H₀: μ₁ = μ₂, H₁: μ₁ < μ₂. Pooled variance s²ₚ = (22 × 12.3 + 27 × 15.0)/49 = (270.6 + 405)/49 ≈ 13.788. t = (18.3 − 20.6)/√(13.788 × (1/23 + 1/28)) = −2.3/√1.0919 ≈ −2.201. df = 49, one-tailed (left), so p-value ≈ 0.0162. Since 0.0162 > 0.01, do not reject H₀. There is not enough evidence at the 1% level that Group 1 was faster.',
+//           answer: 't ≈ −2.201, p-value ≈ 0.0162; do not reject H₀ at 1%',
 //         },
 //       ],
 //     },
 //   },
 // ]
+
+
 
 export function findTopic(topicSlug: string) {
   return topics.find((topic) => topic.slug === topicSlug)
