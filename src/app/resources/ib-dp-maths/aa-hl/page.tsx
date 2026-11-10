@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Explore IB Mathematics AA HL study resources, topic guides, practice questions and worked explanations for the IB Diploma Programme.',
   alternates: {
-    canonical: '/resources/ib-dp-maths/aa-sl',
+    canonical: '/resources/ib-dp-maths/aa-hl',
   },
 }
 
@@ -59,7 +59,7 @@ export default function AASLPage() {
           {topics.map((topic) => (
             <Link
               key={topic.slug}
-              href={`/resources/ib-dp-maths/aa-sl/${topic.slug}`}
+              href={`/resources/ib-dp-maths/aa-hl/${topic.slug}`}
               className="group rounded-xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
             >
               <div className="flex items-center justify-between">
