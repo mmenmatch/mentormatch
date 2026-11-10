@@ -21,7 +21,7 @@ export const Menu = ({
     <>
       {showNavBar && (
         <div className="min-h-[100vh] lg:hidden ">
-          <ResourceNavigation data={topics} type="aa-sl" />{' '}
+          <ResourceNavigation data={topics} type="ai-hl" />{' '}
         </div>
       )}
       {!showNavBar && (
@@ -29,8 +29,8 @@ export const Menu = ({
           <nav aria-label="Breadcrumb" className="lg:mb-6 text-md text-slate-500">
             <ol className="flex flex-wrap items-center lg:pl-3 pl-3 pt-4 gap-2">
               <li>
-                <Link href="/resources/ib-dp-maths/aa-sl" className="hover:text-blue-700">
-                  AASL Resources
+                <Link href="/resources/ib-dp-maths/ai-hl" className="hover:text-blue-700">
+                  AIHL Resources
                 </Link>
               </li>
 
