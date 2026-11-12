@@ -132,7 +132,7 @@ export default function CueMathForm({ v2 = false }) {
         Book a FREE Online Trial Class
       </h2>
 
-      <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
+      <form onSubmit={handleSubmit(onSubmit)} noValidate className="">
         {/* Parent Name */}
         <div className="flex flex-col gap-2 mb-4">
           <input

@@ -33,10 +33,10 @@ export const OnlineTutoringHeroSection = () => {
           </div>
         </div>
       </div>{' '}
-      <div className="w-full md:w-[45%] px-4 md:px-12 bg-[#FFF6ED] flex items-center">
-        <div className="max-w-[35rem]">
-          <CueMathForm />
-        </div>
+      <div className="w-full lg:w-[45%] px-2 md:px-12 bg-[#FFF6ED] flex items-center">
+        {/* <div className="max-w-[35rem]"> */}
+        <CueMathForm />
+        {/* </div> */}
       </div>
     </div>
   )
