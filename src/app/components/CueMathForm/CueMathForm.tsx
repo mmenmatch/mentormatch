@@ -128,7 +128,7 @@ export default function CueMathForm({ v2 = false }) {
 
   return (
     <div className="w-full mx-auto md:p-0 p-4  font-light" id="cta">
-      <h2 className="font-[900] md:text-[2.5rem] text-[6vw]  leading-[110%] text-center mt-4  md:text-[#0F1F3D] md:py-8">
+      <h2 className="font-[900] md:text-[2.5rem] text-[6vw] leading-[110%] text-center mt-4  md:text-[#0F1F3D] md:py-8">
         Book a FREE Online Trial Class
       </h2>
 

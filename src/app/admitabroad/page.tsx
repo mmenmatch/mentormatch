@@ -14,20 +14,18 @@ import { MMFooter } from '../components/MMFooter/MMFooter'
 
 export default function page() {
   return (
-    <div className="w-full">
+    <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <NavBar />
-      <div className="w-full">
-        <div className=" ">
-          <OnlineTutoringHeroSection />
-          <GpsSection />
-          <TrainedTutor />
-          <TrulyPersonalise />
-          <GoogleReview />
-          <ParentsApp />
-          <Faqs />
-          <MMFooter />
-        </div>
-      </div>
+      <main className="w-full flex flex-col flex-1 overflow-x-clip">
+        <OnlineTutoringHeroSection />
+        <GpsSection />
+        <TrainedTutor />
+        <TrulyPersonalise />
+        <GoogleReview />
+        <ParentsApp />
+        <Faqs />
+        <MMFooter />
+      </main>
     </div>
   )
 }
