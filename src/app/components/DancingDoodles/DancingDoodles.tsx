@@ -9,7 +9,7 @@ export const DancingDoodles = ({ img, alt, delay, w, h, direction }: any) => {
       className={direction === 'up' ? 'dancing-doodle-up' : 'dancing-doodle-down'}
       // style={{ animationDelay: delay }}
     >
-      <Image src={img} alt={alt ?? 'doodle'} className="md:w-[80px] w-[40px]" />
+      <Image src={img} alt={alt ?? 'doodle'} className="md:w-[100px] w-[60px]" />
     </div>
   )
 }

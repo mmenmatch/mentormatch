@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { DancingDoodles } from '../DancingDoodles/DancingDoodles'
-import DoodleRight from '../../../../public/assets/Images/dodle-right.webp'
-import DoodleLeft from '../../../../public/assets/Images/dodleleft.webp'
+import DoodleRight from '../../../../public/assets/Images/spark-r.png'
+import DoodleLeft from '../../../../public/assets/Images/spark-l.png'
 import Rishi from '../../../../public/assets/Images/Rishi.png'
 import Sloka from '../../../../public/assets/Images/Sloka.png'
 import Adithya from '../../../../public/assets/Images/Addithya.png'
@@ -155,8 +155,11 @@ export const StudentsGrowthCard = ({ type = '' }: { type?: any }) => {
           <div className="flex items-center justify-center gap-2 md:gap-4">
             <DancingDoodles img={DoodleLeft} delay={-1} direction="up" />
 
-            <h2 className="text-center text-[1.8rem] md:text-[2.5rem] font-bold leading-[120%]">
+            {/* <h2 className="text-center text-[1.8rem] md:text-[2.5rem] font-bold leading-[120%]">
               Students who Moved the Grade
+            </h2> */}
+            <h2 className="text-center text-[6vw] md:text-[2.5rem] font-bold leading-[120%]">
+              See How Our Students Improved Their Grades
             </h2>
 
             <DancingDoodles img={DoodleRight} w={80} delay={-6} direction="down" />
@@ -218,26 +221,28 @@ export const StudentsGrowthCard = ({ type = '' }: { type?: any }) => {
                   </div>
 
                   {/* Scores */}
-                  <div className="flex gap-4 items-start text-[#3A4A6A]">
-                    <div>
-                      <p className="text-[2rem] md:text-[2.2rem] leading-none">{data.before}</p>
-                      <p className="text-sm mt-1">Before</p>
+                  <div className="flex gap-4 items-center text-[#3A4A6A]">
+                    <div className="bg-pink-100 p-2 min-w-[120px] flex flex-col justify-center items-center rounded-2xl">
+                      <p className="text-[2rem] md:text-[2.2rem] leading-none text-pink-900 font-bold">
+                        {data.before}
+                      </p>
+                      <p className="text-sm mt-1 text-pink-900  font-bold">Before</p>
                     </div>
 
                     <div className="w-4 h-6 mt-2">
                       <Image src={Arrow} alt="arrow" className="w-full h-full object-contain" />
                     </div>
 
-                    <div>
-                      <p className="text-[2rem] md:text-[2.2rem] leading-none font-bold text-[#00BF63]">
+                    <div className="bg-green-100 p-2 min-w-[120px] flex flex-col justify-center items-center rounded-2xl">
+                      <p className="text-[2rem] md:text-[2.2rem] leading-none font-bold text-green-700">
                         {data.after}
 
-                        <span className="ml-1 font-medium text-[#3A4A6A] text-base md:text-[1.25rem]">
+                        <span className="ml-0.5 font-medium  text-base md:text-[1.25rem] text-green-700">
                           {data.type === 'mark' ? '/100' : data.type === 'grade' ? ' Grade' : ''}
                         </span>
                       </p>
 
-                      <p className="text-sm mt-1">After</p>
+                      <p className="text-sm mt-1 text-green-700 font-bold">After</p>
                     </div>
                   </div>
 

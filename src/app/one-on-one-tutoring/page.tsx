@@ -37,27 +37,25 @@ export default function page() {
   return (
     <div className="w-full">
       <NavBar />
-      <div className="w-full">
-        <div className="  ">
-          <OneOnOneOnlineTutoring />
-          <MarqueeComponent />
-          <div>
-            {/* <div className="md:block hidden "> */}
-            <LeadForm />
-            {/* </div> */}
-            {/* <div className="md:hidden block  py-8 " id="cta">
+      <main className="w-full flex flex-col flex-1 overflow-x-clip">
+        <OneOnOneOnlineTutoring />
+        <MarqueeComponent />
+        <div>
+          {/* <div className="md:block hidden "> */}
+          <LeadForm />
+          {/* </div> */}
+          {/* <div className="md:hidden block  py-8 " id="cta">
               <RegistrationForm />
             </div> */}
-          </div>
-          <GpsFrameWork />
-          <StudentsGrowthCard />
-          <ParentsChoose />
-          <TutorSection />
-          <Faqs />
-          <Footer />
-          <FooterBanner />
         </div>
-      </div>
+        <GpsFrameWork />
+        <StudentsGrowthCard />
+        <ParentsChoose />
+        <TutorSection />
+        <Faqs />
+        <Footer />
+        <FooterBanner />
+      </main>
     </div>
   )
 }

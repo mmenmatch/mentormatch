@@ -6,6 +6,8 @@ import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import type { Country } from 'react-phone-number-input'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+import SparkImage from '../../../../public/assets/Images/spark-accent.webp'
 
 const GRADES = [
   'Grade 4',
@@ -127,13 +129,28 @@ export default function RegistrationForm({ v2 = false }) {
 
   return (
     <div className="w-full  mx-auto md:p-0 p-4  font-light" id="cta">
-      <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 md:text-gray-800">
+      {/* <h2 className="md:text-[2.25rem] text-[6vw] leading-[110%] font-medium md:text-left text-center mt-4 mb-8 md:text-gray-800">
         Book a{' '}
         <span className="bg-[#FFF116] leading-[100%] text-black px-1 rounded font-bold leading-[140%]">
           Free Trial
         </span>{' '}
         for your child!
+      </h2> */}
+      <h2 className="md:text-[2.2rem] text-[5.5vw] leading-[150%] font-medium md:text-left text-center mt-4 mb-8 md:text-gray-800">
+        Book a
+        <span className="bg-[#FFF116] leading-[100%] md:text-[2rem] text-[5.5vw] text-black rounded font-bold leading-[100%] mx-2 px-2">
+          Free 1:1 class
+        </span>
+        <span className=" inline relative ">
+          with an <Image src={SparkImage} alt="spark" width={30} height={30} className="absolute" />
+        </span>
+        <br></br>
+        <span className="bg-[#FFF116] leading-[100%] md:text-[2rem] text-[5.5vw] text-black   rounded font-bold leading-[100%] mr-2 px-2">
+          Expert Mentor
+        </span>
+        for your child!
       </h2>
+
       {/* <p className="md:text-[2.25rem] mb-8 text-[6vw] leading-[110%]  w-full text-[#2B23FF] font-bold  md:text-left   text-center ">
         For Grade 6 to 12th
       </p> */}
@@ -316,7 +333,7 @@ export default function RegistrationForm({ v2 = false }) {
           className="w-full py-4 bg-[#2B23FF] text-white font-semibold rounded-lg
             hover:bg-[#2B23FF] disabled:bg-gray-300 transition text-[1rem]"
         >
-          {status === 'loading' ? 'Submitting...' : 'Book A Free Trial'}
+          {status === 'loading' ? 'Submitting...' : 'Book a Free 1:1 Class →'}
         </button>
 
         {status === 'success' && (

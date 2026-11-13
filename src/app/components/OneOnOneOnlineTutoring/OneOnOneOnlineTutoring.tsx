@@ -5,12 +5,13 @@ import HeroImage from '../../../../public/assets/Images/upd-hero-img.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 
 export default function OneOnOneOnlineTutoring() {
+  const curriculum = ['IB', 'IGCSE', 'A LEVEL', 'CBSE']
   return (
     <div>
       <div className="mx-auto flex bg-[linear-gradient(180deg,_#0285FA_-20.54%,_#006CFF_50.79%)]">
         <div className="max-w-360 w-full flex md:flex-row flex-col gap-4 mx-auto md:px-16 px-4 md:mt-8 mt-8 ">
           <div className="md:w-[45%] w-full text-white flex flex-col justify-center md:gap-4 gap-4">
-            <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
+            {/* <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
               <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm">
                 {' '}
                 1:1 Online Tuition
@@ -24,13 +25,37 @@ export default function OneOnOneOnlineTutoring() {
                   className="absolute left-0 w-full bottom-0"
                 />
               </span>
+            </h1> */}
+            <h1 className="md:text-[2.6rem] m-0 text-[6.5vw] leading-[150%] font-bold">
+              <span className="w-auto bg-[#FFF116] leading-[100%] text-black px-2 rounded-sm mr-2">
+                1:1 Online Tution
+              </span>
+              That Adapts to
+              <span className="relative ml-1 inline-block">
+                You Child
+                <Image
+                  src={TutorLine}
+                  alt="tutorline"
+                  className="absolute left-0 w-full h-2 bottom-0"
+                />
+              </span>
             </h1>
-            <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
+            {/* <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
               Personalised lessons tailored to IB, IGCSE, A Level & CBSE. Expert tutors, proven
               results, and first class is free.{' '}
+            </p> */}
+            <p className="md:text-[1.3rem] text-[4vw] leading-[130%]  font-medium ">
+              Personalised lessons, expert tutors, proven results, and the first class is free.
             </p>
 
-            <div className="w-70 md:block md:mt-8 hidden">
+            <div className="w-full flex gap-2">
+              {curriculum?.map((ele) => (
+                <p className="px-4 py-2 text-black font-semibold bg-white rounded shadow-[0px_2px_0px_rgb(216,216,216)]">
+                  {ele}
+                </p>
+              ))}
+            </div>
+            <div className="w-70 md:block md:mt-2 hidden">
               <button
                 type="submit"
                 onClick={() => {
@@ -41,7 +66,7 @@ export default function OneOnOneOnlineTutoring() {
                 className="w-full md:min-w-62.5 min-w-40 md:text-[1rem] text-[0.95rem] py-3 px-4 bg-[#FFF116] text-black border-2 border-black rounded-full font-semibold shadow-[4px_4px_0px_black] active:shadow-[2px_2px_0px_black] active:translate-y-0.75
             "
               >
-                Book A Free Trial
+                Book A Free Trial Class
               </button>
             </div>
           </div>
