@@ -10,6 +10,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+    --primary: #2A15FF;
+    --secondary: #023BF3;
+    --softblue:#E4EAFE;
+    --darkblue:#163B82;
+    --wisdom:#4168FA;
+    --pink:#E681FF;
+  --darkyellow: #FFF116;
+  --softyellow: #FFF899;
+  --green:#00BF63;
+  --dark: #15182B;
 }
 
 @theme inline {
@@ -79,6 +89,24 @@ label{
   background-position: center;
 
 }
+
+.pyp-main-page {
+  background-image:
+    url('../../public/assets/Images/pastpaer-hi.webp'),
+    linear-gradient(130deg, #2A15FF 40%, #04C1FC 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 380 auto, cover;
+  background-position: top right, center;
+}
+.pyp-bottom-page {
+  background-image:
+    url('../../public/assets/Images/doddle-bottom-image.webp'),
+    linear-gradient(130deg, #2A15FF 40%, #04C1FC 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 180 auto, cover;
+  background-position: bottom right, center;
+}
+
 
 /* Phone input overrides */
 .phone-input-wrapper .PhoneInput {
