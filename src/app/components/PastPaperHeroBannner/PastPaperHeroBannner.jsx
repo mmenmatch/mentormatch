@@ -14,7 +14,7 @@ export const PastPaperHeroBannner = () => {
     { title: 'AI HL', link: 'ai-hl', id: 4 },
   ]
 
-  const name = IBDP_SPLITS?.find((ele) => ele.link == splitPath).title
+  const name = IBDP_SPLITS?.find((ele) => ele.link == splitPath)?.title
 
   console.log('Name', name)
   return (
