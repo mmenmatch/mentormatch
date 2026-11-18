@@ -7,7 +7,6 @@ export function generateStaticParams() {
   return PYQ_TOPIC_DATA[COURSE].map((t) => ({ topic: t.link }))
 }
 
-export const dynamicParams = false
 
 export default async function TopicPage({ params }: { params: Promise<{ topic: string }> }) {
   const { topic } = await params

@@ -17,7 +17,6 @@ export function generateStaticParams(): Params[] {
   )
 }
 
-export const dynamicParams = false
 
 export default async function PaperPage({ params }: { params: Promise<Params> }) {
   const { topic, subtopic } = await params
