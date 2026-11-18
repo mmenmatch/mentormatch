@@ -114,6 +114,22 @@ label{
     background-position: top right, center;
   }
 }
+
+.pyp-student-main-page {
+  background: linear-gradient(130deg, #2A15FF 40%, #04C1FC 100%);
+}
+
+/* lg and up (1024px): add the image */
+@media (min-width: 1024px) {
+  .pyp-student-main-page  {
+    background-image:
+      url('../../public/assets/Images/student-emoji-bg.webp'),
+      linear-gradient(130deg, #2A15FF 40%, #04C1FC 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500px auto, cover;
+    background-position: top right, center;
+  }
+}
 .pyp-bottom-page {
   background-image:
     url('../../public/assets/Images/doddle-bottom-image.webp'),
