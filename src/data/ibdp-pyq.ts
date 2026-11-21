@@ -258,9 +258,6 @@ export const PYQ_TOPIC_DATA = {
     },
   ],
 }
-
-// Generated from Master_Question_Bank_IBDP.xlsx — PYQ AASL sheets (Paper 1 & 2)
-// Math is raw LaTeX wrapped in $$...$$ — render with KaTeX/MathJax.
 export const PYP_QUESTIONS = {
   'aa-sl': {
     'number-and-algebra': {
@@ -460,8 +457,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Require $$\\sin\\left(\\frac{\\pi}{4}x\\right)=1 \\Rightarrow \\frac{\\pi}{4}x=\\frac{\\pi}{2}+2\\pi k$$, giving $$x=2,10$$.\n (c) Arithmetic sequence with $$u_1=2$$, $$d=8$$: $$u_{20}=2+19(8)=154$$; P is 21st intersection (including $$x=0$$ as the 1st), so $$P=(154,\\sqrt{154})$$.\n (d) Upper boundary at $$x=158$$ (halfway to next term); shaded area $$=\\int_{0}^{158}\\left(\\sqrt{x}\\sin\\left(\\frac{\\pi}{4}x\\right)+\\sqrt{x}\\right)dx$$.',
             questionType: 'Graphs / sequences / integration',
-            diagram:
-              'https://drive.google.com/file/d/1JIQK1yGNfBduPo1_nKYpyO-PhPeQeAAS/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1JIQK1yGNfBduPo1_nKYpyO-PhPeQeAAS=w1600',
+            ],
             subtopicSlug: 'arithmetic-sequences',
           },
           {
@@ -575,8 +573,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$4.8\\times10^{8}\\times2.5 = 1.2\\times10^{9}$$ cm.\n (b)(i) $$6\\,400\\,000\\times100 = 6.4\\times10^{8}$$ cm.\n (ii) $$x = \\dfrac{1.2\\times10^{9}}{6.4\\times10^{8}} = 1.88$$.',
             questionType: 'Standard form / real-life application',
-            diagram:
-              'https://drive.google.com/file/d/1FoEBDvjUN9uEpZxN7C1iJCgGvyIjoawH/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1FoEBDvjUN9uEpZxN7C1iJCgGvyIjoawH=w1600',
+            ],
             subtopicSlug: 'standard-form-and-approximation',
           },
           {
@@ -652,8 +651,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$4+3(n-1)=52 \\Rightarrow n=17$$.\n (b) $$S_{24}=\\dfrac{24}{2}(2(4)+23(3)) = 924$$.',
             questionType: 'Sequences / pattern recognition',
-            diagram:
-              'https://drive.google.com/file/d/1wZAt0nBwnO3Y1jGHXimN_1qIH2Q97XJn/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1wZAt0nBwnO3Y1jGHXimN_1qIH2Q97XJn=w1600',
+            ],
             subtopicSlug: 'arithmetic-sequences',
           },
           {
@@ -672,8 +672,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$30+(11-1)\\times27 = 300$$ cm.\n (b) $$1050 \\ge 30+(n-1)\\times27 \\Rightarrow n=38$$ (rounded down to nearest integer).',
             questionType: 'Sequences / real-life application',
-            diagram:
-              'https://drive.google.com/file/d/10BDCBFYNlyzcqFZmsOVeMzQ4ur_yGH3C/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/10BDCBFYNlyzcqFZmsOVeMzQ4ur_yGH3C=w1600',
+            ],
             subtopicSlug: 'arithmetic-sequences',
           },
           {
@@ -824,8 +825,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Sum of areas is an infinite geometric series with first term $$k^2$$ and ratio $$k^2$$: $$\\dfrac{k^2}{1-k^2}=\\dfrac{9}{16} \\Rightarrow 25k^2=9 \\Rightarrow k=\\dfrac{3}{5}$$. Since $$b=k+k^2+k^3+\\cdots=\\dfrac{k}{1-k}$$, substituting gives $$b=\\dfrac{3/5}{2/5}=\\dfrac{3}{2}$$.',
             questionType: 'Geometric series',
-            diagram:
-              'https://drive.google.com/file/d/1a0krlSxkbHmKAG0yG9YHMciozEFWX1qM/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1a0krlSxkbHmKAG0yG9YHMciozEFWX1qM=w1600',
+            ],
             subtopicSlug: 'geometric-sequences-and-series',
           },
           {
@@ -1034,8 +1036,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Solve $$\\dfrac{1}{x-4}+1=x-3 \\Rightarrow x^2-8x+15=0 \\Rightarrow (x-3)(x-5)=0 \\Rightarrow x=5$$ (since A is at $$x=3$$); $$B=(5,2)$$.\n (b) Split area into a triangle (from $$x=3$$ to $$x=5$$, area 2) plus $$\\int_5^{k}\\left(\\dfrac1{x-4}+1\\right)dx = \\left[\\ln(x-4)+x\\right]_5^{k} = \\ln(k-4)+k-5$$. Total: $$2+\\ln(k-4)+k-5 = \\ln k+8$$; equating non-log terms gives $$k-3=8 \\Rightarrow k=11$$, so $$11-4=p \\Rightarrow p=7$$.',
             questionType: 'Calculus / integration / area between curves',
-            diagram:
-              'https://drive.google.com/file/d/1-vdEXBNsKS9dYsT-FJBVlovHSfeL4WhE/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-vdEXBNsKS9dYsT-FJBVlovHSfeL4WhE=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -1055,8 +1058,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$b^{2/3}=4 \\Rightarrow b=4^{3/2}=8$$.\n (b) $$f^{-1}(x)=\\log_8 x$$.\n (c) $$\\log_8\\sqrt{32}=\\tfrac12\\log_8 32=\\tfrac{5}{6}$$.\n (d)(i) Equating differences in the arithmetic sequence leads to $$\\dfrac{q}{27}=\\dfrac{125}{r}=\\dfrac{r}{q}$$, showing 27, q, r, 125 form a geometric sequence.\n (d)(ii) Using $$u_4=u_1r^3$$: $$125=27r^3 \\Rightarrow r_{\\text{ratio}}=\\dfrac53$$; $$q=27\\times\\dfrac53=45$$, $$r=45\\times\\dfrac53=75$$.',
             questionType: 'Exponents/logs / sequences',
-            diagram:
-              'https://drive.google.com/file/d/1PVc7mKJJObiRNUs30bEeMCAbhZVkICx1/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1PVc7mKJJObiRNUs30bEeMCAbhZVkICx1=w1600',
+            ],
             subtopicSlug: 'exponents-and-logarithms',
           },
           {
@@ -1262,8 +1266,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$880\\times1.042\\times1.25=1146.20$$ CAD.\n (b) $$r=\\dfrac{704}{880}=0.8$$; $$u_5=880(0.8)^{4}=360.45$$ USD.\n (c) Solve $$880(0.8)^{n-1}<50$$: $$u_{13}=60.47$$, $$u_{14}=48.38$$, so during the 14th year.\n (d) Arithmetic series: $$S_5=\\dfrac{5}{2}(2(120)+(-3.5)(4))=565$$ USD.\n (e) 2019 is the 12th year: bicycle value $$=75.59$$ USD, insurance cost $$=81.5$$ USD; since $$75.59<81.5$$, the insurance costs more than the bicycle is worth.',
             questionType: 'Sequences and series, financial applications, currency conversion',
-            diagram:
-              'https://drive.google.com/file/d/1BQ56Wh_lT9PZyyh_hccc_qcyLZ2zJlha/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1BQ56Wh_lT9PZyyh_hccc_qcyLZ2zJlha=w1600',
+            ],
             subtopicSlug: 'geometric-sequences-and-series',
           },
           {
@@ -1495,8 +1500,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$0.85+c+0.03+0.002+0.0001=1 \\Rightarrow c=0.1179$$.\n (b) $$E(D)=0(0.85)+2(0.1179)+10(0.03)+50(0.002)+1000(0.0001)=0.7358$$; since a fair game requires $$E(D)=\\$2$$ (the ticket price), and $$0.7358\\ne2$$, it is not a fair game.\n (c) Grand prize follows a geometric sequence with $$u_1=1000, r=2$$: $$u_n=1000\\times2^{n-1}$$.\n (d) Require $$E(D)>2$$: $$0.6358+1000\\times2^{n-1}\\times0.0001>2 \\Rightarrow n>4.77$$, so $$w=5$$; expected profit $$=E(D)-2=2.2358-2=0.2358$$.',
             questionType: 'Probability distributions, geometric sequences',
-            diagram:
-              'https://drive.google.com/file/d/1FeqBabO1cKOLMqYFqNpWyi69DV-B0Z2q/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1FeqBabO1cKOLMqYFqNpWyi69DV-B0Z2q=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -1516,8 +1522,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\sin60°=\\dfrac{h}{40} \\Rightarrow h=34.641...\\approx34.6$$ m.\n (b) Volume $$=\\dfrac{1}{2}(70+110)(34.641)\\times200=623\\,538... \\approx624\\,000$$ m³ (AG).\n (c) $$d=43\\,200-45\\,000=-1800$$.\n (d) $$u_{13}=45\\,000+12(-1800)=23\\,400$$ m³.\n (e)(i) $$0=45\\,000+(n-1)(-1800) \\Rightarrow n=26$$.\n (e)(ii) 25 hours (pump stops once the term reaches zero).\n (f) $$S_8=\\dfrac{8}{2}(2(45\\,000)+7(-1800))=310\\,000$$ m³ (309\\,600).\n (g) $$S_{25}=\\dfrac{25}{2}(45\\,000+1800)=585\\,000$$ m³ $$<624\\,000$$ m³, so the tank is never filled (AG).',
             questionType: 'Arithmetic series, geometry (trapezoidal prism)',
-            diagram:
-              'https://drive.google.com/file/d/1xQF4jkAjdV-IGsBWEfHL1ywyN1Va8wnB/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1xQF4jkAjdV-IGsBWEfHL1ywyN1Va8wnB=w1600',
+            ],
             subtopicSlug: 'arithmetic-sequences',
           },
           {
@@ -1576,8 +1583,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Geometric sequence with $$r=1.02$$: Gemma's salary in 2021 (10 years after 2011) $$=45\\,000(1.02)^{10}=54\\,854.75\\approx\\$54\\,855$$.\n (b) Linear regression on Kaia's data gives $$a=1096.89..., b=33\\,028.49...$$ (or equivalent); substituting $$x=2021$$ gives Kaia's salary $$\\approx\\$56\\,063.21$$, which is greater than Gemma's $$\\$54\\,855$$ (AG).",
             questionType: 'Geometric sequences, linear regression',
-            diagram:
-              'https://drive.google.com/file/d/1g6H4yYNEEOQY_IIhpfxgk6TtqUNKQtgq/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1g6H4yYNEEOQY_IIhpfxgk6TtqUNKQtgq=w1600',
+            ],
             subtopicSlug: 'arithmetic-sequences',
           },
         ],
@@ -1647,8 +1655,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Minimum of $$f$$ occurs at $$x=0$$, $$f(0)=-2$$, so range is $$[-2,\\infty)$$. (2 marks)\n (b) Solve $$f(x)=g(x)$$ using GDC: $$x=-1$$ and $$x=1.518\\ldots \\approx 1.52$$. (2 marks)\n (c) From the graph, $$f(x)>g(x)$$ for $$x<-1$$ or $$x>1.52$$ (using critical values found in (b), follow-through). (2 marks)',
             questionType: 'Graphs & Inequalities',
-            diagram:
-              'https://drive.google.com/file/d/1-3uw0msBK0jqC2cZKj7eeEf0gmLkMDLj/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-3uw0msBK0jqC2cZKj7eeEf0gmLkMDLj=w1600',
+            ],
             subtopicSlug: 'graphs-and-equations',
           },
           {
@@ -1667,8 +1676,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Since OB $$=3\\times$$OA and the line falls left-to-right (from the diagram), the gradient is $$m=-3$$. (2 marks)\n (b) Substitute $$(2,6)$$ and $$m=-3$$: $$6=-3(2)+c \\Rightarrow c=12$$, so $$y=-3x+12$$. (2 marks)\n (c) Set $$y=0$$: $$0=-3x+12 \\Rightarrow x=4$$. (2 marks)',
             questionType: 'Coordinate Geometry',
-            diagram:
-              'https://drive.google.com/file/d/1q5rVnXTXncgatf32Sxuum174KmamPFgp/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1q5rVnXTXncgatf32Sxuum174KmamPFgp=w1600',
+            ],
             subtopicSlug: 'linear-functions-and-coordinate-geometry',
           },
           {
@@ -1687,8 +1697,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Use $$\\sum P(X=x) = 1$$: $$k^2+(7k+2)+(-2k)+3k^2=1 \\Rightarrow 4k^2+5k+1=0$$.\n Factorise: $$(k+1)(4k+1)=0 \\Rightarrow k=-1$$ or $$k=-\\dfrac14$$.\n Reject $$k=-1$$ since it gives invalid probabilities (e.g. $$P(X=2)=-5<0$$).\n Therefore $$k=-\\dfrac14$$.',
             questionType: 'Probability Distributions',
-            diagram:
-              'https://drive.google.com/file/d/11-Ujo1f2K-L5jnGC6B-c4QeynXQaV-K2/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/11-Ujo1f2K-L5jnGC6B-c4QeynXQaV-K2=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -1727,8 +1738,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) A valid ordered sequence: reflection in the x-axis, horizontal translation 3 units left, vertical translation 1 unit down (equivalent correctly-ordered sequences also accepted). (3 marks)\n (b) Range is $$f(x)\\leq -1$$. (1 mark)\n (c) Let $$y=-1-\\sqrt{x+3}$$; swap x,y: $$x=-1-\\sqrt{y+3} \\Rightarrow \\sqrt{y+3}=-x-1 \\Rightarrow y+3=(x+1)^2 \\Rightarrow f^{-1}(x)=(x+1)^2-3$$, domain $$x\\leq-1$$ (matching range of $$f$$). (5 marks)\n (d) Intersections lie on $$y=x$$: solve $$(x+1)^2-3=x \\Rightarrow x^2+x-2=0 \\Rightarrow (x+2)(x-1)=0 \\Rightarrow x=-2,1$$. Since domain requires $$x\\leq-1$$, reject $$x=1$$. Point of intersection: $$(-2,-2)$$. (5 marks)',
             questionType: 'Transformations & Inverse Functions',
-            diagram:
-              'https://drive.google.com/file/d/1-BSYmv_BakvS8hcJLuMH12k3lBC8n5IV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-BSYmv_BakvS8hcJLuMH12k3lBC8n5IV=w1600',
+            ],
             subtopicSlug: 'transformations-of-graphs',
           },
           {
@@ -1787,8 +1799,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Set $$\\ln(x^2-16)=0 \\Rightarrow x^2-16=1 \\Rightarrow x^2=17 \\Rightarrow x=\\sqrt{17}$$ (positive root since $$x>4$$). (3 marks)\n (b) $$f'(x)=\\dfrac{2x}{x^2-16}$$. Set equal to $$\\dfrac13$$: $$\\dfrac{2x}{x^2-16}=\\dfrac13 \\Rightarrow x^2-6x-16=0 \\Rightarrow (x-8)(x+2)=0$$. Since $$x>4$$, $$x=8$$. (6 marks)",
             questionType: 'Differentiation',
-            diagram:
-              'https://drive.google.com/file/d/1YQovFMBmOaSirmy74EjnOa2_1aD3O2Sj/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1YQovFMBmOaSirmy74EjnOa2_1aD3O2Sj=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -1845,8 +1858,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) The vertex has x-coordinate 3, so the axis of symmetry is $$x=3$$. (2 marks)\n (b) Axis of symmetry $$=\\dfrac{-b}{2(-1)}=3 \\Rightarrow b=6$$ (or substitute both given points into $$f$$ and solve simultaneously). (2 marks)\n (c) Since the parabola opens downward with maximum value 16 at the vertex, range is $$(-\\infty,16]$$. (2 marks)',
             questionType: 'Quadratic Functions',
-            diagram:
-              'https://drive.google.com/file/d/1lwAyjh1xt0IxR3UHCAAXyIKMhNRrFwSh/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1lwAyjh1xt0IxR3UHCAAXyIKMhNRrFwSh=w1600',
+            ],
             subtopicSlug: 'quadratic-functions',
           },
           {
@@ -1885,8 +1899,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Substitute A: $$a\\log_3(13-4)=7 \\Rightarrow a\\log_3 9=7$$. Since $$\\log_3 9=2$$: $$2a=7 \\Rightarrow a=\\dfrac72$$. (3 marks)\n (b) Sketch increasing, concave-down curve asymptotic to the vertical line $$x=4$$, through $$(5,0)$$ and $$(13,7)$$. (3 marks)',
             questionType: 'Exponential & Logarithmic Functions',
-            diagram:
-              'https://drive.google.com/file/d/1ttDt1gh6CJodCFM0_FPNODlJpbtUGiso/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ttDt1gh6CJodCFM0_FPNODlJpbtUGiso=w1600',
+            ],
             subtopicSlug: 'exponential-and-logarithmic-functions',
           },
           {
@@ -1905,8 +1920,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) By symmetry about $$x=-2$$: the other solution is $$(-2)-4=-6$$ (since $$x=2$$ is $$4$$ units right of the axis). (2 marks)\n (b) The parabola opens downward $$\\Rightarrow a<0$$; the vertex lies left of the y-axis with $$a<0$$ $$\\Rightarrow b<0$$ (both negative). (2 marks)\n (c) The function decreases for $$x$$ greater than the vertex x-coordinate: $$x>-2$$ (or $$x\\geq-2$$). (2 marks)',
             questionType: 'Quadratic Functions',
-            diagram:
-              'https://drive.google.com/file/d/1xrDwrSfouX8XxMuAcXDQQvFpLvbiOLK-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1xrDwrSfouX8XxMuAcXDQQvFpLvbiOLK-=w1600',
+            ],
             subtopicSlug: 'quadratic-functions',
           },
           {
@@ -1944,8 +1960,9 @@ export const PYP_QUESTIONS = {
             answer: null,
             solution: null,
             questionType: null,
-            diagram:
-              'https://drive.google.com/file/d/1JtYNSdS78BWjd_MzNP1v_V84cQ8G2aqX/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1JtYNSdS78BWjd_MzNP1v_V84cQ8G2aqX=w1600',
+            ],
             subtopicSlug: 'exponential-and-logarithmic-functions',
           },
           {
@@ -1965,8 +1982,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Sketch should show: both endpoints within circles; the images of $$(2,3)$$ and $$(0,2)$$ (from the original graph) reflected correctly; an approximately correct reflection in $$y=x$$ with concave-up-then-concave-down shape (not straight line segments). (3 marks, A1A1A1)',
             questionType: 'Transformations & Inverse Functions',
-            diagram:
-              'https://drive.google.com/file/d/1zPTkKLu2HFc4CeTvLzscNsWjc7dBiGvr/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1zPTkKLu2HFc4CeTvLzscNsWjc7dBiGvr=w1600',
+            ],
             subtopicSlug: 'composite-and-inverse-functions',
           },
           {
@@ -2044,8 +2062,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) Read from graph: $$f(2)=6$$. (1 mark)\n (a)(ii) $$(f\\circ f)(2)=f(f(2))=f(6)=-2$$. (1 mark)\n (b) Apply vertical stretch factor $$\\tfrac12$$ then vertical translation $$+1$$ to every point of $$f$$: horizontal segment at $$y=3$$ from $$x=-4$$ to $$0$$, concave-down curve to max $$(2,4)$$, then down to endpoint $$(6,0)$$. (3 marks)',
             questionType: 'Composite Functions',
-            diagram:
-              'https://drive.google.com/file/d/1cbMwm-eWiJXzNjNp_AchnRLO5Hj_7x6u/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1cbMwm-eWiJXzNjNp_AchnRLO5Hj_7x6u=w1600',
+            ],
             subtopicSlug: 'composite-and-inverse-functions',
           },
           {
@@ -2064,8 +2083,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a)(i) Set $$f(x)=0$$ and solve with GDC: $$x=-2.28942\\ldots\\approx-2.29$$. (2 marks)\n (a)(ii) $$f'(x)=1-\\dfrac{24}{x^3}=0 \\Rightarrow x^3=24 \\Rightarrow x=2\\sqrt[3]{3}\\approx2.8845$$; $$f(x)\\approx4.3267$$, so local minimum $$\\approx(2.88,4.33)$$. (2 marks)\n (b) Solve $$3-x=x+\\dfrac{12}{x^2}$$ with GDC: $$x=-1.43081\\ldots\\approx-1.43$$. (2 marks)",
             questionType: 'Differentiation',
-            diagram:
-              'https://drive.google.com/file/d/1UZ3-lDuYgfLhbdKHOwtqfr0MgKvHgyBq/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1UZ3-lDuYgfLhbdKHOwtqfr0MgKvHgyBq=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2144,8 +2164,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) Vertical asymptote where the denominator is 0: $$x=3$$. (1 mark)\n (a)(ii) As $$x\\to\\pm\\infty$$, $$f(x)\\to\\dfrac{2x}{-x}=-2$$, so horizontal asymptote $$y=-2$$. (1 mark)\n (b)(i) Set numerator $$=0$$: $$2x+4=0 \\Rightarrow x=-2$$, giving $$(-2,0)$$. (1 mark)\n (b)(ii) $$f(0)=\\dfrac43$$, giving $$\\left(0,\\dfrac43\\right)$$. (1 mark)\n (c) Two-branch rational function shape in correct quadrants, asymptotic to $$x=3$$ and $$y=-2$$. (1 mark)',
             questionType: 'Rational Functions',
-            diagram:
-              'https://drive.google.com/file/d/1OviG40WG7lYNjH2-I5H857721_ajpCGz/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1OviG40WG7lYNjH2-I5H857721_ajpCGz=w1600',
+            ],
             subtopicSlug: 'rational-functions',
           },
           {
@@ -2164,8 +2185,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) Setting $$f(x)=0$$: $$x=1$$ or $$x=-3$$. (2 marks)\n (a)(ii) By symmetry, vertex x-coordinate is the midpoint of the roots: $$x=-1$$; $$f(-1)=8$$, so vertex is $$(-1,8)$$. (3 marks)\n (b) $$h=-1,\\ k=8$$ (directly from the vertex found in (a)(ii)). (2 marks)',
             questionType: 'Quadratic Functions',
-            diagram:
-              'https://drive.google.com/file/d/10t000azmP8s6gHFHE1cqiYnJ52u6nbUV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/10t000azmP8s6gHFHE1cqiYnJ52u6nbUV=w1600',
+            ],
             subtopicSlug: 'quadratic-functions',
           },
           {
@@ -2184,8 +2206,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Draw the horizontal line $$y=-6$$ using a ruler. (1 mark)\n (b) The line $$y=-6$$ crosses the graph exactly once (on the left branch), so there is $$1$$ solution. (1 mark)\n (c) Since the local max is $$-2$$ and the local min is $$6$$, horizontal lines strictly between these values (on the middle branch) don't intersect the graph: $$-2<k<6$$. (2 marks)",
             questionType: 'Rational Functions',
-            diagram:
-              'https://drive.google.com/file/d/1oHDxoRlC5Fkgb9uJUinpz8LI3nt0C6BY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1oHDxoRlC5Fkgb9uJUinpz8LI3nt0C6BY=w1600',
+            ],
             subtopicSlug: 'rational-functions',
           },
           {
@@ -2204,8 +2227,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) Vertical asymptote at $$x=-1$$ (where denominator $$=0$$). (1 mark)\n (a)(ii) As $$x\\to\\pm\\infty$$, $$f(x)\\to2$$, so horizontal asymptote $$y=2$$. (1 mark)\n (b) Rational function shape with two branches, asymptotic behaviour at $$x=-1$$ and $$y=2$$, x-intercept at $$\\left(\\tfrac12,0\\right)$$ and y-intercept at $$(0,-1)$$. (3 marks)\n (c) From the graph, $$0<f(x)<2$$ when $$x>\\dfrac12$$. (1 mark)',
             questionType: 'Rational Functions',
-            diagram:
-              'https://drive.google.com/file/d/1V0wAS6LC0lpy8deY6T-e7marc2vJ8FC_/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1V0wAS6LC0lpy8deY6T-e7marc2vJ8FC_=w1600',
+            ],
             subtopicSlug: 'rational-functions',
           },
           {
@@ -2225,8 +2249,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Axis of symmetry is $$x=3$$ (through the vertex). (1 mark)\n (b)(i) From vertex form, $$h=3,\\ k=4$$. (2 marks)\n (b)(ii) Substitute Q$$(5,12)$$: $$12=a(5-3)^2+4 \\Rightarrow 4a=8 \\Rightarrow a=2$$. (2 marks)\n (c) $$f(x)=2(x-3)^2+4$$, so $$f'(x)=4(x-3)$$; at $$x=5$$, gradient $$=8$$. Equation: $$y-12=8(x-5) \\Rightarrow y=8x-28$$. (4 marks)\n (d) $$g$$ increasing requires $$g'(x)=f(x)-d\\geq0$$ for all $$x$$, i.e. the vertex of $$f(x)-d$$ is at or above the x-axis: $$4-d\\geq0 \\Rightarrow d\\leq4$$ (strict version $$d<4$$ if $$g'(x)>0$$ required). (3 marks)\n (e) $$g$$ concave-up requires $$g''(x)=f'(x)>0$$: $$4(x-3)>0 \\Rightarrow x>3$$. (3 marks)",
             questionType: 'Differentiation',
-            diagram:
-              'https://drive.google.com/file/d/1ic6Dta0sxh6xPgp6zZWYE5sZ9o9xoRMY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ic6Dta0sxh6xPgp6zZWYE5sZ9o9xoRMY=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2264,8 +2289,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Solve $$f(x)=g(x)$$: $$\\dfrac{1}{x-4}+1=x-3 \\Rightarrow (x-4)^2=1 \\Rightarrow x=3$$ or $$x=5$$. Since A is $$(3,0)$$, B corresponds to $$x=5$$: $$g(5)=2$$, so $$B(5,2)$$. (5 marks)\n (b) The shaded area splits into a triangular region from $$x=3$$ to $$5$$ under $$g$$ (area $$=2$$) plus $$\\displaystyle\\int_5^k\\left(\\dfrac{1}{x-4}+1\\right)dx = [\\ln(x-4)+x]_5^k = \\ln(k-4)+k-5$$. Total area $$=2+\\ln(k-4)+k-5=\\ln(k-4)+k-3$$. Setting this equal to $$\\ln(p)+8$$ and matching integer/log parts gives $$k-3=8 \\Rightarrow k=11$$, and $$p=k-4=7$$. (10 marks)',
             questionType: 'Integration',
-            diagram:
-              'https://drive.google.com/file/d/168EnEAmKwvk9f-7fqjC4XYYucW8yf8mC/view?usp=sharing\n\nhttps://drive.google.com/file/d/1KBa6yRgq_uE4XomIaCIBcRRoeRLGqZdM/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/168EnEAmKwvk9f-7fqjC4XYYucW8yf8mC=w1600',
+              'https://lh3.googleusercontent.com/d/1KBa6yRgq_uE4XomIaCIBcRRoeRLGqZdM=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2304,8 +2331,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) The axis of symmetry of $$f'(x)=3x^2-12x+p$$ is $$x=\\dfrac{12}{2(3)}=2$$, so $$q=2$$. (2 marks)\n (b)(i) Since the vertex lies on the x-axis, $$f'$$ has a repeated root, so discriminant $$=0$$. (1 mark)\n (b)(ii) $$(-12)^2-4(3)(p)=0 \\Rightarrow 144=12p \\Rightarrow p=12$$. (3 marks)\n (c) $$f''(x)=6x-12$$; at $$x=0$$, gradient $$=-12$$. (3 marks)\n (d) Sketch of $$f''(x)=6x-12$$: straight line with positive gradient $$6$$, y-intercept $$-12$$, x-intercept $$2$$. (2 marks)\n (e)(i) Point of inflexion occurs where $$f''(x)=0$$: $$x=2$$, so $$a=2$$. (1 mark)\n (e)(ii) $$f$$ concave-down where $$f''(x)<0$$: $$6x-12<0 \\Rightarrow x<2$$. (2 marks)",
             questionType: 'Differentiation',
-            diagram:
-              'https://drive.google.com/file/d/1uJ-MQ4iaaAszuVI6QCSQHpm3P6TLsHpT/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1uJ-MQ4iaaAszuVI6QCSQHpm3P6TLsHpT=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2383,8 +2411,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Read from table: $$g(0)=-2$$. (1 mark)\n (b) $$(f\\circ g)(0)=f(g(0))=f(-2)=8$$. (2 marks)\n (c) From table, $$f(3)=0$$, so $$x=3$$. (2 marks)',
             questionType: 'Composite Functions',
-            diagram:
-              'https://drive.google.com/file/d/1YVl1X1_9QqwrfwH0qyB_YH5clUpNSlWc/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1YVl1X1_9QqwrfwH0qyB_YH5clUpNSlWc=w1600',
+            ],
             subtopicSlug: 'composite-and-inverse-functions',
           },
           {
@@ -2470,8 +2499,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Reflex angle at O is $$2\\pi-\\theta$$; arc length $$=3(2\\pi-\\theta)=6\\pi-3\\theta$$.\n b. Cosine rule: $$L^2=3^2+3^2-2(3)(3)\\cos\\theta$$ so $$L=\\sqrt{18-18\\cos\\theta}$$.\n c. Solve $$6\\pi-3\\theta=2\\sqrt{18-18\\cos\\theta}$$ giving $$\\theta=2.49$$.',
             questionType: 'Circular measure, arcs and chords',
-            diagram:
-              'https://drive.google.com/file/d/1kKDlySUumbxRXqszFtHw7w4c5Qkso-Tk/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1kKDlySUumbxRXqszFtHw7w4c5Qkso-Tk=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2569,8 +2599,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a. Curve is concave down throughout, starts at $$(0,-1)$$, has a local maximum, and ends near $$(3, 2.5)$$.\n b. Recognize $$f'(x)=0$$ at the local maximum; GDC gives $$x=2.33084\\ldots \\Rightarrow x=2.33$$.",
             questionType: 'Differentiation, graph sketching',
-            diagram:
-              'https://drive.google.com/file/d/1O2Nji7qfxSm0A1L9Pw9ifVBifBPCoAoW/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1O2Nji7qfxSm0A1L9Pw9ifVBifBPCoAoW=w1600',
+            ],
             subtopicSlug: 'graphs-and-equations',
           },
           {
@@ -2589,8 +2620,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Sum of probabilities $$=1$$: $$0.2+0.5+b+a=1 \\Rightarrow b=0.3-a$$.\n b. $$E(X)=0.2+2+a\\cdot a+(a+b-0.5)\\cdot b$$. Expressing in terms of $$a$$: $$E(X)=2.2+0.1a-a^2$$ (greatest value $$2.2025$$ at $$a=0.05$$) and evaluating endpoints $$a=0,0.3$$ gives least value $$2.14$$. Difference $$=2.2025-2.14=0.0625$$.',
             questionType: 'Discrete probability distributions',
-            diagram:
-              'https://drive.google.com/file/d/1GZAnZyIOtVUmcdVjMBC6Dob5r0BozoIg/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1GZAnZyIOtVUmcdVjMBC6Dob5r0BozoIg=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2611,8 +2643,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a. Comparing $$g(x)=3+\\ln(x/2)$$ with $$f$$: horizontal stretch factor $$q=2$$, then translation $$\\begin{pmatrix}0\\\\3\\end{pmatrix}$$, so $$h=0,\\ k=3$$.\n b.i. GDC evaluation gives $$2.72409\\ldots \\approx 2.72$$.\n b.ii. Since $$h$$ and $$h^{-1}$$ are reflections in $$y=x$$, total enclosed area $$=2\\times 2.72=5.45$$.\n c. $$d=h(x)-x$$; solve $$d'=0$$ giving $$x=0.974$$; substitute into $$h(x)$$ to get $$y=2.27$$, so $$P=(0.974,2.27)$$.",
             questionType: 'Function transformations, composite/inverse functions, integration',
-            diagram:
-              'https://drive.google.com/file/d/1if15sBKGUoU2fdFoOp0qxLQbtXzypw5q/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1if15sBKGUoU2fdFoOp0qxLQbtXzypw5q=w1600',
+            ],
             subtopicSlug: 'transformations-of-graphs',
           },
           {
@@ -2633,8 +2666,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Substitute $$x=1/2$$ into $$f(x)$$: $$f(1/2)=7/8=0.875$$.\n b.i. Gradient $$=\\dfrac{0-7/8}{0-1/2}=1.75$$, so $$P(x)=1.75x$$.\n b.ii. Domain is $$0<x<\\tfrac12$$ (footpath lies strictly between town and river point).\n c. Solve $$f(x)=g(x)$$ using GDC: intersections at $$(0.360,1.34)$$ and $$(3.63,1.01)$$.\n d. $$g(0)=1.5$$, so distance is $$1.5$$ km.\n e. Since the road is the line $$x=0$$ and $$f$$ is undefined at $$x=0$$ (asymptotic there), the road never crosses the river.',
             questionType: 'Function modelling, domain and range, exponential/rational functions',
-            diagram:
-              'https://drive.google.com/file/d/1deHOdiUt8tC-KJgnMU9B-oSuaj8lNVqz/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1deHOdiUt8tC-KJgnMU9B-oSuaj8lNVqz=w1600',
+            ],
             subtopicSlug: 'rational-functions',
           },
           {
@@ -2730,8 +2764,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. From the graph, $$f$$ ranges from its minimum value $$0$$ to its maximum value $$6$$: $$0\\le y\\le 6$$.\n c. Horizontal translation of $$+5$$ shifts the domain $$[-6,-2]$$ to $$[-1,3]$$.',
             questionType: 'Graph transformations, domain and range',
-            diagram:
-              'https://drive.google.com/file/d/1qyIXrebDrOp6GHDBfEfH_WxkqMxSWWWD/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1qyIXrebDrOp6GHDBfEfH_WxkqMxSWWWD=w1600',
+            ],
             subtopicSlug: 'graphs-and-equations',
           },
           {
@@ -2751,8 +2786,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$(f\\circ g)(x)=f(x^2-2)=(x^2-2)^2-1=x^4-4x^2+4-1=x^4-4x^2+3$$.\n b. Curve changes from concave down to concave up, passing through minimum near $$x=1.41$$ and endpoint values at $$x=0$$ and $$x=2.25$$.\n c. Using the local minimum ($$x=\\sqrt2,\\ y=-1$$) and left endpoint value ($$x=0,\\ y=3$$): $$-1<k\\le 3$$.',
             questionType: 'Composite functions, graph sketching',
-            diagram:
-              'https://drive.google.com/file/d/11ajPPHQZjFIKwCW4MmhpbeF8MSeVSYen/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/11ajPPHQZjFIKwCW4MmhpbeF8MSeVSYen=w1600',
+            ],
             subtopicSlug: 'composite-and-inverse-functions',
           },
           {
@@ -2812,8 +2848,9 @@ export const PYP_QUESTIONS = {
               'a.i. $$E(X)=0(p)+1(0.5)+2(0.3)+3q=1.2 \\Rightarrow q=1/30$$.\n a.ii. Probabilities sum to 1: $$p=1/6$$.\n b.i. $$P(3\\text{ blue})=q=1/30$$.\n b.ii. $$P(3\\text{ white})=P(X=0)=p=1/6$$ by symmetry of the distribution.\n b.iii. Solve $$\\dfrac{w}{10}\\cdot\\dfrac{w-1}{9}\\cdot\\dfrac{w-2}{8}=\\dfrac{1}{6}$$, giving $$w=6$$.\n c. $$X\\sim B(9,1/6)$$: $$P(X=2)=\\binom{9}{2}(1/6)^2(5/6)^7=0.279$$.\n d. $$P(\\text{1 prize in first 7})\\times \\dfrac16=\\binom{7}{1}(1/6)(5/6)^6\\times\\dfrac16=0.0651$$.',
             questionType:
               'Discrete probability, binomial distribution, negative binomial reasoning',
-            diagram:
-              'https://drive.google.com/file/d/1WveMBeVD6rMk_Q0KqNllvMLtiaG4BNWb/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1WveMBeVD6rMk_Q0KqNllvMLtiaG4BNWb=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2834,8 +2871,10 @@ export const PYP_QUESTIONS = {
               "a. Solve $$90e^{-0.5x}=x$$: $$x=5.56619\\ldots \\approx5.57$$.\n b. $$f'(x)=-45e^{-0.5x}$$; set $$=-1$$, giving $$x=2\\ln45$$ and $$y=2$$, so $$Q=(2\\ln45,\\,2)$$.\n c. Line through Q with gradient $$-1$$: $$y-2=-(x-2\\ln45)\\Rightarrow y=-x+2\\ln45+2$$.\n d.i. Set $$x=-x+2\\ln45+2\\Rightarrow x=\\ln45+1$$.\n d.ii. Sum of two definite integrals between the curve/line boundaries gives $$A=1.52$$.\n e. By symmetry about $$y=x$$: total area $$=2\\times1.52=3.04$$.",
             questionType:
               'Exponential functions, tangent lines, integration, symmetry of inverse functions',
-            diagram:
-              'https://drive.google.com/file/d/1gmEx4FmH4WjR4Q2q9_tFv75w043dQLgd/view?usp=sharing\n\nhttps://drive.google.com/file/d/1Zp-D5-3ZLv5q-wCcRj4x6yCv2HRyRo68/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1gmEx4FmH4WjR4Q2q9_tFv75w043dQLgd=w1600',
+              'https://lh3.googleusercontent.com/d/1Zp-D5-3ZLv5q-wCcRj4x6yCv2HRyRo68=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2914,8 +2953,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Solve $$e^{-x^2}-0.5=0$$ using GDC: $$x=\\pm0.832554\\ldots\\approx\\pm0.833$$.\n b. Curve is symmetric about $$x=0$$ with roots at $$\\pm0.833$$, maximum near $$(0,0.5)$$, and endpoints near $$(\\pm2,-0.48)$$.',
             questionType: 'Exponential (Gaussian-type) functions, graph sketching',
-            diagram:
-              'https://drive.google.com/file/d/185goyySzZ6id1okTSsFO9MWXVvRbF9yr/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/185goyySzZ6id1okTSsFO9MWXVvRbF9yr=w1600',
+            ],
             subtopicSlug: 'graphs-and-equations',
           },
           {
@@ -2936,8 +2976,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. $$65/42+215/84=4.10714\\ldots\\approx4.11$$ hours.\n a.ii. $$AB=\\sqrt{215^2+65^2}=224.61\\ldots$$; time $$=224.61/42=5.35$$ hours.\n b.i. $$AD=\\sqrt{(215-x)^2+65^2}$$, so $$T=\\dfrac{\\sqrt{(215-x)^2+65^2}}{42}+\\dfrac{x}{84}$$.\n b.ii. Minimizing $$T$$ (GDC/derivative) gives $$x=177.47\\ldots\\approx177$$ km.\n b.iii. $$T=3.8998\\ldots\\approx3.90$$ hours.\n c.i. $$C=200\\cdot\\dfrac{\\sqrt{(215-x)^2+65^2}}{42}+150\\cdot\\dfrac{x}{84}$$; minimizing gives $$x=188.71\\ldots\\approx189$$ km.\n c.ii. $$C=670.86\\ldots\\approx\\$671$$.',
             questionType: 'Optimization, right-angled triangles, rates',
-            diagram:
-              'https://drive.google.com/file/d/1E29FhMFaH2JQ39ZiSoaWBDKipjTnognJ/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1E29FhMFaH2JQ39ZiSoaWBDKipjTnognJ=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -2958,8 +2999,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Period $$=12$$ hours $$\\Rightarrow b=2\\pi/12=\\pi/6$$.\n b. $$a=\\dfrac{6.8-2.2}{2}=2.3$$.\n c. $$d=\\dfrac{6.8+2.2}{2}=4.5$$.\n d. High tide at $$t=4.5\\Rightarrow c=1.5$$ (smallest positive value satisfying the horizontal translation).\n e. Substitute $$t=12$$: $$H(12)=2.87365\\ldots\\approx2.87$$ m.\n f. Solve $$5=2.3\\sin(\\tfrac{\\pi}{6}(t-1.5))+4.5$$; total time above 5 m over 24 hours $$=10.3258\\ldots\\approx10.3$$ hours.',
             questionType: 'Trigonometric modelling, sinusoidal functions',
-            diagram:
-              'https://drive.google.com/file/d/1mVb3c1jA6KMy78qObRwhDrhyniWpdgnX/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1mVb3c1jA6KMy78qObRwhDrhyniWpdgnX=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions',
           },
           {
@@ -2979,8 +3021,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Sum of probabilities $$=1$$: $$0.41+(k-0.28)+0.46+(0.29-2k^2)=1\\Rightarrow 2k^2-k+0.12=0$$.\n b. Solving gives $$k=0.2$$ or $$k=0.3$$; $$k=0.2$$ is rejected since it makes $$P(X=1)=k-0.28<0$$, so $$k=0.3$$.\n c. $$E(X)=0(0.41)+1(0.02)+2(0.46)+3(0.11)=1.27$$.',
             questionType: 'Discrete probability distributions, quadratic equations',
-            diagram:
-              'https://drive.google.com/file/d/1NzxawXOh_2_FZrkXam-mvbfRWZhXiphD/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1NzxawXOh_2_FZrkXam-mvbfRWZhXiphD=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -3022,8 +3065,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a. Geometric growth: $$45000\\times1.02^{10}=54854.75\\ldots\\approx\\$54\\,855$$.\n b. Linear regression on the given data points gives $$S=1096.89x+33028.5$$ (with $$x$$ the year), so for 2021: $$S\\approx\\$56\\,063$$, which exceeds Gemma's $$\\$54\\,855$$, confirming Kaia earned more that year.",
             questionType: 'Compound growth, linear regression',
-            diagram:
-              'https://drive.google.com/file/d/1ejXZ1WXRr9dAJgagRpP-A4J9gPhbwCUr/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ejXZ1WXRr9dAJgagRpP-A4J9gPhbwCUr=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -3113,8 +3157,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\dfrac{EB}{\\sin 53^\\circ} = \\dfrac{1.2}{\\sin 7^\\circ} \\Rightarrow EB = 7.86\\text{ m}$$\n (b) angle of elevation of B $$= 41^\\circ - 7^\\circ = 34^\\circ$$\n (c) $$\\sin 34^\\circ = \\dfrac{\\text{height}}{7.86} \\Rightarrow \\text{height} = 4.40\\text{ m}$$',
             questionType: 'Trigonometry - sine rule, angles of elevation',
-            diagram:
-              'https://drive.google.com/file/d/1lMjk2rSGOf3fbD-coyHOjnRxEpMUuOka/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1lMjk2rSGOf3fbD-coyHOjnRxEpMUuOka=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -3133,8 +3178,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\tan\\theta = \\dfrac{12}{9} \\Rightarrow \\theta = 53.1^\\circ$$\n (b) $$30\\sin 70^\\circ + 4 = 32.2\\text{ m}$$',
             questionType: 'Trigonometry - tangent ratio, angle of elevation',
-            diagram:
-              'https://drive.google.com/file/d/177Zq3P6D64LAUPBfPs8EQyocHvixew1O/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/177Zq3P6D64LAUPBfPs8EQyocHvixew1O=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -3154,8 +3200,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$h(0) = 0.4\\cos(0) + 1.8 = 2.2$$\n (b) minimum of $$\\cos(\\pi t)$$ is $$-1 \\Rightarrow h_{min} = 1.4$$\n (c) period of $$\\cos(\\pi t)$$ is $$\\dfrac{2\\pi}{\\pi}=2$$, so ball returns to initial height after 2 s\n (d) solve $$0.4\\cos(\\pi t)+1.8 = 1.8+0.2\\sqrt2 \\Rightarrow \\cos(\\pi t)=\\dfrac{\\sqrt2}{2} \\Rightarrow t=\\dfrac14,\\dfrac74$$; time below this height $$=\\dfrac74-\\dfrac14=1.5\\text{ s}$$\n (e) $$h'(t)=-0.4\\pi\\sin(\\pi t)$$, $$h'(1/3) = -0.4\\pi\\sin(\\pi/3) = 0.2\\pi\\sqrt3$$ (taking magnitude/sign as derived)",
             questionType: 'Trigonometric functions - modelling, differentiation',
-            diagram:
-              'https://drive.google.com/file/d/1IRULeD4M1v4gTYovZ8slCEEdOkVkpWhq/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1IRULeD4M1v4gTYovZ8slCEEdOkVkpWhq=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -3174,8 +3221,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) arc length $$=r$$, perimeter $$=r+r+r=3r=12 \\Rightarrow r=4$$\n (b) non-shaded angle $$=2\\pi-1$$; area $$=\\dfrac12(2\\pi-1)(4)^2 = 16\\pi-8$$',
             questionType: 'Geometry - circle sectors',
-            diagram:
-              'https://drive.google.com/file/d/1k4mw_JdOTd0-rrfL1lBsATaq4h2IGKCc/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1k4mw_JdOTd0-rrfL1lBsATaq4h2IGKCc=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -3213,8 +3261,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Cosine rule: $$100 = x^2+4x^2-2(x)(2x)\\left(\\dfrac34\\right) \\Rightarrow 2x^2=100 \\Rightarrow x^2=50, x=5\\sqrt2$$. $$\\sin\\hat C=\\dfrac{\\sqrt7}{4}$$. Area $$=\\dfrac12(5\\sqrt2)(10\\sqrt2)\\cdot\\dfrac{\\sqrt7}{4}=\\dfrac{25\\sqrt7}{2}$$',
             questionType: 'Trigonometry - cosine rule, area of a triangle',
-            diagram:
-              'https://drive.google.com/file/d/1asysz7eu_YjZxAzwDP5vBwptmVsohbb9/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1asysz7eu_YjZxAzwDP5vBwptmVsohbb9=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -3234,8 +3283,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$6+6\\cos x=0 \\Rightarrow \\cos x=-1 \\Rightarrow x=\\pi, 3\\pi$$\n (b) $$\\int_\\pi^{3\\pi}(6+6\\cos x)\\,dx = [6x+6\\sin x]_\\pi^{3\\pi} = 18\\pi-6\\pi=12\\pi$$\n (c) $$\\pi(2)^2+\\pi(2)l=12\\pi \\Rightarrow 4+2l=12 \\Rightarrow l=4$$\n (d) height $$h=\\sqrt{l^2-2^2}=\\sqrt{12}=2\\sqrt3$$; $$V=\\dfrac13\\pi(2)^2(2\\sqrt3)=\\dfrac{8\\pi\\sqrt3}{3}$$',
             questionType: 'Trigonometric graphs, integration, mensuration (cones)',
-            diagram:
-              'https://drive.google.com/file/d/1nAmZwoqNxUkdZt6seCSVEFxSkR798fLq/view?usp=sharing\n\nhttps://drive.google.com/file/d/1_-yqr2o6UTzL93UE3bzp_cIN1VqXczer/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1nAmZwoqNxUkdZt6seCSVEFxSkR798fLq=w1600',
+              'https://lh3.googleusercontent.com/d/1_-yqr2o6UTzL93UE3bzp_cIN1VqXczer=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -3313,8 +3364,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\sqrt{15^2-12^2}=9\\text{ cm}$$\n (b) $$\\pi\\times9\\times15=424\\text{ cm}^2$$\n (c) $$\\pi\\times21\\times35-424.12=1880\\text{ cm}^2$$',
             questionType: 'Mensuration - cones',
-            diagram:
-              'https://drive.google.com/file/d/1zU8uBUIWfO0yIJnLQ3AU3tDI8s2hipbV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1zU8uBUIWfO0yIJnLQ3AU3tDI8s2hipbV=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -3333,8 +3385,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$AC=\\sqrt{62^2+79^2-2(62)(79)\\cos52^\\circ}=63.7\\text{ km}$$\n (b) Area $$=\\dfrac12(62)(79)\\sin52^\\circ=1929.8\\text{ km}^2$$',
             questionType: 'Trigonometry - cosine rule, area of triangle',
-            diagram:
-              'https://drive.google.com/file/d/13bPa48965hx4X5MX6Xo4kfMJwnh6Hv7g/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/13bPa48965hx4X5MX6Xo4kfMJwnh6Hv7g=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -3353,8 +3406,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Pythagoras: $$l=\\sqrt{10^2+r^2}=\\sqrt{100+r^2}$$\n (b) $$2\\pi r^2+2\\pi r(12)+\\pi r\\sqrt{100+r^2}=570$$, solve using GDC: $$r=4.58$$',
             questionType: 'Mensuration - composite solids',
-            diagram:
-              'https://drive.google.com/file/d/1Ns-Lt_f5pkU3G-cXgkAGPc5-nJer6Hix/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1Ns-Lt_f5pkU3G-cXgkAGPc5-nJer6Hix=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -3374,8 +3428,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$100=\\dfrac13\\pi r^2(8) \\Rightarrow r=3.45$$\n (b) $$l=\\sqrt{8^2+3.45^2}=8.71$$\n (c) $$\\pi r l = \\pi(3.45)(8.71)=94.6\\text{ cm}^2$$',
             questionType: 'Mensuration - cones',
-            diagram:
-              'https://drive.google.com/file/d/1lrKxoeYIXxtYUGGX5mcXC_tOS_bTKSBq/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1lrKxoeYIXxtYUGGX5mcXC_tOS_bTKSBq=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -3394,8 +3449,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\sin^2\\hat A+\\left(\\dfrac56\\right)^2=1 \\Rightarrow \\sin\\hat A=\\dfrac{\\sqrt{11}}{6}$$\n (b) Area $$=\\dfrac12(8)(6)\\dfrac{\\sqrt{11}}{6}=4\\sqrt{11}$$',
             questionType: 'Trigonometry - Pythagorean identity, area of triangle',
-            diagram:
-              'https://drive.google.com/file/d/1d9hFBRRutzd4_GKC5IgmO5t8_apBRNOe/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1d9hFBRRutzd4_GKC5IgmO5t8_apBRNOe=w1600',
+            ],
             subtopicSlug: 'trigonometric-identities-and-equations',
           },
           {
@@ -3433,8 +3489,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) radius of hemisphere $$=3$$, so $$x=3$$\n (a)(ii) $$\\dfrac12\\times\\dfrac{4}{3}\\pi(3)^3+3\\times6^2=164.5\\approx165\\text{ cm}^3$$\n (b) $$164.5\\times2.56=421\\text{ g}$$',
             questionType: 'Mensuration - composite solids',
-            diagram:
-              'https://drive.google.com/file/d/1cly_1yXEjdHHvLaqREPW5bA6ESzWl9vV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1cly_1yXEjdHHvLaqREPW5bA6ESzWl9vV=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -3471,8 +3528,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Sine rule: $$\\dfrac{\\sqrt3/3}{10}=\\dfrac{\\sin\\theta}{15} \\Rightarrow \\sin\\theta=\\dfrac{\\sqrt3}{2}$$\n (b) $$\\cos(2\\times C\\hat AB)=1-2\\sin^2(C\\hat AB)=1-2\\left(\\dfrac{1}{3}\\right)=\\dfrac13$$',
             questionType: 'Trigonometry - sine rule, double angle',
-            diagram:
-              'https://drive.google.com/file/d/1XkAt0osvGMoUwPm6F7U1AxAAfDYcFqxo/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1XkAt0osvGMoUwPm6F7U1AxAAfDYcFqxo=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -3569,8 +3627,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Third angle $$=105^\\circ$$. Sine rule: $$\\dfrac{PR}{\\sin30^\\circ}=\\dfrac{13}{\\sin45^\\circ} \\Rightarrow PR=\\dfrac{13\\sqrt2}{2}$$',
             questionType: 'Trigonometry - sine rule',
-            diagram:
-              'https://drive.google.com/file/d/1oh_vpin3kgsAYpJRzxEIVQ8Cvg4Lzcwj/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1oh_vpin3kgsAYpJRzxEIVQ8Cvg4Lzcwj=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -3589,8 +3648,9 @@ export const PYP_QUESTIONS = {
             solution:
               "Recognising period of $$g$$ must be large enough that $$g$$ does not reach A's position within domain: $$\\dfrac{7\\pi}{6}\\cdot p=2\\pi \\Rightarrow p=\\dfrac{7}{12}$$",
             questionType: 'Trigonometric graphs and transformations',
-            diagram:
-              'https://drive.google.com/file/d/1-BCwi7SZC1VgNYW_5lqpEj_Mrl0UohCv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-BCwi7SZC1VgNYW_5lqpEj_Mrl0UohCv=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -3609,8 +3669,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cosine rule: $$AC^2=3^2+8^2-2(3)(8)\\cos\\dfrac{\\pi}{3}=49 \\Rightarrow AC=7$$\n (b) semicircle arc $$=\\dfrac12(2\\pi\\times3.5)=3.5\\pi$$; perimeter $$=AB+BC+\\text{arc}=3+8+3.5\\pi=11+\\dfrac{7\\pi}{2}$$',
             questionType: 'Trigonometry - cosine rule, perimeter',
-            diagram:
-              'https://drive.google.com/file/d/1VYgfB5F576vxy4kUFI6GBzkkHOWZuBq9/view?usp=sharing\n\nhttps://drive.google.com/file/d/1f7O753NTMkUsstjOcDZN-ET2VB_hbn57/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1VYgfB5F576vxy4kUFI6GBzkkHOWZuBq9=w1600',
+              'https://lh3.googleusercontent.com/d/1f7O753NTMkUsstjOcDZN-ET2VB_hbn57=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -3630,8 +3692,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\cos\\theta=\\sqrt{1-(3/5)^2}=4/5$$\n (b) $$\\cos2\\theta=2(4/5)^2-1=7/25$$\n (c) right triangle with angle $$2\\theta$$ at C: $$\\cos2\\theta=\\dfrac{14}{BC} \\Rightarrow BC=14\\div(7/25)=50$$',
             questionType: 'Trigonometry - double angle formula',
-            diagram:
-              'https://drive.google.com/file/d/1E8xh2_qVPuwYUs7xoUYGCTDLnq0gXglX/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1E8xh2_qVPuwYUs7xoUYGCTDLnq0gXglX=w1600',
+            ],
             subtopicSlug: 'trigonometric-identities-and-equations',
           },
           {
@@ -3650,8 +3713,9 @@ export const PYP_QUESTIONS = {
             solution:
               '$$\\dfrac12\\theta r^2=12$$ and $$r\\theta=6 \\Rightarrow \\theta=6/r$$; substitute: $$\\dfrac12\\left(\\dfrac6r\\right)r^2=12 \\Rightarrow 3r=12 \\Rightarrow r=4$$',
             questionType: 'Geometry - arc length and sector area',
-            diagram:
-              'https://drive.google.com/file/d/1Ao3HPDjkTC18HIZP0V1Stp8uBDWdsCv0/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1Ao3HPDjkTC18HIZP0V1Stp8uBDWdsCv0=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -3670,8 +3734,9 @@ export const PYP_QUESTIONS = {
             solution:
               '$$p+q+r=2q$$, magnitude $$=6$$; angle between $$p$$ and $$q$$ is $$\\pi/3$$; $$p\\cdot(p+q+r)=3\\times6\\times\\cos(\\pi/3)=9$$',
             questionType: 'Vectors - scalar product',
-            diagram:
-              'https://drive.google.com/file/d/1hWoN7V_HfwnS6zcQfcWpa6Dk1hwuvtKd/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1hWoN7V_HfwnS6zcQfcWpa6Dk1hwuvtKd=w1600',
+            ],
             subtopicSlug: 'vectors',
           },
           {
@@ -3945,8 +4010,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\cos60^\\circ=\\dfrac{20}{l} \\Rightarrow l=40\\text{ cm}$$\n (b) $$4(40)+2\\pi(20)=285.7\\text{ cm}$$',
             questionType: 'Trigonometry - right-angled trigonometry, mensuration',
-            diagram:
-              'https://drive.google.com/file/d/1n32Od_YW-lZG70o6FtyQHV7la1RVd61f/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1n32Od_YW-lZG70o6FtyQHV7la1RVd61f=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -3966,8 +4032,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Draw a horizontal line from the top of the cliff and label the angle between this horizontal line and the line to the boat as $$64^\\circ$$.',
             questionType: 'Trigonometry - angle of depression (diagram)',
-            diagram:
-              'https://drive.google.com/file/d/1EdcJ2Vyl7TJEJ1RHoFvebrTkVdt6ZAjE/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1EdcJ2Vyl7TJEJ1RHoFvebrTkVdt6ZAjE=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -3986,8 +4053,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\tan48^\\circ=\\dfrac{CD}{250} \\Rightarrow CD=277.65\\approx278\\text{ m}$$\n (b) $$CA=\\dfrac43(277.65)=370.2$$; $$\\tan(\\text{angle})=\\dfrac{370.2}{250} \\Rightarrow \\text{angle of depression}=56.0^\\circ$$',
             questionType: 'Trigonometry - angle of elevation/depression',
-            diagram:
-              'https://drive.google.com/file/d/1Sf5jvwzNJI3fA3DKg1ME103fHZSzNDCd/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1Sf5jvwzNJI3fA3DKg1ME103fHZSzNDCd=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -4007,8 +4075,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(b) Sine rule: $$\\dfrac{40}{\\sin(APB)}=\\dfrac{30}{\\sin48^\\circ} \\Rightarrow APB=82.2^\\circ$$\n (c) angle $$ABP=180-48-82.2473=49.75$$; angle of depression of B from P equals angle ABP (alternate angles) $$=49.8^\\circ$$',
             questionType: 'Trigonometry - sine rule, angle of depression',
-            diagram:
-              'https://drive.google.com/file/d/1MyTR2i2u3IC4kdeK_Oj6hKcPO50zcG5H/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1MyTR2i2u3IC4kdeK_Oj6hKcPO50zcG5H=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4027,8 +4096,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\cos(B\\hat AC)=\\dfrac{2.6^2+3.1^2-2.4^2}{2(2.6)(3.1)} \\Rightarrow B\\hat AC=48.8^\\circ$$\n (b) Area $$=\\dfrac12(2.6)(3.1)\\sin48.8^\\circ=3.03\\text{ km}^2$$',
             questionType: 'Trigonometry - cosine rule, area of triangle',
-            diagram:
-              'https://drive.google.com/file/d/1_cq4X0HiP4Cf4hotZRnoFZS9omcY7GH4/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1_cq4X0HiP4Cf4hotZRnoFZS9omcY7GH4=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4047,8 +4117,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Sine rule: $$\\dfrac{BC}{\\sin34^\\circ}=\\dfrac{5}{\\sin120^\\circ} \\Rightarrow BC=3.23\\text{ cm}$$\n (b) Area $$=\\dfrac12(5)(3.23)\\sin26^\\circ=3.54\\text{ cm}^2$$',
             questionType: 'Trigonometry - sine rule, area of triangle',
-            diagram:
-              'https://drive.google.com/file/d/1xczCRyY7dUlGH2YAedGaV_bNBLZ6CJed/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1xczCRyY7dUlGH2YAedGaV_bNBLZ6CJed=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4067,8 +4138,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$V=\\pi(8)^2(12)=2412.7\\approx2410\\text{ cm}^3$$\n (b) $$\\dfrac43\\pi(2.9)^3+768\\pi=\\pi(8)^2h \\Rightarrow h=12.5\\text{ cm}$$',
             questionType: 'Mensuration - volume of cylinder and sphere',
-            diagram:
-              'https://drive.google.com/file/d/1ssCloRx2_3ukAbL-OmHPPu4psvZiM1RC/view?usp=sharing\n\nhttps://drive.google.com/file/d/1G2XQjVSA1fUVXGVjFABPlM3r30NkSfMv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ssCloRx2_3ukAbL-OmHPPu4psvZiM1RC=w1600',
+              'https://lh3.googleusercontent.com/d/1G2XQjVSA1fUVXGVjFABPlM3r30NkSfMv=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -4088,8 +4161,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$h=12-r$$; $$A=2\\pi r h=2\\pi r(12-r)=24\\pi r-2\\pi r^2$$\n (b) $$\\dfrac{dA}{dr}=24\\pi-4\\pi r$$\n (c) set $$\\dfrac{dA}{dr}=0 \\Rightarrow r=6$$',
             questionType: 'Calculus - differentiation, optimisation',
-            diagram:
-              'https://drive.google.com/file/d/1ti-DKB-82B0pg4pz-mlq1ob2r7bpRMLL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ti-DKB-82B0pg4pz-mlq1ob2r7bpRMLL=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -4249,8 +4323,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$AB=4.2\\times\\frac{45}{60}=3.15$$ km.\n (b)(i) $$180-114=66$$; $$35+66=101^\\circ$$ (AG).\n (b)(ii) Cosine rule: $$AC^2=3.15^2+4.6^2-2(3.15)(4.6)\\cos101^\\circ \\Rightarrow AC=6.05$$ km.\n (c) Sine rule: $$\\frac{\\sin(B\\hat{C}A)}{3.15}=\\frac{\\sin101^\\circ}{6.05}\\Rightarrow B\\hat{C}A=30.7^\\circ$$.\n (d) $$B\\hat{A}C=48.267^\\circ$$ (angle sum); bearing $$=48.267+35=083.3^\\circ$$.\n (e) $$t=\\frac{6.0507}{3.9}=1.551$$ h $$=93$$ min.',
             questionType: 'Trigonometry (bearings, sine/cosine rule)',
-            diagram:
-              'https://drive.google.com/file/d/1GGSzuLrVaTefPFWVMqTugPBmU8CtlY_v/view?usp=sharing\n\nhttps://drive.google.com/file/d/10gWILnEDzhmhVPrSLe8cMHnsza1XUFcL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1GGSzuLrVaTefPFWVMqTugPBmU8CtlY_v=w1600',
+              'https://lh3.googleusercontent.com/d/10gWILnEDzhmhVPrSLe8cMHnsza1XUFcL=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4308,8 +4384,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cosine rule: $$\\cos\\theta=\\dfrac{4^2+4^2-5^2}{2(4)(4)}\\Rightarrow\\theta=1.35$$ rad.\n (b) Shaded region $$=\\dfrac{1}{2}(4)^2(2\\pi-1.35\\ldots)=39.5\\text{ cm}^2$$.',
             questionType: 'Circular measure — chords and segment/sector area',
-            diagram:
-              'https://drive.google.com/file/d/1tMb-we_tGNOwYMWsuBmnzC5a1JDZcn8i/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1tMb-we_tGNOwYMWsuBmnzC5a1JDZcn8i=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4329,8 +4406,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) $$222=\\frac{1}{2}x(x+3)+(x+3)(x+5)$$.\n (a)(ii) Expand: $$222=\\frac{1}{2}x^2+\\frac{3}{2}x+x^2+3x+5x+15\\Rightarrow 3x^2+19x-414=0$$ (AG).\n (b) Solve quadratic: $$x=9\\Rightarrow CD=x+3=12$$ cm.\n (c) $$\\tan\\left(\\frac{B\\hat{A}E}{2}\\right)=\\dfrac{6}{9}\\Rightarrow B\\hat{A}E=67.3801^\\circ\\approx67.4^\\circ$$ (AG).\n (d) Perimeter $$=2\\sqrt{9^2+6^2}+12+2(14)=61.6$$ cm.\n (e) $$F\\hat{B}C=90+\\frac{180-67.4}{2}=146.3^\\circ$$; $$CF^2=8^2+14^2-2(8)(14)\\cos146.3^\\circ\\Rightarrow CF=21.1$$ cm.',
             questionType: 'Algebra (quadratics) and non-right-angled trigonometry',
-            diagram:
-              'https://drive.google.com/file/d/1tyfNrGrqTmtrdX_3pLi1Cgs4YIUJuxGg/view?usp=sharing\n\nhttps://drive.google.com/file/d/1tyfNrGrqTmtrdX_3pLi1Cgs4YIUJuxGg/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1tyfNrGrqTmtrdX_3pLi1Cgs4YIUJuxGg=w1600',
+              'https://lh3.googleusercontent.com/d/1tyfNrGrqTmtrdX_3pLi1Cgs4YIUJuxGg=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4349,8 +4428,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Arc AB $$=3\\theta$$; reflex arc $$APB=2\\pi(3)-3\\theta=6\\pi-3\\theta$$ (AG).\n (b) Cosine rule: $$L^2=3^2+3^2-2(3)(3)\\cos\\theta=18-18\\cos\\theta\\Rightarrow L=\\sqrt{18-18\\cos\\theta}$$ (AG).\n (c) $$6\\pi-3\\theta=2\\sqrt{18-18\\cos\\theta}\\Rightarrow\\theta=2.49$$ (solve graphically/numerically).',
             questionType: 'Circular measure — arc length and chords',
-            diagram:
-              'https://drive.google.com/file/d/1lNXUmdlflys921J3dJ4NKFdVQEPKUIMP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1lNXUmdlflys921J3dJ4NKFdVQEPKUIMP=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4390,8 +4470,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\sin(B\\hat{A}C)=\\frac{8}{10}$$ or $$\\cos(B\\hat{A}C)=\\frac{6^2+10^2-8^2}{2(6)(10)}\\Rightarrow B\\hat{A}C=0.927$$ rad.\n (b) Sector area $$=\\frac12(6)^2(0.927)=16.6913$$; $$BD=6\\sin(53.1^\\circ)=4.8$$, $$AD=6\\cos(53.1^\\circ)=3.6$$; triangle ABD area $$=\\frac12(6\\cos B\\hat AC)(6\\sin B\\hat AC)=8.64$$; area of $$R=$$ triangle $$-$$ sector $$=8.64-16.6913$$... using correct labelling $$=8.05\\text{ cm}^2$$.',
             questionType: 'Right-angled trigonometry, sector and segment area',
-            diagram:
-              'https://drive.google.com/file/d/1zcAEh-UCJlo9OOsZX8ste_tI3TRYayBa/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1zcAEh-UCJlo9OOsZX8ste_tI3TRYayBa=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -4410,8 +4491,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Cosine rule in triangle ABC: $$28.4^2=x^2+(x+2)^2-2x(x+2)\\cos(0.667)\\Rightarrow x=42.2822$$ (so $$AB=42.2822$$).\n In right triangle ABD: $$AD=AB\\cos(B\\hat AD)=42.2822\\cos(0.611)=34.6$$ cm.',
             questionType: '3D geometry and trigonometry — cosine rule',
-            diagram:
-              'https://drive.google.com/file/d/1dCYuCDZioyUFg00-FUiSv6wMhf_GqN2c/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1dCYuCDZioyUFg00-FUiSv6wMhf_GqN2c=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4432,8 +4514,10 @@ export const PYP_QUESTIONS = {
               '(a) $$B\\hat AC=180-27-26=127^\\circ$$; sine rule $$\\dfrac{AB}{\\sin26^\\circ}=\\dfrac{5}{\\sin127^\\circ}\\Rightarrow AB=2.745$$ m.\n (b) Total area $$=10(2.84)+10(2.745)=55.8\\text{ m}^2$$.\n (c) Long side: $$\\dfrac{10-2(0.3)}{1.6}=5.875\\Rightarrow5$$ rows$$\\times$$ short-side count per rectangle; combining gives 20 panels total.\n (d) $$\\left|\\dfrac{29-30.4}{30.4}\\right|\\times100=4.61\\%$$ using $$20\\times1.6\\times0.95=30.4$$.\n (e) Rearranged orientation gives fewer usable panels ($$1\\times9=18$$ total) — so No, this reduces the number of panels.',
             questionType:
               'Sine rule, area of composite shapes, percentage error, discrete optimisation',
-            diagram:
-              'https://drive.google.com/file/d/1x8zt-9PxEkxqbps7fwfJ5Mgc4qWL4iki/view?usp=sharing\n\nhttps://drive.google.com/file/d/1Zz5G09S01rzVZIMOhtA97JDzd6EuYj-D/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1x8zt-9PxEkxqbps7fwfJ5Mgc4qWL4iki=w1600',
+              'https://lh3.googleusercontent.com/d/1Zz5G09S01rzVZIMOhtA97JDzd6EuYj-D=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4453,8 +4537,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$V=\\pi(17.5)^2(0.5)=481\\text{ cm}^3$$.\n (b) $$\\frac43\\pi r^3=481.056\\Rightarrow r^3=114.843\\Rightarrow r=4.86074\\approx4.9$$ cm.\n (c) $$230=a(2.06)^0+19\\Rightarrow a=211$$.\n (d) $$P=211(2.06)^{-5}+19=24.7^\\circ C$$.\n (e) $$45=211(2.06)^{-t}+19\\Rightarrow t=2.89711$$ min $$=174$$ s.\n (f) 19 is the (dining) room temperature — the lowest temperature the pizza cools to.',
             questionType: 'Volume of solids and exponential modelling',
-            diagram:
-              'https://drive.google.com/file/d/1io1P-oCy5GhB5txPgRLR0c5F2x2mBpTV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1io1P-oCy5GhB5txPgRLR0c5F2x2mBpTV=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -4474,8 +4559,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$A=\\pi r^2+2\\pi rh$$.\n (b) $$0.5\\text{ m}^3=500\\,000\\text{ cm}^3$$.\n (c) $$500\\,000=\\pi r^2h$$.\n (d) Substitute $$h=\\dfrac{500\\,000}{\\pi r^2}$$ into (a): $$A=\\pi r^2+2\\pi r\\cdot\\dfrac{500\\,000}{\\pi r^2}=\\pi r^2+\\dfrac{1\\,000\\,000}{r}$$ (AG).\n (e) $$\\dfrac{dA}{dr}=2\\pi r-\\dfrac{1\\,000\\,000}{r^2}$$.\n (f) Set $$\\dfrac{dA}{dr}=0\\Rightarrow r^3=\\dfrac{1\\,000\\,000}{2\\pi}\\Rightarrow r=54.2$$ cm.\n (g) $$A=\\pi(54.1926)^2+\\dfrac{1\\,000\\,000}{54.1926}=27\\,679.0\\approx27\\,700\\text{ cm}^2$$.\n (h) $$27\\,679.0/2000=13.84\\Rightarrow$$ round up to 14 cans.',
             questionType: 'Differentiation — optimisation problem',
-            diagram:
-              'https://drive.google.com/file/d/15pkNynxFsoKOJ-8wsMTf398DBWqizduv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/15pkNynxFsoKOJ-8wsMTf398DBWqizduv=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -4515,8 +4601,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cosine rule: $$AC^2=185^2+250^2-2(185)(250)\\cos125^\\circ\\Rightarrow AC=387$$ m.\n (b)(i) Sine rule: $$\\dfrac{250}{\\sin(B\\hat AC)}=\\dfrac{387.015}{\\sin125^\\circ}\\Rightarrow B\\hat AC=31.9^\\circ$$.\n (b)(ii) $$C\\hat AD=85^\\circ-31.9478^\\circ=53.1^\\circ$$.\n (c) $$A\\hat CD=70^\\circ-(180^\\circ-125^\\circ-31.9478^\\circ)=46.9^\\circ$$.\n (d) Area $$=\\frac12(185)(250)\\sin125^\\circ+\\frac12(287)(387.015)\\sin(53.0521^\\circ)=63\\,300\\text{ m}^2$$.',
             questionType: 'Non-right-angled trigonometry — cosine/sine rule and composite area',
-            diagram:
-              'https://drive.google.com/file/d/1-UQg3ffM08318LVxqPZwORrnNSUAEYJW/view?usp=sharing\n\nhttps://drive.google.com/file/d/176BfJoIQzNezDjJX1-t_bX6oAD_gQI1K/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-UQg3ffM08318LVxqPZwORrnNSUAEYJW=w1600',
+              'https://lh3.googleusercontent.com/d/176BfJoIQzNezDjJX1-t_bX6oAD_gQI1K=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4536,8 +4624,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) Sine rule: $$\\dfrac{\\sin(B\\hat AC)}{37}=\\dfrac{\\sin60^\\circ}{56}\\Rightarrow B\\hat AC=34.9034^\\circ$$; $$A\\hat BC=180-(34.9034+60)=85.0965^\\circ\\approx85^\\circ$$ (AG).\n (a)(ii) $$AX=56\\sin85^\\circ=55.8$$ m.\n (a)iii) $$BX=\\sqrt{56^2-55.7869^2}=4.88$$ m (or $$56\\cos85^\\circ$$).\n (b) $$\\left|\\dfrac{4.88-3.9}{3.9}\\right|\\times100=25.1\\%$$.\n (c) Using triangle with BD $$=45$$: $$\\tan^{-1}\\left(\\dfrac{55.7869}{40.1193}\\right)=54.3^\\circ$$ (or cosine-rule method giving same result).',
             questionType: 'Sine rule, right-angled trigonometry, percentage error',
-            diagram:
-              'https://drive.google.com/file/d/1zj8NYNSnK_TCH_HeoWCg9H3GRi1kUIqc/view?usp=sharing\n\nhttps://drive.google.com/file/d/1Kc14mxudL1wKaPiFqh2kNj1YELHXks4r/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1zj8NYNSnK_TCH_HeoWCg9H3GRi1kUIqc=w1600',
+              'https://lh3.googleusercontent.com/d/1Kc14mxudL1wKaPiFqh2kNj1YELHXks4r=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4557,8 +4647,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$BD^2=40^2+84^2=93.0376\\approx93$$ m (AG) (Pythagoras, since angle BAD is right).\n (b) Cosine rule: $$\\cos C=\\dfrac{115^2+60^2-93^2}{2(115)(60)}\\Rightarrow B\\hat CD=53.7^\\circ$$.\n (c) Area $$=\\frac12(40)(84)+\\frac12(115)(60)\\sin(53.6679^\\circ)=4460\\text{ m}^2$$.\n (d)(i) Estimate $$=\\dfrac{(40+60)(84+115)}{4}=4980\\text{ m}^2$$.\n (d)(ii) $$\\left|\\dfrac{4975-4459.30}{4459.30}\\right|\\times100=11.6\\%$$.',
             questionType: 'Pythagoras, cosine rule, quadrilateral area, percentage error',
-            diagram:
-              'https://drive.google.com/file/d/1DX1Gv8mQ0C_UrMWlnhwMrpruIqz3k1w-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1DX1Gv8mQ0C_UrMWlnhwMrpruIqz3k1w-=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -4578,8 +4669,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a)(i) $$h(0)=13+8(1)-6(0)=21$$ m.\n (a)(ii) Period $$=\\dfrac{2\\pi}{\\pi/18}=36$$ s.\n (a)(iii) $$\\dfrac{3600}{36}=100$$ rotations.\n (b) Solve $$4.06=13+8\\cos(\\frac{\\pi}{18}k)-6\\sin(\\frac{\\pi}{18}k)\\Rightarrow k=11.7$$.\n (c) Cosine rule with $$OA=OB=10$$, $$AB=17.0$$: $$\\cos(A\\hat OB)=\\dfrac{10^2+10^2-17.0^2}{2(10)(10)}\\Rightarrow A\\hat OB=2.03$$ rad.\n (d) $$h'(11.6510)=-0.782\\text{ m s}^{-1}$$ (using GDC differentiation).",
             questionType: 'Trigonometric modelling, cosine rule, differentiation (rate of change)',
-            diagram:
-              'https://drive.google.com/file/d/109Q79kQd-hP8-PetcXJZz68sJ87aBYZ0/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/109Q79kQd-hP8-PetcXJZz68sJ87aBYZ0=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -4599,8 +4691,9 @@ export const PYP_QUESTIONS = {
               '(a) $$\\tan\\theta=\\dfrac{AC}{OA}=\\dfrac{AC}{1}\\Rightarrow AC=\\tan\\theta$$ (AG).\n (b) Kite area $$OACB=2\\left(\\frac12(1)(\\tan\\theta)\\right)=\\tan\\theta$$; sector $$OADB$$ area $$=\\frac12(2\\theta)(1)^2=\\theta$$; shaded area $$=\\tan\\theta-\\theta$$. Equate to sector area: $$\\tan\\theta-\\theta=\\theta\\Rightarrow\\tan\\theta=2\\theta\\Rightarrow\\theta=1.17$$ (GDC).',
             questionType:
               'Circle geometry — tangents, sector and kite area, trigonometric equation',
-            diagram:
-              'https://drive.google.com/file/d/1gf3380iX_-YVgBQpSgHUInrAGn8pCtIY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1gf3380iX_-YVgBQpSgHUInrAGn8pCtIY=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4619,8 +4712,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\cos\\theta=\\dfrac{OC}{r}\\Rightarrow OC=r\\cos\\theta$$ (AG).\n (b) $$BC=r\\sin\\theta$$; area $$=\\frac12(OC)(BC)=\\frac12 r^2\\sin\\theta\\cos\\theta\\ \\left(=\\frac14r^2\\sin2\\theta\\right)$$.\n (c) $$\\frac12 r^2\\sin\\theta\\cos\\theta=\\dfrac35\\left(\\dfrac12r^2\\theta\\right)\\Rightarrow\\sin\\theta\\cos\\theta=\\dfrac35\\theta\\Rightarrow\\theta=0.830$$ (GDC).',
             questionType: 'Sector/triangle area in radians, trigonometric equation solving',
-            diagram:
-              'https://drive.google.com/file/d/1hUln8XnwDCAiU4ke_xxt1vQaV7as24B5/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1hUln8XnwDCAiU4ke_xxt1vQaV7as24B5=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4639,8 +4733,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Cosine rule: $$\\cos\\theta=\\dfrac{8^2+8^2-12^2}{2(8)(8)}\\Rightarrow$$ half-angle $$=0.722734$$; central angle $$A\\hat OB=1.69612$$ rad ($$97.18^\\circ$$).\n Sector area $$=\\frac12(8)(8)(1.69612)=54.2759$$; triangle area $$=\\frac12(8)(8)\\sin(1.69612)=31.7490$$.\n Segment (shaded) area $$=54.2759-31.7490=22.5\\text{ cm}^2$$.',
             questionType: 'Circle chords and segment area',
-            diagram:
-              'https://drive.google.com/file/d/1HEBxLGwDbLgA966H0ZrT5GJixhG0tVp8/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1HEBxLGwDbLgA966H0ZrT5GJixhG0tVp8=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4659,8 +4754,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Arc length $$=r\\theta=40(1.9)=76$$ cm.\n (b) Perimeter $$=$$ arc $$+2r=76+40+40=156$$ cm.\n (c) Area $$=\\frac12r^2\\theta=\\frac12(1.9)(40)^2=1520\\text{ cm}^2$$.',
             questionType: 'Radian measure — arc length, perimeter and sector area',
-            diagram:
-              'https://drive.google.com/file/d/1he8omBxDDnwXO2In9uegf-A3Jeyuf128/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1he8omBxDDnwXO2In9uegf-A3Jeyuf128=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4679,8 +4775,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Five equal sectors $$\\Rightarrow\\theta=\\dfrac{2\\pi}{5}$$.\n (b) $$\\frac12r^2\\left(\\dfrac{2\\pi}{5}\\right)=20\\pi\\Rightarrow r^2=100\\Rightarrow r=10$$.\n (c) Cosine rule: $$AB^2=10^2+10^2-2(10)(10)\\cos\\left(\\dfrac{2\\pi}{5}\\right)\\Rightarrow AB=11.8$$ mm.',
             questionType: 'Radian measure, sector area, cosine rule',
-            diagram:
-              'https://drive.google.com/file/d/1GkCDNqDWGIY4Vb94K-5convsIBqu-IDg/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1GkCDNqDWGIY4Vb94K-5convsIBqu-IDg=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4699,8 +4796,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Segment area $$=\\frac12r^2(\\theta-\\sin\\theta)=\\frac12(4)^2(\\theta-\\sin\\theta)=8(\\theta-\\sin\\theta)$$.\n (b) $$8(\\theta-\\sin\\theta)=12\\Rightarrow\\theta=2.27$$ (radians; GDC).',
             questionType: 'Circle geometry — segment area in radians',
-            diagram:
-              'https://drive.google.com/file/d/1y3U9dMCIxy0cSGyB9p8ALV34iiHdWyMR/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1y3U9dMCIxy0cSGyB9p8ALV34iiHdWyMR=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -4721,8 +4819,10 @@ export const PYP_QUESTIONS = {
               '(a) $$f(2\\pi)=2\\pi+a\\sin\\left(\\dfrac{3\\pi}{2}\\right)+a=2\\pi-a+a=2\\pi$$ (AG).\n (b)(i) Substituting $$k=0,1$$: $$P_0(0,0)$$, $$P_1(2\\pi,2\\pi)$$.\n (b)(ii) Gradient $$=\\dfrac{2\\pi-0}{2\\pi-0}=1\\Rightarrow y=x$$.\n (c) $$x$$-coordinates differ by $$2(k+1)\\pi-2k\\pi=2\\pi$$ (AG).\n (d) Hypotenuse of one tooth (vertical/horizontal both $$2\\pi$$): $$x=\\dfrac{300}{\\sqrt2}=212.132$$; number of teeth $$=\\dfrac{212.132}{2\\pi}=33.76\\Rightarrow33$$ complete teeth.',
             questionType:
               'Function graphs, transformations, trigonometric equations, geometric modelling',
-            diagram:
-              'https://drive.google.com/file/d/1oZ7tv51CBg461giDrlh0RJKLD7byCYsv/view?usp=sharing\n\nhttps://drive.google.com/file/d/1G0ocjneUiPmm66SKDc4D_tMXvgAKo7mH/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1oZ7tv51CBg461giDrlh0RJKLD7byCYsv=w1600',
+              'https://lh3.googleusercontent.com/d/1G0ocjneUiPmm66SKDc4D_tMXvgAKo7mH=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -4741,8 +4841,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) In triangle ABD, angle $$ADB=180-100-\\ldots$$; using sine rule $$\\dfrac{DB}{\\sin59^\\circ}=\\dfrac{11}{\\sin100^\\circ}\\Rightarrow DB=9.57$$ cm.\n (b) Cosine rule in triangle BDC: $$DC^2=DB^2+BC^2-2(DB)(BC)\\cos82^\\circ=9.57^2+6^2-2(9.57)(6)\\cos82^\\circ\\Rightarrow DC=10.6$$ cm.',
             questionType: 'Sine rule and cosine rule — composite quadrilateral',
-            diagram:
-              'https://drive.google.com/file/d/1tEnf9WJwvoi3MPK6eiPao9KLz6wDOnuY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1tEnf9WJwvoi3MPK6eiPao9KLz6wDOnuY=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4783,8 +4884,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) $$12.5-6.25=6.25$$ hours.\n (a)(ii) $$1.5-0.6=0.9$$ m.\n (b)(i) $$p=\\dfrac{\\max-\\min}{2}=\\dfrac{0.9}{2}=0.45$$.\n (b)(ii) Period $$=12.5\\Rightarrow q=\\dfrac{2\\pi}{12.5}=\\dfrac{4\\pi}{25}\\approx0.503$$.\n (b)(iii) $$r=\\dfrac{\\max+\\min}{2}=0.6+0.45=1.05$$.\n (c) High tides recur every 12.5 h after $$t=12.5$$; second high tide on 12 Dec occurs at $$t=50\\Rightarrow$$ 23:00.',
             questionType: 'Cosine function modelling — amplitude, period, vertical shift',
-            diagram:
-              'https://drive.google.com/file/d/1eGNhNkmA5mA5F_k4GrfCCPOEkBoMSzcX/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1eGNhNkmA5mA5F_k4GrfCCPOEkBoMSzcX=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -4803,8 +4905,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$TR=32$$; cosine rule $$32^2=x^2+38^2-2(x)(38)\\cos43^\\circ\\Rightarrow x^2-(76\\cos43^\\circ)x+420=0$$ (AG).\n (b) Solve quadratic: $$x=9.02007$$ or $$x=46.5628$$; distance along road $$=46.5628-9.02007=37.5$$ km.',
             questionType: 'Cosine rule leading to a quadratic equation',
-            diagram:
-              'https://drive.google.com/file/d/1JM79aQZt2e3z7W9Svx8QrdDS4l6g9r2V/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1JM79aQZt2e3z7W9Svx8QrdDS4l6g9r2V=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4901,8 +5004,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Amplitude $$=\\dfrac{110}{2}=55$$; since P starts at lowest point, $$a=-55$$.\n Vertical shift $$c=65$$ (lowest point 10 m $$+$$ radius 55 m).\n Period $$=20\\Rightarrow\\dfrac{2\\pi}{b}=20\\Rightarrow b=\\dfrac{\\pi}{10}\\approx0.314$$.',
             questionType: 'Cosine function modelling — amplitude, period, vertical shift',
-            diagram:
-              'https://drive.google.com/file/d/1uyeSGq0SDlgAuC69ssfC03M85uo_vGJR/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1uyeSGq0SDlgAuC69ssfC03M85uo_vGJR=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -4922,8 +5026,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a)(i) $$c=\\dfrac{5+17}{2}=11$$.\n (a)(ii) Period $$=12\\Rightarrow b=\\dfrac{2\\pi}{12}=\\dfrac{\\pi}{6}$$ (AG).\n (a)(iii) $$a=\\dfrac{5-17}{2}=-6$$ (amplitude with negative orientation, min at $$x=3$$).\n (b)(i) Translation right by $$k=11.5-9=2.5$$.\n (b)(ii) $$g(x)=-6\\sin\\left(\\dfrac{\\pi}{6}(x-2.5)\\right)+11$$.\n (c)(i) Inflection point of $$g$$ (concavity change) at $$w=8.5$$ (midway between max/min, translated).\n (c)(ii) $$g'(w)$$ maximised: $$-\\pi\\cos\\left(\\dfrac{\\pi}{6}(8.5-2.5)\\right)=\\pi\\approx3.14$$.",
             questionType: 'Sine function transformations, points of inflection, derivatives',
-            diagram:
-              'https://drive.google.com/file/d/1BNg-BK_VDJjRXC74ZTfwAePckp8_m8f_/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1BNg-BK_VDJjRXC74ZTfwAePckp8_m8f_=w1600',
+            ],
             subtopicSlug: 'trigonometric-functions-and-modelling',
           },
           {
@@ -4943,8 +5048,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cosine rule: $$BD^2=4.83^2+3.80^2-2(4.83)(3.80)\\cos78.2^\\circ\\Rightarrow BD=5.50$$ cm.\n (b) $$\\frac12(6.73)(5.50111)\\sin\\theta=18.5\\Rightarrow\\sin\\theta=0.999393\\Rightarrow\\theta=88.0^\\circ$$ or $$\\theta=180-88.0=92.0^\\circ$$ (two solutions from $$\\sin\\theta$$).',
             questionType: 'Cosine rule, area of a triangle, two solutions from sine equation',
-            diagram:
-              'https://drive.google.com/file/d/1SElW3U4rxX9gRRK938_o28iMqY0XUrb-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1SElW3U4rxX9gRRK938_o28iMqY0XUrb-=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4963,8 +5069,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Sine rule: $$\\dfrac{BC}{\\sin50^\\circ}=\\dfrac{5}{\\sin112^\\circ}\\Rightarrow BC=4.13$$ cm.\n (b) $$\\hat B=180-50-112=18^\\circ$$; area $$=\\frac12(5)(4.13)\\sin18^\\circ=3.19\\text{ cm}^2$$.',
             questionType: 'Sine rule and area of a triangle',
-            diagram:
-              'https://drive.google.com/file/d/1kV5IMejxxe3gUfiXmPaO-CZDkyGWmhQM/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1kV5IMejxxe3gUfiXmPaO-CZDkyGWmhQM=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -4984,8 +5091,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Arc length $$r\\theta=28\\Rightarrow r=\\dfrac{28}{\\theta}$$.\n (b) Area $$=\\dfrac12r^2\\theta+\\dfrac12r^2\\sin(\\pi-\\theta)=\\dfrac12r^2(\\theta+\\sin\\theta)$$; substitute $$r=\\dfrac{28}{\\theta}\\Rightarrow$$ area $$=\\dfrac{392}{\\theta^2}(\\theta+\\sin\\theta)$$ (AG).\n (c) $$\\dfrac{392}{\\theta^2}(\\theta+\\sin\\theta)=460\\Rightarrow\\theta=1.44$$ (GDC).\n (d) $$D\\hat AE=\\dfrac{\\pi-\\theta}{2}=0.720$$.\n (e)(i) $$A\\hat BC=195-180+90=105^\\circ$$.\n (e)(ii) Sine rule: $$\\dfrac{BC}{\\sin(D\\hat AE)}=\\dfrac{800}{\\sin105^\\circ}\\Rightarrow BC=546$$ m.',
             questionType: 'Arc length, sector/triangle area, bearings, sine rule',
-            diagram:
-              'https://drive.google.com/file/d/1vzdY4Zd5cjtPz5koK3_1BC2uGX7v6PfN/view?usp=sharing\n\nhttps://drive.google.com/file/d/1xPgVtWTu3I7sRSIIXecTYq3liT6tJ6AJ/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1vzdY4Zd5cjtPz5koK3_1BC2uGX7v6PfN=w1600',
+              'https://lh3.googleusercontent.com/d/1xPgVtWTu3I7sRSIIXecTYq3liT6tJ6AJ=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -5045,8 +5154,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Sine rule: $$\\dfrac{\\sin43.7^\\circ}{100}=\\dfrac{\\sin(B\\hat AC)}{50}\\Rightarrow B\\hat AC=20.2087^\\circ\\approx20.2^\\circ$$ (AG).\n (b) $$\\hat B=180-43.7-20.2=116.1^\\circ$$; area $$=\\frac12(100)(50)\\sin116.1^\\circ=2250\\text{ m}^2$$.\n (c) Sine rule: $$\\dfrac{100}{\\sin43.7^\\circ}=\\dfrac{AC}{\\sin116.1^\\circ}\\Rightarrow AC=130$$ m.\n (d) $$BM^2=100^2+65^2-2(100)(65)\\cos20.2^\\circ\\Rightarrow BM=45.0$$; $$\\tan(T\\hat MB)=\\dfrac{25}{45.0}\\Rightarrow T\\hat MB=29.1^\\circ$$.',
             questionType: 'Sine rule, area of a triangle, angle of elevation (3D context)',
-            diagram:
-              'https://drive.google.com/file/d/1g3POJYDj6_tsEGFyLwXeBgM9YENjAtLG/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1g3POJYDj6_tsEGFyLwXeBgM9YENjAtLG=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -5066,8 +5176,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\tan0.6=\\dfrac{h}{12}\\Rightarrow h=8.21$$ m.\n (b) $$\\tan B=\\dfrac{8.2096}{5}\\Rightarrow B=1.02$$ rad.\n (c) Blade length $$=8.20964-1.8-2.5=3.91$$ m.\n (d) $$p=$$ amplitude $$=\\dfrac{\\max-\\min}{2}=3.91$$; $$q=$$ mean height $$=8.21$$.\n (e) Period $$=\\dfrac{2\\pi}{3\\pi/10}=\\dfrac{20}{3}=6.6667$$ s; rotations per minute $$=\\dfrac{60}{6.6667}=9\\Rightarrow n=9$$.',
             questionType: 'Angles of elevation, trigonometric modelling (cosine function)',
-            diagram:
-              'https://drive.google.com/file/d/1v-WFnuq94-N6QqUXC5Bk5eQthEc9pX1F/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1v-WFnuq94-N6QqUXC5Bk5eQthEc9pX1F=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -5087,8 +5198,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cosine rule: $$BD^2=95^2+120^2-2(95)(120)\\cos70^\\circ\\Rightarrow BD=125$$ m.\n (b) Sine rule: $$\\dfrac{\\sin(D\\hat BC)}{100}=\\dfrac{\\sin110^\\circ}{125.007}\\Rightarrow D\\hat BC=48.7384^\\circ\\approx48.7^\\circ$$ (AG).\n (c) Area $$=\\frac12(125.007)(100)\\sin21.3^\\circ+\\frac12(95)(120)\\sin70^\\circ=7630\\text{ m}^2$$.\n (d) $$CE=100\\sin21.3^\\circ=36.3$$ m.\n (e) $$DE=\\sqrt{100^2-36.3251^2}$$; total track $$=DE+100+36.3251=229$$ m.',
             questionType: 'Cosine/sine rule, composite area, perpendicular distance to a line',
-            diagram:
-              'https://drive.google.com/file/d/1ZMNXd-IadpGEzi9dCxkOC7Sl7jVD7e1a/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ZMNXd-IadpGEzi9dCxkOC7Sl7jVD7e1a=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -5108,8 +5220,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Pythagoras (right angle at C): $$BD=\\sqrt{95^2+40^2}=103$$ m.\n (b) Cosine rule: $$\\cos(D\\hat AB)=\\dfrac{105^2+70^2-103.077^2}{2(105)(70)}\\Rightarrow D\\hat AB=68.9^\\circ$$.\n (c) Area $$=\\frac12(105)(70)\\sin68.9^\\circ=3430\\text{ m}^2$$.\n (d) Area $$=\\frac12(40)(95)+3427.82=5330\\text{ m}^2$$.\n (e) $$\\frac12(105)(AP)\\sin68.9^\\circ=\\frac12(5327.82)\\Rightarrow AP=54.4$$ m.\n (f) Cosine rule: $$BP^2=105^2+54.4^2-2(105)(54.4)\\cos68.9^\\circ\\Rightarrow BP=99.3$$ m.',
             questionType: 'Pythagoras, cosine rule, equal-area division of a quadrilateral',
-            diagram:
-              'https://drive.google.com/file/d/19pqhai5qpwMKniCWpSsRrC0_V6r3c07K/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/19pqhai5qpwMKniCWpSsRrC0_V6r3c07K=w1600',
+            ],
             subtopicSlug: 'right-angled-trigonometry',
           },
           {
@@ -5129,8 +5242,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$V=\\frac13\\pi(3.6)^2(11.8)=160.145\\approx160\\text{ cm}^3$$ (AG).\n (b) $$\\frac23\\pi r^3=225\\Rightarrow r=4.75$$ cm.\n (c) $$\\dfrac{1.89\\times100}{225}=0.84$$ (i.e. $0.84).\n (d) Half-height cone (linear scale factor $$\\frac12$$): volume scales by $$\\left(\\frac12\\right)^3\\Rightarrow V=\\left(\\frac18\\right)(160)=20\\text{ cm}^3$$ (AG).\n (e) $$\\dfrac{20}{100}(7.42)+\\dfrac{140}{100}(0.84)=\\$2.66$$.\n (f) $$x+y=50$$, $$1.89x+2.66y=111.44\\Rightarrow x=28$$.',
             questionType: 'Volume of solids (similarity scaling) and simultaneous linear equations',
-            diagram:
-              'https://drive.google.com/file/d/17avkzWqEBje-CoLs33Hr61iD8kS6ohE9/view?usp=sharing\n\nhttps://drive.google.com/file/d/1wL757RT9AyRwf6EPH3F242_cUlh5ePNR/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/17avkzWqEBje-CoLs33Hr61iD8kS6ohE9=w1600',
+              'https://lh3.googleusercontent.com/d/1wL757RT9AyRwf6EPH3F242_cUlh5ePNR=w1600',
+            ],
             subtopicSlug: '3d-solids-volume-and-surface-area',
           },
           {
@@ -5150,8 +5265,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Sine rule: $$\\dfrac{BD}{\\sin51.5^\\circ}=\\dfrac{8}{\\sin52.5^\\circ}\\Rightarrow BD=7.89$$ cm.\n (b) $$\\cos(E\\hat DC)=\\dfrac{9^2+3.94582^2-7^2}{2(9)(3.94582)}\\Rightarrow E\\hat DC=47.9515^\\circ\\approx48.0^\\circ$$ (AG), where $$3.94582=\\frac12 BD$$.\n (c) Area $$=\\frac12(7.89164)(9)\\sin48.0^\\circ=26.4\\text{ cm}^2$$.\n (d) Cosine rule: $$AE^2=8^2+3.94582^2-2(8)(3.94582)\\cos76^\\circ\\Rightarrow AE=8.02$$ cm; since $$8.02>7=CE$$, point A is outside the circle.',
             questionType: 'Sine rule, cosine rule, circle geometry proof',
-            diagram:
-              'https://drive.google.com/file/d/16QGaDxFCycE2drTIu0Kdmv2HNBl0IgvR/view?usp=sharing\n\nhttps://drive.google.com/file/d/1ZHrQpAx6igEkwVLPaDmlnv38V9Xps2Ic/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/16QGaDxFCycE2drTIu0Kdmv2HNBl0IgvR=w1600',
+              'https://lh3.googleusercontent.com/d/1ZHrQpAx6igEkwVLPaDmlnv38V9Xps2Ic=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -5190,8 +5307,9 @@ export const PYP_QUESTIONS = {
               '(a) Segment area $$=\\frac12r^2\\theta-\\frac12r^2\\sin\\theta$$; triangle area $$=\\frac12r^2\\sin(\\pi-\\theta)=\\frac12r^2\\sin\\theta$$. Equate: $$\\theta-\\sin\\theta=\\sin\\theta\\Rightarrow\\theta=2\\sin\\theta$$ (AG).\n (b) Solve numerically (GDC), excluding $$\\theta=0$$: $$\\theta=1.89549\\approx1.90$$.',
             questionType:
               'Segment/triangle area, trigonometric equation (proof and numeric solution)',
-            diagram:
-              'https://drive.google.com/file/d/1uBbE7t1wGglA9qAQfndS0giN7FTDz-n5/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1uBbE7t1wGglA9qAQfndS0giN7FTDz-n5=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -5212,8 +5330,10 @@ export const PYP_QUESTIONS = {
               '(a) Area $$=\\frac12(10)(7)\\sin15^\\circ=9.06\\text{ m}^2$$.\n (b) Volume $$=(10\\times5\\times16)+(9.05866\\times16)=945\\text{ m}^3$$.\n (c) $$\\dfrac{MN}{5}=\\sin15^\\circ\\Rightarrow MN=1.29$$ m.\n (d) Cosine rule: $$AE^2=10^2+7^2-2(10)(7)\\cos15^\\circ\\Rightarrow AE=3.71$$ m.\n (e) $$ND^2=5^2-1.29409^2\\Rightarrow ND=4.83$$ m $$\\ne3.5$$ m (half of ED) $$\\Rightarrow$$ N is not the midpoint — Farmer Brown is incorrect.\n (f) $$EM^2=1.29409^2+(7-4.82962)^2\\Rightarrow EM=2.53$$ m; total $$=2.52689+3.71084+1.29409+10+7=24.5$$ m.',
             questionType:
               'Area of a triangle, volume of a composite solid, trigonometry (cosine rule, right triangle)',
-            diagram:
-              'https://drive.google.com/file/d/1L8SsBDZyswTh7Xc1mExqKF7bnSCLCMhf/view?usp=sharing\n\nhttps://drive.google.com/file/d/1EK9_xtYZTtsntoHHZEaDwPEvdbrqsBe5/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1L8SsBDZyswTh7Xc1mExqKF7bnSCLCMhf=w1600',
+              'https://lh3.googleusercontent.com/d/1EK9_xtYZTtsntoHHZEaDwPEvdbrqsBe5=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -5232,8 +5352,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Segment area $$=\\frac12r^2\\theta-\\frac12r^2\\sin\\theta=\\frac12(2)^2\\theta-\\frac12(2)^2\\sin\\theta=2\\theta-2\\sin\\theta$$.\n (b) Area of logo $$=$$ rectangle $$-$$ 2 segments: $$5(4)-2(2\\theta-2\\sin\\theta)=13.4\\Rightarrow\\theta=2.35672\\approx2.36$$.',
             questionType: 'Circle segment area, composite area equation (radians)',
-            diagram:
-              'https://drive.google.com/file/d/1-UHB80wA3TgU6BaVksjyLa2QFxED5nJ_/view?usp=sharing\n\nhttps://drive.google.com/file/d/1PXqxSrrMbwFZV_5tkbOrboQlueIbWUIQ/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-UHB80wA3TgU6BaVksjyLa2QFxED5nJ_=w1600',
+              'https://lh3.googleusercontent.com/d/1PXqxSrrMbwFZV_5tkbOrboQlueIbWUIQ=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -5253,8 +5375,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Distance formula: $$AV=\\sqrt{(1-(-1))^2+(5-1)^2+(0-6)^2}=\\sqrt{56}=7.48$$ cm.\n (b) Isosceles triangle AVB: $$AB=2(7.48)\\sin20^\\circ=5.12$$ cm (or cosine rule).\n (c) $$\\frac13(5.12)^2h=57.2\\Rightarrow h=6.55$$ cm (using volume of pyramid formula; base area $$=AB^2$$).\n (d) $$V=x(2x)y=57.2\\Rightarrow y=\\dfrac{57.2}{2x^2}$$; surface area $$S(x)=4x^2+6x\\left(\\dfrac{57.2}{2x^2}\\right)$$; minimising ($$\\dfrac{dS}{dx}=0\\Rightarrow x=2.77849$$) gives $$S=92.6\\text{ cm}^2$$.',
             questionType: '3D vectors (distance formula), pyramid volume, optimisation (calculus)',
-            diagram:
-              'https://drive.google.com/file/d/1YnqTPIuxlZahluG5Vs1paTI9vytHM2EO/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1YnqTPIuxlZahluG5Vs1paTI9vytHM2EO=w1600',
+            ],
             subtopicSlug: 'vectors',
           },
           {
@@ -5273,8 +5396,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cosine rule: $$AB^2=5^2+5^2-2(5)(5)\\cos1.9\\Rightarrow AB=8.13$$ m.\n (b) Reflex angle $$=2\\pi-1.9=4.3831$$; shaded sector area $$=\\frac12(5)^2(4.3831)=54.8\\text{ m}^2$$.',
             questionType: 'Circular measure — chord length and sector area',
-            diagram:
-              'https://drive.google.com/file/d/1IaLw_ZzTfnHbv17-EwRagRqu9LdD6xua/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1IaLw_ZzTfnHbv17-EwRagRqu9LdD6xua=w1600',
+            ],
             subtopicSlug: 'radians-arcs-and-sectors',
           },
           {
@@ -5294,8 +5418,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$A\\hat BC=27^\\circ$$ (bearing geometry); cosine rule: $$AC^2=175^2+230^2-2(175)(230)\\cos27^\\circ\\Rightarrow AC=109$$ m.\n (b) Area $$=\\frac12(175)(230)\\sin27^\\circ=9140\\text{ m}^2$$.\n (c) Sine or cosine rule: $$C\\hat AB=47.0^\\circ$$.\n (d) Since areas of ABD and BCD must be equal, $$AD=DC=\\frac12AC=54.3115$$; cosine rule: $$BD^2=230^2+54.3115^2-2(230)(54.3115)\\cos(47.0049^\\circ)\\Rightarrow BD=197$$ m.',
             questionType: 'Bearings, cosine rule, area of a triangle, equal-area division',
-            diagram:
-              'https://drive.google.com/file/d/1hSYamxBm4N5wx3z9yEcvqxL8IYP462WF/view?usp=sharing\n\nhttps://drive.google.com/file/d/1ZaYu5UfJfZ9jDiEKCeysTScdH54mpW05/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1hSYamxBm4N5wx3z9yEcvqxL8IYP462WF=w1600',
+              'https://lh3.googleusercontent.com/d/1ZaYu5UfJfZ9jDiEKCeysTScdH54mpW05=w1600',
+            ],
             subtopicSlug: 'sine-and-cosine-rules',
           },
           {
@@ -5374,8 +5500,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1) (C2) Note: Award (A1) for mean point plotted and (A1) for labelled M. [2 marks]\n b. straight line through their mean point crossing the p-axis at $$5\\pm2$$ (A1)(ft)(A1)(ft) (C2) Note: Award (A1)(ft) for a straight line through their mean point. Award (A1)(ft) for a correct p-intercept if line is extended. [2 marks]\n c. point on line where m $$= 20$$ identified and an attempt to identify y-coordinate (M1)\n 10.5 (A1)(ft) (C2) Note: Follow through from their line in part (b). [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1d06MPhjJbRftreRRoIJCKEjYjf5g05CQ/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1d06MPhjJbRftreRRoIJCKEjYjf5g05CQ=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -5394,8 +5521,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) $$y = 15.5x - 80$$ (A1)(A1) (C2) Note: Award (A1) for $$15.5x$$; (A1) for $$-80$$. Award at most (A1)(A0) if answer is not an equation. Award (A0)(A1)(ft) for $$y = - 80x + 15.5$$. [2 marks]\n b. (A1)(A1) (C2) correct $$y-$$intercept. If a ruler has not been used, award at most (A0)(A1). Note: Award (A1) for a straight line using a ruler passing through (20, 230); (A1) for [2 marks]\n c. $$a = 10$$ AND $$b = 30$$ (A1)(A1) (C2) Note: Accept [10, 30] or $$10 \\leq x \\leq 30$$. [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1bh4FX9Dy7-8GLsBusTRVxdvObo1cb-AJ/view?usp=sharing\n\nhttps://drive.google.com/file/d/1WeLqTKHVbEbHAZZ7JQpk35btMdrHa3QA/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1bh4FX9Dy7-8GLsBusTRVxdvObo1cb-AJ=w1600',
+              'https://lh3.googleusercontent.com/d/1WeLqTKHVbEbHAZZ7JQpk35btMdrHa3QA=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -5414,8 +5543,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$q=5$$ A1 N1 [1 mark]\n b. valid approach (M1) eg ($$18 + 10 + 5) - 30, 28 - 25, 18 + 10 - n = 25 n=3$$ A1 N2 [2 marks]\n c. valid approach for finding $$m$$ or $$p$$ (may be seen in part (b)) (M1) eg $$18 - 3, 3 + p = 10 m = 15, p = 7$$ A1A1 N3 [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/18fLWZqhGvfwXreZumoVI02Ioi5lka2MS/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/18fLWZqhGvfwXreZumoVI02Ioi5lka2MS=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5435,8 +5565,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. evidence of median position (M1)\n 40 students median $$= 14$$ (hours) A1 [2 marks]\n b. recognizing there are 8 students in the top 10 % (M1)\n 72 students spent less than $$k$$ hours (A$$1) k = 18$$ (hours) A1 [3 marks]\n c. 15 hours is 60 students OR $$p = 60 - 4$$ (M$$1) p = 56$$ A1\n 21 hours is 76 students OR $$q = 80 - 76$$ OR $$q = 80 - 4 - 56 - 16$$ (A$$1) q=4$$ A1 [4 marks]\n d.\n 20 of the 80 students OR spend more than 15 hours doing homework\n 1\n 4 (A$$1) = \\times 320$$ OR $$4 \\times 20$$ (A1) 80 (students)\n $$20 x 1$$\n 80 320 4 OR A1 [3 marks]\n e.i. only year 12 students surveyed OR amount of homework might be different for different year levels R1 [1 mark]\n e.ii. stratified sampling OR survey students in all years R1 [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1KojPHx1BBZX6qK8Z1_QrZ2D3F4YimqMI/view?usp=sharing\n\nhttps://drive.google.com/file/d/1HRMGYCwku0CoZWvlaY5_AEVtXjhtRQxd/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1KojPHx1BBZX6qK8Z1_QrZ2D3F4YimqMI=w1600',
+              'https://lh3.googleusercontent.com/d/1HRMGYCwku0CoZWvlaY5_AEVtXjhtRQxd=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -5493,8 +5625,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) median (A1) (C1) [1 mark]\n b.i. $$18 - 12$$ (A1) Note: Award (M1) for correct quartiles seen.\n 6 (g) (A1) (C2) [2 marks]\n b.ii. 125 (A1) (C1) [1 mark]\n c. Cafeteria 2 (A1) (C1)\n $$75 % > 50 %$$ (do not meet the requirement) (R1) (C1) OR\n $$25 % < 50 %$$ (meet the requirement) (R1) (C1) Note: Do not award (A1)(R0). Award the (R1) for a correct comparison of percentages for both cafeterias, which may be in words. The percentage values or fractions must be seen. It is possible to award (A0)(R1). [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/17yRC8Mx7dxSuTrseqSx_NdQsq0P5dBWR/view?usp=sharing\n\nhttps://drive.google.com/file/d/1rrd5ngWJ8WqBrc1vIOVbhP4EH2dMb-Qt/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/17yRC8Mx7dxSuTrseqSx_NdQsq0P5dBWR=w1600',
+              'https://lh3.googleusercontent.com/d/1rrd5ngWJ8WqBrc1vIOVbhP4EH2dMb-Qt=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -5513,8 +5647,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (i) 32.5 (A1) (ii) 31.9 (A1) (iii) 33.1 (A1) (C3) Note: Answers must be given correct to 1 decimal place. [3 marks]\n b. Note: Award (A1)(ft) for correct median, (A1)(ft) for correct quartiles and box, (A1) for correct end points of whiskers and straight whiskers. Award at most (A1)(A1)(A0) if a horizontal line goes right through the box or if the whiskers are not well aligned with the midpoint of the box. Follow through from part (a). [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1poIm5Vtj_fQIm8nbu_XOErEG4sUQa7Xy/view?usp=sharing\n\nhttps://drive.google.com/file/d/1_PeLvkKi_f6hIQs-G3FyS_nP4SkP0x6f/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1poIm5Vtj_fQIm8nbu_XOErEG4sUQa7Xy=w1600',
+              'https://lh3.googleusercontent.com/d/1_PeLvkKi_f6hIQs-G3FyS_nP4SkP0x6f=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -5533,8 +5669,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) $$= 10 x + 11$$\n 2 (M1) Note: Award (M1) for correct substitution into median formula or for arranging all 9 values into ascending/descending order. ($$x = ) 9$$ (A1) (C2) [2 marks]\n b.i. 2.69 (2.69072…) (A2)(ft) Note: Follow through from part (a). [2 marks]\n b.ii. $$13 - 8$$ (M$$1) = 5$$ (A1)(ft) (C4) Note: Award (M1) for 13 and 8 seen. Note: Follow through from part (a). [2 marks] SPM.1.SL.TZ0.2 attempt to substitute into $$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) ($$M1) Note: Accept use of Venn diagram or other valid method.\n $$0.6 = 0.5 + 0.4 - P(A \\cap B) ($$A1) $$P(A \\cap B) = 0.3 ($$seen anywhere) A1 attempt to substitute into $$P( A | B) = P(A \\cap B) P(B) ($$M$$1) =$$\n 0.3\n 0.4 $$P( A | B) = 0.75( = )$$\n 3\n 4 A1 [5 marks] SPM.1.SL.TZ0.7\n a. evidence of median position (M1)\n 80th employee\n 40 minutes A1 [2 marks]\n b. valid attempt to find interval (25–55) (M1)\n 18 (employees), 142 (employees) A1 124 A1 [3 marks]\n c. recognising that there are 16 employees in the top 10% (M1)\n 144 employees travelled more than $$k$$ minutes (A$$1) k = 56$$ A1 [3 marks]\n d. $$b = 70$$ A1 [1 mark]\n e.i. recognizing $$a$$ is first quartile value (M1) 40 employees $$a = 33$$ A1 [2 marks]\n e.ii. $$47 - 33$$ (M1) IQR $$= 14$$ A1 [2 marks]\n f. attempt to find $$1.5 \\times$$ their IQR (M$$1) 33 - 21 12$$ (A1) [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1vE-x2V36X_fQdh-AXQVnfNExdOpk7QEC/view?usp=sharing\n\nhttps://drive.google.com/file/d/1ODzOVTzCBwgcYfPsQyv0f4cWgbqH0SM5/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1vE-x2V36X_fQdh-AXQVnfNExdOpk7QEC=w1600',
+              'https://lh3.googleusercontent.com/d/1ODzOVTzCBwgcYfPsQyv0f4cWgbqH0SM5=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -5553,8 +5691,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1)(A1)(A1) (C4) Note: Award (A1) for each number in the correct position. [4 marks]\n b. Note: Award (A1) for each correctly placed tick. (A1)(A1) (C2) [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/17yk1VeevurDnhGna-HtBj1-1VFh02Nhr/view?usp=sharing\n\nhttps://drive.google.com/file/d/1Jx7VcPSOTuqZTumhZkADJ5cT4iKSIqwU/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/17yk1VeevurDnhGna-HtBj1-1VFh02Nhr=w1600',
+              'https://lh3.googleusercontent.com/d/1Jx7VcPSOTuqZTumhZkADJ5cT4iKSIqwU=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5611,8 +5751,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1)(A1) (C3) Note: Award (A1) for each correct pair of probabilities. [3 marks]\n b. $$0.8 \\times 0.99 + 0.2 \\times 0.95$$ (A1)(ft)(M1) Note: Award (A1)(ft) for two correct products of probabilities taken from their diagram, (M1) for the addition of their products. $$= 0.982 (98.2%, )$$\n 491 Note: Follow through from part (a).\n 500 (A1)(ft) (C3) [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1432y4AdBHFFg1YpLh4eA-UE0RiFzp07N/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1432y4AdBHFFg1YpLh4eA-UE0RiFzp07N=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5631,8 +5772,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1)(A1) (C3) Note: Award (A1) for each correct pair of branches. [3 marks] $$\\times + \\times$$\n 5 4 3 5\n 8 7 8 7\n b. (A1)(ft)(M1) Note: Award (A1)(ft) for their two correct products from their tree diagram. Follow through from part (a), award (M1) for adding their two products. Award (M0) if additional products or terms are added. ( , 0.625, 62.5 % )\n 5 35\n $$8 56 =$$ (A1)(ft) (C3) Note: Follow through from their tree diagram, only if probabilities are [0,1]. [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1qRjT544Wc5NW3V-qv3mZN0BpiwDuUYr_/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1qRjT544Wc5NW3V-qv3mZN0BpiwDuUYr_=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5670,8 +5812,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1) (C2) Note: Award (A1) for each correct pair of probabilities. [2 marks] $$p+ \\times =$$\n 4 1 1 3\n 5 5 4 5\n b. (A1)(ft)(M1)(M1) Note: Award (A1)(ft) for two correct products from part (a), (M1) for adding their\n 3\n 5 products, (M1) for equating the sum of any two probabilities to . ($$p = ) (0.688, 0.6875)$$\n 11\n 16 (A1)(ft) (C4) Note: Award the final (A1)(ft) only if $$0 \\leq p \\leq 1$$. Follow through from part (a). [4 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1KpRVOkL7FQxPHZU9vxXZcMPft6xA_jjH/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1KpRVOkL7FQxPHZU9vxXZcMPft6xA_jjH=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5728,8 +5871,11 @@ export const PYP_QUESTIONS = {
             solution:
               "a.i. A' (A1) Note: Accept alternative set notation for complement such as U $$-$$ A. [1 mark]\n a.ii. $$C \\cap D'$$ OR $$D' \\cap C$$ (A1) Note: Accept alternative set notation for complement. [1 mark]\n a.iii. ($$E \\cap F) \\cup G$$ OR $$G \\cup (E \\cap F)$$ (A2) (C4) Note: Accept equivalent answers, for example ($$E \\cup G) \\cap (F \\cup G)$$. [2 marks]\n b.i. [1 mark] (A1)\n b.ii. (A1) (C2) [1 mark]",
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1y_ulswKanbHStBA72jPb2EEckmr3MlRV/view?usp=sharing\n\nhttps://drive.google.com/file/d/1Tp8YEbySE97SnwuZK4B7OrGQfyxYAwiY/view?usp=sharing \n\nhttps://drive.google.com/file/d/1VQwP46iFpPGyt2EcQm-IFTh6l-3G4igO/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1y_ulswKanbHStBA72jPb2EEckmr3MlRV=w1600',
+              'https://lh3.googleusercontent.com/d/1Tp8YEbySE97SnwuZK4B7OrGQfyxYAwiY=w1600',
+              'https://lh3.googleusercontent.com/d/1VQwP46iFpPGyt2EcQm-IFTh6l-3G4igO=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5786,8 +5932,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n 9 (cm) (A1) (C1) [1 mark]\n b. 40 (leaves) (A1) (C1) [1 mark]\n c.i. ($$200 \\times 0.90 = ) 180$$ or equivalent (M1) Note: Award (M1) for a horizontal line drawn through the cumulative frequency value of 180 and meeting the curve (or the corresponding vertical line from 10.5 cm). ($$k = ) 10.5$$ (cm) (A1) (C2) Note: Accept an error of $$\\pm0.1$$. [2 marks] | $$9.5 - 10.5$$ | $$\\times 100%$$\n c.ii. || 10.5 || (M1) Notes: Award (M1) for their correct substitution into the percentage error formula.\n 9.52 (% ) (9.52380… (% )) (A1)(ft) (C2) Notes: Follow through from their answer to part (c)(i). Award (A1)(A0) for an answer of $$- 9.52$$ with or without working. [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1AB4Qy3wsmbIyshyRhEzaxiY8j5TNTlf5/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1AB4Qy3wsmbIyshyRhEzaxiY8j5TNTlf5=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -5806,8 +5953,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) $$x$$\n 1\n 2 (A1) (C1) [1 mark]\n b. (A1)(A1)(ft) (C2) Notes: Award (A1) for 15 placed in the correct position, award (A1)(ft) for $$x$$ and their $$x$$ placed in the correct positions of diagram. Do not penalize the absence of\n 1\n 2 outside the circles. Award at most (A1)(A0) if 35 and 70 are seen instead of $$x$$ and\n 0 inside the rectangle and award at most (A1)(A0) if any value other than 0 is seen their $$x$$.\n 1\n 2 [2 marks] $$x + x + 15 = 120$$ or equivalent\n 1\n 2\n c. (M1) Note: Award (M1) for adding the values in their Venn and equating to 120 (or equivalent). ($$x = ) 70$$ (A1)(ft) (C2) positive integer and $$x$$ is seen in their Venn diagram. Note: Follow through from their Venn diagram, but only if the answer is a [2 marks]\n d. 85 (A1)(ft) (C1) Note: Follow through from their Venn diagram and their answer to part (c), but only if the answer is a positive integer and less than 120. [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1UBU66OPjr907ebowybl-HVIk3Jd-dx_k/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1UBU66OPjr907ebowybl-HVIk3Jd-dx_k=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5826,8 +5974,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1) (C2) Note: Award (A1) for each correct entry. [2 marks]\n b. (M1) Note: Award (M1) for sketch with 15 labelled and left tail shaded OR for a correct probability statement, $$P(X < 15).$$\n 0.0766 (0.0765637…, 7.66%) (A1) (C2) [2 marks]\n c. (M1) Note: Award (M1) for a sketch showing correctly shaded region to the right of the OR for a correct probability statement, $$P(X > k) = 0.196$$ or $$P(X \\leq k) = 0.804.$$ mean with 19.6% labelled (accept shading of the complement with 80.4% labelled)\n 23.0 (kg) (22.9959… (kg)) (A1) (C2) [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1wtL1WaPBbqlIcq4RUuoISlUo4GGJJYqM/view?usp=sharing\n\nhttps://drive.google.com/file/d/1GDarcnaXesHuKGtIFBgJb3jImbFMr7dL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1wtL1WaPBbqlIcq4RUuoISlUo4GGJJYqM=w1600',
+              'https://lh3.googleusercontent.com/d/1GDarcnaXesHuKGtIFBgJb3jImbFMr7dL=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -5846,8 +5996,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. $$-0.974 (-0.973745$$…) (A2) Note: Award (A1) for an answer of 0.974 (minus sign omitted). Award (A1) for an answer of $$-0.973$$ (incorrect rounding). [2 marks]\n a.ii. y $$= -0.365$$x + 17.9 (y $$= -0.365032$$…x + 17.9418…) (A1)(A1) (C4) Note: Award (A1) for $$-0.365$$x, (A1) for 17.9. Award at most (A1)(A0) if not an equation or if the values are reversed (eg y $$= 17.9$$x $$-0.365)$$. [2 marks]\n b. y $$= -0.365032$$… $$\\times 18 + 17.9418$$… (M1) Note: Award (M1) for correctly substituting 18 into their part (a)(ii). $$= 11.4 (11.3712$$…) (A1)(ft) (C2) Note: Follow through from part (a)(ii). [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1XAJZTEdQSCC3-hK7-O5deEw1Ccf5n8x_/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1XAJZTEdQSCC3-hK7-O5deEw1Ccf5n8x_=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -5866,8 +6017,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n 0.22(50) + 15 (M1) Note: Award (M1) for correct substitution of 50 into equation of the regression line. ( $$= ) 26$$ (A1) (C2) OR\n 655\n 25 (M1) Note: Award (M1) for correctly summing the ℎ values of the points, and dividing by $$25. ( = ) 26.2$$ (A1) (C2) [2 marks]\n b. line through ($$50, 26 \\pm 1)$$ and (0, 15) (A1)(ft)(A1) (C2) Note: Award (A1)(ft) for a straight line through (50, their ℎ$$)$$, and (A1) for the line intercepting the $$y-$$axis at (0, 15); this may need to be extrapolated. Follow through from part (a). Award at most (A0)(A1) if the line is not drawn with a ruler. [2 marks]\n c. (A1) (C1) Note: Award (A0) if more than one tick (✔) is seen. [1 mark]\n d. 18 is less than the lowest age in the survey OR extrapolation. (A1) (C1) Note: Accept equivalent statements. [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1HMTTdpdq9J0NDMZfhTKta-mklaN2_aUK/view?usp=sharing\n\nhttps://drive.google.com/file/d/1j3RFEgiuflpMfaVbRgd6mrtFVF7aWidW/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1HMTTdpdq9J0NDMZfhTKta-mklaN2_aUK=w1600',
+              'https://lh3.googleusercontent.com/d/1j3RFEgiuflpMfaVbRgd6mrtFVF7aWidW=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -5886,8 +6039,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A2) (C2) Note: Award (A2) for all correct entries, (A1) for 3 correct entries. [2 marks]\n b. continuous (A1) (C1) [1 mark]\n c. 60 (cm) < trout length $$\\leq 70$$ (cm) (A1) (C1) Note: Accept equivalent notation such as (60, 70] or ]60, 70]. Award (A0) for “60-70” (incorrect notation). [1 mark] $$\\times 100$$\n 4\n 22\n d. (M1) Note: Award (M1) for their 4 divided by their $$22. = 18.2 (18.1818$$…) (A1)(ft) (C2) Note: Follow through from their part (a). Do not accept 0.181818…. [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1mEOhO0FIdCiFC-nDtRVHUSI1fLY-NHpq/view?usp=sharing\n\nhttps://drive.google.com/file/d/1KKXvvcXk6rRQhH36z7fmjomITue9nV8K/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1mEOhO0FIdCiFC-nDtRVHUSI1fLY-NHpq=w1600',
+              'https://lh3.googleusercontent.com/d/1KKXvvcXk6rRQhH36z7fmjomITue9nV8K=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -5906,8 +6061,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) valid approach (M1) eg $$Q3 - Q1 , Q3 - 1.1 , 4.5 - a = 1.1 a = 3.4$$ A1 N2 [2 marks] ( $$= 6.4)$$ (km)\n 32\n 5\n b. A1 N1 [1 mark]\n c. METHOD 1 (standard deviation first) valid approach (M1) standard deviation $$= \\sqrt{}$$variance , standard deviation =\n $$16 4 \\sqrt{}9$$\n 3 eg (km) (A1) valid approach to convert their standard deviation (M$$1) \\times , = M$$ (miles) ( = )\n 4 5 16 8 20 5\n $$3 8 \\sqrt{}9 5 24 6$$ eg A1 N3\n 4\n 3 Note: If no working shown, award M1A1M0A0 for the value .\n 4\n 3 If working shown, and candidate’s final answer is , award M1A1M0A0. METHOD 2 (variance first) valid approach to convert variance (M1) variance =\n 2 25 eg ( ) , , $$\\times( )$$\n 5 64 16 5\n 36 (A1) valid approach (M1)\n 8 25 9 8\n 2 standard deviation $$= \\sqrt{}$$variance , , $$\\times( )$$\n $$25 16 5 \\sqrt{} 36 \\sqrt{}9 8$$ eg (miles) ( = )\n 20 5 [4 marks]\n 24 6 A1 N3\n d. correct frequency for 22 minutes (A1) eg 20 adding their frequency (do not accept 22 + 400) (M1) eg 20 + 400 , 420 athletes $$m = 30$$ (minutes) A1 N3 [3 marks]\n e. 27 (minutes) (A1) correct working (A1)\n 130 athletes between 22 and 27 minutes, $$P(22 < t < 27) = ,$$\n $$150 - 20 13$$\n 600 60 eg evidence of conditional probability or reduced sample space (M1) $$P(A B) , P(t < 27 22 < t < 30) , , P(22 < t < 27) 150 P(22 < t < m) 400$$ eg\n 130 , correct working (A$$1) 600 150 - 20$$ eg 400 400\n $$600 ( = = = 0.325)$$\n 130 13 78000 390\n 400 40 240000 1200 A1 N5\n 150\n 400 Note: If no other working is shown, award A0A0M1A0A0 for answer of .\n 3\n 8 Award N0 for answer of with no other working shown. [5 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1sw55jjQGQ36LLcRPOeVMEMMyd9HHkeQJ/view?usp=sharing\n\nhttps://drive.google.com/file/d/1toHdh3M3YwAwpho06kXD8aV1h4UsKa-i/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1sw55jjQGQ36LLcRPOeVMEMMyd9HHkeQJ=w1600',
+              'https://lh3.googleusercontent.com/d/1toHdh3M3YwAwpho06kXD8aV1h4UsKa-i=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -5926,8 +6083,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) continuous (A1) (C1) [1 mark]\n b. 75.5 (km h$$-1)$$ (A1) (C1) Note: Answer must be exact. [1 mark]\n c. 294 (km h$$-1)$$ (A1) (C1) [1 mark]\n 300 + 97 + 80 + 80 + 71 + 64 + 21 + 6 719\n 8 8\n d.i. OR (M1) Note: Award (M1) for correct sum divided by 8.89.9 (89.875)(km h$$-1)$$ (A1) (C2) [2 marks]\n d.ii. 84.6 (84.5597…)(km h$$-1)$$ (A1) (C1) Note: If the response to part (d)(i) is awarded zero marks, a correct response to part (d)(ii) is awarded (C2). [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1qNdKEVKVO-hFXTzlOjSGV48Fe_Rp49wx/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1qNdKEVKVO-hFXTzlOjSGV48Fe_Rp49wx=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -5946,8 +6104,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.\n a. (Adapted from a previous-syllabus exam paper) It appeared in a paper that permitted the use of a calculator, and so might not be suitable for all forms of practice. (A1) (C1) Note: Award (A1) for the correct pair of probabilities. [1 mark]\n b. $$p \\times 0.4 + (1 - p) = 0.58$$ (M1) equated to 0.58. Note: Award (M1) for multiplying and adding correct probabilities for losing OR $$p \\times 0.6 = 1 - 0.58$$ (M1)\n $$1 - 0.58$$ or 0.42. Note: Award (M1) for multiplying correct probabilities for winning equated to ($$p = ) 0.7$$ (A1)(ft) (C2) Note: Follow through from their part (a). Award the final (A1)(ft) only if their $$p$$ is within the range $$0 < p < 1$$. [2 marks] ( )\n $$0.3 1 - 0.7$$\n 0.58 0.58\n c. (A1)(ft)(A1) Note: Award (A1)(ft) for their correct numerator. Follow through from part (b). Award (A1) for the correct denominator. OR\n 0.3\n $$0.3 + 0.7 \\times 0.4$$ (A1)(ft)(A1)(ft) Note: Award (A1)(ft) for their correct numerator. Follow through from part (b). Award (A1)(ft) for their correct calculation of Andre losing the semi-final or winning the semi-final and then losing in the final. Follow through from their parts (a) and (b). (0.517, 0.517241…, 51.7 % )\n 15\n 29 (A1)(ft) (C3) Note: Follow through from parts (a) and (b). [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1XdtjPuY9ogQhh4U6gWKzwYl4z6SRW9y-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1XdtjPuY9ogQhh4U6gWKzwYl4z6SRW9y-=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -5966,8 +6125,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) It appeared in a paper that permitted the use of a calculator, and so might not be suitable for all forms of practice.\n $$400 \\leq w < 500$$ (A1) (C1) Note: Accept alternative notation [400, 500) or [400, 500[ . Do not accept "400-500". [1 mark]\n b. 115 (115.265… ($$g))$$ (A2) (C2) Note: Award (A1)(A0) for an answer of 116 (116.459…). [2 marks]\n c.\n c. (A2)(A1) (C3) Note: Award (A2) for all correct heights of bars or (A1) for three or four correct heights of bars.\n 100, 200, 300, 400, 500 and 600) and for no gaps; the bars do not have to be Award (A1) for rectangular bars all with correct left and right end points ( shaded. Award at most (A2)(A0) if a ruler is not used for all lines. [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/16iinCeshPjiOWUCKHJw7HkGqeFFi_yIt/view?usp=sharing\n\nhttps://drive.google.com/file/d/1krc2jil9q4bCCWFNVJk0kjZoxsZMf1gm/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/16iinCeshPjiOWUCKHJw7HkGqeFFi_yIt=w1600',
+              'https://lh3.googleusercontent.com/d/1krc2jil9q4bCCWFNVJk0kjZoxsZMf1gm=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -5986,8 +6147,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n 20 (A1) (C1) [1 mark] (0.11627…, 11.6279…% )\n 5\n 43\n b. (A1)(A1) (C2) Note: Award (A1) for correct numerator, (A1) for correct denominator. [2 marks] $$\\times + \\times$$\n 7 12 12 7\n 37 36 37 36\n c. (A1)(M1) Note: Award (A1) for first or second correct product seen, (M1) for adding their two products or for multiplying their product by two. $$= ( 0.12612$$…, 12.6126 % )\n 14\n 111 (A1) (C3) [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1SctrMIivaHhU1TNJWkVtHc2xfVohw9cA/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1SctrMIivaHhU1TNJWkVtHc2xfVohw9cA=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -6006,8 +6168,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n $$18 + x + y + 22 = 100$$ or equivalent (A1) (C1) [1 mark] $$= 2.71$$ or equivalent\n $$18 + 2x + 3y + 88$$\n 100\n b. (M1)(A1) (C2) Note: Award (M1) for a sum including $$x$$ and $$y$$, divided by 100 and equated to\n 2.71, (A1) for a correct equation. [2 marks]\n c. $$x + y = 60$$ and $$2x + 3y = 165$$ (M1) Note: Award (M1) for obtaining a correct linear equation in one variable from their (a) and their (b). This may be implied if seen in part (a) or part (b). $$x = 15$$; $$y = 45$$ (A1)(ft)(A1)(ft) (C3) Notes: Follow through from parts (a) and (b), irrespective of working seen provided the answers are positive integers. [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1iAw3MwMEaU97bw21NcDDD0_QPswywXD2/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1iAw3MwMEaU97bw21NcDDD0_QPswywXD2=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6026,8 +6189,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. attempt to use definition of outlier\n $$1.5 \\times 20 + Q3$$ (M1)\n $$1.5 \\times 20 + U \\geq 75 ( \\Rightarrow U \\geq 45$$, accept $$U > 45)$$ OR $$1.5 \\times 20 + Q3 = 75$$ A1 minimum value of $$U = 45$$ A1 [3 marks]\n b. attempt to use interquartile range (M$$1) U - L = 20$$ (may be seen in part (a)) OR $$L \\geq 25$$ (accept $$L > 25)$$ minimum value of $$L = 25$$ A1 [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1N7QMQYb86Jatay6OUfqDvVj9TtZV_g57/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1N7QMQYb86Jatay6OUfqDvVj9TtZV_g57=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6046,8 +6210,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n 3 (A1) (C1) [1 mark]\n b. median is 13th position (M1) CF: 2, 6, 14, 20, 23, 25 (M1) median $$= 3$$ (A1) (C3) [3 marks]\n c.i. 2.5 (A1) (C1) Note: Award (A1)(ft) if the sum of their parts (c)(i) and (c)(ii) is 4. [1 mark]\n c.ii. 1.5 (A1)(ft) (C1) Note: Award (A1)(ft) if the sum of their parts (c)(i) and (c)(ii) is 4. [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1EL9MBsH3b5DRMDJ4jK7XSLOvrKcNa_vw/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1EL9MBsH3b5DRMDJ4jK7XSLOvrKcNa_vw=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6066,8 +6231,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. recognising probabilities sum to 1 (M$$1) p+p+p+ p=1$$\n 1\n $$2 p=$$\n 2\n 7 A1 [2 marks] valid attempt to find $$E(X) 1 \\times p + 2 \\times p + 3 \\times p + 4 \\times p( = 8p)$$\n 1\n 2\n b. (M1) $$E(X) =$$\n 16 [2 marks]\n 7 A1\n c.i. $$0\\leqr\\leq1$$ A1 [1 mark]\n c.ii. attempt to find a value of $$q$$ (M1)\n $$0 \\leq 1 - 3q \\leq 1$$ OR $$r = 0 \\Rightarrow q =$$ OR $$r = 1 \\Rightarrow q = 0 0\\leqq\\leq$$\n 1 1\n 3 3 A1 [2 marks]\n d. $$E(Y) = 1 \\times q + 2 \\times q + 3 \\times q + 4 \\times r ( = 2 + 2r$$ OR $$4 - 6q)$$ (A1) A$$1 1 \\times 1 + 2 \\times 1 + 3 \\times 1 + 4 \\times 0 ( = 2)$$ OR\n 3 3 3 one correct boundary value\n $$1 \\times 0 + 2 \\times 0 + 3 \\times 0 + 4 \\times 1 ( = 4)$$ OR $$2 + 2(0) ( = 2)$$ OR $$2 + 2(1) ( = 4)$$ OR\n $$4 - 6(0) ( = 4)$$ OR $$4 - 6( ) ( = 2)$$\n $$1 2 \\leq E(Y) \\leq 4$$ A1 [3 marks]\n 3\n e. METHOD 1 evidence of choosing at least four correct outcomes from\n 1&2, 1&3, 1&4, 2&3, 2&4, 3&4 (M$$1) q + r$$ OR $$3pq + 3pr$$ OR $$pq + pq + p(1 - 3q) + pq + p(1 - 3q) + p(1 - 3q)$$\n 6 6\n 7 7 (A1) solving for either $$q$$ or $$r$$ M$$1 (q + 1 - 3q) = ( + r) =$$ OR $$3pq + 3p(1 - 3q) =$$\n $$6 1 6 1-r 1$$\n 7 2 7 3 2 OR OR $$3p( ) + 3 pr =$$\n $$1-r 1$$ EITHER two correct values\n $$3 2 q=$$ and $$r =$$ OR one correct value $$q = 5$$ OR $$r = 3$$\n 5 3\n 24 8 24 8 A1A1 A$$1 - ( ) ( )$$ substituting their value for or A1 5 3 THEN substituting their value for $$q$$ or $$r$$ A$$1 4 - 6( 5 )$$ OR 2 + 2( 3 ) THEN\n 24 8 $$E(Y) =$$\n 11 METHOD 2 (solving for $$E(Y))$$\n 4 A1 evidence of choosing at least four correct outcomes from\n 1&2, 1&3, 1&4, 2&3, 2&4, 3&4 (M$$1) q + r$$ OR $$3pq + 3pr$$ OR $$pq + pq + p(1 - 3q) + pq + p(1 - 3q) + p(1 - 3q)$$\n 6 6\n 7 7 (A1) rearranging to make $$q$$ the subject M$$1 q = 4 - E(Y) 3pq + 3p(1 - 3q) =$$\n 1\n 2 M1\n $$6 \\times( ) + (1 - 3( )) = = E(Y) =$$\n $$6 4 - E(Y) 6 4 - E(Y) 1 2( E(Y) - 1) 1 11$$\n 7 6 7 6 2 7 2 4 A1 A1 [6 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1G7MYDgrFRONJ6Y1UtJyOGXuP637yEd1a/view?usp=sharing\n\nhttps://drive.google.com/file/d/1XRc1FIzfsTzj8p-CgWMD9RhkXxmbQuIy/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1G7MYDgrFRONJ6Y1UtJyOGXuP637yEd1a=w1600',
+              'https://lh3.googleusercontent.com/d/1XRc1FIzfsTzj8p-CgWMD9RhkXxmbQuIy=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -6086,8 +6253,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1)(ft) (C2) Note: Award (A1) for 10; (A1)(ft) for the last column all correct. Follow through from their 10 for their 50 in the last column. [2 marks] (0.7, , 70 % )\n 35 7\n 50 10\n b. (A1)(ft)(A1)(ft) (C2) Note: Award (A1)(ft) for their numerator being 25 + their 10, and (A1)(ft) for their denominator being their 50. Follow through from part (a). [2 marks] (0.4, , 40 % ) (A1)(A1)(ft) (C2)\n 4 2\n 10 5\n c. Note: Award (A1) for a numerator of 4 and (A1)(ft) for their 10 as denominator. Follow through from part (a). [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1_ZkanDq4ZMRSphIOHD7GW8Mz2o7PTULB/view?usp=sharing\n\nhttps://drive.google.com/file/d/1PCoQuOWHgWfEpCxfrrnb0TNL5s7ay187/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1_ZkanDq4ZMRSphIOHD7GW8Mz2o7PTULB=w1600',
+              'https://lh3.googleusercontent.com/d/1PCoQuOWHgWfEpCxfrrnb0TNL5s7ay187=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6106,8 +6275,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n 180 (A1) (C1) [1 mark]\n b. 36, 24 (A1)(A1) (C2) Note: Award (A0)(A1) for two incorrect values that add up to 60. [2 marks]\n c.i. 125 (accept 125.5) (A1)\n $$4 \\times 25 + 36 \\times 75 + 34 \\times 125 + 46 \\times 175 + 24 \\times 225 + 16 \\times 275$$\n 160\n c.ii. (M1) Note: Award (M1) for correct substitution of their mid-interval values, multiplied by their frequencies, into mean formula. $$=156 (155.625)$$ (A1)(ft) (C3) Note: Follow through from parts (b) and (c)(i). [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1OTkZFqF4s5TVLxKbOoNyCbeFmhX5MaFG/view?usp=sharing\n\nhttps://drive.google.com/file/d/1X1EiHWD45qcQagJgyBJh3tJn9dsbRXje/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1OTkZFqF4s5TVLxKbOoNyCbeFmhX5MaFG=w1600',
+              'https://lh3.googleusercontent.com/d/1X1EiHWD45qcQagJgyBJh3tJn9dsbRXje=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6126,8 +6297,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) correct probabilities A1A1A1 N3 Note: Award A1 for each correct bold answer. [3 marks] $$\\times , \\times$$ ,\n 5 3 3 5 15\n 8 7 8 7 56\n b. multiplying along branches (M1) eg adding probabilities of correct mutually exclusive paths (A$$1) \\times + \\times , + (= )$$\n 5 3 3 5 15 15 30 15\n 8 7 8 7 56 56 [3 marks]\n 56 28 eg A1 N2',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1PH_Ll_enVxPpSYusvsvV7rN_PVigYZ_4/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1PH_Ll_enVxPpSYusvsvV7rN_PVigYZ_4=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6146,8 +6318,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper)\n 12.5 (A1) (C1) [1 mark]\n b.i. 33 + k OR 10 + 8 + 5 + 10 + k (A1) Note: Award (A1) for “number of customers $$= 33 +$$ k”. [1 mark] $$= 12$$\n $$2.5 \\times 10 + 7.5 \\times 8 +$$ … + $$22.5 \\times k$$\n $$33 + k$$\n b.ii. (M1)(A1)(ft) Note: Award (M1) for substitution into the mean formula and equating to 12, (A1) (ft) for their correct substitutions. (k $$=) 7$$ (A1)(ft) (C4) Note: Follow through from part (b)(i) and their mid-interval values, consistent with part (a). Do not award final (A1) if answer is not an integer. [3 marks]\n c. (A1)(ft) (C1) Note: Follow through from their part (b)(ii) but only if the value is between 1 and\n 10, inclusive. [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1FHG1F8gn1KpxUpY00E-3FBLhBMSzvPSR/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1FHG1F8gn1KpxUpY00E-3FBLhBMSzvPSR=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6166,8 +6339,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) recognizing Q1 or Q3 (seen anywhere) (M1) eg 4,11 , indicated on diagram IQR $$= 7$$ A1 N2 [2 marks]\n b. recognizing the need to find 1.5 IQR (M1) eg $$1.5 \\times$$ IQR, $$1.5 \\times 7$$ valid approach to find k (M1) eg $$10.5 + 11, 1.5 \\times$$ IQR + Q3 21.5 (A1) k $$= 22$$ A1 N3 Note: If no working shown, award N2 for an answer of 21.5. [4 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1poKsto-iWEqDy_dgjDDQCKpq9WF3UR9N/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1poKsto-iWEqDy_dgjDDQCKpq9WF3UR9N=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6186,8 +6360,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) (A1)(A1)(A1)(A1)(A1) (C5) [5 marks]\n b. [1 mark] (A1) (C1)',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1xZOx275KWqrNKwbarE2NIwuntR7v4__P/view?usp=sharing\n\nhttps://drive.google.com/file/d/17yM7bCCdZXCGeePlSaVJwEOmNxomSEl0/view?usp=drive_link',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1xZOx275KWqrNKwbarE2NIwuntR7v4__P=w1600',
+              'https://lh3.googleusercontent.com/d/17yM7bCCdZXCGeePlSaVJwEOmNxomSEl0=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6207,8 +6383,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) valid approach (M1) eg $$16 + 8, a - 8$$\n 24 (hours) A1 N2 [2 marks]\n b. valid approach (M1) eg $$20 - 15, Q3 - Q1 , 15 - 20$$ IQR $$= 5$$ A1 N2 [2 marks]\n $$180 180 \\sumx$$\n $$10 n 10$$\n c. correct working (A1) eg , , mean $$= 18$$ (hours) A1 N2 [2 marks] $$x\\timesn $$\n d.i. attempt to find total hours for group B (M1) eg group B total hours $$= 420$$ (seen anywhere) A1 N2 [2 marks]\n d.ii. attempt to find sum for combined group (may be seen in working) (M1)\n 180 + 420 600\n 30 30 eg 180 + 420, 600 correct working (A1) eg , mean $$= 20$$ (hours) A1 N2 [3 marks] $$\\mu, \\times 21$$\n 1 1\n 2 2\n e.i. valid approach to find the new mean (M1) eg mean =\n 21\n $$2 (= 10.5)$$ hours A1 N2 [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1-qwFgl8zWX938F1wzQb4dnw1AjbtN4I-/view?usp=sharing\n\nhttps://drive.google.com/file/d/1geAzcvR7Kueaa7IXJgWFr6bBC2LZbgzB/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-qwFgl8zWX938F1wzQb4dnw1AjbtN4I-=w1600',
+              'https://lh3.googleusercontent.com/d/1geAzcvR7Kueaa7IXJgWFr6bBC2LZbgzB=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6227,8 +6405,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a. (Adapted from a previous-syllabus exam paper)\n 15 (A1) (C1) [1 mark]\n b. no (A1) (C1) Note: Accept “it is only offered in Winter and Spring”. [1 mark]\n c.i. volleyball, golf, cycling (A1) (C1) Note: Responses must list all three sports for the (A1) to be awarded. [1 mark]\n c.ii. 4 (A1) (C1) [1 mark]\n d. ($$F \\cup W \\cup S)'$$ OR $$F' \\cap W' \\cap S'$$ (or equivalent) (A2) (C2) [2 marks]",
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1DJgNEKhBIf_5EQuZdTlwJOX9MVHY0Hn2/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1DJgNEKhBIf_5EQuZdTlwJOX9MVHY0Hn2=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6268,8 +6447,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. evidence of median position (M1) eg 80th employee\n 40 hours A1 N2 [2 marks]\n a.ii. 130 employees A1 N1 [1 mark]\n b.i. £320 A1 N1 [1 mark]\n b.ii. splitting into 40 and 3 (M1) eg 3 hours more, $$3 \\times 10$$ correct working (A1) eg $$320 + 3 \\times 10$$ £350 A1 N3 [3 marks]\n c. valid approach (M1) eg 200 is less than 320 so 8 pounds/hour, $$200 \\div 8, 25, =$$\n $$200 x$$\n 320 40 ,\n 18 employees A2 N3 [3 marks]\n d. valid approach (M1) eg $$160 - 10 60$$ hours worked (A1) correct working (A1) eg $$40(8) + 20(10), 320 + 200 k = 520$$ A1 N3 [4 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1fZ5ygQH3mRfTSmROGu2LfakTNCPyBig6/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1fZ5ygQH3mRfTSmROGu2LfakTNCPyBig6=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6288,8 +6468,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. $$p = 10$$ (A1) (C1) Note: Award (A1) for each correct value. [1 mark]\n a.ii. $$q = 56$$ (A1) (C1) Note: Award (A1) for each correct value. [1 mark]\n b. (A1)(A1) (C2) Note: Award (A1)(ft) for their 3 correctly plotted points; award (A1)(ft) for completing diagram with a smooth curve through their points. The second (A1)(ft) can follow through from incorrect points, provided the gradient of the curve is never negative. Award (C2) for a completely correct smooth curve that goes through the correct points. [2 marks]\n c. a straight vertical line drawn at 35 (accept $$35 \\pm 1)$$ (M1)\n 26 (students) (A1) (C2) Note: Accept values between 25 and 27 inclusive. [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/11IuQPSJajiEiaQmsV96jEsLVGY0sLlD0/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/11IuQPSJajiEiaQmsV96jEsLVGY0sLlD0=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6308,8 +6489,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) A1A1A1 N3 Note: Award A1 for each bold fraction. [3 marks] eg $$\\times$$ (A1)\n 3 1\n b. multiplying along correct branches\n 4 8\n 3\n 32 $$P(leaves before 07:00 \\cap late) =$$ A1 N2 [2 marks] eg $$\\times$$ (M1)\n 1 5\n c. multiplying along other “late” branch\n 4 8 eg ( $$\\times ) + ( \\times ), +$$ (A1)\n 3 1 1 5 3 5 adding probabilities of two mutually exclusive late paths\n 4 8 4 8 32 32 $$P(L) = (= )$$\n 8 1 [3 marks]\n 32 4 A1 N2 eg $$P(A | B), P(before 7 | late)$$\n d. recognizing conditional probability (seen anywhere) (M1) correct substitution of their values into formula (A1)\n 3\n 32 eg 1\n 4 $$P(left before 07:00 | late) =$$\n 3\n 8 A1 N2 [3 marks]\n e. valid approach (M1) eg $$1 - P(not late twice), P(late once) + P(late twice)$$\n 7\n 16 correct working (A1) A1 N2 [3 marks] eg $$1 - ( \\times ), 2 \\times \\times + \\times$$\n 3 3 1 3 1 1\n 4 4 4 4 4 4',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1H8YVxHktZj9JpLuuyjbguZpReEd9NeXk/view?usp=sharing\n\nhttps://drive.google.com/file/d/1a4b1RUZrG_0D7SyeLNOpYi-d03c5d41O/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1H8YVxHktZj9JpLuuyjbguZpReEd9NeXk=w1600',
+              'https://lh3.googleusercontent.com/d/1a4b1RUZrG_0D7SyeLNOpYi-d03c5d41O=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6328,8 +6511,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i.\n $$14 + 2 \\times 15 + 7 \\times 16 + 17 + 4 \\times 18 + 19 + 20 + 3 \\times 22$$\n 20 (M1) Note: Award (M1) for correct substitutions into mean formula. ( $$= ) 17.5$$ (A1) (C2) [2 marks]\n a.ii. 16.5 (A1) (C1) [1 mark]\n b. (A1)(A1)(A1)(ft) (C3) Note: Award (A1) for correct endpoints, (A1) for correct quartiles, (A1)(ft) for their median. Follow through from part (a)(ii), but only if median is between 16 and\n 18.5. If a horizontal line goes through the box, award at most (A1)(A1)(A0). Award at most (A0)(A1)(A1) if a ruler has not been used. [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1ogKlcHPmrQzPxYNoMHpWP8DgojnwfWRx/view?usp=sharing\n\nhttps://drive.google.com/file/d/1dpMss8uzRJyP3-l-U6ODxKAGm39euCNe/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ogKlcHPmrQzPxYNoMHpWP8DgojnwfWRx=w1600',
+              'https://lh3.googleusercontent.com/d/1dpMss8uzRJyP3-l-U6ODxKAGm39euCNe=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6348,8 +6533,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. $$t$$ A1 N1 [1 mark]\n a.ii. 105 A1 N1 [1 mark]\n b. $$- 0.992$$ A2 N2 [2 marks]\n c. valid approach (M$$1) = - 2.24$$; $$2 \\times 2.24, 2 \\times - 2.24, d(2) = - 2 \\times 2.24 \\times 105$$, d$$d$$ d$$t$$ eg finding $$d(t2 ) - d(t1 )$$ where $$t2 = t1 + 2 4.48$$ (degrees) A1 N$$2 = 3.3$$.\n $$105 - 98.4$$ Notes: Award no marks for answers that directly use the table to find the\n 2 decrease in temperature for 2 minutes eg [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/16OTp1EieAQEKE0uaCfTzi8kPJJFogrYP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/16OTp1EieAQEKE0uaCfTzi8kPJJFogrYP=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6387,8 +6573,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. ( , 0.333, 0.333333…, 33.3 % )\n 3 1\n 9 3 (A1) (C1) [1 mark] (0.556, 0.555555…, 55.6 % )\n 5\n 9\n a.ii. (A1) (C1) [1 mark] (0.375, 37.5 % )\n 3\n 8\n b. (A1)(A1) (C2) Note: Award (A1) for correct numerator, (A1) for correct denominator. [2 marks] $$\\times$$\n 2 1\n 9 8\n c. (M1) Note: Award (M1) for a correct compound probability calculation seen. ( , 0.0278, 0.0277777…, 2.78 % )\n 2 1 [2 marks]\n 72 36 (A1) (C2)',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1-7ipXE29yOUx2s_BEXxefvELWm6fOLbk/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-7ipXE29yOUx2s_BEXxefvELWm6fOLbk=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -6407,8 +6594,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) It appeared in a paper that permitted the use of a calculator, and so might not be suitable for all forms of practice.\n $$24 - 8$$ OR $$24 - (32 - 24)$$ OR $$24 =$$\n 32 + ℎ\n 2 (M1) Note: Award (M1) for subtracting 8 from the median, or equivalent.\n 16 (cm) (A1) (C2) [2 marks]\n b. $$q - p = 50$$ (or equivalent) (A1) (C1) [1 mark] $$= 27$$ OR $$p + q = 60$$ (or equvalent) $$p + 16 + 32 + q$$\n 4\n c. (A1)(ft) (C1) Note: Follow through from part (a). [1 mark]\n d.i. 5 (cm) (A1)(ft) (C1) Note: Follow through from parts (b) and (c). [1 mark]\n d.ii. 55 (cm) (A1)(ft) (C1) Note: Follow through from parts (b) and (c). [1 mark]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1kzzddz3SOV-0puG1F2O1IHP0CZNtXDkL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1kzzddz3SOV-0puG1F2O1IHP0CZNtXDkL=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6427,8 +6615,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a.i. valid approach (M1) eg $$p + 3 = 13, 13 - 3 p = 10$$ A1 N2 [2 marks]\n a.ii. valid approach (M1) eg $$p + 3 + 5 + q = 20, 10 - 10 - 8 q = 2$$ A1 N2 [2 marks] (M1) eg $$20 - p - q - 3, 1 - 15 , n(E \\cap H' ) = 5$$\n 20\n b. valid approach ( )\n 5 1 [2 marks]\n 20 4 A1 N2",
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1yZ09EZ97cr-B05RKL0yeUCPqiv_DCcUW/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1yZ09EZ97cr-B05RKL0yeUCPqiv_DCcUW=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6447,8 +6636,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a.i.\n $$2 n$$ A1 N1 [1 mark]\n a.ii. correct probability for one of the draws A$$1 n-2 2 n n-1$$ eg $$P(not blue first) = ,$$ blue second = valid approach (M1) eg recognizing loss on first in order to win on second, $$P(B' then B), P(B') \\times P(B | B'),$$ tree diagram correct expression in terms of $$n$$ A1 N3 eg $$n-2 \\times$$\n $$2 2n - 4 2(n - 2) n n-1 n2 - n n(n - 1)$$ , , [3 marks] $$\\times \\times (= )$$\n 3 2 2 12 1\n 5 4 3 (A1) eg [2 marks]\n 60 5\n b.i. correct working A1 N2 (A1) eg $$3 \\times 2 \\times 1 \\times 2 6 (=$$\n 1 )\n 5 4 3 2 [2 marks]\n 60 10\n b.ii. correct working A1 N2\n c. correct probabilities (seen anywhere) (A1)(A1)\n c. correct probabilities (seen anywhere) (A1)(A1) eg $$P(1) = , P(2) =$$\n 2 6\n 5 20 (may be seen on tree diagram) valid approach to find E (M) or expected winnings using their probabilities (M1) eg $$P(1) \\times (0) + P(2) \\times (20) + P(3) \\times (8k) + P(4) \\times (12k), P(1) \\times ( - 20) + P(2) \\times (0) + P(3) \\times (8k - 20) + P(4) \\times (12k - 20)$$ correct working to find E (M) or expected winnings (A$$1) (0) + (20) + (8k) + (12k)$$,\n 2 3 1 1\n 5 10 5 10 eg ( $$- 20) + (0) + (8k - 20) + (12k - 20)$$\n 2 3 1 1\n 5 10 5 10 correct equation for fair game A$$1 (20) + (8k) + (12k) = 20, ( - 20) + (8k - 20) + (12k - 20) = 0$$\n 3 1 1 2 1 1\n 10 5 10 5 10 eg correct working to combine terms in $$k$$ (A$$1) -8+$$\n $$14 k - 4 - 2 = 0, 6 +$$\n $$14 k = 20$$,\n $$14 k = 14 k=5$$\n 5 5 5 eg A1 N0 Note: Do not award the final A1 if the candidate’s FT probabilities do not sum to 1. [7 marks]",
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1vjZnivK1hhntEo72YXRABHdh_arI-pog/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1vjZnivK1hhntEo72YXRABHdh_arI-pog=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -6467,8 +6657,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a. (Adapted from a previous-syllabus exam paper) valid approach (M1) eg $$0.30 - 0.1, p + 0.1 = 0.3 p = 0.2$$ A1 N2 [2 marks]\n b. valid approach (M1) eg $$1 - (0.3 + 0.4), 1 - 0.4 - 0.1 - p q = 0.3$$ A1 N2 [2 marks]\n c. valid approach (M1) eg $$0.7 + 0.5 - 0.3, p + q + 0.4, 1 - 0.1$$, $$P(A' \\cup B) = P(A' ) + P(B) - P(A' \\cap B) P(A' \\cup B) = 0.9$$ A1 N2 [2 marks]",
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1SLmPHIi7qnQ8Ud8W06_osiQyqpvrK8wd/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1SLmPHIi7qnQ8Ud8W06_osiQyqpvrK8wd=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6506,8 +6697,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. uses $$\\sum P(X = x) = 1$$ to form a linear equation in $$p$$ and $$q$$ (M1) correct equation in terms of $$p$$ and $$q$$ from summing to 1 A$$1 p + 0.3 + q + 0.1 = 1$$ OR $$p + q = 0.6$$ (or equivalent) uses $$E(X) = 2$$ to form a linear equation in $$p$$ and $$q$$ (M1) correct equation in terms of $$p$$ and $$q$$ from $$E(X) = 2$$ A$$1 p + 0.6 + 3q + 0.4 = 2$$ OR $$p + 3q = 1$$ (or equivalent) Note: The marks for using $$\\sum P(X = x) = 1$$ and the marks for using $$E(X) = 2$$ may be\n awarded independently of each other. evidence of correctly solving these equations simultaneously A1 for example, $$2q = 0.4 \\Rightarrow q = 0.2$$ or $$p + 3 \\times (0.6 - p) = 1 \\Rightarrow p = 0.4$$ so $$p = 0.4$$ and $$q = 0.2$$ AG [5 marks]\n b. valid approach (M1) $$P(X > 2) = P(X = 3) + P(X = 4)$$ OR $$P(X > 2) = 1 - P(X = 1) - P(X = 2) = 0.3$$ A1 [2 marks]\n c. recognises at least one of the valid scores (6, 7, or 8) required to win the game (M1) Note: Award M0 if candidate also considers scores other than 6, 7, or 8 (such as 5 ). let $$T$$ represent the score on the last two rolls a score of 6 is obtained by rolling (2, 4), (4, 2) or (3, 3) $$P(T = 6) = 2(0.3)(0.1) + (0.2) ( = 0.1)$$\n 2 A1 a score of 7 is obtained by rolling (3, 4) or (4, 3) $$P(T = 7) = 2(0.2)(0.1) ( = 0.04)$$ A1 a score of 8 is obtained by rolling (4, 4) $$P(T = 8) = (0.1)$$\n $$2 ( = 0.01)$$ A1 Note: The above 3 A1 marks are independent of each other. $$P(Nicky wins) = 0.1 + 0.04 + 0.01 = 0.15$$ A1 [5 marks]\n d. $$3+b=8$$ (M$$1) b = 5$$ A1 [2 marks] $$P(S = 5) =$$\n 4 $$P(S = a + 2) =$$\n $$4 \\Rightarrowa+2=5$$\n 16 16\n e. METHOD 1 EITHER A1 $$P(S = 6) = P(S = a + 3) =$$ and $$P(S = 5 + 1) =$$\n 3 2 1\n 16 16 A1 OR $$\\Rightarrowa+3=6 P(S = 4) =$$\n 3\n 16 OR $$P(S = a + 1) =$$\n 2 and $$P(S = 1 + 3) =$$\n $$1 \\Rightarrowa+1=4$$\n 16 16 A1 THEN $$\\Rightarrowa=3$$ A1 Note: Award A0A0 for $$a = 3$$ obtained without working/reasoning/justification. METHOD 2 EITHER correctly lists a relevant part of the sample space A1 for example, {$$S = 4} = {(3, 1), (1, a), (1, a)}$$ or {$$S = 5} = {(2, a), (2, a), (2, a), (2, a)}$$ or {$$S = 6} = {(3, a), (3, a), (1, 5)} a+3=6$$ OR eliminates possibilities (exhaustion) for $$a < 5$$ convincingly shows that $$a \\neq 2, 4$$ A$$1 a \\neq 4$$, for example, $$P(S = 7) =$$ from (2, 5), (2, 5) and so\n 2\n $$16 (3, a), (3, a) \\Rightarrow a + 3 \\neq 7$$ THEN $$\\Rightarrowa=3$$ A1 [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/13AE65VJWBtQOe7Xdlifqx_thL5-o6CAN/view?usp=sharing\n\nhttps://drive.google.com/file/d/1bDebWsWdPC47UMzz_nsY_o4K3Qy5Nav-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/13AE65VJWBtQOe7Xdlifqx_thL5-o6CAN=w1600',
+              'https://lh3.googleusercontent.com/d/1bDebWsWdPC47UMzz_nsY_o4K3Qy5Nav-=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -6526,8 +6719,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) recognizing area under curve $$= 1$$ (M1) eg $$a + x + b = 1, 100 - a - b, 1 - a + b P( - 1.6 < z < 2.4) = 1 - a - b ( = 1 - (a + b))$$ A1 N2 [2 marks]\n b. $$P(z > - 1.6) = 1 - a ($$seen anywhere) (A1) recognizing conditional probability (M1) eg $$P(A | B ), P(B | A ) ($$A1) eg $$P(z < 2.4 \\cap z > - 1.6) P( - 1.6 < z < 2.4) P(z > - 1.6) P(z > - 1.6)$$ correct working , $$P(z < 2.4 | z > - 1.6) =$$\n $$1-a-b$$\n $$1-a$$ A1 N4 Note: Do not award the final A1 if correct answer is seen followed by incorrect simplification. [4 marks]\n c. $$z = - 1.6$$ (may be seen in part (d)) A1 N1\n $$1-m$$ Note: Depending on the candidate’s interpretation of the question, they may give $$s$$ as the answer to part (c). Such answers should be awarded the first (M1) in $$z = - 1.6$$ as part of their working in part (d), the A1 in part (c) may be awarded. part (d), even when part (d) is left blank. If the candidate goes on to show [1 mark] attempt to standardize $$x$$ (do not accept $$x-\\mu \\sigma$$\n d. ) (M1)\n $$1-m m-2 x-m s s \\sigma$$ eg (may be seen in part (c)), , correct equation with each $$z-$$value (A1)(A$$1) - 1.6 = , 2.4 = , m + 2.4s = 2$$\n $$1-m 2-m s s$$ eg valid approach (to set up equation in one variable) M1 eg $$2.4 = =$$\n $$2 - (1.6s + 1) 1-m 2-m$$ (A$$1) s - 1.6 2.4$$ , correct working eg $$1.6s + 1 = 2 - 2.4s, 4s = 1, m = s=$$\n 7 1\n 5 4 A1 N2 [6 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1x6As2SV53wNsexGLoGyf7RVmyLIPZuou/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1x6As2SV53wNsexGLoGyf7RVmyLIPZuou=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -6546,8 +6740,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a.i. valid approach to find $$t$$ (M1) eg $$t + 3 = 19, 19 - 3 t = 16$$ (may be seen on Venn diagram) A1 N2 [2 marks]\n a.ii. valid approach to find $$v$$ (M1) eg $$t + 3 + v + 6 = 30, 30 - 19 - 6 v = 5$$ (may be seen on Venn diagram) A1 N2 [2 marks] (M1) eg 16 + 5, 21 students, $$1 - 3 + 6$$ ,\n 30\n b. valid approach (= )\n 21 7 [2 marks]\n 30 10 A1 N2',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1Iua9MPF01IuVluCkTDwtAw4wBrBL23hP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1Iua9MPF01IuVluCkTDwtAw4wBrBL23hP=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -6566,8 +6761,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) evidence of using $$\\sum p = 1$$ (M1) correct working (A$$1) + + + k = 1, 1 -$$\n 3 1 4 8\n 13 13 13 13 eg $$k=$$\n 5\n 13 A1 N2 [3 marks]\n b. valid approach to find $$E(X) ($$M1) eg $$1 \\times +2\\times + 3 \\times k, 0 \\times +1\\times +2\\times +3\\times$$\n 1 4 3 1 4 5\n 13 13 13 13 13 correct working (A1) + + $$E(X) =$$\n 1 8 15 24\n 13 13 13 13 eg A1 N2 [3 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1AOeVZ5vIbGxxsnyueVZqmuQoKbmhgP3V/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1AOeVZ5vIbGxxsnyueVZqmuQoKbmhgP3V=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -6586,8 +6782,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. (Adapted from a previous-syllabus exam paper) $$P(X > 107) = 0.24 ( = , 24%)$$\n 6\n 25 A1 N1 [1 mark]\n b. valid approach (M1) eg $$P(X > 100) = 0.5, P(X > 100) - P(X > 107)$$ correct working (A1) eg $$0.5 - 0.24, 0.76 - 0.5 P(100 < X < 107) = 0.26 ( = , 26%)$$\n 13 [3 marks]\n 50 A1 N2\n c. valid approach (M1) eg $$2 \\times 0.26, 1 - 2(0.24)$$, $$P(93 < X < 100) = P(100 < X < 107) P(93 < X < 107) = 0.52 ( = , 52%)$$\n 13 [2 marks]\n 25 A1 N2',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1ZbxAidXZalmzuUVjRTm-mn-dlGp1Yoks/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1ZbxAidXZalmzuUVjRTm-mn-dlGp1Yoks=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -6606,8 +6803,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. IQR $$= 10 - 6( = 4)$$ (A1) attempt to find $$Q3 + 1.5 \\times$$ IQR (M1)\n 10 + 6\n 16 A1 [3 marks] choosing $$c = a - 9$$\n $$1 1 \\times 42 - 9 = 12$$ (years old)\n 2 2\n b.i. (M1) A1 [2 marks]\n b.ii. attempt to solve system by substitution or elimination (M1)\n 34 (years old) A1 [2 marks]',
             questionType: 'Statistics & Probability',
-            diagram:
-              'https://drive.google.com/file/d/1e6D1COd8Rla-RBBVvblMCzVnVS4uMDoe/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1e6D1COd8Rla-RBBVvblMCzVnVS4uMDoe=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
         ],
@@ -6712,8 +6910,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC regression of $$x$$ on $$y$$ gives $$a=1.29$$, $$b=-10.4$$.\n b. Both regression lines pass through the mean point $$(\\bar{x},\\bar{y})$$, so $$p=28.7$$, $$q=30.3$$.',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1qkljUTWeZb2qvsv9_XNNb4lnmRuJGQZ5/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1qkljUTWeZb2qvsv9_XNNb4lnmRuJGQZ5=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6733,8 +6932,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Correctly scaled axes, all 8 points plotted.\n b. $$\\bar{x}=0.025$$, $$\\bar{y}=74$$ from GDC.\n c. Point $$M(0.025,74)$$ plotted and labelled.\n d. GDC gives $$r=0.807$$ — moderately strong, positive correlation.\n e. GDC regression: $$y=21.98x+73.45\\approx 22.0x+73.5$$.\n f. Line drawn through M and the $$y$$-intercept $$73.5$$.',
             questionType: 'Correlation and regression, scatter diagrams',
-            diagram:
-              'https://drive.google.com/file/d/1SMqXYwJBYNrLcHU_tOZmTDFh6zkOgD6o/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1SMqXYwJBYNrLcHU_tOZmTDFh6zkOgD6o=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6754,8 +6954,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$P(-1.5<Z<1.5)=0.866385\\approx 0.866$$.\n b. Standardize both boundaries: $$z_1=-1.75068,\\ z_2=1.30468$$; solve simultaneous equations $$\\dfrac{106.2-\\mu}{\\sigma}=-1.75068$$ and $$\\mu+1.30468\\sigma=182.6$$ to get $$\\mu=150,\\ \\sigma=25.0$$.\n c. New sample space is those $$>106.2$$ (96% of distribution): $$P(\\text{medium})=0.576/0.96=0.6$$; $$P(\\text{large})=0.3$$; $$P(\\text{premium})=0.1$$.\n d. Revenue per avocado $$=1.1(0.6)+1.29(0.3)+1.96(0.1)=1.243$$. Solve $$1.243n-200\\ge438 \\Rightarrow n\\ge513.27 \\Rightarrow n=514$$.',
             questionType: 'Normal distribution, applied probability',
-            diagram:
-              'https://drive.google.com/file/d/15ad0ki2RgTPLlT9_0_ieAwf7O3utHArg/view?usp=sharing\n\nhttps://drive.google.com/file/d/1tFrU8tExB6DWlCtylM3X5kETPocUZx3K/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/15ad0ki2RgTPLlT9_0_ieAwf7O3utHArg=w1600',
+              'https://lh3.googleusercontent.com/d/1tFrU8tExB6DWlCtylM3X5kETPocUZx3K=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -6793,8 +6995,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC gives $$r=0.946$$ — a (very) strong positive correlation between age and blood pressure.\n b. GDC regression: $$p=1.05t+69.3$$.\n c. Substitute $$t=50$$: $$p=1.05(50)+69.3\\approx 122$$ mmHg.\n d. Using $$t=16$$ requires extrapolation beyond the given data range, so it is unreliable.',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1jjli2M3Xgbpd35SwsThGMa-snIynY36S/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1jjli2M3Xgbpd35SwsThGMa-snIynY36S=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6833,8 +7036,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC regression: $$a=4.30161\\approx4.30$$, $$b=163.330\\approx163$$.\n b. $$M=4.30(154)+163=825.8\\approx826$$ messages (must be an integer).',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/18i-DqdFgy3M9NKWhO-MzZXdu71jeYm2T/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/18i-DqdFgy3M9NKWhO-MzZXdu71jeYm2T=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6853,8 +7057,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC regression: $$a=0.805084\\approx0.805$$, $$b=2.88135\\approx2.88$$; $$r=0.97777\\approx0.978$$.\n b. $$a$$ represents the average increase in waiting time (0.805 min) per additional customer waiting.\n c. Substitute $$x=7$$: $$y=0.805(7)+2.88=8.51693\\approx8.52$$ minutes.',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1opsJQJHQqiNvz7AkumOzFk5gN-IadmU_/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1opsJQJHQqiNvz7AkumOzFk5gN-IadmU_=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6895,8 +7100,9 @@ export const PYP_QUESTIONS = {
               "a. Solve $$f(x)=0$$: $$p=2.73$$ (GDC).\n b. Maximum at $$(1.88, 8.12)$$ from GDC; rate of change at a maximum is 0.\n c. $$f''(x)=-6x^2+6=0\\Rightarrow x=1$$; substituting gives $$f(1)=4.5$$, so B is $$(1,4.5)$$; rate of change $$f'(1)=6$$.\n d. $$V=\\pi\\int_{1}^{1.88} f(x)^2\\,dx \\approx128.890\\approx129$$.",
             questionType:
               'Applications of differentiation/integration (graph analysis, volume of revolution)',
-            diagram:
-              'https://drive.google.com/file/d/1HoC2ZL9Qzz11FNCKLs7wv9As9NX_1haY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1HoC2ZL9Qzz11FNCKLs7wv9As9NX_1haY=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -6916,8 +7122,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$\\bar{x}=14$$, $$\\bar{y}=54$$, $$r=0.5$$.\n b. $$m=0.875\\ (=\\tfrac{7}{8})$$, $$c=41.75\\ (=\\tfrac{167}{4})$$. Substituting $$x=14$$: $$y=0.875(14)+41.75=54=\\bar{y}$$, confirming M lies on the line.\n c. $$y=0.875(17)+41.75=56.6$$. Valid since it is interpolation and $$r$$ is large enough (or invalid if $$r$$ is judged too weak — accept either conclusion with correct reasoning).\n d. Percentage error $$=\\left|\\dfrac{56.6-65}{65}\\right|\\times100=12.9\\%$$.',
             questionType: 'Correlation and regression, percentage error',
-            diagram:
-              'https://drive.google.com/file/d/1crGwVy8dgzkNQV9im0_fZoFuIIjdsNQl/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1crGwVy8dgzkNQV9im0_fZoFuIIjdsNQl=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6937,8 +7144,10 @@ export const PYP_QUESTIONS = {
             solution:
               "a. Stratified sampling (proportional allocation by grade).\n b. Total students $$=260$$; $$\\dfrac{84}{260}\\times9=2.91\\Rightarrow3$$ students from grade 12 (AG). Similarly grade 9 $$\\approx2$$, grade 10 $$\\approx3$$, grade 11 $$\\approx1$$.\n c. Systematic sampling (regular interval selection from an ordered list).\n d. $$r=-0.901$$; negative $$r$$ indicates more social-media time is associated with lower self-esteem, supporting the principal's concern; $$r$$ close to $$-1$$ indicates strong correlation, justifying a regression line.\n e. Regression line of $$t$$ on $$s$$: $$t=-0.281s+9.74$$. Substituting $$s=29$$: $$t=(-0.2807)(29)+9.739\\approx1.60$$ hours.",
             questionType: 'Sampling techniques, correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1_2ilh9C1TWB9e3lMIlyiOLET6rI8Hnf8/view?usp=sharing\n\nhttps://drive.google.com/file/d/1HDRABYmL_FXIGUAj-1AqVLr3Gq3DeuMy/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1_2ilh9C1TWB9e3lMIlyiOLET6rI8Hnf8=w1600',
+              'https://lh3.googleusercontent.com/d/1HDRABYmL_FXIGUAj-1AqVLr3Gq3DeuMy=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -6958,8 +7167,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Correctly scaled scatter diagram with 8 points plotted.\n b. $$\\bar{x}=21$$, $$\\bar{y}=31$$ from GDC.\n c. M$$(21,31)$$ plotted and labelled.\n d. $$r=-0.973$$.\n e. $$y=-0.761x+47.0$$.\n f. Regression line drawn through M and the $$y$$-intercept.\n g. $$y=-\\tfrac{2}{3}(34)+\\tfrac{125}{3}=19$$ points.\n h. Extrapolation - 34 hours lies outside the given data range (3 to 30 hours).',
             questionType: 'Correlation and regression, scatter diagrams',
-            diagram:
-              'https://drive.google.com/file/d/1JigDGxPLReGcK7Iha7pu8qJKt6qx2UUV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1JigDGxPLReGcK7Iha7pu8qJKt6qx2UUV=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -6979,8 +7189,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Mean $$=\\dfrac{1(1)+3(2)+7(3)+13(4)+11(5)+10(6)+5(7)}{50}=\\dfrac{230}{50}=4.6$$; standard deviation $$=1.46$$ (GDC).\n b. Median grade $$=5$$.\n c. IQR $$=6-4=2$$.\n d. $$P(\\text{grade}\\ge5)=\\dfrac{11+10+5}{50}=\\dfrac{26}{50}=0.52$$.\n e. $$\\dfrac{10}{26}\\times\\dfrac{9}{49}=\\dfrac{45}{637}\\approx0.0706$$.\n f. $$P(X\\ge90)=0.773$$ (normal distribution, GDC); expected number $$=0.773\\times50\\approx38.7$$.',
             questionType: 'Descriptive statistics, normal distribution, conditional probability',
-            diagram:
-              'https://drive.google.com/file/d/1jFUTM3C_iYveYHHTtDei8TnzUoIpgwOl/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1jFUTM3C_iYveYHHTtDei8TnzUoIpgwOl=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7000,8 +7211,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Total pet owners $$=140$$.\n b. Mode $$=1$$; median $$=2$$; lower quartile $$=1$$; upper quartile $$=3$$.\n d. Ratio teenagers:non-teenagers $$=17:15$$.\n e. $$H_0$$: preferred pet is independent of age category; $$H_1$$: preferred pet is not independent of age.\n f. Degrees of freedom $$=3$$.\n g. Expected $$=\\dfrac{85\\times55}{160}=29.2$$.\n h. $$p=0.208$$.\n i. Since $$0.208>0.1$$, accept $$H_0$$ (fail to reject the null hypothesis).',
             questionType: 'Descriptive statistics, Chi-squared test for independence',
-            diagram:
-              'https://drive.google.com/file/d/1O5-ZrtRRbY0GKp-tNUtQpxc9J9Xc_lc5/view?usp=sharing\n\nhttps://drive.google.com/file/d/1o0naCUuY7hjJkQqVw0W8-WyyznHyswlv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1O5-ZrtRRbY0GKp-tNUtQpxc9J9Xc_lc5=w1600',
+              'https://lh3.googleusercontent.com/d/1o0naCUuY7hjJkQqVw0W8-WyyznHyswlv=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7021,8 +7234,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Range $$=529-3=526$$ kg.\n b. $$r=0.922$$ - (very) strong, positive correlation.\n c. GDC regression: $$y=0.000986x+0.0923$$.\n d. Substitute $$x=36$$: $$y=0.000986(36)+0.0923=0.128$$ kg.\n e. Percentage error $$=\\left|\\dfrac{0.128-0.120}{0.120}\\right|\\times100=6.52\\%$$.\n f. Not valid: 0.023 kg is outside the given data range for body weight (extrapolation), or the mouse is lighter than the lightest mammal in the sample.',
             questionType: 'Correlation and regression, percentage error',
-            diagram:
-              'https://drive.google.com/file/d/1SpVz4_3k-FPU7lQJdfVpRsO5BIIlmibT/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1SpVz4_3k-FPU7lQJdfVpRsO5BIIlmibT=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7061,8 +7275,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$P(W<61)=0.21185\\approx0.212$$; expected in 40 $$=40\\times0.21185\\approx8.47$$.\n b. Shaded region between $$\\mu-1.5\\sigma$$ and $$\\mu+1.5\\sigma$$; $$q=0.86638\\approx0.866$$.\n c. $$P(W<k)=0.775 \\Rightarrow k=68.777\\approx68.8$$.\n d. $$H_0$$: performance and weight are independent; $$p=0.287436\\approx0.287$$.\n e. Since $$0.287>0.05$$, accept/do not reject $$H_0$$ - performance and weight are independent.',
             questionType: 'Normal distribution, Chi-squared test for independence',
-            diagram:
-              'https://drive.google.com/file/d/1LZ4hGaUS8fcoosG7QeKHboKM_OtrfUQR/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1LZ4hGaUS8fcoosG7QeKHboKM_OtrfUQR=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -7082,8 +7297,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Correctly scaled scatter diagram with six points.\n b. $$\\bar{x}=21$$, $$\\bar{C}=55$$ (thousands).\n d. $$r=0.990$$.\n e. $$r$$ is (very) close to 1, so the correlation is (very) strong — linear model appropriate.\n f. $$C=1.94x+14.2$$.\n h. Set revenue $$=$$ cost: $$2.99x=1.94097x+14.2395 \\Rightarrow x=13.574$$ (thousand) $$\\approx 13\\,600$$ folders.',
             questionType: 'Correlation and regression, break-even analysis',
-            diagram:
-              'https://drive.google.com/file/d/1JyZOdMgVbQTUECfo-iqRbPBX77KnwNBp/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1JyZOdMgVbQTUECfo-iqRbPBX77KnwNBp=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7161,8 +7377,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC regression: $$a=-0.453620\\approx-0.454$$, $$b=6.14210\\approx6.14$$.\n b. $$\\ln y=-0.454\\ln(3.57)+6.14=5.56484 \\Rightarrow y=e^{5.56484}\\approx261$$.\n c. $$\\ln y=\\ln(kx^n)=\\ln k+n\\ln x$$. Comparing with $$\\ln y=a\\ln x+b$$: $$n=a=-0.454$$ and $$\\ln k=b=6.14210 \\Rightarrow k=e^{6.14210}\\approx465$$.',
             questionType: 'Correlation and regression, logarithmic linearization',
-            diagram:
-              'https://drive.google.com/file/d/1_v9W4l8Js_NdaRfGNDXViHdF_QNeeyQ-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1_v9W4l8Js_NdaRfGNDXViHdF_QNeeyQ-=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7184,8 +7401,9 @@ export const PYP_QUESTIONS = {
               'a. $$E(X)=0(p)+1(0.5)+2(0.3)+3(q)=1.2 \\Rightarrow q=\\tfrac{1}{30}$$; sum of probabilities $$=1 \\Rightarrow p=\\tfrac16$$.\n b. $$P(3\\text{ blue})=q=\\tfrac{1}{30}$$; by symmetry $$P(0\\text{ blue})=P(3\\text{ white})=p=\\tfrac16$$ (AG).\n $$\\dfrac{w}{10}\\cdot\\dfrac{w-1}{9}\\cdot\\dfrac{w-2}{8}=\\tfrac16 \\Rightarrow w=6$$.\n c. $$B(9,\\tfrac16)$$: $$P(X=2)=\\binom{9}{2}(\\tfrac16)^2(\\tfrac56)^7=0.279$$.\n d. One prize in first 7 attempts then a prize on the 8th: $$\\binom{7}{1}(\\tfrac16)(\\tfrac56)^6\\times\\tfrac16=0.0651$$.',
             questionType:
               'Discrete random variables, binomial distribution, hypergeometric-style reasoning',
-            diagram:
-              'https://drive.google.com/file/d/1VERvtCTG1fvGdcdOCnFjRlsL9UK5eRAD/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1VERvtCTG1fvGdcdOCnFjRlsL9UK5eRAD=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -7204,8 +7422,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=0.433156\\approx0.433$$, $$b=4.50265\\approx4.50$$.\n b. $$y=0.433(18)+4.50=12.2994\\approx12.3$$.\n c. $$D_x=15$$, $$D_y=11$$ (standard deviations of $$x$$ and $$y$$).\n d. Straight line through $$(15,11)$$ (the mean point) using a ruler, extended to intersect the $$y$$-axis within the given data range.',
             questionType: 'Correlation and regression, scatter diagrams',
-            diagram:
-              'https://drive.google.com/file/d/1MD3FZrtZrMv2oPSw-G-pW8B2Ll_gjcA2/view?usp=sharing\n\nhttps://drive.google.com/file/d/1GJdPjxpSXggGKKXLim8pi_n6ICjfpbt-/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1MD3FZrtZrMv2oPSw-G-pW8B2Ll_gjcA2=w1600',
+              'https://lh3.googleusercontent.com/d/1GJdPjxpSXggGKKXLim8pi_n6ICjfpbt-=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7243,8 +7463,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=0.141120\\approx0.141$$, $$b=11.1424\\approx11.1$$; $$r=0.977563\\approx0.978$$.\n b. $$y=0.141(95)+11.1=24.5488\\approx24.5$$.',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1TCwvhuRt3Up4F84e6D1rgK5BtGSBEDoW/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1TCwvhuRt3Up4F84e6D1rgK5BtGSBEDoW=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7264,8 +7485,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Mode $$=10$$ (most frequent value); range $$=x_{\\max}-x_{\\min}=9$$ (interval 2 to 11).\n b. Mean $$=7.14666\\approx7.15$$ (GDC); variance $$=\\sigma^2=8.44515\\approx8.45$$.',
             questionType: 'Descriptive statistics',
-            diagram:
-              'https://drive.google.com/file/d/1hMJ9szXlSVOfDCD3iFb6z-fWK90Szd8P/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1hMJ9szXlSVOfDCD3iFb6z-fWK90Szd8P=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7285,8 +7507,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$N$$ is discrete (a count).\n b. Modal class $$11\\le N\\le20$$; mid-interval value $$15.5$$.\n c. Mean $$\\approx21.2$$; standard deviation $$\\approx9.60$$ (GDC estimates from grouped data).\n d. Expected $$=\\dfrac{260\\times157}{800}\\approx51.0$$.\n e. $$H_0$$: category and number of correct answers are independent; degrees of freedom $$=6$$.\n f. $$p\\approx0.0644$$; $$\\chi^2\\approx11.9$$.\n g. Since $$11.9<12.592$$ (equivalently $$0.0644>0.05$$), do not reject $$H_0$$ — category and score are independent.',
             questionType: 'Descriptive statistics, Chi-squared test for independence',
-            diagram:
-              'https://drive.google.com/file/d/1QjBsaftKXz56Q1Hrz4vxM7OGNnsTCVBd/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1QjBsaftKXz56Q1Hrz4vxM7OGNnsTCVBd=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7306,8 +7529,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Median $$=60$$ (read from graph); $$Q_3-Q_1=68-48=20$$.\n b. $$3200-350=2850$$th value corresponds to a result of $$76$$.\n c. Modal class $$60<x\\le80$$; mid-interval value $$70$$.\n d. Mean $$\\approx57.2$$ (57.1875); standard deviation $$\\approx18.496$$.\n e. Boundary $$=57.2-18.5=38.7$$; reading the graph at this value gives approximately $$450$$ students (accept 450–475).',
             questionType: 'Cumulative frequency, descriptive statistics',
-            diagram:
-              'https://drive.google.com/file/d/1C6-lmFh-Nr48kKoAX1Fz9rwIY-Gtm0m0/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1C6-lmFh-Nr48kKoAX1Fz9rwIY-Gtm0m0=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7327,8 +7551,11 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=6.96103\\approx6.96$$, $$b=-454.805\\approx-455$$.\n b. $$P=6.96(270)-455=1424.67\\approx1420$$ g.\n c. $$40$$ low-production hives (read from graph).\n d. $$128+40=168$$ hives have production less than $$k \\Rightarrow k=1640$$; hives with high production $$=200-168=32$$.\n e. $$X\\sim B(40,0.75)$$: $$P(X=30)=\\binom{40}{30}(0.75)^{30}(0.25)^{10}=0.144$$.',
             questionType: 'Correlation and regression, cumulative frequency, binomial distribution',
-            diagram:
-              'https://drive.google.com/file/d/1J03hWNz_VNngIjMA7f2PAUgEeHBpDcae/view?usp=sharing\n\nhttps://drive.google.com/file/d/1ZVBtUZmJhlQA0Q8rYGXzoz6bFWdovz8M/view?usp=sharing \n\nhttps://drive.google.com/file/d/1vmRqUyAlKX-kIV3uoZs0WjVYKlda58AK/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1J03hWNz_VNngIjMA7f2PAUgEeHBpDcae=w1600',
+              'https://lh3.googleusercontent.com/d/1ZVBtUZmJhlQA0Q8rYGXzoz6bFWdovz8M=w1600',
+              'https://lh3.googleusercontent.com/d/1vmRqUyAlKX-kIV3uoZs0WjVYKlda58AK=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7389,8 +7616,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$0.85+c+0.03+0.002+0.0001=1 \\Rightarrow c=0.1179$$.\n b. $$E(D)=(0)(0.85)+(2)(0.1179)+(10)(0.03)+(50)(0.002)+(1000)(0.0001)=0.7358$$. For a fair game, $$E(D)$$ should equal the \\$2 ticket price; since $$0.7358\\ne2$$, it is not fair.\n c. Grand prize in week $$n$$ is a GP with ratio 2: $$1000\\times2^{n-1}$$.\n d. Need $$E(D)>2$$. In week $$w$$: $$0.6358+1000\\times2^{w-1}\\times0.0001>2$$. Testing values: week 4 gives $$E(D)=1.4358$$, week 5 gives $$E(D)=2.2358$$, so $$w=5$$; expected profit $$p=E(D)-2=0.2358$$.',
             questionType: 'Discrete random variables, geometric sequences, expected value',
-            diagram:
-              'https://drive.google.com/file/d/10BSQzXegwzFM0GGPoEhDL3HFAKU9m9lq/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/10BSQzXegwzFM0GGPoEhDL3HFAKU9m9lq=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -7409,8 +7637,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=1.91966\\approx1.92$$, $$b=7.97717\\approx7.98$$; $$r=0.984674\\approx0.985$$.\n b. $$y=1.92(1.95)+7.98=11.7205\\approx11.7$$ kg.',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1YSYZpZl4lCFO0FWMMJNSHBHhuVlyizNP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1YSYZpZl4lCFO0FWMMJNSHBHhuVlyizNP=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7430,8 +7659,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$28-20=8$$ buses.\n b. Median $$\\approx13\\,500$$ (accept 13 500–13 750); LQ $$\\approx10\\,000$$; UQ $$\\approx16\\,000$$.\n c. IQR $$=16\\,000-10\\,000=6000$$.\n d. Upper quartile corresponds to the top $$25\\%$$.\n e. $$11$$ buses (read from graph).\n f. $$30-8=22$$nd value: $$m\\approx15\\,750$$ (accept $$\\pm250$$).\n g. Box-and-whisker diagram with endpoints 2500 and 23 000, median and quartiles from part (b), correctly scaled.',
             questionType: 'Cumulative frequency, box-and-whisker diagrams',
-            diagram:
-              'https://drive.google.com/file/d/10zbOKTY6du6O_AcwPJJWafiOUwU8UdT4/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/10zbOKTY6du6O_AcwPJJWafiOUwU8UdT4=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7450,8 +7680,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=0.667315\\approx0.667$$, $$b=22.2117\\approx22.2$$; $$r=0.922958\\approx0.923$$.\n b. $$N=0.667(15)+22.2=32.2214\\approx32$$ visitors (must be an integer).',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1UK8doXkfdLSLcZx2snjyYb-ZC9tgrpNb/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1UK8doXkfdLSLcZx2snjyYb-ZC9tgrpNb=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7470,8 +7701,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=9.91044\\approx9.91$$, $$b=-31.3194\\approx-31.3$$; $$r=0.986417\\approx0.986$$.\n b. $$y=9.91(21.5)-31.3=181.755\\approx182$$ cm.',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1xvpuAO3Bu29IWsmBrhDjEcnN_CpBE_w4/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1xvpuAO3Bu29IWsmBrhDjEcnN_CpBE_w4=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7491,8 +7723,9 @@ export const PYP_QUESTIONS = {
             solution:
               "a. $$(A\\cap M')+(A\\cap M)=11+6=17$$ students take art.\n b. $$P(A')=1-\\dfrac{17}{35}=\\dfrac{18}{35}=0.514$$; $$P(A\\text{ or }M\\text{ but not both})=\\dfrac{11+13}{35}=\\dfrac{24}{35}=0.686$$.",
             questionType: 'Probability (Venn diagrams)',
-            diagram:
-              'https://drive.google.com/file/d/1E4ySCOOq8XtYJT1gxGp4pzEhRFRmv84W/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1E4ySCOOq8XtYJT1gxGp4pzEhRFRmv84W=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -7512,8 +7745,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Total probability $$=1$$: $$0.475+2k^2+\\tfrac{k}{10}+6k^2=1 \\Rightarrow 8k^2+0.1k-0.525=0 \\Rightarrow k=0.25$$.\n b. $$P(X=2)=\\tfrac{0.25}{10}=0.025$$.\n c. $$P(X>0)=1-0.475=0.525$$; $$P(X=2\\mid X>0)=\\dfrac{0.025}{0.525}=\\dfrac{1}{21}\\approx0.0476$$.',
             questionType: 'Discrete random variables, conditional probability',
-            diagram:
-              'https://drive.google.com/file/d/19A47qvKga25GAYUnzLUkOtFHtNRwwwpv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/19A47qvKga25GAYUnzLUkOtFHtNRwwwpv=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -7552,8 +7786,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$P(X<\\mu)=0.5$$, and the shaded region is $$0.3$$, so $$P(X<9)=0.5-0.3=0.2$$.\n b. $$z=-0.841621$$; solve $$\\dfrac{9-\\mu}{2.1}=-0.841621 \\Rightarrow \\mu=10.8$$ (10.7674).\n c. $$P(X>9)=0.8$$; using independence, $$P(X>9)\\times P(Y>9)=0.4 \\Rightarrow P(Y>9)=0.5$$.\n d. $$P(9<Y<13)=0.373450$$ (GDC, with $$Y\\sim N(10.8,3.5^2)$$); $$P(Y<13\\mid Y>9)=\\dfrac{0.373450}{0.5}=0.747$$.',
             questionType: 'Normal distribution, independent events',
-            diagram:
-              'https://drive.google.com/file/d/1_Q_67GUXBr6vZAmZuha9lU-XcoDgX5_n/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1_Q_67GUXBr6vZAmZuha9lU-XcoDgX5_n=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -7591,8 +7826,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Sum of probabilities $$=1$$: $$0.28+k+0.15+0.3=1 \\Rightarrow k=0.27$$.\n b. $$E(X)=1(0.28)+2(0.27)+3(0.15)+4(0.3)=2.47$$.\n c. $$np=80\\times0.15=12$$.',
             questionType: 'Discrete random variables, expected value',
-            diagram:
-              'https://drive.google.com/file/d/1qYUpoKlCtW3Rk2AXar6_aw0sg5zQxUYz/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1qYUpoKlCtW3Rk2AXar6_aw0sg5zQxUYz=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -7612,8 +7848,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$k+0.98+0.01=1 \\Rightarrow k=0.01$$. Since 93 and 119 are symmetric about $$\\mu$$: $$\\mu=\\dfrac{119+93}{2}=106$$ (AG).\n b. $$z=\\pm2.32634$$; solving gives $$\\sigma=5.58815$$, so $$P(M<95)=0.024508\\approx0.0245$$.\n c. $$X\\sim B(10,0.0245)$$: $$P(X\\le1)=P(X=0)+P(X=1)=0.976$$.\n d. New binomial $$B(50,0.976)$$: $$E(X)=50\\times0.976285=48.8$$; $$P(X\\ge48)=1-P(X\\le47)=0.885$$.',
             questionType: 'Normal distribution, Binomial distribution',
-            diagram:
-              'https://drive.google.com/file/d/1KAxDmLmCCOktFTPW3b34Rc-xieR7cNUT/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1KAxDmLmCCOktFTPW3b34Rc-xieR7cNUT=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -7690,8 +7927,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$r=0.883529\\approx0.884$$.\n b. $$a=1.36609\\approx1.37$$, $$b=64.5171\\approx64.5$$.\n c. Increase $$=5\\times1.36609=6.83045\\approx7$$ marks (accept 6 or 6.85).',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/12qGL_8qM2mNy5i2g_zsaUMkFCoghamdQ/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/12qGL_8qM2mNy5i2g_zsaUMkFCoghamdQ=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7730,8 +7968,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Half the total frequency is 10 (median position); solving $$5+1+4=3+x$$ (or $$\\sum f=20$$) gives $$x=7$$.\n b. $$\\sigma^2=\\dfrac{5(2-4.3)^2+1(3-4.3)^2+4(4-4.3)^2+3(5-4.3)^2+7(6-4.3)^2}{20}=2.51 \\Rightarrow \\sigma=\\sqrt{2.51}=1.58429\\approx1.58$$.',
             questionType: 'Descriptive statistics',
-            diagram:
-              'https://drive.google.com/file/d/1jT2AgX-2JNxl6-aZbDsksD90Cw7DetFz/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1jT2AgX-2JNxl6-aZbDsksD90Cw7DetFz=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7750,8 +7989,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Setting the sum of probabilities to 1 and rearranging gives $$2k^2-k+0.12=0$$ (AG).\n b. Solving the quadratic gives $$k=0.2$$ or $$k=0.3$$. Reject $$k=0.2$$ since it makes $$P(X=1)=k-0.28<0$$ (a negative probability); so $$k=0.3$$.\n c. $$E(X)=0(0.41)+1(0.3-0.28)+2(0.46)+3(0.29-2(0.3)^2)=1.27$$.',
             questionType: 'Discrete random variables',
-            diagram:
-              'https://drive.google.com/file/d/17pZuA_Wshfz11WVD1kV3bgAIsqCsEsrY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/17pZuA_Wshfz11WVD1kV3bgAIsqCsEsrY=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -7829,8 +8069,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Median $$=0.28$$ s (from the box plot).\n b. $$IQR=0.35-0.27=0.08$$; upper fence $$=Q_3+1.5\\times IQR=0.35+1.5(0.08)=0.47$$ s. Since $$0.46<0.47$$, $$0.46$$ s is not an outlier (AG).\n c. The median is closer to the lower quartile, i.e. the distribution is positively skewed, so the mean is pulled above the median.\n d. The centre of the "not sleeping well" distribution is at a higher reaction time, but the sample size (9) is small, so this alone does not establish a causal relationship.',
             questionType: 'Descriptive statistics (box-and-whisker diagrams, outliers, skewness)',
-            diagram:
-              'https://drive.google.com/file/d/1-2bwBJzVganE8SB5R0CTemQid8VgVt1i/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1-2bwBJzVganE8SB5R0CTemQid8VgVt1i=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7871,8 +8112,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. Sum of probabilities $$=1$$: $$q+4p^2+p+0.7-4p^2=1 \\Rightarrow q=0.3-p$$.\n b. $$E(X)=0(0.3-p)+1(4p^2)+2(p)+3(0.7-4p^2)=-8p^2+2p+2.1$$; maximizing (vertex of downward parabola) gives $$p=\\dfrac{-2}{2(-8)}=\\tfrac18=0.125$$.\n $$E(X)=\\tfrac{89}{40}=2.225\\approx2.23$$.',
             questionType: 'Discrete random variables, optimization',
-            diagram:
-              'https://drive.google.com/file/d/1aqP4iS9RAct6V592BD_BQ4E90Yw-gTWm/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1aqP4iS9RAct6V592BD_BQ4E90Yw-gTWm=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -7892,8 +8134,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=-9.84636\\approx-9.85$$, $$b=221.592\\approx222$$; $$r=-0.981244\\approx-0.981$$.\n b. $$H=-9.85(12)+222=103.8\\approx103$$ hot chocolates (integer answer).',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1k34OsQOxnXSCiEyDkBTm616HZRmZDA6_/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1k34OsQOxnXSCiEyDkBTm616HZRmZDA6_=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
           {
@@ -7951,8 +8194,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$\\bar{x}=\\dfrac{0.3+0.4+3+\\dots+10}{10}=\\dfrac{48.2}{10}=4.82$$ km.\n b. $$p=4.25$$ (the median, from the box plot).\n c. $$IQR=Q_3-Q_1=8-3=5$$.',
             questionType: 'Descriptive statistics',
-            diagram:
-              'https://drive.google.com/file/d/1gDVWOrf-dxKuQm3a80RmR80POr1heE4A/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1gDVWOrf-dxKuQm3a80RmR80POr1heE4A=w1600',
+            ],
             subtopicSlug: 'descriptive-statistics',
           },
           {
@@ -7972,8 +8216,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$a=74-(32+12+10+9+5)=6$$; $$b=100-(74+18)=8$$.\n b. Students in at least two regions: $$9+5+12+10=36$$.\n c. $$n(R\\cap W)=14$$.\n d. $$P(R)=\\dfrac{58}{100}=0.58$$; $$P(V)=\\dfrac{45}{100}=0.45$$.\n e. $$P(R)\\times P(V)=0.58\\times0.45=0.261\\ne P(R\\cap V)=0.17$$, so not independent.',
             questionType: 'Probability (Venn diagrams, independence)',
-            diagram:
-              'https://drive.google.com/file/d/1iD7wC08_o_ESaSEdGuWM8TACCYj-B-dx/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1iD7wC08_o_ESaSEdGuWM8TACCYj-B-dx=w1600',
+            ],
             subtopicSlug: 'probability-venn-and-tree-diagrams',
           },
           {
@@ -7993,8 +8238,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$P(1\\text{ red})=3\\left(\\tfrac13\\right)\\left(\\tfrac23\\right)^2=\\tfrac49\\approx0.444$$; $$P(\\ge2\\text{ red})=1-P(0\\text{ red})-P(1\\text{ red})=\\tfrac{7}{27}\\approx0.259$$.\n b. Adding exactly \\$10 means exactly one green face and at most one red face; summing the relevant cases gives probability $$\\tfrac13$$ (AG).\n c. $$x=P(\\text{lose everything})=\\tfrac{7}{27}\\approx0.259$$ (from part (a)(ii)); using $$\\sum P=1$$: $$y=1-\\tfrac13-\\tfrac29-\\tfrac{1}{27}-\\tfrac{7}{27}=\\tfrac{4}{27}\\approx0.148$$.\n d. Expected profit for another turn: $$-w\\cdot\\tfrac{7}{27}+10\\cdot\\tfrac{9}{27}+20\\cdot\\tfrac{6}{27}+30\\cdot\\tfrac{1}{27}$$; setting $$\\ge0$$ gives critical $$w=\\tfrac{240}{7}=34.29$$, so least integer/whole-dollar value for ending is $$w=\\$40$$ (smallest value above the threshold in context).',
             questionType: 'Discrete probability distributions, expected value, decision criteria',
-            diagram:
-              'https://drive.google.com/file/d/1V6TntU_YCGicwkQJtzfVJm4OZSeMcoJ2/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1V6TntU_YCGicwkQJtzfVJm4OZSeMcoJ2=w1600',
+            ],
             subtopicSlug: 'discrete-random-variables',
           },
           {
@@ -8034,8 +8280,9 @@ export const PYP_QUESTIONS = {
             solution:
               "b. Using symmetry of 13.6 and 17.8 about the mean (since $$P<13.6=0.3$$ and $$P<17.8=0.7$$): $$m=\\dfrac{13.6+17.8}{2}=15.7$$ (AG).\n c. $$P(13\\le T\\le18)=0.467516\\approx0.468$$; $$P(T\\ge20)=0.141187\\approx0.141$$.\n d. $$P(T<x)=0.6 \\Rightarrow x=16.7133\\approx16.7$$.\n e. $$2\\times0.467516\\times0.141187=0.132014\\approx0.132$$.\n f. Based on shooting success proportions from Saturday/Sunday data: expected successful shots $$\\approx\\dfrac{69}{102}\\times200=135.294\\approx135$$.\n g. Johan's rate $$\\dfrac{67}{98}=0.684$$ exceeds Emlyn's rate $$\\dfrac{69}{102}=0.676$$, so Emlyn's claim is incorrect.",
             questionType: 'Normal distribution, conditional probability, expected value',
-            diagram:
-              'https://drive.google.com/file/d/1RTqGszJc23lgPx4rWk8CNmnLCxfbd_rr/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1RTqGszJc23lgPx4rWk8CNmnLCxfbd_rr=w1600',
+            ],
             subtopicSlug: 'normal-distribution',
           },
           {
@@ -8055,8 +8302,9 @@ export const PYP_QUESTIONS = {
             solution:
               'a. $$H_1$$: arrival status is dependent on (associated with) distance travelled.\n b. Expected $$=\\dfrac{60\\times45}{180}=15$$.\n c. Degrees of freedom $$=4$$ (assuming a $$3\\times3$$ table).\n d. $$\\chi^2=9.55$$ (9.54671); $$p=0.0488$$.\n e. Since $$9.55>7.779$$ (equivalently $$0.0488<0.1$$), reject $$H_0$$.\n f. $$P(\\text{on time})=\\dfrac{35}{97}=0.361$$ (accept forms with denominator 180 depending on interpretation).\n g. $$P(500<d<5000\\mid\\text{not heavily delayed})=\\dfrac{52}{180}=0.289$$.\n h. $$\\dfrac{14}{45}\\times\\dfrac{13}{44}=\\dfrac{182}{1980}=0.0919$$.',
             questionType: 'Chi-squared test for independence, conditional probability',
-            diagram:
-              'https://drive.google.com/file/d/1FvH5HyLwkdKLyLICQaho8uIcB5OvZAbv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1FvH5HyLwkdKLyLICQaho8uIcB5OvZAbv=w1600',
+            ],
             subtopicSlug: 'chi-squared-test',
           },
           {
@@ -8075,8 +8323,10 @@ export const PYP_QUESTIONS = {
             solution:
               'a. GDC: $$a=6.92986\\approx6.93$$, $$b=8.80769\\approx8.81$$.\n b. Using $$750=x+y$$ with $$y=6.93x+8.81$$: $$750-x=6.93x+8.81 \\Rightarrow x\\approx93.47 \\Rightarrow 93$$ edge pieces (accept 94).',
             questionType: 'Correlation and regression',
-            diagram:
-              'https://drive.google.com/file/d/1QK1y3vRDi9flcOsHgwuCb8-Djl-Hcsel/view?usp=sharing\n\nhttps://drive.google.com/file/d/13vVgQTCLwnK_g92SqN2bYZ1WP3yEf6Sn/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1QK1y3vRDi9flcOsHgwuCb8-Djl-Hcsel=w1600',
+              'https://lh3.googleusercontent.com/d/13vVgQTCLwnK_g92SqN2bYZ1WP3yEf6Sn=w1600',
+            ],
             subtopicSlug: 'correlation-and-regression',
           },
         ],
@@ -8165,8 +8415,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Quotient rule on $$\\frac{\\ln 5x}{kx}$$ gives $$f'(x)=\\frac{1-\\ln 5x}{kx^2}$$.\n (b) Set $$f'(x)=0\\Rightarrow \\ln5x=1\\Rightarrow x=\\frac{e}{5}$$.\n (c) Set $$f''(x)=0\\Rightarrow \\ln5x=\\frac{3}{2}\\Rightarrow 5x=e^{3/2}\\Rightarrow x=\\frac15e^{3/2}$$.\n (d) Integrate $$\\frac{\\ln5x}{kx}$$ using $$u=\\ln5x$$: area $$=\\frac{1}{2k}\\left(\\frac{9}{4}-1\\right)=\\frac{5}{8k}$$. Set $$\\frac{5}{8k}=3\\Rightarrow k=\\frac{5}{24}$$.",
             questionType: 'Differentiation, integration, stationary points, points of inflexion',
-            diagram:
-              'https://drive.google.com/file/d/18rT-Ho1sfoDCf1R-eoacVuxmIYeYhCyL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/18rT-Ho1sfoDCf1R-eoacVuxmIYeYhCyL=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -8205,8 +8456,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$P=2x+2y=2x+2(4-x^2)=-2x^2+2x+8$$.\n (b) Maximize using axis of symmetry $$x=\\frac{-2}{2(-2)}=\\frac12$$; $$y=4-\\frac14=\\frac{15}{4}$$; max $$P=\\frac{17}{2}$$.\n (c) $$A=xy=x(4-x^2)=4x-x^3$$.\n (d) $$\\frac{dA}{dx}=4-3x^2=0\\Rightarrow x=\\frac{2}{\\sqrt3}$$ (positive root); $$y=4-\\frac43=\\frac83$$.\n (e) $$A=\\frac{16}{3\\sqrt3}\\approx3.08$$.',
             questionType: 'Optimisation, differentiation, quadratics',
-            diagram:
-              'https://drive.google.com/file/d/1FDsj4ERZQUFwgalgF9aW1H1x3ZrhaO-o/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1FDsj4ERZQUFwgalgF9aW1H1x3ZrhaO-o=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -8226,8 +8478,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$h(0)=0.4\\cos0+1.8=2.2$$.\n (b) Minimum of $$\\cos(\\pi t)$$ is $$-1$$, giving $$h_{min}=0.4(-1)+1.8=1.4$$.\n (c) Period of $$\\cos(\\pi t)$$ is 2, so ball returns to initial height 2 seconds later (or solve $$h(t)=2.2 \\Rightarrow \\cos(\\pi t)=1 \\Rightarrow t=0,2,\\dots$$).\n (d) Solve $$0.4\\cos(\\pi t)=0.2\\sqrt2 \\Rightarrow \\cos(\\pi t)=\\frac{\\sqrt2}{2}\\Rightarrow \\pi t=\\frac{\\pi}{4},\\frac{7\\pi}{4}\\Rightarrow t=\\frac14,\\frac74$$. Time below threshold $$=\\frac74-\\frac14=1.5$$ s.\n (e) $$h'(t)=-0.4\\pi\\sin(\\pi t)$$; $$h'(\\frac13)=-0.4\\pi\\sin\\frac{\\pi}{3}=0.2\\pi\\sqrt3$$ ms$$^{-1}$$ (taking appropriate sign convention).",
             questionType: 'Trigonometric modelling, differentiation, rates of change',
-            diagram:
-              'https://drive.google.com/file/d/1CeVWZLWJEGOUl_dR5Zf3rnWLajHxH0bY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1CeVWZLWJEGOUl_dR5Zf3rnWLajHxH0bY=w1600',
+            ],
             subtopicSlug: 'rates-of-change-and-modelling',
           },
           {
@@ -8246,8 +8499,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Set $$\\ln(x^2-16)=0\\Rightarrow x^2-16=1\\Rightarrow x^2=17\\Rightarrow x=\\sqrt{17}$$ (taking $$x>4$$).\n (b) $$f'(x)=\\dfrac{2x}{x^2-16}$$. Set $$\\dfrac{2x}{x^2-16}=\\frac13\\Rightarrow x^2-6x-16=0\\Rightarrow (x-8)(x+2)=0\\Rightarrow x=8$$ (rejecting $$x=-2$$ as outside domain).",
             questionType: 'Differentiation, logarithmic functions, tangents',
-            diagram:
-              'https://drive.google.com/file/d/1dPfaJwUoHTrzMx2McuIRTiZQo6FS_swH/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1dPfaJwUoHTrzMx2McuIRTiZQo6FS_swH=w1600',
+            ],
             subtopicSlug: 'tangents-and-normals',
           },
           {
@@ -8268,8 +8522,10 @@ export const PYP_QUESTIONS = {
               '(a) $$6+6\\cos x=0\\Rightarrow \\cos x=-1\\Rightarrow x=\\pi,3\\pi$$.\n (b) $$\\int_\\pi^{3\\pi}(6+6\\cos x)\\,dx=[6x+6\\sin x]_\\pi^{3\\pi}=18\\pi-6\\pi=12\\pi$$.\n (c) Total surface area $$=\\pi r^2+\\pi r l=4\\pi+2\\pi l=12\\pi\\Rightarrow l=4$$.\n (d) Height: $$h=\\sqrt{l^2-r^2}=\\sqrt{16-4}=\\sqrt{12}=2\\sqrt3$$. Volume $$=\\frac13\\pi(2)^2(2\\sqrt3)=\\frac{8\\pi\\sqrt3}{3}$$.',
             questionType:
               'Integration (area under curve), trigonometric equations, mensuration (cones)',
-            diagram:
-              'https://drive.google.com/file/d/1KT_WCG4e3K-iPQV3iPU5V3YMOqXLW8i1/view?usp=sharing\n\nhttps://drive.google.com/file/d/1cYC9r_c33JWyjowv-mb-WvGNzeTPOvlV/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1KT_WCG4e3K-iPQV3iPU5V3YMOqXLW8i1=w1600',
+              'https://lh3.googleusercontent.com/d/1cYC9r_c33JWyjowv-mb-WvGNzeTPOvlV=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -8289,8 +8545,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$s(t)=0\\Rightarrow t(8-t)=0\\Rightarrow t=8$$.\n (b)(i) Particle changes direction where $$v=0$$ (vertex of parabola), $$t=4$$.\n (b)(ii) $$s(4)=16$$.\n (c) $$s(10)=-20$$, distance $$=20$$.\n (d) $$d=16+16+20=52$$ (forward 16 to turning point, back 16 to origin, further 20 backward).\n (e) Using $$v(t)=14-2t$$, particle changes direction at $$t=7$$; area calculations give total distance $$=49+(t-7)^2$$ up to time $$k$$; setting equal to 52 gives $$(k-7)^2=3\\Rightarrow k=7+\\sqrt3$$.',
             questionType: 'Kinematics, integration/differentiation of motion, quadratics',
-            diagram:
-              'https://drive.google.com/file/d/1kV6I25TmyRvxZPRIeiq8sO9b9sAj7PSl/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1kV6I25TmyRvxZPRIeiq8sO9b9sAj7PSl=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -8310,8 +8567,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Length $$+$$ width $$+$$ height $$=12 \\Rightarrow 3x+x+y=12\\Rightarrow y=12-4x$$.\n (b) $$V=3x\\cdot x\\cdot y=3x^2(12-4x)=36x^2-12x^3$$.\n (c) Differentiate: $$V'=72x-36x^2$$.\n (d)(i) Set $$V'=0\\Rightarrow 36x(2-x)=0\\Rightarrow x=2$$ (rejecting $$x=0$$).\n (d)(ii) $$V''=72-72x$$; $$V''(2)=-72<0$$, so maximum.\n (e) $$V=36(4)-12(8)=48$$.",
             questionType: 'Optimisation, differentiation, volume',
-            diagram:
-              'https://drive.google.com/file/d/1v500cIHzS5e-v-JYm-WCGsMNYbn2DUt2/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1v500cIHzS5e-v-JYm-WCGsMNYbn2DUt2=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -8330,8 +8588,10 @@ export const PYP_QUESTIONS = {
             solution:
               'Line $$L$$ passes through P$$(1,0)$$ and Q on the parabola (from the diagram $$L: y=-x+1$$ type line, or as given). Using $$\\int(L-f)\\,dx$$ over the enclosed interval $$[-1,1]$$: $$\\int_{-1}^1(1-x^2)\\,dx=\\left[x-\\frac{x^3}{3}\\right]_{-1}^{1}=\\frac{4}{3}$$.',
             questionType: 'Integration, area between curves',
-            diagram:
-              'https://drive.google.com/file/d/1VlLHUiFW2Y376kkad_PhwatOrvoHehKa/view?usp=sharing\n\nhttps://drive.google.com/file/d/1zkXdYw80qGXFfVPm8gSmhGbEXp0rs1EL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1VlLHUiFW2Y376kkad_PhwatOrvoHehKa=w1600',
+              'https://lh3.googleusercontent.com/d/1zkXdYw80qGXFfVPm8gSmhGbEXp0rs1EL=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -8350,8 +8610,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$s(4)-s(2)=\\int_2^4 v\\,dt=9$$.\n (b) First 2 seconds: distance $$=15=s(2)$$. Since $$s(5)=s(2)$$, and $$s(4)-s(2)=9$$, then $$s(5)-s(4)=-9$$, so between $$t=4$$ and $$5$$ distance travelled is 9 (backwards). Total distance $$=15+9+9=33$$ m.',
             questionType: 'Kinematics, integration, velocity-time graphs',
-            diagram:
-              'https://drive.google.com/file/d/16aaqfsqC6q6yadBaAVZK4JaZRlTmzx2t/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/16aaqfsqC6q6yadBaAVZK4JaZRlTmzx2t=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -8372,8 +8633,9 @@ export const PYP_QUESTIONS = {
               '(a) Probabilities sum to 1: $$\\cos\\theta+2\\cos2\\theta=1$$. Using $$\\cos2\\theta=2\\cos^2\\theta-1$$: $$4\\cos^2\\theta+\\cos\\theta-3=0\\Rightarrow(4\\cos\\theta-3)(\\cos\\theta+1)=0$$. Reject $$\\cos\\theta=-1$$ since it is a probability, so $$\\cos\\theta=\\frac34$$.\n (b) Right triangle with adjacent 3, hypotenuse 4, opposite $$\\sqrt7$$: $$\\tan\\theta=\\frac{\\sqrt7}{3}$$.\n (c) Volume $$=\\pi\\int_\\theta^{\\pi/4}\\sec^2x\\,dx=\\pi[\\tan x]_\\theta^{\\pi/4}=\\pi\\left(1-\\tan\\theta\\right)$$, giving final numeric form using $$\\tan\\theta=\\frac{\\sqrt7}{3}$$.',
             questionType:
               'Probability distributions, trigonometric identities, volumes of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1LK096FVFXofkozPoM4grWelxge6yyY0t/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1LK096FVFXofkozPoM4grWelxge6yyY0t=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -8392,8 +8654,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(b) Recognising $$\\frac{d}{dx}(x^3+x)=3x^2+1$$, integrate by inspection: $$\\int(3x^2+1)\\sqrt{x^3+x}\\,dx=\\frac23(x^3+x)^{3/2}+c$$.\n (c) Area $$=\\int_0^1\\big(g(x)-f(x)\\big)\\,dx$$.\n (d) $$=\\int_0^1\\left(6-(3x^2+1)\\sqrt{x^3+x}\\right)dx=6x-\\frac23(x^3+x)^{3/2}\\Big|_0^1=6-\\frac23(2)^{3/2}=6-\\frac{4\\sqrt2}{3}$$.',
             questionType: 'Integration by inspection/substitution, area between curves',
-            diagram:
-              'https://drive.google.com/file/d/1oB3bFAujoE3DNxU1A44D3huUW-0ou74d/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1oB3bFAujoE3DNxU1A44D3huUW-0ou74d=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -8412,8 +8675,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\int\\frac{1}{2x-1}\\,dx=\\frac12\\ln(2x-1)+c$$.\n (b) Volume $$=\\pi\\int_1^9(f(x))^2\\,dx=\\pi\\left[\\frac12\\ln(2x-1)\\right]_1^9=\\frac{\\pi}{2}(\\ln17-\\ln1)=\\frac{\\pi}{2}\\ln17$$.',
             questionType: 'Integration, volumes of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1dt4Ixak7US-SAdLuzLET669qoBxlmGMN/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1dt4Ixak7US-SAdLuzLET669qoBxlmGMN=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -8451,8 +8715,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$P(YY)=\\frac13\\times\\frac13=\\frac19$$.\n (b) $$P(\\text{at least one Y})=1-\\left(\\frac23\\right)^2=\\frac59$$.\n (c) By the tree diagram, $$P(Y\\mid B)=\\frac13$$ (independent spins).',
             questionType: 'Probability, tree diagrams',
-            diagram:
-              'https://drive.google.com/file/d/1lM1oS1fD-vy5cWMX4vnejlojq_YUgxbG/view?usp=sharing\n\nhttps://drive.google.com/file/d/1csjnMVENoC4G-23RfLcXgYa5stra0BcP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1lM1oS1fD-vy5cWMX4vnejlojq_YUgxbG=w1600',
+              'https://lh3.googleusercontent.com/d/1csjnMVENoC4G-23RfLcXgYa5stra0BcP=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -8472,8 +8738,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$P(S\\cap M)=\\frac14\\Rightarrow30$$ students; $$P(M)=\\frac13\\Rightarrow40$$ students in M, so M only $$=10$$; total in S or M $$=100$$, so S only $$=100-30-10=60$$.\n (b) $$P(\\text{both}\\mid S)=\\frac{30}{90}=\\frac13$$.\n (c) $$P(S)=\\frac{90}{120}=\\frac34$$; $$P(S)\\times P(M)=\\frac34\\times\\frac13=\\frac14=P(S\\cap M)$$, so independent.',
             questionType: 'Venn diagrams, set probability, independence',
-            diagram:
-              'https://drive.google.com/file/d/1zUhSKEJWF687VGo0ZyYuhYWLkIl2bvoC/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1zUhSKEJWF687VGo0ZyYuhYWLkIl2bvoC=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -8512,8 +8779,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) The tangent passes through A$$(1,3)$$, so $$f(1)=3$$.\n (b) Gradient of tangent $$=-2$$, so gradient of normal $$=\\frac12$$. $$y-3=\\frac12(x-1)\\Rightarrow x-2y+5=0$$.\n (c) Draw a straight line of gradient $$\\frac12$$ through $$(1,3)$$.',
             questionType: 'Tangents and normals, coordinate geometry',
-            diagram:
-              'https://drive.google.com/file/d/1d-7SNin9wu9C2NZjSkh_awjXL2pwQCHQ/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1d-7SNin9wu9C2NZjSkh_awjXL2pwQCHQ=w1600',
+            ],
             subtopicSlug: 'tangents-and-normals',
           },
           {
@@ -8553,8 +8821,10 @@ export const PYP_QUESTIONS = {
               "(a)(i) $$f'(x)=-kx^{-2}\\Rightarrow f'(p)=-\\frac{k}{p^2}$$.\n (a)(ii) Tangent: $$y-\\frac{k}{p}=-\\frac{k}{p^2}(x-p)\\Rightarrow p^2y-pk=-kx+pk\\Rightarrow kx+p^2y-2pk=0$$.\n (b) $$x$$-intercept at $$2p$$ (given); $$y$$-intercept: set $$x=0\\Rightarrow y=\\frac{2k}{p}$$. Area $$=\\frac12(2p)\\left(\\frac{2k}{p}\\right)=2k$$.\n (c) Using the translated graph and equal areas of triangle EDF and rectangle CDFG, gradient of $$L_2=-\\frac{3}{p}$$.",
             questionType:
               'Differentiation, tangents, transformations of graphs, coordinate geometry',
-            diagram:
-              'https://drive.google.com/file/d/1Iv7mrCpvrQEbQBwR2rh0ICsD2y44zSxJ/view?usp=sharing\n\nhttps://drive.google.com/file/d/1vmjURxJUvnQxJZnpUf6gyM0q8cFEijAo/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1Iv7mrCpvrQEbQBwR2rh0ICsD2y44zSxJ=w1600',
+              'https://lh3.googleusercontent.com/d/1vmjURxJUvnQxJZnpUf6gyM0q8cFEijAo=w1600',
+            ],
             subtopicSlug: 'tangents-and-normals',
           },
           {
@@ -8573,8 +8843,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$\\sqrt{12-2x}=0\\Rightarrow x=6$$.\n (b) Volume $$=\\pi\\int_0^6(12-2x)\\,dx=\\pi\\left[12x-x^2\\right]_0^6=\\pi(72-36)=36\\pi$$.',
             questionType: 'Integration, volumes of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1pqWhnFTNg3Wq4T5wkJVdQeKN90h5GVXm/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1pqWhnFTNg3Wq4T5wkJVdQeKN90h5GVXm=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -8767,8 +9038,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Since $$\\theta$$ is obtuse, $$\\cos\\theta<0$$; with $$\\sin\\theta=\\frac35$$, $$\\cos\\theta=-\\frac45$$, so $$\\tan\\theta=-\\frac34$$.\n (b) $$y=(\\tan\\theta)x=-\\frac34x$$.\n (d) $$f'(x)=e^x\\sin x+e^x\\cos x-\\frac34$$. Setting $$f'(x)=\\tan\\theta=-\\frac34$$: $$e^x(\\cos x+\\sin x)=0\\Rightarrow \\cos x+\\sin x=0\\Rightarrow \\tan x=-1\\Rightarrow x=\\frac{3\\pi}{4}$$ (within the domain, rejecting other solutions).",
             questionType: 'Trigonometric identities, differentiation (product rule), tangents',
-            diagram:
-              'https://drive.google.com/file/d/1DDE8QA6_UvaoHUCJKvwY7Fl3amgFuuaL/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1DDE8QA6_UvaoHUCJKvwY7Fl3amgFuuaL=w1600',
+            ],
             subtopicSlug: 'tangents-and-normals',
           },
           {
@@ -8806,8 +9078,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Area $$=|x|\\cdot f(x)=-x(15-x^2)=x^3-15x$$ (with A at $$(x,0),\\ x<0$$). Differentiate and set to zero: $$3x^2-15=0\\Rightarrow x^2=5\\Rightarrow x=-\\sqrt5$$ (taking the negative root since A is on the negative x-axis).',
             questionType: 'Optimisation, differentiation',
-            diagram:
-              'https://drive.google.com/file/d/1b49ysNjjYkSogX3Hc-68GN7Kg3tism_w/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1b49ysNjjYkSogX3Hc-68GN7Kg3tism_w=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -8827,8 +9100,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) M∩B only $$=20-2=18$$; M∩K only $$=14-2=12$$; B∩K only $$=3-2=1$$; M only $$=35-18-12-2=3$$; B only $$=37-18-1-2=16$$; K only $$=26-12-1-2=11$$.\n (b) $$85-(3+16+11+18+12+1+2)=22$$.\n (c) $$P(K\\mid M)=\\dfrac{14}{35}=\\dfrac25$$ (students liking both mango and kiwi, out of all who like mango).',
             questionType: 'Venn diagrams (3 sets), conditional probability',
-            diagram:
-              'https://drive.google.com/file/d/1EmqHEAUCZf1fwq8-t24vNdX3QflaFfXp/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1EmqHEAUCZf1fwq8-t24vNdX3QflaFfXp=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -8867,8 +9141,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Axis of symmetry: $$x=3$$.\n (b)(i) From vertex form, $$h=3,\\ k=4$$.\n (b)(ii) Substitute Q$$(5,12)$$: $$12=a(2)^2+4\\Rightarrow a=2$$.\n (c) $$f'(x)=4(x-3)$$; $$f'(5)=8$$; tangent: $$y-12=8(x-5)\\Rightarrow y=8x-28$$.\n (d) $$g$$ increasing $$\\Leftrightarrow g'(x)=f(x)-d>0$$, i.e. the vertex of $$f-d$$ must lie above the x-axis: $$4-d>0\\Rightarrow d<4$$.\n (e) $$g$$ concave-up $$\\Leftrightarrow g''(x)=f'(x)>0\\Leftrightarrow 4(x-3)>0\\Leftrightarrow x>3$$.",
             questionType: 'Quadratic functions, differentiation, tangents, concavity',
-            diagram:
-              'https://drive.google.com/file/d/1DwgwPj9FCcARwxC_M7p_NnCSQ5rF18y0/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1DwgwPj9FCcARwxC_M7p_NnCSQ5rF18y0=w1600',
+            ],
             subtopicSlug: 'tangents-and-normals',
           },
           {
@@ -8925,8 +9200,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(b)(i) $$f'(x)=3x^2-4x+a$$.\n (b)(ii) P is the $$y$$-intercept: $$P(0,6)$$; gradient at P is $$f'(0)=a$$; tangent: $$y=ax+6$$.\n (c) Local minimum where $$f'(x)=0$$ and, on the curve, $$Q$$ also lies on $$L$$: solving $$f(x)=ax+6\\Rightarrow x^3-2x^2=0\\Rightarrow x=2$$ at Q (rejecting $$x=0$$). Substituting $$x=2$$ into $$f'(x)=0$$: $$3(4)-4(2)+a=0\\Rightarrow a=-4$$.",
             questionType: 'Cubic functions, differentiation, tangents, stationary points',
-            diagram:
-              'https://drive.google.com/file/d/1RZAg-G2Ycb2dxiZYY5N63TtSp3rPNZtf/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1RZAg-G2Ycb2dxiZYY5N63TtSp3rPNZtf=w1600',
+            ],
             subtopicSlug: 'curve-analysis-and-stationary-points',
           },
           {
@@ -8945,8 +9221,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$\\pi r^2h=20\\pi\\Rightarrow h=\\dfrac{20}{r^2}$$.\n (b) $$C=10(2\\pi r^2)+8(2\\pi r h)=20\\pi r^2+16\\pi r\\left(\\dfrac{20}{r^2}\\right)=20\\pi r^2+\\dfrac{320\\pi}{r}$$.\n (c) $$C'=40\\pi r-\\dfrac{320\\pi}{r^2}=0\\Rightarrow r^3=8\\Rightarrow r=2$$. $$C(2)=20\\pi(4)+\\dfrac{320\\pi}{2}=80\\pi+160\\pi=240\\pi$$ cents.",
             questionType: 'Optimisation, differentiation, surface area/volume of a cylinder',
-            diagram:
-              'https://drive.google.com/file/d/1J65vN0aN3lT9D0X0jXYY0ZHfhoeWpZfq/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1J65vN0aN3lT9D0X0jXYY0ZHfhoeWpZfq=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -8968,8 +9245,9 @@ export const PYP_QUESTIONS = {
               "(a) $$f$$ increases where $$f'(x)>0$$, which is $$p<x<0$$ (where the graph of $$f'$$ is above the x-axis).\n (b) $$f$$ has a local max where $$f'$$ changes from $$+$$ to $$-$$: at $$x=p$$.\n (c)(i) $$f$$ has a local min where $$f'$$ changes from $$-$$ to $$+$$: at $$x=0$$.\n (c)(ii) Points of inflexion of $$f$$ occur where $$f'$$ has turning points: $$x=q,r,t$$.\n (d) $$\\int_p^t f'(x)\\,dx=f(t)-f(p)$$ over sub-intervals; using total enclosed area $$=20$$ and $$f(p)+f(t)=4$$, solving gives $$2f(0)-[f(p)+f(t)]=20\\Rightarrow2f(0)-4=20\\Rightarrow f(0)=12$$.",
             questionType:
               'Graphical analysis of derivatives, increasing/decreasing functions, points of inflexion',
-            diagram:
-              'https://drive.google.com/file/d/1YBnFb3aXzfgFSxrpDN0DG-nvvBkQPVvI/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1YBnFb3aXzfgFSxrpDN0DG-nvvBkQPVvI=w1600',
+            ],
             subtopicSlug: 'curve-analysis-and-stationary-points',
           },
           {
@@ -9064,8 +9342,9 @@ export const PYP_QUESTIONS = {
             solution:
               '$$x$$-intercept at $$x=3$$ (numerator zero). Let $$u=16+6x-x^2,\\ du=(6-2x)dx$$: $$\\int f(x)\\,dx=\\int u^{-1/2}du=2\\sqrt{u}=2\\sqrt{16+6x-x^2}$$. Evaluating from $$x=0$$ to $$x=3$$: $$2\\sqrt{25}-2\\sqrt{16}=10-8=2$$.',
             questionType: 'Integration by substitution, area under a curve',
-            diagram:
-              'https://drive.google.com/file/d/1NrZB-SeFKTRa5qT4ddAmFMIgP-_UGxQw/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1NrZB-SeFKTRa5qT4ddAmFMIgP-_UGxQw=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -9123,8 +9402,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Axis of symmetry of $$3x^2-12x+p$$ is $$x=\\frac{12}{2(3)}=2$$.\n (b)(i) Vertex on x-axis $$\\Rightarrow$$ discriminant $$=0$$.\n (b)(ii) $$(-12)^2-4(3)(p)=0\\Rightarrow144-12p=0\\Rightarrow p=12$$.\n (c) $$f''(x)=6x-12$$; at $$x=0$$: gradient of $$f'$$ is $$f''(0)=-12$$.\n (d) $$f''(x)=6x-12$$ is a straight line, $$x$$-intercept at $$x=2$$, $$y$$-intercept at $$y=-12$$.\n (e)(i) Inflexion where $$f''(x)=0$$: $$x=2$$, so $$a=2$$.\n (e)(ii) Concave-down where $$f''(x)<0\\Leftrightarrow x<2$$.",
             questionType: 'Quadratic functions, discriminant, second derivative, concavity',
-            diagram:
-              'https://drive.google.com/file/d/18-nE5CIpbt9JKeIvfkClI_iAvvn31k9K/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/18-nE5CIpbt9JKeIvfkClI_iAvvn31k9K=w1600',
+            ],
             subtopicSlug: 'differentiation-rules',
           },
           {
@@ -9330,8 +9610,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Solve $$f(x)=0$$: $$p=1.14$$ (M1A1)\n (b) Local max at $$(0.562,16.8)$$ (A1A1); tangent horizontal so $$y=16.8$$ (M1A1)\n (c) $$f''(x)=12x^2-108=0 \\Rightarrow x=3$$ (A1M1); $$f(3)=-225$$ (M1A1); rate of change $$f'(3)=-156$$ (M1A1)\n (d) $$V=\\pi\\int_{1.14}^{3}f(x)^2\\,dx \\approx 80900$$ (M1A2)",
             questionType: 'Graphs / Volume of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1VkmUGf5-ACG1_OWXnydwc1MGbB8ry9hI/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1VkmUGf5-ACG1_OWXnydwc1MGbB8ry9hI=w1600',
+            ],
             subtopicSlug: 'curve-analysis-and-stationary-points',
           },
           {
@@ -9351,8 +9632,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Vertex of $$g$$ is $$(1,5)$$ (A1)\n (b) Concave-up parabola with vertex $$(1,5)$$ passing through given intersection points (A1A1A1)\n (c) $$\\int_{-1}^{4}\\big[-(x-1)^2+5-x^2\\big]dx$$, evaluate (M1A1A1)',
             questionType: 'Graphs / Area between curves',
-            diagram:
-              'https://drive.google.com/file/d/1rcTeVig-fE-1wwLnqfIgQ03Yl7NbSWpm/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1rcTeVig-fE-1wwLnqfIgQ03Yl7NbSWpm=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -9371,8 +9653,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Solve $$\\sin(e^x)=0 \\Rightarrow e^x=\\pi \\Rightarrow x=\\ln\\pi=1.14$$ (M1A1)\n (b) $$V=\\pi\\int_0^{1.14}\\sin^2(e^x)\\,dx \\approx 4.50$$ (M1A2)',
             questionType: 'Volume of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1IPU1ny6YFD2TISJtt7GC4uAey6rXi4R4/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1IPU1ny6YFD2TISJtt7GC4uAey6rXi4R4=w1600',
+            ],
             subtopicSlug: 'areas-and-volumes-of-revolution',
           },
           {
@@ -9392,8 +9675,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Comparing $$g$$ to $$f$$: horizontal stretch factor $$q=2$$, translation $$(0,3)$$ (A1A1A1)\n (b)(i) GDC integration $$=2.40$$ (A2)\n (b)(ii) Using symmetry of $$h$$, $$h^{-1}$$ about $$y=x$$: area $$=2\\times2.40 =5.45$$ (M1M1A1)\n (c) $$d=h(x)-x$$; solve $$d'=0 \\Rightarrow x=0.974$$ (M1A1M1A2); substitute to get $$y=2.27$$ (M1A1)",
             questionType: 'Transformations / Inverse functions / Integration',
-            diagram:
-              'https://drive.google.com/file/d/1U9Bb4yh2bIM47SQLVj3Hsz7Ap0WfRXRE/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1U9Bb4yh2bIM47SQLVj3Hsz7Ap0WfRXRE=w1600',
+            ],
             subtopicSlug: 'areas-and-volumes-of-revolution',
           },
           {
@@ -9413,8 +9697,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$v(0)=-2(0)+2=2$$ (M1A1)\n (b) Solve $$v=0$$ on second piece: $$p=5.22$$ (M1A1)\n (c) $$v'=0 \\Rightarrow q=1.95$$ (M1A1); speed $$=|v(1.95)|=1.76$$ (M1A1)\n (d)(i) $$\\int_1^{p}|v|\\,dt=4.45$$ (A1A1)\n (ii) displacement $$=\\int_0^1v\\,dt+\\int_1^{p}v\\,dt=1-4.45=-3.45$$ (A1M1A1)",
             questionType: 'Kinematics / Piecewise functions',
-            diagram:
-              'https://drive.google.com/file/d/11TslOPRlpzSBT8FAPitKibUjXylxaSWB/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/11TslOPRlpzSBT8FAPitKibUjXylxaSWB=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -9434,8 +9719,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$v(0)=\\cos0-5(0)^{\\cos0}=1-0=1$$ (M1A1)\n (b) Use GDC minimum/maximum of $$v$$ (M1A1A1)\n (c) Count turning points of $$v$$ from graph (M1A1A1)\n (d) Solve $$v=0$$, substitute into $$v'$$ (M1M1A1A1)\n (e) $$\\int_0^{\\pi}|v|\\,dt$$ (M1A1A1)",
             questionType: 'Kinematics / GDC graph analysis',
-            diagram:
-              'https://drive.google.com/file/d/1RUeaJsAG-uElc0ffmn_e6jVRXLbkA6sv/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1RUeaJsAG-uElc0ffmn_e6jVRXLbkA6sv=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -9454,8 +9740,9 @@ export const PYP_QUESTIONS = {
             solution:
               'Consider displacement $$s(t)=\\int_0^t v\\,dt$$; find local extrema and compare with endpoint value at $$t=5$$; justify which gives greatest distance from A using sign of velocity (M1M1A1A1R1A1)',
             questionType: 'Kinematics / Justification',
-            diagram:
-              'https://drive.google.com/file/d/13TATZEV4vu7w11flNk_1GpVnu8McaxWm/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/13TATZEV4vu7w11flNk_1GpVnu8McaxWm=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -9493,8 +9780,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Solve $$6-\\ln(p^2+2)=4$$: $$p=\\sqrt{e^2-2}\\approx2.33$$ (M1A1)\n (b) $$V=\\pi\\int_{-2.33}^{2.33}\\big(6-\\ln(x^2+2)\\big)^2dx \\approx332$$ (M1A2)',
             questionType: 'Volume of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1enmKqEfEn8seCyFhjjiZDrsz0karfMCa/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1enmKqEfEn8seCyFhjjiZDrsz0karfMCa=w1600',
+            ],
             subtopicSlug: 'areas-and-volumes-of-revolution',
           },
           {
@@ -9514,8 +9802,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) $$v_P=0$$ first for $$t>0$$ at $$t=2$$ (A1)\n (a)(ii) $$\\int_0^8|v_P|\\,dt \\approx9.65$$ (A1A1)\n (b) $$\\int_0^k\\sqrt{t}\\,dt = \\frac{2}{3}k^{3/2}=9.65 \\Rightarrow k=5.34$$ (A1A1M1A1)',
             questionType: 'Kinematics / Comparing motions',
-            diagram:
-              'https://drive.google.com/file/d/12dHU7LMnqz_re9e_uDcdpOTEjcBHxVz6/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/12dHU7LMnqz_re9e_uDcdpOTEjcBHxVz6=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -9534,8 +9823,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Solve $$4-2e^x=0 \\Rightarrow x=\\ln2$$ (M1A1)\n (b) $$V=\\pi\\int_0^{\\ln2}(4-2e^x)^2\\,dx \\approx3.43$$ (M1A2)',
             questionType: 'Volume of revolution',
-            diagram:
-              'https://drive.google.com/file/d/1w4FZ1Uj_hoyjoA3Sa9PVNa7HRpErw3-v/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1w4FZ1Uj_hoyjoA3Sa9PVNa7HRpErw3-v=w1600',
+            ],
             subtopicSlug: 'areas-and-volumes-of-revolution',
           },
           {
@@ -9555,8 +9845,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$s_A(0)=15$$ (M1A1)\n (b) Solve $$s_A(t)=0$$: $$t=5.24$$ (M1A1)\n (c) A changes direction when $$s_A'=0$$: $$t=4.08$$ (M1A1)\n (d) Using displacement/velocity at $$t=3$$: distance $$\\approx1.66$$ (A1M1A1)\n (e)(i) $$s_B=\\int(8-2t)dt = 8t-t^2+c$$, using $$s_B(0)=15 \\Rightarrow c=15$$ (M1A2M1A1)\n (e)(ii) Solve $$s_A=s_B$$: $$t=9.30$$ (M1A1)",
             questionType: 'Kinematics / Two-body motion',
-            diagram:
-              'https://drive.google.com/file/d/1gSPJQBw868AE772deICrFl6LBnSue9AR/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1gSPJQBw868AE772deICrFl6LBnSue9AR=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -9576,8 +9867,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$V=\\pi\\int_{-2}^{2}\\dfrac{4-x^2}{8}dx=\\dfrac{4}{3}\\pi\\approx4.19$$ (M1A2)\n (b) $$g'(t)>0$$ on $$1.93<t<3.56$$ (M1A1A1)\n (b)(ii) $$k=\\int_{p}^{q}g'(t)\\,dt\\approx3.75$$ (M1A2)\n (c) Max water volume $$=2.3+\\int_0^{q}g'(t)\\,dt\\approx3.85$$; empty space $$=4.19-3.85\\approx0.331$$ (M1M1A1A2)",
             questionType: 'Applied integration / Rates of change',
-            diagram:
-              'https://drive.google.com/file/d/1cy7P_Vkc7D5iJQrezPa0Ea29tdvS9VBm/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1cy7P_Vkc7D5iJQrezPa0Ea29tdvS9VBm=w1600',
+            ],
             subtopicSlug: 'integration',
           },
           {
@@ -9596,8 +9888,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$V=\\pi\\int_{-0.5}^{0.5}(-0.8x^2+0.5)^2\\,dx\\approx0.601$$ (M1A2)\n (b) Solve $$0.8(1-e^{-0.1t})=0.3006 \\Rightarrow t\\approx4.91$$ (M1A2)',
             questionType: 'Volume of revolution / Exponential modelling',
-            diagram:
-              'https://drive.google.com/file/d/1cEQvriDSTyI0aAFaTkZm1TTUIHjfXAoY/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1cEQvriDSTyI0aAFaTkZm1TTUIHjfXAoY=w1600',
+            ],
             subtopicSlug: 'areas-and-volumes-of-revolution',
           },
           {
@@ -9617,8 +9910,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Language choice independent of gender (A1)\n (b) $$(3-1)(2-1)=2$$ (A1)\n (c)(i) $$\\dfrac{43\\times42}{110}=16.4$$ (G1)\n (c)(ii) GDC: $$\\chi^2=8.69$$ (G2)\n (d) $$8.69>5.99$$ so reject $$H_0$$ (A1R1)\n (e)(i) $$\\dfrac{88}{110}=0.8$$ (A1A1)\n (e)(ii) $$\\dfrac{88}{110}\\times\\dfrac{87}{109}=0.639$$ (M1M1A1)\n (e)(iii) $$1-\\dfrac{67}{110}\\times\\dfrac{66}{109}=0.631$$ (M1M1A1)',
             questionType: 'Chi-squared test / Probability',
-            diagram:
-              'https://drive.google.com/file/d/15cf-C6EdwhRAMVWcZpd-EfK_vVBy_ava/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/15cf-C6EdwhRAMVWcZpd-EfK_vVBy_ava=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -9638,8 +9932,10 @@ export const PYP_QUESTIONS = {
             solution:
               "(a)(i) $$1-0.8=0.2$$ (A1) (a.ii) $$1-0.15=0.85$$ (A1)\n (b)(i) $$0.25\\times0.8=0.2$$ (M1A1)\n (b)(ii) $$0.25\\times0.8+0.75\\times0.15=0.313$$ (A1M1A1)\n (b)(iii) $$\\dfrac{0.2}{0.313}=0.64$$ (A1A1A1)\n (c) $$x=3, y=10$$ from Venn totals (A1)(A1)\n (d) $$54-(10+3+4+2+6+8+13)=8$$ (M1A1)\n (e) $$n(C\\cup B)\\cap P' = 6+8+13=27$$ (M1A1)",
             questionType: 'Probability trees / Venn diagrams',
-            diagram:
-              'https://drive.google.com/file/d/19kt3m8k5W75WWjBahIQvh_O9SjEi0T9H/view?usp=sharing\n\nhttps://drive.google.com/file/d/1NJ37GiZik0kDjrH_Esps16Tb8P-TiRFP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/19kt3m8k5W75WWjBahIQvh_O9SjEi0T9H=w1600',
+              'https://lh3.googleusercontent.com/d/1NJ37GiZik0kDjrH_Esps16Tb8P-TiRFP=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -9659,8 +9955,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) Cylinder height $$=70-20=50$$ (A1)\n (b) $$V=\\pi(20)^2(50)+\\tfrac12\\cdot\\tfrac43\\pi(20)^3\\approx79600$$ (M1M1M1A1)\n (c) $$H+r=110 \\Rightarrow h=110-3r$$ (since $$H=h+r$$) (M1A1)\n (d) $$V=\\tfrac23\\pi r^3+\\pi r^2(110-3r)=110\\pi r^2-\\tfrac73\\pi r^3$$ (M1M1M1AG)\n (e) $$\\dfrac{dV}{dr}=0 \\Rightarrow r\\approx31.4$$ (M1A1)\n (f) $$V(31.4)\\approx114000$$; percentage increase $$\\approx43.0\\%>40\\%$$, so claim correct (M1A1R1A1)',
             questionType: 'Optimisation / Volume',
-            diagram:
-              'https://drive.google.com/file/d/1Dm-U35Bu9tl8Z5J4SJdLczYGtnDIBjRF/view?usp=sharing\n\nhttps://drive.google.com/file/d/12aFlnumBFKyJK8TI1d9LEC2iLp6dcLoP/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1Dm-U35Bu9tl8Z5J4SJdLczYGtnDIBjRF=w1600',
+              'https://lh3.googleusercontent.com/d/12aFlnumBFKyJK8TI1d9LEC2iLp6dcLoP=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -9699,8 +9997,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$2x+2w=200 \\Rightarrow w=100-x$$ (M1AG)\n (b) $$A=x(100-x)$$ (A1)\n (c) $$A'(x)=-2x+100=0 \\Rightarrow x=50$$ (M1A1)\n (d) $$A(50)=2500$$; earnings $$=2\\times2500=5000$$ BGN (M1M1AG)",
             questionType: 'Optimisation / Applied algebra',
-            diagram:
-              'https://drive.google.com/file/d/1PsVBnzrkvLPeF2Qaf0vobYCiR-J1mMvx/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1PsVBnzrkvLPeF2Qaf0vobYCiR-J1mMvx=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -9740,8 +10039,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) $$f(0)=5$$ (A1)\n (b) $$f'(x)=-4x^3+2ax$$ (A1A1)\n (c) Substitute $$x=2$$ into $$f'=0$$: $$-32+4a=0 \\Rightarrow a=8$$ (M1M1AG)\n (c)(ii) $$f(2)=-16+32+5=21$$ (M1A1)\n (d) Solve $$f'(x)=0$$: $$x=-2,0,2$$; other two are $$-2,0$$ (A1A1)\n (d)(ii) Determine sign of $$f'$$ between critical points (A1A1)\n (e) Since global max is $$21$$, range is $$f(x)\\le21$$ (A1A1)\n (f) From graph, 3 solutions to $$f(x)=5$$ (A1)\n (g) For 4 solutions need $$5<m<21$$ (A1A1)",
             questionType: 'Quartic functions / Curve sketching',
-            diagram:
-              'https://drive.google.com/file/d/19c0aACdSquESud-4xEIyMOy-oz9haunX/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/19c0aACdSquESud-4xEIyMOy-oz9haunX=w1600',
+            ],
             subtopicSlug: 'curve-analysis-and-stationary-points',
           },
           {
@@ -9761,8 +10061,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$36(12)+2(12)(9)+2(36)(9)=1300$$ (M1A1)\n (b) $$36\\times12\\times9=3888$$ (M1A1)\n (c) $$3x\\cdot x\\cdot y=3888 \\Rightarrow 3x^2y=3888$$ (M1A1)\n (d) $$A=3x^2+xy+3xy=3x^2+8xy$$ (M1A1)\n (e) $$y=\\dfrac{1296}{x^2}$$ from (c); substitute into (d) to get $$A=3x^2+\\dfrac{10368}{x}$$ (A1M1AG)\n (f) $$\\dfrac{dA}{dx}=6x-\\dfrac{10368}{x^2}$$ (A1A1A1)\n (g) Set $$\\dfrac{dA}{dx}=0 \\Rightarrow x^3=1728 \\Rightarrow x=12$$ (M1M1AG)',
             questionType: 'Optimisation / Surface area',
-            diagram:
-              'https://drive.google.com/file/d/1CWZzkg_lVhLRVEOKKiC_toTcFpTlyLz4/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1CWZzkg_lVhLRVEOKKiC_toTcFpTlyLz4=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -9782,8 +10083,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Quotient (or product) rule on $$f'$$; derivative of $$6x$$ is $$6$$, of $$x^2+4$$ is $$2x$$ (M1A1A1A1AG)\n (b) $$f''<0$$ when $$x>2$$ (M1A1)\n (c) Substitution $$u=x^2+4$$: $$\\int\\frac{6x}{x^2+4}dx=3\\ln(x^2+4)+c$$ (M1A2)\n (d) Area $$=\\int_1^3 f(x)\\,dx=19.6$$; using antiderivative $$3\\ln(x^2+4)+c$$ and evaluating known part, solve for $$c=3.56$$; $$f(x)=3\\ln(x^2+4)+3.56$$ (M1M1A1A1M1A1A1)",
             questionType: 'Differentiation (quotient rule) / Integration',
-            diagram:
-              'https://drive.google.com/file/d/1WMV_GUbIdSmPfoQLnOdYnB_RV__iFrDn/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1WMV_GUbIdSmPfoQLnOdYnB_RV__iFrDn=w1600',
+            ],
             subtopicSlug: 'differentiation-rules',
           },
           {
@@ -9860,8 +10162,10 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) A$$(-0.395,13)$$ (A1A1)\n (b) amplitude $$=13$$ (A1); period $$=2\\pi$$ (A1)\n (c) $$f(t)=13\\cos(t+0.395)$$ (M1A1A1)\n (d) $$d'(t)=-13\\sin(t+0.395)$$, max speed $$=13$$ (M1A1A1)\n (e) Solve $$|d''(t)|=2$$: $$t\\approx1.08$$ (M1A1M1A2)",
             questionType: 'Trigonometric modelling',
-            diagram:
-              'https://drive.google.com/file/d/1_NBUb9A8_Ud_JglyLNIEPFwHqUm-L7UI/view?usp=sharing\n\nhttps://drive.google.com/file/d/1TwrGqbZxDln5W4KdjxpEwcBzR52nZ_QF/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1_NBUb9A8_Ud_JglyLNIEPFwHqUm-L7UI=w1600',
+              'https://lh3.googleusercontent.com/d/1TwrGqbZxDln5W4KdjxpEwcBzR52nZ_QF=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -9899,8 +10203,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Solve $$v(t)=0$$ for smallest positive $$t$$: $$t=6.74$$ (M1A1)\n (b) $$\\int_0^{10}|v|\\,dt\\approx37.1$$ (A1A1)\n (c) $$v'(7)\\approx5.93$$ (M1A1)",
             questionType: 'Kinematics',
-            diagram:
-              'https://drive.google.com/file/d/1LwAqlh-PbmExda9jaNPY-FbG_rdbiq7G/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1LwAqlh-PbmExda9jaNPY-FbG_rdbiq7G=w1600',
+            ],
             subtopicSlug: 'kinematics',
           },
           {
@@ -9920,8 +10225,10 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Solve $$f(x)=x$$: $$x=5.57$$ (M1A1)\n (b) $$f'(x)=-45e^{-0.5x}=-1 \\Rightarrow x=2\\ln45$$; $$Q=(2\\ln45,2)$$ (A1M1A1A1)\n (c) Line through Q with gradient $$-1$$: $$y-2=-(x-2\\ln45) \\Rightarrow y=-x+2\\ln45+2$$ (M1AG)\n (d)(i) Solve $$x=-x+2\\ln45+2 \\Rightarrow x=\\ln45+1$$ (A1)\n (d)(ii) Sum of two integrals of differences between curves/line: Area $$=1.52$$ (M1A1A1A1)\n (e) By symmetry about $$y=x$$: Area $$=2\\times1.52=3.04$$ (M1A1)",
             questionType: 'Tangents / Inverse functions / Area between curves',
-            diagram:
-              'https://drive.google.com/file/d/1K1Xsa3_t3tnXGh9NvHlxFE07EaTwtIdk/view?usp=sharing\n\nhttps://drive.google.com/file/d/14zzYSvghWyt6OskBCL3m5DM-vo6Kd8ki/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1K1Xsa3_t3tnXGh9NvHlxFE07EaTwtIdk=w1600',
+              'https://lh3.googleusercontent.com/d/14zzYSvghWyt6OskBCL3m5DM-vo6Kd8ki=w1600',
+            ],
             subtopicSlug: 'tangents-and-normals',
           },
           {
@@ -9941,8 +10248,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a)(i) Sum of all regions within $$S$$: $$10+40+28+17=95$$ (M1A1)\n (a)(ii) $$M$$ only region (English, outside $$S$$) $$=20$$ (M1A1)\n (a)(iii) $$12+40=52$$ (M1A1)\n (b)(i) $$8+12+20+10+40+28=118$$? recompute using given regions — value from GDC/diagram (A1)\n (b)(ii) $$12$$ (A1)\n (c)(i) $$\\dfrac{100}{160}=0.625$$ (A1A1)\n (c)(ii) $$\\dfrac{42}{160}\\approx0.263$$ (A1A1)\n (c)(iii) $$\\dfrac{50}{70}\\approx0.714$$ (A1A1)',
             questionType: 'Venn diagrams / Set notation',
-            diagram:
-              'https://drive.google.com/file/d/1rfJenZeDt2sn3qQiA_Pgxto9sv-v1t_r/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1rfJenZeDt2sn3qQiA_Pgxto9sv-v1t_r=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -9982,8 +10290,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(b) $$\\dfrac{34}{60}\\times\\dfrac{33}{59}=0.317$$ (M1A1)\n (c) Tree: $$0.006$$/$$0.994$$ branching to $$0.98$$/$$0.02$$ and $$0.05$$/$$0.95$$ (A1A1A1)\n (d) $$0.006\\times0.98=0.00588$$ (M1A1)\n (e) $$0.006\\times0.98+0.994\\times0.05=0.0556$$ (A1M1A1)\n (f) $$\\dfrac{0.00588}{0.0556}=0.106$$ (M1M1A1)\n (g) $$0.106\\times38\\approx4.02$$ (M1A1)',
             questionType: "Tree diagrams / Bayes' theorem",
-            diagram:
-              'https://drive.google.com/file/d/1rS0yIg9NcttOpSCr7gULRK2U64K8_ErM/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1rS0yIg9NcttOpSCr7gULRK2U64K8_ErM=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -10003,8 +10312,10 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$1-\\dfrac14=\\dfrac34$$ (A1)\n (b) $$\\dfrac34\\times\\dfrac14+\\dfrac14\\times\\dfrac34=\\dfrac38$$ (M1M1A1)\n (c) Tree with probabilities $$\\tfrac14,\\tfrac34$$ then $$\\tfrac25,\\tfrac35$$ then $$\\tfrac36,\\tfrac36$$ (A1A1A1)\n (d)(i) $$\\dfrac34\\times\\dfrac25=0.3$$ (M1A1)\n (d)(ii) $$1-\\dfrac34\\times\\dfrac35\\times\\dfrac36=0.775$$ (M1M1A1)\n (e) $$\\dfrac34\\times\\dfrac35\\times\\dfrac36\\times120\\approx67.5$$ (M1M1A1)',
             questionType: 'Tree diagrams / Expected value',
-            diagram:
-              'https://drive.google.com/file/d/11H1IRtdHO4a939uztKd46gQsAbKRj8z7/view?usp=sharing\n\nhttps://drive.google.com/file/d/1QZtYFHww0_6W9SI3Lg0HrAkZCOWKlXGw/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/11H1IRtdHO4a939uztKd46gQsAbKRj8z7=w1600',
+              'https://lh3.googleusercontent.com/d/1QZtYFHww0_6W9SI3Lg0HrAkZCOWKlXGw=w1600',
+            ],
             subtopicSlug: 'mixed-topics',
           },
           {
@@ -10044,8 +10355,9 @@ export const PYP_QUESTIONS = {
             solution:
               '(a) $$h^2+r^2=2500$$ (A1)\n (b) $$V=\\tfrac13\\pi r^2 h=\\tfrac13\\pi(2500-h^2)h=\\dfrac{2500\\pi h}{3}-\\dfrac{\\pi h^3}{3}$$ (M1AG)\n (c) $$\\dfrac{dV}{dh}=\\dfrac{2500\\pi}{3}-\\pi h^2$$ (A1A1)\n (d) Solve $$\\dfrac{dV}{dh}=0 \\Rightarrow h=\\dfrac{50}{\\sqrt3}\\approx28.9$$ (M1A1)\n (e) Substitute $$h=28.9$$ into $$V$$: $$\\approx50400$$ (M1A1)\n (f) $$r\\approx40.8$$; curved surface area $$=\\pi r\\times50\\approx6410$$ (A1M1A1)',
             questionType: 'Optimisation / Cone geometry',
-            diagram:
-              'https://drive.google.com/file/d/1tJEiQz5V9LBbN9DtA-MM0pixySXdbZh9/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1tJEiQz5V9LBbN9DtA-MM0pixySXdbZh9=w1600',
+            ],
             subtopicSlug: 'optimisation',
           },
           {
@@ -10064,8 +10376,9 @@ export const PYP_QUESTIONS = {
             solution:
               "(a) Sketch of oscillating curve with 2 maxima and 1 minimum over given domain (A1A1A1)\n (b) Points of inflexion where $$f''=0$$ changes sign: $$x=\\pi/6,\\ \\pi/4$$ (M1A1A1)\n (c) $$f$$ concave down where $$f''<0$$: $$\\pi/6<x<\\pi/4$$ (A2)",
             questionType: 'Concavity / Points of inflexion',
-            diagram:
-              'https://drive.google.com/file/d/1HGPY1NevALXs5Sm-f4qDu3HQ87weFV66/view?usp=sharing',
+            diagram: [
+              'https://lh3.googleusercontent.com/d/1HGPY1NevALXs5Sm-f4qDu3HQ87weFV66=w1600',
+            ],
             subtopicSlug: 'curve-analysis-and-stationary-points',
           },
           {
@@ -10212,3 +10525,4 @@ export const PYP_QUESTIONS = {
     },
   },
 }
+

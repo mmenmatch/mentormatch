@@ -135,7 +135,7 @@ label{
     url('../../public/assets/Images/doddle-bottom-image.webp'),
     linear-gradient(130deg, #2A15FF 40%, #04C1FC 100%);
   background-repeat: no-repeat, no-repeat;
-  background-size: 180 auto, cover;
+  background-size: 130 auto, cover;
   background-position: bottom right, center;
 }
 

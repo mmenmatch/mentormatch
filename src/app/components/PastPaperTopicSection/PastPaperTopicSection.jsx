@@ -16,7 +16,7 @@ export const PastPaperTopicSection = () => {
           {PYQ_TOPIC_DATA[splitPath]?.map((ele, index) => (
             <Link
               href={`/previous-year-question-papers/ib-dp-math/${splitPath}/${ele?.link}`}
-              className="w-full lg:w-[32%] px-4 py-4 min-h-[350px] border text-black border-[#d9e2f4] rounded-2xl flex flex-col gap-4"
+              className="w-full lg:w-[32%] px-4 py-4  border text-black border-[#d9e2f4] rounded-2xl flex flex-col gap-4"
               key={ele?.id}
             >
               <div className="flex gap-2 items-center">
@@ -30,12 +30,12 @@ export const PastPaperTopicSection = () => {
               <div className="flex flex-col gap-16">
                 <div className="mt-2 flex flex-col gap-3">
                   <p className="text-black font-bold text-[1.5rem] leading-[120%]">{ele?.topic}</p>
-                  <p className="text-[0.9rem] font-medium text-gray-500">{ele?.descriptions}</p>
+                  {/* <p className="text-[0.9rem] font-medium text-gray-500">{ele?.descriptions}</p> */}
                 </div>
                 <div className="flex gap-4">
                   {ele?.papers?.map((paper, index) => (
                     <p className="bg-[#d9e2f4] px-3 py-2 font-bold text-[var(--darkblue)] rounded">
-                      Paper {index + 1} . {paper?.count}
+                      Paper {index + 1}
                     </p>
                   ))}
                 </div>
@@ -46,7 +46,7 @@ export const PastPaperTopicSection = () => {
               </p>
             </Link>
           ))}
-          <div className="pyp-bottom-page w-full lg:w-[32%] bg-[var(--primary)] px-4 py-8 min-h-[350px] border text-black border-[#d9e2f4] rounded-2xl flex flex-col gap-4 justify-between">
+          <div className="pyp-bottom-page w-full lg:w-[32%] bg-[var(--primary)] px-4 py-8  border text-black border-[#d9e2f4] rounded-2xl flex flex-col gap-4 justify-between">
             <div className="flex flex-col gap-4">
               {' '}
               <p className="text-white font-bold text-[2rem] leading-[120%]">
