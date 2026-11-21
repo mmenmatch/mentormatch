@@ -44,10 +44,10 @@ export const SubTopicPastPaperHeroBannner = () => {
             {paperCount?.map((topics, ind) => (
               <Link
                 href={`/previous-year-question-papers/ib-dp-math/${splitPath}/${findTopic?.link}/${topics?.link}`}
-                className={`flex mr-4 text-center  py-4 px-4 rounded-4xl text-black text-[3.25vw] lg:text-[1.5rem] font-bold shadow-[4px_4px_0px_black] ${topics?.link == paperNumber ? 'bg-[#FFF116]' : 'bg-white'}`}
+                className={`flex mr-4 text-center  py-3 px-6 rounded-4xl text-black text-[3.25vw] lg:text-[1.25rem] font-bold shadow-[4px_4px_0px_black] ${topics?.link == paperNumber ? 'bg-[#FFF116]' : 'bg-white'}`}
                 key={topics?.id}
               >
-                Paper {ind + 1} {topics?.paper == 1 ? 'No Calculator' : 'Calculator'}
+                Paper {ind + 1}
               </Link>
             ))}
           </div>
