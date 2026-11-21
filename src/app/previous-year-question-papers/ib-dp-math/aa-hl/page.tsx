@@ -1,8 +1,8 @@
 import React from 'react'
 import NavBar from '@/app/components/NavBar/NavBar'
 import { MMFooter } from '@/app/components/MMFooter/MMFooter'
-import { PastPaperHeroBannner } from '../../../components/PastPaperHeroBannner/PastPaperHeroBannner'
-import { PastPaperTopicSection } from '../../../components/PastPaperTopicSection/PastPaperTopicSection'
+import { PastPaperHeroBannner } from '../../../../app/components/PastPaperHeroBannner/PastPaperHeroBannner'
+import { PastPaperTopicSection } from '../../../../app/components/PastPaperTopicSection/PastPaperTopicSection'
 
 export default function page() {
   return (
