@@ -190,7 +190,7 @@ const TopicWiseQuestionSection = () => {
                           : 'border-0 text-white bg-(--secondary)'
                       }`}
                     >
-                      {show ? 'Hide answer' : 'Show answer and solution'}
+                      {show ? 'Hide answer' : 'Show mark scheme'}
                     </button>
                     {show && (
                       <div className="mt-4 w-full bg-(--softyellow) flex flex-col gap-6 p-4 rounded-2xl">
