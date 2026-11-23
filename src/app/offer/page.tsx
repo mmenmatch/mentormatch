@@ -6,7 +6,7 @@ import BookDemoImage from '../../../public/assets/Images/math-hero-card.webp'
 import Step1 from '../../../public/assets/Images/lens.webp'
 import Step3 from '../../../public/assets/Images/recog.webp'
 import Step2 from '../../../public/assets/Images/profile.webp'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 
 // @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
 // Remove this opt-out after verifying the segment passes validation without it.

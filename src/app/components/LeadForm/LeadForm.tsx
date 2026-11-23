@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import LeadFormImage from '../../../../public/assets/Images/teacher-form.webp'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
 

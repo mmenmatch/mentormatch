@@ -3,7 +3,7 @@ import HeroImage from '../../../../public/assets/Images/heroimage.webp'
 import HeroContentImage from '../../../../public/assets/Images/hero-text-icon.webp'
 import HeroStudentAvatar from '../../../../public/assets/Images/students-avatar.webp'
 
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Tag from '../Tag/Tag'
 import { myFont } from '../../../../public/fonts/local'
 

@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import HeroImage from '../../../../public/assets/Images/upd-hero-img.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 

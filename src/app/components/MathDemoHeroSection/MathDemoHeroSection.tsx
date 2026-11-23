@@ -1,6 +1,6 @@
 import React from 'react'
 import MathImage from '../../../../public/assets/Images/math-hero-card.webp'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Step1 from '../../../../public/assets/Images/lens.webp'
 import Step2 from '../../../../public/assets/Images/profile.webp'
 import Step3 from '../../../../public/assets/Images/recog.webp'

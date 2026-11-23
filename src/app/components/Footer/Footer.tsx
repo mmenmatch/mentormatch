@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import FooterTutor from '../../../../public/assets/Images/footer-tutor-image.webp'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 import LeftSpark from '../../../../public/assets/Images/spark-pill-left.svg'

@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import OnlineTutoring from '../../../../public/assets/Images/OnlineTutoring.webp'
 import GoogleRating from '../../../../public/assets/Images/google-rating.png'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'

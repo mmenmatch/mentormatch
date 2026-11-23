@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Parents1 from '../../../../public/assets/Images/pc-1.webp'
 import Parents2 from '../../../../public/assets/Images/pc-2.webp'
 import Parents3 from '../../../../public/assets/Images/pc-3.webp'

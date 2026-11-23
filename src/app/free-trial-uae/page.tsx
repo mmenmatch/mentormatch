@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar/NavBar'
 import FreeTrialHeroImage from '../../../public/assets/Images/tutor-student-comb.webp'
 // import FreeTrialForm from '../components/FreeTrialForm/FreeTrialForm'
 import FreeTrialFormUae from '../components/FreeTrialFormUae/FreeTrialFormUae'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import RatingsBadge from '../../../public/assets/Images/ratings-badges.webp'
 import HeroImage from '../../../public/assets/Images/Home-Hero.webp'
 

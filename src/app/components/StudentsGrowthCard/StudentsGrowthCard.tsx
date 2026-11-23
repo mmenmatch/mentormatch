@@ -15,7 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import Arrow from '../../../../public/assets/Images/arrow.png'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 
 
 export const StudentsGrowthCard = ({ type = '' }: { type?: any }) => {

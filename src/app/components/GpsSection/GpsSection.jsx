@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import GAP from '../../../../public/assets/Images/Gap-Image.webp'
 import Personalise from '../../../../public/assets/Images/personalise.webp'
 import Score from '../../../../public/assets/Images/Score.webp'

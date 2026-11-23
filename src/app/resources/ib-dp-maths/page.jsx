@@ -1,7 +1,7 @@
 'use client'
 import NavBar from '../../components/NavBar/NavBar'
 import { MMFooter } from '../../components/MMFooter/MMFooter'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Charbel from '../../../../public/assets/Images/Charbel.webp'
 
 function page() {

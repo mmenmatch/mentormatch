@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import TutorGang from '../../../../public/assets/Images/tutor-gang.webp'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 
 export default function BookDemoBanner() {
    const handleRedirect = () => {

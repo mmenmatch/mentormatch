@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import GapImage from '../../../../public/assets/Images/GAP.webp'
 import PersonalizeImage from '../../../../public/assets/Images/new-personalize.webp'
 import ScoreImage from '../../../../public/assets/Images/Score.webp'

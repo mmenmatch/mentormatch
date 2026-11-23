@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Expendables from '../../../../public/assets/Images/tutors-expendables.webp'
 import { JoinUsForm } from '../JoinUsForm/JoinUsForm'
 import JoinUsProgressBar from '../JoinUsProgressBar/JoinUsProgressBar'

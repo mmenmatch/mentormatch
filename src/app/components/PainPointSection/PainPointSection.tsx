@@ -6,7 +6,7 @@ import { StaticImageData } from 'next/image'
 import StudentImageB from '../../../../public/assets/Images/worried-student-b.png'
 import StudentImageA from '../../../../public/assets/Images/worried-student-a.webp'
 
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import { myFont } from '../../../../public/fonts/local'
 
 export const PainPointSection = () => {

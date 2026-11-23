@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import TutorLine from '../../../../public/assets/Images/tutor-line.webp'
 import StepperFormIndia from '../StepperFormIndia/StepperFormIndia'
 import StepperForm from '../StepperForm/StepperForm'

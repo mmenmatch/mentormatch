@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import TickeImage from '../../../../public/assets/Images/yellow-tick.svg'
 import AppLogo from '../../../../public/assets/Images/apps-logo.webp'
 import MentorMatchApp from '../../../../public/assets/Images/Mentormatch-App.webp'

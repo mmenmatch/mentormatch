@@ -1,7 +1,7 @@
 import React from 'react'
 import ModalForm from '../ModalForm/ModalForm'
 import CloseButton from '../../../../public/assets/Images/cross.svg'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 
 export const Modal = ({ closeFn }: any) => {
   return (

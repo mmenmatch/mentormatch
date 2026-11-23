@@ -4,7 +4,7 @@ import B1 from '../../../../public/assets/Images/win.webp'
 import B2 from '../../../../public/assets/Images/script.webp'
 import B3 from '../../../../public/assets/Images/thumb.webp'
 
-import Image from 'next/image'
+import Image from '@/app/components/img'
 export default function MathDemoBottomCard() {
   return (
     <div className="md:px-0 md:pb-8 pb-0">

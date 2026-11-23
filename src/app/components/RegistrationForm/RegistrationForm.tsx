@@ -6,7 +6,7 @@ import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'
 import type { Country } from 'react-phone-number-input'
 import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import SparkImage from '../../../../public/assets/Images/spark-accent.webp'
 
 const GRADES = [

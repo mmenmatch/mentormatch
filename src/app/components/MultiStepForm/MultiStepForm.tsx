@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import StepperTick from '../../../../public/assets/Images/stepper-tick.png'
 import type { Country } from 'react-phone-number-input'
 import { useForm, Controller } from 'react-hook-form'

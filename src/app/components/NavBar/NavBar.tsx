@@ -3,7 +3,7 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { useRouter } from 'next/navigation'
 import Whatsapp from '../../../../public/assets/Images/whatsapp.webp'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 
 const NavBar = ({ whatsapp = false, width = '' }) => {
   const isMobile = useMediaQuery({ maxWidth: 640 })

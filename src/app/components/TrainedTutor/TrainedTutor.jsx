@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Vivek from '../../../../public/assets/Images/vivek-trained-tutor.webp'
 import Amit from '../../../../public/assets/Images/amit.webp'
 import Anupama from '../../../../public/assets/Images/anupama.webp'

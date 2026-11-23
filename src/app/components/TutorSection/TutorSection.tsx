@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import Flight from '../../../../public/assets/Images/flight.webp'
 import Heart from '../../../../public/assets/Images/heart copy.webp'
 import Star from '../../../../public/assets/Images/star.webp'

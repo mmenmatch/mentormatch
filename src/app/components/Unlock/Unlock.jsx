@@ -1,6 +1,6 @@
 'use client'
 import UnlockImage from '../../../../public/assets/Images/unlock.webp'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 export const Unlock = () => {
   return (
     <div className="max-w-7xl mx-auto lg:px-8 px-4  lg:py-16 py-8">

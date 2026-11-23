@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import List from '../../../../../../../public/assets/Images/burger-bar.png'
 import { useState } from 'react'
 import { ResourceNavigation } from '@/app/components/ResourceNavigation/ResourceNavigation'

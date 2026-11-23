@@ -7,7 +7,7 @@ import { useForm, Controller } from 'react-hook-form'
 import { useState, useEffect, use } from 'react'
 import { useJoinUsStepper } from '@/store/joinUs'
 import type { Country } from 'react-phone-number-input'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import ThankYou from '../../../../public/assets/Images/thanku-tick.webp'
 
 export const JoinUsForm = () => {

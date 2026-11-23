@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import BackButton from '../../../../public/assets/Images/back-img.png'
 import { z } from 'zod'
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input'

@@ -1,5 +1,5 @@
 // import React from 'react'
-// import Image from 'next/image'
+// import Image from '@/app/components/img'
 // import TutorImage from '../../../../public/assets/Images/Tutor.webp'
 // import KidImage from '../../../../public/assets/Images/campaign-page-kid.webp'
 

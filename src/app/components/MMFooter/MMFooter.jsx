@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import MentorMatchLogo from '../../../../public/assets/Images/mentormatch.webp'
 import SocialMediaLogo from '../../../../public/assets/Images/socialmediaLogo.webp'
 import USoffice from '../../../../public/assets/Images/Us.webp'

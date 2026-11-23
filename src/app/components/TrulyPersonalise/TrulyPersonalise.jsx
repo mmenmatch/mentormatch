@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 import TrulyPersonaliseImage from '../../../../public/assets/Images/truly-personalise.webp'
 
 export const TrulyPersonalise = () => {

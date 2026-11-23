@@ -1,7 +1,7 @@
 import Step1 from '../../../../public/assets/Images/step-1.webp'
 import Step2 from '../../../../public/assets/Images/step-2.webp'
 import Step3 from '../../../../public/assets/Images/step-3.webp'
-import Image from 'next/image'
+import Image from '@/app/components/img'
 
 export default function GettingStarted() {
   const gettingStarted = [

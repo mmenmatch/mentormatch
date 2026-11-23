@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import Image from 'next/image';
+import Image from '@/app/components/img';
 import React from 'react';
 
 type TagProps = {
