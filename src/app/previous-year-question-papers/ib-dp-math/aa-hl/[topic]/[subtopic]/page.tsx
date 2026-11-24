@@ -30,7 +30,8 @@ export default async function PaperPage({ params }: { params: Promise<Params> })
   const current = data?.papers.find((p) => p.link === subtopic)
   if (!data || !current) notFound()
   console.log('aa-hl', PYQ_TOPIC_DATA?.[COURSE])
-
+  const aahl = PYQ_TOPIC_DATA?.[COURSE]
+  
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <NavBar />
