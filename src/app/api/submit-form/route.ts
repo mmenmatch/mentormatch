@@ -37,6 +37,7 @@ type FormData = {
   languageText: string
   mention: string
   day: string
+  fb_click_id: string
 }
 
 export async function POST(req: NextRequest) {
@@ -77,6 +78,7 @@ export async function POST(req: NextRequest) {
     languageText = '',
     mention = '',
     day = '',
+    fb_click_id = '',
   } = body
 
   const results = await Promise.allSettled([
@@ -115,6 +117,7 @@ export async function POST(req: NextRequest) {
       language,
       languageText,
       mention,
+      fb_click_id,
     }),
   ])
 
@@ -254,6 +257,10 @@ async function submitToHubSpot(data: any) {
           {
             name: 'special_mention',
             value: data?.mention || '',
+          },
+          {
+            name: 'fb_click_id',
+            value: data?.fb_click_id || '',
           },
         ],
       }),

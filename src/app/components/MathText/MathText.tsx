@@ -67,11 +67,11 @@ export const MathText = ({
                 return (
                   <div key={j} className="flex justify-between items-start gap-6">
                     <p
-                      className="text-[1rem] leading-[150%]"
+                      className="text-[4vw] lg:text-[1rem] leading-[150%]"
                       dangerouslySetInnerHTML={{ __html: toHtml(body) }}
                     />
                     {m && (
-                      <span className="shrink-0 text-[1rem] leading-[150%] font-semibold">
+                      <span className="shrink-0 text-[4vw] lg:text-[1rem] leading-[150%] font-semibold">
                         [{m[1]}]
                       </span>
                     )}

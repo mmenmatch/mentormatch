@@ -9,16 +9,16 @@ export const SubTopicPastPaperHeroBannner = () => {
   const topicPath = pathname?.split('/')[4]
 
   const paperNumber = pathname?.split('/')[5]
-  console.log('paperNumber', paperNumber)
+  // console.log('paperNumber', paperNumber)
 
   const findTopic = PYQ_TOPIC_DATA?.[splitPath]?.find((ele) => ele.link == topicPath)
   const findPage = findTopic?.papers?.find((ele) => ele?.link == paperNumber)
   const topicName = findTopic?.topic
   const numberOfQuestion = findTopic?.totalQuestions
   const paperCount = findTopic?.papers
-  console.log('splitPath', splitPath)
-  console.log('findTopic', findTopic)
-  console.log('paperCount', paperCount)
+  // console.log('splitPath', splitPath)
+  // console.log('findTopic', findTopic)
+  // console.log('paperCount', paperCount)
   if (!findPage) {
     return
   }

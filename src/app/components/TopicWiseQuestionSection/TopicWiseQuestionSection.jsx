@@ -42,6 +42,7 @@ const QuestionDiagrams = ({ images, onOpen }) => {
 const TopicWiseQuestionSection = () => {
   // Which subtopic is selected ('all' or a subtopic slug)
   const [selectedSubtopic, setSelectedSubtopic] = useState('all')
+  // console.log('selectedSubtopic', selectedSubtopic)
   // Which difficulty is selected ('All' | 'Easy' | 'Medium' | 'Hard')
   const [selectedLevel, setSelectedLevel] = useState('All')
   // Ids of the questions whose answer is open
@@ -85,6 +86,7 @@ const TopicWiseQuestionSection = () => {
   const SubtopicList = () => (
     <>
       <p className="font-bold text-[1rem]">Subtopics</p>
+      {/*Desktop */}
       <div className="flex flex-col gap-6 mt-6">
         {/* ALL TOPICS */}
         <div
@@ -113,18 +115,52 @@ const TopicWiseQuestionSection = () => {
   )
 
   return (
-    <div className="w-full bg-white py-16">
+    <div className="w-full bg-white py-8 lg:py-16">
       <div className=" max-w-7xl mx-auto">
-        <div className="w-full flex flex-col lg:flex-row justify-between items-baseline gap-8">
+        <div className="w-full flex flex-col lg:flex-row justify-between items-baseline gap-0 lg:gap-8">
           <div className="hidden w-full lg:block lg:w-[30%] border-2 border-[var(--softblue)] rounded-2xl p-8">
             <SubtopicList />
           </div>
-          <div className="block lg:hidden w-full lg:w-[30%] border-2 border-[var(--softblue)] rounded-2xl p-8">
-            <SubtopicList />
+          <div className=" lg:hidden w-full lg:w-[30%] flex flex-col gap-4  rounded-2xl p-4">
+            <div className="flex flex-col gap-4">
+              <label htmlFor="subtopic" className="text-[4vw]">
+                Select subtopics
+              </label>
+              <select
+                id="subtopic"
+                value={selectedSubtopic}
+                onChange={(e) => handleSubtopic(e.target.value)}
+                className="w-full rounded-md border border-gray-300 bg-white px-3 py-4 text-sm shadow-sm focus:border-blue-500 focus:outline-none"
+              >
+                <option value="all">All Topics ({totalCount})</option>
+                {subtopicSection?.map((ele) => (
+                  <option key={ele?.slug} value={ele?.slug}>
+                    {ele?.name} ({ele?.count})
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="flex flex-col gap-4">
+              <label htmlFor="level" className="text-[4vw]">
+                Select level
+              </label>
+              <select
+                id="level"
+                value={selectedLevel}
+                onChange={(e) => handleLevel(e.target.value)}
+                className="w-full rounded-md border border-gray-300 bg-white px-3 py-4 text-sm shadow-sm focus:border-blue-500 focus:outline-none"
+              >
+                {LEVEL?.map((ele) => (
+                  <option key={ele} value={ele}>
+                    {ele}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
           <div className="w-full lg:w-[70%]  p-2">
             <div className="flex justify-between items-center gap-4">
-              <div className="flex gap-4">
+              <div className=" gap-4 hidden lg:flex">
                 {LEVEL?.map((ele) => (
                   <p
                     key={ele}
@@ -137,12 +173,12 @@ const TopicWiseQuestionSection = () => {
                   </p>
                 ))}
               </div>
-              <p className="text-[1rem]">
+              <p className="text-[1rem] hidden lg:block ">
                 Showing {filteredQuestions?.length ?? 0} questions of {totalCount}
               </p>
             </div>
 
-            <div className="w-full mt-8 flex flex-col gap-8">
+            <div className="w-full mt-4 lg:mt-8 flex flex-col gap-8">
               {filteredQuestions?.map((ele) => {
                 const show = openIds.includes(ele?.id)
                 const images = Array.isArray(ele?.diagram)
@@ -159,17 +195,17 @@ const TopicWiseQuestionSection = () => {
                   >
                     <div className=" w-full flex justify-between items-center">
                       <div className="w-full flex gap-4 font-semibold items-center">
-                        <span className="bg-blue-500 text-white py-2 px-4 rounded-4xl">
+                        <span className="bg-blue-500  text-[3.25vw] lg:text-[1rem] text-white py-2 px-4 rounded-4xl">
                           {ele?.subtopic}
                         </span>
-                        <span className="text-(--darkblue) bg-[#d9e2f4] py-2 px-4 rounded-4xl">
+                        <span className="text-(--darkblue) text-[3.25vw] lg:text-[1rem] bg-[#d9e2f4] py-2 px-4 rounded-4xl">
                           {ele?.difficulty}
                         </span>
-                        <span className="text-(--darkblue) bg-[#d9e2f4] py-2 px-4 rounded-4xl">
+                        <span className="text-(--darkblue ) text-[4vw] lg:text-[1rem] bg-[#d9e2f4] py-2 px-4 rounded-4xl lg:block hidden">
                           {ele?.marks} marks
                         </span>
                       </div>
-                      <span className="whitespace-nowrap">
+                      <span className="whitespace-nowrap text-[3vw] lg:text-[1rem] lg:block hidden">
                         {[ele?.session].filter(Boolean).join(' · ')}
                       </span>
                     </div>
@@ -208,6 +244,14 @@ const TopicWiseQuestionSection = () => {
                         )}
                       </div>
                     )}
+                    <div className="flex mt-4  text-[3.25vw] lg:text-[1rem] justify-between items-center w-full font-semibold lg:hidden">
+                      <span className="text-(--darkblue) bg-[#d9e2f4] py-2 px-4 rounded-4xl">
+                        {ele?.marks} marks
+                      </span>
+                      <span className="whitespace-nowrap">
+                        {[ele?.session].filter(Boolean).join(' · ')}
+                      </span>
+                    </div>
                   </div>
                 )
               })}

@@ -156,6 +156,7 @@ const StepperForm = ({ utm_campaign }: any) => {
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
       meta_event_id: eventId || '',
+      fb_click_id: params.get('fbclid'),
     }
     localStorage.setItem('formData', JSON.stringify(payload))
 

@@ -5,9 +5,15 @@ import { SubTopicPastPaperHeroBannner } from '../../../../../../app/components/S
 import NavBar from '@/app/components/NavBar/NavBar'
 import { MMFooter } from '@/app/components/MMFooter/MMFooter'
 import TopicWiseQuestionSection from '../../../../../../app/components/TopicWiseQuestionSection/TopicWiseQuestionSection'
+import type { Metadata } from 'next'
+
 const COURSE = 'aa-hl'
 const BASE = `/previous-year-question-papers/ib-dp-math/${COURSE}`
 
+export const metadata: Metadata = {
+  title: 'My Blog',
+  description: '...',
+}
 type Params = { topic: string; subtopic: string }
 
 // Builds every topic × paper combination for this course
@@ -23,6 +29,7 @@ export default async function PaperPage({ params }: { params: Promise<Params> })
   const data = PYQ_TOPIC_DATA[COURSE].find((t) => t.link === topic)
   const current = data?.papers.find((p) => p.link === subtopic)
   if (!data || !current) notFound()
+  console.log('aa-hl', PYQ_TOPIC_DATA?.[COURSE])
 
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">

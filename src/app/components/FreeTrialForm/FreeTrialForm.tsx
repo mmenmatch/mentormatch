@@ -36,12 +36,12 @@ function FreeTrialForm() {
   ]
   const PRICES_OPTIONS = ['Yes, find my child’s tutor', 'No, this is above my budget']
   const Time = ['5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM']
-    const pricingLabel =
-      detectedCountry === 'AE'
-        ? 'Our fee is 70-100 AED/hour'
-        : detectedCountry === 'IN'
-          ? 'Our fee is ₹1200-₹1500/hour'
-          : 'Our fee is $20-$25/hour'
+  const pricingLabel =
+    detectedCountry === 'AE'
+      ? 'Our fee is 70-100 AED/hour'
+      : detectedCountry === 'IN'
+        ? 'Our fee is ₹1200-₹1500/hour'
+        : 'Our fee is $20-$25/hour'
 
   const schema = z.object({
     grade: z.string().min(1, 'Please select a grade'),
@@ -100,7 +100,6 @@ function FreeTrialForm() {
   type FormData = z.infer<typeof schema>
 
   const selectGradeFn = (event: any) => {
-    console.log(event)
     setSelectGrade(event)
     setValue('grade', String(event), {
       shouldValidate: true,
@@ -125,23 +124,23 @@ function FreeTrialForm() {
     })
   }
 
-const dateOptions = []
-const date = new Date()
+  const dateOptions = []
+  const date = new Date()
 
-while (dateOptions.length < 4) {
-  date.setDate(date.getDate() + 1)
+  while (dateOptions.length < 4) {
+    date.setDate(date.getDate() + 1)
 
-  // Skip Sunday (0 = Sunday)
-  if (date.getDay() === 0) continue
+    // Skip Sunday (0 = Sunday)
+    if (date.getDay() === 0) continue
 
-  dateOptions.push({
-    value: date.toLocaleDateString('en-CA'), // YYYY-MM-DD
-    month: date.toLocaleString('en-US', {
-      month: 'short',
-    }),
-    day: date.getDate(),
-  })
-}
+    dateOptions.push({
+      value: date.toLocaleDateString('en-CA'), // YYYY-MM-DD
+      month: date.toLocaleString('en-US', {
+        month: 'short',
+      }),
+      day: date.getDate(),
+    })
+  }
   const parentName = watch('parentName')
   const childName = watch('childName')
   const isStep2Valid = parentName?.trim()?.length >= 3 && childName?.trim()?.length >= 3
@@ -161,11 +160,10 @@ while (dateOptions.length < 4) {
   const selectedTime = watch('time')
   const isStep6Valid = !!selectedDate && !!selectedTime
 
-
   const onSubmit = async (data: FormData) => {
     setStatus('loading')
     const eventId = crypto.randomUUID()
-    // console.log('eventId', eventId)
+
     const params = new URLSearchParams(window.location.search)
     // console.log('data', data)
     const payload = {
@@ -177,10 +175,10 @@ while (dateOptions.length < 4) {
       utm_campaign: params.get('utm_campaign'),
       utm_content: params.get('utm_content'),
       utm_term: params.get('utm_term'),
+      fb_click_id: params.get('fbclid'),
       meta_event_id: eventId || '',
     }
     localStorage.setItem('formData', JSON.stringify(payload))
-    console.log('payload', payload)
     if (typeof window.fbq !== 'undefined') {
       // console.log('Meta Pixel loaded')
       window.fbq('track', 'Submit Application')

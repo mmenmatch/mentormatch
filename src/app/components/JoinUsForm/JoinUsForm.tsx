@@ -264,6 +264,7 @@ export const JoinUsForm = () => {
       meta_event_id: eventId || '',
       date: day || '',
       country: country || '',
+      fb_click_id: params.get('fbclid'),
     }
     localStorage.setItem('formData', JSON.stringify(payload))
 
